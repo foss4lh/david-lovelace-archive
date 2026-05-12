@@ -139,7 +139,7 @@
 		"period": "1948-1953",
 		"coverage": "Herefordshire",
 		"theme": "woodland",
-		"status": "source-assessment",
+		"status": "available",
 		"summary": "Woodland cover and post-war landscape material, including FC1953ecw, Ancient Woodland data, DEM/LIDAR context, and related map layers.",
 		"sourceArchivePaths": [
 			"Maps/FC1953ecw",
@@ -150,23 +150,145 @@
 		],
 		"assets": [
 			{
-				"id": "fc1953-woodland-pmtiles",
+				"id": "fc1953-c13-14-20-21",
 				"kind": "pmtiles",
-				"title": "Woodland 1953 (from ECW)",
-				"releaseAsset": "fc1953-woodland.pmtiles",
-				"localPath": "/data/fc1953-woodland.pmtiles",
-				"remoteUrl": "https://github.com/foss4lh/david-lovelace-archive/releases/download/data-v0.1.0/fc1953-woodland.pmtiles",
-				"status": "planned-release"
-			},
-			{
-				"id": "fc1953-c13-pmtiles",
-				"kind": "pmtiles",
-				"title": "FC1953 C13_14_20_21 prototype",
-				"releaseAsset": "fc1953-c13.pmtiles",
-				"localPath": "/data/fc1953-c13.pmtiles",
-				"remoteUrl": "https://github.com/foss4lh/david-lovelace-archive/releases/download/data-v0.1.0/fc1953-c13.pmtiles",
+				"title": "FC1953 C13_14_20_21",
+				"releaseAsset": "C13_14_20_21.pmtiles",
+				"localPath": "/data/C13_14_20_21.pmtiles",
 				"status": "available",
 				"bounds": [-2.69346, 52.1581, -2.366237, 52.288521],
+				"minZoom": 10,
+				"maxZoom": 14
+			},
+			{
+				"id": "fc1953-c27",
+				"kind": "pmtiles",
+				"title": "FC1953 C27",
+				"releaseAsset": "C27.pmtiles",
+				"localPath": "/data/C27.pmtiles",
+				"status": "available",
+				"bounds": [-2.693285, 52.101753, -2.548355, 52.162954],
+				"minZoom": 10,
+				"maxZoom": 14
+			},
+			{
+				"id": "fc1953-c28-29-35-36",
+				"kind": "pmtiles",
+				"title": "FC1953 C28_29_35_36",
+				"releaseAsset": "C28_29_35_36.pmtiles",
+				"localPath": "/data/C28_29_35_36.pmtiles",
+				"status": "available",
+				"bounds": [-2.554438, 52.042209, -2.337145, 52.161555],
+				"minZoom": 10,
+				"maxZoom": 14
+			},
+			{
+				"id": "fc1953-c40",
+				"kind": "pmtiles",
+				"title": "FC1953 C40",
+				"releaseAsset": "C40.pmtiles",
+				"localPath": "/data/C40.pmtiles",
+				"status": "available",
+				"bounds": [-2.695865, 51.985702, -2.551097, 52.046589],
+				"minZoom": 10,
+				"maxZoom": 14
+			},
+			{
+				"id": "fc1953-c4142fc",
+				"kind": "pmtiles",
+				"title": "FC1953 C4142FC",
+				"releaseAsset": "C4142FC.pmtiles",
+				"localPath": "/data/C4142FC.pmtiles",
+				"status": "available",
+				"bounds": [-2.555812, 51.985054, -2.339269, 52.0463],
+				"minZoom": 10,
+				"maxZoom": 14
+			},
+			{
+				"id": "fc1953-c46-47",
+				"kind": "pmtiles",
+				"title": "FC1953 C46_47",
+				"releaseAsset": "C46_47.pmtiles",
+				"localPath": "/data/C46_47.pmtiles",
+				"status": "available",
+				"bounds": [-2.597247, 51.926644, -2.482141, 51.989844],
+				"minZoom": 10,
+				"maxZoom": 14
+			},
+			{
+				"id": "fc1953-c47",
+				"kind": "pmtiles",
+				"title": "FC1953 C47",
+				"releaseAsset": "C47.pmtiles",
+				"localPath": "/data/C47.pmtiles",
+				"status": "available",
+				"bounds": [-2.556367, 51.927476, -2.436686, 51.988726],
+				"minZoom": 10,
+				"maxZoom": 14
+			},
+			{
+				"id": "fc1953-c54-51s",
+				"kind": "pmtiles",
+				"title": "FC1953 C54&51S",
+				"releaseAsset": "C54&51S.pmtiles",
+				"localPath": "/data/C54&51S.pmtiles",
+				"status": "available",
+				"bounds": [-2.699713, 51.825152, -2.554637, 51.903338],
+				"minZoom": 10,
+				"maxZoom": 14
+			},
+			{
+				"id": "fc1953-c6-7-11-12private",
+				"kind": "pmtiles",
+				"title": "FC1953 C6_7_11_12Private",
+				"releaseAsset": "C6_7_11_12Private.pmtiles",
+				"localPath": "/data/C6_7_11_12Private.pmtiles",
+				"status": "available",
+				"bounds": [-2.975262, 52.216577, -2.685759, 52.339674],
+				"minZoom": 10,
+				"maxZoom": 14
+			},
+			{
+				"id": "fc1953-ce",
+				"kind": "pmtiles",
+				"title": "FC1953 CE",
+				"releaseAsset": "CE.pmtiles",
+				"localPath": "/data/CE.pmtiles",
+				"status": "available",
+				"bounds": [-2.705775, 51.825135, -2.335518, 52.288615],
+				"minZoom": 10,
+				"maxZoom": 14
+			},
+			{
+				"id": "fc1953-clords1953",
+				"kind": "pmtiles",
+				"title": "FC1953 CLords1953",
+				"releaseAsset": "CLords1953.pmtiles",
+				"localPath": "/data/CLords1953.pmtiles",
+				"status": "available",
+				"bounds": [-2.678526, 51.822886, -2.631842, 51.845142],
+				"minZoom": 10,
+				"maxZoom": 14
+			},
+			{
+				"id": "fc1953-cn",
+				"kind": "pmtiles",
+				"title": "FC1953 CN",
+				"releaseAsset": "CN.pmtiles",
+				"localPath": "/data/CN.pmtiles",
+				"status": "available",
+				"bounds": [-3.118239, 52.215323, -2.614443, 52.397559],
+				"minZoom": 10,
+				"maxZoom": 14
+			},
+			{
+				"id": "fc1953-csw",
+				"kind": "pmtiles",
+				"title": "FC1953 CSW",
+				"releaseAsset": "CSW.pmtiles",
+				"localPath": "/data/CSW.pmtiles",
+				"status": "available",
+				"bounds": [-3.149937, 51.833021, -2.683796, 52.225185],
 				"minZoom": 10,
 				"maxZoom": 14
 			}
