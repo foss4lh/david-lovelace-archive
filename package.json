@@ -11,11 +11,19 @@
 		"inventory:parse": "node scripts/audit/parse-inventory.mjs",
 		"inventory:duckdb": "duckdb static/data/archive.duckdb \"CREATE OR REPLACE TABLE files AS SELECT * FROM read_csv_auto('catalog/archive-inventory.csv');\"",
 		"archive:audit": "node scripts/audit/archive-summary.mjs",
-		"prepare": "svelte-kit sync || echo ''",
+		"prepare": "svelte-kit sync || echo '' && husky install",
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
 		"lint": "prettier --check . && eslint .",
 		"format": "prettier --write ."
+	},
+	"lint-staged": {
+		"*.{js,ts,svelte,json,css,md}": [
+			"prettier --write"
+		],
+		"*.{js,ts,svelte}": [
+			"eslint --fix"
+		]
 	},
 	"devDependencies": {
 		"@duckdb/duckdb-wasm": "^1.33.1-dev45.0",
@@ -29,6 +37,8 @@
 		"eslint-config-prettier": "^10.1.8",
 		"eslint-plugin-svelte": "^3.17.0",
 		"globals": "^17.4.0",
+		"husky": "^8.0.0",
+		"lint-staged": "^16.4.0",
 		"prettier": "^3.8.1",
 		"prettier-plugin-svelte": "^3.5.1",
 		"svelte": "^5.55.2",
