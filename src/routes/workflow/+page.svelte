@@ -54,6 +54,14 @@
 				<dd>Generate a local archive summary from the mounted raw archive.</dd>
 			</div>
 			<div>
+				<dt><code>npm run inventory:parse</code></dt>
+				<dd>Regenerate the inventory CSV from <code>file-info-names</code> listings.</dd>
+			</div>
+			<div>
+				<dt><code>npm run inventory:duckdb</code></dt>
+				<dd>Update the DuckDB index from the parsed inventory CSV.</dd>
+			</div>
+			<div>
 				<dt><code>npm run build</code></dt>
 				<dd>Create the static site in <code>build/</code> for Netlify.</dd>
 			</div>

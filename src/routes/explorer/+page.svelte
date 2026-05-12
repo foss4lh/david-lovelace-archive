@@ -203,13 +203,8 @@
 	<section class="page-heading">
 		<h1>File explorer</h1>
 		<p>
-			Browse high-value files within the local archive. This view helps identify candidates for
-			georeferencing and web publication.
-		</p>
-		<p class="muted">
-			The full archive of 1.29 million files is indexed in <code>static/data/archive.duckdb</code>.
-			Use <code>npm run inventory:parse</code> and <code>npm run inventory:duckdb</code> to update
-			the local index from <code>file-info-names</code> listings.
+			Search and browse individual files within the 2TB archive. This index contains over 1.2
+			million entries, helping to identify candidates for georeferencing and transcription.
 		</p>
 	</section>
 
