@@ -1,5 +1,5 @@
 import * as duckdb from '@duckdb/duckdb-wasm';
-import { resolve } from '$app/paths';
+import { base } from '$app/paths';
 
 let db: duckdb.AsyncDuckDB | null = null;
 
@@ -25,16 +25,16 @@ export async function initDuckDB() {
 export async function queryInventory(sql: string) {
 	const instance = await initDuckDB();
 	const conn = await instance.connect();
-	
+
 	// Load the database file if not already loaded into the virtual filesystem
 	// This is a simplified approach; in production, you might want to use a persistent buffer
-	const response = await fetch(resolve('/data/archive.duckdb'));
+	const response = await fetch(`${base}/data/archive.duckdb`);
 	const buffer = await response.arrayBuffer();
 	await instance.registerFileBuffer('archive.duckdb', new Uint8Array(buffer));
-	
+
 	// Open the database
 	await conn.query(`ATTACH 'archive.duckdb' AS archive (READ_ONLY);`);
-	
+
 	const results = await conn.query(sql);
 	await conn.close();
 	return results;

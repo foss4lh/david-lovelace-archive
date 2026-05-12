@@ -1,6 +1,13 @@
 <script lang="ts">
 	import { resolve } from '$app/paths';
-	import { FileText, Image, Map as MapIcon, Search, Database as DbIcon, Loader2 } from '@lucide/svelte';
+	import {
+		FileText,
+		Image,
+		Map as MapIcon,
+		Search,
+		Database as DbIcon,
+		Loader2
+	} from '@lucide/svelte';
 	import explorerData from '../../../catalog/explorer.json';
 	import { queryInventory } from '$lib/duckdb';
 
@@ -12,20 +19,20 @@
 	const formats = ['all', ...new Set(explorerData.map((f) => f.format))];
 
 	const filteredFiles = $derived(
-		selectedFormat === 'all' && searchQuery === '' 
-			? explorerData 
-			: remoteResults.length > 0 
-				? remoteResults 
+		selectedFormat === 'all' && searchQuery === ''
+			? explorerData
+			: remoteResults.length > 0
+				? remoteResults
 				: explorerData.filter((file) => {
-					const matchesSearch = file.path.toLowerCase().includes(searchQuery.toLowerCase());
-					const matchesFormat = selectedFormat === 'all' || file.format === selectedFormat;
-					return matchesSearch && matchesFormat;
-				})
+						const matchesSearch = file.path.toLowerCase().includes(searchQuery.toLowerCase());
+						const matchesFormat = selectedFormat === 'all' || file.format === selectedFormat;
+						return matchesSearch && matchesFormat;
+					})
 	);
 
 	async function performRemoteQuery() {
 		if (searchQuery.length < 3 && selectedFormat === 'all') return;
-		
+
 		isQuerying = true;
 		try {
 			let sql = `SELECT path, size, format FROM files WHERE 1=1`;
@@ -34,7 +41,7 @@
 			sql += ` LIMIT 50`;
 
 			const results = await queryInventory(sql);
-			remoteResults = results.toArray().map(row => ({
+			remoteResults = results.toArray().map((row) => ({
 				path: row.path,
 				size: (row.size / (1024 * 1024)).toFixed(1) + ' MB',
 				format: row.format,
@@ -63,18 +70,18 @@
 		</p>
 		<p class="muted">
 			The full archive of 1.29 million files is indexed in <code>static/data/archive.duckdb</code>.
-			Use <code>npm run inventory:parse</code> and <code>npm run inventory:duckdb</code> to update the
-			local index from <code>file-info-names</code> listings.
+			Use <code>npm run inventory:parse</code> and <code>npm run inventory:duckdb</code> to update
+			the local index from <code>file-info-names</code> listings.
 		</p>
 	</section>
 
 	<div class="explorer-controls">
 		<div class="search-box">
 			<Search size={18} />
-			<input 
-				type="text" 
-				placeholder="Search 1.2M+ paths..." 
-				bind:value={searchQuery} 
+			<input
+				type="text"
+				placeholder="Search 1.2M+ paths..."
+				bind:value={searchQuery}
 				onkeydown={(e) => e.key === 'Enter' && performRemoteQuery()}
 			/>
 		</div>
@@ -82,7 +89,10 @@
 			{#each formats as format}
 				<button
 					class:active={selectedFormat === format}
-					onclick={() => { selectedFormat = format; performRemoteQuery(); }}
+					onclick={() => {
+						selectedFormat = format;
+						performRemoteQuery();
+					}}
 				>
 					{format.toUpperCase()}
 				</button>
@@ -134,7 +144,7 @@
 		min-width: 280px;
 	}
 
-	.search-box svg {
+	.search-box :global(svg) {
 		position: absolute;
 		top: 50%;
 		left: 0.75rem;
@@ -180,8 +190,12 @@
 	}
 
 	@keyframes spin {
-		from { transform: rotate(0deg); }
-		to { transform: rotate(360deg); }
+		from {
+			transform: rotate(0deg);
+		}
+		to {
+			transform: rotate(360deg);
+		}
 	}
 
 	.file-grid {
@@ -242,4 +256,3 @@
 		text-align: center;
 	}
 </style>
-
