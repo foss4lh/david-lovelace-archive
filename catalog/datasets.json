@@ -7,9 +7,7 @@
 		"theme": "metadata",
 		"status": "available",
 		"summary": "A DuckDB database containing a complete inventory of the 2TB archive, including file paths, sizes, formats, and checksums. This enables rapid querying of the collection structure without needing the raw files locally.",
-		"sourceArchivePaths": [
-			"."
-		],
+		"sourceArchivePaths": ["."],
 		"assets": [
 			{
 				"id": "archive-inventory-duckdb",

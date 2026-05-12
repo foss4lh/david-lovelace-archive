@@ -26,9 +26,7 @@
 <main>
 	<section class="page-heading">
 		<h1>Clean data workflow</h1>
-		<p>
-			Separating raw archival data from web-ready catalog manifests and static code.
-		</p>
+		<p>Separating raw archival data from web-ready catalog manifests and static code.</p>
 	</section>
 
 	<section class="workflow-grid">

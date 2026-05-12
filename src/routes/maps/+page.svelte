@@ -6,9 +6,7 @@
 <main>
 	<section class="page-heading">
 		<h1>Map explorer</h1>
-		<p>
-			Browse georeferenced layers as they are published to the web-ready catalog.
-		</p>
+		<p>Browse georeferenced layers as they are published to the web-ready catalog.</p>
 	</section>
 
 	{#if visualDatasets.length}

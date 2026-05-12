@@ -6,9 +6,7 @@
 <main>
 	<section class="page-heading">
 		<h1>Dataset catalog</h1>
-		<p>
-			Descriptions and manifests for archive collections and their web-ready derivatives.
-		</p>
+		<p>Descriptions and manifests for archive collections and their web-ready derivatives.</p>
 	</section>
 
 	<section class="download-panel">

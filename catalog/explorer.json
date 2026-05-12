@@ -1,44 +1,44 @@
 [
-  {
-    "path": "Maps/OS_opendata_2010/wales-se/Wales-se.ecw",
-    "size": "781 MB",
-    "format": "ecw",
-    "description": "OS OpenData Wales South-East mosaic"
-  },
-  {
-    "path": "Projects/woodland/Croft/Bluesky_Croft/RGB/ECW_Mosaic/Croft_Castle.ecw",
-    "size": "771 MB",
-    "format": "ecw",
-    "description": "Bluesky RGB mosaic of Croft Castle"
-  },
-  {
-    "path": "Maps/OS_opendata_2010/Herefordshire25000/SO25000.ecw",
-    "size": "705 MB",
-    "format": "ecw",
-    "description": "Herefordshire 1:25,000 scale OS mosaic"
-  },
-  {
-    "path": "History/Bodleian/Somerefs.txt",
-    "size": "1.2 KB",
-    "format": "txt",
-    "description": "Bodleian library reference notes"
-  },
-  {
-    "path": "History/British Library/BLothermaps.txt",
-    "size": "4.5 KB",
-    "format": "txt",
-    "description": "British Library additional map references"
-  },
-  {
-    "path": "AirPhotos/EN_County_APs/AP_1946_001.jpg",
-    "size": "2.4 MB",
-    "format": "jpg",
-    "description": "Aerial photograph from 1946"
-  },
-  {
-    "path": "Maps/TitheMapsOriginals/TMO_dir.txt",
-    "size": "0 B",
-    "format": "txt",
-    "description": "Tithe Map Originals directory placeholder"
-  }
+	{
+		"path": "Maps/OS_opendata_2010/wales-se/Wales-se.ecw",
+		"size": "781 MB",
+		"format": "ecw",
+		"description": "OS OpenData Wales South-East mosaic"
+	},
+	{
+		"path": "Projects/woodland/Croft/Bluesky_Croft/RGB/ECW_Mosaic/Croft_Castle.ecw",
+		"size": "771 MB",
+		"format": "ecw",
+		"description": "Bluesky RGB mosaic of Croft Castle"
+	},
+	{
+		"path": "Maps/OS_opendata_2010/Herefordshire25000/SO25000.ecw",
+		"size": "705 MB",
+		"format": "ecw",
+		"description": "Herefordshire 1:25,000 scale OS mosaic"
+	},
+	{
+		"path": "History/Bodleian/Somerefs.txt",
+		"size": "1.2 KB",
+		"format": "txt",
+		"description": "Bodleian library reference notes"
+	},
+	{
+		"path": "History/British Library/BLothermaps.txt",
+		"size": "4.5 KB",
+		"format": "txt",
+		"description": "British Library additional map references"
+	},
+	{
+		"path": "AirPhotos/EN_County_APs/AP_1946_001.jpg",
+		"size": "2.4 MB",
+		"format": "jpg",
+		"description": "Aerial photograph from 1946"
+	},
+	{
+		"path": "Maps/TitheMapsOriginals/TMO_dir.txt",
+		"size": "0 B",
+		"format": "txt",
+		"description": "Tithe Map Originals directory placeholder"
+	}
 ]

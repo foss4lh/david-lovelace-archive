@@ -29,9 +29,7 @@
 <main>
 	<section class="page-heading">
 		<h1>Research agenda</h1>
-		<p>
-			Identified priorities for georectification, digitisation, and historical research.
-		</p>
+		<p>Identified priorities for georectification, digitisation, and historical research.</p>
 	</section>
 
 	<section class="research-grid">

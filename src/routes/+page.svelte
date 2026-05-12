@@ -9,9 +9,8 @@
 		<div>
 			<h1>The archive</h1>
 			<p class="lede">
-				In memory of David Lovelace (1955–2026). This collection brings together maps,
-				aerial photography, habitat data, and research notes documenting Herefordshire's
-				landscape history.
+				In memory of David Lovelace (1955–2026). This collection brings together maps, aerial
+				photography, habitat data, and research notes documenting Herefordshire's landscape history.
 			</p>
 			<p class="donation-note">
 				Following David's passing on 5th May 2026, we intend to donate these datasets to relevant
