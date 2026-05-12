@@ -36,14 +36,14 @@
 	let remoteFileResults = $state<FileEntry[]>([]);
 	let remoteFolderResults = $state<FolderEntry[]>([]);
 	let remoteMatchCount = $state<number | null>(null);
-	let hasQueriedRemote = $state(false);
+	let hasInitialised = $state(false);
 	let loadError = $state<string | null>(null);
 
 	// High-value formats for quick filtering
-	const primaryFormats = ['all', 'ecw', 'tif', 'jpg', 'pdf', 'doc', 'txt', 'shp'];
+	const primaryFormats = ['all', 'ecw', 'tif', 'jpg', 'pdf', 'doc', 'txt', 'shp', 'csv'];
 
 	onMount(() => {
-		// Initial load of the full index
+		// Automatically query the full index on mount
 		performRemoteQuery(1);
 	});
 
@@ -73,7 +73,6 @@
 	async function performRemoteQuery(page = 1) {
 		currentPage = page;
 		isQuerying = true;
-		hasQueriedRemote = true;
 		loadError = null;
 
 		try {
@@ -147,6 +146,7 @@
 					})) ?? [];
 				remoteFolderResults = [];
 			}
+			hasInitialised = true;
 		} catch (e) {
 			console.error('DuckDB Query failed', e);
 			loadError = 'Archive index is loading or unavailable. Try refreshing the page.';
@@ -179,8 +179,9 @@
 	<section class="page-heading">
 		<h1>File explorer</h1>
 		<p>
-			Search and browse over 1.1 million files within the 2TB archive index. This view helps
-			identify candidates for georeferencing, transcription, and research publication.
+			Search and browse over 450,000 high-value historical and research files within the 2TB
+			archive. This index filters out system noise to focus on maps, aerial photography, and
+			research records.
 		</p>
 	</section>
 
@@ -257,7 +258,9 @@
 	{/if}
 
 	<p class="results-summary" aria-live="polite">
-		{#if isQuerying}
+		{#if isQuerying && !hasInitialised}
+			Loading archive index (approx. 20MB)...
+		{:else if isQuerying}
 			Querying archive entries...
 		{:else if remoteMatchCount !== null}
 			{#if remoteMatchCount === 0}
@@ -288,7 +291,7 @@
 					</div>
 				</div>
 			{:else}
-				{#if !isQuerying && hasQueriedRemote}
+				{#if !isQuerying && hasInitialised}
 					<p class="empty">No folders match your filters.</p>
 				{/if}
 			{/each}
@@ -309,7 +312,7 @@
 					</div>
 				</div>
 			{:else}
-				{#if !isQuerying && hasQueriedRemote}
+				{#if !isQuerying && hasInitialised}
 					<p class="empty">No files match your filters.</p>
 				{/if}
 			{/each}
