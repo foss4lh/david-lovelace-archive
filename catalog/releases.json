@@ -36,7 +36,7 @@
 			"filename": "fc1953-c13.pmtiles",
 			"url": "https://github.com/foss4lh/david-lovelace-archive/releases/download/data-v0.1.0/fc1953-c13.pmtiles",
 			"target": "static/data/fc1953-c13.pmtiles",
-			"requiredForBuild": false,
+			"requiredForBuild": true,
 			"status": "available"
 		}
 	]
