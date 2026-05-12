@@ -11,6 +11,24 @@
 			"target": "static/data/whitby-tithe.pmtiles",
 			"requiredForBuild": false,
 			"status": "planned-release"
+		},
+		{
+			"id": "archive-inventory-duckdb",
+			"title": "Archive Inventory DuckDB",
+			"filename": "archive.duckdb",
+			"url": "https://github.com/foss4lh/david-lovelace-archive/releases/download/data-v0.1.0/archive.duckdb",
+			"target": "static/data/archive.duckdb",
+			"requiredForBuild": true,
+			"status": "available"
+		},
+		{
+			"id": "fc1953-woodland-pmtiles",
+			"title": "Woodland 1953 PMTiles",
+			"filename": "fc1953-woodland.pmtiles",
+			"url": "https://github.com/foss4lh/david-lovelace-archive/releases/download/data-v0.1.0/fc1953-woodland.pmtiles",
+			"target": "static/data/fc1953-woodland.pmtiles",
+			"requiredForBuild": false,
+			"status": "planned-release"
 		}
 	]
 }

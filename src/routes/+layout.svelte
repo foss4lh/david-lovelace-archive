@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { Archive, Database, Map, SearchCheck, Workflow } from '@lucide/svelte';
+	import { Archive, Database, FileSearch, Map, SearchCheck, Workflow } from '@lucide/svelte';
 	import { resolve } from '$app/paths';
 	import '../app.css';
 
@@ -7,6 +7,7 @@
 
 	const navItems = [
 		{ href: '/', label: 'Archive', icon: Archive },
+		{ href: '/explorer', label: 'Explorer', icon: FileSearch },
 		{ href: '/datasets', label: 'Datasets', icon: Database },
 		{ href: '/maps', label: 'Maps', icon: Map },
 		{ href: '/research', label: 'Research', icon: SearchCheck },

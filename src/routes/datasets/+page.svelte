@@ -5,11 +5,9 @@
 
 <main>
 	<section class="page-heading">
-		<p class="eyebrow">Catalog and downloads</p>
-		<h1>Datasets are described here; large data lives elsewhere.</h1>
+		<h1>Dataset catalog</h1>
 		<p>
-			This page is intentionally driven by JSON manifests. The app can grow from GitHub Release
-			assets to Cloudflare R2 or S3 without changing the content model.
+			Descriptions and manifests for archive collections and their web-ready derivatives.
 		</p>
 	</section>
 

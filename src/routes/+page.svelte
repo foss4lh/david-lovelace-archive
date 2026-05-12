@@ -7,17 +7,21 @@
 <main>
 	<section class="hero">
 		<div>
-			<p class="eyebrow">Static-first archive portal</p>
-			<h1>Making a 2 TB landscape history archive discoverable, useful, and ready for research.</h1>
+			<h1>The archive</h1>
 			<p class="lede">
-				The David Lovelace Archive brings together maps, aerial photography, habitat data, public
-				records, surveys, and working notes documenting Herefordshire's changing landscape.
+				In memory of David Lovelace (1955–2026). This collection brings together maps,
+				aerial photography, habitat data, and research notes documenting Herefordshire's
+				landscape history.
+			</p>
+			<p class="donation-note">
+				Following David's passing on 5th May 2026, we intend to donate these datasets to relevant
+				local and national organisations to ensure they remain a permanent resource for research.
 			</p>
 			<div class="actions">
 				<a class="button primary" href={resolve('/datasets')}
 					>Browse datasets <ArrowRight size={17} /></a
 				>
-				<a class="button" href={resolve('/research')}>See work to be done</a>
+				<a class="button" href={resolve('/research')}>See research agenda</a>
 			</div>
 		</div>
 		<aside class="hero-panel" aria-label="Archive summary">

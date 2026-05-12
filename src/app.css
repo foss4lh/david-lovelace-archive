@@ -134,11 +134,16 @@ p {
 }
 
 h1 {
-	max-width: 14ch;
+	max-width: 20ch;
 	margin-bottom: 1rem;
-	font-size: clamp(2.7rem, 8vw, 6rem);
-	line-height: 0.96;
-	letter-spacing: 0;
+	font-size: clamp(2rem, 6vw, 4rem);
+	line-height: 1.1;
+	letter-spacing: -0.01em;
+}
+
+h2 {
+	font-size: clamp(1.5rem, 4vw, 2.5rem);
+	line-height: 1.2;
 }
 
 .lede {
@@ -146,6 +151,17 @@ h1 {
 	color: #50534b;
 	font-size: clamp(1.03rem, 2vw, 1.22rem);
 	line-height: 1.6;
+}
+
+.donation-note {
+	max-width: 65ch;
+	margin-top: 1rem;
+	padding: 0.8rem 1rem;
+	border-left: 3px solid #5f6f37;
+	background: #f0f4e8;
+	color: #4a5441;
+	font-size: 0.95rem;
+	line-height: 1.5;
 }
 
 .actions {

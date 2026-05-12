@@ -5,12 +5,9 @@
 
 <main>
 	<section class="page-heading">
-		<p class="eyebrow">Map explorer</p>
-		<h1>Visualise maps as web-ready layers become available.</h1>
+		<h1>Map explorer</h1>
 		<p>
-			The first implementation uses OpenLayers and PMTiles-compatible catalog entries. It remains
-			useful before data download because it shows exactly which assets are expected and where they
-			will live in the static build.
+			Browse georeferenced layers as they are published to the web-ready catalog.
 		</p>
 	</section>
 

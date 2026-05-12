@@ -28,11 +28,9 @@
 
 <main>
 	<section class="page-heading">
-		<p class="eyebrow">Research agenda</p>
-		<h1>Work to be done is part of the archive.</h1>
+		<h1>Research agenda</h1>
 		<p>
-			The site should not only publish finished outputs. It should make unfinished work visible so
-			researchers, students, and contributors can see where their effort would matter.
+			Identified priorities for georectification, digitisation, and historical research.
 		</p>
 	</section>
 

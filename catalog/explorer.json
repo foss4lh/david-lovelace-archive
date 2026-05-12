@@ -1,0 +1,44 @@
+[
+  {
+    "path": "Maps/TitheMapsOriginals/Aconbury.ecw",
+    "size": "45 MB",
+    "format": "ecw",
+    "description": "Original scan of Aconbury tithe map"
+  },
+  {
+    "path": "Maps/TitheMapsOriginals/Bacton.ecw",
+    "size": "120 MB",
+    "format": "ecw",
+    "description": "Original scan of Bacton tithe map"
+  },
+  {
+    "path": "AirPhotos/EN_County_APs/AP_1946_001.jpg",
+    "size": "2.4 MB",
+    "format": "jpg",
+    "description": "Aerial photograph from 1946"
+  },
+  {
+    "path": "AirPhotos/EN_County_APs/AP_1946_002.jpg",
+    "size": "2.1 MB",
+    "format": "jpg",
+    "description": "Aerial photograph from 1946"
+  },
+  {
+    "path": "History/HRO/ResearchNotes_2023.txt",
+    "size": "12 KB",
+    "format": "txt",
+    "description": "Field work notes from HRO visit"
+  },
+  {
+    "path": "Habitat/HEDGES/Survey_Protocol.txt",
+    "size": "8 KB",
+    "format": "txt",
+    "description": "Standard protocol for hedgerow surveys"
+  },
+  {
+    "path": "Maps/FC1953ecw/Herefordshire_Woodland.ecw",
+    "size": "2.1 GB",
+    "format": "ecw",
+    "description": "Full county woodland cover from 1953"
+  }
+]

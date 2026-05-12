@@ -1,4 +1,32 @@
-[
+	{
+		"id": "archive-inventory",
+		"title": "Archive Inventory (DuckDB)",
+		"period": "current",
+		"coverage": "Full Archive",
+		"theme": "metadata",
+		"status": "available",
+		"summary": "A DuckDB database containing a complete inventory of the 2TB archive, including file paths, sizes, formats, and checksums. This enables rapid querying of the collection structure without needing the raw files locally.",
+		"sourceArchivePaths": [
+			"."
+		],
+		"assets": [
+			{
+				"id": "archive-inventory-duckdb",
+				"kind": "duckdb",
+				"title": "Archive Inventory DuckDB",
+				"releaseAsset": "archive.duckdb",
+				"localPath": "/data/archive.duckdb",
+				"remoteUrl": "https://github.com/foss4lh/david-lovelace-archive/releases/download/data-v0.1.0/archive.duckdb",
+				"status": "available"
+			}
+		],
+		"nextSteps": [
+			"Integrate DuckDB-WASM into the file explorer for client-side SQL queries.",
+			"Automate the generation of this database during archive audits.",
+			"Add file-level metadata tags to the database tables."
+		],
+		"limitations": "The inventory is a snapshot and may not reflect very recent additions to the physical storage."
+	},
 	{
 		"id": "hfd-tithe-maps",
 		"title": "Herefordshire Tithe Maps",
@@ -121,7 +149,17 @@
 			"Maps/LIDAR",
 			"Maps/LittleDoward"
 		],
-		"assets": [],
+		"assets": [
+			{
+				"id": "fc1953-woodland-pmtiles",
+				"kind": "pmtiles",
+				"title": "Woodland 1953 (from ECW)",
+				"releaseAsset": "fc1953-woodland.pmtiles",
+				"localPath": "/data/fc1953-woodland.pmtiles",
+				"remoteUrl": "https://github.com/foss4lh/david-lovelace-archive/releases/download/data-v0.1.0/fc1953-woodland.pmtiles",
+				"status": "planned-release"
+			}
+		],
 		"nextSteps": [
 			"Clarify which source files correspond to 1948 survey evidence versus later derived mapping.",
 			"Convert suitable raster layers to PMTiles or COGs.",

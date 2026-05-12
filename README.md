@@ -1,6 +1,8 @@
 # David Lovelace Archive
 
-Static-first website and future web application for the David Lovelace Archive, a large Herefordshire landscape history collection containing maps, aerial photography, habitat data, public records, research notes, and working GIS material.
+Static-first website and data portal for the David Lovelace Archive, a large Herefordshire landscape history collection containing maps, aerial photography, habitat data, and research notes.
+
+**In Memory:** This archive is dedicated to the memory of David Lovelace (1955–2026), who passed away on Tuesday 5th May 2026. His life's work documenting the Herefordshire landscape continues through this project. We intend to donate these datasets to relevant heritage and environmental organisations.
 
 Live site:
 

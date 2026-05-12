@@ -8,7 +8,7 @@ export type DatasetStatus =
 	| 'research-needed'
 	| 'source-assessment';
 
-export type AssetKind = 'pmtiles' | 'cog' | 'geojson' | 'csv' | 'parquet' | 'image-bundle';
+export type AssetKind = 'pmtiles' | 'cog' | 'geojson' | 'csv' | 'parquet' | 'image-bundle' | 'duckdb';
 
 export interface DatasetAsset {
 	id: string;

@@ -25,11 +25,9 @@
 
 <main>
 	<section class="page-heading">
-		<p class="eyebrow">Workflow</p>
-		<h1>Code, catalog, and data are kept deliberately separate.</h1>
+		<h1>Clean data workflow</h1>
 		<p>
-			The repository should be small enough to clone quickly, while the website can still reference
-			large derived assets from GitHub Releases now and object storage later.
+			Separating raw archival data from web-ready catalog manifests and static code.
 		</p>
 	</section>
 
