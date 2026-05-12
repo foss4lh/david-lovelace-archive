@@ -1,6 +1,6 @@
 import { createReadStream, createWriteStream } from 'node:fs';
 import { readdir } from 'node:fs/promises';
-import { join, resolve } from 'node:path';
+import { join } from 'node:path';
 import readline from 'node:readline';
 
 const inventoryDir = '/media/robin/foss4lh/david-lovelace-archive/file-info-names';
@@ -29,7 +29,7 @@ async function parseFile(filePath, csvStream) {
 
 		const fileMatch = line.match(fileRegex);
 		if (fileMatch) {
-			const [_, date, time, sizeOrDir, name] = fileMatch;
+			const [, date, time, sizeOrDir, name] = fileMatch;
 			if (sizeOrDir === '<DIR>') continue;
 			if (name === '.' || name === '..') continue;
 

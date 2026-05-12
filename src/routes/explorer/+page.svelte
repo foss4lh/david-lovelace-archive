@@ -1,5 +1,4 @@
 <script lang="ts">
-	import { resolve } from '$app/paths';
 	import {
 		FileText,
 		Image,
@@ -11,19 +10,26 @@
 	import explorerData from '../../../catalog/explorer.json';
 	import { queryInventory } from '$lib/duckdb';
 
+	interface FileEntry {
+		path: string;
+		size: string;
+		format: string;
+		description: string;
+	}
+
 	let searchQuery = $state('');
 	let selectedFormat = $state('all');
 	let isQuerying = $state(false);
-	let remoteResults = $state<any[]>([]);
+	let remoteResults = $state<FileEntry[]>([]);
 
 	const formats = ['all', ...new Set(explorerData.map((f) => f.format))];
 
 	const filteredFiles = $derived(
 		selectedFormat === 'all' && searchQuery === ''
-			? explorerData
+			? (explorerData as FileEntry[])
 			: remoteResults.length > 0
 				? remoteResults
-				: explorerData.filter((file) => {
+				: (explorerData as FileEntry[]).filter((file) => {
 						const matchesSearch = file.path.toLowerCase().includes(searchQuery.toLowerCase());
 						const matchesFormat = selectedFormat === 'all' || file.format === selectedFormat;
 						return matchesSearch && matchesFormat;
@@ -42,9 +48,9 @@
 
 			const results = await queryInventory(sql);
 			remoteResults = results.toArray().map((row) => ({
-				path: row.path,
-				size: (row.size / (1024 * 1024)).toFixed(1) + ' MB',
-				format: row.format,
+				path: row.path as string,
+				size: ((row.size as number) / (1024 * 1024)).toFixed(1) + ' MB',
+				format: row.format as string,
 				description: 'Found in archive index'
 			}));
 		} catch (e) {
@@ -86,7 +92,7 @@
 			/>
 		</div>
 		<div class="format-filters">
-			{#each formats as format}
+			{#each formats as format (format)}
 				<button
 					class:active={selectedFormat === format}
 					onclick={() => {
@@ -109,7 +115,7 @@
 	</div>
 
 	<div class="file-grid">
-		{#each filteredFiles as file}
+		{#each filteredFiles as file (file.path)}
 			{@const Icon = getIcon(file.format)}
 			<div class="file-card">
 				<div class="file-header">
