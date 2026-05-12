@@ -40,6 +40,13 @@
 				style: {
 					version: 8,
 					sources: {
+						osm: {
+							type: 'raster',
+							tiles: ['https://tile.openstreetmap.org/{z}/{x}/{y}.png'],
+							tileSize: 256,
+							attribution: '&copy; OpenStreetMap contributors',
+							maxzoom: 19
+						},
 						'raster-source': {
 							type: 'raster',
 							url: `pmtiles://${PMTILES_URL}`,
@@ -49,9 +56,15 @@
 					},
 					layers: [
 						{
+							id: 'osm',
+							type: 'raster',
+							source: 'osm'
+						},
+						{
 							id: 'raster-layer',
 							type: 'raster',
-							source: 'raster-source'
+							source: 'raster-source',
+							paint: { 'raster-opacity': 0.85 }
 						}
 					]
 				},
