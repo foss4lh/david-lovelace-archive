@@ -93,10 +93,10 @@
 		layerError = null;
 		layerLoading = false;
 
-		if (!selectedAsset?.localPath) return;
+		if (!selectedAsset?.localPath && !selectedAsset?.remoteUrl) return;
 
 		async function addLayer() {
-			if (!map || !selectedAsset?.localPath) return;
+			if (!map || (!selectedAsset?.localPath && !selectedAsset?.remoteUrl)) return;
 			layerLoading = true;
 
 			try {
@@ -105,10 +105,16 @@
 					import('ol-pmtiles')
 				]);
 
-				// Ensure the URL is absolute so range requests work in both dev and production
-				const url = selectedAsset.localPath.startsWith('http')
-					? selectedAsset.localPath
-					: `${window.location.origin}${selectedAsset.localPath}`;
+				// Prefer remoteUrl (e.g. GitHub Releases) so Netlify builds don't need the file locally.
+				// Fall back to an absolute local URL for dev server / static builds.
+				let url: string;
+				if (selectedAsset.remoteUrl) {
+					url = selectedAsset.remoteUrl;
+				} else if (selectedAsset.localPath!.startsWith('http')) {
+					url = selectedAsset.localPath!;
+				} else {
+					url = `${window.location.origin}${selectedAsset.localPath}`;
+				}
 
 				console.log('[MapExplorer] Loading PMTiles from:', url);
 

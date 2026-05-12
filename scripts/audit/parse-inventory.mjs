@@ -7,10 +7,16 @@ const inventoryDir =
 	process.env.INVENTORY_ROOT ?? '/media/robin/foss4lh1/david-lovelace-archive/file-info-names';
 const outputFile = 'catalog/archive-inventory.csv';
 
-// High-value historical and research formats to keep
+/**
+ * High-value historical and research formats to keep in the public index.
+ * Note: Camera RAW files (arw, srw, crw, dng) are excluded as high-res JPGs exist.
+ * GIS sidecars (shx, prj, qpj, xml, cpg) are excluded to reduce noise, 
+ * keeping only core spatial data (shp, dbf, ecw, asc, tab).
+ */
 const INCLUDED_EXTENSIONS = new Set([
 	'ecw',
 	'tif',
+	'tiff',
 	'jpg',
 	'jpeg',
 	'pdf',
@@ -23,16 +29,15 @@ const INCLUDED_EXTENSIONS = new Set([
 	'dbf',
 	'csv',
 	'mp4',
-	'bmp',
-	'png'
+	'zip',
+	'tab',
+	'asc'
 ]);
 
 // Minimum sizes for common noisy formats to filter out thumbnails/placeholders
 const MIN_SIZES = {
 	jpg: 100 * 1024, // 100 KB
-	jpeg: 100 * 1024,
-	png: 50 * 1024,
-	bmp: 200 * 1024
+	jpeg: 100 * 1024
 };
 
 // Filenames or patterns to exclude
