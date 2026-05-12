@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { Archive, Database, FileSearch, Map, SearchCheck, Workflow } from '@lucide/svelte';
+	import { Archive, Database, FileSearch, Map, SearchCheck, Code } from '@lucide/svelte';
 	import { resolve } from '$app/paths';
 	import '../app.css';
 
@@ -10,8 +10,7 @@
 		{ href: '/explorer', label: 'Explorer', icon: FileSearch },
 		{ href: '/datasets', label: 'Datasets', icon: Database },
 		{ href: '/maps', label: 'Maps', icon: Map },
-		{ href: '/research', label: 'Research', icon: SearchCheck },
-		{ href: '/workflow', label: 'Workflow', icon: Workflow }
+		{ href: '/research', label: 'Research', icon: SearchCheck }
 	] as const;
 </script>
 
@@ -44,4 +43,33 @@
 	</header>
 
 	{@render children()}
+
+	<footer class="site-footer">
+		<a href="https://github.com/foss4lh/david-lovelace-archive" target="_blank" rel="noopener">
+			<Code size={16} />
+			Open source code
+		</a>
+	</footer>
 </div>
+
+<style>
+	.site-footer {
+		margin-top: auto;
+		padding: 2rem;
+		border-top: 1px solid #e4ded0;
+		text-align: center;
+	}
+
+	.site-footer a {
+		display: inline-flex;
+		align-items: center;
+		gap: 0.4rem;
+		color: #706c63;
+		font-size: 0.85rem;
+		text-decoration: none;
+	}
+
+	.site-footer a:hover {
+		color: #304832;
+	}
+</style>

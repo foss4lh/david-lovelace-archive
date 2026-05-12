@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { ArrowRight, Database, Download, Map, SearchCheck } from '@lucide/svelte';
+	import { ArrowRight, Database, FileSearch, Map, SearchCheck } from '@lucide/svelte';
 	import { resolve } from '$app/paths';
 	import { datasets, summaryStats } from '$lib/catalog';
 </script>
@@ -45,15 +45,15 @@
 			<h2>Dataset catalog</h2>
 			<p>Track source archive paths, derived assets, release downloads, status, and limitations.</p>
 		</a>
+		<a class="feature" href={resolve('/explorer')}>
+			<FileSearch size={22} />
+			<h2>File explorer</h2>
+			<p>Search and browse over 1.2 million individual files within the 2TB archive index.</p>
+		</a>
 		<a class="feature" href={resolve('/maps')}>
 			<Map size={22} />
 			<h2>Map explorer</h2>
 			<p>View web-ready raster maps and prepare PMTiles layers as they are published.</p>
-		</a>
-		<a class="feature" href={resolve('/workflow')}>
-			<Download size={22} />
-			<h2>Clean data workflow</h2>
-			<p>Keep raw data out of git while downloading curated assets during build or local setup.</p>
 		</a>
 		<a class="feature" href={resolve('/research')}>
 			<SearchCheck size={22} />
