@@ -7,7 +7,7 @@
 
 	let mapElement: HTMLDivElement;
 	let map: import('ol/Map').default | undefined;
-	let overlayLayer: import('ol/layer/Tile').default | undefined;
+	let overlayLayer: import('ol/layer/WebGLTile').default | undefined;
 	let selectedId = $state('');
 	let opacity = $state(0.75);
 	let attemptedLayer = $state(false);
@@ -100,8 +100,8 @@
 			layerLoading = true;
 
 			try {
-				const [{ default: TileLayer }, { PMTilesRasterSource }] = await Promise.all([
-					import('ol/layer/Tile.js'),
+				const [{ default: WebGLTile }, { PMTilesRasterSource }] = await Promise.all([
+					import('ol/layer/WebGLTile.js'),
 					import('ol-pmtiles')
 				]);
 
@@ -126,7 +126,7 @@
 					layerError = `Tile source error: ${e.message || 'unknown'}`;
 				});
 
-				overlayLayer = new TileLayer({
+				overlayLayer = new WebGLTile({
 					source,
 					opacity
 				});
