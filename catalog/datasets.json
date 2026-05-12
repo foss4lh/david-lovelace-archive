@@ -1,0 +1,181 @@
+[
+	{
+		"id": "hfd-tithe-maps",
+		"title": "Herefordshire Tithe Maps",
+		"period": "1837-1845",
+		"coverage": "Herefordshire",
+		"theme": "historic maps",
+		"status": "prototype-web-ready",
+		"summary": "Georectified and photographed tithe maps with apportionment material. This is one of the clearest routes into field-name, ownership, land-use, and boundary digitisation work.",
+		"sourceArchivePaths": [
+			"Maps/TitheMapsOriginals",
+			"Maps/GG_TitheMaps",
+			"History/HCA/FownhopeTitheMap[HCA]",
+			"History/HCA/FownhopeTitheApportionments[HCA]",
+			"History/BurringtonTithe"
+		],
+		"assets": [
+			{
+				"id": "whitby-tithe-pmtiles",
+				"kind": "pmtiles",
+				"title": "Whitby Tithe Map PMTiles prototype",
+				"releaseAsset": "whitby-tithe.pmtiles",
+				"localPath": "/data/whitby-tithe.pmtiles",
+				"remoteUrl": "https://github.com/foss4lh/david-lovelace-archive/releases/download/data-v0.1.0/whitby-tithe.pmtiles",
+				"status": "planned-release"
+			}
+		],
+		"nextSteps": [
+			"Create parish-level inventory with image counts, map status, and apportionment availability.",
+			"Publish first curated PMTiles release assets for selected georeferenced maps.",
+			"Digitise field boundaries and link polygons to apportionment rows.",
+			"Document georectification confidence and known distortions."
+		],
+		"limitations": "Many originals are photographed or scanned as raw/TIF/JPG files and need normalisation before web delivery."
+	},
+	{
+		"id": "hfd-aerofilms",
+		"title": "Historic Aerial Photography",
+		"period": "1920s-1980s",
+		"coverage": "Herefordshire",
+		"theme": "aerial photography",
+		"status": "inventory-needed",
+		"summary": "Historic aerial photography including Aerofilms, NMRC/AP material, Environment Agency/English Nature imagery, and local photographic sets.",
+		"sourceArchivePaths": [
+			"AirPhotos/EN_County_APs",
+			"AirPhotos/EN_County_APs_new",
+			"AirPhotos/aerialphotographs2",
+			"AirPhotos/DL_APs",
+			"History/NMRC_AeroFilms"
+		],
+		"assets": [],
+		"nextSteps": [
+			"Generate a photograph inventory with dates, sources, approximate footprints, and rights notes.",
+			"Create web thumbnails and lower-resolution JPEG/WebP access copies.",
+			"Identify image sets suitable for georeferencing or oblique-photo annotation.",
+			"Separate raw archival images from public preview derivatives."
+		],
+		"limitations": "The collection includes large TIFFs and camera raw files that are not appropriate for git or direct static hosting."
+	},
+	{
+		"id": "hfd-hedgerow-surveys",
+		"title": "Habitat and Hedgerow Surveys",
+		"period": "1990-2025",
+		"coverage": "Herefordshire",
+		"theme": "ecology",
+		"status": "cataloguing",
+		"summary": "Long-term ecological and habitat material, including hedgerows, grassland, orchards, LWS criteria, plant records, and habitat mapping.",
+		"sourceArchivePaths": [
+			"Habitat/Habitat",
+			"Habitat/HEDGES",
+			"Habitat/MEADOW",
+			"Habitat/Orchards",
+			"Maps/1QGIS",
+			"Maps/GovData/Traditional_Orchards"
+		],
+		"assets": [],
+		"nextSteps": [
+			"Identify canonical spreadsheets/databases and separate them from duplicated exports.",
+			"Convert priority vector layers to GeoPackage and simplified GeoJSON.",
+			"Document sensitive ecological records before public release.",
+			"Create a timeline of survey methods and organisational context."
+		],
+		"limitations": "The raw folder structure mixes reports, photos, GIS files, and working material."
+	},
+	{
+		"id": "hfd-pro-e112",
+		"title": "Public Records and Exchequer Material",
+		"period": "1558-1702",
+		"coverage": "Herefordshire and related record offices",
+		"theme": "public records",
+		"status": "research-needed",
+		"summary": "Scans, references, and working material relating to Exchequer records, legal documents, estate material, and early modern public records.",
+		"sourceArchivePaths": [
+			"History/Freeman/IMAGES 02 (John Quanrud)/E178",
+			"History/Freeman/IMAGES 02 (John Quanrud)/E134",
+			"History/Freeman/IMAGES 02 (John Quanrud)/E315",
+			"History/HRO",
+			"History/Lyonshall"
+		],
+		"assets": [],
+		"nextSteps": [
+			"Inventory record references and image sequences.",
+			"Prioritise transcription and translation tasks.",
+			"Link references to parishes, estates, fields, and people where possible.",
+			"Define citation and rights guidance for public use."
+		],
+		"limitations": "Records need scholarly interpretation before they become useful datasets."
+	},
+	{
+		"id": "hfd-woodland-1948",
+		"title": "Woodland and 1948 Landscape Survey Material",
+		"period": "1948-1953",
+		"coverage": "Herefordshire",
+		"theme": "woodland",
+		"status": "source-assessment",
+		"summary": "Woodland cover and post-war landscape material, including FC1953ecw, Ancient Woodland data, DEM/LIDAR context, and related map layers.",
+		"sourceArchivePaths": [
+			"Maps/FC1953ecw",
+			"Maps/GovData/Ancient_Woodlands_England",
+			"Maps/DEM",
+			"Maps/LIDAR",
+			"Maps/LittleDoward"
+		],
+		"assets": [],
+		"nextSteps": [
+			"Clarify which source files correspond to 1948 survey evidence versus later derived mapping.",
+			"Convert suitable raster layers to PMTiles or COGs.",
+			"Publish a woodland-change research brief.",
+			"Cross-reference with aerial photography and tithe-era woodland boundaries."
+		],
+		"limitations": "The 1948 evidence appears distributed across several map and derived-data folders."
+	},
+	{
+		"id": "hfd-royal-commission",
+		"title": "Royal Commission and Parish Survey Material",
+		"period": "1930-1939",
+		"coverage": "Herefordshire parishes",
+		"theme": "historic survey",
+		"status": "inventory-needed",
+		"summary": "Parish-level survey material and related historical archive scans from the Royal Commission era and adjacent collections.",
+		"sourceArchivePaths": [
+			"History/NMRC_RC",
+			"History/NMRC_printed",
+			"History/NMRC_redboxes",
+			"History"
+		],
+		"assets": [],
+		"nextSteps": [
+			"Split the broad History folder into coherent public collection records.",
+			"Create parish-level index pages.",
+			"Identify high-value documents for transcription and geocoding.",
+			"Connect survey records to map and aerial-photo evidence."
+		],
+		"limitations": "The broad History folder needs deeper curation before public browsing is practical."
+	},
+	{
+		"id": "hfd-river-wye",
+		"title": "River Wye and NRA Archive",
+		"period": "1950-2010",
+		"coverage": "River Wye corridor",
+		"theme": "river history",
+		"status": "cataloguing",
+		"summary": "Historic maps, bridge and flood photographs, NRA records, and Wye corridor material for river-management and landscape-change research.",
+		"sourceArchivePaths": [
+			"History/NRAarchives",
+			"History/NMRC_RC/Brockhampton[Wye]",
+			"History/NMRC_RC/Preston_on_Wye[someframesneed reversing]",
+			"History/NMRC_RC/StauntononWye",
+			"History/NMRC_RC/Ross-on-Wye",
+			"History/HRO/AS58-9-49 R Wye plan-Price 1805"
+		],
+		"assets": [],
+		"nextSteps": [
+			"Create a River Wye sub-catalog by place and record type.",
+			"Georeference bridge, flood, and river-plan material.",
+			"Build a research timeline linking flood events, infrastructure, and land management.",
+			"Prepare public download bundles for cleaned metadata."
+		],
+		"limitations": "The material spans several archive folders and needs normalised place names."
+	}
+]

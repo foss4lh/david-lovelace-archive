@@ -1,0 +1,17 @@
+[build]
+  command = "npm run data:download -- --required-only && npm run build"
+  publish = "build"
+
+[build.environment]
+  NODE_VERSION = "22"
+
+[[headers]]
+  for = "/data/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/*.pmtiles"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+    Accept-Ranges = "bytes"

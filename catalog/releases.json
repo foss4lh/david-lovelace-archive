@@ -1,0 +1,16 @@
+{
+	"schemaVersion": 1,
+	"releaseTag": "data-v0.1.0",
+	"repository": "foss4lh/david-lovelace-archive",
+	"assets": [
+		{
+			"id": "whitby-tithe-pmtiles",
+			"title": "Whitby Tithe Map PMTiles prototype",
+			"filename": "whitby-tithe.pmtiles",
+			"url": "https://github.com/foss4lh/david-lovelace-archive/releases/download/data-v0.1.0/whitby-tithe.pmtiles",
+			"target": "static/data/whitby-tithe.pmtiles",
+			"requiredForBuild": false,
+			"status": "planned-release"
+		}
+	]
+}
