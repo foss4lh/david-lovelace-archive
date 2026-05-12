@@ -6,7 +6,7 @@
 		"coverage": "Full Archive",
 		"theme": "metadata",
 		"status": "available",
-		"summary": "A DuckDB database containing a complete inventory of the 2TB archive, including file paths, sizes, formats, and checksums. This enables rapid querying of the collection structure without needing the raw files locally.",
+		"summary": "A DuckDB database containing a complete inventory of high-value files within the 2TB archive. Over 490,000 entries including maps (ecw, tif, shp), photography (jpg), and research notes (pdf, doc, txt, xls). Camera RAW files and GIS sidecars are excluded to ensure a clean, performant index.",
 		"sourceArchivePaths": ["."],
 		"assets": [
 			{

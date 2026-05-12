@@ -10,7 +10,7 @@ const outputFile = 'catalog/archive-inventory.csv';
 /**
  * High-value historical and research formats to keep in the public index.
  * Note: Camera RAW files (arw, srw, crw, dng) are excluded as high-res JPGs exist.
- * GIS sidecars (shx, prj, qpj, xml, cpg) are excluded to reduce noise, 
+ * GIS sidecars (shx, prj, qpj, xml, cpg) are excluded to reduce noise,
  * keeping only core spatial data (shp, dbf, ecw, asc, tab).
  */
 const INCLUDED_EXTENSIONS = new Set([

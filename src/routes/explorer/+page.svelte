@@ -40,7 +40,20 @@
 	let loadError = $state<string | null>(null);
 
 	// High-value formats for quick filtering
-	const primaryFormats = ['all', 'ecw', 'tif', 'jpg', 'pdf', 'doc', 'txt', 'shp', 'csv'];
+	const primaryFormats = [
+		'all',
+		'ecw',
+		'tif',
+		'jpg',
+		'pdf',
+		'doc',
+		'txt',
+		'shp',
+		'csv',
+		'zip',
+		'tab',
+		'asc'
+	];
 
 	onMount(() => {
 		// Automatically query the full index on mount
@@ -179,9 +192,9 @@
 	<section class="page-heading">
 		<h1>File explorer</h1>
 		<p>
-			Search and browse over 450,000 high-value historical and research files within the 2TB
-			archive. This index filters out system noise to focus on maps, aerial photography, and
-			research records.
+			Search and browse over 490,000 high-value historical and research files within the 2TB archive
+			index. Camera RAW files and common GIS sidecars (shx, prj, xml) are excluded to prioritize
+			primary maps, photography, and research records.
 		</p>
 	</section>
 
