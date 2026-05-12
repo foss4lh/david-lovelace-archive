@@ -110,22 +110,35 @@
 	<link rel="stylesheet" href="https://unpkg.com/maplibre-gl@5.24.0/dist/maplibre-gl.css" />
 </svelte:head>
 
-<div class="space-y-4 p-4">
-	<h1 class="text-2xl font-bold">MapLibre Raster PMTiles Debug</h1>
+<div style="padding: 1rem;">
+	<h1 style="font-size: 1.5rem; font-weight: bold; margin-bottom: 1rem;">
+		MapLibre Raster PMTiles Debug
+	</h1>
 	{#if error}
-		<div class="rounded bg-red-100 p-4 text-red-800">
+		<div
+			style="background: #fee2e2; color: #991b1b; padding: 1rem; border-radius: 4px; margin-bottom: 1rem;"
+		>
 			<strong>Error:</strong>
 			{error}
 		</div>
 	{/if}
 	{#if loading}
-		<div class="rounded bg-gray-100 p-4 text-gray-600">Loading map…</div>
+		<div
+			style="background: #f3f4f6; color: #4b5563; padding: 1rem; border-radius: 4px; margin-bottom: 1rem;"
+		>
+			Loading map…
+		</div>
 	{/if}
-	<div bind:this={container} class="h-[500px] w-full rounded border"></div>
-	<div class="rounded bg-gray-50 p-4 font-mono text-sm">
-		<h3 class="mb-2 font-bold">Debug log:</h3>
+	<div
+		bind:this={container}
+		style="height: 500px; width: 100%; border: 1px solid #d1d5db; border-radius: 4px;"
+	></div>
+	<div
+		style="background: #f9fafb; padding: 1rem; margin-top: 1rem; font-family: monospace; font-size: 0.875rem; border-radius: 4px;"
+	>
+		<h3 style="margin-bottom: 0.5rem; font-weight: bold;">Debug log:</h3>
 		{#each log as line, i (i)}
-			<div class="py-0.5">{line}</div>
+			<div style="padding: 2px 0;">{line}</div>
 		{/each}
 	</div>
 </div>

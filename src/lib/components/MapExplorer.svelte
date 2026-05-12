@@ -261,13 +261,15 @@
 	}
 
 	.map-stage {
+		display: flex;
+		flex-direction: column;
 		overflow: hidden;
 		min-height: 620px;
 	}
 
 	.map-canvas {
 		width: 100%;
-		height: 100%;
+		flex: 1 1 auto;
 		min-height: 620px;
 	}
 
