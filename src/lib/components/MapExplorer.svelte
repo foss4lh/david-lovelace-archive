@@ -1,16 +1,15 @@
 <script lang="ts">
-	import 'ol/ol.css';
-	import { onMount } from 'svelte';
+	import { onMount, onDestroy } from 'svelte';
+	import { browser } from '$app/environment';
 	import type { ArchiveDataset, DatasetAsset } from '$lib/catalog';
 
 	let { datasets }: { datasets: ArchiveDataset[] } = $props();
 
-	let mapElement: HTMLDivElement;
-	let map: import('ol/Map').default | undefined;
-	let overlayLayer: import('ol/layer/WebGLTile').default | undefined;
+	let container: HTMLDivElement;
+	// eslint-disable-next-line @typescript-eslint/no-explicit-any
+	let map: any = null;
 	let selectedId = $state('');
 	let opacity = $state(0.75);
-	let attemptedLayer = $state(false);
 	let layerError = $state<string | null>(null);
 	let layerLoading = $state(false);
 
@@ -23,120 +22,107 @@
 		if (!selectedId && datasets.length) selectedId = datasets[0].id;
 	});
 
+	// Opacity control
+	$effect(() => {
+		if (!map) return;
+		map.setPaintProperty('raster-layer', 'raster-opacity', opacity);
+	});
+
 	onMount(() => {
-		let disposed = false;
+		if (!browser) return;
 
-		async function initialise() {
-			const [
-				{ default: OlMap },
-				{ default: View },
-				{ default: TileLayer },
-				{ default: OSM },
-				proj,
-				control
-			] = await Promise.all([
-				import('ol/Map.js'),
-				import('ol/View.js'),
-				import('ol/layer/Tile.js'),
-				import('ol/source/OSM.js'),
-				import('ol/proj.js'),
-				import('ol/control/ScaleLine.js')
-			]);
+		async function initMap() {
+			const { default: maplibregl } = await import('maplibre-gl');
+			const { Protocol } = await import('pmtiles');
 
-			if (disposed) return;
+			const protocol = new Protocol();
+			maplibregl.addProtocol('pmtiles', protocol.tile);
 
-			map = new OlMap({
-				target: mapElement,
-				layers: [
-					new TileLayer({
-						source: new OSM()
-					})
-				],
-				view: new View({
-					center: proj.fromLonLat([-2.72, 52.08]),
-					zoom: 9.5
-				})
+			map = new maplibregl.Map({
+				container,
+				style: {
+					version: 8,
+					sources: {
+						osm: {
+							type: 'raster',
+							tiles: ['https://tile.openstreetmap.org/{z}/{x}/{y}.png'],
+							tileSize: 256,
+							attribution: '&copy; OpenStreetMap contributors',
+							maxzoom: 19
+						}
+					},
+					layers: [
+						{
+							id: 'osm',
+							type: 'raster',
+							source: 'osm'
+						}
+					]
+				},
+				center: [-2.72, 52.08],
+				zoom: 9.5
 			});
 
-			map.addControl(
-				new control.default({
-					units: 'metric',
-					bar: true,
-					steps: 4,
-					text: true,
-					minWidth: 140
-				})
-			);
+			map.on('error', (e: unknown) => {
+				console.error('MapLibre error:', e);
+			});
 		}
 
-		initialise();
-		return () => {
-			disposed = true;
-			map?.setTarget(undefined);
-		};
+		initMap();
 	});
 
-	$effect(() => {
-		if (!map) return;
-		overlayLayer?.setOpacity(opacity);
+	onDestroy(() => {
+		map?.remove();
 	});
 
+	// Add/remove PMTiles overlay when selectedAsset changes
 	$effect(() => {
-		if (!map) return;
+		if (!map || !selectedAsset?.localPath) return;
 
-		if (overlayLayer) {
-			map.removeLayer(overlayLayer);
-			overlayLayer = undefined;
-		}
-
-		attemptedLayer = false;
-		layerError = null;
-		layerLoading = false;
-
-		if (!selectedAsset?.localPath) return;
-
-		async function addLayer() {
-			if (!map || !selectedAsset?.localPath) return;
+		async function addOverlay() {
+			if (!selectedAsset) return;
 			layerLoading = true;
+			layerError = null;
 
 			try {
-				const [{ default: WebGLTile }, { PMTilesRasterSource }] = await Promise.all([
-					import('ol/layer/WebGLTile.js'),
-					import('ol-pmtiles')
-				]);
-
-				// Use localPath as an absolute URL so range requests work in both dev and production
+				const { PMTiles } = await import('pmtiles');
 				const localPath = selectedAsset.localPath;
+				if (!localPath) throw new Error('Asset has no localPath');
 				const url = localPath.startsWith('http')
 					? localPath
 					: `${window.location.origin}${localPath}`;
 
 				console.log('[MapExplorer] Loading PMTiles from:', url);
 
-				const source = new PMTilesRasterSource({
-					url,
-					attributions: 'David Lovelace Archive',
-					tileSize: 256
+				const p = new PMTiles(url);
+				const h = await p.getHeader();
+
+				// Remove existing overlay if present
+				if (map.getSource('pmtiles-raster')) {
+					map.removeLayer('raster-layer');
+					map.removeSource('pmtiles-raster');
+				}
+
+				map.addSource('pmtiles-raster', {
+					type: 'raster',
+					url: `pmtiles://${url}`,
+					tileSize: 256,
+					attribution: 'David Lovelace Archive'
 				});
 
-				// Listen for source errors
-				// eslint-disable-next-line @typescript-eslint/no-explicit-any
-				source.on('error', (e: any) => {
-					console.error('[MapExplorer] PMTiles source error:', e);
-					layerError = `Tile source error: ${e.message || 'unknown'}`;
+				map.addLayer({
+					id: 'raster-layer',
+					type: 'raster',
+					source: 'pmtiles-raster',
+					paint: { 'raster-opacity': opacity }
 				});
 
-				overlayLayer = new WebGLTile({
-					source,
-					opacity
-				});
-
-				map.addLayer(overlayLayer);
-				attemptedLayer = true;
-
-				// Auto-zoom to layer bounds when available
+				// Zoom to layer bounds if available
 				if (selectedAsset.bounds) {
-					zoomToBounds(selectedAsset.bounds);
+					const [minX, minY, maxX, maxY] = selectedAsset.bounds;
+					map.fitBounds([minX, minY, maxX, maxY], { padding: 40, duration: 600 });
+				} else {
+					map.flyTo({ center: [h.centerLon, h.centerLat], zoom: h.maxZoom - 2 });
 				}
 			} catch (err: unknown) {
 				console.error('[MapExplorer] Failed to load PMTiles:', err);
@@ -146,18 +132,24 @@
 			}
 		}
 
-		addLayer();
+		// Wait for style to load before adding overlay
+		if (map.isStyleLoaded()) {
+			addOverlay();
+		} else {
+			map.once('style.load', addOverlay);
+		}
 	});
 
 	function zoomToBounds(bounds: [number, number, number, number]) {
 		if (!map) return;
 		const [minX, minY, maxX, maxY] = bounds;
-		import('ol/proj.js').then((proj) => {
-			const extent = proj.transformExtent([minX, minY, maxX, maxY], 'EPSG:4326', 'EPSG:3857');
-			map!.getView().fit(extent, { padding: [40, 40, 40, 40], duration: 600 });
-		});
+		map.fitBounds([minX, minY, maxX, maxY], { padding: 40, duration: 600 });
 	}
 </script>
+
+<svelte:head>
+	<link rel="stylesheet" href="https://unpkg.com/maplibre-gl@5.24.0/dist/maplibre-gl.css" />
+</svelte:head>
 
 <div class="map-layout">
 	<aside class="map-sidebar">
@@ -201,20 +193,20 @@
 						<p class="muted">Loading layer…</p>
 					{:else if layerError}
 						<p class="error">{layerError}</p>
-					{:else if attemptedLayer}
+					{:else}
 						<p class="muted">
 							Layer loaded. Use “Zoom to layer” above if tiles are not in the current view.
 						</p>
 					{/if}
 				{:else}
-					<p class="muted">No map-ready PMTiles or COG asset is registered yet.</p>
+					<p class="muted">No map-ready PMTiles asset is registered yet.</p>
 				{/if}
 			</div>
 		{/if}
 	</aside>
 
 	<section class="map-stage">
-		<div bind:this={mapElement} class="map-canvas" aria-label="OpenLayers map"></div>
+		<div bind:this={container} class="map-canvas" aria-label="MapLibre map"></div>
 	</section>
 </div>
 
