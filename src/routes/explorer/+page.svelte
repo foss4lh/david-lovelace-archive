@@ -1,20 +1,51 @@
 <script lang="ts">
 	import { resolve } from '$app/paths';
-	import { FileText, Image, Map as MapIcon, Search } from '@lucide/svelte';
+	import { FileText, Image, Map as MapIcon, Search, Database as DbIcon, Loader2 } from '@lucide/svelte';
 	import explorerData from '../../../catalog/explorer.json';
+	import { queryInventory } from '$lib/duckdb';
 
 	let searchQuery = $state('');
 	let selectedFormat = $state('all');
+	let isQuerying = $state(false);
+	let remoteResults = $state<any[]>([]);
 
 	const formats = ['all', ...new Set(explorerData.map((f) => f.format))];
 
 	const filteredFiles = $derived(
-		explorerData.filter((file) => {
-			const matchesSearch = file.path.toLowerCase().includes(searchQuery.toLowerCase());
-			const matchesFormat = selectedFormat === 'all' || file.format === selectedFormat;
-			return matchesSearch && matchesFormat;
-		})
+		selectedFormat === 'all' && searchQuery === '' 
+			? explorerData 
+			: remoteResults.length > 0 
+				? remoteResults 
+				: explorerData.filter((file) => {
+					const matchesSearch = file.path.toLowerCase().includes(searchQuery.toLowerCase());
+					const matchesFormat = selectedFormat === 'all' || file.format === selectedFormat;
+					return matchesSearch && matchesFormat;
+				})
 	);
+
+	async function performRemoteQuery() {
+		if (searchQuery.length < 3 && selectedFormat === 'all') return;
+		
+		isQuerying = true;
+		try {
+			let sql = `SELECT path, size, format FROM files WHERE 1=1`;
+			if (searchQuery) sql += ` AND path ILIKE '%${searchQuery}%'`;
+			if (selectedFormat !== 'all') sql += ` AND format = '${selectedFormat}'`;
+			sql += ` LIMIT 50`;
+
+			const results = await queryInventory(sql);
+			remoteResults = results.toArray().map(row => ({
+				path: row.path,
+				size: (row.size / (1024 * 1024)).toFixed(1) + ' MB',
+				format: row.format,
+				description: 'Found in archive index'
+			}));
+		} catch (e) {
+			console.error('DuckDB Query failed', e);
+		} finally {
+			isQuerying = false;
+		}
+	}
 
 	function getIcon(format: string) {
 		if (format === 'ecw') return MapIcon;
@@ -40,18 +71,31 @@
 	<div class="explorer-controls">
 		<div class="search-box">
 			<Search size={18} />
-			<input type="text" placeholder="Search paths..." bind:value={searchQuery} />
+			<input 
+				type="text" 
+				placeholder="Search 1.2M+ paths..." 
+				bind:value={searchQuery} 
+				onkeydown={(e) => e.key === 'Enter' && performRemoteQuery()}
+			/>
 		</div>
 		<div class="format-filters">
 			{#each formats as format}
 				<button
 					class:active={selectedFormat === format}
-					onclick={() => (selectedFormat = format)}
+					onclick={() => { selectedFormat = format; performRemoteQuery(); }}
 				>
 					{format.toUpperCase()}
 				</button>
 			{/each}
 		</div>
+		<button class="button query-btn" onclick={performRemoteQuery} disabled={isQuerying}>
+			{#if isQuerying}
+				<Loader2 size={18} class="spin" />
+			{:else}
+				<DbIcon size={18} />
+			{/if}
+			Query Index
+		</button>
 	</div>
 
 	<div class="file-grid">
@@ -127,6 +171,19 @@
 		color: #fffdf7;
 	}
 
+	.query-btn {
+		min-width: 140px;
+	}
+
+	:global(.spin) {
+		animation: spin 1s linear infinite;
+	}
+
+	@keyframes spin {
+		from { transform: rotate(0deg); }
+		to { transform: rotate(360deg); }
+	}
+
 	.file-grid {
 		display: grid;
 		grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
@@ -185,3 +242,4 @@
 		text-align: center;
 	}
 </style>
+
