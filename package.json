@@ -8,6 +8,8 @@
 		"build": "vite build",
 		"preview": "vite preview",
 		"data:download": "node scripts/download-data.mjs",
+		"inventory:parse": "node scripts/audit/parse-inventory.mjs",
+		"inventory:duckdb": "duckdb static/data/archive.duckdb \"CREATE OR REPLACE TABLE files AS SELECT * FROM read_csv_auto('catalog/archive-inventory.csv');\"",
 		"archive:audit": "node scripts/audit/archive-summary.mjs",
 		"prepare": "svelte-kit sync || echo ''",
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
