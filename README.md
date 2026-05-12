@@ -2,6 +2,10 @@
 
 Static-first website and future web application for the David Lovelace Archive, a large Herefordshire landscape history collection containing maps, aerial photography, habitat data, public records, research notes, and working GIS material.
 
+Live site:
+
+https://david-lovelace-archive.netlify.app
+
 ## Status
 
 This repo is the canonical place to bring together the earlier `hfd-*` and `foss4lh` work. It is designed to keep code and data separate:
