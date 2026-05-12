@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { Download, ExternalLink, FolderTree } from '@lucide/svelte';
+	import { resolve } from '$app/paths';
 	import { datasets, releaseManifest, statusLabel } from '$lib/catalog';
 </script>
 
@@ -63,6 +64,13 @@
 										{#if asset.remoteUrl}
 											<!-- eslint-disable-next-line svelte/no-navigation-without-resolve -->
 											<a href={asset.remoteUrl} target="_blank" rel="noreferrer">release URL</a>
+										{/if}
+										{#if asset.kind === 'duckdb'}
+											<a
+												href={resolve('/explorer')}
+												class="explore-link"
+												style="margin-left: 0.5rem; font-weight: 600;">Explore dataset &rarr;</a
+											>
 										{/if}
 									</li>
 								{/each}
