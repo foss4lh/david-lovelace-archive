@@ -157,6 +157,15 @@
 				"localPath": "/data/fc1953-woodland.pmtiles",
 				"remoteUrl": "https://github.com/foss4lh/david-lovelace-archive/releases/download/data-v0.1.0/fc1953-woodland.pmtiles",
 				"status": "planned-release"
+			},
+			{
+				"id": "fc1953-c13-pmtiles",
+				"kind": "pmtiles",
+				"title": "FC1953 C13_14_20_21 prototype",
+				"releaseAsset": "fc1953-c13.pmtiles",
+				"localPath": "/data/fc1953-c13.pmtiles",
+				"remoteUrl": "https://github.com/foss4lh/david-lovelace-archive/releases/download/data-v0.1.0/fc1953-c13.pmtiles",
+				"status": "available"
 			}
 		],
 		"nextSteps": [

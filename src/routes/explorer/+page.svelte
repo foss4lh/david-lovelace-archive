@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { onMount } from 'svelte';
 	import {
 		FileText,
 		Image,
@@ -6,9 +7,9 @@
 		Map as MapIcon,
 		Search,
 		Database as DbIcon,
-		Loader2
+		Loader2,
+		AlertCircle
 	} from '@lucide/svelte';
-	import explorerData from '../../../catalog/explorer.json';
 	import { queryInventory } from '$lib/duckdb';
 
 	interface FileEntry {
@@ -36,45 +37,17 @@
 	let remoteFolderResults = $state<FolderEntry[]>([]);
 	let remoteMatchCount = $state<number | null>(null);
 	let hasQueriedRemote = $state(false);
+	let loadError = $state<string | null>(null);
 
-	const formats = ['all', ...new Set(explorerData.map((f) => f.format))];
+	// High-value formats for quick filtering
+	const primaryFormats = ['all', 'ecw', 'tif', 'jpg', 'pdf', 'doc', 'txt', 'shp'];
 
-	const isRemoteMode = $derived(
-		selectedView === 'folders' ||
-			selectedFormat !== 'all' ||
-			searchQuery.trim().length >= 3 ||
-			folderQuery.trim().length > 0
-	);
-
-	const localFilteredFiles = $derived(
-		(explorerData as FileEntry[]).filter((file) => {
-			const lowerPath = file.path.toLowerCase();
-			const matchesSearch = lowerPath.includes(searchQuery.toLowerCase());
-			const matchesFolder = folderQuery.trim()
-				? lowerPath.includes(folderQuery.trim().toLowerCase())
-				: true;
-			const matchesFormat = selectedFormat === 'all' || file.format === selectedFormat;
-			return matchesSearch && matchesFolder && matchesFormat;
-		})
-	);
-
-	const totalMatches = $derived(isRemoteMode ? (remoteMatchCount ?? 0) : localFilteredFiles.length);
-
-	const totalPages = $derived(Math.max(1, Math.ceil(totalMatches / PAGE_SIZE)));
-
-	const pagedLocalFiles = $derived(
-		localFilteredFiles.slice((currentPage - 1) * PAGE_SIZE, currentPage * PAGE_SIZE)
-	);
-
-	const displayedFiles = $derived(isRemoteMode ? remoteFileResults : pagedLocalFiles);
-
-	const showingFrom = $derived(totalMatches === 0 ? 0 : (currentPage - 1) * PAGE_SIZE + 1);
-	const showingTo = $derived(
-		totalMatches === 0 ? 0 : Math.min((currentPage - 1) * PAGE_SIZE + PAGE_SIZE, totalMatches)
-	);
+	onMount(() => {
+		// Initial load of the full index
+		performRemoteQuery(1);
+	});
 
 	function resetQueryState(resetPage = true) {
-		hasQueriedRemote = false;
 		remoteMatchCount = null;
 		remoteFileResults = [];
 		remoteFolderResults = [];
@@ -98,14 +71,11 @@
 	}
 
 	async function performRemoteQuery(page = 1) {
-		if (!isRemoteMode) {
-			resetQueryState();
-			return;
-		}
-
 		currentPage = page;
 		isQuerying = true;
 		hasQueriedRemote = true;
+		loadError = null;
+
 		try {
 			const whereClause = buildWhereClause();
 			const offset = (page - 1) * PAGE_SIZE;
@@ -126,7 +96,7 @@
 					SELECT COUNT(*) AS match_count
 					FROM (SELECT DISTINCT folder FROM folders WHERE folder <> '') unique_folders
 				`);
-				remoteMatchCount = Number(countResult.getChild('match_count')?.get(0) ?? 0);
+				remoteMatchCount = Number(countResult?.getChild('match_count')?.get(0) ?? 0);
 
 				const results = await queryInventory(`
 					WITH scoped AS (
@@ -150,34 +120,37 @@
 					LIMIT ${PAGE_SIZE} OFFSET ${offset}
 				`);
 
-				remoteFolderResults = results.toArray().map((row) => ({
-					path: row.folder as string,
-					fileCount: Number(row.file_count ?? 0),
-					totalSize: `${(Number(row.total_bytes ?? 0) / (1024 * 1024)).toFixed(1)} MB`
-				}));
+				remoteFolderResults =
+					// eslint-disable-next-line @typescript-eslint/no-explicit-any
+					results?.toArray().map((row: any) => ({
+						path: row.folder as string,
+						fileCount: Number(row.file_count ?? 0),
+						totalSize: `${(Number(row.total_bytes ?? 0) / (1024 * 1024)).toFixed(1)} MB`
+					})) ?? [];
 				remoteFileResults = [];
 			} else {
 				const countResult = await queryInventory(
 					`SELECT COUNT(*) AS match_count FROM files ${whereClause}`
 				);
-				remoteMatchCount = Number(countResult.getChild('match_count')?.get(0) ?? 0);
+				remoteMatchCount = Number(countResult?.getChild('match_count')?.get(0) ?? 0);
 
 				const results = await queryInventory(
 					`SELECT path, size, format FROM files ${whereClause} ORDER BY size DESC NULLS LAST LIMIT ${PAGE_SIZE} OFFSET ${offset}`
 				);
-				remoteFileResults = results.toArray().map((row) => ({
-					path: row.path as string,
-					size: ((row.size as number) / (1024 * 1024)).toFixed(1) + ' MB',
-					format: row.format as string,
-					description: 'Found in archive index'
-				}));
+				remoteFileResults =
+					// eslint-disable-next-line @typescript-eslint/no-explicit-any
+					results?.toArray().map((row: any) => ({
+						path: row.path as string,
+						size: ((row.size as number) / (1024 * 1024)).toFixed(1) + ' MB',
+						format: row.format as string,
+						description: 'Found in archive index'
+					})) ?? [];
 				remoteFolderResults = [];
 			}
 		} catch (e) {
 			console.error('DuckDB Query failed', e);
+			loadError = 'Archive index is loading or unavailable. Try refreshing the page.';
 			remoteMatchCount = 0;
-			remoteFileResults = [];
-			remoteFolderResults = [];
 		} finally {
 			isQuerying = false;
 		}
@@ -185,12 +158,15 @@
 
 	function goToPage(page: number) {
 		if (page < 1 || page > totalPages || page === currentPage || isQuerying) return;
-		if (isRemoteMode) {
-			performRemoteQuery(page);
-			return;
-		}
-		currentPage = page;
+		performRemoteQuery(page);
 	}
+
+	const totalMatches = $derived(remoteMatchCount ?? 0);
+	const totalPages = $derived(Math.max(1, Math.ceil(totalMatches / PAGE_SIZE)));
+	const showingFrom = $derived(totalMatches === 0 ? 0 : (currentPage - 1) * PAGE_SIZE + 1);
+	const showingTo = $derived(
+		totalMatches === 0 ? 0 : Math.min((currentPage - 1) * PAGE_SIZE + PAGE_SIZE, totalMatches)
+	);
 
 	function getIcon(format: string) {
 		if (format === 'ecw') return MapIcon;
@@ -203,8 +179,8 @@
 	<section class="page-heading">
 		<h1>File explorer</h1>
 		<p>
-			Search and browse individual files within the 2TB archive. This index contains over 1.2
-			million entries, helping to identify candidates for georeferencing and transcription.
+			Search and browse over 1.1 million files within the 2TB archive index. This view helps
+			identify candidates for georeferencing, transcription, and research publication.
 		</p>
 	</section>
 
@@ -215,6 +191,7 @@
 				onclick={() => {
 					selectedView = 'files';
 					resetQueryState();
+					performRemoteQuery(1);
 				}}
 			>
 				Files
@@ -224,6 +201,7 @@
 				onclick={() => {
 					selectedView = 'folders';
 					resetQueryState();
+					performRemoteQuery(1);
 				}}
 			>
 				Folders
@@ -235,9 +213,6 @@
 				type="text"
 				placeholder="Search file paths..."
 				bind:value={searchQuery}
-				oninput={() => {
-					resetQueryState();
-				}}
 				onkeydown={(e) => e.key === 'Enter' && performRemoteQuery(1)}
 			/>
 		</div>
@@ -245,16 +220,13 @@
 			<Folder size={18} />
 			<input
 				type="text"
-				placeholder="Filter by folder path..."
+				placeholder="Filter by folder..."
 				bind:value={folderQuery}
-				oninput={() => {
-					resetQueryState();
-				}}
 				onkeydown={(e) => e.key === 'Enter' && performRemoteQuery(1)}
 			/>
 		</div>
 		<div class="format-filters">
-			{#each formats as format (format)}
+			{#each primaryFormats as format (format)}
 				<button
 					class:active={selectedFormat === format}
 					onclick={() => {
@@ -273,36 +245,34 @@
 			{:else}
 				<DbIcon size={18} />
 			{/if}
-			Query Index
+			Search Index
 		</button>
 	</div>
 
+	{#if loadError}
+		<p class="load-error">
+			<AlertCircle size={18} />
+			{loadError}
+		</p>
+	{/if}
+
 	<p class="results-summary" aria-live="polite">
 		{#if isQuerying}
-			Querying full archive index...
-		{:else if isRemoteMode}
-			{#if hasQueriedRemote}
-				{#if remoteMatchCount === 0}
-					No {selectedView} match the current filter criteria.
-				{:else if remoteMatchCount !== null && remoteMatchCount > PAGE_SIZE}
-					Showing {showingFrom.toLocaleString()}-{showingTo.toLocaleString()} of {remoteMatchCount.toLocaleString()}
-					matching {selectedView}.
-				{:else if remoteMatchCount !== null}
-					Showing {remoteMatchCount.toLocaleString()} matching {selectedView}.
-				{/if}
+			Querying archive entries...
+		{:else if remoteMatchCount !== null}
+			{#if remoteMatchCount === 0}
+				No {selectedView} match the current filter criteria.
+			{:else if remoteMatchCount > PAGE_SIZE}
+				Showing {showingFrom.toLocaleString()}-{showingTo.toLocaleString()} of {remoteMatchCount.toLocaleString()}
+				matching {selectedView}.
 			{:else}
-				Press Query Index to run your current filters against the full archive index.
+				Showing {remoteMatchCount.toLocaleString()} matching {selectedView}.
 			{/if}
-		{:else}
-			Showing {showingFrom.toLocaleString()}-{showingTo.toLocaleString()} of {totalMatches.toLocaleString()}
-			sample files from the local explorer manifest.
 		{/if}
 	</p>
 
 	<div class="file-grid">
-		{#if isRemoteMode && !hasQueriedRemote}
-			<p class="empty">Run Query Index to search the full archive index.</p>
-		{:else if selectedView === 'folders'}
+		{#if selectedView === 'folders'}
 			{#each remoteFolderResults as folder (folder.path)}
 				<div class="file-card folder-card">
 					<div class="file-header">
@@ -318,10 +288,12 @@
 					</div>
 				</div>
 			{:else}
-				<p class="empty">No folders match your filters.</p>
+				{#if !isQuerying && hasQueriedRemote}
+					<p class="empty">No folders match your filters.</p>
+				{/if}
 			{/each}
 		{:else}
-			{#each displayedFiles as file (file.path)}
+			{#each remoteFileResults as file (file.path)}
 				{@const Icon = getIcon(file.format)}
 				<div class="file-card">
 					<div class="file-header">
@@ -337,12 +309,14 @@
 					</div>
 				</div>
 			{:else}
-				<p class="empty">No files match your filters.</p>
+				{#if !isQuerying && hasQueriedRemote}
+					<p class="empty">No files match your filters.</p>
+				{/if}
 			{/each}
 		{/if}
 	</div>
 
-	{#if totalPages > 1 && (!isRemoteMode || hasQueriedRemote)}
+	{#if totalPages > 1}
 		<nav class="pagination" aria-label="Results pagination">
 			<button
 				class="button"
@@ -399,7 +373,7 @@
 	}
 
 	.folder-box {
-		min-width: 260px;
+		min-width: 200px;
 	}
 
 	.search-box :global(svg) {
@@ -441,6 +415,18 @@
 
 	.query-btn {
 		min-width: 140px;
+	}
+
+	.load-error {
+		display: flex;
+		align-items: center;
+		gap: 0.5rem;
+		margin-bottom: 1rem;
+		padding: 0.75rem;
+		border-radius: 6px;
+		background: #fdecea;
+		color: #962116;
+		font-size: 0.9rem;
 	}
 
 	.results-summary {

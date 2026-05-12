@@ -3,8 +3,35 @@ import { readdir } from 'node:fs/promises';
 import { join } from 'node:path';
 import readline from 'node:readline';
 
-const inventoryDir = '/media/robin/foss4lh/david-lovelace-archive/file-info-names';
+const inventoryDir =
+	process.env.INVENTORY_ROOT ?? '/media/robin/foss4lh1/david-lovelace-archive/file-info-names';
 const outputFile = 'catalog/archive-inventory.csv';
+
+// Extensions to exclude to reduce noise in the 1.2M file index
+const EXCLUDED_EXTENSIONS = new Set([
+	'html',
+	'js',
+	'css',
+	'json',
+	'dll',
+	'h',
+	'tfw',
+	'ers',
+	'eww',
+	'xmp',
+	'cpg',
+	'download',
+	'db',
+	'info',
+	'tmp',
+	'bak',
+	'map',
+	'ini',
+	'log'
+]);
+
+// Filenames or patterns to exclude
+const EXCLUDED_NAMES = new Set(['thumbs.db', 'desktop.ini', 'zbthumbnail.info']);
 
 async function parseFile(filePath, csvStream) {
 	const fileStream = createReadStream(filePath);
@@ -33,9 +60,15 @@ async function parseFile(filePath, csvStream) {
 			if (sizeOrDir === '<DIR>') continue;
 			if (name === '.' || name === '..') continue;
 
+			// Filtering
+			const lowerName = name.toLowerCase();
+			if (EXCLUDED_NAMES.has(lowerName) || lowerName.startsWith('.')) continue;
+
+			const ext = name.split('.').pop().toLowerCase();
+			if (EXCLUDED_EXTENSIONS.has(ext)) continue;
+
 			const size = parseInt(sizeOrDir.replace(/,/g, ''), 10);
 			const fullPath = join(currentDir, name);
-			const ext = name.split('.').pop().toLowerCase();
 
 			csvStream.write(`"${fullPath.replace(/"/g, '""')}","${size}","${ext}","${date} ${time}"\n`);
 		}
@@ -44,7 +77,7 @@ async function parseFile(filePath, csvStream) {
 
 async function main() {
 	const files = (await readdir(inventoryDir)).filter((f) => f.endsWith('.txt'));
-	console.log(`Found ${files.length} inventory files`);
+	console.log(`Found ${files.length} inventory files in ${inventoryDir}`);
 
 	const csvStream = createWriteStream(outputFile);
 	csvStream.write('path,size,format,timestamp\n');

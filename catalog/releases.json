@@ -29,6 +29,15 @@
 			"target": "static/data/fc1953-woodland.pmtiles",
 			"requiredForBuild": false,
 			"status": "planned-release"
+		},
+		{
+			"id": "fc1953-c13-pmtiles",
+			"title": "FC1953 C13_14_20_21 PMTiles prototype",
+			"filename": "fc1953-c13.pmtiles",
+			"url": "https://github.com/foss4lh/david-lovelace-archive/releases/download/data-v0.1.0/fc1953-c13.pmtiles",
+			"target": "static/data/fc1953-c13.pmtiles",
+			"requiredForBuild": false,
+			"status": "available"
 		}
 	]
 }
