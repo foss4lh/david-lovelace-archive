@@ -165,7 +165,10 @@
 				"releaseAsset": "fc1953-c13.pmtiles",
 				"localPath": "/data/fc1953-c13.pmtiles",
 				"remoteUrl": "https://github.com/foss4lh/david-lovelace-archive/releases/download/data-v0.1.0/fc1953-c13.pmtiles",
-				"status": "available"
+				"status": "available",
+				"bounds": [-2.69346, 52.1581, -2.366237, 52.288521],
+				"minZoom": 10,
+				"maxZoom": 14
 			}
 		],
 		"nextSteps": [

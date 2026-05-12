@@ -25,6 +25,11 @@ export interface DatasetAsset {
 	localPath?: string;
 	remoteUrl?: string;
 	status: string;
+	/** Optional bounds as [minX, minY, maxX, maxY] in WGS84 */
+	bounds?: [number, number, number, number];
+	/** Optional min/max zoom hints */
+	minZoom?: number;
+	maxZoom?: number;
 }
 
 export interface ArchiveDataset {

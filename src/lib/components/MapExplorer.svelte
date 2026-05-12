@@ -11,6 +11,8 @@
 	let selectedId = $state('');
 	let opacity = $state(0.75);
 	let attemptedLayer = $state(false);
+	let layerError = $state<string | null>(null);
+	let layerLoading = $state(false);
 
 	const selectedDataset = $derived(datasets.find((dataset) => dataset.id === selectedId));
 	const selectedAsset = $derived(
@@ -88,30 +90,72 @@
 		}
 
 		attemptedLayer = false;
+		layerError = null;
+		layerLoading = false;
 
 		if (!selectedAsset?.localPath) return;
 
 		async function addLayer() {
 			if (!map || !selectedAsset?.localPath) return;
-			const [{ default: TileLayer }, { PMTilesRasterSource }] = await Promise.all([
-				import('ol/layer/Tile.js'),
-				import('ol-pmtiles')
-			]);
+			layerLoading = true;
 
-			overlayLayer = new TileLayer({
-				source: new PMTilesRasterSource({
-					url: selectedAsset.localPath,
+			try {
+				const [{ default: TileLayer }, { PMTilesRasterSource }] = await Promise.all([
+					import('ol/layer/Tile.js'),
+					import('ol-pmtiles')
+				]);
+
+				// Ensure the URL is absolute so range requests work in both dev and production
+				const url = selectedAsset.localPath.startsWith('http')
+					? selectedAsset.localPath
+					: `${window.location.origin}${selectedAsset.localPath}`;
+
+				console.log('[MapExplorer] Loading PMTiles from:', url);
+
+				const source = new PMTilesRasterSource({
+					url,
 					attributions: 'David Lovelace Archive',
 					tileSize: 256
-				}),
-				opacity
-			});
-			map.addLayer(overlayLayer);
-			attemptedLayer = true;
+				});
+
+				// Listen for source errors
+				// eslint-disable-next-line @typescript-eslint/no-explicit-any
+				source.on('error', (e: any) => {
+					console.error('[MapExplorer] PMTiles source error:', e);
+					layerError = `Tile source error: ${e.message || 'unknown'}`;
+				});
+
+				overlayLayer = new TileLayer({
+					source,
+					opacity
+				});
+
+				map.addLayer(overlayLayer);
+				attemptedLayer = true;
+
+				// Auto-zoom to layer bounds when available
+				if (selectedAsset.bounds) {
+					zoomToBounds(selectedAsset.bounds);
+				}
+			} catch (err: unknown) {
+				console.error('[MapExplorer] Failed to load PMTiles:', err);
+				layerError = err instanceof Error ? err.message : 'Failed to load layer';
+			} finally {
+				layerLoading = false;
+			}
 		}
 
 		addLayer();
 	});
+
+	function zoomToBounds(bounds: [number, number, number, number]) {
+		if (!map) return;
+		const [minX, minY, maxX, maxY] = bounds;
+		import('ol/proj.js').then((proj) => {
+			const extent = proj.transformExtent([minX, minY, maxX, maxY], 'EPSG:4326', 'EPSG:3857');
+			map!.getView().fit(extent, { padding: [40, 40, 40, 40], duration: 600 });
+		});
+	}
 </script>
 
 <div class="map-layout">
@@ -126,20 +170,39 @@
 		<label for="opacity">Overlay opacity: {Math.round(opacity * 100)}%</label>
 		<input id="opacity" type="range" min="0" max="1" step="0.05" bind:value={opacity} />
 
+		{#if selectedAsset?.bounds}
+			<button class="zoom-btn" onclick={() => zoomToBounds(selectedAsset.bounds!)}>
+				Zoom to layer
+			</button>
+		{/if}
+
 		{#if selectedDataset}
 			<div class="map-notes">
 				<span class="status">{selectedDataset.status.replace(/-/g, ' ')}</span>
 				<h2>{selectedDataset.title}</h2>
 				<p>{selectedDataset.summary}</p>
+
 				{#if selectedAsset}
 					<p>
-						Asset target: <code>{selectedAsset.localPath}</code>. Run
-						<code>npm run data:download</code> once the release asset exists.
+						Asset: <code>{selectedAsset.title}</code>
+						{#if selectedAsset.minZoom !== undefined && selectedAsset.maxZoom !== undefined}
+							(zoom {selectedAsset.minZoom}–{selectedAsset.maxZoom})
+						{/if}
 					</p>
-					{#if attemptedLayer}
+					{#if selectedAsset.bounds}
 						<p class="muted">
-							The PMTiles layer has been registered with OpenLayers. If the file has not been
-							downloaded yet, browser tile requests will return 404 until the asset is present.
+							Bounds: {selectedAsset.bounds[0].toFixed(3)}, {selectedAsset.bounds[1].toFixed(3)} →
+							{selectedAsset.bounds[2].toFixed(3)}, {selectedAsset.bounds[3].toFixed(3)}
+						</p>
+					{/if}
+
+					{#if layerLoading}
+						<p class="muted">Loading layer…</p>
+					{:else if layerError}
+						<p class="error">{layerError}</p>
+					{:else if attemptedLayer}
+						<p class="muted">
+							Layer loaded. Use “Zoom to layer” above if tiles are not in the current view.
 						</p>
 					{/if}
 				{:else}
@@ -188,6 +251,22 @@
 		color: #20231f;
 	}
 
+	.zoom-btn {
+		width: 100%;
+		margin-bottom: 1rem;
+		padding: 0.55rem;
+		border: 1px solid #304832;
+		border-radius: 6px;
+		background: #304832;
+		color: #fffdf7;
+		font-weight: 600;
+		cursor: pointer;
+	}
+
+	.zoom-btn:hover {
+		background: #3d5a3f;
+	}
+
 	.map-stage {
 		overflow: hidden;
 		min-height: 620px;
@@ -222,6 +301,14 @@
 
 	.muted {
 		color: #706c63;
+	}
+
+	.error {
+		color: #962116;
+		background: #fdecea;
+		padding: 0.5rem;
+		border-radius: 4px;
+		font-size: 0.85rem;
 	}
 
 	@media (max-width: 860px) {
