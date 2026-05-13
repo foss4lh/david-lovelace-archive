@@ -61,7 +61,12 @@
 									<li>
 										<strong>{asset.title}</strong>
 										<span>{asset.kind} · {statusLabel(asset.status)}</span>
-										{#if asset.remoteUrl}
+										{#if asset.kind === 'external-link' && asset.remoteUrl}
+											<!-- eslint-disable-next-line svelte/no-navigation-without-resolve -->
+											<a href={asset.remoteUrl} target="_blank" rel="noreferrer"
+												>Open external resource &rarr;</a
+											>
+										{:else if asset.remoteUrl}
 											<!-- eslint-disable-next-line svelte/no-navigation-without-resolve -->
 											<a href={asset.remoteUrl} target="_blank" rel="noreferrer">release URL</a>
 										{/if}

@@ -12,6 +12,10 @@ DOCKER="docker run --rm -v $ROOT:/data ginetto/gdal:2.4.4_ECW"
 mkdir -p "$OUTDIR"
 
 # Define maps: id|title|period|source_ecw_path|theme
+# For directories, source_ecw_path should end with /
+# For individual files, source_ecw_path is the relative path to the .ecw file
+# When a directory is specified, all .ecw files in that directory are merged via VRT
+# (excluding patch, test, copy, and subdirectories)
 declare -a MAPS=(
   "speed1606|John Speed — Hereford|1606|HARC/Raster/Hereford/speed1606.ecw|historic maps"
   "taylor1754|Taylor — Hereford|1754|HARC/Raster/Hereford/Taylor1754.ecw|historic maps"

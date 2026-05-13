@@ -105,6 +105,18 @@ function normalizePath(winPath) {
 	return winPath.replace(/\\+/g, '/').replace(/\/+/g, '/');
 }
 
+/**
+ * Flag files that are already comprehensively published online by third parties
+ * (e.g. National Library of Scotland OS map collections).
+ * These are kept in the CSV for completeness but excluded from the DuckDB
+ * so the public archive index focuses on unique material.
+ */
+function isAlreadyPublishedOnline(normalizedPath) {
+	return /\/(EN_Historical|1880_6inch|OS_opendata_2010|OS1931_6inch_NA|OS_SurveyorsDrawings|Herefordshire25000)\//i.test(
+		normalizedPath
+	);
+}
+
 function isExcludedFolder(dirPath) {
 	const normalized = normalizePath(dirPath);
 	return EXCLUDED_FOLDER_PATTERNS.some((re) => re.test(normalized));
@@ -181,7 +193,8 @@ async function scanFile(filePath) {
 			// Use simple concatenation for full path, then normalize
 			const fullPath = normalizePath(currentDir + '\\' + name);
 			const source = inferSource(fullPath);
-			rows.push({ fullPath, size, ext, dateTime: `${date} ${time}`, source });
+			const alreadyPublishedOnline = isAlreadyPublishedOnline(fullPath) ? 'TRUE' : 'FALSE';
+			rows.push({ fullPath, size, ext, dateTime: `${date} ${time}`, source, alreadyPublishedOnline });
 		}
 	}
 
@@ -251,13 +264,13 @@ async function main() {
 		);
 	}
 
-	// Phase 3: write CSV with source column
+	// Phase 3: write CSV with source and already_published_online columns
 	const csvStream = createWriteStream(outputFile);
-	csvStream.write('path,size,format,timestamp,source\n');
+	csvStream.write('path,size,format,timestamp,source,already_published_online\n');
 
 	for (const row of filteredRows) {
 		csvStream.write(
-			`"${row.fullPath.replace(/"/g, '""')}","${row.size}","${row.ext}","${row.dateTime}","${row.source}"\n`
+			`"${row.fullPath.replace(/"/g, '""')}","${row.size}","${row.ext}","${row.dateTime}","${row.source}","${row.alreadyPublishedOnline}"\n`
 		);
 	}
 
