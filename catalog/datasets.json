@@ -124,6 +124,51 @@
 				"localPath": "/data/whitby-tithe.pmtiles",
 				"remoteUrl": "https://github.com/foss4lh/david-lovelace-archive/releases/download/data-v0.1.0/whitby-tithe.pmtiles",
 				"status": "planned-release"
+			},
+			{
+				"id": "wigmore-castle-village-tithe-cog",
+				"kind": "cog",
+				"title": "Wigmore Castle & Village — COG GeoTIFF",
+				"releaseAsset": "wigmore-castle-village-tithe-cog.tif",
+				"localPath": "/data/wigmore-castle-village-tithe-cog.tif",
+				"remoteUrl": "https://github.com/foss4lh/david-lovelace-archive/releases/download/data-v0.1.0/wigmore-castle-village-tithe-cog.tif",
+				"status": "available"
+			},
+			{
+				"id": "hampton-bishop-tithe-cog",
+				"kind": "cog",
+				"title": "Hampton Bishop — COG GeoTIFF",
+				"releaseAsset": "hampton-bishop-tithe-cog.tif",
+				"localPath": "/data/hampton-bishop-tithe-cog.tif",
+				"remoteUrl": "https://github.com/foss4lh/david-lovelace-archive/releases/download/data-v0.1.0/hampton-bishop-tithe-cog.tif",
+				"status": "available"
+			},
+			{
+				"id": "holmer-tithe-cog",
+				"kind": "cog",
+				"title": "Holmer — COG GeoTIFF",
+				"releaseAsset": "holmer-tithe-cog.tif",
+				"localPath": "/data/holmer-tithe-cog.tif",
+				"remoteUrl": "https://github.com/foss4lh/david-lovelace-archive/releases/download/data-v0.1.0/holmer-tithe-cog.tif",
+				"status": "available"
+			},
+			{
+				"id": "marden-tithe-54-cog",
+				"kind": "cog",
+				"title": "Marden (Sheet 54) — COG GeoTIFF",
+				"releaseAsset": "marden-tithe-54-cog.tif",
+				"localPath": "/data/marden-tithe-54-cog.tif",
+				"remoteUrl": "https://github.com/foss4lh/david-lovelace-archive/releases/download/data-v0.1.0/marden-tithe-54-cog.tif",
+				"status": "available"
+			},
+			{
+				"id": "marden-tithe-55-cog",
+				"kind": "cog",
+				"title": "Marden (Sheet 55) — COG GeoTIFF",
+				"releaseAsset": "marden-tithe-55-cog.tif",
+				"localPath": "/data/marden-tithe-55-cog.tif",
+				"remoteUrl": "https://github.com/foss4lh/david-lovelace-archive/releases/download/data-v0.1.0/marden-tithe-55-cog.tif",
+				"status": "available"
 			}
 		],
 		"nextSteps": [
@@ -373,6 +418,123 @@
 				"localPath": "/data/ancient_woodland_herefordshire.geojson",
 				"status": "available",
 				"bounds": [-3.14994, 51.82289, -2.33552, 52.39756]
+			},
+			{
+				"id": "fc1953-ce-cog",
+				"kind": "cog",
+				"title": "FC1953 CE — Herefordshire Overview (all sheets) — COG GeoTIFF",
+				"releaseAsset": "CE-cog.tif",
+				"localPath": "/data/CE-cog.tif",
+				"remoteUrl": "https://github.com/foss4lh/david-lovelace-archive/releases/download/data-v0.1.0/CE-cog.tif",
+				"status": "available"
+			},
+			{
+				"id": "fc1953-c13-14-20-21-cog",
+				"kind": "cog",
+				"title": "FC1953 C13_14_20_21 — COG GeoTIFF",
+				"releaseAsset": "C13_14_20_21-cog.tif",
+				"localPath": "/data/C13_14_20_21-cog.tif",
+				"remoteUrl": "https://github.com/foss4lh/david-lovelace-archive/releases/download/data-v0.1.0/C13_14_20_21-cog.tif",
+				"status": "available"
+			},
+			{
+				"id": "fc1953-c27-cog",
+				"kind": "cog",
+				"title": "FC1953 C27 — COG GeoTIFF",
+				"releaseAsset": "C27-cog.tif",
+				"localPath": "/data/C27-cog.tif",
+				"remoteUrl": "https://github.com/foss4lh/david-lovelace-archive/releases/download/data-v0.1.0/C27-cog.tif",
+				"status": "available"
+			},
+			{
+				"id": "fc1953-c28-29-35-36-cog",
+				"kind": "cog",
+				"title": "FC1953 C28_29_35_36 — COG GeoTIFF",
+				"releaseAsset": "C28_29_35_36-cog.tif",
+				"localPath": "/data/C28_29_35_36-cog.tif",
+				"remoteUrl": "https://github.com/foss4lh/david-lovelace-archive/releases/download/data-v0.1.0/C28_29_35_36-cog.tif",
+				"status": "available"
+			},
+			{
+				"id": "fc1953-c40-cog",
+				"kind": "cog",
+				"title": "FC1953 C40 — COG GeoTIFF",
+				"releaseAsset": "C40-cog.tif",
+				"localPath": "/data/C40-cog.tif",
+				"remoteUrl": "https://github.com/foss4lh/david-lovelace-archive/releases/download/data-v0.1.0/C40-cog.tif",
+				"status": "available"
+			},
+			{
+				"id": "fc1953-c4142fc-cog",
+				"kind": "cog",
+				"title": "FC1953 C4142FC — COG GeoTIFF",
+				"releaseAsset": "C4142FC-cog.tif",
+				"localPath": "/data/C4142FC-cog.tif",
+				"remoteUrl": "https://github.com/foss4lh/david-lovelace-archive/releases/download/data-v0.1.0/C4142FC-cog.tif",
+				"status": "available"
+			},
+			{
+				"id": "fc1953-c46-47-cog",
+				"kind": "cog",
+				"title": "FC1953 C46_47 — COG GeoTIFF",
+				"releaseAsset": "C46_47-cog.tif",
+				"localPath": "/data/C46_47-cog.tif",
+				"remoteUrl": "https://github.com/foss4lh/david-lovelace-archive/releases/download/data-v0.1.0/C46_47-cog.tif",
+				"status": "available"
+			},
+			{
+				"id": "fc1953-c47-cog",
+				"kind": "cog",
+				"title": "FC1953 C47 — COG GeoTIFF",
+				"releaseAsset": "C47-cog.tif",
+				"localPath": "/data/C47-cog.tif",
+				"remoteUrl": "https://github.com/foss4lh/david-lovelace-archive/releases/download/data-v0.1.0/C47-cog.tif",
+				"status": "available"
+			},
+			{
+				"id": "fc1953-c54-51s-cog",
+				"kind": "cog",
+				"title": "FC1953 C54&51S — COG GeoTIFF",
+				"releaseAsset": "C54.51S-cog.tif",
+				"localPath": "/data/C54.51S-cog.tif",
+				"remoteUrl": "https://github.com/foss4lh/david-lovelace-archive/releases/download/data-v0.1.0/C54.51S-cog.tif",
+				"status": "available"
+			},
+			{
+				"id": "fc1953-c6-7-11-12private-cog",
+				"kind": "cog",
+				"title": "FC1953 C6_7_11_12Private — COG GeoTIFF",
+				"releaseAsset": "C6_7_11_12Private-cog.tif",
+				"localPath": "/data/C6_7_11_12Private-cog.tif",
+				"remoteUrl": "https://github.com/foss4lh/david-lovelace-archive/releases/download/data-v0.1.0/C6_7_11_12Private-cog.tif",
+				"status": "available"
+			},
+			{
+				"id": "fc1953-clords1953-cog",
+				"kind": "cog",
+				"title": "FC1953 CLords1953 — COG GeoTIFF",
+				"releaseAsset": "CLords1953-cog.tif",
+				"localPath": "/data/CLords1953-cog.tif",
+				"remoteUrl": "https://github.com/foss4lh/david-lovelace-archive/releases/download/data-v0.1.0/CLords1953-cog.tif",
+				"status": "available"
+			},
+			{
+				"id": "fc1953-cn-cog",
+				"kind": "cog",
+				"title": "FC1953 CN — COG GeoTIFF",
+				"releaseAsset": "CN-cog.tif",
+				"localPath": "/data/CN-cog.tif",
+				"remoteUrl": "https://github.com/foss4lh/david-lovelace-archive/releases/download/data-v0.1.0/CN-cog.tif",
+				"status": "available"
+			},
+			{
+				"id": "fc1953-csw-cog",
+				"kind": "cog",
+				"title": "FC1953 CSW — COG GeoTIFF",
+				"releaseAsset": "CSW-cog.tif",
+				"localPath": "/data/CSW-cog.tif",
+				"remoteUrl": "https://github.com/foss4lh/david-lovelace-archive/releases/download/data-v0.1.0/CSW-cog.tif",
+				"status": "available"
 			}
 		],
 		"nextSteps": [
@@ -430,5 +592,206 @@
 			"Prepare public download bundles for cleaned metadata."
 		],
 		"limitations": "The material spans several archive folders and needs normalised place names."
+	},
+	{
+		"id": "hfd-historic-hereford",
+		"title": "Historic Hereford Maps",
+		"period": "1606–1885",
+		"coverage": "Hereford city",
+		"theme": "historic maps",
+		"status": "available",
+		"summary": "Georeferenced historic maps of Hereford city spanning from John Speed's 1606 plan through the Victorian 1885 map. Each map is available as a browsable PMTiles overlay and a downloadable COG GeoTIFF for QGIS import.",
+		"sourceArchivePaths": ["HARC/Raster/Hereford"],
+		"assets": [
+			{
+				"id": "speed1606",
+				"kind": "pmtiles",
+				"title": "John Speed — Hereford (1606)",
+				"releaseAsset": "speed1606.pmtiles",
+				"localPath": "/data/speed1606.pmtiles",
+				"remoteUrl": "https://github.com/foss4lh/david-lovelace-archive/releases/download/data-v0.1.0/speed1606.pmtiles",
+				"status": "available",
+				"bounds": [-2.728706, 52.049171, -2.7030219, 52.066373],
+				"minZoom": 10,
+				"maxZoom": 16
+			},
+			{
+				"id": "speed1606-cog",
+				"kind": "cog",
+				"title": "John Speed — Hereford (1606) — COG GeoTIFF",
+				"releaseAsset": "speed1606-cog.tif",
+				"localPath": "/data/speed1606-cog.tif",
+				"remoteUrl": "https://github.com/foss4lh/david-lovelace-archive/releases/download/data-v0.1.0/speed1606-cog.tif",
+				"status": "available"
+			},
+			{
+				"id": "taylor1754",
+				"kind": "pmtiles",
+				"title": "Taylor — Hereford (1754)",
+				"releaseAsset": "taylor1754.pmtiles",
+				"localPath": "/data/taylor1754.pmtiles",
+				"remoteUrl": "https://github.com/foss4lh/david-lovelace-archive/releases/download/data-v0.1.0/taylor1754.pmtiles",
+				"status": "available",
+				"bounds": [-2.732276, 52.047358, -2.702845, 52.061431],
+				"minZoom": 10,
+				"maxZoom": 16
+			},
+			{
+				"id": "taylor1754-cog",
+				"kind": "cog",
+				"title": "Taylor — Hereford (1754) — COG GeoTIFF",
+				"releaseAsset": "taylor1754-cog.tif",
+				"localPath": "/data/taylor1754-cog.tif",
+				"remoteUrl": "https://github.com/foss4lh/david-lovelace-archive/releases/download/data-v0.1.0/taylor1754-cog.tif",
+				"status": "available"
+			},
+			{
+				"id": "brayley1806",
+				"kind": "pmtiles",
+				"title": "Brayley — Hereford (1806)",
+				"releaseAsset": "brayley1806.pmtiles",
+				"localPath": "/data/brayley1806.pmtiles",
+				"remoteUrl": "https://github.com/foss4lh/david-lovelace-archive/releases/download/data-v0.1.0/brayley1806.pmtiles",
+				"status": "available",
+				"bounds": [-2.732277, 52.047359, -2.702846, 52.061434],
+				"minZoom": 10,
+				"maxZoom": 16
+			},
+			{
+				"id": "brayley1806-cog",
+				"kind": "cog",
+				"title": "Brayley — Hereford (1806) — COG GeoTIFF",
+				"releaseAsset": "brayley1806-cog.tif",
+				"localPath": "/data/brayley1806-cog.tif",
+				"remoteUrl": "https://github.com/foss4lh/david-lovelace-archive/releases/download/data-v0.1.0/brayley1806-cog.tif",
+				"status": "available"
+			},
+			{
+				"id": "hereford1885",
+				"kind": "pmtiles",
+				"title": "Hereford (1885)",
+				"releaseAsset": "hereford1885.pmtiles",
+				"localPath": "/data/hereford1885.pmtiles",
+				"remoteUrl": "https://github.com/foss4lh/david-lovelace-archive/releases/download/data-v0.1.0/hereford1885.pmtiles",
+				"status": "available",
+				"bounds": [-2.775009, 52.019878, -2.671763, 52.0924229],
+				"minZoom": 10,
+				"maxZoom": 16
+			},
+			{
+				"id": "hereford1885-cog",
+				"kind": "cog",
+				"title": "Hereford (1885) — COG GeoTIFF",
+				"releaseAsset": "hereford1885-cog.tif",
+				"localPath": "/data/hereford1885-cog.tif",
+				"remoteUrl": "https://github.com/foss4lh/david-lovelace-archive/releases/download/data-v0.1.0/hereford1885-cog.tif",
+				"status": "available"
+			}
+		],
+		"nextSteps": [
+			"Add contextual text about each map cartographer and survey method.",
+			"Cross-reference with modern Hereford city boundaries.",
+			"Link to related archive material (tithe, OS, aerial)."
+		],
+		"limitations": "Maps cover Hereford city only; surrounding parishes are on separate sheets."
+	},
+	{
+		"id": "hfd-os-historic",
+		"title": "Historic Ordnance Survey Maps",
+		"period": "1884–1886",
+		"coverage": "Herefordshire",
+		"theme": "historic maps",
+		"status": "available",
+		"summary": "Victorian Ordnance Survey maps at 6-inch and 1:2500 scales, georeferenced from original ECW sources. Available as PMTiles for web browsing and COG GeoTIFFs for GIS download.",
+		"sourceArchivePaths": ["HARC/Raster/Marden", "Maps/EN_Historical", "Maps/1880_6inch"],
+		"assets": [
+			{
+				"id": "os6inch1886",
+				"kind": "pmtiles",
+				"title": "OS 6-inch — Marden (1886)",
+				"releaseAsset": "os6inch1886.pmtiles",
+				"localPath": "/data/os6inch1886.pmtiles",
+				"remoteUrl": "https://github.com/foss4lh/david-lovelace-archive/releases/download/data-v0.1.0/os6inch1886.pmtiles",
+				"status": "available",
+				"bounds": [-2.762396, 52.074734, -2.621953, 52.161475],
+				"minZoom": 10,
+				"maxZoom": 16
+			},
+			{
+				"id": "os6inch1886-cog",
+				"kind": "cog",
+				"title": "OS 6-inch — Marden (1886) — COG GeoTIFF",
+				"releaseAsset": "os6inch1886-cog.tif",
+				"localPath": "/data/os6inch1886-cog.tif",
+				"remoteUrl": "https://github.com/foss4lh/david-lovelace-archive/releases/download/data-v0.1.0/os6inch1886-cog.tif",
+				"status": "available"
+			},
+			{
+				"id": "gv1886",
+				"kind": "pmtiles",
+				"title": "OS 1:2500 — Golden Valley (1886)",
+				"releaseAsset": "gv1886.pmtiles",
+				"localPath": "/data/gv1886.pmtiles",
+				"remoteUrl": "https://github.com/foss4lh/david-lovelace-archive/releases/download/data-v0.1.0/gv1886.pmtiles",
+				"status": "available",
+				"bounds": [-3.101528, 51.913879, -2.900107, 52.061287],
+				"minZoom": 10,
+				"maxZoom": 16
+			},
+			{
+				"id": "gv1886-cog",
+				"kind": "cog",
+				"title": "OS 1:2500 — Golden Valley (1886) — COG GeoTIFF",
+				"releaseAsset": "gv1886-cog.tif",
+				"localPath": "/data/gv1886-cog.tif",
+				"remoteUrl": "https://github.com/foss4lh/david-lovelace-archive/releases/download/data-v0.1.0/gv1886-cog.tif",
+				"status": "available"
+			}
+		],
+		"nextSteps": [
+			"Add more OS historic sheets from the 1880_6inch AffineECW collection.",
+			"Link field boundaries to tithe and modern land-use data.",
+			"Document georeferencing confidence and known sheet distortions."
+		],
+		"limitations": "Current coverage is limited to Marden parish and Golden Valley; additional 1880s OS sheets exist in Maps/1880_6inch/AffineECW."
+	},
+	{
+		"id": "hfd-aerial-historic",
+		"title": "Historic Aerial Photography",
+		"period": "1946–1947",
+		"coverage": "Herefordshire",
+		"theme": "aerial photography",
+		"status": "available",
+		"summary": "Post-WWII RAF vertical aerial photography from 1946–1947, georeferenced from ECW sources. Available as PMTiles overlay and COG GeoTIFF download.",
+		"sourceArchivePaths": ["HARC/Raster/Hereford", "HARC/Raster/Marden"],
+		"assets": [
+			{
+				"id": "raf1947",
+				"kind": "pmtiles",
+				"title": "RAF Aerial — Marden (1947)",
+				"releaseAsset": "raf1947.pmtiles",
+				"localPath": "/data/raf1947.pmtiles",
+				"remoteUrl": "https://github.com/foss4lh/david-lovelace-archive/releases/download/data-v0.1.0/raf1947.pmtiles",
+				"status": "available",
+				"bounds": [-2.728485, 52.0870279, -2.6290269, 52.146599],
+				"minZoom": 10,
+				"maxZoom": 16
+			},
+			{
+				"id": "raf1947-cog",
+				"kind": "cog",
+				"title": "RAF Aerial — Marden (1947) — COG GeoTIFF",
+				"releaseAsset": "raf1947-cog.tif",
+				"localPath": "/data/raf1947-cog.tif",
+				"remoteUrl": "https://github.com/foss4lh/david-lovelace-archive/releases/download/data-v0.1.0/raf1947-cog.tif",
+				"status": "available"
+			}
+		],
+		"nextSteps": [
+			"Add RAF 1946 Hereford coverage.",
+			"Curate additional aerial photo sets from AirPhotos folders.",
+			"Create sample thumbnail gallery for non-georeferenced photos."
+		],
+		"limitations": "Current coverage is limited to Marden parish; additional RAF and commercial aerial photos exist in the archive but are not yet georeferenced."
 	}
 ]

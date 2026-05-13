@@ -69,9 +69,7 @@ export const releaseManifest = releasesJson as ReleaseManifest;
 
 export const visualDatasets = datasets
 	.filter((dataset) =>
-		dataset.assets.some(
-			(asset) => (asset.kind === 'pmtiles' || asset.kind === 'cog') && asset.status === 'available'
-		)
+		dataset.assets.some((asset) => asset.kind === 'pmtiles' && asset.status === 'available')
 	)
 	.sort((a, b) => {
 		// Sort datasets with available assets first
@@ -84,7 +82,9 @@ export const visualDatasets = datasets
 
 export const summaryStats = {
 	datasetCount: datasets.length,
-	webReadyCount: datasets.filter((dataset) => dataset.status === 'prototype-web-ready').length,
+	webReadyCount: datasets.filter(
+		(dataset) => dataset.status === 'available' || dataset.status === 'prototype-web-ready'
+	).length,
 	assetCount: datasets.flatMap((dataset) => dataset.assets).length
 };
 

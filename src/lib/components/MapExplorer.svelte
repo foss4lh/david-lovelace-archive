@@ -17,21 +17,19 @@
 			| undefined
 	);
 
-	// Datasets that have at least one pmtiles/cog asset (any status)
+	// Datasets that have at least one pmtiles asset (cogs are download-only companions)
 	const visualDatasets = $derived(
-		datasets.filter((d) => d.assets.some((a) => a.kind === 'pmtiles' || a.kind === 'cog'))
+		datasets.filter((d) => d.assets.some((a) => a.kind === 'pmtiles'))
 	);
 
 	// Initialise selection from props so SSR emits populated selects
 	let selectedDatasetId = $state(
-		datasets.find((d) => d.assets.some((a) => a.kind === 'pmtiles' || a.kind === 'cog'))?.id ?? ''
+		datasets.find((d) => d.assets.some((a) => a.kind === 'pmtiles'))?.id ?? ''
 	);
 	let selectedAssetId = $state(
 		(() => {
-			const ds = datasets.find((d) =>
-				d.assets.some((a) => a.kind === 'pmtiles' || a.kind === 'cog')
-			);
-			const assets = ds ? ds.assets.filter((a) => a.kind === 'pmtiles' || a.kind === 'cog') : [];
+			const ds = datasets.find((d) => d.assets.some((a) => a.kind === 'pmtiles'));
+			const assets = ds ? ds.assets.filter((a) => a.kind === 'pmtiles') : [];
 			return assets.find((a) => a.status === 'available')?.id ?? '';
 		})()
 	);
@@ -42,18 +40,21 @@
 
 	const selectedDataset = $derived(visualDatasets.find((d) => d.id === selectedDatasetId));
 
-	// All pmtiles/cog assets in the selected dataset, including disabled ones
+	// Only pmtiles assets appear in the map sheet dropdown
 	const currentDatasetAssets = $derived(
-		selectedDataset
-			? selectedDataset.assets.filter((a) => a.kind === 'pmtiles' || a.kind === 'cog')
-			: []
+		selectedDataset ? selectedDataset.assets.filter((a) => a.kind === 'pmtiles') : []
 	);
 
 	const selectedAsset = $derived(
 		currentDatasetAssets.find((a) => a.id === selectedAssetId) as DatasetAsset | undefined
 	);
 
-	// Auto-select first available asset when dataset changes
+	// Find matching COG asset (same base id + '-cog')
+	const selectedCogAsset = $derived(
+		selectedDataset?.assets.find((a) => a.id === selectedAssetId + '-cog' && a.kind === 'cog')
+	);
+
+	// Auto-select first available pmtiles asset when dataset changes
 	$effect(() => {
 		const assets = currentDatasetAssets;
 		if (selectedDatasetId && assets.length) {
@@ -273,10 +274,23 @@
 			</button>
 		{/if}
 
+		{#if selectedCogAsset?.remoteUrl}
+			<a
+				class="download-btn"
+				href={selectedCogAsset.remoteUrl}
+				target="_blank"
+				rel="noopener external"
+				download
+			>
+				Download GeoTIFF (COG)
+			</a>
+		{/if}
+
 		{#if selectedDataset}
 			<div class="map-notes">
 				<span class="status">{selectedDataset.status.replace(/-/g, ' ')}</span>
 				<h2>{selectedDataset.title}</h2>
+				<p class="period">{selectedDataset.period}</p>
 				<p>{selectedDataset.summary}</p>
 
 				{#if selectedAsset}
@@ -384,6 +398,26 @@
 		background: #3d5a3f;
 	}
 
+	.download-btn {
+		display: block;
+		width: 100%;
+		margin-bottom: 1rem;
+		padding: 0.55rem;
+		border: 1px solid #6b5b3e;
+		border-radius: 6px;
+		background: #fffdf7;
+		color: #6b5b3e;
+		font-weight: 600;
+		cursor: pointer;
+		text-align: center;
+		text-decoration: none;
+		font-size: 0.9rem;
+	}
+
+	.download-btn:hover {
+		background: #f5efe4;
+	}
+
 	.map-stage {
 		display: flex;
 		flex-direction: column;
@@ -403,8 +437,15 @@
 	}
 
 	.map-notes h2 {
-		margin: 0.65rem 0 0.45rem;
+		margin: 0.65rem 0 0.2rem;
 		font-size: 1.2rem;
+	}
+
+	.period {
+		color: #7a735f;
+		font-weight: 700;
+		font-size: 0.9rem;
+		margin: 0 0 0.6rem;
 	}
 
 	.map-notes p {
