@@ -7,7 +7,7 @@
 
 	let container: HTMLDivElement;
 	// eslint-disable-next-line @typescript-eslint/no-explicit-any
-	let map: any = null;
+	let map: any = $state.raw(null);
 	let selectedId = $state('');
 	let opacity = $state(0.75);
 	let layerError = $state<string | null>(null);
@@ -22,9 +22,9 @@
 		if (!selectedId && datasets.length) selectedId = datasets[0].id;
 	});
 
-	// Opacity control
+	// Opacity control — only update after raster-layer has been added
 	$effect(() => {
-		if (!map) return;
+		if (!map || !map.getLayer('raster-layer')) return;
 		map.setPaintProperty('raster-layer', 'raster-opacity', opacity);
 	});
 
