@@ -28,7 +28,7 @@ ARCHIVE_ROOT=/path/to/archive npm run archive:audit
 
 ### 2. Update Inventory (DuckDB)
 
-The web explorer is powered by a DuckDB database generated from directory listings.
+The web explorer is powered by a DuckDB database generated from directory listings. It is a developer-facing index of the archive — not a public collection — so it does not appear as a dataset card on the browse page.
 
 ```bash
 # Parse .txt listings into a structured CSV

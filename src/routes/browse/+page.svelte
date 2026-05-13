@@ -11,7 +11,7 @@
 		X,
 		Map as MapIcon
 	} from '@lucide/svelte';
-	import { datasets, statusLabel, collectionStats } from '$lib/catalog';
+	import { browseDatasets, statusLabel, collectionStats } from '$lib/catalog';
 
 	import { queryInventory } from '$lib/duckdb';
 
@@ -75,7 +75,7 @@
 	];
 
 	const activeDataset = $derived(
-		selectedDataset ? (datasets.find((d) => d.id === selectedDataset) ?? null) : null
+		selectedDataset ? (browseDatasets.find((d) => d.id === selectedDataset) ?? null) : null
 	);
 
 	function formatGb(gb: number) {
@@ -233,7 +233,7 @@
 	<section class="dataset-list" aria-label="Dataset collections">
 		<h2>Collections</h2>
 		<div class="dataset-grid">
-			{#each datasets as dataset (dataset.id)}
+			{#each browseDatasets as dataset (dataset.id)}
 				{@const stats = collectionStats[dataset.id]}
 				<button
 					id={dataset.id}
