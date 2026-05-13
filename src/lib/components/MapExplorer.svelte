@@ -106,7 +106,7 @@
 				console.log('[MapExplorer] Loading PMTiles from:', url);
 
 				const p = new PMTiles(url);
-				const h = await p.getHeader();
+				await p.getHeader(); // validate file is readable
 
 				// Remove existing overlay if present
 				if (map.getSource('pmtiles-raster')) {
@@ -127,14 +127,6 @@
 					source: 'pmtiles-raster',
 					paint: { 'raster-opacity': opacity }
 				});
-
-				// Zoom to layer bounds if available
-				if (selectedAsset.bounds) {
-					const [minX, minY, maxX, maxY] = selectedAsset.bounds;
-					map.fitBounds([minX, minY, maxX, maxY], { padding: 40, duration: 600 });
-				} else {
-					map.flyTo({ center: [h.centerLon, h.centerLat], zoom: h.maxZoom - 2 });
-				}
 			} catch (err: unknown) {
 				console.error('[MapExplorer] Failed to load PMTiles:', err);
 				layerError = err instanceof Error ? err.message : 'Failed to load layer';
