@@ -60,14 +60,32 @@ gh release upload data-v0.1.0 static/data/new-map.pmtiles
 
 The site is hosted on Netlify and builds automatically on every commit to `main`.
 
-```bash
-# Local development
-npm install
-npm run dev
+**Build command (used by Netlify):**
 
-# Manual production deploy
+```bash
+npm run data:download -- --required-only && npm run build
+```
+
+This two-step process:
+
+1. **`data:download --required-only`** fetches release assets marked `requiredForBuild: true` in `catalog/releases.json` from GitHub Releases into `static/data/`. This includes PMTiles map archives (~286 MB for the FC1953 collection) and the DuckDB inventory.
+2. **`build`** generates the static SvelteKit site, embedding references to the downloaded local assets.
+
+**Local development:**
+
+```bash
+npm install
+npm run data:download -- --required-only   # fetch assets once
+npm run dev                                 # start dev server
+```
+
+**Manual production deploy:**
+
+```bash
 netlify deploy --prod
 ```
+
+> **Note:** Release assets are stored in GitHub Releases (`data-v0.1.0` tag) and downloaded at build time. They are not committed to git. To add a new asset, upload it via `gh release upload data-v0.1.0 <file>` and register it in `catalog/releases.json`.
 
 ## Repository Layout
 
@@ -81,16 +99,17 @@ docs/            Architecture and data policy documentation
 
 ## Core Commands Reference
 
-| Command                    | Description                                        |
-| :------------------------- | :------------------------------------------------- |
-| `npm run dev`              | Start local development server                     |
-| `npm run data:download`    | Fetch release assets from GitHub to `static/data/` |
-| `npm run inventory:parse`  | Parse inventory .txt files to CSV                  |
-| `npm run inventory:duckdb` | Update the DuckDB index from CSV                   |
-| `npm run archive:audit`    | Generate archive summaries from local disk         |
-| `npm run build`            | Create static build for production                 |
-| `npm run lint`             | Check formatting and linting                       |
-| `npm run check`            | Run Svelte-check (Types/Routes)                    |
+| Command                                    | Description                                        |
+| :----------------------------------------- | :------------------------------------------------- |
+| `npm run dev`                              | Start local development server                     |
+| `npm run data:download`                    | Fetch release assets from GitHub to `static/data/` |
+| `npm run data:download -- --required-only` | Fetch only assets marked `requiredForBuild: true`  |
+| `npm run inventory:parse`                  | Parse inventory .txt files to CSV                  |
+| `npm run inventory:duckdb`                 | Update the DuckDB index from CSV                   |
+| `npm run archive:audit`                    | Generate archive summaries from local disk         |
+| `npm run build`                            | Create static build for production                 |
+| `npm run lint`                             | Check formatting and linting                       |
+| `npm run check`                            | Run Svelte-check (Types/Routes)                    |
 
 ## CI/CD and Quality
 
