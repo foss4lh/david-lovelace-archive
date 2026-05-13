@@ -18,15 +18,22 @@
 			| undefined
 	);
 
-	// Datasets that have at least one pmtiles/cog asset (any status)
+	// Datasets that have at least one pmtiles asset (cogs are download-only companions)
 	const visualDatasets = $derived(
-		datasets.filter((d) => d.assets.some((a) => a.kind === 'pmtiles' || a.kind === 'cog'))
+		datasets.filter((d) => d.assets.some((a) => a.kind === 'pmtiles'))
 	);
 
 	// Read initial state from URL or fallback
-	let initialAssetId = browser ? $page.url.searchParams.get('asset') : null;
+	let rawAssetId = browser ? $page.url.searchParams.get('asset') : null;
 	let initialOpacity = browser ? $page.url.searchParams.get('opacity') : null;
 	let initialWoodland = browser ? $page.url.searchParams.get('woodland') : null;
+
+	// Only accept pmtiles asset IDs from URL (COGs are download-only)
+	let initialAssetId = rawAssetId
+		? datasets.some((d) => d.assets.some((a) => a.id === rawAssetId && a.kind === 'pmtiles'))
+			? rawAssetId
+			: null
+		: null;
 
 	// Initialise selection
 	let opacity = $state(initialOpacity ? parseFloat(initialOpacity) : 0.75);
@@ -37,10 +44,8 @@
 	let selectedAssetId = $state(
 		initialAssetId ||
 			(() => {
-				const ds = datasets.find((d) =>
-					d.assets.some((a) => a.kind === 'pmtiles' || a.kind === 'cog')
-				);
-				const assets = ds ? ds.assets.filter((a) => a.kind === 'pmtiles' || a.kind === 'cog') : [];
+				const ds = datasets.find((d) => d.assets.some((a) => a.kind === 'pmtiles'));
+				const assets = ds ? ds.assets.filter((a) => a.kind === 'pmtiles') : [];
 				return assets.find((a) => a.status === 'available')?.id ?? '';
 			})()
 	);
@@ -51,20 +56,15 @@
 				const ds = datasets.find((d) => d.assets.some((a) => a.id === initialAssetId));
 				if (ds) return ds.id;
 			}
-			return (
-				datasets.find((d) => d.assets.some((a) => a.kind === 'pmtiles' || a.kind === 'cog'))?.id ??
-				''
-			);
+			return datasets.find((d) => d.assets.some((a) => a.kind === 'pmtiles'))?.id ?? '';
 		})()
 	);
 
 	const selectedDataset = $derived(visualDatasets.find((d) => d.id === selectedDatasetId));
 
-	// All pmtiles/cog assets in the selected dataset, including disabled ones
+	// Only pmtiles assets appear in the map sheet dropdown
 	const currentDatasetAssets = $derived(
-		selectedDataset
-			? selectedDataset.assets.filter((a) => a.kind === 'pmtiles' || a.kind === 'cog')
-			: []
+		selectedDataset ? selectedDataset.assets.filter((a) => a.kind === 'pmtiles') : []
 	);
 
 	const selectedAsset = $derived(
