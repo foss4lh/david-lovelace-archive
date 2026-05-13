@@ -164,6 +164,22 @@ h2 {
 	line-height: 1.5;
 }
 
+.focus-note {
+	max-width: 65ch;
+	margin-top: 1rem;
+	padding: 0.8rem 1rem;
+	border-left: 3px solid #315e80;
+	background: #e8f0f4;
+	color: #3a4a55;
+	font-size: 0.95rem;
+	line-height: 1.5;
+}
+
+.focus-note a {
+	color: #315e80;
+	font-weight: 600;
+}
+
 .actions {
 	display: flex;
 	flex-wrap: wrap;
