@@ -16,7 +16,8 @@ export type AssetKind =
 	| 'csv'
 	| 'parquet'
 	| 'image-bundle'
-	| 'duckdb';
+	| 'duckdb'
+	| 'external-link';
 
 export interface DatasetAsset {
 	id: string;

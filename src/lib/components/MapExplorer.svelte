@@ -395,6 +395,18 @@
 				</p>
 				<p>{selectedDataset.summary}</p>
 
+				{#if selectedDatasetId === 'hfd-os-historic'}
+					<p class="nls-notice">
+						<a
+							href="https://maps.nls.uk/os/25inch-england-and-wales/herefordshire.html"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							View all OS 25 inch Herefordshire sheets on the National Library of Scotland &rarr;
+						</a>
+					</p>
+				{/if}
+
 				{#if selectedAsset}
 					<p>
 						Asset: <code>{selectedAsset.title}</code>
@@ -585,6 +597,20 @@
 		padding: 0.5rem;
 		border-radius: 4px;
 		font-size: 0.85rem;
+	}
+
+	.nls-notice {
+		margin: 0.6rem 0;
+		padding: 0.5rem 0.7rem;
+		background: #e9efe2;
+		border: 1px solid #d9d3c6;
+		border-radius: 6px;
+		font-size: 0.85rem;
+	}
+
+	.nls-notice a {
+		color: #315e80;
+		font-weight: 600;
 	}
 
 	@media (max-width: 860px) {
