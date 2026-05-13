@@ -87,9 +87,9 @@
 		{
 			"id": "fc1953-c54-51s",
 			"title": "FC1953 C54&51S PMTiles",
-			"filename": "C54&51S.pmtiles",
-			"url": "https://github.com/foss4lh/david-lovelace-archive/releases/download/data-v0.1.0/C54&51S.pmtiles",
-			"target": "static/data/C54&51S.pmtiles",
+			"filename": "C54.51S.pmtiles",
+			"url": "https://github.com/foss4lh/david-lovelace-archive/releases/download/data-v0.1.0/C54.51S.pmtiles",
+			"target": "static/data/C54.51S.pmtiles",
 			"requiredForBuild": true,
 			"status": "available"
 		},
