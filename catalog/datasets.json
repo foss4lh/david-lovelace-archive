@@ -140,7 +140,7 @@
 		"coverage": "Herefordshire",
 		"theme": "woodland",
 		"status": "available",
-		"summary": "Woodland cover and post-war landscape material, including FC1953ecw, Ancient Woodland data, DEM/LIDAR context, and related map layers.",
+		"summary": "Woodland cover and post-war landscape material from the Forestry Commission 1953 survey (FC1953). The CE sheet is a composite overview covering all of Herefordshire; the other sheets are individual sub-areas. All derived from ECW source files in Maps/FC1953ecw.",
 		"sourceArchivePaths": [
 			"Maps/FC1953ecw",
 			"Maps/GovData/Ancient_Woodlands_England",
@@ -149,6 +149,17 @@
 			"Maps/LittleDoward"
 		],
 		"assets": [
+			{
+				"id": "fc1953-ce",
+				"kind": "pmtiles",
+				"title": "FC1953 CE — Herefordshire Overview (all sheets)",
+				"releaseAsset": "CE.pmtiles",
+				"localPath": "/data/CE.pmtiles",
+				"status": "available",
+				"bounds": [-2.705775, 51.825135, -2.335518, 52.288615],
+				"minZoom": 10,
+				"maxZoom": 14
+			},
 			{
 				"id": "fc1953-c13-14-20-21",
 				"kind": "pmtiles",
@@ -245,17 +256,6 @@
 				"localPath": "/data/C6_7_11_12Private.pmtiles",
 				"status": "available",
 				"bounds": [-2.975262, 52.216577, -2.685759, 52.339674],
-				"minZoom": 10,
-				"maxZoom": 14
-			},
-			{
-				"id": "fc1953-ce",
-				"kind": "pmtiles",
-				"title": "FC1953 CE",
-				"releaseAsset": "CE.pmtiles",
-				"localPath": "/data/CE.pmtiles",
-				"status": "available",
-				"bounds": [-2.705775, 51.825135, -2.335518, 52.288615],
 				"minZoom": 10,
 				"maxZoom": 14
 			},
