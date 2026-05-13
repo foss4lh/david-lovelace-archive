@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { ClipboardCheck, MapPinned, ScanText, Search } from '@lucide/svelte';
+	import { resolve } from '$app/paths';
 	import { datasets } from '$lib/catalog';
 
 	const priorities = [
@@ -41,6 +42,21 @@
 				<p>{item.text}</p>
 			</article>
 		{/each}
+	</section>
+
+	<section class="doc-panel">
+		<h2>Royal Commission parish index</h2>
+		<p style="margin-bottom: 1rem; color: #55594f; line-height: 1.5;">
+			The 1930s RCHME survey of Herefordshire has been fully digitised by British History Online.
+			Browse the complete parish-by-parish inventory with direct links to both published volumes.
+		</p>
+		<a
+			class="button"
+			href={resolve('/research/royal-commission')}
+			style="display: inline-flex; align-items: center; gap: 0.4rem; padding: 0.55rem 1rem; border: 1px solid #304832; border-radius: 6px; background: #304832; color: #fffdf7; font-weight: 600; text-decoration: none;"
+		>
+			View parish index →
+		</a>
 	</section>
 
 	<section class="doc-panel">
