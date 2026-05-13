@@ -31,6 +31,15 @@ export async function initDuckDB() {
 	const buffer = await response.arrayBuffer();
 	await db.registerFileBuffer('archive.duckdb', new Uint8Array(buffer));
 
+	// Attach the registered file as a named database once.
+	// ATTACH is database-level and persists across connections.
+	const conn = await db.connect();
+	try {
+		await conn.query(`ATTACH 'archive.duckdb' AS archive (READ_ONLY);`);
+	} finally {
+		await conn.close();
+	}
+
 	dbInitialized = true;
 	return db;
 }
@@ -41,17 +50,7 @@ export async function queryInventory(sql: string) {
 	if (!instance) return null;
 
 	const conn = await instance.connect();
-
 	try {
-		// The database is already registered, we just need to use it.
-		// We use the file directly or ATTACH it if needed.
-		// For DuckDB-WASM, we can often just query the registered file if it's the main DB,
-		// but ATTACH is safer for named access.
-		// We'll check if it's already attached by trying to query it.
-		await conn.query(`ATTACH 'archive.duckdb' AS archive (READ_ONLY);`).catch(() => {
-			/* already attached */
-		});
-
 		const results = await conn.query(sql);
 		return results;
 	} finally {
