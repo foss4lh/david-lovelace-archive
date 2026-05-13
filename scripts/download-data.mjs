@@ -31,18 +31,12 @@ async function download(asset) {
 					console.log(`exists ${asset.target}`);
 					return;
 				}
-				console.log(
-					`update ${asset.target} (local ${localSize} != remote ${remoteSize})`
-				);
+				console.log(`update ${asset.target} (local ${localSize} != remote ${remoteSize})`);
 			} else {
-				console.log(
-					`update ${asset.target} (HEAD ${headRes.status}, re-downloading)`
-				);
+				console.log(`update ${asset.target} (HEAD ${headRes.status}, re-downloading)`);
 			}
 		} catch (err) {
-			console.log(
-				`update ${asset.target} (HEAD failed: ${err.message}, re-downloading)`
-			);
+			console.log(`update ${asset.target} (HEAD failed: ${err.message}, re-downloading)`);
 		}
 	}
 

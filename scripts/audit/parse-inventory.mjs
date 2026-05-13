@@ -79,7 +79,10 @@ const EXCLUDED_FOLDER_PATTERNS = [
  */
 const SOURCE_RULES = [
 	{ pattern: /\/(?:tithe|tithemaps|tithe_maps?|tithe\s?map)/i, source: 'Historic Map' },
-	{ pattern: /\/(?:epoch|epoch_\d|historical|1_2500|6inch|25inch|os\s?map)/i, source: 'Historic Map' },
+	{
+		pattern: /\/(?:epoch|epoch_\d|historical|1_2500|6inch|25inch|os\s?map)/i,
+		source: 'Historic Map'
+	},
 	{ pattern: /\/(?:epoch_1|epoch_2|epoch_3|epoch_4)/i, source: 'Historic Map' },
 	{ pattern: /airphoto/i, source: 'Aerial Photograph' },
 	{ pattern: /lidar/i, source: 'LIDAR Survey' },
@@ -194,7 +197,14 @@ async function scanFile(filePath) {
 			const fullPath = normalizePath(currentDir + '\\' + name);
 			const source = inferSource(fullPath);
 			const alreadyPublishedOnline = isAlreadyPublishedOnline(fullPath) ? 'TRUE' : 'FALSE';
-			rows.push({ fullPath, size, ext, dateTime: `${date} ${time}`, source, alreadyPublishedOnline });
+			rows.push({
+				fullPath,
+				size,
+				ext,
+				dateTime: `${date} ${time}`,
+				source,
+				alreadyPublishedOnline
+			});
 		}
 	}
 
