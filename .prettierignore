@@ -11,4 +11,4 @@ bun.lockb
 .openclaude
 
 # Derived catalog data (generated, not tracked by git)
-catalog/*.json
+catalog/archive-inventory.csv

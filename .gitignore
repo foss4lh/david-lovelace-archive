@@ -33,7 +33,6 @@ vite.config.ts.timestamp-*
 /archive-cache
 /derived-data
 catalog/archive-inventory.csv
-catalog/collection-stats.json
 catalog/*.local.json
 
 # Other AI agent workspaces
