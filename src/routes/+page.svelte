@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { ArrowRight, FileSearch, Map, SearchCheck } from '@lucide/svelte';
 	import { resolve } from '$app/paths';
-	import { datasets, summaryStats } from '$lib/catalog';
+	import { browseDatasets, summaryStats } from '$lib/catalog';
 </script>
 
 <main>
@@ -68,7 +68,7 @@
 			<h2>Seven starting collections, one coherent public entry point.</h2>
 		</div>
 		<div class="dataset-strip">
-			{#each datasets as dataset (dataset.id)}
+			{#each browseDatasets as dataset (dataset.id)}
 				<a href={resolve(`/browse#${dataset.id}` as `/browse#${string}`)}>
 					<strong>{dataset.title}</strong>
 					<span>{dataset.period}</span>

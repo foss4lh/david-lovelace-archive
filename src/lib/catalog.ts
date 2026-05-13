@@ -73,6 +73,9 @@ export const collectionStats = collectionStatsJson as Record<
 	{ count: number; sizeBytes: number; sizeGb: number }
 >;
 
+/** Datasets shown in public browse UI (excludes meta entries like the inventory itself) */
+export const browseDatasets = datasets.filter((d) => d.id !== 'archive-inventory');
+
 export const visualDatasets = datasets
 	.filter((dataset) =>
 		dataset.assets.some((asset) => asset.kind === 'pmtiles' && asset.status === 'available')
@@ -87,11 +90,11 @@ export const visualDatasets = datasets
 	});
 
 export const summaryStats = {
-	datasetCount: datasets.length,
-	webReadyCount: datasets.filter(
+	datasetCount: browseDatasets.length,
+	webReadyCount: browseDatasets.filter(
 		(dataset) => dataset.status === 'available' || dataset.status === 'prototype-web-ready'
 	).length,
-	assetCount: datasets.flatMap((dataset) => dataset.assets).length
+	assetCount: browseDatasets.flatMap((dataset) => dataset.assets).length
 };
 
 export function statusLabel(status: string) {
