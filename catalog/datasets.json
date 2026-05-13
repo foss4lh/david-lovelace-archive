@@ -291,6 +291,14 @@
 				"bounds": [-3.149937, 51.833021, -2.683796, 52.225185],
 				"minZoom": 10,
 				"maxZoom": 14
+			},
+			{
+				"id": "ancient-woodland-herefordshire",
+				"kind": "geojson",
+				"title": "Ancient Woodland Inventory — Herefordshire",
+				"localPath": "/data/ancient_woodland_herefordshire.geojson",
+				"status": "available",
+				"bounds": [-3.14994, 51.82289, -2.33552, 52.39756]
 			}
 		],
 		"nextSteps": [

@@ -12,6 +12,16 @@
 	let opacity = $state(0.75);
 	let layerError = $state<string | null>(null);
 	let layerLoading = $state(false);
+	let showWoodland = $state(false);
+
+	// Find the first available geojson asset (e.g. Ancient Woodland)
+	const woodlandAsset = $derived(
+		datasets
+			.flatMap((d) => d.assets)
+			.find((a) => a.kind === 'geojson' && a.status === 'available' && a.localPath) as
+			| DatasetAsset
+			| undefined
+	);
 
 	// Flatten all available pmtiles/cog assets across all datasets into a single list
 	const allAssets = $derived(
@@ -37,6 +47,56 @@
 		const o = opacity;
 		if (!map || !map.getLayer('raster-layer')) return;
 		map.setPaintProperty('raster-layer', 'raster-opacity', o);
+	});
+
+	// Ancient Woodland vector overlay toggle
+	$effect(() => {
+		if (!map) return;
+		const show = showWoodland;
+
+		async function addWoodland() {
+			if (!woodlandAsset?.localPath) return;
+			try {
+				const url = woodlandAsset.localPath.startsWith('http')
+					? woodlandAsset.localPath
+					: `${window.location.origin}${woodlandAsset.localPath}`;
+
+				if (!map.getSource('woodland')) {
+					const res = await fetch(url);
+					const data = await res.json();
+					map.addSource('woodland', { type: 'geojson', data });
+				}
+
+				if (!map.getLayer('woodland-fill')) {
+					map.addLayer({
+						id: 'woodland-fill',
+						type: 'fill',
+						source: 'woodland',
+						paint: {
+							'fill-color': '#2d5a27',
+							'fill-opacity': 0.15,
+							'fill-outline-color': '#1a3d17'
+						}
+					});
+				}
+			} catch (err: unknown) {
+				console.error('[MapExplorer] Failed to load woodland layer:', err);
+			}
+		}
+
+		function removeWoodland() {
+			if (map.getLayer('woodland-fill')) map.removeLayer('woodland-fill');
+		}
+
+		if (map.isStyleLoaded()) {
+			if (show) addWoodland();
+			else removeWoodland();
+		} else {
+			map.once('style.load', () => {
+				if (show) addWoodland();
+				else removeWoodland();
+			});
+		}
 	});
 
 	onMount(() => {
@@ -166,6 +226,13 @@
 		<label for="opacity">Overlay opacity: {Math.round(opacity * 100)}%</label>
 		<input id="opacity" type="range" min="0" max="1" step="0.05" bind:value={opacity} />
 
+		{#if woodlandAsset}
+			<label class="toggle-label">
+				<input type="checkbox" bind:checked={showWoodland} />
+				Show Ancient Woodland boundaries
+			</label>
+		{/if}
+
 		{#if selectedAsset?.bounds}
 			<button class="zoom-btn" onclick={() => zoomToBounds(selectedAsset.bounds!)}>
 				Zoom to layer
@@ -237,6 +304,21 @@
 	input[type='range'] {
 		width: 100%;
 		margin-bottom: 1rem;
+	}
+
+	.toggle-label {
+		display: flex;
+		align-items: center;
+		gap: 0.5rem;
+		margin-bottom: 1rem;
+		font-weight: 400;
+		font-size: 0.85rem;
+		cursor: pointer;
+	}
+
+	.toggle-label input[type='checkbox'] {
+		width: auto;
+		margin-bottom: 0;
 	}
 
 	select {
