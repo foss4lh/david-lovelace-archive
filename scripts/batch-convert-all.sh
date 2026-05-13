@@ -31,13 +31,13 @@ convert_one() {
   
   if [[ "$src" == */ ]]; then
     # Directory — build VRT
-    local dir_path="/data/${src%/}"
+    local host_dir="$ROOT/${src%/}"
     local file_list="$work/files.txt"
-    find "$dir_path" -maxdepth 1 -type f -iname '*.ecw' \
+    find "$host_dir" -maxdepth 1 -type f -iname '*.ecw' \
       ! -iname '*patch*' \
       ! -iname '*test*' \
       ! -iname '*Copy*' \
-      -printf '%p\n' | sort > "$file_list"
+      -printf '%p\n' | sed "s|^$ROOT|/data|" | sort > "$file_list"
     
     local ecw_count=$(wc -l < "$file_list")
     echo "  Found $ecw_count ECW files in directory"

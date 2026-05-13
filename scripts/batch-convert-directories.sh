@@ -71,16 +71,16 @@ convert_one() {
   # Determine if source is a directory or individual file
   if [[ "$src" == */ ]]; then
     # Directory — build VRT from all .ecw files
-    local dir_path="/data/${src%/}"
-    echo "  Building file list from $dir_path ..."
+    local host_dir="$ROOT/${src%/}"
+    echo "  Building file list from $host_dir ..."
     
     # Find .ecw files, exclude patches/tests/copies/subdirs
     local file_list="$WORK/files.txt"
-    find "$dir_path" -maxdepth 1 -type f -iname '*.ecw' \
+    find "$host_dir" -maxdepth 1 -type f -iname '*.ecw' \
       ! -iname '*patch*' \
       ! -iname '*test*' \
       ! -iname '*Copy*' \
-      -printf '%p\n' | sort > "$file_list"
+      -printf '%p\n' | sed "s|^$ROOT|/data|" | sort > "$file_list"
     
     local ecw_count=$(wc -l < "$file_list")
     echo "  Found $ecw_count ECW files"
