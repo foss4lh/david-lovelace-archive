@@ -25,6 +25,7 @@ vite.config.ts.timestamp-*
 # Derived archive assets downloaded for local/static builds
 /static/data/*
 !/static/data/.gitkeep
+!/static/data/*.geojson
 /public/data/*
 !/public/data/.gitkeep
 
