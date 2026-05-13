@@ -157,7 +157,7 @@ function inferCollection(normalizedPath, matchers) {
 			return m.id;
 		}
 	}
-	return '';
+	return 'uncategorized';
 }
 
 function isExcludedFolder(dirPath) {
@@ -344,13 +344,36 @@ async function main() {
 
 	const collections = {};
 	for (const row of filteredRows) {
-		const c = row.collection || '(uncategorized)';
-		collections[c] = (collections[c] || 0) + 1;
+		const c = row.collection;
+		if (!collections[c]) collections[c] = { count: 0, size: 0 };
+		collections[c].count++;
+		collections[c].size += row.size;
 	}
 	console.log('Collection breakdown:');
 	Object.entries(collections)
-		.sort((a, b) => b[1] - a[1])
-		.forEach(([c, n]) => console.log(`  ${c}: ${n.toLocaleString()}`));
+		.sort((a, b) => b[1].count - a[1].count)
+		.forEach(([c, stats]) =>
+			console.log(
+				`  ${c}: ${stats.count.toLocaleString()} files (${(stats.size / 1024 / 1024 / 1024).toFixed(1)} GB)`
+			)
+		);
+
+	// Write collection stats JSON for the browse page
+	const statsPath = 'catalog/collection-stats.json';
+	const statsObj = Object.fromEntries(
+		Object.entries(collections).map(([id, stats]) => [
+			id,
+			{
+				count: stats.count,
+				sizeBytes: stats.size,
+				sizeGb: Number((stats.size / 1024 / 1024 / 1024).toFixed(2))
+			}
+		])
+	);
+	await import('node:fs/promises').then((fs) =>
+		fs.writeFile(statsPath, JSON.stringify(statsObj, null, '\t'))
+	);
+	console.log(`Wrote ${statsPath}`);
 }
 
 main().catch(console.error);
