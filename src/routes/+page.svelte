@@ -2,7 +2,6 @@
 	import { ArrowRight, Database, FileSearch, Map, SearchCheck } from '@lucide/svelte';
 	import { resolve } from '$app/paths';
 	import { datasets, summaryStats } from '$lib/catalog';
-	import ArchiveProgress from '$lib/components/ArchiveProgress.svelte';
 </script>
 
 <main>
@@ -52,8 +51,6 @@
 			</div>
 		</aside>
 	</section>
-
-	<ArchiveProgress />
 
 	<section class="section-grid">
 		<a class="feature" href={resolve('/datasets')}>
