@@ -1,0 +1,47 @@
+{
+	"uncategorized": {
+		"count": 236426,
+		"sizeBytes": 1704906293496,
+		"sizeGb": 1587.82
+	},
+	"hfd-aerofilms": {
+		"count": 14483,
+		"sizeBytes": 19667026432,
+		"sizeGb": 18.32
+	},
+	"hfd-hedgerow-surveys": {
+		"count": 2347,
+		"sizeBytes": 9382455651,
+		"sizeGb": 8.74
+	},
+	"hfd-royal-commission": {
+		"count": 126189,
+		"sizeBytes": 904835442842,
+		"sizeGb": 842.69
+	},
+	"hfd-pro-e112": {
+		"count": 11092,
+		"sizeBytes": 60110368042,
+		"sizeGb": 55.98
+	},
+	"hfd-tithe-maps": {
+		"count": 7210,
+		"sizeBytes": 144622648763,
+		"sizeGb": 134.69
+	},
+	"hfd-river-wye": {
+		"count": 485,
+		"sizeBytes": 2889233714,
+		"sizeGb": 2.69
+	},
+	"hfd-woodland-1948": {
+		"count": 8263,
+		"sizeBytes": 46019513570,
+		"sizeGb": 42.86
+	},
+	"hfd-aerial-historic": {
+		"count": 42,
+		"sizeBytes": 1654924674,
+		"sizeGb": 1.54
+	}
+}
