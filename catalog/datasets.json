@@ -202,10 +202,10 @@
 				"releaseAsset": "aerial-en-county.pmtiles",
 				"localPath": "/data/aerial-en-county.pmtiles",
 				"remoteUrl": "https://github.com/foss4lh/david-lovelace-archive/releases/download/data-v0.1.0/aerial-en-county.pmtiles",
-				"status": "processing",
-				"bounds": [-3.15, 51.82, -2.33, 52.4],
+				"status": "available",
+				"bounds": [-3.164289, 51.810043, -1.736446, 52.471934],
 				"minZoom": 10,
-				"maxZoom": 16
+				"maxZoom": 14
 			},
 			{
 				"id": "aerial-en-county-cog",
@@ -214,7 +214,8 @@
 				"releaseAsset": "aerial-en-county-cog.tif",
 				"localPath": "/data/aerial-en-county-cog.tif",
 				"remoteUrl": "https://github.com/foss4lh/david-lovelace-archive/releases/download/data-v0.1.0/aerial-en-county-cog.tif",
-				"status": "processing"
+				"status": "available",
+				"bounds": [-3.147299, 51.810031, -1.736444, 52.471641]
 			},
 			{
 				"id": "aerial-en-25cm",
@@ -223,10 +224,10 @@
 				"releaseAsset": "aerial-en-25cm.pmtiles",
 				"localPath": "/data/aerial-en-25cm.pmtiles",
 				"remoteUrl": "https://github.com/foss4lh/david-lovelace-archive/releases/download/data-v0.1.0/aerial-en-25cm.pmtiles",
-				"status": "processing",
-				"bounds": [-3.15, 51.82, -2.33, 52.4],
+				"status": "available",
+				"bounds": [-3.13324, 51.819294, -2.29159, 52.408634],
 				"minZoom": 10,
-				"maxZoom": 17
+				"maxZoom": 16
 			},
 			{
 				"id": "aerial-en-25cm-cog",
@@ -235,11 +236,10 @@
 				"releaseAsset": "aerial-en-25cm-cog.tif",
 				"localPath": "/data/aerial-en-25cm-cog.tif",
 				"remoteUrl": "https://github.com/foss4lh/david-lovelace-archive/releases/download/data-v0.1.0/aerial-en-25cm-cog.tif",
-				"status": "processing"
+				"status": "available"
 			}
 		],
 		"nextSteps": [
-			"Complete batch conversion of county coverage mosaics.",
 			"Add additional aerial photo sets (NMRC, RAF, Aerofilms).",
 			"Create thumbnail gallery for non-georeferenced photos."
 		],
