@@ -71,7 +71,12 @@
 		currentDatasetAssets.find((a) => a.id === selectedAssetId) as DatasetAsset | undefined
 	);
 
-	// Auto-select first available asset when dataset changes
+	// Find matching COG asset (same base id + '-cog')
+	const selectedCogAsset = $derived(
+		selectedDataset?.assets.find((a) => a.id === selectedAssetId + '-cog' && a.kind === 'cog')
+	);
+
+	// Auto-select first available pmtiles asset when dataset changes
 	$effect(() => {
 		const assets = currentDatasetAssets;
 		if (selectedDatasetId && assets.length) {
@@ -368,10 +373,26 @@
 			</button>
 		{/if}
 
+		{#if selectedCogAsset?.remoteUrl}
+			<a
+				class="download-btn"
+				href={selectedCogAsset.remoteUrl}
+				target="_blank"
+				rel="noopener external"
+				download
+			>
+				Download GeoTIFF (COG)
+			</a>
+		{/if}
+
 		{#if selectedDataset}
 			<div class="map-notes">
 				<span class="status">{selectedDataset.status.replace(/-/g, ' ')}</span>
 				<h2>{selectedDataset.title}</h2>
+				<p class="period">
+					<span class="period-label">Period</span>
+					{selectedDataset.period}
+				</p>
 				<p>{selectedDataset.summary}</p>
 
 				{#if selectedAsset}
@@ -479,6 +500,26 @@
 		background: #3d5a3f;
 	}
 
+	.download-btn {
+		display: block;
+		width: 100%;
+		margin-bottom: 1rem;
+		padding: 0.55rem;
+		border: 1px solid #6b5b3e;
+		border-radius: 6px;
+		background: #fffdf7;
+		color: #6b5b3e;
+		font-weight: 600;
+		cursor: pointer;
+		text-align: center;
+		text-decoration: none;
+		font-size: 0.9rem;
+	}
+
+	.download-btn:hover {
+		background: #f5efe4;
+	}
+
 	.map-stage {
 		display: flex;
 		flex-direction: column;
@@ -498,8 +539,29 @@
 	}
 
 	.map-notes h2 {
-		margin: 0.65rem 0 0.45rem;
+		margin: 0.65rem 0 0.2rem;
 		font-size: 1.2rem;
+	}
+
+	.period {
+		color: #7a735f;
+		font-weight: 700;
+		font-size: 0.9rem;
+		margin: 0 0 0.6rem;
+	}
+
+	.period-label {
+		display: inline-block;
+		color: #fffdf7;
+		font-size: 0.65rem;
+		font-weight: 700;
+		text-transform: uppercase;
+		letter-spacing: 0.05em;
+		background: #7a735f;
+		padding: 0.15rem 0.4rem;
+		border-radius: 4px;
+		margin-right: 0.4rem;
+		vertical-align: middle;
 	}
 
 	.map-notes p {

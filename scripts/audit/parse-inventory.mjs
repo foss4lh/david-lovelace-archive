@@ -9,9 +9,13 @@ const outputFile = 'catalog/archive-inventory.csv';
 
 /**
  * High-value historical and research formats to keep in the public index.
- * Note: Camera RAW files (arw, srw, crw, dng) are excluded as high-res JPGs exist.
- * GIS sidecars (shx, prj, qpj, xml, cpg) are excluded to reduce noise,
- * keeping only core spatial data (shp, dbf, ecw, asc, tab).
+ *
+ * ZIP files are ignored because they should be unzipped and processed first.
+ * Video files (mp4, avi, mov, mkv, wmv, flv) are omitted for now — the index
+ * focuses on maps, photos, and documents rather than tutorials or footage.
+ * Camera RAW files (arw, srw, crw, dng) are skipped because high-res JPGs exist.
+ * Parts of multi-file GIS layers (shx, prj, qpj, xml, cpg, dbf) are skipped
+ * to keep only the main spatial files (shp, ecw, asc, tab).
  */
 const INCLUDED_EXTENSIONS = new Set([
 	'ecw',
@@ -26,10 +30,7 @@ const INCLUDED_EXTENSIONS = new Set([
 	'xls',
 	'xlsx',
 	'shp',
-	'dbf',
 	'csv',
-	'mp4',
-	'zip',
 	'tab',
 	'asc'
 ]);
@@ -43,7 +44,40 @@ const MIN_SIZES = {
 // Filenames or patterns to exclude
 const EXCLUDED_NAMES = new Set(['thumbs.db', 'desktop.ini', 'zbthumbnail.info']);
 
-async function parseFile(filePath, csvStream) {
+/**
+ * Entire folders to skip. These are known backup, mirror, generated-derivative,
+ * personal, or noise directories that duplicate content elsewhere or are not
+ * landscape-history research material.
+ */
+const EXCLUDED_FOLDER_PATTERNS = [
+	/node_modules/i, // npm dependency trees
+	/TileGroup0/i, // DeepZoom / Zoomify generated tiles
+	/zoomify/i,
+	/zoomable/i,
+	/CrucialFoldersBU/i, // backup snapshot (Oct 2024)
+	/CrucialMapfilesBU/i, // backup snapshot (Oct 2024)
+	/RuthBackup/i, // personal backup folder
+	/IonosServer/i, // web server mirror
+	/zPrevious/i, // old project copies
+	/^D:\/Home(?:\/|$)/i, // personal home folder
+	/^D:\/Account(?:\/|$)/i, // personal financial/admin
+	/^D:\/Science(?:\/|$)/i, // generic science (not landscape history)
+	/ruth/i, // family/personal name
+	/robin/i, // family/personal name
+	/clare/i // family/personal name
+];
+
+function isExcludedFolder(dirPath) {
+	const normalized = dirPath.replace(/\\/g, '/');
+	return EXCLUDED_FOLDER_PATTERNS.some((re) => re.test(normalized));
+}
+
+/**
+ * Parse an inventory text file and return candidate rows + folder basenames per drive.
+ * Each returned row: { fullPath, size, ext, dateTime }.
+ * driveFolders: Map<drive_letter, Set<folder_basename>>
+ */
+async function scanFile(filePath) {
 	const fileStream = createReadStream(filePath);
 	const rl = readline.createInterface({
 		input: fileStream,
@@ -51,8 +85,25 @@ async function parseFile(filePath, csvStream) {
 	});
 
 	let currentDir = '';
+	let skipDir = false;
 	const dirRegex = /^ Directory of (.*)$/;
 	const fileRegex = /^(\d{2}\/\d{2}\/\d{4})\s+(\d{2}:\d{2})\s+([\d,]+|<DIR>)\s+(.*)$/;
+
+	const rows = [];
+	const driveFolders = new Map(); // drive -> Set(folderBasename)
+
+	function trackFolder(dirPath) {
+		const match = dirPath.match(/^([A-Z]:\\)/);
+		if (!match) return;
+		const drive = match[1];
+		const parts = dirPath.split('\\');
+		for (let i = 1; i < parts.length; i++) {
+			const basename = parts[i];
+			if (!basename) continue;
+			if (!driveFolders.has(drive)) driveFolders.set(drive, new Set());
+			driveFolders.get(drive).add(basename.toLowerCase());
+		}
+	}
 
 	for await (const line of rl) {
 		const trimmedLine = line.trim();
@@ -61,16 +112,24 @@ async function parseFile(filePath, csvStream) {
 		const dirMatch = line.match(dirRegex);
 		if (dirMatch) {
 			currentDir = dirMatch[1].trim();
+			skipDir = isExcludedFolder(currentDir);
+			if (!skipDir) trackFolder(currentDir);
 			continue;
 		}
+
+		if (skipDir) continue;
 
 		const fileMatch = line.match(fileRegex);
 		if (fileMatch) {
 			const [, date, time, sizeOrDir, name] = fileMatch;
-			if (sizeOrDir === '<DIR>') continue;
 			if (name === '.' || name === '..') continue;
 
-			// Filtering
+			// Track subdirectories as potential folder-basenames for zip filtering
+			if (sizeOrDir === '<DIR>') {
+				trackFolder(join(currentDir, name));
+				continue;
+			}
+
 			const lowerName = name.toLowerCase();
 			if (EXCLUDED_NAMES.has(lowerName) || lowerName.startsWith('.')) continue;
 
@@ -78,31 +137,89 @@ async function parseFile(filePath, csvStream) {
 			if (!INCLUDED_EXTENSIONS.has(ext)) continue;
 
 			const size = parseInt(sizeOrDir.replace(/,/g, ''), 10);
-
-			// Size filtering for common formats
 			if (MIN_SIZES[ext] && size < MIN_SIZES[ext]) continue;
 
 			const fullPath = join(currentDir, name);
-
-			csvStream.write(`"${fullPath.replace(/"/g, '""')}","${size}","${ext}","${date} ${time}"\n`);
+			rows.push({ fullPath, size, ext, dateTime: `${date} ${time}` });
 		}
 	}
+
+	return { rows, driveFolders };
+}
+
+/**
+ * Determine if a zip is just an archive of an existing folder on the same drive.
+ * Heuristic: zip basename (without .zip) matches a folder basename on the same drive
+ * AND the zip is > 100 MB (avoids tiny dependency zips).
+ */
+function isFolderArchiveZip(row, allDriveFolders) {
+	if (row.ext !== 'zip') return false;
+	if (row.size < 100 * 1024 * 1024) return false; // < 100 MB: keep (likely a download, not a folder archive)
+
+	const driveMatch = row.fullPath.match(/^([A-Z]:\\)/);
+	if (!driveMatch) return false;
+	const drive = driveMatch[1];
+	const zipBasename = row.fullPath
+		.split(/[\\/]/)
+		.pop()
+		.replace(/\.zip$/i, '')
+		.toLowerCase();
+
+	const folders = allDriveFolders.get(drive);
+	if (!folders) return false;
+	return folders.has(zipBasename);
 }
 
 async function main() {
 	const files = (await readdir(inventoryDir)).filter((f) => f.endsWith('.txt'));
 	console.log(`Found ${files.length} inventory files in ${inventoryDir}`);
 
+	// Phase 1: scan all files, collect rows + folder basenames per drive
+	const allRows = [];
+	const allDriveFolders = new Map();
+
+	for (const file of files) {
+		console.log(`Scanning ${file}...`);
+		const { rows, driveFolders } = await scanFile(join(inventoryDir, file));
+		for (const r of rows) allRows.push(r);
+		for (const [drive, folders] of driveFolders) {
+			if (!allDriveFolders.has(drive)) allDriveFolders.set(drive, new Set());
+			for (const f of folders) allDriveFolders.get(drive).add(f);
+		}
+	}
+
+	console.log(`Scanned ${allRows.length.toLocaleString()} candidate rows`);
+
+	// Phase 2: filter out zip archives of existing folders
+	let archiveZipsSkipped = 0;
+	let archiveZipBytes = 0;
+	const filteredRows = [];
+
+	for (const row of allRows) {
+		if (isFolderArchiveZip(row, allDriveFolders)) {
+			archiveZipsSkipped++;
+			archiveZipBytes += row.size;
+			continue;
+		}
+		filteredRows.push(row);
+	}
+
+	if (archiveZipsSkipped > 0) {
+		console.log(
+			`Skipped ${archiveZipsSkipped.toLocaleString()} folder-archive zip(s) (${(archiveZipBytes / 1024 / 1024 / 1024).toFixed(1)} GB)`
+		);
+	}
+
+	// Phase 3: write CSV
 	const csvStream = createWriteStream(outputFile);
 	csvStream.write('path,size,format,timestamp\n');
 
-	for (const file of files) {
-		console.log(`Parsing ${file}...`);
-		await parseFile(join(inventoryDir, file), csvStream);
+	for (const row of filteredRows) {
+		csvStream.write(`"${row.fullPath.replace(/"/g, '""')}","${row.size}","${row.ext}","${row.dateTime}"\n`);
 	}
 
 	csvStream.end();
-	console.log(`Wrote ${outputFile}`);
+	console.log(`Wrote ${outputFile} with ${filteredRows.length.toLocaleString()} rows`);
 }
 
 main().catch(console.error);
