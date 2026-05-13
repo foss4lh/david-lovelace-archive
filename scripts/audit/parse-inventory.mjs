@@ -9,9 +9,11 @@ const outputFile = 'catalog/archive-inventory.csv';
 
 /**
  * High-value historical and research formats to keep in the public index.
- * Note: Camera RAW files (arw, srw, crw, dng) are excluded as high-res JPGs exist.
- * GIS sidecars (shx, prj, qpj, xml, cpg) are excluded to reduce noise,
- * keeping only core spatial data (shp, dbf, ecw, asc, tab).
+ *
+ * ZIP files are ignored because they should be unzipped and processed first.
+ * Camera RAW files (arw, srw, crw, dng) are skipped because high-res JPGs exist.
+ * Parts of multi-file GIS layers (shx, prj, qpj, xml, cpg, dbf) are skipped
+ * to keep only the main spatial files (shp, ecw, asc, tab).
  */
 const INCLUDED_EXTENSIONS = new Set([
 	'ecw',
@@ -26,10 +28,8 @@ const INCLUDED_EXTENSIONS = new Set([
 	'xls',
 	'xlsx',
 	'shp',
-	'dbf',
 	'csv',
 	'mp4',
-	'zip',
 	'tab',
 	'asc'
 ]);

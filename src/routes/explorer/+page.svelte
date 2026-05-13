@@ -192,9 +192,9 @@
 	<section class="page-heading">
 		<h1>File explorer</h1>
 		<p>
-			Search and browse over 490,000 high-value historical and research files within the 2TB archive
-			index. Camera RAW files and common GIS sidecars (shx, prj, xml) are excluded to prioritize
-			primary maps, photography, and research records.
+			Search and browse high-value historical and research files from the 2TB archive. ZIP files,
+			Camera RAW files, and parts of multi-file GIS layers (shx, prj, xml, dbf) are ignored so the
+			index focuses on the main maps, photos, and research records.
 		</p>
 	</section>
 
