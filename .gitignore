@@ -34,3 +34,7 @@ vite.config.ts.timestamp-*
 /derived-data
 catalog/archive-inventory.csv
 catalog/*.local.json
+
+# Other AI agent workspaces
+.claude
+.openclaude

@@ -100,12 +100,8 @@
 		}
 		if (selectedFormat !== 'all') filters.push(`format = '${selectedFormat}'`);
 		if (selectedSource !== 'all') filters.push(`source = '${selectedSource}'`);
-
 		if (activeDataset) {
-			const pathFilters = activeDataset.sourceArchivePaths
-				.map((p) => `path ILIKE '%${p.replaceAll("'", "''")}%'`)
-				.join(' OR ');
-			if (pathFilters) filters.push(`(${pathFilters})`);
+			filters.push(`collection = '${activeDataset.id.replaceAll("'", "''")}'`);
 		}
 
 		return filters.length ? `WHERE ${filters.join(' AND ')}` : '';
