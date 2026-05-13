@@ -35,7 +35,7 @@ async function readInventory() {
 			path: normalisePath(row.path),
 			size: parseInt(row.size, 10) || 0,
 			format: row.format?.toLowerCase() || '',
-			published: row.already_published_online === 'TRUE',
+			published: row.already_published_online === 'TRUE'
 		});
 	}
 	return rows;
@@ -64,7 +64,7 @@ function buildMatchers(datasets) {
 			datasetId: ds.id,
 			datasetTitle: ds.title,
 			prefixes,
-			theme: ds.theme,
+			theme: ds.theme
 		});
 	}
 	return matchers;
@@ -92,7 +92,8 @@ function classifyFile(file) {
 	// Photos from projects / habitat / places
 	if (['jpg', 'jpeg', 'tif', 'tiff'].includes(fmt)) {
 		if (p.includes('history')) return 'history_photo';
-		if (p.includes('habitat') || p.includes('hedges') || p.includes('orchards')) return 'habitat_photo';
+		if (p.includes('habitat') || p.includes('hedges') || p.includes('orchards'))
+			return 'habitat_photo';
 		if (p.includes('projects')) return 'project_photo';
 		return 'photo_other';
 	}
@@ -100,7 +101,8 @@ function classifyFile(file) {
 	// Documents
 	if (['pdf', 'doc', 'docx', 'txt', 'xls', 'xlsx', 'csv'].includes(fmt)) {
 		if (p.includes('history')) return 'history_doc';
-		if (p.includes('habitat') || p.includes('hedges') || p.includes('orchards')) return 'habitat_doc';
+		if (p.includes('habitat') || p.includes('hedges') || p.includes('orchards'))
+			return 'habitat_doc';
 		if (p.includes('projects')) return 'project_doc';
 		return 'doc_other';
 	}
@@ -117,28 +119,34 @@ function makeGroups() {
 		maps: {
 			label: 'Georeferenced maps & aerials',
 			categories: ['map_ecw', 'map_tif', 'map_elevation', 'aerial_ecw'],
-			icon: 'map',
+			icon: 'map'
 		},
 		aerials: {
 			label: 'Aerial photography',
 			categories: ['aerial_ecw', 'aerial_photo'],
-			icon: 'camera',
+			icon: 'camera'
 		},
 		photos: {
 			label: 'Field & survey photographs',
-			categories: ['aerial_photo', 'history_photo', 'habitat_photo', 'project_photo', 'photo_other'],
-			icon: 'image',
+			categories: [
+				'aerial_photo',
+				'history_photo',
+				'habitat_photo',
+				'project_photo',
+				'photo_other'
+			],
+			icon: 'image'
 		},
 		docs: {
 			label: 'Documents & research notes',
 			categories: ['history_doc', 'habitat_doc', 'project_doc', 'doc_other'],
-			icon: 'file-text',
+			icon: 'file-text'
 		},
 		vectors: {
 			label: 'Vector & GIS layers',
 			categories: ['vector'],
-			icon: 'layers',
-		},
+			icon: 'layers'
+		}
 	};
 }
 
@@ -152,7 +160,9 @@ async function main() {
 		const alreadyPublic = f.published;
 		const liberated =
 			!alreadyPublic &&
-			matchers.some((m) => m.prefixes.some((prefix) => f.path.toLowerCase().startsWith(prefix.toLowerCase())));
+			matchers.some((m) =>
+				m.prefixes.some((prefix) => f.path.toLowerCase().startsWith(prefix.toLowerCase()))
+			);
 		return { ...f, category, alreadyPublic, liberated };
 	});
 
@@ -190,15 +200,21 @@ async function main() {
 			uniqueSize,
 			liberatedSize,
 			offlineSize,
-			pctLiberatedFiles: unique.length ? Math.round((liberated.length / unique.length) * 1000) / 10 : 0,
+			pctLiberatedFiles: unique.length
+				? Math.round((liberated.length / unique.length) * 1000) / 10
+				: 0,
 			pctLiberatedSize: uniqueSize ? Math.round((liberatedSize / uniqueSize) * 1000) / 10 : 0,
-			pctAlreadyPublicFiles: scope.length ? Math.round((alreadyPublic.length / scope.length) * 1000) / 10 : 0,
-			pctAlreadyPublicSize: scope.reduce((s, f) => s + f.size, 0) ? Math.round((alreadyPublicSize / scope.reduce((s, f) => s + f.size, 0)) * 1000) / 10 : 0,
+			pctAlreadyPublicFiles: scope.length
+				? Math.round((alreadyPublic.length / scope.length) * 1000) / 10
+				: 0,
+			pctAlreadyPublicSize: scope.reduce((s, f) => s + f.size, 0)
+				? Math.round((alreadyPublicSize / scope.reduce((s, f) => s + f.size, 0)) * 1000) / 10
+				: 0,
 			totalSizeFormatted: formatBytes(scope.reduce((s, f) => s + f.size, 0)),
 			uniqueSizeFormatted: formatBytes(uniqueSize),
 			liberatedSizeFormatted: formatBytes(liberatedSize),
 			offlineSizeFormatted: formatBytes(offlineSize),
-			alreadyPublicSizeFormatted: formatBytes(alreadyPublicSize),
+			alreadyPublicSizeFormatted: formatBytes(alreadyPublicSize)
 		};
 	}
 
@@ -211,7 +227,9 @@ async function main() {
 		const prefixes = (ds.sourceArchivePaths || []).map((p) =>
 			p.replace(/^[/\\]+/, '').replace(/\\/g, '/')
 		);
-		const dsFiles = files.filter((f) => prefixes.some((prefix) => f.path.toLowerCase().startsWith(prefix.toLowerCase())));
+		const dsFiles = files.filter((f) =>
+			prefixes.some((prefix) => f.path.toLowerCase().startsWith(prefix.toLowerCase()))
+		);
 		const dsUnique = dsFiles.filter((f) => !f.alreadyPublic);
 		const dsLiberated = dsUnique.filter((f) => f.liberated);
 		const dsAlreadyPublic = dsFiles.filter((f) => f.alreadyPublic);
@@ -231,13 +249,15 @@ async function main() {
 			uniqueSize: dsUniqueSize,
 			liberatedSize: dsLiberatedSize,
 			pctFiles: dsFiles.length ? Math.round((dsLiberated.length / dsFiles.length) * 1000) / 10 : 0,
-			pctUniqueFiles: dsUnique.length ? Math.round((dsLiberated.length / dsUnique.length) * 1000) / 10 : 0,
+			pctUniqueFiles: dsUnique.length
+				? Math.round((dsLiberated.length / dsUnique.length) * 1000) / 10
+				: 0,
 			pctSize: dsSize ? Math.round((dsLiberatedSize / dsSize) * 1000) / 10 : 0,
 			pctUniqueSize: dsUniqueSize ? Math.round((dsLiberatedSize / dsUniqueSize) * 1000) / 10 : 0,
 			totalSizeFormatted: formatBytes(dsSize),
 			uniqueSizeFormatted: formatBytes(dsUniqueSize),
 			liberatedSizeFormatted: formatBytes(dsLiberatedSize),
-			hasWebAssets: hasWebAsset,
+			hasWebAssets: hasWebAsset
 		});
 	}
 
@@ -251,10 +271,10 @@ async function main() {
 			totalSize: files.reduce((s, f) => s + f.size, 0),
 			uniqueSize: uniqueFiles.reduce((s, f) => s + f.size, 0),
 			liberatedSize: liberatedFiles.reduce((s, f) => s + f.size, 0),
-			alreadyPublicSize: alreadyPublicFiles.reduce((s, f) => s + f.size, 0),
+			alreadyPublicSize: alreadyPublicFiles.reduce((s, f) => s + f.size, 0)
 		},
 		groups: groupStats,
-		datasets: datasetStats.sort((a, b) => b.pctSize - a.pctSize),
+		datasets: datasetStats.sort((a, b) => b.pctSize - a.pctSize)
 	};
 
 	await writeFile(OUTPUT_PATH, JSON.stringify(output, null, '\t'));
@@ -263,8 +283,10 @@ async function main() {
 	console.log(`  Unique files: ${output.overall.uniqueFiles.toLocaleString()}`);
 	console.log(`  Liberated by us: ${output.overall.liberatedFiles.toLocaleString()}`);
 	console.log(`  Already public: ${output.overall.alreadyPublicFiles.toLocaleString()}`);
-	for (const [k, v] of Object.entries(groupStats)) {
-		console.log(`  ${v.label}: ${v.pctLiberatedFiles}% liberated (${v.liberatedFiles.toLocaleString()} / ${v.uniqueFiles.toLocaleString()} unique), ${v.pctAlreadyPublicFiles}% already public`);
+	for (const [, v] of Object.entries(groupStats)) {
+		console.log(
+			`  ${v.label}: ${v.pctLiberatedFiles}% liberated (${v.liberatedFiles.toLocaleString()} / ${v.uniqueFiles.toLocaleString()} unique), ${v.pctAlreadyPublicFiles}% already public`
+		);
 	}
 }
 
