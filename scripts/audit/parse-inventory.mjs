@@ -1,6 +1,7 @@
 import { createReadStream, createWriteStream } from 'node:fs';
 import { readdir } from 'node:fs/promises';
 import readline from 'node:readline';
+import datasets from '../../catalog/datasets.json' with { type: 'json' };
 
 const inventoryDir =
 	process.env.INVENTORY_ROOT ?? '/media/robin/foss4lh1/david-lovelace-archive/file-info-names';
@@ -118,6 +119,45 @@ function isAlreadyPublishedOnline(normalizedPath) {
 	return /\/(EN_Historical|1880_6inch|OS_opendata_2010|OS1931_6inch_NA|OS_SurveyorsDrawings|Herefordshire25000)\//i.test(
 		normalizedPath
 	);
+}
+
+/**
+ * Build collection matchers from datasets.json with precedence rules:
+ * 1. Longest (most specific) prefix wins
+ * 2. Datasets with available assets win over those without
+ * 3. Stable tie-breaker by dataset id
+ */
+function buildCollectionMatchers() {
+	const matchers = [];
+	for (const ds of datasets) {
+		for (const prefix of ds.sourceArchivePaths || []) {
+			const norm = prefix.replace(/\\/g, '/').toLowerCase().replace(/^\//, '').replace(/\/$/, '');
+			if (norm === '.' || norm === '') continue;
+			matchers.push({
+				id: ds.id,
+				prefix: norm,
+				prefixLen: norm.length,
+				hasAssets: ds.assets?.some((a) => a.status === 'available')
+			});
+		}
+	}
+	// Sort: most specific first, then prefer datasets with assets, then by id for stability
+	matchers.sort((a, b) => {
+		if (b.prefixLen !== a.prefixLen) return b.prefixLen - a.prefixLen;
+		if (b.hasAssets !== a.hasAssets) return b.hasAssets - a.hasAssets;
+		return a.id.localeCompare(b.id);
+	});
+	return matchers;
+}
+
+function inferCollection(normalizedPath, matchers) {
+	const path = normalizedPath.toLowerCase();
+	for (const m of matchers) {
+		if (path.includes('/' + m.prefix + '/') || path.startsWith(m.prefix + '/')) {
+			return m.id;
+		}
+	}
+	return '';
 }
 
 function isExcludedFolder(dirPath) {
@@ -274,13 +314,18 @@ async function main() {
 		);
 	}
 
-	// Phase 3: write CSV with source and already_published_online columns
+	// Phase 3: assign collections and write CSV
+	const collectionMatchers = buildCollectionMatchers();
+	for (const row of filteredRows) {
+		row.collection = inferCollection(row.fullPath, collectionMatchers);
+	}
+
 	const csvStream = createWriteStream(outputFile);
-	csvStream.write('path,size,format,timestamp,source,already_published_online\n');
+	csvStream.write('path,size,format,timestamp,source,already_published_online,collection\n');
 
 	for (const row of filteredRows) {
 		csvStream.write(
-			`"${row.fullPath.replace(/"/g, '""')}","${row.size}","${row.ext}","${row.dateTime}","${row.source}","${row.alreadyPublishedOnline}"\n`
+			`"${row.fullPath.replace(/"/g, '""')}","${row.size}","${row.ext}","${row.dateTime}","${row.source}","${row.alreadyPublishedOnline}","${row.collection}"\n`
 		);
 	}
 
@@ -296,6 +341,16 @@ async function main() {
 	Object.entries(sources)
 		.sort((a, b) => b[1] - a[1])
 		.forEach(([s, c]) => console.log(`  ${s}: ${c.toLocaleString()}`));
+
+	const collections = {};
+	for (const row of filteredRows) {
+		const c = row.collection || '(uncategorized)';
+		collections[c] = (collections[c] || 0) + 1;
+	}
+	console.log('Collection breakdown:');
+	Object.entries(collections)
+		.sort((a, b) => b[1] - a[1])
+		.forEach(([c, n]) => console.log(`  ${c}: ${n.toLocaleString()}`));
 }
 
 main().catch(console.error);
