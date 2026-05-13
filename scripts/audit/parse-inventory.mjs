@@ -43,6 +43,28 @@ const MIN_SIZES = {
 // Filenames or patterns to exclude
 const EXCLUDED_NAMES = new Set(['thumbs.db', 'desktop.ini', 'zbthumbnail.info']);
 
+/**
+ * Entire folders to skip. These are known backup, mirror, generated-derivative,
+ * or noise directories that duplicate content elsewhere or are not research
+ * material.
+ */
+const EXCLUDED_FOLDER_PATTERNS = [
+	/node_modules/i, // npm dependency trees
+	/TileGroup0/i, // DeepZoom / Zoomify generated tiles
+	/zoomify/i,
+	/zoomable/i,
+	/CrucialFoldersBU/i, // backup snapshot (Oct 2024)
+	/CrucialMapfilesBU/i, // backup snapshot (Oct 2024)
+	/RuthBackup/i, // personal backup folder
+	/IonosServer/i, // web server mirror
+	/zPrevious/i // old project copies
+];
+
+function isExcludedFolder(dirPath) {
+	const normalized = dirPath.replace(/\\/g, '/');
+	return EXCLUDED_FOLDER_PATTERNS.some((re) => re.test(normalized));
+}
+
 async function parseFile(filePath, csvStream) {
 	const fileStream = createReadStream(filePath);
 	const rl = readline.createInterface({
@@ -51,6 +73,7 @@ async function parseFile(filePath, csvStream) {
 	});
 
 	let currentDir = '';
+	let skipDir = false;
 	const dirRegex = /^ Directory of (.*)$/;
 	const fileRegex = /^(\d{2}\/\d{2}\/\d{4})\s+(\d{2}:\d{2})\s+([\d,]+|<DIR>)\s+(.*)$/;
 
@@ -61,8 +84,11 @@ async function parseFile(filePath, csvStream) {
 		const dirMatch = line.match(dirRegex);
 		if (dirMatch) {
 			currentDir = dirMatch[1].trim();
+			skipDir = isExcludedFolder(currentDir);
 			continue;
 		}
+
+		if (skipDir) continue;
 
 		const fileMatch = line.match(fileRegex);
 		if (fileMatch) {
