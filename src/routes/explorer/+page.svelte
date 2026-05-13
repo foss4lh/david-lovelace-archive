@@ -214,19 +214,8 @@
 			Search and browse high-value historical and research files from the 2TB archive. ZIP files,
 			video files, Camera RAW files, software, training material, and parts of multi-file GIS layers
 			(shx, prj, xml, dbf) are ignored so the index focuses on the main maps, photos, and research
-			records.
-		</p>
-		<p class="focus-note">
-			<strong>Focus on unique material.</strong>
-			Ordnance Survey 25-inch maps already published by the
-			<!-- eslint-disable-next-line svelte/no-navigation-without-resolve -->
-			<a
-				href="https://maps.nls.uk/os/25inch-england-and-wales/herefordshire.html"
-				target="_blank"
-				rel="noopener noreferrer">National Library of Scotland</a
-			>
-			are excluded from this index to keep the archive focussed on material not already in the public
-			domain.
+			records. Material already comprehensively published elsewhere, such as the Ordnance Survey
+			25-inch maps, is excluded from this index.
 		</p>
 	</section>
 
