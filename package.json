@@ -11,6 +11,7 @@
 		"inventory:parse": "node scripts/audit/parse-inventory.mjs",
 		"inventory:duckdb": "duckdb static/data/archive.duckdb \"CREATE OR REPLACE TABLE files AS SELECT * FROM read_csv_auto('catalog/archive-inventory.csv');\"",
 		"archive:audit": "node scripts/audit/archive-summary.mjs",
+		"progress:compute": "node scripts/audit/compute-progress.mjs",
 		"prepare": "svelte-kit sync || echo '' && husky install",
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
