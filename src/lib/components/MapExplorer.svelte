@@ -2,6 +2,7 @@
 	import { onMount, onDestroy } from 'svelte';
 	import { browser } from '$app/environment';
 	import type { ArchiveDataset, DatasetAsset } from '$lib/catalog';
+	import { page } from '$app/stores';
 
 	let { datasets }: { datasets: ArchiveDataset[] } = $props();
 
@@ -22,23 +23,40 @@
 		datasets.filter((d) => d.assets.some((a) => a.kind === 'pmtiles' || a.kind === 'cog'))
 	);
 
-	// Initialise selection from props so SSR emits populated selects
-	let selectedDatasetId = $state(
-		datasets.find((d) => d.assets.some((a) => a.kind === 'pmtiles' || a.kind === 'cog'))?.id ?? ''
-	);
-	let selectedAssetId = $state(
-		(() => {
-			const ds = datasets.find((d) =>
-				d.assets.some((a) => a.kind === 'pmtiles' || a.kind === 'cog')
-			);
-			const assets = ds ? ds.assets.filter((a) => a.kind === 'pmtiles' || a.kind === 'cog') : [];
-			return assets.find((a) => a.status === 'available')?.id ?? '';
-		})()
-	);
-	let opacity = $state(0.75);
+	// Read initial state from URL or fallback
+	let initialAssetId = browser ? $page.url.searchParams.get('asset') : null;
+	let initialOpacity = browser ? $page.url.searchParams.get('opacity') : null;
+	let initialWoodland = browser ? $page.url.searchParams.get('woodland') : null;
+
+	// Initialise selection
+	let opacity = $state(initialOpacity ? parseFloat(initialOpacity) : 0.75);
+	let showWoodland = $state(initialWoodland === 'true');
 	let layerError = $state<string | null>(null);
 	let layerLoading = $state(false);
-	let showWoodland = $state(false);
+
+	let selectedAssetId = $state(
+		initialAssetId ||
+			(() => {
+				const ds = datasets.find((d) =>
+					d.assets.some((a) => a.kind === 'pmtiles' || a.kind === 'cog')
+				);
+				const assets = ds ? ds.assets.filter((a) => a.kind === 'pmtiles' || a.kind === 'cog') : [];
+				return assets.find((a) => a.status === 'available')?.id ?? '';
+			})()
+	);
+
+	let selectedDatasetId = $state(
+		(() => {
+			if (initialAssetId) {
+				const ds = datasets.find((d) => d.assets.some((a) => a.id === initialAssetId));
+				if (ds) return ds.id;
+			}
+			return (
+				datasets.find((d) => d.assets.some((a) => a.kind === 'pmtiles' || a.kind === 'cog'))?.id ??
+				''
+			);
+		})()
+	);
 
 	const selectedDataset = $derived(visualDatasets.find((d) => d.id === selectedDatasetId));
 
@@ -57,10 +75,41 @@
 	$effect(() => {
 		const assets = currentDatasetAssets;
 		if (selectedDatasetId && assets.length) {
-			const firstAvailable = assets.find((a) => a.status === 'available');
-			selectedAssetId = firstAvailable?.id ?? '';
+			// If current asset is already in this dataset, keep it. Otherwise, pick first available.
+			if (!assets.some((a) => a.id === selectedAssetId)) {
+				const firstAvailable = assets.find((a) => a.status === 'available');
+				selectedAssetId = firstAvailable?.id ?? '';
+			}
 		} else {
 			selectedAssetId = '';
+		}
+	});
+
+	// Sync state to URL search params
+	$effect(() => {
+		if (!browser) return;
+		const a = selectedAssetId;
+		const o = opacity;
+		const w = showWoodland;
+
+		const url = new URL(window.location.href);
+		let changed = false;
+
+		if (a && url.searchParams.get('asset') !== a) {
+			url.searchParams.set('asset', a);
+			changed = true;
+		}
+		if (url.searchParams.get('opacity') !== o.toString()) {
+			url.searchParams.set('opacity', o.toString());
+			changed = true;
+		}
+		if (url.searchParams.get('woodland') !== w.toString()) {
+			url.searchParams.set('woodland', w.toString());
+			changed = true;
+		}
+
+		if (changed) {
+			window.history.replaceState(window.history.state, '', url);
 		}
 	});
 
@@ -134,6 +183,7 @@
 
 			map = new maplibregl.Map({
 				container,
+				hash: 'map',
 				style: {
 					version: 8,
 					sources: {
@@ -160,6 +210,46 @@
 			map.on('error', (e: unknown) => {
 				console.error('MapLibre error:', e);
 			});
+
+			const MaplibreGeocoder = (await import('@maplibre/maplibre-gl-geocoder')).default;
+			const nominatimGeocoder = {
+				forwardGeocode: async (config: { query?: string | number[] }) => {
+					// eslint-disable-next-line @typescript-eslint/no-explicit-any
+					const features: any[] = [];
+					if (!config.query || typeof config.query !== 'string')
+						return { type: 'FeatureCollection' as const, features };
+					try {
+						const request = `https://nominatim.openstreetmap.org/search?q=${encodeURIComponent(config.query)}&format=geojson&viewbox=-3.29,52.48,-2.18,51.73&bounded=1&addressdetails=1`;
+						const response = await fetch(request, {
+							headers: { 'User-Agent': 'DavidLovelaceArchive/1.0' }
+						});
+						const geojson = await response.json();
+						for (const feature of geojson.features) {
+							features.push({
+								center: feature.geometry.coordinates,
+								geometry: feature.geometry,
+								place_name: feature.properties.display_name,
+								place_type: ['place'],
+								properties: feature.properties,
+								text: feature.properties.name || feature.properties.display_name
+							});
+						}
+					} catch (e) {
+						console.error(`Failed to forwardGeocode with Nominatim: ${e}`);
+					}
+					return { type: 'FeatureCollection' as const, features };
+				}
+			};
+
+			const geocoder = new MaplibreGeocoder(nominatimGeocoder, {
+				maplibregl: maplibregl,
+				placeholder: 'Search Herefordshire...',
+				bbox: [-3.29, 51.73, -2.18, 52.48],
+				zoom: 13,
+				showResultMarkers: false
+			});
+
+			map.addControl(geocoder, 'top-right');
 		}
 
 		initMap();
@@ -235,6 +325,11 @@
 
 <svelte:head>
 	<link rel="stylesheet" href="https://unpkg.com/maplibre-gl@5.24.0/dist/maplibre-gl.css" />
+	<link
+		rel="stylesheet"
+		href="https://unpkg.com/@maplibre/maplibre-gl-geocoder@1.9.4/dist/maplibre-gl-geocoder.css"
+		type="text/css"
+	/>
 </svelte:head>
 
 <div class="map-layout">
