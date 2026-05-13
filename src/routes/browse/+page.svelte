@@ -11,7 +11,8 @@
 		X,
 		Map as MapIcon
 	} from '@lucide/svelte';
-	import { datasets, statusLabel } from '$lib/catalog';
+	import { datasets, statusLabel, collectionStats } from '$lib/catalog';
+
 	import { queryInventory } from '$lib/duckdb';
 
 	interface FileEntry {
@@ -76,6 +77,11 @@
 	const activeDataset = $derived(
 		selectedDataset ? (datasets.find((d) => d.id === selectedDataset) ?? null) : null
 	);
+
+	function formatGb(gb: number) {
+		if (gb >= 1000) return `${(gb / 1000).toFixed(1)} TB`;
+		return `${gb.toFixed(0)} GB`;
+	}
 
 	onMount(() => {
 		performRemoteQuery(1);
@@ -228,6 +234,7 @@
 		<h2>Collections</h2>
 		<div class="dataset-grid">
 			{#each datasets as dataset (dataset.id)}
+				{@const stats = collectionStats[dataset.id]}
 				<button
 					id={dataset.id}
 					class="dataset-card"
@@ -244,14 +251,39 @@
 						<span>{dataset.coverage}</span>
 						<span>{dataset.theme}</span>
 					</div>
-					{#if dataset.assets.length > 0}
+					{#if stats}
 						<div class="asset-count">
-							{dataset.assets.filter((a) => a.status === 'available').length} of
-							{dataset.assets.length} assets available
+							{stats.count.toLocaleString()} files · {formatGb(stats.sizeGb)}
 						</div>
 					{/if}
 				</button>
 			{/each}
+			<button
+				id="uncategorized"
+				class="dataset-card uncategorized"
+				class:active={selectedDataset === 'uncategorized'}
+				onclick={() => selectDataset(selectedDataset === 'uncategorized' ? null : 'uncategorized')}
+			>
+				<div class="dataset-topline">
+					<span class="status">research-needed</span>
+				</div>
+				<h3>Not yet assigned to a collection</h3>
+				<p>
+					Files in the archive that haven't been grouped into a curated dataset yet. Research is
+					ongoing to understand and classify this material.
+				</p>
+				<div class="dataset-meta">
+					<span>Herefordshire</span>
+					<span>mixed</span>
+				</div>
+				{#if collectionStats['uncategorized']}
+					<div class="asset-count">
+						{collectionStats['uncategorized'].count.toLocaleString()} files · {formatGb(
+							collectionStats['uncategorized'].sizeGb
+						)}
+					</div>
+				{/if}
+			</button>
 		</div>
 	</section>
 

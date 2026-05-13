@@ -9,3 +9,6 @@ bun.lockb
 /static/
 .claude
 .openclaude
+
+# Derived catalog data (generated, not tracked by git)
+catalog/*.json

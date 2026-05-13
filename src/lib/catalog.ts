@@ -1,5 +1,6 @@
 import datasetsJson from '../../catalog/datasets.json';
 import releasesJson from '../../catalog/releases.json';
+import collectionStatsJson from '../../catalog/collection-stats.json';
 
 export type DatasetStatus =
 	| 'available'
@@ -67,6 +68,10 @@ export interface ReleaseManifest {
 
 export const datasets = datasetsJson as ArchiveDataset[];
 export const releaseManifest = releasesJson as ReleaseManifest;
+export const collectionStats = collectionStatsJson as Record<
+	string,
+	{ count: number; sizeBytes: number; sizeGb: number }
+>;
 
 export const visualDatasets = datasets
 	.filter((dataset) =>
