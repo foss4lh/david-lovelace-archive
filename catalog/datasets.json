@@ -32,20 +32,94 @@
 		"period": "1837-1845",
 		"coverage": "Herefordshire",
 		"theme": "historic maps",
-		"status": "prototype-web-ready",
-		"summary": "Georectified and photographed tithe maps with apportionment material. This is one of the clearest routes into field-name, ownership, land-use, and boundary digitisation work.",
+		"status": "available",
+		"summary": "Georectified tithe maps for Herefordshire parishes, digitised from existing ECW sources. Additional parishes are photographed or scanned but still need georeferencing before they can be browsed online.",
 		"sourceArchivePaths": [
 			"Maps/TitheMapsOriginals",
 			"Maps/GG_TitheMaps",
 			"History/HCA/FownhopeTitheMap[HCA]",
 			"History/HCA/FownhopeTitheApportionments[HCA]",
-			"History/BurringtonTithe"
+			"History/BurringtonTithe",
+			"HARC/Raster/Hereford",
+			"HARC/Raster/Marden"
 		],
 		"assets": [
 			{
+				"id": "wigmore-castle-village-tithe",
+				"kind": "pmtiles",
+				"title": "Wigmore Castle & Village",
+				"releaseAsset": "wigmore-castle-village-tithe.pmtiles",
+				"localPath": "/data/wigmore-castle-village-tithe.pmtiles",
+				"remoteUrl": "https://github.com/foss4lh/david-lovelace-archive/releases/download/data-v0.1.0/wigmore-castle-village-tithe.pmtiles",
+				"status": "available",
+				"bounds": [-2.881328, 52.304925, -2.847354, 52.32393],
+				"minZoom": 10,
+				"maxZoom": 16
+			},
+			{
+				"id": "hampton-bishop-tithe",
+				"kind": "pmtiles",
+				"title": "Hampton Bishop",
+				"releaseAsset": "hampton-bishop-tithe.pmtiles",
+				"localPath": "/data/hampton-bishop-tithe.pmtiles",
+				"remoteUrl": "https://github.com/foss4lh/david-lovelace-archive/releases/download/data-v0.1.0/hampton-bishop-tithe.pmtiles",
+				"status": "available",
+				"bounds": [-2.6689029, 52.0197239, -2.625854, 52.053628],
+				"minZoom": 10,
+				"maxZoom": 16
+			},
+			{
+				"id": "holmer-tithe",
+				"kind": "pmtiles",
+				"title": "Holmer",
+				"releaseAsset": "holmer-tithe.pmtiles",
+				"localPath": "/data/holmer-tithe.pmtiles",
+				"remoteUrl": "https://github.com/foss4lh/david-lovelace-archive/releases/download/data-v0.1.0/holmer-tithe.pmtiles",
+				"status": "available",
+				"bounds": [-2.759381, 52.057832, -2.674078, 52.090057],
+				"minZoom": 10,
+				"maxZoom": 16
+			},
+			{
+				"id": "marden-tithe-54",
+				"kind": "pmtiles",
+				"title": "Marden (Sheet 54)",
+				"releaseAsset": "marden-tithe-54.pmtiles",
+				"localPath": "/data/marden-tithe-54.pmtiles",
+				"remoteUrl": "https://github.com/foss4lh/david-lovelace-archive/releases/download/data-v0.1.0/marden-tithe-54.pmtiles",
+				"status": "available",
+				"bounds": [-2.732116, 52.056117, -2.584794, 52.146832],
+				"minZoom": 10,
+				"maxZoom": 16
+			},
+			{
+				"id": "marden-tithe-55",
+				"kind": "pmtiles",
+				"title": "Marden (Sheet 55)",
+				"releaseAsset": "marden-tithe-55.pmtiles",
+				"localPath": "/data/marden-tithe-55.pmtiles",
+				"remoteUrl": "https://github.com/foss4lh/david-lovelace-archive/releases/download/data-v0.1.0/marden-tithe-55.pmtiles",
+				"status": "available",
+				"bounds": [-2.733594, 52.146012, -2.58598, 52.2367289],
+				"minZoom": 10,
+				"maxZoom": 16
+			},
+			{
+				"id": "fownhope-tithe",
+				"kind": "pmtiles",
+				"title": "Fownhope (needs georeferencing)",
+				"status": "needs-georeferencing"
+			},
+			{
+				"id": "burrington-tithe",
+				"kind": "pmtiles",
+				"title": "Burrington (needs georeferencing)",
+				"status": "needs-georeferencing"
+			},
+			{
 				"id": "whitby-tithe-pmtiles",
 				"kind": "pmtiles",
-				"title": "Whitby Tithe Map PMTiles prototype",
+				"title": "Whitby (planned release)",
 				"releaseAsset": "whitby-tithe.pmtiles",
 				"localPath": "/data/whitby-tithe.pmtiles",
 				"remoteUrl": "https://github.com/foss4lh/david-lovelace-archive/releases/download/data-v0.1.0/whitby-tithe.pmtiles",
@@ -58,7 +132,7 @@
 			"Digitise field boundaries and link polygons to apportionment rows.",
 			"Document georectification confidence and known distortions."
 		],
-		"limitations": "Many originals are photographed or scanned as raw/TIF/JPG files and need normalisation before web delivery."
+		"limitations": "Many originals are photographed or scanned as raw/TIF/JPG files and need normalisation and georeferencing before web delivery."
 	},
 	{
 		"id": "hfd-aerofilms",

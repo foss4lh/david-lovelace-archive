@@ -137,6 +137,51 @@
 			"target": "static/data/CSW.pmtiles",
 			"requiredForBuild": true,
 			"status": "available"
+		},
+		{
+			"id": "wigmore-castle-village-tithe",
+			"title": "Wigmore Castle & Village Tithe PMTiles",
+			"filename": "wigmore-castle-village-tithe.pmtiles",
+			"url": "https://github.com/foss4lh/david-lovelace-archive/releases/download/data-v0.1.0/wigmore-castle-village-tithe.pmtiles",
+			"target": "static/data/wigmore-castle-village-tithe.pmtiles",
+			"requiredForBuild": true,
+			"status": "available"
+		},
+		{
+			"id": "hampton-bishop-tithe",
+			"title": "Hampton Bishop Tithe PMTiles",
+			"filename": "hampton-bishop-tithe.pmtiles",
+			"url": "https://github.com/foss4lh/david-lovelace-archive/releases/download/data-v0.1.0/hampton-bishop-tithe.pmtiles",
+			"target": "static/data/hampton-bishop-tithe.pmtiles",
+			"requiredForBuild": true,
+			"status": "available"
+		},
+		{
+			"id": "holmer-tithe",
+			"title": "Holmer Tithe PMTiles",
+			"filename": "holmer-tithe.pmtiles",
+			"url": "https://github.com/foss4lh/david-lovelace-archive/releases/download/data-v0.1.0/holmer-tithe.pmtiles",
+			"target": "static/data/holmer-tithe.pmtiles",
+			"requiredForBuild": true,
+			"status": "available"
+		},
+		{
+			"id": "marden-tithe-54",
+			"title": "Marden Tithe Sheet 54 PMTiles",
+			"filename": "marden-tithe-54.pmtiles",
+			"url": "https://github.com/foss4lh/david-lovelace-archive/releases/download/data-v0.1.0/marden-tithe-54.pmtiles",
+			"target": "static/data/marden-tithe-54.pmtiles",
+			"requiredForBuild": true,
+			"status": "available"
+		},
+		{
+			"id": "marden-tithe-55",
+			"title": "Marden Tithe Sheet 55 PMTiles",
+			"filename": "marden-tithe-55.pmtiles",
+			"url": "https://github.com/foss4lh/david-lovelace-archive/releases/download/data-v0.1.0/marden-tithe-55.pmtiles",
+			"target": "static/data/marden-tithe-55.pmtiles",
+			"requiredForBuild": true,
+			"status": "available"
 		}
 	]
 }

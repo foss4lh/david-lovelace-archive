@@ -2,6 +2,7 @@ import datasetsJson from '../../catalog/datasets.json';
 import releasesJson from '../../catalog/releases.json';
 
 export type DatasetStatus =
+	| 'available'
 	| 'prototype-web-ready'
 	| 'inventory-needed'
 	| 'cataloguing'

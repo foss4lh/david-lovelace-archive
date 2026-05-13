@@ -8,12 +8,6 @@
 	let container: HTMLDivElement;
 	// eslint-disable-next-line @typescript-eslint/no-explicit-any
 	let map: any = $state.raw(null);
-	let selectedAssetId = $state('');
-	let opacity = $state(0.75);
-	let layerError = $state<string | null>(null);
-	let layerLoading = $state(false);
-	let showWoodland = $state(false);
-
 	// Find the first available geojson asset (e.g. Ancient Woodland)
 	const woodlandAsset = $derived(
 		datasets
@@ -23,22 +17,51 @@
 			| undefined
 	);
 
-	// Flatten all available pmtiles/cog assets across all datasets into a single list
-	const allAssets = $derived(
-		datasets.flatMap((d) =>
-			d.assets
-				.filter((a) => (a.kind === 'pmtiles' || a.kind === 'cog') && a.status === 'available')
-				.map((a) => ({ dataset: d, asset: a as DatasetAsset }))
-		)
+	// Datasets that have at least one pmtiles/cog asset (any status)
+	const visualDatasets = $derived(
+		datasets.filter((d) => d.assets.some((a) => a.kind === 'pmtiles' || a.kind === 'cog'))
 	);
 
-	const selectedEntry = $derived(allAssets.find((e) => e.asset.id === selectedAssetId));
-	const selectedDataset = $derived(selectedEntry?.dataset);
-	const selectedAsset = $derived(selectedEntry?.asset);
+	// Initialise selection from props so SSR emits populated selects
+	let selectedDatasetId = $state(
+		datasets.find((d) => d.assets.some((a) => a.kind === 'pmtiles' || a.kind === 'cog'))?.id ?? ''
+	);
+	let selectedAssetId = $state(
+		(() => {
+			const ds = datasets.find((d) =>
+				d.assets.some((a) => a.kind === 'pmtiles' || a.kind === 'cog')
+			);
+			const assets = ds ? ds.assets.filter((a) => a.kind === 'pmtiles' || a.kind === 'cog') : [];
+			return assets.find((a) => a.status === 'available')?.id ?? '';
+		})()
+	);
+	let opacity = $state(0.75);
+	let layerError = $state<string | null>(null);
+	let layerLoading = $state(false);
+	let showWoodland = $state(false);
 
-	// Auto-select first available asset on load
+	const selectedDataset = $derived(visualDatasets.find((d) => d.id === selectedDatasetId));
+
+	// All pmtiles/cog assets in the selected dataset, including disabled ones
+	const currentDatasetAssets = $derived(
+		selectedDataset
+			? selectedDataset.assets.filter((a) => a.kind === 'pmtiles' || a.kind === 'cog')
+			: []
+	);
+
+	const selectedAsset = $derived(
+		currentDatasetAssets.find((a) => a.id === selectedAssetId) as DatasetAsset | undefined
+	);
+
+	// Auto-select first available asset when dataset changes
 	$effect(() => {
-		if (!selectedAssetId && allAssets.length) selectedAssetId = allAssets[0].asset.id;
+		const assets = currentDatasetAssets;
+		if (selectedDatasetId && assets.length) {
+			const firstAvailable = assets.find((a) => a.status === 'available');
+			selectedAssetId = firstAvailable?.id ?? '';
+		} else {
+			selectedAssetId = '';
+		}
 	});
 
 	// Opacity control — read opacity first so Svelte always tracks it as a dependency,
@@ -216,10 +239,21 @@
 
 <div class="map-layout">
 	<aside class="map-sidebar">
-		<label for="dataset">Map layer</label>
-		<select id="dataset" bind:value={selectedAssetId}>
-			{#each allAssets as entry (entry.asset.id)}
-				<option value={entry.asset.id}>{entry.asset.title}</option>
+		<label for="dataset">Data source</label>
+		<select id="dataset" bind:value={selectedDatasetId}>
+			{#each visualDatasets as ds (ds.id)}
+				<option value={ds.id}>{ds.title}</option>
+			{/each}
+		</select>
+
+		<label for="asset">Map sheet / parish</label>
+		<select id="asset" bind:value={selectedAssetId}>
+			{#each currentDatasetAssets as asset (asset.id)}
+				<option value={asset.id} disabled={asset.status !== 'available'}>
+					{asset.status === 'available'
+						? asset.title
+						: `${asset.title} — ${asset.status.replace(/-/g, ' ')}`}
+				</option>
 			{/each}
 		</select>
 
@@ -327,6 +361,11 @@
 		border-radius: 6px;
 		background: #fffdf7;
 		color: #20231f;
+	}
+
+	select option:disabled {
+		color: #999;
+		font-style: italic;
 	}
 
 	.zoom-btn {
