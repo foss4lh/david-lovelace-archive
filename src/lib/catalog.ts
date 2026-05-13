@@ -66,9 +66,20 @@ export interface ReleaseManifest {
 export const datasets = datasetsJson as ArchiveDataset[];
 export const releaseManifest = releasesJson as ReleaseManifest;
 
-export const visualDatasets = datasets.filter((dataset) =>
-	dataset.assets.some((asset) => asset.kind === 'pmtiles' || asset.kind === 'cog')
-);
+export const visualDatasets = datasets
+	.filter((dataset) =>
+		dataset.assets.some(
+			(asset) => (asset.kind === 'pmtiles' || asset.kind === 'cog') && asset.status === 'available'
+		)
+	)
+	.sort((a, b) => {
+		// Sort datasets with available assets first
+		const aAvailable = a.assets.some((asset) => asset.status === 'available');
+		const bAvailable = b.assets.some((asset) => asset.status === 'available');
+		if (aAvailable && !bAvailable) return -1;
+		if (!aAvailable && bAvailable) return 1;
+		return 0;
+	});
 
 export const summaryStats = {
 	datasetCount: datasets.length,
