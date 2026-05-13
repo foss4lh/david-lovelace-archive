@@ -216,6 +216,18 @@
 			(shx, prj, xml, dbf) are ignored so the index focuses on the main maps, photos, and research
 			records.
 		</p>
+		<p class="focus-note">
+			<strong>Focus on unique material.</strong>
+			Ordnance Survey 25-inch maps already published by the
+			<!-- eslint-disable-next-line svelte/no-navigation-without-resolve -->
+			<a
+				href="https://maps.nls.uk/os/25inch-england-and-wales/herefordshire.html"
+				target="_blank"
+				rel="noopener noreferrer">National Library of Scotland</a
+			>
+			are excluded from this index to keep the archive focussed on material not already in the public
+			domain.
+		</p>
 	</section>
 
 	<div class="explorer-controls">

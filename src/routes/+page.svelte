@@ -12,6 +12,19 @@
 				In memory of David Lovelace (1948–2026). This collection brings together maps, aerial
 				photography, habitat data, and research notes documenting Herefordshire's landscape history.
 			</p>
+			<p class="focus-note">
+				<strong>Focus on unique material.</strong>
+				The online archive prioritises datasets that are not already comprehensively published elsewhere.
+				For example, the Ordnance Survey 25-inch maps for Herefordshire are already fully digitised and
+				georeferenced by the
+				<!-- eslint-disable-next-line svelte/no-navigation-without-resolve -->
+				<a
+					href="https://maps.nls.uk/os/25inch-england-and-wales/herefordshire.html"
+					target="_blank"
+					rel="noopener noreferrer">National Library of Scotland</a
+				>
+				— so they are referenced externally rather than duplicated here.
+			</p>
 			<p class="donation-note">
 				Following David's passing on 5th May 2026, we intend to donate these datasets to relevant
 				local and national organisations to ensure they remain a permanent resource for research.

@@ -8,6 +8,18 @@
 	<section class="page-heading">
 		<h1>Dataset catalog</h1>
 		<p>Descriptions and manifests for archive collections and their web-ready derivatives.</p>
+		<p class="focus-note">
+			<strong>Focus on unique material.</strong>
+			This archive prioritises datasets not already comprehensively published elsewhere. Ordnance Survey
+			25-inch maps for Herefordshire are already fully digitised and georeferenced by the
+			<!-- eslint-disable-next-line svelte/no-navigation-without-resolve -->
+			<a
+				href="https://maps.nls.uk/os/25inch-england-and-wales/herefordshire.html"
+				target="_blank"
+				rel="noopener noreferrer">National Library of Scotland</a
+			>
+			— we reference them externally rather than duplicating them.
+		</p>
 	</section>
 
 	<section class="download-panel">
