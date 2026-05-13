@@ -68,9 +68,11 @@ catalog/*.local.json
 *.bz2
 *.7z
 *.rar
+*.csv
 *.db
 *.sqlite
 *.duckdb
+*.pmtiles
 *.tif
 *.tiff
 *.ecw
