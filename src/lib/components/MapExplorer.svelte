@@ -8,24 +8,35 @@
 	let container: HTMLDivElement;
 	// eslint-disable-next-line @typescript-eslint/no-explicit-any
 	let map: any = $state.raw(null);
-	let selectedId = $state('');
+	let selectedAssetId = $state('');
 	let opacity = $state(0.75);
 	let layerError = $state<string | null>(null);
 	let layerLoading = $state(false);
 
-	const selectedDataset = $derived(datasets.find((dataset) => dataset.id === selectedId));
-	const selectedAsset = $derived(
-		selectedDataset?.assets.find((asset) => asset.kind === 'pmtiles') as DatasetAsset | undefined
+	// Flatten all available pmtiles/cog assets across all datasets into a single list
+	const allAssets = $derived(
+		datasets.flatMap((d) =>
+			d.assets
+				.filter((a) => (a.kind === 'pmtiles' || a.kind === 'cog') && a.status === 'available')
+				.map((a) => ({ dataset: d, asset: a as DatasetAsset }))
+		)
 	);
 
+	const selectedEntry = $derived(allAssets.find((e) => e.asset.id === selectedAssetId));
+	const selectedDataset = $derived(selectedEntry?.dataset);
+	const selectedAsset = $derived(selectedEntry?.asset);
+
+	// Auto-select first available asset on load
 	$effect(() => {
-		if (!selectedId && datasets.length) selectedId = datasets[0].id;
+		if (!selectedAssetId && allAssets.length) selectedAssetId = allAssets[0].asset.id;
 	});
 
-	// Opacity control — only update after raster-layer has been added
+	// Opacity control — read opacity first so Svelte always tracks it as a dependency,
+	// even when the early-return guard fires before the setPaintProperty call
 	$effect(() => {
+		const o = opacity;
 		if (!map || !map.getLayer('raster-layer')) return;
-		map.setPaintProperty('raster-layer', 'raster-opacity', opacity);
+		map.setPaintProperty('raster-layer', 'raster-opacity', o);
 	});
 
 	onMount(() => {
@@ -153,10 +164,10 @@
 
 <div class="map-layout">
 	<aside class="map-sidebar">
-		<label for="dataset">Visual dataset</label>
-		<select id="dataset" bind:value={selectedId}>
-			{#each datasets as dataset (dataset.id)}
-				<option value={dataset.id}>{dataset.title}</option>
+		<label for="dataset">Map layer</label>
+		<select id="dataset" bind:value={selectedAssetId}>
+			{#each allAssets as entry (entry.asset.id)}
+				<option value={entry.asset.id}>{entry.asset.title}</option>
 			{/each}
 		</select>
 
