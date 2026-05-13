@@ -49,6 +49,7 @@
 	},
 	"dependencies": {
 		"@lucide/svelte": "^1.14.0",
+		"@maplibre/maplibre-gl-geocoder": "^1.9.4",
 		"maplibre-gl": "^5.24.0",
 		"pmtiles": "^4.4.1"
 	}
