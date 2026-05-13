@@ -193,8 +193,8 @@
 		<h1>File explorer</h1>
 		<p>
 			Search and browse high-value historical and research files from the 2TB archive. ZIP files,
-			Camera RAW files, and parts of multi-file GIS layers (shx, prj, xml, dbf) are ignored so the
-			index focuses on the main maps, photos, and research records.
+			video files, Camera RAW files, and parts of multi-file GIS layers (shx, prj, xml, dbf) are
+			ignored so the index focuses on the main maps, photos, and research records.
 		</p>
 	</section>
 

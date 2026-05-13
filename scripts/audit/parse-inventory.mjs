@@ -11,6 +11,8 @@ const outputFile = 'catalog/archive-inventory.csv';
  * High-value historical and research formats to keep in the public index.
  *
  * ZIP files are ignored because they should be unzipped and processed first.
+ * Video files (mp4, avi, mov, mkv, wmv, flv) are omitted for now — the index
+ * focuses on maps, photos, and documents rather than tutorials or footage.
  * Camera RAW files (arw, srw, crw, dng) are skipped because high-res JPGs exist.
  * Parts of multi-file GIS layers (shx, prj, qpj, xml, cpg, dbf) are skipped
  * to keep only the main spatial files (shp, ecw, asc, tab).
@@ -29,7 +31,6 @@ const INCLUDED_EXTENSIONS = new Set([
 	'xlsx',
 	'shp',
 	'csv',
-	'mp4',
 	'tab',
 	'asc'
 ]);
@@ -45,8 +46,8 @@ const EXCLUDED_NAMES = new Set(['thumbs.db', 'desktop.ini', 'zbthumbnail.info'])
 
 /**
  * Entire folders to skip. These are known backup, mirror, generated-derivative,
- * or noise directories that duplicate content elsewhere or are not research
- * material.
+ * personal, or noise directories that duplicate content elsewhere or are not
+ * landscape-history research material.
  */
 const EXCLUDED_FOLDER_PATTERNS = [
 	/node_modules/i, // npm dependency trees
@@ -57,7 +58,13 @@ const EXCLUDED_FOLDER_PATTERNS = [
 	/CrucialMapfilesBU/i, // backup snapshot (Oct 2024)
 	/RuthBackup/i, // personal backup folder
 	/IonosServer/i, // web server mirror
-	/zPrevious/i // old project copies
+	/zPrevious/i, // old project copies
+	/^D:\/Home(?:\/|$)/i, // personal home folder
+	/^D:\/Account(?:\/|$)/i, // personal financial/admin
+	/^D:\/Science(?:\/|$)/i, // generic science (not landscape history)
+	/ruth/i, // family/personal name
+	/robin/i, // family/personal name
+	/clare/i // family/personal name
 ];
 
 function isExcludedFolder(dirPath) {
