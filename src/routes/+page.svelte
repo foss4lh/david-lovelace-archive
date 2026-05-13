@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { ArrowRight, Database, FileSearch, Map, SearchCheck } from '@lucide/svelte';
+	import { ArrowRight, FileSearch, Map, SearchCheck } from '@lucide/svelte';
 	import { resolve } from '$app/paths';
 	import { datasets, summaryStats } from '$lib/catalog';
 </script>
@@ -20,8 +20,8 @@
 				local and national organisations to ensure they remain a permanent resource for research.
 			</p>
 			<div class="actions">
-				<a class="button primary" href={resolve('/datasets')}
-					>Browse datasets <ArrowRight size={17} /></a
+				<a class="button primary" href={resolve('/browse')}
+					>Browse archive <ArrowRight size={17} /></a
 				>
 				<a class="button" href={resolve('/research')}>See research agenda</a>
 			</div>
@@ -43,15 +43,10 @@
 	</section>
 
 	<section class="section-grid">
-		<a class="feature" href={resolve('/datasets')}>
-			<Database size={22} />
-			<h2>Dataset catalog</h2>
-			<p>Track source archive paths, derived assets, release downloads, status, and limitations.</p>
-		</a>
-		<a class="feature" href={resolve('/explorer')}>
+		<a class="feature" href={resolve('/browse')}>
 			<FileSearch size={22} />
-			<h2>File explorer</h2>
-			<p>Search and browse over 1.2 million individual files within the 2TB archive index.</p>
+			<h2>Browse collections & files</h2>
+			<p>Explore curated dataset collections and search the underlying 2TB archive index.</p>
 		</a>
 		<a class="feature" href={resolve('/maps')}>
 			<Map size={22} />
@@ -74,7 +69,7 @@
 		</div>
 		<div class="dataset-strip">
 			{#each datasets as dataset (dataset.id)}
-				<a href={resolve(`/datasets#${dataset.id}` as `/datasets#${string}`)}>
+				<a href={resolve(`/browse#${dataset.id}` as `/browse#${string}`)}>
 					<strong>{dataset.title}</strong>
 					<span>{dataset.period}</span>
 				</a>
