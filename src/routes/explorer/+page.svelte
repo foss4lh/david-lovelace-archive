@@ -96,7 +96,7 @@
 				const countResult = await queryInventory(`
 					WITH scoped AS (
 						SELECT path
-						FROM files
+						FROM archive.files
 						${whereClause}
 					), folders AS (
 						SELECT CASE
@@ -113,7 +113,7 @@
 				const results = await queryInventory(`
 					WITH scoped AS (
 						SELECT path, size
-						FROM files
+						FROM archive.files
 						${whereClause}
 					), folders AS (
 						SELECT
@@ -142,18 +142,18 @@
 				remoteFileResults = [];
 			} else {
 				const countResult = await queryInventory(
-					`SELECT COUNT(*) AS match_count FROM files ${whereClause}`
+					`SELECT COUNT(*) AS match_count FROM archive.files ${whereClause}`
 				);
 				remoteMatchCount = Number(countResult?.getChild('match_count')?.get(0) ?? 0);
 
 				const results = await queryInventory(
-					`SELECT path, size, format FROM files ${whereClause} ORDER BY size DESC NULLS LAST LIMIT ${PAGE_SIZE} OFFSET ${offset}`
+					`SELECT path, size, format FROM archive.files ${whereClause} ORDER BY size DESC NULLS LAST LIMIT ${PAGE_SIZE} OFFSET ${offset}`
 				);
 				remoteFileResults =
 					// eslint-disable-next-line @typescript-eslint/no-explicit-any
 					results?.toArray().map((row: any) => ({
 						path: row.path as string,
-						size: ((row.size as number) / (1024 * 1024)).toFixed(1) + ' MB',
+						size: (Number(row.size ?? 0) / (1024 * 1024)).toFixed(1) + ' MB',
 						format: row.format as string,
 						description: 'Found in archive index'
 					})) ?? [];
