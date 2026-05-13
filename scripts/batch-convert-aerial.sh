@@ -28,13 +28,13 @@ convert_directory() {
   local work=$(mktemp -d)
   local docker_work="docker run --rm -v $ROOT:/data -v $work:/work ginetto/gdal:2.4.4_ECW"
   
-  # Build file list
+  # Build file list (use host path for find, then rewrite to /data/ for Docker)
   local file_list="$work/files.txt"
-  find "/data/${src_dir%/}" -maxdepth 2 -type f -iname '*.ecw' \
+  find "$ROOT/${src_dir%/}" -maxdepth 2 -type f -iname '*.ecw' \
     ! -iname '*patch*' \
     ! -iname '*test*' \
     ! -iname '*Copy*' \
-    -printf '%p\n' | sort > "$file_list"
+    -printf '%p\n' | sed "s|^$ROOT|/data|" | sort > "$file_list"
   
   local ecw_count=$(wc -l < "$file_list")
   echo "  Found $ecw_count ECW files"
