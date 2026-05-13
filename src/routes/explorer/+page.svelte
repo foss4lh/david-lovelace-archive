@@ -16,6 +16,7 @@
 		path: string;
 		size: string;
 		format: string;
+		source: string;
 		description: string;
 	}
 
@@ -30,6 +31,7 @@
 	let searchQuery = $state('');
 	let folderQuery = $state('');
 	let selectedFormat = $state('all');
+	let selectedSource = $state('all');
 	let selectedView = $state<'files' | 'folders'>('files');
 	let currentPage = $state(1);
 	let isQuerying = $state(false);
@@ -53,6 +55,21 @@
 		'zip',
 		'tab',
 		'asc'
+	];
+
+	// Source categories from archive inventory classification
+	const sourceOptions = [
+		'all',
+		'Historic Record',
+		'Historic Map',
+		'Aerial Photograph',
+		'Woodland Survey',
+		'Habitat Survey',
+		'Veteran Tree Survey',
+		'Georeferenced Raster',
+		'LIDAR Survey',
+		'GIS Vector',
+		'Unknown'
 	];
 
 	onMount(() => {
@@ -79,6 +96,7 @@
 			);
 		}
 		if (selectedFormat !== 'all') filters.push(`format = '${selectedFormat}'`);
+		if (selectedSource !== 'all') filters.push(`source = '${selectedSource}'`);
 
 		return filters.length ? `WHERE ${filters.join(' AND ')}` : '';
 	}
@@ -147,7 +165,7 @@
 				remoteMatchCount = Number(countResult?.getChild('match_count')?.get(0) ?? 0);
 
 				const results = await queryInventory(
-					`SELECT path, size, format FROM archive.files ${whereClause} ORDER BY size DESC NULLS LAST LIMIT ${PAGE_SIZE} OFFSET ${offset}`
+					`SELECT path, size, format, source FROM archive.files ${whereClause} ORDER BY size DESC NULLS LAST LIMIT ${PAGE_SIZE} OFFSET ${offset}`
 				);
 				remoteFileResults =
 					// eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -155,6 +173,7 @@
 						path: row.path as string,
 						size: (Number(row.size ?? 0) / (1024 * 1024)).toFixed(1) + ' MB',
 						format: row.format as string,
+						source: row.source as string,
 						description: 'Found in archive index'
 					})) ?? [];
 				remoteFolderResults = [];
@@ -193,8 +212,9 @@
 		<h1>File explorer</h1>
 		<p>
 			Search and browse high-value historical and research files from the 2TB archive. ZIP files,
-			video files, Camera RAW files, and parts of multi-file GIS layers (shx, prj, xml, dbf) are
-			ignored so the index focuses on the main maps, photos, and research records.
+			video files, Camera RAW files, software, training material, and parts of multi-file GIS layers
+			(shx, prj, xml, dbf) are ignored so the index focuses on the main maps, photos, and research
+			records.
 		</p>
 	</section>
 
@@ -253,6 +273,18 @@
 				</button>
 			{/each}
 		</div>
+		<select
+			class="source-filter"
+			bind:value={selectedSource}
+			onchange={() => {
+				resetQueryState();
+				performRemoteQuery(1);
+			}}
+		>
+			{#each sourceOptions as source (source)}
+				<option value={source}>{source === 'all' ? 'All sources' : source}</option>
+			{/each}
+		</select>
 		<button class="button query-btn" onclick={() => performRemoteQuery(1)} disabled={isQuerying}>
 			{#if isQuerying}
 				<Loader2 size={18} class="spin" />
@@ -315,6 +347,7 @@
 					<div class="file-header">
 						<Icon size={20} />
 						<span class="file-format">{file.format}</span>
+						<span class="file-source">{file.source}</span>
 					</div>
 					<div class="file-body">
 						<code class="file-path">{file.path}</code>
@@ -429,6 +462,26 @@
 		color: #fffdf7;
 	}
 
+	.source-filter {
+		padding: 0.45rem 0.65rem;
+		border: 1px solid #d9d3c6;
+		border-radius: 6px;
+		background: #fffdf7;
+		font-size: 0.85rem;
+		font-weight: 600;
+		color: #4a4740;
+	}
+
+	.source-filter {
+		padding: 0.45rem 0.65rem;
+		border: 1px solid #d9d3c6;
+		border-radius: 6px;
+		background: #fffdf7;
+		font-size: 0.85rem;
+		font-weight: 600;
+		color: #4a4740;
+	}
+
 	.query-btn {
 		min-width: 140px;
 	}
@@ -491,6 +544,26 @@
 		font-size: 0.75rem;
 		font-weight: 700;
 		text-transform: uppercase;
+	}
+
+	.file-source {
+		color: #304832;
+		font-size: 0.7rem;
+		font-weight: 600;
+		background: #e8ece3;
+		padding: 0.15rem 0.4rem;
+		border-radius: 4px;
+		margin-left: auto;
+	}
+
+	.file-source {
+		color: #304832;
+		font-size: 0.7rem;
+		font-weight: 600;
+		background: #e8ece3;
+		padding: 0.15rem 0.4rem;
+		border-radius: 4px;
+		margin-left: auto;
 	}
 
 	.file-path {

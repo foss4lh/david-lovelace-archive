@@ -1,6 +1,5 @@
 import { createReadStream, createWriteStream } from 'node:fs';
 import { readdir } from 'node:fs/promises';
-import { join } from 'node:path';
 import readline from 'node:readline';
 
 const inventoryDir =
@@ -46,8 +45,8 @@ const EXCLUDED_NAMES = new Set(['thumbs.db', 'desktop.ini', 'zbthumbnail.info'])
 
 /**
  * Entire folders to skip. These are known backup, mirror, generated-derivative,
- * personal, or noise directories that duplicate content elsewhere or are not
- * landscape-history research material.
+ * personal, software, training, or noise directories that duplicate content
+ * elsewhere or are not Herefordshire landscape-history research material.
  */
 const EXCLUDED_FOLDER_PATTERNS = [
 	/node_modules/i, // npm dependency trees
@@ -64,17 +63,56 @@ const EXCLUDED_FOLDER_PATTERNS = [
 	/^D:\/Science(?:\/|$)/i, // generic science (not landscape history)
 	/ruth/i, // family/personal name
 	/robin/i, // family/personal name
-	/clare/i // family/personal name
+	/clare/i, // family/personal name
+	/Academic/i, // tutorials, textbooks, conference papers
+	/WebDev/i, // web development training & examples
+	/Training/i, // training courses & manuals
+	/Software/i, // software installers & binaries
+	/EPSON/i, // printer drivers
+	/Geoserver|Geoserver2020/i, // GIS server software & training
+	/tomcat/i // Java servlet container
 ];
 
+/**
+ * Source taxonomy — each file is classified by path pattern into one of these
+ * categories to help visitors filter and understand what they are seeing.
+ */
+const SOURCE_RULES = [
+	{ pattern: /\/(?:tithe|tithemaps|tithe_maps?|tithe\s?map)/i, source: 'Historic Map' },
+	{ pattern: /\/(?:epoch|epoch_\d|historical|1_2500|6inch|25inch|os\s?map)/i, source: 'Historic Map' },
+	{ pattern: /\/(?:epoch_1|epoch_2|epoch_3|epoch_4)/i, source: 'Historic Map' },
+	{ pattern: /airphoto/i, source: 'Aerial Photograph' },
+	{ pattern: /lidar/i, source: 'LIDAR Survey' },
+	{ pattern: /woodland|forest|fc1953|ancient wood/i, source: 'Woodland Survey' },
+	{ pattern: /habitat|meadow|park\s?wood|orchard/i, source: 'Habitat Survey' },
+	{ pattern: /vet\s?tree|ancient\s?tree|veteran/i, source: 'Veteran Tree Survey' },
+	{ pattern: /\/(?:pro|hro|nmrc|freeman|domesday|ir\d+)/i, source: 'Historic Record' },
+	{ pattern: /\/(?:census|schedule|returns|assessment)/i, source: 'Historic Record' }
+];
+
+function inferSource(path) {
+	for (const { pattern, source } of SOURCE_RULES) {
+		if (pattern.test(path)) return source;
+	}
+	// Default classification by format
+	if (/\b(?:ecw|shp|tab|asc)\b/.test(path)) return 'GIS Vector';
+	if (/\b(?:tif|tiff)\b/.test(path)) return 'Georeferenced Raster';
+	return 'Unknown';
+}
+
+function normalizePath(winPath) {
+	// Convert backslashes to forward slashes, collapse multiple slashes
+	return winPath.replace(/\\+/g, '/').replace(/\/+/g, '/');
+}
+
 function isExcludedFolder(dirPath) {
-	const normalized = dirPath.replace(/\\/g, '/');
+	const normalized = normalizePath(dirPath);
 	return EXCLUDED_FOLDER_PATTERNS.some((re) => re.test(normalized));
 }
 
 /**
  * Parse an inventory text file and return candidate rows + folder basenames per drive.
- * Each returned row: { fullPath, size, ext, dateTime }.
+ * Each returned row: { fullPath, size, ext, dateTime, source }.
  * driveFolders: Map<drive_letter, Set<folder_basename>>
  */
 async function scanFile(filePath) {
@@ -126,7 +164,7 @@ async function scanFile(filePath) {
 
 			// Track subdirectories as potential folder-basenames for zip filtering
 			if (sizeOrDir === '<DIR>') {
-				trackFolder(join(currentDir, name));
+				trackFolder(currentDir + '\\' + name);
 				continue;
 			}
 
@@ -137,10 +175,13 @@ async function scanFile(filePath) {
 			if (!INCLUDED_EXTENSIONS.has(ext)) continue;
 
 			const size = parseInt(sizeOrDir.replace(/,/g, ''), 10);
+			if (size === 0) continue; // Skip zero-byte files
 			if (MIN_SIZES[ext] && size < MIN_SIZES[ext]) continue;
 
-			const fullPath = join(currentDir, name);
-			rows.push({ fullPath, size, ext, dateTime: `${date} ${time}` });
+			// Use simple concatenation for full path, then normalize
+			const fullPath = normalizePath(currentDir + '\\' + name);
+			const source = inferSource(fullPath);
+			rows.push({ fullPath, size, ext, dateTime: `${date} ${time}`, source });
 		}
 	}
 
@@ -180,7 +221,7 @@ async function main() {
 
 	for (const file of files) {
 		console.log(`Scanning ${file}...`);
-		const { rows, driveFolders } = await scanFile(join(inventoryDir, file));
+		const { rows, driveFolders } = await scanFile(`${inventoryDir}/${file}`);
 		for (const r of rows) allRows.push(r);
 		for (const [drive, folders] of driveFolders) {
 			if (!allDriveFolders.has(drive)) allDriveFolders.set(drive, new Set());
@@ -210,16 +251,28 @@ async function main() {
 		);
 	}
 
-	// Phase 3: write CSV
+	// Phase 3: write CSV with source column
 	const csvStream = createWriteStream(outputFile);
-	csvStream.write('path,size,format,timestamp\n');
+	csvStream.write('path,size,format,timestamp,source\n');
 
 	for (const row of filteredRows) {
-		csvStream.write(`"${row.fullPath.replace(/"/g, '""')}","${row.size}","${row.ext}","${row.dateTime}"\n`);
+		csvStream.write(
+			`"${row.fullPath.replace(/"/g, '""')}","${row.size}","${row.ext}","${row.dateTime}","${row.source}"\n`
+		);
 	}
 
 	csvStream.end();
 	console.log(`Wrote ${outputFile} with ${filteredRows.length.toLocaleString()} rows`);
+
+	// Summary
+	const sources = {};
+	for (const row of filteredRows) {
+		sources[row.source] = (sources[row.source] || 0) + 1;
+	}
+	console.log('Source breakdown:');
+	Object.entries(sources)
+		.sort((a, b) => b[1] - a[1])
+		.forEach(([s, c]) => console.log(`  ${s}: ${c.toLocaleString()}`));
 }
 
 main().catch(console.error);
