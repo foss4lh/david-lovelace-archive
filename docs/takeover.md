@@ -10,7 +10,7 @@ The current implementation is a SvelteKit static app with:
 
 - Overview page.
 - Dataset catalog and download page.
-- OpenLayers map explorer shell.
+- MapLibre GL JS map explorer with PMTiles protocol support.
 - Research agenda page.
 - Workflow page.
 - JSON manifests for datasets and release assets.

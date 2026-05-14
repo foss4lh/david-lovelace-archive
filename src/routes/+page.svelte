@@ -65,7 +65,7 @@
 	<section class="content-band">
 		<div>
 			<p class="eyebrow">Initial scope</p>
-			<h2>Seven starting collections, one coherent public entry point.</h2>
+			<h2>{summaryStats.datasetCount} starting collections, one coherent public entry point.</h2>
 		</div>
 		<div class="dataset-strip">
 			{#each browseDatasets as dataset (dataset.id)}

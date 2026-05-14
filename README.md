@@ -9,7 +9,7 @@ Live site: https://david-lovelace-archive.netlify.app
 ## Project Goals
 
 1.  **Preservation:** Secure the 2TB archive as a permanent resource for landscape history research.
-2.  **Accessibility:** Make the vast collection of over 1.2 million files searchable and discoverable via a web-ready portal.
+2.  **Accessibility:** Make the collection searchable and discoverable via a web-ready portal. The raw archive contains over 1.2 million files; the public DuckDB index currently covers ~324,000 high-value files after excluding already-published and non-primary material.
 3.  **Research:** Provide structured datasets (DuckDB, PMTiles, GeoJSON) ready for PhD-scale historical and ecological research.
 
 ---
@@ -68,7 +68,7 @@ npm run data:download -- --required-only && npm run build
 
 This two-step process:
 
-1. **`data:download --required-only`** fetches release assets marked `requiredForBuild: true` in `catalog/releases.json` from GitHub Releases into `static/data/`. This includes PMTiles map archives (~286 MB for the FC1953 collection) and the DuckDB inventory.
+1. **`data:download --required-only`** fetches release assets marked `requiredForBuild: true` in `catalog/releases.json` from GitHub Releases into `static/data/`. This includes PMTiles map archives (~1.6 GB total) and the DuckDB inventory.
 2. **`build`** generates the static SvelteKit site, embedding references to the downloaded local assets.
 
 **Local development:**

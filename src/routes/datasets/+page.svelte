@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { Download, ExternalLink, FolderTree } from '@lucide/svelte';
 	import { resolve } from '$app/paths';
-	import { datasets, releaseManifest, statusLabel } from '$lib/catalog';
+	import { browseDatasets, releaseManifest, statusLabel } from '$lib/catalog';
 </script>
 
 <main>
@@ -30,7 +30,7 @@
 	</section>
 
 	<section class="dataset-list" aria-label="Dataset catalog">
-		{#each datasets as dataset (dataset.id)}
+		{#each browseDatasets as dataset (dataset.id)}
 			<article class="dataset-card" id={dataset.id}>
 				<div class="dataset-topline">
 					<span class="status">{statusLabel(dataset.status)}</span>

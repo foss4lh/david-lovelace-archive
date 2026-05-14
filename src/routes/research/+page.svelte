@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { ClipboardCheck, MapPinned, ScanText, Search } from '@lucide/svelte';
 	import { resolve } from '$app/paths';
-	import { datasets } from '$lib/catalog';
+	import { browseDatasets } from '$lib/catalog';
 
 	const priorities = [
 		{
@@ -62,7 +62,7 @@
 	<section class="doc-panel">
 		<h2>Dataset-specific next steps</h2>
 		<div class="agenda-list">
-			{#each datasets as dataset (dataset.id)}
+			{#each browseDatasets as dataset (dataset.id)}
 				<article>
 					<h3>{dataset.title}</h3>
 					<ul>

@@ -32,4 +32,4 @@ netlify.toml     Static deployment configuration
 
 ## Map Strategy
 
-The map explorer uses OpenLayers. Raster map layers should generally be published as PMTiles for static hosting. Cloud-Optimized GeoTIFFs can be added later where client-side COG rendering is appropriate.
+The map explorer uses MapLibre GL JS with the PMTiles protocol. Raster map layers are published as PMTiles for static hosting. Cloud-Optimized GeoTIFFs are provided as downloadable derivatives.
