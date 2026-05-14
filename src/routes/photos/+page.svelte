@@ -20,8 +20,10 @@
 	let dialogRef = $state<HTMLDialogElement | null>(null);
 	let activeIndex = $state(0);
 	let dialogOpen = $state(false);
+	let deepLinkedPhoto = $state<PhotoEntry | null>(null);
+	let deepLinkError = $state<string | null>(null);
 
-	const activePhoto = $derived(manifest?.photos[activeIndex] ?? null);
+	const activePhoto = $derived(deepLinkedPhoto ?? manifest?.photos[activeIndex] ?? null);
 
 	onMount(async () => {
 		try {
@@ -38,8 +40,38 @@
 				const idx = data.photos.findIndex(
 					(p: PhotoEntry) => p.path === cleanTarget || p.path === targetPath
 				);
-				if (idx >= 0) {
-					openLightbox(idx);
+				const fileName = cleanTarget.split('/').pop()?.toLowerCase() ?? '';
+				const fuzzyIdx =
+					idx >= 0
+						? idx
+						: data.photos.findIndex((p: PhotoEntry) =>
+								fileName ? p.path.toLowerCase().endsWith(`/${fileName}`) : false
+							);
+				if (fuzzyIdx >= 0) {
+					deepLinkedPhoto = null;
+					deepLinkError = null;
+					openLightbox(fuzzyIdx);
+				} else {
+					const imageUrl = params.get('image_url');
+					if (imageUrl) {
+						const loadableImageUrl = await resolveDeepLinkedImageUrl(imageUrl);
+						if (loadableImageUrl) {
+							deepLinkedPhoto = {
+								path: cleanTarget || targetPath,
+								web: loadableImageUrl,
+								thumb: params.get('thumb_url') || loadableImageUrl
+							};
+							deepLinkError = null;
+							openLightbox(0);
+						} else {
+							deepLinkedPhoto = null;
+							deepLinkError =
+								'Requested image is not available in the current photo sample. Use the gallery below to browse available images.';
+						}
+					} else {
+						deepLinkError =
+							'Requested image is not available in the current photo sample. Use the gallery below to browse available images.';
+					}
 				}
 			}
 		} catch (e) {
@@ -63,13 +95,68 @@
 	function goPrevious(e?: Event) {
 		e?.stopPropagation();
 		if (!manifest) return;
+		if (deepLinkedPhoto) return;
 		activeIndex = activeIndex === 0 ? manifest.photos.length - 1 : activeIndex - 1;
 	}
 
 	function goNext(e?: Event) {
 		e?.stopPropagation();
 		if (!manifest) return;
+		if (deepLinkedPhoto) return;
 		activeIndex = activeIndex === manifest.photos.length - 1 ? 0 : activeIndex + 1;
+	}
+
+	function openManifestLightbox(index: number) {
+		deepLinkedPhoto = null;
+		openLightbox(index);
+	}
+
+	function getPhotoSrc(photo: PhotoEntry): string {
+		if (photo.web.startsWith('/') || /^https?:\/\//.test(photo.web)) return photo.web;
+		return `${base}/photos/demo/${photo.web}`;
+	}
+
+	function getImageCandidates(imageUrl: string): string[] {
+		const candidates = [imageUrl];
+
+		if (imageUrl.startsWith('/photos/demo/') && !imageUrl.startsWith('/photos/demo/web/')) {
+			const filename = imageUrl.slice('/photos/demo/'.length);
+			const webVariant = `/photos/demo/web/${filename}`;
+			if (!candidates.includes(webVariant)) candidates.push(webVariant);
+		}
+
+		return candidates;
+	}
+
+	function canLoadImage(src: string): Promise<boolean> {
+		return new Promise((resolve) => {
+			const img = new Image();
+			const timeout = window.setTimeout(() => resolve(false), 5000);
+			img.onload = () => {
+				window.clearTimeout(timeout);
+				resolve(true);
+			};
+			img.onerror = () => {
+				window.clearTimeout(timeout);
+				resolve(false);
+			};
+			img.src = src;
+		});
+	}
+
+	async function resolveDeepLinkedImageUrl(imageUrl: string): Promise<string | null> {
+		for (const candidate of getImageCandidates(imageUrl)) {
+			if (await canLoadImage(candidate)) return candidate;
+		}
+		return null;
+	}
+
+	function onActiveImageError() {
+		if (!deepLinkedPhoto) return;
+		closeLightbox();
+		deepLinkedPhoto = null;
+		deepLinkError =
+			'Requested image could not be loaded. Use the gallery below to browse available images.';
 	}
 
 	function onKeydown(e: KeyboardEvent) {
@@ -95,6 +182,13 @@
 		</p>
 	</section>
 
+	{#if deepLinkError}
+		<section class="doc-panel empty-state deep-link-message">
+			<ImageOff size={20} />
+			<p>{deepLinkError}</p>
+		</section>
+	{/if}
+
 	{#if loadError}
 		<section class="doc-panel empty-state">
 			<ImageOff size={24} />
@@ -112,7 +206,7 @@
 
 		<section class="photo-grid">
 			{#each manifest.photos as photo, i (photo.path)}
-				<button class="photo-thumb" onclick={() => openLightbox(i)} aria-label="View photo">
+				<button class="photo-thumb" onclick={() => openManifestLightbox(i)} aria-label="View photo">
 					<img src="{base}/photos/demo/{photo.thumb}" alt={photo.path} loading="lazy" />
 					<span class="photo-label">{formatPath(photo.path)}</span>
 				</button>
@@ -137,12 +231,21 @@
 			<button class="lightbox-nav prev" onclick={goPrevious} aria-label="Previous photo">
 				<ChevronLeft size={32} />
 			</button>
-			<img src="{base}/photos/demo/{activePhoto.web}" alt={activePhoto.path} class="lightbox-img" />
+			<img
+				src={getPhotoSrc(activePhoto)}
+				alt={activePhoto.path}
+				class="lightbox-img"
+				onerror={onActiveImageError}
+			/>
 			<button class="lightbox-nav next" onclick={goNext} aria-label="Next photo">
 				<ChevronRight size={32} />
 			</button>
 			<div class="lightbox-caption">
-				<span>{activeIndex + 1} / {manifest?.photos.length}</span>
+				{#if deepLinkedPhoto}
+					<span>Direct link</span>
+				{:else}
+					<span>{activeIndex + 1} / {manifest?.photos.length}</span>
+				{/if}
 				<span>{formatPath(activePhoto.path)}</span>
 			</div>
 		</div>
@@ -198,6 +301,11 @@
 		gap: 0.5rem;
 		padding: 2rem;
 		color: #5f6359;
+	}
+	.deep-link-message {
+		margin-bottom: 1rem;
+		padding: 1rem 1.25rem;
+		align-items: flex-start;
 	}
 	.lightbox {
 		position: fixed;
