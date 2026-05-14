@@ -36,6 +36,7 @@
 	let selectedFormat = $state('all');
 	let selectedSource = $state('all');
 	let selectedView = $state<'files' | 'folders'>('files');
+	let hasImageOnly = $state(false);
 	let selectedDataset = $state<string | null>(null);
 	let currentPage = $state(1);
 	let isQuerying = $state(false);
@@ -105,6 +106,7 @@
 			);
 		}
 		if (selectedFormat !== 'all') filters.push(`format = '${selectedFormat}'`);
+		if (hasImageOnly) filters.push(`format IN ('jpg', 'jpeg', 'tif', 'tiff')`);
 		if (selectedSource !== 'all') filters.push(`source = '${selectedSource}'`);
 		if (activeDataset) {
 			filters.push(`collection = '${activeDataset.id.replaceAll("'", "''")}'`);
@@ -371,6 +373,18 @@
 					<option value={source}>{source === 'all' ? 'All sources' : source}</option>
 				{/each}
 			</select>
+			<label class="image-toggle">
+				<input
+					type="checkbox"
+					bind:checked={hasImageOnly}
+					onchange={() => {
+						resetQueryState();
+						performRemoteQuery(1);
+					}}
+				/>
+				<Image size={16} />
+				Has image
+			</label>
 			<button class="button query-btn" onclick={() => performRemoteQuery(1)} disabled={isQuerying}>
 				{#if isQuerying}
 					<Loader2 size={18} class="spin" />
@@ -700,6 +714,20 @@
 	.query-btn:disabled {
 		opacity: 0.6;
 		cursor: wait;
+	}
+
+	.image-toggle {
+		display: inline-flex;
+		align-items: center;
+		gap: 0.35rem;
+		cursor: pointer;
+		font-size: 0.85rem;
+		color: #55594f;
+		user-select: none;
+	}
+
+	.image-toggle input {
+		cursor: pointer;
 	}
 
 	.results-summary {

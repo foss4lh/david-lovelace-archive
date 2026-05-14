@@ -682,7 +682,15 @@
 		"status": "inventory-needed",
 		"summary": "Parish-level survey material and related historical archive scans from the Royal Commission era and adjacent collections.",
 		"sourceArchivePaths": ["History/NMRC_RC", "History/NMRC_printed", "History/NMRC_redboxes"],
-		"assets": [],
+		"assets": [
+			{
+				"id": "hfd-royal-commission-photos",
+				"kind": "image-bundle",
+				"title": "Royal Commission parish photographs",
+				"status": "available",
+				"localPath": "/photos/demo"
+			}
+		],
 		"nextSteps": [
 			"Split the broad History folder into coherent public collection records.",
 			"Create parish-level index pages.",

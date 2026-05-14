@@ -2,6 +2,7 @@
 import { createWriteStream, existsSync, mkdirSync, statSync } from 'node:fs';
 import { dirname, resolve } from 'node:path';
 import { pipeline } from 'node:stream/promises';
+import { execSync } from 'node:child_process';
 import releases from '../catalog/releases.json' with { type: 'json' };
 
 const force = process.argv.includes('--force');
@@ -29,6 +30,10 @@ async function download(asset) {
 				const localSize = statSync(target).size;
 				if (remoteSize && parseInt(remoteSize, 10) === localSize) {
 					console.log(`exists ${asset.target}`);
+					// Still check if unzip is needed
+					if (asset.unzipTo) {
+						unzipAsset(asset);
+					}
 					return;
 				}
 				console.log(`update ${asset.target} (local ${localSize} != remote ${remoteSize})`);
@@ -50,6 +55,26 @@ async function download(asset) {
 
 	await pipeline(response.body, createWriteStream(target));
 	console.log(`wrote ${asset.target}`);
+
+	if (asset.unzipTo) {
+		unzipAsset(asset);
+	}
+}
+
+function unzipAsset(asset) {
+	const zipPath = resolve(asset.target);
+	const destDir = resolve(asset.unzipTo);
+	if (!existsSync(zipPath)) {
+		console.log(`skip unzip: zip not found at ${asset.target}`);
+		return;
+	}
+	try {
+		mkdirSync(destDir, { recursive: true });
+		execSync(`unzip -o "${zipPath}" -d "${destDir}"`, { stdio: 'inherit' });
+		console.log(`unzipped ${asset.target} -> ${asset.unzipTo}`);
+	} catch (err) {
+		console.error(`unzip failed for ${asset.target}: ${err.message}`);
+	}
 }
 
 for (const asset of releases.assets) {

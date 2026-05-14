@@ -1,0 +1,56 @@
+{
+  "collection": "hfd-royal-commission",
+  "total": 10,
+  "photos": [
+    {
+      "path": "History/NMRC_RC/Wolferlow/DSC00405.jpg",
+      "web": "History__NMRC_RC__Wolferlow__DSC00405.jpg",
+      "thumb": "thumbs/History__NMRC_RC__Wolferlow__DSC00405.jpg"
+    },
+    {
+      "path": "History/NMRC_RC/Ballingham/IMG_9527.jpg",
+      "web": "History__NMRC_RC__Ballingham__IMG_9527.jpg",
+      "thumb": "thumbs/History__NMRC_RC__Ballingham__IMG_9527.jpg"
+    },
+    {
+      "path": "History/NMRC_RC/HamptonBishop/SAM_8979.jpg",
+      "web": "History__NMRC_RC__HamptonBishop__SAM_8979.jpg",
+      "thumb": "thumbs/History__NMRC_RC__HamptonBishop__SAM_8979.jpg"
+    },
+    {
+      "path": "History/NMRC_RC/Foy/IMG_9611FoyMap.jpg",
+      "web": "History__NMRC_RC__Foy__IMG_9611FoyMap.jpg",
+      "thumb": "thumbs/History__NMRC_RC__Foy__IMG_9611FoyMap.jpg"
+    },
+    {
+      "path": "History/NMRC_RC/EdwinLoach/DSC02614.jpg",
+      "web": "History__NMRC_RC__EdwinLoach__DSC02614.jpg",
+      "thumb": "thumbs/History__NMRC_RC__EdwinLoach__DSC02614.jpg"
+    },
+    {
+      "path": "History/NMRC_RC/Dorstone/IMG_2849.jpg",
+      "web": "History__NMRC_RC__Dorstone__IMG_2849.jpg",
+      "thumb": "thumbs/History__NMRC_RC__Dorstone__IMG_2849.jpg"
+    },
+    {
+      "path": "History/NMRC_RC/Breinton/DSC03144&6_no08_rs.jpg",
+      "web": "History__NMRC_RC__Breinton__DSC03144&6_no08_rs.jpg",
+      "thumb": "thumbs/History__NMRC_RC__Breinton__DSC03144&6_no08_rs.jpg"
+    },
+    {
+      "path": "History/NMRC_RC/Aymestrey/2008_12_18 709.jpg",
+      "web": "History__NMRC_RC__Aymestrey__2008_12_18 709.jpg",
+      "thumb": "thumbs/History__NMRC_RC__Aymestrey__2008_12_18 709.jpg"
+    },
+    {
+      "path": "History/NMRC_redboxes/Ledbury/SAM_0775.jpg",
+      "web": "History__NMRC_redboxes__Ledbury__SAM_0775.jpg",
+      "thumb": "thumbs/History__NMRC_redboxes__Ledbury__SAM_0775.jpg"
+    },
+    {
+      "path": "History/NMRC_RC/Sarnesfield/IMG_6842.jpg",
+      "web": "History__NMRC_RC__Sarnesfield__IMG_6842.jpg",
+      "thumb": "thumbs/History__NMRC_RC__Sarnesfield__IMG_6842.jpg"
+    }
+  ]
+}
