@@ -545,7 +545,7 @@
 		},
 		{
 			"id": "photos-5-demo",
-			"title": "Photo demo bundle (5 MB target)",
+			"title": "Photo demo bundle (10 MB target)",
 			"filename": "photos-5-demo.zip",
 			"url": "https://github.com/foss4lh/david-lovelace-archive/releases/download/data-v0.1.0/photos-5-demo.zip",
 			"target": "static/photos/demo/photos-5-demo.zip",
@@ -555,7 +555,7 @@
 		},
 		{
 			"id": "hfd-aerofilms-photos",
-			"title": "Historic Aerial Photography sample (5 MB target)",
+			"title": "Historic Aerial Photography sample (10 MB target)",
 			"filename": "photos-hfd-aerofilms.zip",
 			"url": "https://github.com/foss4lh/david-lovelace-archive/releases/download/data-v0.1.0/photos-hfd-aerofilms.zip",
 			"target": "static/photos/hfd-aerofilms/photos-hfd-aerofilms.zip",
@@ -565,7 +565,7 @@
 		},
 		{
 			"id": "hfd-tithe-maps-photos",
-			"title": "Tithe Maps sample (5 MB target)",
+			"title": "Tithe Maps sample (10 MB target)",
 			"filename": "photos-hfd-tithe-maps.zip",
 			"url": "https://github.com/foss4lh/david-lovelace-archive/releases/download/data-v0.1.0/photos-hfd-tithe-maps.zip",
 			"target": "static/photos/hfd-tithe-maps/photos-hfd-tithe-maps.zip",
@@ -575,7 +575,7 @@
 		},
 		{
 			"id": "hfd-hedgerow-surveys-photos",
-			"title": "Hedgerow Surveys sample (5 MB target)",
+			"title": "Hedgerow Surveys sample (10 MB target)",
 			"filename": "photos-hfd-hedgerow-surveys.zip",
 			"url": "https://github.com/foss4lh/david-lovelace-archive/releases/download/data-v0.1.0/photos-hfd-hedgerow-surveys.zip",
 			"target": "static/photos/hfd-hedgerow-surveys/photos-hfd-hedgerow-surveys.zip",
@@ -585,7 +585,7 @@
 		},
 		{
 			"id": "hfd-pro-e112-photos",
-			"title": "Pro E112 sample (5 MB target)",
+			"title": "Pro E112 sample (10 MB target)",
 			"filename": "photos-hfd-pro-e112.zip",
 			"url": "https://github.com/foss4lh/david-lovelace-archive/releases/download/data-v0.1.0/photos-hfd-pro-e112.zip",
 			"target": "static/photos/hfd-pro-e112/photos-hfd-pro-e112.zip",
@@ -595,7 +595,7 @@
 		},
 		{
 			"id": "hfd-woodland-1948-photos",
-			"title": "Woodland 1948 sample (5 MB target)",
+			"title": "Woodland 1948 sample (10 MB target)",
 			"filename": "photos-hfd-woodland-1948.zip",
 			"url": "https://github.com/foss4lh/david-lovelace-archive/releases/download/data-v0.1.0/photos-hfd-woodland-1948.zip",
 			"target": "static/photos/hfd-woodland-1948/photos-hfd-woodland-1948.zip",
@@ -605,7 +605,7 @@
 		},
 		{
 			"id": "hfd-river-wye-photos",
-			"title": "River Wye sample (5 MB target)",
+			"title": "River Wye sample (10 MB target)",
 			"filename": "photos-hfd-river-wye.zip",
 			"url": "https://github.com/foss4lh/david-lovelace-archive/releases/download/data-v0.1.0/photos-hfd-river-wye.zip",
 			"target": "static/photos/hfd-river-wye/photos-hfd-river-wye.zip",
@@ -615,13 +615,31 @@
 		},
 		{
 			"id": "hfd-royal-commission-photos",
-			"title": "Royal Commission sample (5 MB target)",
+			"title": "Royal Commission sample (10 MB target)",
 			"filename": "photos-hfd-royal-commission.zip",
 			"url": "https://github.com/foss4lh/david-lovelace-archive/releases/download/data-v0.1.0/photos-hfd-royal-commission.zip",
 			"target": "static/photos/hfd-royal-commission/photos-hfd-royal-commission.zip",
 			"requiredForBuild": true,
 			"status": "available",
 			"unzipTo": "static/photos/hfd-royal-commission"
+		},
+		{
+			"id": "hfd-tithe-maps-50mb",
+			"title": "Herefordshire Tithe Maps (50 MB specialized bundle)",
+			"filename": "photos-hfd-tithe-maps-50mb.zip",
+			"url": "https://github.com/foss4lh/david-lovelace-archive/releases/download/data-v0.1.0/photos-hfd-tithe-maps-50mb.zip",
+			"target": "static/photos/hfd-tithe-maps/photos-hfd-tithe-maps-50mb.zip",
+			"requiredForBuild": false,
+			"status": "available"
+		},
+		{
+			"id": "hfd-aerial-historic-50mb",
+			"title": "Luftwaffe and RAF Aerial Photos (50 MB specialized bundle)",
+			"filename": "photos-hfd-aerial-historic.zip",
+			"url": "https://github.com/foss4lh/david-lovelace-archive/releases/download/data-v0.1.0/photos-hfd-aerial-historic.zip",
+			"target": "static/photos/hfd-aerial-historic/photos-hfd-aerial-historic.zip",
+			"requiredForBuild": false,
+			"status": "available"
 		}
 	]
 }

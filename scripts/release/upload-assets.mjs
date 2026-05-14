@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 /**
  * Synchronize local assets with GitHub Releases based on catalog/releases.json
- * Only uploads missing or changed files to save bandwidth.
+ * Supports multiple source directories for bundles.
  */
 
 import { readFileSync, existsSync, copyFileSync, mkdirSync, statSync } from 'node:fs';
@@ -12,7 +12,13 @@ const releasesPath = resolve('catalog/releases.json');
 const manifest = JSON.parse(readFileSync(releasesPath, 'utf-8'));
 const tag = manifest.releaseTag;
 const repo = manifest.repository;
-const tmpBundlesDir = resolve('tmp-bundles');
+
+// Directories to check for bundles
+const BUNDLE_DIRS = [
+	resolve('tmp-bundles-10mb'),
+	resolve('tmp-bundles-50mb'),
+	resolve('tmp-bundles')
+];
 
 console.log(`Fetching current assets for release ${tag} from ${repo}...`);
 let existingAssets = [];
@@ -29,23 +35,33 @@ const remoteFiles = new Map(existingAssets.map((a) => [a.name, a.size]));
 console.log(`\nSyncing assets...`);
 
 for (const asset of manifest.assets) {
-	// Only upload assets marked as available
-	if (asset.status !== 'available') {
-		continue;
-	}
+	if (asset.status !== 'available') continue;
 
 	const targetPath = resolve(asset.target);
 	const filename = asset.filename;
 
-	// Check if this is a photo bundle that was just generated in tmp-bundles
+	// Check for generated bundles in any of the bundle dirs
 	if (filename.startsWith('photos-')) {
-		// Map 'photos-5-demo.zip' to 'photos-uncategorized.zip' if it exists
-		const sourceName = filename === 'photos-5-demo.zip' ? 'photos-uncategorized.zip' : filename;
-		const p = join(tmpBundlesDir, sourceName);
-		if (existsSync(p)) {
+		let sourcePath = null;
+		// Handle special mappings
+		const sourceNames = [filename];
+		if (filename === 'photos-5-demo.zip') sourceNames.push('photos-uncategorized.zip');
+		
+		for (const dir of BUNDLE_DIRS) {
+			for (const name of sourceNames) {
+				const p = join(dir, name);
+				if (existsSync(p)) {
+					sourcePath = p;
+					break;
+				}
+			}
+			if (sourcePath) break;
+		}
+
+		if (sourcePath) {
 			mkdirSync(dirname(targetPath), { recursive: true });
-			copyFileSync(p, targetPath);
-			console.log(`  Moved generated bundle: ${sourceName} -> ${asset.target}`);
+			copyFileSync(sourcePath, targetPath);
+			console.log(`  Moved bundle: ${sourcePath} -> ${asset.target}`);
 		}
 	}
 
@@ -66,10 +82,8 @@ for (const asset of manifest.assets) {
 		} catch (err) {
 			console.error(`  ERROR: Failed to upload ${filename}: ${err.message}`);
 		}
-	} else {
-		if (asset.requiredForBuild) {
-			console.warn(`  WARNING: Required asset missing locally: ${targetPath}`);
-		}
+	} else if (asset.requiredForBuild) {
+		console.warn(`  WARNING: Required asset missing locally: ${targetPath}`);
 	}
 }
 
