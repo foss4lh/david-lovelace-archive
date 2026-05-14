@@ -8,6 +8,7 @@
 		"build": "vite build",
 		"preview": "vite preview",
 		"data:download": "node scripts/download-data.mjs",
+		"data:validate:photos": "node scripts/release/validate-photo-release-assets.mjs",
 		"inventory:parse": "node scripts/audit/parse-inventory.mjs",
 		"inventory:duckdb": "duckdb static/data/archive.duckdb \"CREATE OR REPLACE TABLE files AS SELECT * FROM read_csv_auto('catalog/archive-inventory.csv'); ALTER TABLE files ADD COLUMN image_url VARCHAR; ALTER TABLE files ADD COLUMN thumb_url VARCHAR; UPDATE files SET image_url = p.url, thumb_url = p.thumb_url FROM read_json_auto('catalog/photo-urls.json') p WHERE regexp_replace(files.path, '^[A-Z]:/', '') = p.path;\" && echo 'DuckDB built with photo URLs'",
 		"archive:audit": "node scripts/audit/archive-summary.mjs",
