@@ -12,6 +12,7 @@
 		Map as MapIcon
 	} from '@lucide/svelte';
 	import { browseDatasets, statusLabel, collectionStats } from '$lib/catalog';
+	import { resolve } from '$app/paths';
 
 	import { queryInventory } from '$lib/duckdb';
 
@@ -21,6 +22,8 @@
 		format: string;
 		source: string;
 		description: string;
+		image_url: string | null;
+		thumb_url: string | null;
 	}
 
 	interface FolderEntry {
@@ -383,7 +386,7 @@
 					}}
 				/>
 				<Image size={16} />
-				Has image
+				Image uploaded
 			</label>
 			<button class="button query-btn" onclick={() => performRemoteQuery(1)} disabled={isQuerying}>
 				{#if isQuerying}
@@ -455,6 +458,17 @@
 						</div>
 						<div class="file-footer">
 							<span>{file.size}</span>
+							{#if file.image_url}
+								<a
+									class="view-image-link"
+									href={resolve(`/photos?path=${encodeURIComponent(file.path)}`)}
+									target="_blank"
+									rel="noopener noreferrer"
+								>
+									<Image size={14} />
+									View image
+								</a>
+							{/if}
 						</div>
 					</div>
 				{:else}
@@ -788,6 +802,24 @@
 		border-top: 1px solid #e4ded0;
 		font-size: 0.82rem;
 		color: #5c5a52;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: 0.5rem;
+	}
+
+	.view-image-link {
+		display: inline-flex;
+		align-items: center;
+		gap: 0.25rem;
+		color: #304832;
+		font-weight: 600;
+		text-decoration: none;
+		font-size: 0.8rem;
+	}
+
+	.view-image-link:hover {
+		text-decoration: underline;
 	}
 
 	.folder-card {
