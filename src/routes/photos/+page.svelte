@@ -1,7 +1,11 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
 	import { base } from '$app/paths';
-	import { ChevronLeft, ChevronRight, X, ImageOff } from '@lucide/svelte';
+	import { ChevronLeft, ChevronRight, X, ImageOff, Play } from '@lucide/svelte';
+	import lightGallery from 'lightgallery';
+	import lgAutoplay from 'lightgallery/plugins/autoplay';
+	import 'lightgallery/css/lightgallery.css';
+	import 'lightgallery/css/lg-autoplay.css';
 
 	interface PhotoEntry {
 		path: string;
@@ -18,6 +22,7 @@
 	let manifest = $state<PhotoManifest | null>(null);
 	let loadError = $state<string | null>(null);
 	let dialogRef = $state<HTMLDialogElement | null>(null);
+	let galleryRef = $state<HTMLElement | null>(null);
 	let activeIndex = $state(0);
 	let dialogOpen = $state(false);
 	let deepLinkedPhoto = $state<PhotoEntry | null>(null);
@@ -151,6 +156,26 @@
 		return null;
 	}
 
+	function startSlideshow() {
+		if (!manifest || !galleryRef) return;
+
+		const dynamicGallery = lightGallery(galleryRef, {
+			dynamic: true,
+			dynamicEl: manifest.photos.map((p) => ({
+				src: getPhotoSrc(p),
+				thumb: `${base}/photos/demo/${p.thumb}`,
+				subHtml: `<h4>${formatPath(p.path)}</h4>`
+			})),
+			plugins: [lgAutoplay],
+			autoplay: true,
+			slideShowAutoplay: true,
+			slideShowInterval: 10000,
+			progressBar: true,
+			appendAutoplayControlsTo: '.lg-toolbar'
+		});
+		dynamicGallery.openGallery(0);
+	}
+
 	function onActiveImageError() {
 		if (!deepLinkedPhoto) return;
 		closeLightbox();
@@ -200,9 +225,17 @@
 		</section>
 	{:else}
 		<section class="photo-meta">
-			<span>{manifest.total} photos</span>
-			<span>Collection: {manifest.collection}</span>
+			<div class="meta-info">
+				<span>{manifest.total} photos</span>
+				<span>Collection: {manifest.collection}</span>
+			</div>
+			<button class="slideshow-btn" onclick={startSlideshow}>
+				<Play size={16} fill="currentColor" />
+				Start Slideshow
+			</button>
 		</section>
+
+		<div bind:this={galleryRef} style="display:none"></div>
 
 		<section class="photo-grid">
 			{#each manifest.photos as photo, i (photo.path)}
@@ -255,10 +288,35 @@
 <style>
 	.photo-meta {
 		display: flex;
-		gap: 1rem;
-		margin-bottom: 1rem;
+		justify-content: space-between;
+		align-items: center;
+		margin-bottom: 1.5rem;
+		background: #fffdf7;
+		padding: 0.75rem 1rem;
+		border-radius: 8px;
+		border: 1px solid #e9e4d9;
+	}
+	.meta-info {
+		display: flex;
+		gap: 1.5rem;
 		color: #5f6359;
 		font-size: 0.9rem;
+	}
+	.slideshow-btn {
+		display: inline-flex;
+		align-items: center;
+		gap: 0.5rem;
+		background: #7c836d;
+		color: white;
+		border: none;
+		padding: 0.5rem 1rem;
+		border-radius: 6px;
+		font-size: 0.9rem;
+		cursor: pointer;
+		transition: background 0.15s;
+	}
+	.slideshow-btn:hover {
+		background: #6a715c;
 	}
 	.photo-grid {
 		display: grid;
