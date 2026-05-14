@@ -27,7 +27,21 @@
 		try {
 			const res = await fetch(`${base}/photos/demo/manifest.json`);
 			if (!res.ok) throw new Error(`HTTP ${res.status}`);
-			manifest = await res.json();
+			const data = await res.json();
+			manifest = data;
+
+			// Open lightbox directly if ?path= is provided
+			const params = new URLSearchParams(window.location.search);
+			const targetPath = params.get('path');
+			if (targetPath) {
+				const cleanTarget = targetPath.replace(/^[A-Z]:\//, '');
+				const idx = data.photos.findIndex(
+					(p: PhotoEntry) => p.path === cleanTarget || p.path === targetPath
+				);
+				if (idx >= 0) {
+					openLightbox(idx);
+				}
+			}
 		} catch (e) {
 			loadError = e instanceof Error ? e.message : 'Failed to load photo manifest';
 		}
