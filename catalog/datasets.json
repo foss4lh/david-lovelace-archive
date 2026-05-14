@@ -595,12 +595,7 @@
 		"theme": "historic survey",
 		"status": "inventory-needed",
 		"summary": "Parish-level survey material and related historical archive scans from the Royal Commission era and adjacent collections.",
-		"sourceArchivePaths": [
-			"History/NMRC_RC",
-			"History/NMRC_printed",
-			"History/NMRC_redboxes",
-			"History"
-		],
+		"sourceArchivePaths": ["History/NMRC_RC", "History/NMRC_printed", "History/NMRC_redboxes"],
 		"assets": [],
 		"nextSteps": [
 			"Split the broad History folder into coherent public collection records.",

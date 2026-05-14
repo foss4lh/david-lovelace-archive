@@ -71,7 +71,36 @@ const EXCLUDED_FOLDER_PATTERNS = [
 	/Software/i, // software installers & binaries
 	/EPSON/i, // printer drivers
 	/Geoserver|Geoserver2020/i, // GIS server software & training
-	/tomcat/i // Java servlet container
+	/tomcat/i, // Java servlet container
+	// --- System junk ---
+	/RECYCLER/i, // Windows recycle bin
+	/\$RECYCLE\.BIN/i, // Windows recycle bin
+	/Electronics/i, // personal electronics folder
+	/FileZilla/i, // FTP client
+	/exiftools/i, // metadata tool
+	/easeus_tb_cloud/i, // backup software
+	// --- Personal photos & camera dumps ---
+	/Sonyalpha23Nov23/i, // recent personal camera dump
+	/HamptonCourt/i, // personal estate photos
+	/Dinedor28Feb23/i, // personal photos
+	/Wellington/i, // personal/tourist photos
+	/formerslides/i, // unsorted slide scans
+	/alpha63carddump/i, // camera memory card dump
+	/^D:\/3D(?:\/|$)/i, // web admin screenshots, invoices, misc
+	/^D:\/Images(?:\/|$)/i, // unsorted image dump
+	// --- Tourist field-trip photos (not primary archive data) ---
+	/Places/i, // dated personal field trips, 24k files
+	// --- Policy & admin documents ---
+	/^D:\/RuralPolicy(?:\/|$)/i, // national rural policy docs
+	/Projects\/Presentations/i, // presentation slides
+	/Projects\/BromyardHistoryCourse/i, // teaching course material
+	// --- Non-Herefordshire projects ---
+	/Projects\/EppingForest/i, // Essex
+	/Projects\/Llangynidr/i, // Wales
+	/Projects\/ElanValley/i, // Wales
+	/Projects\/IPU_exHerefordshire/i, // explicitly not Herefordshire
+	// --- Funding bid composites (derived, not primary) ---
+	/FiPL bid/i
 ];
 
 /**
