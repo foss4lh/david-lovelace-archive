@@ -1,5 +1,6 @@
 <script lang="ts">
-	import { ArrowRight, FileSearch, Map, Image, SearchCheck } from '@lucide/svelte';
+	import { ArrowRight, FileSearch, Map, Image, SearchCheck, ExternalLink } from '@lucide/svelte';
+	import PhotoCarousel from '$lib/components/PhotoCarousel.svelte';
 	import { resolve } from '$app/paths';
 	import { browseDatasets, summaryStats } from '$lib/catalog';
 </script>
@@ -24,6 +25,20 @@
 					>Browse archive <ArrowRight size={17} /></a
 				>
 				<a class="button" href={resolve('/research')}>See research agenda</a>
+			</div>
+			<div class="hero-link">
+				<a
+					href="{resolve('/photos')}?path={encodeURIComponent(
+						'D:/History/NMRC_RC/Hereford/SAM_7986.tif'
+					)}&image_url={encodeURIComponent(
+						'/photos/demo/web/History__NMRC_RC__Hereford__SAM_7986.jpg'
+					)}&thumb_url={encodeURIComponent(
+						'/photos/demo/thumbs/History__NMRC_RC__Hereford__SAM_7986.jpg'
+					)}"
+				>
+					<ExternalLink size={14} />
+					View selected photo
+				</a>
 			</div>
 		</div>
 		<aside class="hero-panel" aria-label="Archive summary">
@@ -69,6 +84,8 @@
 		</a>
 	</section>
 
+	<PhotoCarousel />
+
 	<section class="content-band">
 		<div>
 			<p class="eyebrow">Initial scope</p>
@@ -84,3 +101,21 @@
 		</div>
 	</section>
 </main>
+
+<style>
+	.hero-link {
+		margin-top: 0.6rem;
+	}
+	.hero-link a {
+		display: inline-flex;
+		align-items: center;
+		gap: 0.35rem;
+		color: #5f6f37;
+		font-size: 0.88rem;
+		font-weight: 600;
+		text-decoration: none;
+	}
+	.hero-link a:hover {
+		text-decoration: underline;
+	}
+</style>

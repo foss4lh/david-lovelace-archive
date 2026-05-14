@@ -1,35 +1,36 @@
 # Architecture
 
-This repository is the canonical public website and future web application for the David Lovelace Archive.
+This is the canonical public website and web application for the David Lovelace Archive.
 
-## Principles
+## Design Principles
 
-- The app is static-first and deploys to Netlify without a server.
-- Raw archive data is not committed to git.
-- Derived data is referenced through manifests and can be hosted on GitHub Releases first, then Cloudflare R2/S3 later.
-- Dataset pages and map layers are driven by `catalog/datasets.json`, not hard-coded component arrays.
-- Release downloads are driven by `catalog/releases.json`.
+- **Static-first:** Renders to pre-built HTML + assets; deploys to Netlify (no server runtime)
+- **Data separation:** Raw archive stays on local/external storage; only derived assets are published
+- **Manifest-driven:** Datasets and releases defined in JSON, not hardcoded in components
+- **Versioning:** Assets use release tags to enable cache busting and rollbacks
 
-## Main Parts
+## Directory Structure
 
-```text
-src/             SvelteKit routes and components
-catalog/         Dataset and release manifests
-scripts/         Download, audit, and release helpers
-static/data/     Local/downloaded derived assets, ignored by git except .gitkeep
-docs/            Architecture and workflow notes
-netlify.toml     Static deployment configuration
+```
+src/              SvelteKit routes and components
+catalog/          Manifests: datasets.json, releases.json, photo-urls.json
+scripts/          Data processing, sampling, audit, and release tools (see scripts/README.md)
+static/data/      Downloaded assets (git-ignored except .gitkeep)
+docs/             Data policy and contributing guidelines
 ```
 
-## Data Flow
+## Data Pipeline
 
-1. Raw archive files remain on external/local storage.
-2. Scripts audit and convert selected sources into public-safe derived assets.
-3. Derived assets are uploaded to a release or object store.
-4. Manifest records point to the asset URL and expected local build path.
-5. `npm run data:download` fetches available assets for local preview or static builds.
-6. SvelteKit builds the static site into `build/`.
+1. **Source:** Raw archive files on external/local storage
+2. **Transform:** Scripts sample, audit, and convert to web formats (PMTiles, GeoJSON, photos)
+3. **Stage:** Derived assets uploaded to GitHub Releases (`data-v0.1.0` tag)
+4. **Register:** Asset manifests (`catalog/releases.json`, `catalog/datasets.json`) record URLs and metadata
+5. **Download:** `npm run data:download` fetches required assets at build time
+6. **Build:** SvelteKit statically generates site, embedding asset references
+7. **Deploy:** Netlify auto-triggers on `main` push
 
-## Map Strategy
+## Layers & Maps
 
-The map explorer uses MapLibre GL JS with the PMTiles protocol. Raster map layers are published as PMTiles for static hosting. Cloud-Optimized GeoTIFFs are provided as downloadable derivatives.
+Maps use **MapLibre GL JS** with **PMTiles** protocol for static raster hosting. Vector layers use GeoJSON. Cloud-Optimized GeoTIFFs available as downloadable derivatives.
+
+For extending: Add new PMTiles files to `catalog/datasets.json` with asset entries in `catalog/releases.json`.

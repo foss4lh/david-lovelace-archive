@@ -1,10 +1,10 @@
 #!/usr/bin/env node
 /**
  * Release manifest validator
- * 
+ *
  * Checks that version identifiers are consistent across all configuration files
  * before pushing a release.
- * 
+ *
  * Usage:
  *   npm run release:check
  *   node scripts/release/validate-manifest.mjs
@@ -180,7 +180,9 @@ check('Photo URLs manifest', () => {
 		}
 
 		if (missing.length > 0) {
-			fail(`photo-urls.json missing fields:\n  ${missing.slice(0, 5).join('\n  ')}${missing.length > 5 ? `\n  ... and ${missing.length - 5} more` : ''}`);
+			fail(
+				`photo-urls.json missing fields:\n  ${missing.slice(0, 5).join('\n  ')}${missing.length > 5 ? `\n  ... and ${missing.length - 5} more` : ''}`
+			);
 		} else {
 			pass(`photo-urls.json valid: ${photoUrls.length} photos mapped`);
 		}
