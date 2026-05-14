@@ -225,8 +225,8 @@
 	<section class="page-heading">
 		<h1>Browse the archive</h1>
 		<p>
-			Explore curated dataset collections and search the underlying file index. Select a dataset to
-			scope your search to its source archive paths, or search across all indexed files.
+			Explore dataset collections and search the file index. Select a dataset to scope your search
+			to its source archive paths, or search across all indexed files.
 		</p>
 	</section>
 
@@ -268,10 +268,7 @@
 					<span class="status">research-needed</span>
 				</div>
 				<h3>Not yet assigned to a collection</h3>
-				<p>
-					Files in the archive that haven't been grouped into a curated dataset yet. Research is
-					ongoing to understand and classify this material.
-				</p>
+				<p>Files not yet assigned to a dataset.</p>
 				<div class="dataset-meta">
 					<span>Herefordshire</span>
 					<span>mixed</span>
