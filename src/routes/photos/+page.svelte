@@ -21,6 +21,7 @@
 	let activeIndex = $state(0);
 	let dialogOpen = $state(false);
 	let deepLinkedPhoto = $state<PhotoEntry | null>(null);
+	let deepLinkError = $state<string | null>(null);
 
 	const activePhoto = $derived(deepLinkedPhoto ?? manifest?.photos[activeIndex] ?? null);
 
@@ -39,18 +40,37 @@
 				const idx = data.photos.findIndex(
 					(p: PhotoEntry) => p.path === cleanTarget || p.path === targetPath
 				);
-				if (idx >= 0) {
+				const fileName = cleanTarget.split('/').pop()?.toLowerCase() ?? '';
+				const fuzzyIdx =
+					idx >= 0
+						? idx
+						: data.photos.findIndex((p: PhotoEntry) =>
+								fileName ? p.path.toLowerCase().endsWith(`/${fileName}`) : false
+							);
+				if (fuzzyIdx >= 0) {
 					deepLinkedPhoto = null;
-					openLightbox(idx);
+					deepLinkError = null;
+					openLightbox(fuzzyIdx);
 				} else {
 					const imageUrl = params.get('image_url');
 					if (imageUrl) {
-						deepLinkedPhoto = {
-							path: cleanTarget || targetPath,
-							web: imageUrl,
-							thumb: params.get('thumb_url') || imageUrl
-						};
-						openLightbox(0);
+						const loadableImageUrl = await resolveDeepLinkedImageUrl(imageUrl);
+						if (loadableImageUrl) {
+							deepLinkedPhoto = {
+								path: cleanTarget || targetPath,
+								web: loadableImageUrl,
+								thumb: params.get('thumb_url') || loadableImageUrl
+							};
+							deepLinkError = null;
+							openLightbox(0);
+						} else {
+							deepLinkedPhoto = null;
+							deepLinkError =
+								'Requested image is not available in the current photo sample. Use the gallery below to browse available images.';
+						}
+					} else {
+						deepLinkError =
+							'Requested image is not available in the current photo sample. Use the gallery below to browse available images.';
 					}
 				}
 			}
@@ -96,6 +116,49 @@
 		return `${base}/photos/demo/${photo.web}`;
 	}
 
+	function getImageCandidates(imageUrl: string): string[] {
+		const candidates = [imageUrl];
+
+		if (imageUrl.startsWith('/photos/demo/') && !imageUrl.startsWith('/photos/demo/web/')) {
+			const filename = imageUrl.slice('/photos/demo/'.length);
+			const webVariant = `/photos/demo/web/${filename}`;
+			if (!candidates.includes(webVariant)) candidates.push(webVariant);
+		}
+
+		return candidates;
+	}
+
+	function canLoadImage(src: string): Promise<boolean> {
+		return new Promise((resolve) => {
+			const img = new Image();
+			const timeout = window.setTimeout(() => resolve(false), 5000);
+			img.onload = () => {
+				window.clearTimeout(timeout);
+				resolve(true);
+			};
+			img.onerror = () => {
+				window.clearTimeout(timeout);
+				resolve(false);
+			};
+			img.src = src;
+		});
+	}
+
+	async function resolveDeepLinkedImageUrl(imageUrl: string): Promise<string | null> {
+		for (const candidate of getImageCandidates(imageUrl)) {
+			if (await canLoadImage(candidate)) return candidate;
+		}
+		return null;
+	}
+
+	function onActiveImageError() {
+		if (!deepLinkedPhoto) return;
+		closeLightbox();
+		deepLinkedPhoto = null;
+		deepLinkError =
+			'Requested image could not be loaded. Use the gallery below to browse available images.';
+	}
+
 	function onKeydown(e: KeyboardEvent) {
 		if (!dialogOpen) return;
 		if (e.key === 'Escape') closeLightbox();
@@ -118,6 +181,13 @@
 			Commission collection.
 		</p>
 	</section>
+
+	{#if deepLinkError}
+		<section class="doc-panel empty-state deep-link-message">
+			<ImageOff size={20} />
+			<p>{deepLinkError}</p>
+		</section>
+	{/if}
 
 	{#if loadError}
 		<section class="doc-panel empty-state">
@@ -161,7 +231,12 @@
 			<button class="lightbox-nav prev" onclick={goPrevious} aria-label="Previous photo">
 				<ChevronLeft size={32} />
 			</button>
-			<img src={getPhotoSrc(activePhoto)} alt={activePhoto.path} class="lightbox-img" />
+			<img
+				src={getPhotoSrc(activePhoto)}
+				alt={activePhoto.path}
+				class="lightbox-img"
+				onerror={onActiveImageError}
+			/>
 			<button class="lightbox-nav next" onclick={goNext} aria-label="Next photo">
 				<ChevronRight size={32} />
 			</button>
@@ -226,6 +301,11 @@
 		gap: 0.5rem;
 		padding: 2rem;
 		color: #5f6359;
+	}
+	.deep-link-message {
+		margin-bottom: 1rem;
+		padding: 1rem 1.25rem;
+		align-items: flex-start;
 	}
 	.lightbox {
 		position: fixed;
