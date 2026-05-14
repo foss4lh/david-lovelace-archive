@@ -20,8 +20,9 @@
 	let dialogRef = $state<HTMLDialogElement | null>(null);
 	let activeIndex = $state(0);
 	let dialogOpen = $state(false);
+	let deepLinkedPhoto = $state<PhotoEntry | null>(null);
 
-	const activePhoto = $derived(manifest?.photos[activeIndex] ?? null);
+	const activePhoto = $derived(deepLinkedPhoto ?? manifest?.photos[activeIndex] ?? null);
 
 	onMount(async () => {
 		try {
@@ -39,7 +40,18 @@
 					(p: PhotoEntry) => p.path === cleanTarget || p.path === targetPath
 				);
 				if (idx >= 0) {
+					deepLinkedPhoto = null;
 					openLightbox(idx);
+				} else {
+					const imageUrl = params.get('image_url');
+					if (imageUrl) {
+						deepLinkedPhoto = {
+							path: cleanTarget || targetPath,
+							web: imageUrl,
+							thumb: params.get('thumb_url') || imageUrl
+						};
+						openLightbox(0);
+					}
 				}
 			}
 		} catch (e) {
@@ -63,13 +75,25 @@
 	function goPrevious(e?: Event) {
 		e?.stopPropagation();
 		if (!manifest) return;
+		if (deepLinkedPhoto) return;
 		activeIndex = activeIndex === 0 ? manifest.photos.length - 1 : activeIndex - 1;
 	}
 
 	function goNext(e?: Event) {
 		e?.stopPropagation();
 		if (!manifest) return;
+		if (deepLinkedPhoto) return;
 		activeIndex = activeIndex === manifest.photos.length - 1 ? 0 : activeIndex + 1;
+	}
+
+	function openManifestLightbox(index: number) {
+		deepLinkedPhoto = null;
+		openLightbox(index);
+	}
+
+	function getPhotoSrc(photo: PhotoEntry): string {
+		if (photo.web.startsWith('/') || /^https?:\/\//.test(photo.web)) return photo.web;
+		return `${base}/photos/demo/${photo.web}`;
 	}
 
 	function onKeydown(e: KeyboardEvent) {
@@ -112,7 +136,7 @@
 
 		<section class="photo-grid">
 			{#each manifest.photos as photo, i (photo.path)}
-				<button class="photo-thumb" onclick={() => openLightbox(i)} aria-label="View photo">
+				<button class="photo-thumb" onclick={() => openManifestLightbox(i)} aria-label="View photo">
 					<img src="{base}/photos/demo/{photo.thumb}" alt={photo.path} loading="lazy" />
 					<span class="photo-label">{formatPath(photo.path)}</span>
 				</button>
@@ -137,12 +161,16 @@
 			<button class="lightbox-nav prev" onclick={goPrevious} aria-label="Previous photo">
 				<ChevronLeft size={32} />
 			</button>
-			<img src="{base}/photos/demo/{activePhoto.web}" alt={activePhoto.path} class="lightbox-img" />
+			<img src={getPhotoSrc(activePhoto)} alt={activePhoto.path} class="lightbox-img" />
 			<button class="lightbox-nav next" onclick={goNext} aria-label="Next photo">
 				<ChevronRight size={32} />
 			</button>
 			<div class="lightbox-caption">
-				<span>{activeIndex + 1} / {manifest?.photos.length}</span>
+				{#if deepLinkedPhoto}
+					<span>Direct link</span>
+				{:else}
+					<span>{activeIndex + 1} / {manifest?.photos.length}</span>
+				{/if}
 				<span>{formatPath(activePhoto.path)}</span>
 			</div>
 		</div>
