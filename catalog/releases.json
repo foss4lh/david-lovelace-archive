@@ -470,6 +470,78 @@
 			"target": "static/data/fc1953-csw-cog.tif",
 			"requiredForBuild": false,
 			"status": "available"
+		},
+		{
+			"id": "ap2021lem-pmtiles",
+			"title": "Bluesky Aerial Leominster 2021 PMTiles",
+			"filename": "AP2021LEM.pmtiles",
+			"url": "https://github.com/foss4lh/david-lovelace-archive/releases/download/data-v0.1.0/AP2021LEM.pmtiles",
+			"target": "static/data/AP2021LEM.pmtiles",
+			"requiredForBuild": true,
+			"status": "available"
+		},
+		{
+			"id": "ap2021lem-cog",
+			"title": "Bluesky Aerial Leominster 2021 COG",
+			"filename": "AP2021LEM-cog.tif",
+			"url": "https://github.com/foss4lh/david-lovelace-archive/releases/download/data-v0.1.0/AP2021LEM-cog.tif",
+			"target": "static/data/AP2021LEM-cog.tif",
+			"requiredForBuild": false,
+			"status": "available"
+		},
+		{
+			"id": "apgbwellington-pmtiles",
+			"title": "Bluesky Aerial Wellington APGB PMTiles",
+			"filename": "APGBWellington.pmtiles",
+			"url": "https://github.com/foss4lh/david-lovelace-archive/releases/download/data-v0.1.0/APGBWellington.pmtiles",
+			"target": "static/data/APGBWellington.pmtiles",
+			"requiredForBuild": true,
+			"status": "available"
+		},
+		{
+			"id": "apgbwellington-cog",
+			"title": "Bluesky Aerial Wellington APGB COG",
+			"filename": "APGBWellington-cog.tif",
+			"url": "https://github.com/foss4lh/david-lovelace-archive/releases/download/data-v0.1.0/APGBWellington-cog.tif",
+			"target": "static/data/APGBWellington-cog.tif",
+			"requiredForBuild": false,
+			"status": "available"
+		},
+		{
+			"id": "apgbdormington-pmtiles",
+			"title": "Bluesky Aerial Dormington APGB PMTiles",
+			"filename": "APGBDormington.pmtiles",
+			"url": "https://github.com/foss4lh/david-lovelace-archive/releases/download/data-v0.1.0/APGBDormington.pmtiles",
+			"target": "static/data/APGBDormington.pmtiles",
+			"requiredForBuild": true,
+			"status": "available"
+		},
+		{
+			"id": "apgbdormington-cog",
+			"title": "Bluesky Aerial Dormington APGB COG",
+			"filename": "APGBDormington-cog.tif",
+			"url": "https://github.com/foss4lh/david-lovelace-archive/releases/download/data-v0.1.0/APGBDormington-cog.tif",
+			"target": "static/data/APGBDormington-cog.tif",
+			"requiredForBuild": false,
+			"status": "available"
+		},
+		{
+			"id": "tillingtontokidleyhill-pmtiles",
+			"title": "Bluesky Aerial Tillington to Kidley Hill PMTiles",
+			"filename": "TillingtontoKidleyHill.pmtiles",
+			"url": "https://github.com/foss4lh/david-lovelace-archive/releases/download/data-v0.1.0/TillingtontoKidleyHill.pmtiles",
+			"target": "static/data/TillingtontoKidleyHill.pmtiles",
+			"requiredForBuild": true,
+			"status": "available"
+		},
+		{
+			"id": "tillingtontokidleyhill-cog",
+			"title": "Bluesky Aerial Tillington to Kidley Hill COG",
+			"filename": "TillingtontoKidleyHill-cog.tif",
+			"url": "https://github.com/foss4lh/david-lovelace-archive/releases/download/data-v0.1.0/TillingtontoKidleyHill-cog.tif",
+			"target": "static/data/TillingtontoKidleyHill-cog.tif",
+			"requiredForBuild": false,
+			"status": "available"
 		}
 	]
 }
