@@ -186,9 +186,9 @@
 		<h1>Royal Commission on Historical Monuments</h1>
 		<p>
 			Herefordshire was surveyed by the RCHME in the 1930s. Two volumes were published (1931 and
-			1932), covering every parish in the county. This page links to the fully digitised text and
-			plates on British History Online, and notes where the David Lovelace Archive holds additional
-			unpublished material.
+			1932), covering every parish in the county. This page links to the digitised text and plates
+			on British History Online, and notes where the David Lovelace Archive holds additional
+			material.
 		</p>
 	</section>
 
@@ -231,7 +231,7 @@
 		</ul>
 		<p class="muted">
 			A future task is to cross-reference these folders with the published parish entries and
-			identify which unpublished photos and notes belong to which monuments.
+			identify which photos and notes belong to which monuments.
 		</p>
 	</section>
 

@@ -5,24 +5,24 @@
 
 	const priorities = [
 		{
-			title: 'Georectify and publish priority historic maps',
+			title: 'Georectify and publish historic maps',
 			icon: MapPinned,
-			text: 'Start with tithe, Bryant, OS, woodland, and River Wye material where spatial context unlocks comparison with current landscape data.'
+			text: 'Tithe, Bryant, OS, woodland, and River Wye material where spatial context enables comparison with current landscape data.'
 		},
 		{
 			title: 'Digitise boundaries, field names, and apportionments',
 			icon: ClipboardCheck,
-			text: 'Convert selected maps into structured polygons and tables that can be linked to ownership, tenancy, land use, and ecological change.'
+			text: 'Convert maps into polygons and tables linked to ownership, tenancy, land use, and ecological change.'
 		},
 		{
 			title: 'Transcribe and interpret public records',
 			icon: ScanText,
-			text: 'Turn difficult scans and early modern records into cited, searchable, historically reliable research material.'
+			text: 'Transcribe scans and early modern records into cited, searchable research material.'
 		},
 		{
-			title: 'Build PhD-scale research questions',
+			title: 'Build research questions',
 			icon: Search,
-			text: 'Use the archive to study long-run landscape change, woodland persistence, river management, field systems, conservation practice, and local governance.'
+			text: 'Study landscape change, woodland persistence, river management, field systems, conservation practice, and local governance.'
 		}
 	];
 </script>
@@ -47,8 +47,8 @@
 	<section class="doc-panel">
 		<h2>Royal Commission parish index</h2>
 		<p style="margin-bottom: 1rem; color: #55594f; line-height: 1.5;">
-			The 1930s RCHME survey of Herefordshire has been fully digitised by British History Online.
-			Browse the complete parish-by-parish inventory with direct links to both published volumes.
+			The 1930s RCHME survey of Herefordshire has been digitised by British History Online. Browse
+			the parish-by-parish inventory with links to the published volumes.
 		</p>
 		<a
 			class="button"

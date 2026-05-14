@@ -214,8 +214,8 @@
 			Search and browse high-value historical and research files from the 2TB archive. ZIP files,
 			video files, Camera RAW files, software, training material, and parts of multi-file GIS layers
 			(shx, prj, xml, dbf) are ignored so the index focuses on the main maps, photos, and research
-			records. Material already comprehensively published elsewhere, such as the Ordnance Survey
-			25-inch maps, is excluded from this index.
+			records. Material already published elsewhere, such as the Ordnance Survey 25-inch maps, is
+			excluded from this index.
 		</p>
 	</section>
 
