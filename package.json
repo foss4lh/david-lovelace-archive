@@ -12,6 +12,7 @@
 		"inventory:parse": "node scripts/audit/parse-inventory.mjs",
 		"inventory:duckdb": "duckdb static/data/archive-v3.duckdb \"CREATE OR REPLACE TABLE files AS SELECT * FROM read_csv_auto('catalog/archive-inventory.csv'); ALTER TABLE files ADD COLUMN image_url VARCHAR; ALTER TABLE files ADD COLUMN thumb_url VARCHAR; UPDATE files SET image_url = p.url, thumb_url = p.thumb_url FROM read_json_auto('catalog/photo-urls.json') p WHERE regexp_replace(files.path, '^[A-Z]:/', '') = p.path;\" && echo 'DuckDB built with photo URLs'",
 		"archive:audit": "node scripts/audit/archive-summary.mjs",
+		"release:check": "node scripts/release/validate-manifest.mjs",
 		"prepare": "svelte-kit sync || echo '' && husky install",
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
