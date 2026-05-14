@@ -89,12 +89,21 @@ export const visualDatasets = datasets
 		return 0;
 	});
 
+const totalGb = Object.values(collectionStats).reduce((sum, s) => sum + s.sizeGb, 0);
+const fileCount = Object.values(collectionStats).reduce((sum, s) => sum + s.count, 0);
+const pmtilesCount = browseDatasets
+	.flatMap((d) => d.assets)
+	.filter((a) => a.kind === 'pmtiles' && a.status === 'available').length;
+
 export const summaryStats = {
 	datasetCount: browseDatasets.length,
 	webReadyCount: browseDatasets.filter(
 		(dataset) => dataset.status === 'available' || dataset.status === 'prototype-web-ready'
 	).length,
-	assetCount: browseDatasets.flatMap((dataset) => dataset.assets).length
+	assetCount: browseDatasets.flatMap((dataset) => dataset.assets).length,
+	fileCount,
+	pmtilesCount,
+	totalGb
 };
 
 export function statusLabel(status: string) {
