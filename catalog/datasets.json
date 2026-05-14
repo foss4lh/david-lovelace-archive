@@ -182,17 +182,19 @@
 	{
 		"id": "hfd-aerofilms",
 		"title": "Historic Aerial Photography",
-		"period": "1920s-1980s",
+		"period": "1920s-2021",
 		"coverage": "Herefordshire",
 		"theme": "aerial photography",
 		"status": "processing",
-		"summary": "Georeferenced aerial photography from English Nature / Environment Agency county coverage (1 ppm) and high-resolution 25 cm tiles. Merged from thousands of individual ECW tiles into unified PMTiles overlays. Not available elsewhere online in browsable form.",
+		"summary": "Georeferenced aerial photography from English Nature / Environment Agency county coverage (1 ppm), high-resolution 25 cm tiles, and modern Bluesky mosaics. Merged from thousands of individual ECW tiles into unified PMTiles overlays. Not available elsewhere online in browsable form.",
 		"sourceArchivePaths": [
 			"AirPhotos/EN_County_APs",
 			"AirPhotos/EN_County_APs_new",
 			"AirPhotos/aerialphotographs2",
 			"AirPhotos/DL_APs",
-			"History/NMRC_AeroFilms"
+			"History/NMRC_AeroFilms",
+			"HARC/Raster/Hereford",
+			"HARC/Raster/Marden"
 		],
 		"assets": [
 			{
@@ -236,6 +238,90 @@
 				"releaseAsset": "aerial-en-25cm-cog.tif",
 				"localPath": "/data/aerial-en-25cm-cog.tif",
 				"remoteUrl": "https://github.com/foss4lh/david-lovelace-archive/releases/download/data-v0.1.0/aerial-en-25cm-cog.tif",
+				"status": "available"
+			},
+			{
+				"id": "ap2021lem",
+				"kind": "pmtiles",
+				"title": "Bluesky Aerial Photography \u2014 Leominster (2021)",
+				"releaseAsset": "AP2021LEM.pmtiles",
+				"localPath": "/data/AP2021LEM.pmtiles",
+				"remoteUrl": "https://github.com/foss4lh/david-lovelace-archive/releases/download/data-v0.1.0/AP2021LEM.pmtiles",
+				"status": "available",
+				"bounds": [-2.775006, 52.019876, -2.657191, 52.092504],
+				"minZoom": 10,
+				"maxZoom": 16
+			},
+			{
+				"id": "ap2021lem-cog",
+				"kind": "cog",
+				"title": "Bluesky Aerial Photography \u2014 Leominster (2021) \u2014 COG GeoTIFF",
+				"releaseAsset": "AP2021LEM-cog.tif",
+				"localPath": "/data/AP2021LEM-cog.tif",
+				"remoteUrl": "https://github.com/foss4lh/david-lovelace-archive/releases/download/data-v0.1.0/AP2021LEM-cog.tif",
+				"status": "available"
+			},
+			{
+				"id": "apgbwellington",
+				"kind": "pmtiles",
+				"title": "Bluesky Aerial Photography \u2014 Wellington (APGB)",
+				"releaseAsset": "APGBWellington.pmtiles",
+				"localPath": "/data/APGBWellington.pmtiles",
+				"remoteUrl": "https://github.com/foss4lh/david-lovelace-archive/releases/download/data-v0.1.0/APGBWellington.pmtiles",
+				"status": "available",
+				"bounds": [-2.776255, 52.091793, -2.658248, 52.164423],
+				"minZoom": 10,
+				"maxZoom": 16
+			},
+			{
+				"id": "apgbwellington-cog",
+				"kind": "cog",
+				"title": "Bluesky Aerial Photography \u2014 Wellington (APGB) \u2014 COG GeoTIFF",
+				"releaseAsset": "APGBWellington-cog.tif",
+				"localPath": "/data/APGBWellington-cog.tif",
+				"remoteUrl": "https://github.com/foss4lh/david-lovelace-archive/releases/download/data-v0.1.0/APGBWellington-cog.tif",
+				"status": "available"
+			},
+			{
+				"id": "apgbdormington",
+				"kind": "pmtiles",
+				"title": "Bluesky Aerial Photography \u2014 Dormington (APGB)",
+				"releaseAsset": "APGBDormington.pmtiles",
+				"localPath": "/data/APGBDormington.pmtiles",
+				"remoteUrl": "https://github.com/foss4lh/david-lovelace-archive/releases/download/data-v0.1.0/APGBDormington.pmtiles",
+				"status": "available",
+				"bounds": [-2.658247, 52.020584, -2.540612, 52.093099],
+				"minZoom": 10,
+				"maxZoom": 16
+			},
+			{
+				"id": "apgbdormington-cog",
+				"kind": "cog",
+				"title": "Bluesky Aerial Photography \u2014 Dormington (APGB) \u2014 COG GeoTIFF",
+				"releaseAsset": "APGBDormington-cog.tif",
+				"localPath": "/data/APGBDormington-cog.tif",
+				"remoteUrl": "https://github.com/foss4lh/david-lovelace-archive/releases/download/data-v0.1.0/APGBDormington-cog.tif",
+				"status": "available"
+			},
+			{
+				"id": "tillingtontokidleyhill",
+				"kind": "pmtiles",
+				"title": "Bluesky Aerial Photography \u2014 Tillington to Kidley Hill",
+				"releaseAsset": "TillingtontoKidleyHill.pmtiles",
+				"localPath": "/data/TillingtontoKidleyHill.pmtiles",
+				"remoteUrl": "https://github.com/foss4lh/david-lovelace-archive/releases/download/data-v0.1.0/TillingtontoKidleyHill.pmtiles",
+				"status": "available",
+				"bounds": [-2.797935, 51.988993, -2.626693, 52.103373],
+				"minZoom": 10,
+				"maxZoom": 16
+			},
+			{
+				"id": "tillingtontokidleyhill-cog",
+				"kind": "cog",
+				"title": "Bluesky Aerial Photography \u2014 Tillington to Kidley Hill \u2014 COG GeoTIFF",
+				"releaseAsset": "TillingtontoKidleyHill-cog.tif",
+				"localPath": "/data/TillingtontoKidleyHill-cog.tif",
+				"remoteUrl": "https://github.com/foss4lh/david-lovelace-archive/releases/download/data-v0.1.0/TillingtontoKidleyHill-cog.tif",
 				"status": "available"
 			}
 		],
