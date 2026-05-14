@@ -25,7 +25,7 @@ export async function initDuckDB() {
 	URL.revokeObjectURL(worker_url);
 
 	// Fetch and register the database file ONCE
-	const response = await fetch(`${base}/data/archive.duckdb`);
+	const response = await fetch(`${base}/data/archive-v2.duckdb`);
 	if (!response.ok) throw new Error(`Failed to fetch archive.duckdb: ${response.statusText}`);
 
 	const buffer = await response.arrayBuffer();

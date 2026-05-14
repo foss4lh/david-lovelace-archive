@@ -13,9 +13,9 @@
 				"id": "archive-inventory-duckdb",
 				"kind": "duckdb",
 				"title": "Archive Inventory DuckDB",
-				"releaseAsset": "archive.duckdb",
-				"localPath": "/data/archive.duckdb",
-				"remoteUrl": "https://github.com/foss4lh/david-lovelace-archive/releases/download/data-v0.1.0/archive.duckdb",
+				"releaseAsset": "archive-v2.duckdb",
+				"localPath": "/data/archive-v2.duckdb",
+				"remoteUrl": "https://github.com/foss4lh/david-lovelace-archive/releases/download/data-v0.1.0/archive-v2.duckdb",
 				"status": "available"
 			}
 		],
