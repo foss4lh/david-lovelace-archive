@@ -107,9 +107,16 @@
 	{/if}
 </main>
 
-<dialog bind:this={dialogRef} class="lightbox" onclick={closeLightbox} aria-label="Photo lightbox">
+<dialog
+	bind:this={dialogRef}
+	class="lightbox"
+	onclick={(e) => {
+		if (e.target === dialogRef) closeLightbox();
+	}}
+	aria-label="Photo lightbox"
+>
 	{#if activePhoto}
-		<div class="lightbox-inner" onclick={(e) => e.stopPropagation()}>
+		<div class="lightbox-inner">
 			<button class="lightbox-close" onclick={closeLightbox} aria-label="Close">
 				<X size={24} />
 			</button>
