@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { ArrowRight, FileSearch, Map, SearchCheck } from '@lucide/svelte';
+	import { ArrowRight, FileSearch, Map, Image, SearchCheck } from '@lucide/svelte';
 	import { resolve } from '$app/paths';
 	import { browseDatasets, summaryStats } from '$lib/catalog';
 </script>
@@ -56,6 +56,11 @@
 			<Map size={22} />
 			<h2>Map explorer</h2>
 			<p>View raster maps and PMTiles layers as they are published.</p>
+		</a>
+		<a class="feature" href={resolve('/photos')}>
+			<Image size={22} />
+			<h2>Photos</h2>
+			<p>Browse non-georectified photographs from the archive.</p>
 		</a>
 		<a class="feature" href={resolve('/research')}>
 			<SearchCheck size={22} />
