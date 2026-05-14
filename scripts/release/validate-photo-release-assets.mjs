@@ -5,7 +5,7 @@ import { join } from 'node:path';
 import { execFileSync } from 'node:child_process';
 import releases from '../../catalog/releases.json' with { type: 'json' };
 
-const PHOTO_ASSET_ID = 'photos-10-demo';
+const PHOTO_ASSET_ID = 'photos-5-demo';
 const PHOTO_URLS_PATH = 'catalog/photo-urls.json';
 
 function fail(message, details = []) {
