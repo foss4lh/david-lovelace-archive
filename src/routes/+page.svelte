@@ -28,16 +28,20 @@
 		</div>
 		<aside class="hero-panel" aria-label="Archive summary">
 			<div>
+				<span>{(summaryStats.fileCount / 1000).toFixed(0)}k</span>
+				<p>indexed files</p>
+			</div>
+			<div>
+				<span>{summaryStats.pmtilesCount}</span>
+				<p>browsable map layers</p>
+			</div>
+			<div>
 				<span>{summaryStats.datasetCount}</span>
-				<p>initial dataset groups</p>
+				<p>curated collections</p>
 			</div>
 			<div>
-				<span>{summaryStats.webReadyCount}</span>
-				<p>web-ready or prototype visualisations</p>
-			</div>
-			<div>
-				<span>2.0 TB</span>
-				<p>sampled local archive size</p>
+				<span>~{(summaryStats.totalGb / 1000).toFixed(1)} TB</span>
+				<p>archive size</p>
 			</div>
 		</aside>
 	</section>
