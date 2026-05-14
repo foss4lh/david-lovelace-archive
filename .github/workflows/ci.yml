@@ -18,6 +18,7 @@ jobs:
           node-version: 22
           cache: 'npm'
       - run: npm install
+      - run: npm run data:validate:photos
       - run: npm run lint
       - run: npm run check
       - run: npm run build

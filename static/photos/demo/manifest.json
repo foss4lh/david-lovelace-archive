@@ -1,56 +1,59 @@
 {
   "collection": "hfd-royal-commission",
-  "total": 10,
+  "total_sampled": 10,
+  "web_max_dim": 1200,
+  "thumb_max_dim": 300,
+  "quality": 80,
   "photos": [
     {
-      "path": "History/NMRC_RC/Wolferlow/DSC00405.jpg",
-      "web": "History__NMRC_RC__Wolferlow__DSC00405.jpg",
-      "thumb": "thumbs/History__NMRC_RC__Wolferlow__DSC00405.jpg"
+      "path": "History/NMRC_redboxes/1Aug2014/DSC00364rs.jpg",
+      "web": "web/History__NMRC_redboxes__1Aug2014__DSC00364rs.jpg",
+      "thumb": "thumbs/History__NMRC_redboxes__1Aug2014__DSC00364rs.jpg"
     },
     {
-      "path": "History/NMRC_RC/Ballingham/IMG_9527.jpg",
-      "web": "History__NMRC_RC__Ballingham__IMG_9527.jpg",
-      "thumb": "thumbs/History__NMRC_RC__Ballingham__IMG_9527.jpg"
+      "path": "History/NMRC_RC/CanonPyon/IMG_8933CanonPyonLite.jpg",
+      "web": "web/History__NMRC_RC__CanonPyon__IMG_8933CanonPyonLite.jpg",
+      "thumb": "thumbs/History__NMRC_RC__CanonPyon__IMG_8933CanonPyonLite.jpg"
     },
     {
-      "path": "History/NMRC_RC/HamptonBishop/SAM_8979.jpg",
-      "web": "History__NMRC_RC__HamptonBishop__SAM_8979.jpg",
-      "thumb": "thumbs/History__NMRC_RC__HamptonBishop__SAM_8979.jpg"
+      "path": "History/NMRC_RC/Ashperton_andmoretosortout/dsc01940cr.jpg",
+      "web": "web/History__NMRC_RC__Ashperton_andmoretosortout__dsc01940cr.jpg",
+      "thumb": "thumbs/History__NMRC_RC__Ashperton_andmoretosortout__dsc01940cr.jpg"
     },
     {
-      "path": "History/NMRC_RC/Foy/IMG_9611FoyMap.jpg",
-      "web": "History__NMRC_RC__Foy__IMG_9611FoyMap.jpg",
-      "thumb": "thumbs/History__NMRC_RC__Foy__IMG_9611FoyMap.jpg"
+      "path": "History/NMRC_RC/Howe Caple/IMG_9743.jpg",
+      "web": "web/History__NMRC_RC__Howe Caple__IMG_9743.jpg",
+      "thumb": "thumbs/History__NMRC_RC__Howe Caple__IMG_9743.jpg"
     },
     {
-      "path": "History/NMRC_RC/EdwinLoach/DSC02614.jpg",
-      "web": "History__NMRC_RC__EdwinLoach__DSC02614.jpg",
-      "thumb": "thumbs/History__NMRC_RC__EdwinLoach__DSC02614.jpg"
+      "path": "History/NMRC_RC/Hatfield/DSC00702.jpg",
+      "web": "web/History__NMRC_RC__Hatfield__DSC00702.jpg",
+      "thumb": "thumbs/History__NMRC_RC__Hatfield__DSC00702.jpg"
     },
     {
-      "path": "History/NMRC_RC/Dorstone/IMG_2849.jpg",
-      "web": "History__NMRC_RC__Dorstone__IMG_2849.jpg",
-      "thumb": "thumbs/History__NMRC_RC__Dorstone__IMG_2849.jpg"
+      "path": "History/NMRC_RC/Foy/IMG_9617.jpg",
+      "web": "web/History__NMRC_RC__Foy__IMG_9617.jpg",
+      "thumb": "thumbs/History__NMRC_RC__Foy__IMG_9617.jpg"
     },
     {
-      "path": "History/NMRC_RC/Breinton/DSC03144&6_no08_rs.jpg",
-      "web": "History__NMRC_RC__Breinton__DSC03144&6_no08_rs.jpg",
-      "thumb": "thumbs/History__NMRC_RC__Breinton__DSC03144&6_no08_rs.jpg"
+      "path": "History/NMRC_RC/Combe/DSC01764.jpg",
+      "web": "web/History__NMRC_RC__Combe__DSC01764.jpg",
+      "thumb": "thumbs/History__NMRC_RC__Combe__DSC01764.jpg"
     },
     {
-      "path": "History/NMRC_RC/Aymestrey/2008_12_18 709.jpg",
-      "web": "History__NMRC_RC__Aymestrey__2008_12_18 709.jpg",
-      "thumb": "thumbs/History__NMRC_RC__Aymestrey__2008_12_18 709.jpg"
+      "path": "History/NMRC_RC/Burghill/SAM_9174.jpg",
+      "web": "web/History__NMRC_RC__Burghill__SAM_9174.jpg",
+      "thumb": "thumbs/History__NMRC_RC__Burghill__SAM_9174.jpg"
     },
     {
-      "path": "History/NMRC_redboxes/Ledbury/SAM_0775.jpg",
-      "web": "History__NMRC_redboxes__Ledbury__SAM_0775.jpg",
-      "thumb": "thumbs/History__NMRC_redboxes__Ledbury__SAM_0775.jpg"
+      "path": "History/NMRC_RC/Dilwyn/dsc05668.tif",
+      "web": "web/History__NMRC_RC__Dilwyn__dsc05668.jpg",
+      "thumb": "thumbs/History__NMRC_RC__Dilwyn__dsc05668.jpg"
     },
     {
-      "path": "History/NMRC_RC/Sarnesfield/IMG_6842.jpg",
-      "web": "History__NMRC_RC__Sarnesfield__IMG_6842.jpg",
-      "thumb": "thumbs/History__NMRC_RC__Sarnesfield__IMG_6842.jpg"
+      "path": "History/NMRC_RC/StDevereux/SAM_8886.jpg",
+      "web": "web/History__NMRC_RC__StDevereux__SAM_8886.jpg",
+      "thumb": "thumbs/History__NMRC_RC__StDevereux__SAM_8886.jpg"
     }
   ]
 }

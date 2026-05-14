@@ -463,7 +463,9 @@
 							{#if file.image_url}
 								<a
 									class="view-image-link"
-									href={resolve(`/photos?path=${encodeURIComponent(file.path)}`)}
+									href={resolve(
+										`/photos?path=${encodeURIComponent(file.path)}&image_url=${encodeURIComponent(file.image_url)}${file.thumb_url ? `&thumb_url=${encodeURIComponent(file.thumb_url)}` : ''}`
+									)}
 									target="_blank"
 									rel="noopener noreferrer"
 								>
