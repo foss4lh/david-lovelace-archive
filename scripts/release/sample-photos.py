@@ -62,26 +62,41 @@ def assign_collection(path: str, datasets: list, excluded_ids: set = None) -> st
     return matches[0][1]
 
 
-def find_image_files(archive_root: str):
-    """Recursively find all image files in the archive."""
+def find_image_files(archive_root: str, source_paths: list = None):
+    """Recursively find all image files in the archive, sorted for determinism.
+    If source_paths is provided, only scan those paths (relative to archive_root)."""
     root = Path(archive_root)
     extensions = {".jpg", ".jpeg", ".tif", ".tiff"}
     files = []
 
-    for ext in extensions:
-        for path in root.rglob(f"*{ext}"):
-            if path.is_file():
-                try:
-                    size = path.stat().st_size
-                    files.append({
-                        "path": str(path),
-                        "relative": str(path.relative_to(root)),
-                        "size": size,
-                        "ext": ext.lower(),
-                    })
-                except (OSError, ValueError):
-                    continue
+    # Determine which directories to scan
+    if source_paths is None:
+        # Scan the entire archive_root
+        scan_roots = [root]
+    else:
+        # Scan only the specified source paths (relative to archive_root)
+        scan_roots = [root / p for p in source_paths]
 
+    for scan_root in scan_roots:
+        if not scan_root.exists():
+            print(f"Warning: scan path {scan_root} does not exist. Skipping.")
+            continue
+        for ext in extensions:
+            for path in scan_root.rglob(f"*{ext}"):
+                if path.is_file():
+                    try:
+                        size = path.stat().st_size
+                        files.append({
+                            "path": str(path),
+                            "relative": str(path.relative_to(root)),
+                            "size": size,
+                            "ext": ext.lower(),
+                        })
+                    except (OSError, ValueError):
+                        continue
+
+    # Sort by relative path for deterministic ordering
+    files.sort(key=lambda x: x["relative"])
     return files
 
 
@@ -212,6 +227,11 @@ def process_collection(
     web_dir = coll_dir / "web"
     thumb_dir = coll_dir / "thumbs"
 
+    # Ensure directories exist
+    coll_dir.mkdir(parents=True, exist_ok=True)
+    web_dir.mkdir(parents=True, exist_ok=True)
+    thumb_dir.mkdir(parents=True, exist_ok=True)
+
     manifest = {
         "collection": collection_id,
         "total_sampled": len(sampled),
@@ -224,7 +244,7 @@ def process_collection(
     for item in sampled:
         rel_path = item["relative"]
         # Use the relative path (with slashes) as the identifier
-        safe_name = rel_path.replace("/", "__").replace("\\", "__")
+        safe_name = rel_path.replace("/", "__").replace("\\\\", "__")
         base_name = Path(safe_name).stem + ".jpg"
 
         web_path = web_dir / base_name
@@ -284,8 +304,14 @@ def main():
     parser.add_argument("--collections", help="Comma-separated collection IDs (default: all)")
     parser.add_argument("--seed", type=int, default=42, help="Random seed for reproducible sampling")
     parser.add_argument("--dry-run", action="store_true", help="Print stats without generating files")
+    parser.add_argument("--source-paths", help="Comma-separated source paths to scan (relative to archive-root)")
 
     args = parser.parse_args()
+
+    # Parse source paths if provided
+    source_paths = None
+    if args.source_paths:
+        source_paths = [p.strip() for p in args.source_paths.split(",")]
 
     archive_root = Path(args.archive_root)
     output_dir = Path(args.output_dir)
@@ -305,7 +331,7 @@ def main():
         target_ids = all_ids + ["uncategorized"]
 
     print(f"Scanning {archive_root} for image files...")
-    all_images = find_image_files(str(archive_root))
+    all_images = find_image_files(str(archive_root), source_paths)
     print(f"Found {len(all_images)} image files")
 
     if not all_images:

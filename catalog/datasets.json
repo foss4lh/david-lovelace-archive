@@ -169,6 +169,13 @@
 				"localPath": "/data/marden-tithe-55-cog.tif",
 				"remoteUrl": "https://github.com/foss4lh/david-lovelace-archive/releases/download/data-v0.1.0/marden-tithe-55-cog.tif",
 				"status": "available"
+			},
+			{
+				"id": "hfd-tithe-maps-photos",
+				"kind": "image-bundle",
+				"title": "Herefordshire Tithe Maps sample",
+				"status": "available",
+				"localPath": "/photos/hfd-tithe-maps"
 			}
 		],
 		"nextSteps": [
@@ -323,6 +330,13 @@
 				"localPath": "/data/TillingtontoKidleyHill-cog.tif",
 				"remoteUrl": "https://github.com/foss4lh/david-lovelace-archive/releases/download/data-v0.1.0/TillingtontoKidleyHill-cog.tif",
 				"status": "available"
+			},
+			{
+				"id": "hfd-aerofilms-photos",
+				"kind": "image-bundle",
+				"title": "Historic Aerial Photography sample",
+				"status": "available",
+				"localPath": "/photos/hfd-aerofilms"
 			}
 		],
 		"nextSteps": [
@@ -347,7 +361,15 @@
 			"Maps/1QGIS",
 			"Maps/GovData/Traditional_Orchards"
 		],
-		"assets": [],
+		"assets": [
+			{
+				"id": "hfd-hedgerow-surveys-photos",
+				"kind": "image-bundle",
+				"title": "Habitat and Hedgerow Surveys sample",
+				"status": "available",
+				"localPath": "/photos/hfd-hedgerow-surveys"
+			}
+		],
 		"nextSteps": [
 			"Identify canonical spreadsheets/databases and separate them from duplicated exports.",
 			"Convert priority vector layers to GeoPackage and simplified GeoJSON.",
@@ -371,7 +393,15 @@
 			"History/HRO",
 			"History/Lyonshall"
 		],
-		"assets": [],
+		"assets": [
+			{
+				"id": "hfd-pro-e112-photos",
+				"kind": "image-bundle",
+				"title": "Public Records and Exchequer Material sample",
+				"status": "available",
+				"localPath": "/photos/hfd-pro-e112"
+			}
+		],
 		"nextSteps": [
 			"Inventory record references and image sequences.",
 			"Prioritise transcription and translation tasks.",
@@ -663,6 +693,13 @@
 				"localPath": "/data/CSW-cog.tif",
 				"remoteUrl": "https://github.com/foss4lh/david-lovelace-archive/releases/download/data-v0.1.0/CSW-cog.tif",
 				"status": "available"
+			},
+			{
+				"id": "hfd-woodland-1948-photos",
+				"kind": "image-bundle",
+				"title": "Woodland and 1948 Landscape Survey Material sample",
+				"status": "available",
+				"localPath": "/photos/hfd-woodland-1948"
 			}
 		],
 		"nextSteps": [
@@ -715,7 +752,15 @@
 			"History/NMRC_RC/Ross-on-Wye",
 			"History/HRO/AS58-9-49 R Wye plan-Price 1805"
 		],
-		"assets": [],
+		"assets": [
+			{
+				"id": "hfd-river-wye-photos",
+				"kind": "image-bundle",
+				"title": "River Wye and NRA Archive sample",
+				"status": "available",
+				"localPath": "/photos/hfd-river-wye"
+			}
+		],
 		"nextSteps": [
 			"Create a River Wye sub-catalog by place and record type.",
 			"Georeference bridge, flood, and river-plan material.",
