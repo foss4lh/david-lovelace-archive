@@ -109,7 +109,7 @@
 			);
 		}
 		if (selectedFormat !== 'all') filters.push(`format = '${selectedFormat}'`);
-		if (hasImageOnly) filters.push(`format IN ('jpg', 'jpeg', 'tif', 'tiff')`);
+		if (hasImageOnly) filters.push(`image_url IS NOT NULL`);
 		if (selectedSource !== 'all') filters.push(`source = '${selectedSource}'`);
 		if (activeDataset) {
 			filters.push(`collection = '${activeDataset.id.replaceAll("'", "''")}'`);
@@ -178,7 +178,7 @@
 				remoteMatchCount = Number(countResult?.getChild('match_count')?.get(0) ?? 0);
 
 				const results = await queryInventory(
-					`SELECT path, size, format, source FROM archive.files ${whereClause} ORDER BY size DESC NULLS LAST LIMIT ${PAGE_SIZE} OFFSET ${offset}`
+					`SELECT path, size, format, source, image_url, thumb_url FROM archive.files ${whereClause} ORDER BY size DESC NULLS LAST LIMIT ${PAGE_SIZE} OFFSET ${offset}`
 				);
 				remoteFileResults =
 					// eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -187,7 +187,9 @@
 						size: (Number(row.size ?? 0) / (1024 * 1024)).toFixed(1) + ' MB',
 						format: row.format as string,
 						source: row.source as string,
-						description: 'Found in archive index'
+						description: 'Found in archive index',
+						image_url: (row.image_url as string) || null,
+						thumb_url: (row.thumb_url as string) || null
 					})) ?? [];
 				remoteFolderResults = [];
 			}
