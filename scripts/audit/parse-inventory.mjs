@@ -314,27 +314,35 @@ async function main() {
 		);
 	}
 
-	// Phase 3: assign collections and write CSV
+	// Phase 3: assign collections
 	const collectionMatchers = buildCollectionMatchers();
 	for (const row of filteredRows) {
 		row.collection = inferCollection(row.fullPath, collectionMatchers);
 	}
 
+	// Exclude files already comprehensively published online (e.g. NLS OS maps).
+	// They are kept out of the DuckDB so the public index focuses on unique material.
+	const indexRows = filteredRows.filter((row) => row.alreadyPublishedOnline !== 'TRUE');
+	const excludedCount = filteredRows.length - indexRows.length;
+
+	// Write CSV for DuckDB ingestion
 	const csvStream = createWriteStream(outputFile);
 	csvStream.write('path,size,format,timestamp,source,already_published_online,collection\n');
 
-	for (const row of filteredRows) {
+	for (const row of indexRows) {
 		csvStream.write(
 			`"${row.fullPath.replace(/"/g, '""')}","${row.size}","${row.ext}","${row.dateTime}","${row.source}","${row.alreadyPublishedOnline}","${row.collection}"\n`
 		);
 	}
 
 	csvStream.end();
-	console.log(`Wrote ${outputFile} with ${filteredRows.length.toLocaleString()} rows`);
+	console.log(
+		`Wrote ${outputFile} with ${indexRows.length.toLocaleString()} rows (${excludedCount.toLocaleString()} already-published excluded)`
+	);
 
 	// Summary
 	const sources = {};
-	for (const row of filteredRows) {
+	for (const row of indexRows) {
 		sources[row.source] = (sources[row.source] || 0) + 1;
 	}
 	console.log('Source breakdown:');
@@ -343,7 +351,7 @@ async function main() {
 		.forEach(([s, c]) => console.log(`  ${s}: ${c.toLocaleString()}`));
 
 	const collections = {};
-	for (const row of filteredRows) {
+	for (const row of indexRows) {
 		const c = row.collection;
 		if (!collections[c]) collections[c] = { count: 0, size: 0 };
 		collections[c].count++;
