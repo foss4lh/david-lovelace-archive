@@ -8,7 +8,7 @@
 		"build": "vite build",
 		"preview": "vite preview",
 		"data:download": "node scripts/download-data.mjs",
-		"data:bundle:photos": "python3 scripts/release/sample-photos.py --archive-root /media/robin/foss4lh1/david-lovelace-archive --output-dir tmp-bundles --max-zip-size-mb 5",
+		"data:bundle:photos": "python3 scripts/release/sample-photos.py --archive-root /media/robin/foss4lh1/david-lovelace-archive --output-dir tmp-bundles",
 		"data:upload": "node scripts/release/upload-assets.mjs",
 		"data:validate:photos": "node scripts/release/validate-photo-release-assets.mjs",
 		"inventory:parse": "node scripts/audit/parse-inventory.mjs",

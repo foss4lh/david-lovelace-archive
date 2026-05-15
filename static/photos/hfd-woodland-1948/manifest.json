@@ -1,14 +1,229 @@
 {
   "collection": "hfd-woodland-1948",
-  "total_sampled": 2,
+  "total_sampled": 53,
   "web_max_dim": 1200,
   "thumb_max_dim": 300,
   "quality": 80,
   "photos": [
     {
+      "path": "Maps/FC1953ecw/C17.tif",
+      "web": "web/Maps__FC1953ecw__C17.jpg",
+      "thumb": "thumbs/Maps__FC1953ecw__C17.jpg"
+    },
+    {
+      "path": "Maps/FC1953ecw/C18.tif",
+      "web": "web/Maps__FC1953ecw__C18.jpg",
+      "thumb": "thumbs/Maps__FC1953ecw__C18.jpg"
+    },
+    {
+      "path": "Maps/FC1953ecw/C19.tif",
+      "web": "web/Maps__FC1953ecw__C19.jpg",
+      "thumb": "thumbs/Maps__FC1953ecw__C19.jpg"
+    },
+    {
+      "path": "Maps/FC1953ecw/C24.TIF",
+      "web": "web/Maps__FC1953ecw__C24.jpg",
+      "thumb": "thumbs/Maps__FC1953ecw__C24.jpg"
+    },
+    {
+      "path": "Maps/FC1953ecw/C25.tif",
+      "web": "web/Maps__FC1953ecw__C25.jpg",
+      "thumb": "thumbs/Maps__FC1953ecw__C25.jpg"
+    },
+    {
+      "path": "Maps/FC1953ecw/C26.tif",
+      "web": "web/Maps__FC1953ecw__C26.jpg",
+      "thumb": "thumbs/Maps__FC1953ecw__C26.jpg"
+    },
+    {
+      "path": "Maps/FC1953ecw/C27.tif",
+      "web": "web/Maps__FC1953ecw__C27.jpg",
+      "thumb": "thumbs/Maps__FC1953ecw__C27.jpg"
+    },
+    {
+      "path": "Maps/FC1953ecw/C32W.tif",
+      "web": "web/Maps__FC1953ecw__C32W.jpg",
+      "thumb": "thumbs/Maps__FC1953ecw__C32W.jpg"
+    },
+    {
+      "path": "Maps/FC1953ecw/C33.tif",
+      "web": "web/Maps__FC1953ecw__C33.jpg",
+      "thumb": "thumbs/Maps__FC1953ecw__C33.jpg"
+    },
+    {
+      "path": "Maps/FC1953ecw/C34.tif",
+      "web": "web/Maps__FC1953ecw__C34.jpg",
+      "thumb": "thumbs/Maps__FC1953ecw__C34.jpg"
+    },
+    {
+      "path": "Maps/FC1953ecw/C37.tif",
+      "web": "web/Maps__FC1953ecw__C37.jpg",
+      "thumb": "thumbs/Maps__FC1953ecw__C37.jpg"
+    },
+    {
+      "path": "Maps/FC1953ecw/C39.tif",
+      "web": "web/Maps__FC1953ecw__C39.jpg",
+      "thumb": "thumbs/Maps__FC1953ecw__C39.jpg"
+    },
+    {
+      "path": "Maps/FC1953ecw/C40.tif",
+      "web": "web/Maps__FC1953ecw__C40.jpg",
+      "thumb": "thumbs/Maps__FC1953ecw__C40.jpg"
+    },
+    {
+      "path": "Maps/FC1953ecw/C4142FC.tif",
+      "web": "web/Maps__FC1953ecw__C4142FC.jpg",
+      "thumb": "thumbs/Maps__FC1953ecw__C4142FC.jpg"
+    },
+    {
+      "path": "Maps/FC1953ecw/C43to38.tif",
+      "web": "web/Maps__FC1953ecw__C43to38.jpg",
+      "thumb": "thumbs/Maps__FC1953ecw__C43to38.jpg"
+    },
+    {
+      "path": "Maps/FC1953ecw/C43to38_1886_base.tif",
+      "web": "web/Maps__FC1953ecw__C43to38_1886_base.jpg",
+      "thumb": "thumbs/Maps__FC1953ecw__C43to38_1886_base.jpg"
+    },
+    {
+      "path": "Maps/FC1953ecw/C46_47.tif",
+      "web": "web/Maps__FC1953ecw__C46_47.jpg",
+      "thumb": "thumbs/Maps__FC1953ecw__C46_47.jpg"
+    },
+    {
+      "path": "Maps/FC1953ecw/C46_47censusbase.tif",
+      "web": "web/Maps__FC1953ecw__C46_47censusbase.jpg",
+      "thumb": "thumbs/Maps__FC1953ecw__C46_47censusbase.jpg"
+    },
+    {
+      "path": "Maps/FC1953ecw/C47.tif",
+      "web": "web/Maps__FC1953ecw__C47.jpg",
+      "thumb": "thumbs/Maps__FC1953ecw__C47.jpg"
+    },
+    {
+      "path": "Maps/FC1953ecw/C53.TIF",
+      "web": "web/Maps__FC1953ecw__C53.jpg",
+      "thumb": "thumbs/Maps__FC1953ecw__C53.jpg"
+    },
+    {
+      "path": "Maps/LittleDoward/HistoricLandscape.TIF",
+      "web": "web/Maps__LittleDoward__HistoricLandscape.jpg",
+      "thumb": "thumbs/Maps__LittleDoward__HistoricLandscape.jpg"
+    },
+    {
+      "path": "Maps/LittleDoward/LandscapeCharacter.TIF",
+      "web": "web/Maps__LittleDoward__LandscapeCharacter.jpg",
+      "thumb": "thumbs/Maps__LittleDoward__LandscapeCharacter.jpg"
+    },
+    {
+      "path": "Maps/LittleDoward/ManagementRecommendations.TIF",
+      "web": "web/Maps__LittleDoward__ManagementRecommendations.jpg",
+      "thumb": "thumbs/Maps__LittleDoward__ManagementRecommendations.jpg"
+    },
+    {
+      "path": "Maps/LittleDoward/OS_6inchtoMile1890_54NW.TIF",
+      "web": "web/Maps__LittleDoward__OS_6inchtoMile1890_54NW.jpg",
+      "thumb": "thumbs/Maps__LittleDoward__OS_6inchtoMile1890_54NW.jpg"
+    },
+    {
+      "path": "Maps/LittleDoward/OS_6inchtoMile1891_54SW.TIF",
+      "web": "web/Maps__LittleDoward__OS_6inchtoMile1891_54SW.jpg",
+      "thumb": "thumbs/Maps__LittleDoward__OS_6inchtoMile1891_54SW.jpg"
+    },
+    {
+      "path": "Maps/LittleDoward/SpeciesofInterest.TIF",
+      "web": "web/Maps__LittleDoward__SpeciesofInterest.jpg",
+      "thumb": "thumbs/Maps__LittleDoward__SpeciesofInterest.jpg"
+    },
+    {
+      "path": "Maps/LittleDoward/Vegetation_NVC.TIF",
+      "web": "web/Maps__LittleDoward__Vegetation_NVC.jpg",
+      "thumb": "thumbs/Maps__LittleDoward__Vegetation_NVC.jpg"
+    },
+    {
+      "path": "Maps/LittleDoward/WGSmap.TIF",
+      "web": "web/Maps__LittleDoward__WGSmap.jpg",
+      "thumb": "thumbs/Maps__LittleDoward__WGSmap.jpg"
+    },
+    {
+      "path": "Maps/LittleDoward/WoodlandStructure.TIF",
+      "web": "web/Maps__LittleDoward__WoodlandStructure.jpg",
+      "thumb": "thumbs/Maps__LittleDoward__WoodlandStructure.jpg"
+    },
+    {
+      "path": "Maps/LittleDoward/distributionofLargeTrees.TIF",
+      "web": "web/Maps__LittleDoward__distributionofLargeTrees.jpg",
+      "thumb": "thumbs/Maps__LittleDoward__distributionofLargeTrees.jpg"
+    },
+    {
       "path": "Maps/LittleDoward/distributionofLargeTrees.jpg",
       "web": "web/Maps__LittleDoward__distributionofLargeTrees.jpg",
       "thumb": "thumbs/Maps__LittleDoward__distributionofLargeTrees.jpg"
+    },
+    {
+      "path": "Maps/LittleDoward/jpg/AirPhoto2002.jpg",
+      "web": "web/Maps__LittleDoward__jpg__AirPhoto2002.jpg",
+      "thumb": "thumbs/Maps__LittleDoward__jpg__AirPhoto2002.jpg"
+    },
+    {
+      "path": "Maps/LittleDoward/jpg/DistributionofLargeTrees_.jpg",
+      "web": "web/Maps__LittleDoward__jpg__DistributionofLargeTrees_.jpg",
+      "thumb": "thumbs/Maps__LittleDoward__jpg__DistributionofLargeTrees_.jpg"
+    },
+    {
+      "path": "Maps/LittleDoward/jpg/HistoricLandscape.jpg",
+      "web": "web/Maps__LittleDoward__jpg__HistoricLandscape.jpg",
+      "thumb": "thumbs/Maps__LittleDoward__jpg__HistoricLandscape.jpg"
+    },
+    {
+      "path": "Maps/LittleDoward/jpg/LandscapeCharacter.jpg",
+      "web": "web/Maps__LittleDoward__jpg__LandscapeCharacter.jpg",
+      "thumb": "thumbs/Maps__LittleDoward__jpg__LandscapeCharacter.jpg"
+    },
+    {
+      "path": "Maps/LittleDoward/jpg/ManagementRecommendations.jpg",
+      "web": "web/Maps__LittleDoward__jpg__ManagementRecommendations.jpg",
+      "thumb": "thumbs/Maps__LittleDoward__jpg__ManagementRecommendations.jpg"
+    },
+    {
+      "path": "Maps/LittleDoward/jpg/OS_6inchtoMile1890_54NW.jpg",
+      "web": "web/Maps__LittleDoward__jpg__OS_6inchtoMile1890_54NW.jpg",
+      "thumb": "thumbs/Maps__LittleDoward__jpg__OS_6inchtoMile1890_54NW.jpg"
+    },
+    {
+      "path": "Maps/LittleDoward/jpg/OS_6inchtoMile1891_54SW.jpg",
+      "web": "web/Maps__LittleDoward__jpg__OS_6inchtoMile1891_54SW.jpg",
+      "thumb": "thumbs/Maps__LittleDoward__jpg__OS_6inchtoMile1891_54SW.jpg"
+    },
+    {
+      "path": "Maps/LittleDoward/jpg/SpeciesofInterest.jpg",
+      "web": "web/Maps__LittleDoward__jpg__SpeciesofInterest.jpg",
+      "thumb": "thumbs/Maps__LittleDoward__jpg__SpeciesofInterest.jpg"
+    },
+    {
+      "path": "Maps/LittleDoward/jpg/SpeciesofInterest_.jpg",
+      "web": "web/Maps__LittleDoward__jpg__SpeciesofInterest_.jpg",
+      "thumb": "thumbs/Maps__LittleDoward__jpg__SpeciesofInterest_.jpg"
+    },
+    {
+      "path": "Maps/LittleDoward/jpg/Vegetation_NVC.jpg",
+      "web": "web/Maps__LittleDoward__jpg__Vegetation_NVC.jpg",
+      "thumb": "thumbs/Maps__LittleDoward__jpg__Vegetation_NVC.jpg"
+    },
+    {
+      "path": "Maps/LittleDoward/jpg/WGSmap.jpg",
+      "web": "web/Maps__LittleDoward__jpg__WGSmap.jpg",
+      "thumb": "thumbs/Maps__LittleDoward__jpg__WGSmap.jpg"
+    },
+    {
+      "path": "Maps/LittleDoward/jpg/WoodlandStructure.jpg",
+      "web": "web/Maps__LittleDoward__jpg__WoodlandStructure.jpg",
+      "thumb": "thumbs/Maps__LittleDoward__jpg__WoodlandStructure.jpg"
+    },
+    {
+      "path": "Maps/LittleDoward/jpg/WoodlandStructure_.jpg",
+      "web": "web/Maps__LittleDoward__jpg__WoodlandStructure_.jpg",
+      "thumb": "thumbs/Maps__LittleDoward__jpg__WoodlandStructure_.jpg"
     },
     {
       "path": "Maps/LittleDoward/jpg/distributionofLargeTrees.jpg",

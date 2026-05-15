@@ -217,7 +217,7 @@ def main():
         default="static/data/archive-v7.duckdb",
         help="Path to DuckDB inventory (default: static/data/archive-v7.duckdb)",
     )
-    parser.add_argument("--max-zip-size-mb", type=int, default=10, help="Target max zip size in MB")
+    parser.add_argument("--max-zip-size-mb", type=int, default=20, help="Target max zip size in MB")
     parser.add_argument("--web-max-dim", type=int, default=1200, help="Max dimension for web images")
     parser.add_argument("--thumb-max-dim", type=int, default=300, help="Max dimension for thumbnails")
     parser.add_argument("--quality", type=int, default=80, help="JPEG quality (1-100)")
