@@ -421,8 +421,6 @@
 		"sourceArchivePaths": [
 			"Maps/FC1953ecw",
 			"Maps/GovData/Ancient_Woodlands_England",
-			"Maps/DEM",
-			"Maps/LIDAR",
 			"Maps/LittleDoward"
 		],
 		"assets": [
