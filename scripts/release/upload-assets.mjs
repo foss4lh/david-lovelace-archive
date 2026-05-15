@@ -23,7 +23,9 @@ const BUNDLE_DIRS = [
 console.log(`Fetching current assets for release ${tag} from ${repo}...`);
 let existingAssets = [];
 try {
-	const output = execSync(`gh release view ${tag} --json assets --repo ${repo}`, { encoding: 'utf-8' });
+	const output = execSync(`gh release view ${tag} --json assets --repo ${repo}`, {
+		encoding: 'utf-8'
+	});
 	existingAssets = JSON.parse(output).assets;
 } catch (err) {
 	console.error(`  ERROR: Could not fetch release info: ${err.message}`);
@@ -46,7 +48,7 @@ for (const asset of manifest.assets) {
 		// Handle special mappings
 		const sourceNames = [filename];
 		if (filename === 'photos-5-demo.zip') sourceNames.push('photos-uncategorized.zip');
-		
+
 		for (const dir of BUNDLE_DIRS) {
 			for (const name of sourceNames) {
 				const p = join(dir, name);
