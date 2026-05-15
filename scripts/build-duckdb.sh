@@ -11,6 +11,27 @@ set -euo pipefail
 
 OUTPUT="${1:-static/data/archive-v7.duckdb}"
 
+# Generate photo-urls.json from manifests (merges all collection manifests)
+python3 -c "
+import json, glob, os
+entries = []
+for mf in sorted(glob.glob('static/photos/*/manifest.json')):
+    with open(mf) as f:
+        m = json.load(f)
+    coll = m.get('collection')
+    if not coll:
+        continue
+    for p in m.get('photos', []):
+        entries.append({
+            'path': p['path'],
+            'url': f'/photos/{coll}/web/{os.path.basename(p[\"web\"])}',
+            'thumb_url': f'/photos/{coll}/thumbs/{os.path.basename(p[\"thumb\"])}'
+        })
+with open('catalog/photo-urls.json', 'w') as f:
+    json.dump(entries, f, indent=2)
+print(f'Generated catalog/photo-urls.json ({len(entries)} photos)')
+"
+
 duckdb "$OUTPUT" << 'SQL'
 CREATE OR REPLACE TABLE files AS
   SELECT * FROM read_csv_auto('catalog/archive-inventory.csv')
@@ -57,7 +78,7 @@ CREATE OR REPLACE TABLE files AS
     )
   );
 
--- Create standalone photo_urls table (queryable, indexable, scalable)
+-- Create standalone photo_urls table
 CREATE OR REPLACE TABLE photo_urls AS
   SELECT * FROM read_json_auto('catalog/photo-urls.json');
 
