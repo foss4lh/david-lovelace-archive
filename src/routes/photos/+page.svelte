@@ -61,6 +61,13 @@
 	let currentPage = $state(1);
 	const PAGE_SIZE = 50;
 
+	function collectionFromUrl(): string {
+		const path = window.location.pathname.replace(/\/+$/, '');
+		const match = path.match(/\/photos\/(.+)/);
+		if (match && photoCollections.some((c) => c.id === match[1])) return match[1];
+		return 'uncategorized';
+	}
+
 	const activeCollection = $derived(
 		photoCollections.find((c) => c.id === selectedCollection) ?? photoCollections[0]
 	);
@@ -101,7 +108,16 @@
 	}
 
 	onMount(async () => {
+		selectedCollection = collectionFromUrl();
 		await loadManifest(selectedCollection);
+
+		window.addEventListener('popstate', async () => {
+			const urlColl = collectionFromUrl();
+			if (urlColl !== selectedCollection) {
+				selectedCollection = urlColl;
+				await loadManifest(urlColl);
+			}
+		});
 
 		const params = new URLSearchParams(window.location.search);
 		const targetPath = params.get('path');
@@ -148,6 +164,8 @@
 
 	function onChangeCollection() {
 		loadManifest(selectedCollection);
+		const col = photoCollections.find((c) => c.id === selectedCollection);
+		if (col) window.history.replaceState(null, '', col.path);
 	}
 
 	function openLightbox(index: number) {

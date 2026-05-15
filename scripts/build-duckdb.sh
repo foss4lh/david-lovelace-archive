@@ -93,6 +93,10 @@ CREATE OR REPLACE TABLE files AS
     )
   );
 
+-- Reassign Luftwaffe files to their own collection (CSV tagged them as uncategorized)
+UPDATE files SET collection = 'hfd-luftwaffe'
+WHERE CONTAINS(path, '/Luftwaffe/') OR CONTAINS(path, '/luftwaffe/');
+
 -- Create standalone photo_urls table
 CREATE OR REPLACE TABLE photo_urls AS
   SELECT * FROM read_json_auto('catalog/photo-urls.json');
