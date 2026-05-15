@@ -1,0 +1,249 @@
+{
+  "collection": "hfd-aerofilms",
+  "total_sampled": 51,
+  "web_max_dim": 1200,
+  "thumb_max_dim": 300,
+  "quality": 80,
+  "photos": [
+    {
+      "path": "AirPhotos/DL_APs/Untitled-1.jpg",
+      "web": "web/AirPhotos__DL_APs__Untitled-1.jpg",
+      "thumb": "thumbs/AirPhotos__DL_APs__Untitled-1.jpg"
+    },
+    {
+      "path": "AirPhotos/DL_APs/Untitled-10.jpg",
+      "web": "web/AirPhotos__DL_APs__Untitled-10.jpg",
+      "thumb": "thumbs/AirPhotos__DL_APs__Untitled-10.jpg"
+    },
+    {
+      "path": "AirPhotos/DL_APs/Untitled-11.jpg",
+      "web": "web/AirPhotos__DL_APs__Untitled-11.jpg",
+      "thumb": "thumbs/AirPhotos__DL_APs__Untitled-11.jpg"
+    },
+    {
+      "path": "AirPhotos/DL_APs/Untitled-12.jpg",
+      "web": "web/AirPhotos__DL_APs__Untitled-12.jpg",
+      "thumb": "thumbs/AirPhotos__DL_APs__Untitled-12.jpg"
+    },
+    {
+      "path": "AirPhotos/DL_APs/Untitled-2.jpg",
+      "web": "web/AirPhotos__DL_APs__Untitled-2.jpg",
+      "thumb": "thumbs/AirPhotos__DL_APs__Untitled-2.jpg"
+    },
+    {
+      "path": "AirPhotos/DL_APs/Untitled-3.jpg",
+      "web": "web/AirPhotos__DL_APs__Untitled-3.jpg",
+      "thumb": "thumbs/AirPhotos__DL_APs__Untitled-3.jpg"
+    },
+    {
+      "path": "AirPhotos/DL_APs/Untitled-4.jpg",
+      "web": "web/AirPhotos__DL_APs__Untitled-4.jpg",
+      "thumb": "thumbs/AirPhotos__DL_APs__Untitled-4.jpg"
+    },
+    {
+      "path": "AirPhotos/DL_APs/Untitled-5.jpg",
+      "web": "web/AirPhotos__DL_APs__Untitled-5.jpg",
+      "thumb": "thumbs/AirPhotos__DL_APs__Untitled-5.jpg"
+    },
+    {
+      "path": "AirPhotos/DL_APs/Untitled-6.jpg",
+      "web": "web/AirPhotos__DL_APs__Untitled-6.jpg",
+      "thumb": "thumbs/AirPhotos__DL_APs__Untitled-6.jpg"
+    },
+    {
+      "path": "AirPhotos/DL_APs/Untitled-7.jpg",
+      "web": "web/AirPhotos__DL_APs__Untitled-7.jpg",
+      "thumb": "thumbs/AirPhotos__DL_APs__Untitled-7.jpg"
+    },
+    {
+      "path": "AirPhotos/DL_APs/Untitled-8.jpg",
+      "web": "web/AirPhotos__DL_APs__Untitled-8.jpg",
+      "thumb": "thumbs/AirPhotos__DL_APs__Untitled-8.jpg"
+    },
+    {
+      "path": "AirPhotos/DL_APs/Untitled-9.jpg",
+      "web": "web/AirPhotos__DL_APs__Untitled-9.jpg",
+      "thumb": "thumbs/AirPhotos__DL_APs__Untitled-9.jpg"
+    },
+    {
+      "path": "AirPhotos/EN_County_APs/SO4065/SO4065.tif",
+      "web": "web/AirPhotos__EN_County_APs__SO4065__SO4065.jpg",
+      "thumb": "thumbs/AirPhotos__EN_County_APs__SO4065__SO4065.jpg"
+    },
+    {
+      "path": "AirPhotos/EN_County_APs/WellingtonTiles/AP1999R.tif",
+      "web": "web/AirPhotos__EN_County_APs__WellingtonTiles__AP1999R.jpg",
+      "thumb": "thumbs/AirPhotos__EN_County_APs__WellingtonTiles__AP1999R.jpg"
+    },
+    {
+      "path": "AirPhotos/EN_County_APs/WellingtonTiles/DerndaleHill.tif",
+      "web": "web/AirPhotos__EN_County_APs__WellingtonTiles__DerndaleHill.jpg",
+      "thumb": "thumbs/AirPhotos__EN_County_APs__WellingtonTiles__DerndaleHill.jpg"
+    },
+    {
+      "path": "AirPhotos/EN_County_APs/WellingtonTiles/So4749.tif",
+      "web": "web/AirPhotos__EN_County_APs__WellingtonTiles__So4749.jpg",
+      "thumb": "thumbs/AirPhotos__EN_County_APs__WellingtonTiles__So4749.jpg"
+    },
+    {
+      "path": "AirPhotos/EN_County_APs/WellingtonTiles/So4848.tif",
+      "web": "web/AirPhotos__EN_County_APs__WellingtonTiles__So4848.jpg",
+      "thumb": "thumbs/AirPhotos__EN_County_APs__WellingtonTiles__So4848.jpg"
+    },
+    {
+      "path": "AirPhotos/EN_County_APs/WellingtonTiles/So4849.tif",
+      "web": "web/AirPhotos__EN_County_APs__WellingtonTiles__So4849.jpg",
+      "thumb": "thumbs/AirPhotos__EN_County_APs__WellingtonTiles__So4849.jpg"
+    },
+    {
+      "path": "AirPhotos/EN_County_APs/WellingtonTiles/So4849_4949.tif",
+      "web": "web/AirPhotos__EN_County_APs__WellingtonTiles__So4849_4949.jpg",
+      "thumb": "thumbs/AirPhotos__EN_County_APs__WellingtonTiles__So4849_4949.jpg"
+    },
+    {
+      "path": "AirPhotos/EN_County_APs/WellingtonTiles/So4949.tif",
+      "web": "web/AirPhotos__EN_County_APs__WellingtonTiles__So4949.jpg",
+      "thumb": "thumbs/AirPhotos__EN_County_APs__WellingtonTiles__So4949.jpg"
+    },
+    {
+      "path": "AirPhotos/EN_County_APs/so6318.tif",
+      "web": "web/AirPhotos__EN_County_APs__so6318.jpg",
+      "thumb": "thumbs/AirPhotos__EN_County_APs__so6318.jpg"
+    },
+    {
+      "path": "AirPhotos/EN_County_APs/so7059_2H.tif",
+      "web": "web/AirPhotos__EN_County_APs__so7059_2H.jpg",
+      "thumb": "thumbs/AirPhotos__EN_County_APs__so7059_2H.jpg"
+    },
+    {
+      "path": "History/NMRC_AeroFilms/1929_StNicholasRectory.jpg",
+      "web": "web/History__NMRC_AeroFilms__1929_StNicholasRectory.jpg",
+      "thumb": "thumbs/History__NMRC_AeroFilms__1929_StNicholasRectory.jpg"
+    },
+    {
+      "path": "History/NMRC_AeroFilms/30April1921_IMG_3688rs.jpg",
+      "web": "web/History__NMRC_AeroFilms__30April1921_IMG_3688rs.jpg",
+      "thumb": "thumbs/History__NMRC_AeroFilms__30April1921_IMG_3688rs.jpg"
+    },
+    {
+      "path": "History/NMRC_AeroFilms/AerofilmAlbums_seenbyDL.jpg",
+      "web": "web/History__NMRC_AeroFilms__AerofilmAlbums_seenbyDL.jpg",
+      "thumb": "thumbs/History__NMRC_AeroFilms__AerofilmAlbums_seenbyDL.jpg"
+    },
+    {
+      "path": "History/NMRC_AeroFilms/BishopsMeadowApril1921.jpg",
+      "web": "web/History__NMRC_AeroFilms__BishopsMeadowApril1921.jpg",
+      "thumb": "thumbs/History__NMRC_AeroFilms__BishopsMeadowApril1921.jpg"
+    },
+    {
+      "path": "History/NMRC_AeroFilms/ColwallAP1933.jpg",
+      "web": "web/History__NMRC_AeroFilms__ColwallAP1933.jpg",
+      "thumb": "thumbs/History__NMRC_AeroFilms__ColwallAP1933.jpg"
+    },
+    {
+      "path": "History/NMRC_AeroFilms/Hereford1929.jpg",
+      "web": "web/History__NMRC_AeroFilms__Hereford1929.jpg",
+      "thumb": "thumbs/History__NMRC_AeroFilms__Hereford1929.jpg"
+    },
+    {
+      "path": "History/NMRC_AeroFilms/IMG_3376Bosbury_WM_ref.jpg",
+      "web": "web/History__NMRC_AeroFilms__IMG_3376Bosbury_WM_ref.jpg",
+      "thumb": "thumbs/History__NMRC_AeroFilms__IMG_3376Bosbury_WM_ref.jpg"
+    },
+    {
+      "path": "History/NMRC_AeroFilms/IMG_3377Bosbury_WM_copy.jpg",
+      "web": "web/History__NMRC_AeroFilms__IMG_3377Bosbury_WM_copy.jpg",
+      "thumb": "thumbs/History__NMRC_AeroFilms__IMG_3377Bosbury_WM_copy.jpg"
+    },
+    {
+      "path": "History/NMRC_AeroFilms/IMG_3470EastnorCastle1954.jpg",
+      "web": "web/History__NMRC_AeroFilms__IMG_3470EastnorCastle1954.jpg",
+      "thumb": "thumbs/History__NMRC_AeroFilms__IMG_3470EastnorCastle1954.jpg"
+    },
+    {
+      "path": "History/NMRC_AeroFilms/IMG_3549_Rotherwas_1969.jpg",
+      "web": "web/History__NMRC_AeroFilms__IMG_3549_Rotherwas_1969.jpg",
+      "thumb": "thumbs/History__NMRC_AeroFilms__IMG_3549_Rotherwas_1969.jpg"
+    },
+    {
+      "path": "History/NMRC_AeroFilms/IMG_3653hist.jpg",
+      "web": "web/History__NMRC_AeroFilms__IMG_3653hist.jpg",
+      "thumb": "thumbs/History__NMRC_AeroFilms__IMG_3653hist.jpg"
+    },
+    {
+      "path": "History/NMRC_AeroFilms/IMG_3682MillStreetconifers1932.jpg",
+      "web": "web/History__NMRC_AeroFilms__IMG_3682MillStreetconifers1932.jpg",
+      "thumb": "thumbs/History__NMRC_AeroFilms__IMG_3682MillStreetconifers1932.jpg"
+    },
+    {
+      "path": "History/NMRC_AeroFilms/IMG_3682MillStreetconifers1932crop.jpg",
+      "web": "web/History__NMRC_AeroFilms__IMG_3682MillStreetconifers1932crop.jpg",
+      "thumb": "thumbs/History__NMRC_AeroFilms__IMG_3682MillStreetconifers1932crop.jpg"
+    },
+    {
+      "path": "History/NMRC_AeroFilms/IMG_3688MillStreet1921crop.jpg",
+      "web": "web/History__NMRC_AeroFilms__IMG_3688MillStreet1921crop.jpg",
+      "thumb": "thumbs/History__NMRC_AeroFilms__IMG_3688MillStreet1921crop.jpg"
+    },
+    {
+      "path": "History/NMRC_AeroFilms/IMG_3695cropannot.jpg",
+      "web": "web/History__NMRC_AeroFilms__IMG_3695cropannot.jpg",
+      "thumb": "thumbs/History__NMRC_AeroFilms__IMG_3695cropannot.jpg"
+    },
+    {
+      "path": "History/NMRC_AeroFilms/IMG_3815crop.jpg",
+      "web": "web/History__NMRC_AeroFilms__IMG_3815crop.jpg",
+      "thumb": "thumbs/History__NMRC_AeroFilms__IMG_3815crop.jpg"
+    },
+    {
+      "path": "History/NMRC_AeroFilms/IMG_4063crop.jpg",
+      "web": "web/History__NMRC_AeroFilms__IMG_4063crop.jpg",
+      "thumb": "thumbs/History__NMRC_AeroFilms__IMG_4063crop.jpg"
+    },
+    {
+      "path": "History/NMRC_AeroFilms/IMG_4069rs.jpg",
+      "web": "web/History__NMRC_AeroFilms__IMG_4069rs.jpg",
+      "thumb": "thumbs/History__NMRC_AeroFilms__IMG_4069rs.jpg"
+    },
+    {
+      "path": "History/NMRC_AeroFilms/IMG_4132LeomCountryside1920.jpg",
+      "web": "web/History__NMRC_AeroFilms__IMG_4132LeomCountryside1920.jpg",
+      "thumb": "thumbs/History__NMRC_AeroFilms__IMG_4132LeomCountryside1920.jpg"
+    },
+    {
+      "path": "History/NMRC_AeroFilms/IMG_4135sept1920.jpg",
+      "web": "web/History__NMRC_AeroFilms__IMG_4135sept1920.jpg",
+      "thumb": "thumbs/History__NMRC_AeroFilms__IMG_4135sept1920.jpg"
+    },
+    {
+      "path": "History/NMRC_AeroFilms/IMG_4140LeomisterSept1920.jpg",
+      "web": "web/History__NMRC_AeroFilms__IMG_4140LeomisterSept1920.jpg",
+      "thumb": "thumbs/History__NMRC_AeroFilms__IMG_4140LeomisterSept1920.jpg"
+    },
+    {
+      "path": "History/NMRC_AeroFilms/IMG_4140_sept1920.jpg",
+      "web": "web/History__NMRC_AeroFilms__IMG_4140_sept1920.jpg",
+      "thumb": "thumbs/History__NMRC_AeroFilms__IMG_4140_sept1920.jpg"
+    },
+    {
+      "path": "History/NMRC_AeroFilms/IMG_4269rs.jpg",
+      "web": "web/History__NMRC_AeroFilms__IMG_4269rs.jpg",
+      "thumb": "thumbs/History__NMRC_AeroFilms__IMG_4269rs.jpg"
+    },
+    {
+      "path": "History/NMRC_AeroFilms/IMG_4269rs_1921.jpg",
+      "web": "web/History__NMRC_AeroFilms__IMG_4269rs_1921.jpg",
+      "thumb": "thumbs/History__NMRC_AeroFilms__IMG_4269rs_1921.jpg"
+    },
+    {
+      "path": "History/NMRC_AeroFilms/IMG_4294rs_1932.jpg",
+      "web": "web/History__NMRC_AeroFilms__IMG_4294rs_1932.jpg",
+      "thumb": "thumbs/History__NMRC_AeroFilms__IMG_4294rs_1932.jpg"
+    },
+    {
+      "path": "History/NMRC_AeroFilms/WidemarshCommonRAF10thMarch1948.jpg",
+      "web": "web/History__NMRC_AeroFilms__WidemarshCommonRAF10thMarch1948.jpg",
+      "thumb": "thumbs/History__NMRC_AeroFilms__WidemarshCommonRAF10thMarch1948.jpg"
+    }
+  ]
+}

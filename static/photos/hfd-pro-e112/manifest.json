@@ -1,0 +1,509 @@
+{
+  "collection": "hfd-pro-e112",
+  "total_sampled": 100,
+  "web_max_dim": 1200,
+  "thumb_max_dim": 300,
+  "quality": 80,
+  "photos": [
+    {
+      "path": "History/HRO/AA21_box870_BigBundle_mapsfieldstrees_Dilwyn/rs/SAM_6806.jpg",
+      "web": "web/History__HRO__AA21_box870_BigBundle_mapsfieldstrees_Dilwyn__rs__SAM_6806.jpg",
+      "thumb": "thumbs/History__HRO__AA21_box870_BigBundle_mapsfieldstrees_Dilwyn__rs__SAM_6806.jpg"
+    },
+    {
+      "path": "History/HRO/5May2012_maps/StrettonSugwas1757/tif/DSC02456.tif",
+      "web": "web/History__HRO__5May2012_maps__StrettonSugwas1757__tif__DSC02456.jpg",
+      "thumb": "thumbs/History__HRO__5May2012_maps__StrettonSugwas1757__tif__DSC02456.jpg"
+    },
+    {
+      "path": "History/HRO/IMG_20150715_131608.jpg",
+      "web": "web/History__HRO__IMG_20150715_131608.jpg",
+      "thumb": "thumbs/History__HRO__IMG_20150715_131608.jpg"
+    },
+    {
+      "path": "History/HRO/F76/IMG_5409.jpg",
+      "web": "web/History__HRO__F76__IMG_5409.jpg",
+      "thumb": "thumbs/History__HRO__F76__IMG_5409.jpg"
+    },
+    {
+      "path": "History/HRO/F76/F76_III_47_Darvoldlease_treeroots1637/SAM_6825.jpg",
+      "web": "web/History__HRO__F76__F76_III_47_Darvoldlease_treeroots1637__SAM_6825.jpg",
+      "thumb": "thumbs/History__HRO__F76__F76_III_47_Darvoldlease_treeroots1637__SAM_6825.jpg"
+    },
+    {
+      "path": "History/HRO/AW/AW22_1_Harewood/IMG_2234.jpg",
+      "web": "web/History__HRO__AW__AW22_1_Harewood__IMG_2234.jpg",
+      "thumb": "thumbs/History__HRO__AW__AW22_1_Harewood__IMG_2234.jpg"
+    },
+    {
+      "path": "History/HRO/AA21_box870_BigBundle_mapsfieldstrees_Dilwyn/SAM_6820.tif",
+      "web": "web/History__HRO__AA21_box870_BigBundle_mapsfieldstrees_Dilwyn__SAM_6820.jpg",
+      "thumb": "thumbs/History__HRO__AA21_box870_BigBundle_mapsfieldstrees_Dilwyn__SAM_6820.jpg"
+    },
+    {
+      "path": "History/HRO/LedburyWills/LedburyWills06Nov08/IMG_2261.jpg",
+      "web": "web/History__HRO__LedburyWills__LedburyWills06Nov08__IMG_2261.jpg",
+      "thumb": "thumbs/History__HRO__LedburyWills__LedburyWills06Nov08__IMG_2261.jpg"
+    },
+    {
+      "path": "History/HRO/PrintedPatentRollsEtc/IMG_6397.jpg",
+      "web": "web/History__HRO__PrintedPatentRollsEtc__IMG_6397.jpg",
+      "thumb": "thumbs/History__HRO__PrintedPatentRollsEtc__IMG_6397.jpg"
+    },
+    {
+      "path": "History/HRO/T87_1_SurveyofBringewood&Mocktree_1662/DSC00366_stitch_files/10/2_1.jpg",
+      "web": "web/History__HRO__T87_1_SurveyofBringewood&Mocktree_1662__DSC00366_stitch_files__10__2_1.jpg",
+      "thumb": "thumbs/History__HRO__T87_1_SurveyofBringewood&Mocktree_1662__DSC00366_stitch_files__10__2_1.jpg"
+    },
+    {
+      "path": "History/HRO/HRO_22Mar05/IMG_7262D&Cstonehaulinglite.jpg",
+      "web": "web/History__HRO__HRO_22Mar05__IMG_7262D&Cstonehaulinglite.jpg",
+      "thumb": "thumbs/History__HRO__HRO_22Mar05__IMG_7262D&Cstonehaulinglite.jpg"
+    },
+    {
+      "path": "History/HRO/5May2012_maps/StrettonSugwas1757/tif/zoom/SS1757_img/TileGroup10/6-6-31.jpg",
+      "web": "web/History__HRO__5May2012_maps__StrettonSugwas1757__tif__zoom__SS1757_img__TileGroup10__6-6-31.jpg",
+      "thumb": "thumbs/History__HRO__5May2012_maps__StrettonSugwas1757__tif__zoom__SS1757_img__TileGroup10__6-6-31.jpg"
+    },
+    {
+      "path": "History/HRO/LC/LC5473_Wigmore/SAM_7404.jpg",
+      "web": "web/History__HRO__LC__LC5473_Wigmore__SAM_7404.jpg",
+      "thumb": "thumbs/History__HRO__LC__LC5473_Wigmore__SAM_7404.jpg"
+    },
+    {
+      "path": "History/HRO/F76/F76_III_172_Croft/IMG_5425.jpg",
+      "web": "web/History__HRO__F76__F76_III_172_Croft__IMG_5425.jpg",
+      "thumb": "thumbs/History__HRO__F76__F76_III_172_Croft__IMG_5425.jpg"
+    },
+    {
+      "path": "History/HRO/5May2012_maps/StrettonSugwas1757/DSC02446.tif",
+      "web": "web/History__HRO__5May2012_maps__StrettonSugwas1757__DSC02446.jpg",
+      "thumb": "thumbs/History__HRO__5May2012_maps__StrettonSugwas1757__DSC02446.jpg"
+    },
+    {
+      "path": "History/HRO/5May2012_maps/LedburyTurnpikeSample.jpg",
+      "web": "web/History__HRO__5May2012_maps__LedburyTurnpikeSample.jpg",
+      "thumb": "thumbs/History__HRO__5May2012_maps__LedburyTurnpikeSample.jpg"
+    },
+    {
+      "path": "History/HRO/T87_1_SurveyofBringewood&Mocktree_1662/DSC00366_stitch_files/5/0_0.jpg",
+      "web": "web/History__HRO__T87_1_SurveyofBringewood&Mocktree_1662__DSC00366_stitch_files__5__0_0.jpg",
+      "thumb": "thumbs/History__HRO__T87_1_SurveyofBringewood&Mocktree_1662__DSC00366_stitch_files__5__0_0.jpg"
+    },
+    {
+      "path": "History/HRO/AA21_box870_BigBundle_mapsfieldstrees_Dilwyn/jpg_imageprocessed/SAM_6818.jpg",
+      "web": "web/History__HRO__AA21_box870_BigBundle_mapsfieldstrees_Dilwyn__jpg_imageprocessed__SAM_6818.jpg",
+      "thumb": "thumbs/History__HRO__AA21_box870_BigBundle_mapsfieldstrees_Dilwyn__jpg_imageprocessed__SAM_6818.jpg"
+    },
+    {
+      "path": "History/HRO/AA59_A_1_RedBook/AA59_A_1_f220&221.jpg",
+      "web": "web/History__HRO__AA59_A_1_RedBook__AA59_A_1_f220&221.jpg",
+      "thumb": "thumbs/History__HRO__AA59_A_1_RedBook__AA59_A_1_f220&221.jpg"
+    },
+    {
+      "path": "History/HRO/G39_mapbox/Kingslandmap1709/SAM_9842.tif",
+      "web": "web/History__HRO__G39_mapbox__Kingslandmap1709__SAM_9842.jpg",
+      "thumb": "thumbs/History__HRO__G39_mapbox__Kingslandmap1709__SAM_9842.jpg"
+    },
+    {
+      "path": "History/HRO/LC/LC5480_Darvold/SAM_7370rs.jpg",
+      "web": "web/History__HRO__LC__LC5480_Darvold__SAM_7370rs.jpg",
+      "thumb": "thumbs/History__HRO__LC__LC5480_Darvold__SAM_7370rs.jpg"
+    },
+    {
+      "path": "History/HRO/T87_1_SurveyofBringewood&Mocktree_1662/DSC00366_stitch_files/14/20_24.jpg",
+      "web": "web/History__HRO__T87_1_SurveyofBringewood&Mocktree_1662__DSC00366_stitch_files__14__20_24.jpg",
+      "thumb": "thumbs/History__HRO__T87_1_SurveyofBringewood&Mocktree_1662__DSC00366_stitch_files__14__20_24.jpg"
+    },
+    {
+      "path": "History/HRO/LC/LC3799/SAM_7403.jpg",
+      "web": "web/History__HRO__LC__LC3799__SAM_7403.jpg",
+      "thumb": "thumbs/History__HRO__LC__LC3799__SAM_7403.jpg"
+    },
+    {
+      "path": "History/HRO/A74_1_BramptonAbbottsWI1951/IMG_2885lite.jpg",
+      "web": "web/History__HRO__A74_1_BramptonAbbottsWI1951__IMG_2885lite.jpg",
+      "thumb": "thumbs/History__HRO__A74_1_BramptonAbbottsWI1951__IMG_2885lite.jpg"
+    },
+    {
+      "path": "History/HRO/PricesMap1817_F76_B_242/jpg/CRW_2792.jpg",
+      "web": "web/History__HRO__PricesMap1817_F76_B_242__jpg__CRW_2792.jpg",
+      "thumb": "thumbs/History__HRO__PricesMap1817_F76_B_242__jpg__CRW_2792.jpg"
+    },
+    {
+      "path": "History/HRO/LC/LC5652_Wigmore/SAM_7441.jpg",
+      "web": "web/History__HRO__LC__LC5652_Wigmore__SAM_7441.jpg",
+      "thumb": "thumbs/History__HRO__LC__LC5652_Wigmore__SAM_7441.jpg"
+    },
+    {
+      "path": "History/HRO/LocalCollectionCatalogues1&2/SAM_6911.jpg",
+      "web": "web/History__HRO__LocalCollectionCatalogues1&2__SAM_6911.jpg",
+      "thumb": "thumbs/History__HRO__LocalCollectionCatalogues1&2__SAM_6911.jpg"
+    },
+    {
+      "path": "History/HRO/T87_1_SurveyofBringewood&Mocktree_1662/DSC00366_stitch_files/6/0_0.jpg",
+      "web": "web/History__HRO__T87_1_SurveyofBringewood&Mocktree_1662__DSC00366_stitch_files__6__0_0.jpg",
+      "thumb": "thumbs/History__HRO__T87_1_SurveyofBringewood&Mocktree_1662__DSC00366_stitch_files__6__0_0.jpg"
+    },
+    {
+      "path": "History/HRO/F76/F76_II&III_Catalogue/IMG_5397.jpg",
+      "web": "web/History__HRO__F76__F76_II&III_Catalogue__IMG_5397.jpg",
+      "thumb": "thumbs/History__HRO__F76__F76_II&III_Catalogue__IMG_5397.jpg"
+    },
+    {
+      "path": "History/Lyonshall/research5Nov2010/Research 5th nov 2009 011.jpg",
+      "web": "web/History__Lyonshall__research5Nov2010__Research 5th nov 2009 011.jpg",
+      "thumb": "thumbs/History__Lyonshall__research5Nov2010__Research 5th nov 2009 011.jpg"
+    },
+    {
+      "path": "History/Lyonshall/2009-08-04, LYONSHALL 1 Court Rolls/thursday 19th november quarter session court minute boo (44).jpg",
+      "web": "web/History__Lyonshall__2009-08-04, LYONSHALL 1 Court Rolls__thursday 19th november quarter session court minute boo (44).jpg",
+      "thumb": "thumbs/History__Lyonshall__2009-08-04, LYONSHALL 1 Court Rolls__thursday 19th november quarter session court minute boo (44).jpg"
+    },
+    {
+      "path": "History/HRO/T87_1_SurveyofBringewood&Mocktree_1662/DSC00366_stitch_files/4/0_0.jpg",
+      "web": "web/History__HRO__T87_1_SurveyofBringewood&Mocktree_1662__DSC00366_stitch_files__4__0_0.jpg",
+      "thumb": "thumbs/History__HRO__T87_1_SurveyofBringewood&Mocktree_1662__DSC00366_stitch_files__4__0_0.jpg"
+    },
+    {
+      "path": "History/HRO/TWNFC/Derefoldrelated/SAM_7264B&W.jpg",
+      "web": "web/History__HRO__TWNFC__Derefoldrelated__SAM_7264B&W.jpg",
+      "thumb": "thumbs/History__HRO__TWNFC__Derefoldrelated__SAM_7264B&W.jpg"
+    },
+    {
+      "path": "History/HRO/14_07_2005/IMG_1974.jpg",
+      "web": "web/History__HRO__14_07_2005__IMG_1974.jpg",
+      "thumb": "thumbs/History__HRO__14_07_2005__IMG_1974.jpg"
+    },
+    {
+      "path": "History/HRO/Q_R1/Q_R1_48_Wigmore/SAM_6738.jpg",
+      "web": "web/History__HRO__Q_R1__Q_R1_48_Wigmore__SAM_6738.jpg",
+      "thumb": "thumbs/History__HRO__Q_R1__Q_R1_48_Wigmore__SAM_6738.jpg"
+    },
+    {
+      "path": "History/HRO/5May2012_maps/StrettonSugwas1757/tif/zoom/SS1757_img/TileGroup8/6-61-22.jpg",
+      "web": "web/History__HRO__5May2012_maps__StrettonSugwas1757__tif__zoom__SS1757_img__TileGroup8__6-61-22.jpg",
+      "thumb": "thumbs/History__HRO__5May2012_maps__StrettonSugwas1757__tif__zoom__SS1757_img__TileGroup8__6-61-22.jpg"
+    },
+    {
+      "path": "History/HRO/T74/T74_BL35_SurveyDowntonEstate1780/raw/DSC00227.tif",
+      "web": "web/History__HRO__T74__T74_BL35_SurveyDowntonEstate1780__raw__DSC00227.jpg",
+      "thumb": "thumbs/History__HRO__T74__T74_BL35_SurveyDowntonEstate1780__raw__DSC00227.jpg"
+    },
+    {
+      "path": "History/HRO/T87_1_SurveyofBringewood&Mocktree_1662/DSC00366_stitch_files/3/0_0.jpg",
+      "web": "web/History__HRO__T87_1_SurveyofBringewood&Mocktree_1662__DSC00366_stitch_files__3__0_0.jpg",
+      "thumb": "thumbs/History__HRO__T87_1_SurveyofBringewood&Mocktree_1662__DSC00366_stitch_files__3__0_0.jpg"
+    },
+    {
+      "path": "History/HRO/BN80_43_CroftEstateTreeSale/IMG_5435.jpg",
+      "web": "web/History__HRO__BN80_43_CroftEstateTreeSale__IMG_5435.jpg",
+      "thumb": "thumbs/History__HRO__BN80_43_CroftEstateTreeSale__IMG_5435.jpg"
+    },
+    {
+      "path": "History/HRO/T74/T74_635to644/DSC09670.jpg",
+      "web": "web/History__HRO__T74__T74_635to644__DSC09670.jpg",
+      "thumb": "thumbs/History__HRO__T74__T74_635to644__DSC09670.jpg"
+    },
+    {
+      "path": "History/HRO/5May2012_maps/StrettonSugwas1757/tif/zoom/SS1757_img/TileGroup7/6-21-16.jpg",
+      "web": "web/History__HRO__5May2012_maps__StrettonSugwas1757__tif__zoom__SS1757_img__TileGroup7__6-21-16.jpg",
+      "thumb": "thumbs/History__HRO__5May2012_maps__StrettonSugwas1757__tif__zoom__SS1757_img__TileGroup7__6-21-16.jpg"
+    },
+    {
+      "path": "History/HRO/T87_1_SurveyofBringewood&Mocktree_1662/DSC00366_stitch_files/12/8_6.jpg",
+      "web": "web/History__HRO__T87_1_SurveyofBringewood&Mocktree_1662__DSC00366_stitch_files__12__8_6.jpg",
+      "thumb": "thumbs/History__HRO__T87_1_SurveyofBringewood&Mocktree_1662__DSC00366_stitch_files__12__8_6.jpg"
+    },
+    {
+      "path": "History/HRO/Q_R1/Q_R1_1_Aymestrey&Kingsland/SAM_6731.jpg",
+      "web": "web/History__HRO__Q_R1__Q_R1_1_Aymestrey&Kingsland__SAM_6731.jpg",
+      "thumb": "thumbs/History__HRO__Q_R1__Q_R1_1_Aymestrey&Kingsland__SAM_6731.jpg"
+    },
+    {
+      "path": "History/HRO/5May2012_maps/StrettonSugwas1757/tif/zoom/SS1757_img/TileGroup12/6-58-36.jpg",
+      "web": "web/History__HRO__5May2012_maps__StrettonSugwas1757__tif__zoom__SS1757_img__TileGroup12__6-58-36.jpg",
+      "thumb": "thumbs/History__HRO__5May2012_maps__StrettonSugwas1757__tif__zoom__SS1757_img__TileGroup12__6-58-36.jpg"
+    },
+    {
+      "path": "History/HRO/T87_1_SurveyofBringewood&Mocktree_1662/DSC00366_stitch_files/13/16_2.jpg",
+      "web": "web/History__HRO__T87_1_SurveyofBringewood&Mocktree_1662__DSC00366_stitch_files__13__16_2.jpg",
+      "thumb": "thumbs/History__HRO__T87_1_SurveyofBringewood&Mocktree_1662__DSC00366_stitch_files__13__16_2.jpg"
+    },
+    {
+      "path": "History/HRO/BryantsMapLate1830s/Tiff/CRW_2784sarnsfield.tif",
+      "web": "web/History__HRO__BryantsMapLate1830s__Tiff__CRW_2784sarnsfield.jpg",
+      "thumb": "thumbs/History__HRO__BryantsMapLate1830s__Tiff__CRW_2784sarnsfield.jpg"
+    },
+    {
+      "path": "History/HRO/5May2012_maps/StrettonSugwas1757/tif/zoom/SS1757_img/TileGroup11/6-21-34.jpg",
+      "web": "web/History__HRO__5May2012_maps__StrettonSugwas1757__tif__zoom__SS1757_img__TileGroup11__6-21-34.jpg",
+      "thumb": "thumbs/History__HRO__5May2012_maps__StrettonSugwas1757__tif__zoom__SS1757_img__TileGroup11__6-21-34.jpg"
+    },
+    {
+      "path": "History/HRO/BishopstoneFoxleyMap/tiff/IMG_2752.jpg",
+      "web": "web/History__HRO__BishopstoneFoxleyMap__tiff__IMG_2752.jpg",
+      "thumb": "thumbs/History__HRO__BishopstoneFoxleyMap__tiff__IMG_2752.jpg"
+    },
+    {
+      "path": "History/HRO/BishopstoneFoxleyMap/jpg/CRW_8327.jpg",
+      "web": "web/History__HRO__BishopstoneFoxleyMap__jpg__CRW_8327.jpg",
+      "thumb": "thumbs/History__HRO__BishopstoneFoxleyMap__jpg__CRW_8327.jpg"
+    },
+    {
+      "path": "History/HRO/T87_1_SurveyofBringewood&Mocktree_1662/DSC00366_stitch_files/1/0_0.jpg",
+      "web": "web/History__HRO__T87_1_SurveyofBringewood&Mocktree_1662__DSC00366_stitch_files__1__0_0.jpg",
+      "thumb": "thumbs/History__HRO__T87_1_SurveyofBringewood&Mocktree_1662__DSC00366_stitch_files__1__0_0.jpg"
+    },
+    {
+      "path": "History/HRO/AB47_1_7_Fownhopecourtrolls/IMG_5810.jpg",
+      "web": "web/History__HRO__AB47_1_7_Fownhopecourtrolls__IMG_5810.jpg",
+      "thumb": "thumbs/History__HRO__AB47_1_7_Fownhopecourtrolls__IMG_5810.jpg"
+    },
+    {
+      "path": "History/HRO/5May2012_maps/StrettonSugwas1757/jpg/zDSC02446cropclose.jpg",
+      "web": "web/History__HRO__5May2012_maps__StrettonSugwas1757__jpg__zDSC02446cropclose.jpg",
+      "thumb": "thumbs/History__HRO__5May2012_maps__StrettonSugwas1757__jpg__zDSC02446cropclose.jpg"
+    },
+    {
+      "path": "History/HRO/F76/F76_III_48_Darvoldlease_treeroots1638/SAM_6824.jpg",
+      "web": "web/History__HRO__F76__F76_III_48_Darvoldlease_treeroots1638__SAM_6824.jpg",
+      "thumb": "thumbs/History__HRO__F76__F76_III_48_Darvoldlease_treeroots1638__SAM_6824.jpg"
+    },
+    {
+      "path": "History/HRO/GoodburyLimeKilnPaper1992part/IMG_6228.jpg",
+      "web": "web/History__HRO__GoodburyLimeKilnPaper1992part__IMG_6228.jpg",
+      "thumb": "thumbs/History__HRO__GoodburyLimeKilnPaper1992part__IMG_6228.jpg"
+    },
+    {
+      "path": "History/HRO/5May2012_maps/StrettonSugwas1757/tif/zoom/SS1757_img/TileGroup3/6-30-0.jpg",
+      "web": "web/History__HRO__5May2012_maps__StrettonSugwas1757__tif__zoom__SS1757_img__TileGroup3__6-30-0.jpg",
+      "thumb": "thumbs/History__HRO__5May2012_maps__StrettonSugwas1757__tif__zoom__SS1757_img__TileGroup3__6-30-0.jpg"
+    },
+    {
+      "path": "History/HRO/LedburyWills/LedburyWills28Feb06/IMG_9622.jpg",
+      "web": "web/History__HRO__LedburyWills__LedburyWills28Feb06__IMG_9622.jpg",
+      "thumb": "thumbs/History__HRO__LedburyWills__LedburyWills28Feb06__IMG_9622.jpg"
+    },
+    {
+      "path": "History/HRO/5May2012_maps/StrettonSugwas1757/tif/zoom/SS1757_img/TileGroup1/5-18-6.jpg",
+      "web": "web/History__HRO__5May2012_maps__StrettonSugwas1757__tif__zoom__SS1757_img__TileGroup1__5-18-6.jpg",
+      "thumb": "thumbs/History__HRO__5May2012_maps__StrettonSugwas1757__tif__zoom__SS1757_img__TileGroup1__5-18-6.jpg"
+    },
+    {
+      "path": "History/Lyonshall/2010-01-28, Court Rolls 1695-6 photod 29.1.10/Court Rolls 1695-6 photod 29.1.10 033.jpg",
+      "web": "web/History__Lyonshall__2010-01-28, Court Rolls 1695-6 photod 29.1.10__Court Rolls 1695-6 photod 29.1.10 033.jpg",
+      "thumb": "thumbs/History__Lyonshall__2010-01-28, Court Rolls 1695-6 photod 29.1.10__Court Rolls 1695-6 photod 29.1.10 033.jpg"
+    },
+    {
+      "path": "History/HRO/AW/AW28_12_2_Haywood1610/SAM_6780.jpg",
+      "web": "web/History__HRO__AW__AW28_12_2_Haywood1610__SAM_6780.jpg",
+      "thumb": "thumbs/History__HRO__AW__AW28_12_2_Haywood1610__SAM_6780.jpg"
+    },
+    {
+      "path": "History/HRO/BishopstoneIndentureLimeKiln/CRW_8286LimeKiln.jpg",
+      "web": "web/History__HRO__BishopstoneIndentureLimeKiln__CRW_8286LimeKiln.jpg",
+      "thumb": "thumbs/History__HRO__BishopstoneIndentureLimeKiln__CRW_8286LimeKiln.jpg"
+    },
+    {
+      "path": "History/HRO/LC/LC5426_Croftmaps_inc_Edmore/SAM_7396rec2.tif",
+      "web": "web/History__HRO__LC__LC5426_Croftmaps_inc_Edmore__SAM_7396rec2.jpg",
+      "thumb": "thumbs/History__HRO__LC__LC5426_Croftmaps_inc_Edmore__SAM_7396rec2.jpg"
+    },
+    {
+      "path": "History/HRO/A63_III_23/Bolston.jpg",
+      "web": "web/History__HRO__A63_III_23__Bolston.jpg",
+      "thumb": "thumbs/History__HRO__A63_III_23__Bolston.jpg"
+    },
+    {
+      "path": "History/HRO/5May2012_maps/StrettonSugwas1757/tif/zoom/DSC01213_img/TileGroup1/5-12-5.jpg",
+      "web": "web/History__HRO__5May2012_maps__StrettonSugwas1757__tif__zoom__DSC01213_img__TileGroup1__5-12-5.jpg",
+      "thumb": "thumbs/History__HRO__5May2012_maps__StrettonSugwas1757__tif__zoom__DSC01213_img__TileGroup1__5-12-5.jpg"
+    },
+    {
+      "path": "History/HRO/LC/LC5647/SAM_7446.jpg",
+      "web": "web/History__HRO__LC__LC5647__SAM_7446.jpg",
+      "thumb": "thumbs/History__HRO__LC__LC5647__SAM_7446.jpg"
+    },
+    {
+      "path": "History/HRO/T87_1_SurveyofBringewood&Mocktree_1662/DSC00366_stitch_files/11/4_4.jpg",
+      "web": "web/History__HRO__T87_1_SurveyofBringewood&Mocktree_1662__DSC00366_stitch_files__11__4_4.jpg",
+      "thumb": "thumbs/History__HRO__T87_1_SurveyofBringewood&Mocktree_1662__DSC00366_stitch_files__11__4_4.jpg"
+    },
+    {
+      "path": "History/HRO/T74/T74_661to663/DSC09697.jpg",
+      "web": "web/History__HRO__T74__T74_661to663__DSC09697.jpg",
+      "thumb": "thumbs/History__HRO__T74__T74_661to663__DSC09697.jpg"
+    },
+    {
+      "path": "History/HRO/LC/LC5706_LinleyHarleyagreement/SAM_6845.jpg",
+      "web": "web/History__HRO__LC__LC5706_LinleyHarleyagreement__SAM_6845.jpg",
+      "thumb": "thumbs/History__HRO__LC__LC5706_LinleyHarleyagreement__SAM_6845.jpg"
+    },
+    {
+      "path": "History/HRO/T74/T74_BL35_SurveyDowntonEstate1780/TIF/DSC00170.UpperHallFarmSchedule.tif",
+      "web": "web/History__HRO__T74__T74_BL35_SurveyDowntonEstate1780__TIF__DSC00170.UpperHallFarmSchedule.jpg",
+      "thumb": "thumbs/History__HRO__T74__T74_BL35_SurveyDowntonEstate1780__TIF__DSC00170.UpperHallFarmSchedule.jpg"
+    },
+    {
+      "path": "History/HRO/LedburyWills/LedburyWills10Feb06/IMG_9155.jpg",
+      "web": "web/History__HRO__LedburyWills__LedburyWills10Feb06__IMG_9155.jpg",
+      "thumb": "thumbs/History__HRO__LedburyWills__LedburyWills10Feb06__IMG_9155.jpg"
+    },
+    {
+      "path": "History/HRO/LC/LC5484 WigmoreMoor/SAM_7304rs.jpg",
+      "web": "web/History__HRO__LC__LC5484 WigmoreMoor__SAM_7304rs.jpg",
+      "thumb": "thumbs/History__HRO__LC__LC5484 WigmoreMoor__SAM_7304rs.jpg"
+    },
+    {
+      "path": "History/HRO/T87_1_SurveyofBringewood&Mocktree_1662/DSC00366_stitch_files/8/0_0.jpg",
+      "web": "web/History__HRO__T87_1_SurveyofBringewood&Mocktree_1662__DSC00366_stitch_files__8__0_0.jpg",
+      "thumb": "thumbs/History__HRO__T87_1_SurveyofBringewood&Mocktree_1662__DSC00366_stitch_files__8__0_0.jpg"
+    },
+    {
+      "path": "History/HRO/G39_mapbox/WigmoreBurringtonLeithall_landsin1709/SAM_9883.tif",
+      "web": "web/History__HRO__G39_mapbox__WigmoreBurringtonLeithall_landsin1709__SAM_9883.jpg",
+      "thumb": "thumbs/History__HRO__G39_mapbox__WigmoreBurringtonLeithall_landsin1709__SAM_9883.jpg"
+    },
+    {
+      "path": "History/HRO/B9_6[1780MapofHolderEstateinCMC]/IMG_2340.jpg",
+      "web": "web/History__HRO__B9_6[1780MapofHolderEstateinCMC]__IMG_2340.jpg",
+      "thumb": "thumbs/History__HRO__B9_6[1780MapofHolderEstateinCMC]__IMG_2340.jpg"
+    },
+    {
+      "path": "History/HRO/T74/T74_BL35_SurveyDowntonEstate1780/DSC00217rs.jpg",
+      "web": "web/History__HRO__T74__T74_BL35_SurveyDowntonEstate1780__DSC00217rs.jpg",
+      "thumb": "thumbs/History__HRO__T74__T74_BL35_SurveyDowntonEstate1780__DSC00217rs.jpg"
+    },
+    {
+      "path": "History/HRO/912_4244_FawleyMap1721/IMG_2988MuchFawley1721.jpg",
+      "web": "web/History__HRO__912_4244_FawleyMap1721__IMG_2988MuchFawley1721.jpg",
+      "thumb": "thumbs/History__HRO__912_4244_FawleyMap1721__IMG_2988MuchFawley1721.jpg"
+    },
+    {
+      "path": "History/HRO/G75_1_Foleymaps_Almeley_etc/SAM_0043.tif",
+      "web": "web/History__HRO__G75_1_Foleymaps_Almeley_etc__SAM_0043.jpg",
+      "thumb": "thumbs/History__HRO__G75_1_Foleymaps_Almeley_etc__SAM_0043.jpg"
+    },
+    {
+      "path": "History/HRO/F76/F76_III_49_SaleoftreesGatleyestate1788/SAM_6828.jpg",
+      "web": "web/History__HRO__F76__F76_III_49_SaleoftreesGatleyestate1788__SAM_6828.jpg",
+      "thumb": "thumbs/History__HRO__F76__F76_III_49_SaleoftreesGatleyestate1788__SAM_6828.jpg"
+    },
+    {
+      "path": "History/HRO/6Nov08_maps/IMG_2228.jpg",
+      "web": "web/History__HRO__6Nov08_maps__IMG_2228.jpg",
+      "thumb": "thumbs/History__HRO__6Nov08_maps__IMG_2228.jpg"
+    },
+    {
+      "path": "History/HRO/M5_28_4_AshburtonEstate1890sale/IMG_8413.jpg",
+      "web": "web/History__HRO__M5_28_4_AshburtonEstate1890sale__IMG_8413.jpg",
+      "thumb": "thumbs/History__HRO__M5_28_4_AshburtonEstate1890sale__IMG_8413.jpg"
+    },
+    {
+      "path": "History/HRO/BH53_1_GuthlacRental/IMG_3786.jpg",
+      "web": "web/History__HRO__BH53_1_GuthlacRental__IMG_3786.jpg",
+      "thumb": "thumbs/History__HRO__BH53_1_GuthlacRental__IMG_3786.jpg"
+    },
+    {
+      "path": "History/HRO/5May2012_maps/StrettonSugwas1757/tif/zoom/SS1757_img/TileGroup5/6-8-10.jpg",
+      "web": "web/History__HRO__5May2012_maps__StrettonSugwas1757__tif__zoom__SS1757_img__TileGroup5__6-8-10.jpg",
+      "thumb": "thumbs/History__HRO__5May2012_maps__StrettonSugwas1757__tif__zoom__SS1757_img__TileGroup5__6-8-10.jpg"
+    },
+    {
+      "path": "History/HRO/LC/LC5779_Wigmore/SAM_6848.jpg",
+      "web": "web/History__HRO__LC__LC5779_Wigmore__SAM_6848.jpg",
+      "thumb": "thumbs/History__HRO__LC__LC5779_Wigmore__SAM_6848.jpg"
+    },
+    {
+      "path": "History/HRO/T74/T74_index_458-854/DSC06438.jpg",
+      "web": "web/History__HRO__T74__T74_index_458-854__DSC06438.jpg",
+      "thumb": "thumbs/History__HRO__T74__T74_index_458-854__DSC06438.jpg"
+    },
+    {
+      "path": "History/HRO/BG99_1_3_Cowberrytimber_Walford/SAM_6754.jpg",
+      "web": "web/History__HRO__BG99_1_3_Cowberrytimber_Walford__SAM_6754.jpg",
+      "thumb": "thumbs/History__HRO__BG99_1_3_Cowberrytimber_Walford__SAM_6754.jpg"
+    },
+    {
+      "path": "History/HRO/T87_1_SurveyofBringewood&Mocktree_1662/DSC00366_stitch_files/2/0_0.jpg",
+      "web": "web/History__HRO__T87_1_SurveyofBringewood&Mocktree_1662__DSC00366_stitch_files__2__0_0.jpg",
+      "thumb": "thumbs/History__HRO__T87_1_SurveyofBringewood&Mocktree_1662__DSC00366_stitch_files__2__0_0.jpg"
+    },
+    {
+      "path": "History/HRO/AW/AW28_12_3_GrantofHaywood1617/SAM_6795.jpg",
+      "web": "web/History__HRO__AW__AW28_12_3_GrantofHaywood1617__SAM_6795.jpg",
+      "thumb": "thumbs/History__HRO__AW__AW28_12_3_GrantofHaywood1617__SAM_6795.jpg"
+    },
+    {
+      "path": "History/HRO/F76/F76_III_68_tithesgrazing/SAM_6836.jpg",
+      "web": "web/History__HRO__F76__F76_III_68_tithesgrazing__SAM_6836.jpg",
+      "thumb": "thumbs/History__HRO__F76__F76_III_68_tithesgrazing__SAM_6836.jpg"
+    },
+    {
+      "path": "History/HRO/LC/LC5599_Darvold/SAM_6696.jpg",
+      "web": "web/History__HRO__LC__LC5599_Darvold__SAM_6696.jpg",
+      "thumb": "thumbs/History__HRO__LC__LC5599_Darvold__SAM_6696.jpg"
+    },
+    {
+      "path": "History/HRO/AE38_Haugh/IMG_6298.jpg",
+      "web": "web/History__HRO__AE38_Haugh__IMG_6298.jpg",
+      "thumb": "thumbs/History__HRO__AE38_Haugh__IMG_6298.jpg"
+    },
+    {
+      "path": "History/HRO/LC/LC5506_CroftMap/SAM_7313.tif",
+      "web": "web/History__HRO__LC__LC5506_CroftMap__SAM_7313.jpg",
+      "thumb": "thumbs/History__HRO__LC__LC5506_CroftMap__SAM_7313.jpg"
+    },
+    {
+      "path": "History/HRO/LC/LC5446/SAM_7391rs.jpg",
+      "web": "web/History__HRO__LC__LC5446__SAM_7391rs.jpg",
+      "thumb": "thumbs/History__HRO__LC__LC5446__SAM_7391rs.jpg"
+    },
+    {
+      "path": "History/Lyonshall/2009-10-28, local photos 2008 second disk/thursday 19th november quarter session court minute book (4).jpg",
+      "web": "web/History__Lyonshall__2009-10-28, local photos 2008 second disk__thursday 19th november quarter session court minute book (4).jpg",
+      "thumb": "thumbs/History__Lyonshall__2009-10-28, local photos 2008 second disk__thursday 19th november quarter session court minute book (4).jpg"
+    },
+    {
+      "path": "History/HRO/LC/LC5423_Wigmore&Deerfold/SAM_6676.jpg",
+      "web": "web/History__HRO__LC__LC5423_Wigmore&Deerfold__SAM_6676.jpg",
+      "thumb": "thumbs/History__HRO__LC__LC5423_Wigmore&Deerfold__SAM_6676.jpg"
+    },
+    {
+      "path": "History/HRO/F76/F76_III_64&65&66_GatleyPark1706/SAM_6832.jpg",
+      "web": "web/History__HRO__F76__F76_III_64&65&66_GatleyPark1706__SAM_6832.jpg",
+      "thumb": "thumbs/History__HRO__F76__F76_III_64&65&66_GatleyPark1706__SAM_6832.jpg"
+    },
+    {
+      "path": "History/HRO/G39_mapbox/BatemanMap1774_ShobdonLingenAymestey_etc/SAM_9858.tif",
+      "web": "web/History__HRO__G39_mapbox__BatemanMap1774_ShobdonLingenAymestey_etc__SAM_9858.jpg",
+      "thumb": "thumbs/History__HRO__G39_mapbox__BatemanMap1774_ShobdonLingenAymestey_etc__SAM_9858.jpg"
+    },
+    {
+      "path": "History/HRO/5May2012_maps/StrettonSugwas1757/tif/zoom/SS1757_img/TileGroup2/5-30-14.jpg",
+      "web": "web/History__HRO__5May2012_maps__StrettonSugwas1757__tif__zoom__SS1757_img__TileGroup2__5-30-14.jpg",
+      "thumb": "thumbs/History__HRO__5May2012_maps__StrettonSugwas1757__tif__zoom__SS1757_img__TileGroup2__5-30-14.jpg"
+    },
+    {
+      "path": "History/HRO/R70_1_PreambulationBolstoneBall&Foy/IMG_4133.jpg",
+      "web": "web/History__HRO__R70_1_PreambulationBolstoneBall&Foy__IMG_4133.jpg",
+      "thumb": "thumbs/History__HRO__R70_1_PreambulationBolstoneBall&Foy__IMG_4133.jpg"
+    },
+    {
+      "path": "History/HRO/T87_1_SurveyofBringewood&Mocktree_1662/DSC00366_stitch_files/0/0_0.jpg",
+      "web": "web/History__HRO__T87_1_SurveyofBringewood&Mocktree_1662__DSC00366_stitch_files__0__0_0.jpg",
+      "thumb": "thumbs/History__HRO__T87_1_SurveyofBringewood&Mocktree_1662__DSC00366_stitch_files__0__0_0.jpg"
+    },
+    {
+      "path": "History/HRO/T87_1_SurveyofBringewood&Mocktree_1662/DSC00366_stitch_files/7/0_0.jpg",
+      "web": "web/History__HRO__T87_1_SurveyofBringewood&Mocktree_1662__DSC00366_stitch_files__7__0_0.jpg",
+      "thumb": "thumbs/History__HRO__T87_1_SurveyofBringewood&Mocktree_1662__DSC00366_stitch_files__7__0_0.jpg"
+    },
+    {
+      "path": "History/HRO/5May2012_maps/LedburyTurnpike1832/tif/led/Preston.jpg",
+      "web": "web/History__HRO__5May2012_maps__LedburyTurnpike1832__tif__led__Preston.jpg",
+      "thumb": "thumbs/History__HRO__5May2012_maps__LedburyTurnpike1832__tif__led__Preston.jpg"
+    }
+  ]
+}

@@ -1,0 +1,499 @@
+{
+  "collection": "hfd-hedgerow-surveys",
+  "total_sampled": 100,
+  "web_max_dim": 1200,
+  "thumb_max_dim": 300,
+  "quality": 80,
+  "photos": [
+    {
+      "path": "Habitat/HEDGES/so3449Hanson.jpg",
+      "web": "web/Habitat__HEDGES__so3449Hanson.jpg",
+      "thumb": "thumbs/Habitat__HEDGES__so3449Hanson.jpg"
+    },
+    {
+      "path": "Habitat/HEDGES/Kinnersley Hedge/Ailey_1886W.tif",
+      "web": "web/Habitat__HEDGES__Kinnersley Hedge__Ailey_1886W.jpg",
+      "thumb": "thumbs/Habitat__HEDGES__Kinnersley Hedge__Ailey_1886W.jpg"
+    },
+    {
+      "path": "Habitat/HEDGES/Kinnersley Hedge/2005_05_07/IMG_8723Meadow_a_2005pan.jpg",
+      "web": "web/Habitat__HEDGES__Kinnersley Hedge__2005_05_07__IMG_8723Meadow_a_2005pan.jpg",
+      "thumb": "thumbs/Habitat__HEDGES__Kinnersley Hedge__2005_05_07__IMG_8723Meadow_a_2005pan.jpg"
+    },
+    {
+      "path": "Habitat/HEDGES/Kinnersley Hedge/KINNERSLEY PHOTO FOLDER/Getmapping 1999-2000  frame Kinnersley-Ailey  fields.jpg",
+      "web": "web/Habitat__HEDGES__Kinnersley Hedge__KINNERSLEY PHOTO FOLDER__Getmapping 1999-2000  frame Kinnersley-Ailey  fields.jpg",
+      "thumb": "thumbs/Habitat__HEDGES__Kinnersley Hedge__KINNERSLEY PHOTO FOLDER__Getmapping 1999-2000  frame Kinnersley-Ailey  fields.jpg"
+    },
+    {
+      "path": "Habitat/Habitat/BIODIVER/JuniperClose1.jpg",
+      "web": "web/Habitat__Habitat__BIODIVER__JuniperClose1.jpg",
+      "thumb": "thumbs/Habitat__Habitat__BIODIVER__JuniperClose1.jpg"
+    },
+    {
+      "path": "Habitat/Habitat/BIODIVER/Images/campanula.jpg",
+      "web": "web/Habitat__Habitat__BIODIVER__Images__campanula.jpg",
+      "thumb": "thumbs/Habitat__Habitat__BIODIVER__Images__campanula.jpg"
+    },
+    {
+      "path": "Habitat/Habitat/dsc01991.jpg",
+      "web": "web/Habitat__Habitat__dsc01991.jpg",
+      "thumb": "thumbs/Habitat__Habitat__dsc01991.jpg"
+    },
+    {
+      "path": "Habitat/Habitat/Commons/Archive/Commons/BlackMtnMonmouth.jpg",
+      "web": "web/Habitat__Habitat__Commons__Archive__Commons__BlackMtnMonmouth.jpg",
+      "thumb": "thumbs/Habitat__Habitat__Commons__Archive__Commons__BlackMtnMonmouth.jpg"
+    },
+    {
+      "path": "Habitat/Habitat/Grassland & Rivers/Fwd_ RE_ Cttee meeting minutes/Fwd_ RE_ Application for Wye Preservation Trust_ conditions of award/image002.jpg",
+      "web": "web/Habitat__Habitat__Grassland & Rivers__Fwd_ RE_ Cttee meeting minutes__Fwd_ RE_ Application for Wye Preservation Trust_ conditions of award__image002.jpg",
+      "thumb": "thumbs/Habitat__Habitat__Grassland & Rivers__Fwd_ RE_ Cttee meeting minutes__Fwd_ RE_ Application for Wye Preservation Trust_ conditions of award__image002.jpg"
+    },
+    {
+      "path": "Habitat/Habitat/Grassland & Rivers/Wessington1.jpg",
+      "web": "web/Habitat__Habitat__Grassland & Rivers__Wessington1.jpg",
+      "thumb": "thumbs/Habitat__Habitat__Grassland & Rivers__Wessington1.jpg"
+    },
+    {
+      "path": "Habitat/Habitat/HEDGES/Dewchurchhedge2002close.jpg",
+      "web": "web/Habitat__Habitat__HEDGES__Dewchurchhedge2002close.jpg",
+      "thumb": "thumbs/Habitat__Habitat__HEDGES__Dewchurchhedge2002close.jpg"
+    },
+    {
+      "path": "Habitat/Habitat/HEDGES/Kinnersley Hedge/AileyClose_1839.jpg",
+      "web": "web/Habitat__Habitat__HEDGES__Kinnersley Hedge__AileyClose_1839.jpg",
+      "thumb": "thumbs/Habitat__Habitat__HEDGES__Kinnersley Hedge__AileyClose_1839.jpg"
+    },
+    {
+      "path": "Habitat/Habitat/HEDGES/Kinnersley Hedge/2005_05_07/IMG_8723Meadow_a_2005pan.jpg",
+      "web": "web/Habitat__Habitat__HEDGES__Kinnersley Hedge__2005_05_07__IMG_8723Meadow_a_2005pan.jpg",
+      "thumb": "thumbs/Habitat__Habitat__HEDGES__Kinnersley Hedge__2005_05_07__IMG_8723Meadow_a_2005pan.jpg"
+    },
+    {
+      "path": "Habitat/Habitat/HEDGES/Kinnersley Hedge/KINNERSLEY PHOTO FOLDER/192.com  east field corner- no gap .jpg",
+      "web": "web/Habitat__Habitat__HEDGES__Kinnersley Hedge__KINNERSLEY PHOTO FOLDER__192.com  east field corner- no gap .jpg",
+      "thumb": "thumbs/Habitat__Habitat__HEDGES__Kinnersley Hedge__KINNERSLEY PHOTO FOLDER__192.com  east field corner- no gap .jpg"
+    },
+    {
+      "path": "Habitat/Habitat/HNT Habitat Map/2005_05_11/IMG_8816HNTfieldcomment.jpg",
+      "web": "web/Habitat__Habitat__HNT Habitat Map__2005_05_11__IMG_8816HNTfieldcomment.jpg",
+      "thumb": "thumbs/Habitat__Habitat__HNT Habitat Map__2005_05_11__IMG_8816HNTfieldcomment.jpg"
+    },
+    {
+      "path": "Habitat/Habitat/MEADOW/Birches/1941_WWIIsurvey/CRW_5912.jpg",
+      "web": "web/Habitat__Habitat__MEADOW__Birches__1941_WWIIsurvey__CRW_5912.jpg",
+      "thumb": "thumbs/Habitat__Habitat__MEADOW__Birches__1941_WWIIsurvey__CRW_5912.jpg"
+    },
+    {
+      "path": "Habitat/Habitat/MEADOW/Birches/2007_08_26BirchesLite/IMG_0439.jpg",
+      "web": "web/Habitat__Habitat__MEADOW__Birches__2007_08_26BirchesLite__IMG_0439.jpg",
+      "thumb": "thumbs/Habitat__Habitat__MEADOW__Birches__2007_08_26BirchesLite__IMG_0439.jpg"
+    },
+    {
+      "path": "Habitat/Habitat/MEADOW/Birches/img004.jpg",
+      "web": "web/Habitat__Habitat__MEADOW__Birches__img004.jpg",
+      "thumb": "thumbs/Habitat__Habitat__MEADOW__Birches__img004.jpg"
+    },
+    {
+      "path": "Habitat/Habitat/MEADOW/Birches/PixDL_Field9/IMG_0415BurnetMoth.jpg",
+      "web": "web/Habitat__Habitat__MEADOW__Birches__PixDL_Field9__IMG_0415BurnetMoth.jpg",
+      "thumb": "thumbs/Habitat__Habitat__MEADOW__Birches__PixDL_Field9__IMG_0415BurnetMoth.jpg"
+    },
+    {
+      "path": "Habitat/Habitat/MEADOW/Birches/PixMilesKing/Birches 22.jpg",
+      "web": "web/Habitat__Habitat__MEADOW__Birches__PixMilesKing__Birches 22.jpg",
+      "thumb": "thumbs/Habitat__Habitat__MEADOW__Birches__PixMilesKing__Birches 22.jpg"
+    },
+    {
+      "path": "Habitat/Habitat/MEADOW/Birches/bf/OS.jpg",
+      "web": "web/Habitat__Habitat__MEADOW__Birches__bf__OS.jpg",
+      "thumb": "thumbs/Habitat__Habitat__MEADOW__Birches__bf__OS.jpg"
+    },
+    {
+      "path": "Habitat/Habitat/MEADOW/Birches/bf/th/img012-1.jpg",
+      "web": "web/Habitat__Habitat__MEADOW__Birches__bf__th__img012-1.jpg",
+      "thumb": "thumbs/Habitat__Habitat__MEADOW__Birches__bf__th__img012-1.jpg"
+    },
+    {
+      "path": "Habitat/Habitat/MEADOW/Birches/imagesusedintalk_BurtonHotel/IMG_0450.jpg",
+      "web": "web/Habitat__Habitat__MEADOW__Birches__imagesusedintalk_BurtonHotel__IMG_0450.jpg",
+      "thumb": "thumbs/Habitat__Habitat__MEADOW__Birches__imagesusedintalk_BurtonHotel__IMG_0450.jpg"
+    },
+    {
+      "path": "Habitat/Habitat/MEADOW/Birches/maps&airphotos/Birches.jpg",
+      "web": "web/Habitat__Habitat__MEADOW__Birches__maps&airphotos__Birches.jpg",
+      "thumb": "thumbs/Habitat__Habitat__MEADOW__Birches__maps&airphotos__Birches.jpg"
+    },
+    {
+      "path": "Habitat/Habitat/MEADOW/Birches/pixRichieCotterill/Birches Kingswood 27-6-07 023.jpg",
+      "web": "web/Habitat__Habitat__MEADOW__Birches__pixRichieCotterill__Birches Kingswood 27-6-07 023.jpg",
+      "thumb": "thumbs/Habitat__Habitat__MEADOW__Birches__pixRichieCotterill__Birches Kingswood 27-6-07 023.jpg"
+    },
+    {
+      "path": "Habitat/Habitat/MEADOW/Birches/pre_digitalimages(c1885)/img020close_field13_Ithink.tif",
+      "web": "web/Habitat__Habitat__MEADOW__Birches__pre_digitalimages(c1885)__img020close_field13_Ithink.jpg",
+      "thumb": "thumbs/Habitat__Habitat__MEADOW__Birches__pre_digitalimages(c1885)__img020close_field13_Ithink.jpg"
+    },
+    {
+      "path": "Habitat/Habitat/MEADOW/Birches/surveys/SO25SE_013_1.2.tif",
+      "web": "web/Habitat__Habitat__MEADOW__Birches__surveys__SO25SE_013_1.2.jpg",
+      "thumb": "thumbs/Habitat__Habitat__MEADOW__Birches__surveys__SO25SE_013_1.2.jpg"
+    },
+    {
+      "path": "Habitat/Habitat/MEADOW/Brook Farm/2005_05_11/IMG_8971ChurchField1.jpg",
+      "web": "web/Habitat__Habitat__MEADOW__Brook Farm__2005_05_11__IMG_8971ChurchField1.jpg",
+      "thumb": "thumbs/Habitat__Habitat__MEADOW__Brook Farm__2005_05_11__IMG_8971ChurchField1.jpg"
+    },
+    {
+      "path": "Habitat/Habitat/MEADOW/BuryFarm/MeadowOrchid.jpg",
+      "web": "web/Habitat__Habitat__MEADOW__BuryFarm__MeadowOrchid.jpg",
+      "thumb": "thumbs/Habitat__Habitat__MEADOW__BuryFarm__MeadowOrchid.jpg"
+    },
+    {
+      "path": "Habitat/Habitat/MEADOW/Cwmmaddoc_1886.jpg",
+      "web": "web/Habitat__Habitat__MEADOW__Cwmmaddoc_1886.jpg",
+      "thumb": "thumbs/Habitat__Habitat__MEADOW__Cwmmaddoc_1886.jpg"
+    },
+    {
+      "path": "Habitat/Habitat/MEADOW/ErnleGilbert/2021/NewStile_EGmeadow23Apr2020[2].jpg",
+      "web": "web/Habitat__Habitat__MEADOW__ErnleGilbert__2021__NewStile_EGmeadow23Apr2020[2].jpg",
+      "thumb": "thumbs/Habitat__Habitat__MEADOW__ErnleGilbert__2021__NewStile_EGmeadow23Apr2020[2].jpg"
+    },
+    {
+      "path": "Habitat/Habitat/batdetectors/Analog Devices _ Analog Dialogue _ transformer_vs_amp_files/AD41-02_12.jpg",
+      "web": "web/Habitat__Habitat__batdetectors__Analog Devices _ Analog Dialogue _ transformer_vs_amp_files__AD41-02_12.jpg",
+      "thumb": "thumbs/Habitat__Habitat__batdetectors__Analog Devices _ Analog Dialogue _ transformer_vs_amp_files__AD41-02_12.jpg"
+    },
+    {
+      "path": "Habitat/Habitat/batdetectors/BATECHO_files/player416H_front.jpg",
+      "web": "web/Habitat__Habitat__batdetectors__BATECHO_files__player416H_front.jpg",
+      "thumb": "thumbs/Habitat__Habitat__batdetectors__BATECHO_files__player416H_front.jpg"
+    },
+    {
+      "path": "Habitat/MEADOW/Birches/1941_WWIIsurvey/CRW_5912.jpg",
+      "web": "web/Habitat__MEADOW__Birches__1941_WWIIsurvey__CRW_5912.jpg",
+      "thumb": "thumbs/Habitat__MEADOW__Birches__1941_WWIIsurvey__CRW_5912.jpg"
+    },
+    {
+      "path": "Habitat/MEADOW/Birches/2007_08_26BirchesLite/IMG_0085.jpg",
+      "web": "web/Habitat__MEADOW__Birches__2007_08_26BirchesLite__IMG_0085.jpg",
+      "thumb": "thumbs/Habitat__MEADOW__Birches__2007_08_26BirchesLite__IMG_0085.jpg"
+    },
+    {
+      "path": "Habitat/MEADOW/Birches/img017.jpg",
+      "web": "web/Habitat__MEADOW__Birches__img017.jpg",
+      "thumb": "thumbs/Habitat__MEADOW__Birches__img017.jpg"
+    },
+    {
+      "path": "Habitat/MEADOW/Birches/PixDL_Field9/IMG_0415BurnetMoth.jpg",
+      "web": "web/Habitat__MEADOW__Birches__PixDL_Field9__IMG_0415BurnetMoth.jpg",
+      "thumb": "thumbs/Habitat__MEADOW__Birches__PixDL_Field9__IMG_0415BurnetMoth.jpg"
+    },
+    {
+      "path": "Habitat/MEADOW/Birches/PixMilesKing/Birches 3.jpg",
+      "web": "web/Habitat__MEADOW__Birches__PixMilesKing__Birches 3.jpg",
+      "thumb": "thumbs/Habitat__MEADOW__Birches__PixMilesKing__Birches 3.jpg"
+    },
+    {
+      "path": "Habitat/MEADOW/Birches/bf/img012.jpg",
+      "web": "web/Habitat__MEADOW__Birches__bf__img012.jpg",
+      "thumb": "thumbs/Habitat__MEADOW__Birches__bf__img012.jpg"
+    },
+    {
+      "path": "Habitat/MEADOW/Birches/bf/th/IMG_0431.jpg",
+      "web": "web/Habitat__MEADOW__Birches__bf__th__IMG_0431.jpg",
+      "thumb": "thumbs/Habitat__MEADOW__Birches__bf__th__IMG_0431.jpg"
+    },
+    {
+      "path": "Habitat/MEADOW/Birches/imagesusedintalk_BurtonHotel/img012.jpg",
+      "web": "web/Habitat__MEADOW__Birches__imagesusedintalk_BurtonHotel__img012.jpg",
+      "thumb": "thumbs/Habitat__MEADOW__Birches__imagesusedintalk_BurtonHotel__img012.jpg"
+    },
+    {
+      "path": "Habitat/MEADOW/Birches/maps&airphotos/OS.jpg",
+      "web": "web/Habitat__MEADOW__Birches__maps&airphotos__OS.jpg",
+      "thumb": "thumbs/Habitat__MEADOW__Birches__maps&airphotos__OS.jpg"
+    },
+    {
+      "path": "Habitat/MEADOW/Birches/pixRichieCotterill/Birches Kingswood 27-6-07 014.jpg",
+      "web": "web/Habitat__MEADOW__Birches__pixRichieCotterill__Birches Kingswood 27-6-07 014.jpg",
+      "thumb": "thumbs/Habitat__MEADOW__Birches__pixRichieCotterill__Birches Kingswood 27-6-07 014.jpg"
+    },
+    {
+      "path": "Habitat/MEADOW/Birches/pre_digitalimages(c1885)/img020close_field13_Ithink.tif",
+      "web": "web/Habitat__MEADOW__Birches__pre_digitalimages(c1885)__img020close_field13_Ithink.jpg",
+      "thumb": "thumbs/Habitat__MEADOW__Birches__pre_digitalimages(c1885)__img020close_field13_Ithink.jpg"
+    },
+    {
+      "path": "Habitat/MEADOW/Birches/surveys/SO25SE_013_2.2.tif",
+      "web": "web/Habitat__MEADOW__Birches__surveys__SO25SE_013_2.2.jpg",
+      "thumb": "thumbs/Habitat__MEADOW__Birches__surveys__SO25SE_013_2.2.jpg"
+    },
+    {
+      "path": "Habitat/MEADOW/Brook Farm/2005_05_11/IMG_8965BrookFarmfieldslongshot.jpg",
+      "web": "web/Habitat__MEADOW__Brook Farm__2005_05_11__IMG_8965BrookFarmfieldslongshot.jpg",
+      "thumb": "thumbs/Habitat__MEADOW__Brook Farm__2005_05_11__IMG_8965BrookFarmfieldslongshot.jpg"
+    },
+    {
+      "path": "Habitat/MEADOW/BuryFarm/MeadowVsweep.jpg",
+      "web": "web/Habitat__MEADOW__BuryFarm__MeadowVsweep.jpg",
+      "thumb": "thumbs/Habitat__MEADOW__BuryFarm__MeadowVsweep.jpg"
+    },
+    {
+      "path": "Habitat/MEADOW/Flood from Pool Cottage.jpg",
+      "web": "web/Habitat__MEADOW__Flood from Pool Cottage.jpg",
+      "thumb": "thumbs/Habitat__MEADOW__Flood from Pool Cottage.jpg"
+    },
+    {
+      "path": "Habitat/MEADOW/ErnleGilbert/2021/mysteryplantErlieGilbert23Apr2021.jpg",
+      "web": "web/Habitat__MEADOW__ErnleGilbert__2021__mysteryplantErlieGilbert23Apr2021.jpg",
+      "thumb": "thumbs/Habitat__MEADOW__ErnleGilbert__2021__mysteryplantErlieGilbert23Apr2021.jpg"
+    },
+    {
+      "path": "Habitat/MEADOW/ErnleGilbert/2022/EG_MeadowBrown16July22.jpg",
+      "web": "web/Habitat__MEADOW__ErnleGilbert__2022__EG_MeadowBrown16July22.jpg",
+      "thumb": "thumbs/Habitat__MEADOW__ErnleGilbert__2022__EG_MeadowBrown16July22.jpg"
+    },
+    {
+      "path": "Habitat/MEADOW/ErnleGilbert/OrchisMorio_ErnleGilbert2016.jpg",
+      "web": "web/Habitat__MEADOW__ErnleGilbert__OrchisMorio_ErnleGilbert2016.jpg",
+      "thumb": "thumbs/Habitat__MEADOW__ErnleGilbert__OrchisMorio_ErnleGilbert2016.jpg"
+    },
+    {
+      "path": "Habitat/MEADOW/GlouCowslipMeadow/IMG_4480CowslipMeadow.jpg",
+      "web": "web/Habitat__MEADOW__GlouCowslipMeadow__IMG_4480CowslipMeadow.jpg",
+      "thumb": "thumbs/Habitat__MEADOW__GlouCowslipMeadow__IMG_4480CowslipMeadow.jpg"
+    },
+    {
+      "path": "Habitat/MEADOW/GlouCowslipMeadow/web/IMG_4501.jpg",
+      "web": "web/Habitat__MEADOW__GlouCowslipMeadow__web__IMG_4501.jpg",
+      "thumb": "thumbs/Habitat__MEADOW__GlouCowslipMeadow__web__IMG_4501.jpg"
+    },
+    {
+      "path": "Habitat/MEADOW/GlouCowslipMeadow/web/jpglarge/DSC07832.jpg",
+      "web": "web/Habitat__MEADOW__GlouCowslipMeadow__web__jpglarge__DSC07832.jpg",
+      "thumb": "thumbs/Habitat__MEADOW__GlouCowslipMeadow__web__jpglarge__DSC07832.jpg"
+    },
+    {
+      "path": "Habitat/MEADOW/GlouCowslipMeadow/web/th/omfloret.jpg",
+      "web": "web/Habitat__MEADOW__GlouCowslipMeadow__web__th__omfloret.jpg",
+      "thumb": "thumbs/Habitat__MEADOW__GlouCowslipMeadow__web__th__omfloret.jpg"
+    },
+    {
+      "path": "Habitat/MEADOW/Oenanthe/OeNCDetailLeafAxil2.jpg",
+      "web": "web/Habitat__MEADOW__Oenanthe__OeNCDetailLeafAxil2.jpg",
+      "thumb": "thumbs/Habitat__MEADOW__Oenanthe__OeNCDetailLeafAxil2.jpg"
+    },
+    {
+      "path": "Habitat/MEADOW/Oridge/DSC03183annot.tif",
+      "web": "web/Habitat__MEADOW__Oridge__DSC03183annot.jpg",
+      "thumb": "thumbs/Habitat__MEADOW__Oridge__DSC03183annot.jpg"
+    },
+    {
+      "path": "Habitat/MEADOW/Oridge/web/DSC04055.jpg",
+      "web": "web/Habitat__MEADOW__Oridge__web__DSC04055.jpg",
+      "thumb": "thumbs/Habitat__MEADOW__Oridge__web__DSC04055.jpg"
+    },
+    {
+      "path": "Habitat/MEADOW/Oridge/web/th/DSC03202.jpg",
+      "web": "web/Habitat__MEADOW__Oridge__web__th__DSC03202.jpg",
+      "thumb": "thumbs/Habitat__MEADOW__Oridge__web__th__DSC03202.jpg"
+    },
+    {
+      "path": "Habitat/MEADOW/Oridge/zoomable/DSC02055_img/TileGroup0/4-8-5.jpg",
+      "web": "web/Habitat__MEADOW__Oridge__zoomable__DSC02055_img__TileGroup0__4-8-5.jpg",
+      "thumb": "thumbs/Habitat__MEADOW__Oridge__zoomable__DSC02055_img__TileGroup0__4-8-5.jpg"
+    },
+    {
+      "path": "Habitat/MEADOW/Oridge/zoomable/DSC03202_DxOcr_img/TileGroup0/4-1-1.jpg",
+      "web": "web/Habitat__MEADOW__Oridge__zoomable__DSC03202_DxOcr_img__TileGroup0__4-1-1.jpg",
+      "thumb": "thumbs/Habitat__MEADOW__Oridge__zoomable__DSC03202_DxOcr_img__TileGroup0__4-1-1.jpg"
+    },
+    {
+      "path": "Habitat/MEADOW/The Commons/GtBurnetFieldEdge.jpg",
+      "web": "web/Habitat__MEADOW__The Commons__GtBurnetFieldEdge.jpg",
+      "thumb": "thumbs/Habitat__MEADOW__The Commons__GtBurnetFieldEdge.jpg"
+    },
+    {
+      "path": "Habitat/MEADOW/WaterlooMeadowsLetton_2005_05_29/IMG_0192CarexNigra.jpg",
+      "web": "web/Habitat__MEADOW__WaterlooMeadowsLetton_2005_05_29__IMG_0192CarexNigra.jpg",
+      "thumb": "thumbs/Habitat__MEADOW__WaterlooMeadowsLetton_2005_05_29__IMG_0192CarexNigra.jpg"
+    },
+    {
+      "path": "Habitat/MEADOW/Winforton Meadows/2006_03_06/IMG_9676i.jpg",
+      "web": "web/Habitat__MEADOW__Winforton Meadows__2006_03_06__IMG_9676i.jpg",
+      "thumb": "thumbs/Habitat__MEADOW__Winforton Meadows__2006_03_06__IMG_9676i.jpg"
+    },
+    {
+      "path": "Habitat/MEADOW/Winforton Meadows/2006_06_07SpudsLite/IMG_5336.jpg",
+      "web": "web/Habitat__MEADOW__Winforton Meadows__2006_06_07SpudsLite__IMG_5336.jpg",
+      "thumb": "thumbs/Habitat__MEADOW__Winforton Meadows__2006_06_07SpudsLite__IMG_5336.jpg"
+    },
+    {
+      "path": "Habitat/MEADOW/Winforton Meadows/IMG_5892lite.jpg",
+      "web": "web/Habitat__MEADOW__Winforton Meadows__IMG_5892lite.jpg",
+      "thumb": "thumbs/Habitat__MEADOW__Winforton Meadows__IMG_5892lite.jpg"
+    },
+    {
+      "path": "Habitat/MEADOW/Winforton Meadows/AntHillMeadow/IMG_9690i.jpg",
+      "web": "web/Habitat__MEADOW__Winforton Meadows__AntHillMeadow__IMG_9690i.jpg",
+      "thumb": "thumbs/Habitat__MEADOW__Winforton Meadows__AntHillMeadow__IMG_9690i.jpg"
+    },
+    {
+      "path": "Habitat/MEADOW/Winforton Meadows/AntHillMeadow/rs/IMG_9698.jpg",
+      "web": "web/Habitat__MEADOW__Winforton Meadows__AntHillMeadow__rs__IMG_9698.jpg",
+      "thumb": "thumbs/Habitat__MEADOW__Winforton Meadows__AntHillMeadow__rs__IMG_9698.jpg"
+    },
+    {
+      "path": "Habitat/MEADOW/Winforton Meadows/HBRC_data/1056_EW_DLovelace_Phase1_part.jpg",
+      "web": "web/Habitat__MEADOW__Winforton Meadows__HBRC_data__1056_EW_DLovelace_Phase1_part.jpg",
+      "thumb": "thumbs/Habitat__MEADOW__Winforton Meadows__HBRC_data__1056_EW_DLovelace_Phase1_part.jpg"
+    },
+    {
+      "path": "Habitat/MEADOW/Winforton Meadows/Non_lot5/IMG_5931&32annotated.jpg",
+      "web": "web/Habitat__MEADOW__Winforton Meadows__Non_lot5__IMG_5931&32annotated.jpg",
+      "thumb": "thumbs/Habitat__MEADOW__Winforton Meadows__Non_lot5__IMG_5931&32annotated.jpg"
+    },
+    {
+      "path": "Habitat/MEADOW/ploughingpasture2017/PentreField_AP2012.jpg",
+      "web": "web/Habitat__MEADOW__ploughingpasture2017__PentreField_AP2012.jpg",
+      "thumb": "thumbs/Habitat__MEADOW__ploughingpasture2017__PentreField_AP2012.jpg"
+    },
+    {
+      "path": "Habitat/Orchards/BurghillOrchard_TM.jpg",
+      "web": "web/Habitat__Orchards__BurghillOrchard_TM.jpg",
+      "thumb": "thumbs/Habitat__Orchards__BurghillOrchard_TM.jpg"
+    },
+    {
+      "path": "Maps/1QGIS/Cardington&ChurchPreen_QGIS[3].jpg",
+      "web": "web/Maps__1QGIS__Cardington&ChurchPreen_QGIS[3].jpg",
+      "thumb": "thumbs/Maps__1QGIS__Cardington&ChurchPreen_QGIS[3].jpg"
+    },
+    {
+      "path": "Maps/1QGIS/Bodenham Lake Management Plan 68/BodLake_MM_HCshore&hydro.jpg",
+      "web": "web/Maps__1QGIS__Bodenham Lake Management Plan 68__BodLake_MM_HCshore&hydro.jpg",
+      "thumb": "thumbs/Maps__1QGIS__Bodenham Lake Management Plan 68__BodLake_MM_HCshore&hydro.jpg"
+    },
+    {
+      "path": "Maps/1QGIS/treephotos/c95a_SAM_6662.tif",
+      "web": "web/Maps__1QGIS__treephotos__c95a_SAM_6662.jpg",
+      "thumb": "thumbs/Maps__1QGIS__treephotos__c95a_SAM_6662.jpg"
+    },
+    {
+      "path": "Habitat/Habitat/MEADOW/Birches/2007_08_26BirchesLite/IMG_0304.jpg",
+      "web": "web/Habitat__Habitat__MEADOW__Birches__2007_08_26BirchesLite__IMG_0304.jpg",
+      "thumb": "thumbs/Habitat__Habitat__MEADOW__Birches__2007_08_26BirchesLite__IMG_0304.jpg"
+    },
+    {
+      "path": "Habitat/MEADOW/Oridge/zoomable/DSC03202_DxOcr_img/TileGroup0/4-5-6.jpg",
+      "web": "web/Habitat__MEADOW__Oridge__zoomable__DSC03202_DxOcr_img__TileGroup0__4-5-6.jpg",
+      "thumb": "thumbs/Habitat__MEADOW__Oridge__zoomable__DSC03202_DxOcr_img__TileGroup0__4-5-6.jpg"
+    },
+    {
+      "path": "Habitat/MEADOW/Birches/2007_08_26BirchesLite/IMG_0484.jpg",
+      "web": "web/Habitat__MEADOW__Birches__2007_08_26BirchesLite__IMG_0484.jpg",
+      "thumb": "thumbs/Habitat__MEADOW__Birches__2007_08_26BirchesLite__IMG_0484.jpg"
+    },
+    {
+      "path": "Habitat/MEADOW/Oridge/zoomable/DSC02055_img/TileGroup0/4-3-6.jpg",
+      "web": "web/Habitat__MEADOW__Oridge__zoomable__DSC02055_img__TileGroup0__4-3-6.jpg",
+      "thumb": "thumbs/Habitat__MEADOW__Oridge__zoomable__DSC02055_img__TileGroup0__4-3-6.jpg"
+    },
+    {
+      "path": "Habitat/MEADOW/Birches/2007_08_26BirchesLite/IMG_0323.jpg",
+      "web": "web/Habitat__MEADOW__Birches__2007_08_26BirchesLite__IMG_0323.jpg",
+      "thumb": "thumbs/Habitat__MEADOW__Birches__2007_08_26BirchesLite__IMG_0323.jpg"
+    },
+    {
+      "path": "Habitat/MEADOW/Birches/2007_08_26BirchesLite/IMG_0370.jpg",
+      "web": "web/Habitat__MEADOW__Birches__2007_08_26BirchesLite__IMG_0370.jpg",
+      "thumb": "thumbs/Habitat__MEADOW__Birches__2007_08_26BirchesLite__IMG_0370.jpg"
+    },
+    {
+      "path": "Habitat/Habitat/MEADOW/Birches/2007_08_26BirchesLite/IMG_0397.jpg",
+      "web": "web/Habitat__Habitat__MEADOW__Birches__2007_08_26BirchesLite__IMG_0397.jpg",
+      "thumb": "thumbs/Habitat__Habitat__MEADOW__Birches__2007_08_26BirchesLite__IMG_0397.jpg"
+    },
+    {
+      "path": "Habitat/Habitat/MEADOW/Birches/2007_08_26BirchesLite/IMG_0402.jpg",
+      "web": "web/Habitat__Habitat__MEADOW__Birches__2007_08_26BirchesLite__IMG_0402.jpg",
+      "thumb": "thumbs/Habitat__Habitat__MEADOW__Birches__2007_08_26BirchesLite__IMG_0402.jpg"
+    },
+    {
+      "path": "Habitat/MEADOW/Birches/2007_08_26BirchesLite/IMG_0404.jpg",
+      "web": "web/Habitat__MEADOW__Birches__2007_08_26BirchesLite__IMG_0404.jpg",
+      "thumb": "thumbs/Habitat__MEADOW__Birches__2007_08_26BirchesLite__IMG_0404.jpg"
+    },
+    {
+      "path": "Habitat/Habitat/MEADOW/Birches/2007_08_26BirchesLite/IMG_0419.jpg",
+      "web": "web/Habitat__Habitat__MEADOW__Birches__2007_08_26BirchesLite__IMG_0419.jpg",
+      "thumb": "thumbs/Habitat__Habitat__MEADOW__Birches__2007_08_26BirchesLite__IMG_0419.jpg"
+    },
+    {
+      "path": "Habitat/Habitat/MEADOW/Birches/2007_08_26BirchesLite/IMG_0017.jpg",
+      "web": "web/Habitat__Habitat__MEADOW__Birches__2007_08_26BirchesLite__IMG_0017.jpg",
+      "thumb": "thumbs/Habitat__Habitat__MEADOW__Birches__2007_08_26BirchesLite__IMG_0017.jpg"
+    },
+    {
+      "path": "Habitat/Habitat/MEADOW/Birches/2007_08_26BirchesLite/IMG_0435.jpg",
+      "web": "web/Habitat__Habitat__MEADOW__Birches__2007_08_26BirchesLite__IMG_0435.jpg",
+      "thumb": "thumbs/Habitat__Habitat__MEADOW__Birches__2007_08_26BirchesLite__IMG_0435.jpg"
+    },
+    {
+      "path": "Habitat/Habitat/MEADOW/Birches/2007_08_26BirchesLite/IMG_0059.jpg",
+      "web": "web/Habitat__Habitat__MEADOW__Birches__2007_08_26BirchesLite__IMG_0059.jpg",
+      "thumb": "thumbs/Habitat__Habitat__MEADOW__Birches__2007_08_26BirchesLite__IMG_0059.jpg"
+    },
+    {
+      "path": "Habitat/MEADOW/Birches/2007_08_26BirchesLite/IMG_0010.jpg",
+      "web": "web/Habitat__MEADOW__Birches__2007_08_26BirchesLite__IMG_0010.jpg",
+      "thumb": "thumbs/Habitat__MEADOW__Birches__2007_08_26BirchesLite__IMG_0010.jpg"
+    },
+    {
+      "path": "Habitat/MEADOW/Oridge/zoomable/DSC02055_img/TileGroup0/1-0-0.jpg",
+      "web": "web/Habitat__MEADOW__Oridge__zoomable__DSC02055_img__TileGroup0__1-0-0.jpg",
+      "thumb": "thumbs/Habitat__MEADOW__Oridge__zoomable__DSC02055_img__TileGroup0__1-0-0.jpg"
+    },
+    {
+      "path": "Habitat/MEADOW/Oridge/zoomable/DSC03202_DxOcr_img/TileGroup0/3-3-0.jpg",
+      "web": "web/Habitat__MEADOW__Oridge__zoomable__DSC03202_DxOcr_img__TileGroup0__3-3-0.jpg",
+      "thumb": "thumbs/Habitat__MEADOW__Oridge__zoomable__DSC03202_DxOcr_img__TileGroup0__3-3-0.jpg"
+    },
+    {
+      "path": "Habitat/MEADOW/Birches/bf/th/IMG_0468.jpg",
+      "web": "web/Habitat__MEADOW__Birches__bf__th__IMG_0468.jpg",
+      "thumb": "thumbs/Habitat__MEADOW__Birches__bf__th__IMG_0468.jpg"
+    },
+    {
+      "path": "Habitat/MEADOW/Birches/2007_08_26BirchesLite/IMG_0453.jpg",
+      "web": "web/Habitat__MEADOW__Birches__2007_08_26BirchesLite__IMG_0453.jpg",
+      "thumb": "thumbs/Habitat__MEADOW__Birches__2007_08_26BirchesLite__IMG_0453.jpg"
+    },
+    {
+      "path": "Habitat/Habitat/MEADOW/Birches/2007_08_26BirchesLite/IMG_0473.jpg",
+      "web": "web/Habitat__Habitat__MEADOW__Birches__2007_08_26BirchesLite__IMG_0473.jpg",
+      "thumb": "thumbs/Habitat__Habitat__MEADOW__Birches__2007_08_26BirchesLite__IMG_0473.jpg"
+    },
+    {
+      "path": "Habitat/Habitat/MEADOW/Birches/2007_08_26BirchesLite/IMG_0293.jpg",
+      "web": "web/Habitat__Habitat__MEADOW__Birches__2007_08_26BirchesLite__IMG_0293.jpg",
+      "thumb": "thumbs/Habitat__Habitat__MEADOW__Birches__2007_08_26BirchesLite__IMG_0293.jpg"
+    },
+    {
+      "path": "Habitat/MEADOW/Oridge/zoomable/DSC03202_DxOcr_img/TileGroup0/4-3-6.jpg",
+      "web": "web/Habitat__MEADOW__Oridge__zoomable__DSC03202_DxOcr_img__TileGroup0__4-3-6.jpg",
+      "thumb": "thumbs/Habitat__MEADOW__Oridge__zoomable__DSC03202_DxOcr_img__TileGroup0__4-3-6.jpg"
+    },
+    {
+      "path": "Habitat/MEADOW/Birches/2007_08_26BirchesLite/IMG_0180.jpg",
+      "web": "web/Habitat__MEADOW__Birches__2007_08_26BirchesLite__IMG_0180.jpg",
+      "thumb": "thumbs/Habitat__MEADOW__Birches__2007_08_26BirchesLite__IMG_0180.jpg"
+    },
+    {
+      "path": "Habitat/MEADOW/Oridge/zoomable/DSC02055_img/TileGroup0/4-1-4.jpg",
+      "web": "web/Habitat__MEADOW__Oridge__zoomable__DSC02055_img__TileGroup0__4-1-4.jpg",
+      "thumb": "thumbs/Habitat__MEADOW__Oridge__zoomable__DSC02055_img__TileGroup0__4-1-4.jpg"
+    }
+  ]
+}
