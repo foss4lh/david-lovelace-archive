@@ -615,13 +615,23 @@
 		},
 		{
 			"id": "hfd-uncategorized-photos",
-			"title": "Uncategorized sample (21 MB target)",
+			"title": "Uncategorized sample (12 MB target)",
 			"filename": "photos-uncategorized.zip",
 			"url": "https://github.com/foss4lh/david-lovelace-archive/releases/download/data-v0.1.0/photos-uncategorized.zip",
 			"target": "static/photos/uncategorized/photos-uncategorized.zip",
 			"requiredForBuild": true,
 			"status": "available",
 			"unzipTo": "static/photos/uncategorized"
+		},
+		{
+			"id": "hfd-luftwaffe-photos",
+			"title": "Luftwaffe Aerial Photography sample",
+			"filename": "photos-hfd-luftwaffe.zip",
+			"url": "https://github.com/foss4lh/david-lovelace-archive/releases/download/data-v0.1.0/photos-hfd-luftwaffe.zip",
+			"target": "static/photos/hfd-luftwaffe/photos-hfd-luftwaffe.zip",
+			"requiredForBuild": true,
+			"status": "available",
+			"unzipTo": "static/photos/hfd-luftwaffe"
 		},
 		{
 			"id": "hfd-royal-commission-photos",

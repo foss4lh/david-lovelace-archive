@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
 	import { base } from '$app/paths';
-	import { ChevronLeft, ChevronRight, X, ImageOff, Play } from '@lucide/svelte';
+	import { ChevronLeft, ChevronRight, X, ImageOff, Play, Share2 } from '@lucide/svelte';
 	import lightGallery from 'lightgallery';
 	import lgAutoplay from 'lightgallery/plugins/autoplay';
 	import 'lightgallery/css/lightgallery.css';
@@ -44,7 +44,8 @@
 			title: 'Woodland and 1948 Landscape Survey Material',
 			path: '/photos/hfd-woodland-1948'
 		},
-		{ id: 'hfd-river-wye', title: 'River Wye and NRA Archive', path: '/photos/hfd-river-wye' }
+		{ id: 'hfd-river-wye', title: 'River Wye and NRA Archive', path: '/photos/hfd-river-wye' },
+		{ id: 'hfd-luftwaffe', title: 'Luftwaffe Aerial Photography', path: '/photos/hfd-luftwaffe' }
 	];
 
 	let selectedCollection = $state('uncategorized');
@@ -259,6 +260,14 @@
 	function formatPath(path: string): string {
 		return path.replace(/__/g, ' / ');
 	}
+
+	function sharePhoto() {
+		if (!activePhoto || !manifest) return;
+		const url = new URL(window.location.href);
+		url.searchParams.set('path', activePhoto.path);
+		url.searchParams.set('image_url', getPhotoSrc(activePhoto));
+		navigator.clipboard.writeText(url.toString());
+	}
 </script>
 
 <svelte:window onkeydown={onKeydown} />
@@ -382,6 +391,9 @@
 					<span>{activeIndex + 1} / {manifest?.photos.length}</span>
 				{/if}
 				<span>{formatPath(activePhoto.path)}</span>
+				<button class="share-btn" onclick={sharePhoto} aria-label="Share photo link">
+					<Share2 size={14} />
+				</button>
 			</div>
 		</div>
 	{/if}
@@ -464,6 +476,22 @@
 	.page-info {
 		font-size: 0.85rem;
 		color: #5f6359;
+	}
+	.share-btn {
+		display: inline-flex;
+		align-items: center;
+		padding: 0.2rem 0.4rem;
+		border: 1px solid rgba(255, 255, 255, 0.3);
+		border-radius: 4px;
+		background: transparent;
+		color: #ddd;
+		cursor: pointer;
+		font-size: 0.8rem;
+		transition: border-color 0.15s;
+		margin-left: auto;
+	}
+	.share-btn:hover {
+		border-color: rgba(255, 255, 255, 0.7);
 	}
 	.photo-grid {
 		display: grid;

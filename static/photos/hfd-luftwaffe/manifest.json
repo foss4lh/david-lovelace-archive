@@ -1,0 +1,534 @@
+{
+  "collection": "hfd-luftwaffe",
+  "total_sampled": 112,
+  "web_max_dim": 1200,
+  "thumb_max_dim": 300,
+  "quality": 80,
+  "photos": [
+    {
+      "path": "AirPhotos/Luftwaffe/Luftwaffe001 copy.jpg",
+      "web": "web/AirPhotos__Luftwaffe__Luftwaffe001 copy.jpg",
+      "thumb": "thumbs/AirPhotos__Luftwaffe__Luftwaffe001 copy.jpg"
+    },
+    {
+      "path": "AirPhotos/Luftwaffe/Luftwaffe001.tif",
+      "web": "web/AirPhotos__Luftwaffe__Luftwaffe001.jpg",
+      "thumb": "thumbs/AirPhotos__Luftwaffe__Luftwaffe001.jpg"
+    },
+    {
+      "path": "AirPhotos/Luftwaffe/Luftwaffe002.tif",
+      "web": "web/AirPhotos__Luftwaffe__Luftwaffe002.jpg",
+      "thumb": "thumbs/AirPhotos__Luftwaffe__Luftwaffe002.jpg"
+    },
+    {
+      "path": "AirPhotos/Luftwaffe/Luftwaffe003.tif",
+      "web": "web/AirPhotos__Luftwaffe__Luftwaffe003.jpg",
+      "thumb": "thumbs/AirPhotos__Luftwaffe__Luftwaffe003.jpg"
+    },
+    {
+      "path": "AirPhotos/Luftwaffe/Luftwaffe004.tif",
+      "web": "web/AirPhotos__Luftwaffe__Luftwaffe004.jpg",
+      "thumb": "thumbs/AirPhotos__Luftwaffe__Luftwaffe004.jpg"
+    },
+    {
+      "path": "AirPhotos/Luftwaffe/Luftwaffe005.tif",
+      "web": "web/AirPhotos__Luftwaffe__Luftwaffe005.jpg",
+      "thumb": "thumbs/AirPhotos__Luftwaffe__Luftwaffe005.jpg"
+    },
+    {
+      "path": "AirPhotos/Luftwaffe/Luftwaffe005crrs.jpg",
+      "web": "web/AirPhotos__Luftwaffe__Luftwaffe005crrs.jpg",
+      "thumb": "thumbs/AirPhotos__Luftwaffe__Luftwaffe005crrs.jpg"
+    },
+    {
+      "path": "AirPhotos/Luftwaffe/Luftwaffe010.tif",
+      "web": "web/AirPhotos__Luftwaffe__Luftwaffe010.jpg",
+      "thumb": "thumbs/AirPhotos__Luftwaffe__Luftwaffe010.jpg"
+    },
+    {
+      "path": "AirPhotos/Luftwaffe/Luftwaffe011.tif",
+      "web": "web/AirPhotos__Luftwaffe__Luftwaffe011.jpg",
+      "thumb": "thumbs/AirPhotos__Luftwaffe__Luftwaffe011.jpg"
+    },
+    {
+      "path": "AirPhotos/Luftwaffe/Luftwaffe012.tif",
+      "web": "web/AirPhotos__Luftwaffe__Luftwaffe012.jpg",
+      "thumb": "thumbs/AirPhotos__Luftwaffe__Luftwaffe012.jpg"
+    },
+    {
+      "path": "AirPhotos/Luftwaffe/Luftwaffe013.tif",
+      "web": "web/AirPhotos__Luftwaffe__Luftwaffe013.jpg",
+      "thumb": "thumbs/AirPhotos__Luftwaffe__Luftwaffe013.jpg"
+    },
+    {
+      "path": "AirPhotos/Luftwaffe/Luftwaffe014.tif",
+      "web": "web/AirPhotos__Luftwaffe__Luftwaffe014.jpg",
+      "thumb": "thumbs/AirPhotos__Luftwaffe__Luftwaffe014.jpg"
+    },
+    {
+      "path": "AirPhotos/Luftwaffe/Luftwaffe015.tif",
+      "web": "web/AirPhotos__Luftwaffe__Luftwaffe015.jpg",
+      "thumb": "thumbs/AirPhotos__Luftwaffe__Luftwaffe015.jpg"
+    },
+    {
+      "path": "AirPhotos/Luftwaffe/Luftwaffe016.tif",
+      "web": "web/AirPhotos__Luftwaffe__Luftwaffe016.jpg",
+      "thumb": "thumbs/AirPhotos__Luftwaffe__Luftwaffe016.jpg"
+    },
+    {
+      "path": "AirPhotos/Luftwaffe/Luftwaffe017.tif",
+      "web": "web/AirPhotos__Luftwaffe__Luftwaffe017.jpg",
+      "thumb": "thumbs/AirPhotos__Luftwaffe__Luftwaffe017.jpg"
+    },
+    {
+      "path": "AirPhotos/Luftwaffe/Luftwaffe018.tif",
+      "web": "web/AirPhotos__Luftwaffe__Luftwaffe018.jpg",
+      "thumb": "thumbs/AirPhotos__Luftwaffe__Luftwaffe018.jpg"
+    },
+    {
+      "path": "AirPhotos/Luftwaffe/Luftwaffe019.tif",
+      "web": "web/AirPhotos__Luftwaffe__Luftwaffe019.jpg",
+      "thumb": "thumbs/AirPhotos__Luftwaffe__Luftwaffe019.jpg"
+    },
+    {
+      "path": "AirPhotos/Luftwaffe/Luftwaffe020.tif",
+      "web": "web/AirPhotos__Luftwaffe__Luftwaffe020.jpg",
+      "thumb": "thumbs/AirPhotos__Luftwaffe__Luftwaffe020.jpg"
+    },
+    {
+      "path": "AirPhotos/Luftwaffe/Luftwaffe021.tif",
+      "web": "web/AirPhotos__Luftwaffe__Luftwaffe021.jpg",
+      "thumb": "thumbs/AirPhotos__Luftwaffe__Luftwaffe021.jpg"
+    },
+    {
+      "path": "AirPhotos/Luftwaffe/Luftwaffe022.tif",
+      "web": "web/AirPhotos__Luftwaffe__Luftwaffe022.jpg",
+      "thumb": "thumbs/AirPhotos__Luftwaffe__Luftwaffe022.jpg"
+    },
+    {
+      "path": "AirPhotos/Luftwaffe/Luftwaffe022_annot_rs.jpg",
+      "web": "web/AirPhotos__Luftwaffe__Luftwaffe022_annot_rs.jpg",
+      "thumb": "thumbs/AirPhotos__Luftwaffe__Luftwaffe022_annot_rs.jpg"
+    },
+    {
+      "path": "AirPhotos/Luftwaffe/Luftwaffe022_r&f_cr.JPG",
+      "web": "web/AirPhotos__Luftwaffe__Luftwaffe022_r&f_cr.jpg",
+      "thumb": "thumbs/AirPhotos__Luftwaffe__Luftwaffe022_r&f_cr.jpg"
+    },
+    {
+      "path": "AirPhotos/Luftwaffe/Luftwaffe023.tif",
+      "web": "web/AirPhotos__Luftwaffe__Luftwaffe023.jpg",
+      "thumb": "thumbs/AirPhotos__Luftwaffe__Luftwaffe023.jpg"
+    },
+    {
+      "path": "AirPhotos/Luftwaffe/Luftwaffe024.tif",
+      "web": "web/AirPhotos__Luftwaffe__Luftwaffe024.jpg",
+      "thumb": "thumbs/AirPhotos__Luftwaffe__Luftwaffe024.jpg"
+    },
+    {
+      "path": "AirPhotos/Luftwaffe/Luftwaffe025.tif",
+      "web": "web/AirPhotos__Luftwaffe__Luftwaffe025.jpg",
+      "thumb": "thumbs/AirPhotos__Luftwaffe__Luftwaffe025.jpg"
+    },
+    {
+      "path": "AirPhotos/Luftwaffe/Luftwaffe026.tif",
+      "web": "web/AirPhotos__Luftwaffe__Luftwaffe026.jpg",
+      "thumb": "thumbs/AirPhotos__Luftwaffe__Luftwaffe026.jpg"
+    },
+    {
+      "path": "AirPhotos/Luftwaffe/Luftwaffe027.tif",
+      "web": "web/AirPhotos__Luftwaffe__Luftwaffe027.jpg",
+      "thumb": "thumbs/AirPhotos__Luftwaffe__Luftwaffe027.jpg"
+    },
+    {
+      "path": "AirPhotos/Luftwaffe/Luftwaffe028.tif",
+      "web": "web/AirPhotos__Luftwaffe__Luftwaffe028.jpg",
+      "thumb": "thumbs/AirPhotos__Luftwaffe__Luftwaffe028.jpg"
+    },
+    {
+      "path": "AirPhotos/Luftwaffe/Luftwaffe029.tif",
+      "web": "web/AirPhotos__Luftwaffe__Luftwaffe029.jpg",
+      "thumb": "thumbs/AirPhotos__Luftwaffe__Luftwaffe029.jpg"
+    },
+    {
+      "path": "AirPhotos/Luftwaffe/Luftwaffe030.tif",
+      "web": "web/AirPhotos__Luftwaffe__Luftwaffe030.jpg",
+      "thumb": "thumbs/AirPhotos__Luftwaffe__Luftwaffe030.jpg"
+    },
+    {
+      "path": "AirPhotos/Luftwaffe/Luftwaffe031.tif",
+      "web": "web/AirPhotos__Luftwaffe__Luftwaffe031.jpg",
+      "thumb": "thumbs/AirPhotos__Luftwaffe__Luftwaffe031.jpg"
+    },
+    {
+      "path": "AirPhotos/Luftwaffe/Luftwaffe032.tif",
+      "web": "web/AirPhotos__Luftwaffe__Luftwaffe032.jpg",
+      "thumb": "thumbs/AirPhotos__Luftwaffe__Luftwaffe032.jpg"
+    },
+    {
+      "path": "AirPhotos/Luftwaffe/Luftwaffe033.tif",
+      "web": "web/AirPhotos__Luftwaffe__Luftwaffe033.jpg",
+      "thumb": "thumbs/AirPhotos__Luftwaffe__Luftwaffe033.jpg"
+    },
+    {
+      "path": "AirPhotos/Luftwaffe/Luftwaffe034.tif",
+      "web": "web/AirPhotos__Luftwaffe__Luftwaffe034.jpg",
+      "thumb": "thumbs/AirPhotos__Luftwaffe__Luftwaffe034.jpg"
+    },
+    {
+      "path": "AirPhotos/Luftwaffe/Luftwaffe035.tif",
+      "web": "web/AirPhotos__Luftwaffe__Luftwaffe035.jpg",
+      "thumb": "thumbs/AirPhotos__Luftwaffe__Luftwaffe035.jpg"
+    },
+    {
+      "path": "AirPhotos/Luftwaffe/Luftwaffe036.tif",
+      "web": "web/AirPhotos__Luftwaffe__Luftwaffe036.jpg",
+      "thumb": "thumbs/AirPhotos__Luftwaffe__Luftwaffe036.jpg"
+    },
+    {
+      "path": "AirPhotos/Luftwaffe/Luftwaffe037.tif",
+      "web": "web/AirPhotos__Luftwaffe__Luftwaffe037.jpg",
+      "thumb": "thumbs/AirPhotos__Luftwaffe__Luftwaffe037.jpg"
+    },
+    {
+      "path": "AirPhotos/Luftwaffe/Luftwaffe038.tif",
+      "web": "web/AirPhotos__Luftwaffe__Luftwaffe038.jpg",
+      "thumb": "thumbs/AirPhotos__Luftwaffe__Luftwaffe038.jpg"
+    },
+    {
+      "path": "AirPhotos/Luftwaffe/Luftwaffe039.tif",
+      "web": "web/AirPhotos__Luftwaffe__Luftwaffe039.jpg",
+      "thumb": "thumbs/AirPhotos__Luftwaffe__Luftwaffe039.jpg"
+    },
+    {
+      "path": "AirPhotos/Luftwaffe/Luftwaffe040.tif",
+      "web": "web/AirPhotos__Luftwaffe__Luftwaffe040.jpg",
+      "thumb": "thumbs/AirPhotos__Luftwaffe__Luftwaffe040.jpg"
+    },
+    {
+      "path": "AirPhotos/Luftwaffe/Luftwaffe041.tif",
+      "web": "web/AirPhotos__Luftwaffe__Luftwaffe041.jpg",
+      "thumb": "thumbs/AirPhotos__Luftwaffe__Luftwaffe041.jpg"
+    },
+    {
+      "path": "AirPhotos/Luftwaffe/Luftwaffe042.tif",
+      "web": "web/AirPhotos__Luftwaffe__Luftwaffe042.jpg",
+      "thumb": "thumbs/AirPhotos__Luftwaffe__Luftwaffe042.jpg"
+    },
+    {
+      "path": "AirPhotos/Luftwaffe/Luftwaffe043.tif",
+      "web": "web/AirPhotos__Luftwaffe__Luftwaffe043.jpg",
+      "thumb": "thumbs/AirPhotos__Luftwaffe__Luftwaffe043.jpg"
+    },
+    {
+      "path": "AirPhotos/Luftwaffe/Luftwaffe_015.tif",
+      "web": "web/AirPhotos__Luftwaffe__Luftwaffe_015.jpg",
+      "thumb": "thumbs/AirPhotos__Luftwaffe__Luftwaffe_015.jpg"
+    },
+    {
+      "path": "AirPhotos/Luftwaffe/Luftwaffe_226.tif",
+      "web": "web/AirPhotos__Luftwaffe__Luftwaffe_226.jpg",
+      "thumb": "thumbs/AirPhotos__Luftwaffe__Luftwaffe_226.jpg"
+    },
+    {
+      "path": "AirPhotos/Luftwaffe/Luftwaffe_228.tif",
+      "web": "web/AirPhotos__Luftwaffe__Luftwaffe_228.jpg",
+      "thumb": "thumbs/AirPhotos__Luftwaffe__Luftwaffe_228.jpg"
+    },
+    {
+      "path": "AirPhotos/Luftwaffe/Luftwaffe_230.TIF",
+      "web": "web/AirPhotos__Luftwaffe__Luftwaffe_230.jpg",
+      "thumb": "thumbs/AirPhotos__Luftwaffe__Luftwaffe_230.jpg"
+    },
+    {
+      "path": "AirPhotos/Luftwaffe/Luftwaffe_233.tif",
+      "web": "web/AirPhotos__Luftwaffe__Luftwaffe_233.jpg",
+      "thumb": "thumbs/AirPhotos__Luftwaffe__Luftwaffe_233.jpg"
+    },
+    {
+      "path": "AirPhotos/Luftwaffe/Luftwaffe_235.tif",
+      "web": "web/AirPhotos__Luftwaffe__Luftwaffe_235.jpg",
+      "thumb": "thumbs/AirPhotos__Luftwaffe__Luftwaffe_235.jpg"
+    },
+    {
+      "path": "AirPhotos/Luftwaffe/Luftwaffe_238.tif",
+      "web": "web/AirPhotos__Luftwaffe__Luftwaffe_238.jpg",
+      "thumb": "thumbs/AirPhotos__Luftwaffe__Luftwaffe_238.jpg"
+    },
+    {
+      "path": "AirPhotos/Luftwaffe/Luftwaffe_238_crop.JPG",
+      "web": "web/AirPhotos__Luftwaffe__Luftwaffe_238_crop.jpg",
+      "thumb": "thumbs/AirPhotos__Luftwaffe__Luftwaffe_238_crop.jpg"
+    },
+    {
+      "path": "AirPhotos/Luftwaffe/Luftwaffe_238_full_rs.JPG",
+      "web": "web/AirPhotos__Luftwaffe__Luftwaffe_238_full_rs.jpg",
+      "thumb": "thumbs/AirPhotos__Luftwaffe__Luftwaffe_238_full_rs.jpg"
+    },
+    {
+      "path": "AirPhotos/Luftwaffe/Luftwaffe_839.tif",
+      "web": "web/AirPhotos__Luftwaffe__Luftwaffe_839.jpg",
+      "thumb": "thumbs/AirPhotos__Luftwaffe__Luftwaffe_839.jpg"
+    },
+    {
+      "path": "AirPhotos/Luftwaffe/Luftwaffe_842.tif",
+      "web": "web/AirPhotos__Luftwaffe__Luftwaffe_842.jpg",
+      "thumb": "thumbs/AirPhotos__Luftwaffe__Luftwaffe_842.jpg"
+    },
+    {
+      "path": "AirPhotos/Luftwaffe/jpg_rs/Luftwaffe001 copy.jpg",
+      "web": "web/AirPhotos__Luftwaffe__jpg_rs__Luftwaffe001 copy.jpg",
+      "thumb": "thumbs/AirPhotos__Luftwaffe__jpg_rs__Luftwaffe001 copy.jpg"
+    },
+    {
+      "path": "AirPhotos/Luftwaffe/jpg_rs/Luftwaffe002 copy.jpg",
+      "web": "web/AirPhotos__Luftwaffe__jpg_rs__Luftwaffe002 copy.jpg",
+      "thumb": "thumbs/AirPhotos__Luftwaffe__jpg_rs__Luftwaffe002 copy.jpg"
+    },
+    {
+      "path": "AirPhotos/Luftwaffe/jpg_rs/Luftwaffe003 copy.jpg",
+      "web": "web/AirPhotos__Luftwaffe__jpg_rs__Luftwaffe003 copy.jpg",
+      "thumb": "thumbs/AirPhotos__Luftwaffe__jpg_rs__Luftwaffe003 copy.jpg"
+    },
+    {
+      "path": "AirPhotos/Luftwaffe/jpg_rs/Luftwaffe004 copy.jpg",
+      "web": "web/AirPhotos__Luftwaffe__jpg_rs__Luftwaffe004 copy.jpg",
+      "thumb": "thumbs/AirPhotos__Luftwaffe__jpg_rs__Luftwaffe004 copy.jpg"
+    },
+    {
+      "path": "AirPhotos/Luftwaffe/jpg_rs/Luftwaffe005 copy.jpg",
+      "web": "web/AirPhotos__Luftwaffe__jpg_rs__Luftwaffe005 copy.jpg",
+      "thumb": "thumbs/AirPhotos__Luftwaffe__jpg_rs__Luftwaffe005 copy.jpg"
+    },
+    {
+      "path": "AirPhotos/Luftwaffe/jpg_rs/Luftwaffe010 copy.jpg",
+      "web": "web/AirPhotos__Luftwaffe__jpg_rs__Luftwaffe010 copy.jpg",
+      "thumb": "thumbs/AirPhotos__Luftwaffe__jpg_rs__Luftwaffe010 copy.jpg"
+    },
+    {
+      "path": "AirPhotos/Luftwaffe/jpg_rs/Luftwaffe011 copy.jpg",
+      "web": "web/AirPhotos__Luftwaffe__jpg_rs__Luftwaffe011 copy.jpg",
+      "thumb": "thumbs/AirPhotos__Luftwaffe__jpg_rs__Luftwaffe011 copy.jpg"
+    },
+    {
+      "path": "AirPhotos/Luftwaffe/jpg_rs/Luftwaffe013 copy.jpg",
+      "web": "web/AirPhotos__Luftwaffe__jpg_rs__Luftwaffe013 copy.jpg",
+      "thumb": "thumbs/AirPhotos__Luftwaffe__jpg_rs__Luftwaffe013 copy.jpg"
+    },
+    {
+      "path": "AirPhotos/Luftwaffe/jpg_rs/Luftwaffe014 copy.jpg",
+      "web": "web/AirPhotos__Luftwaffe__jpg_rs__Luftwaffe014 copy.jpg",
+      "thumb": "thumbs/AirPhotos__Luftwaffe__jpg_rs__Luftwaffe014 copy.jpg"
+    },
+    {
+      "path": "AirPhotos/Luftwaffe/jpg_rs/Luftwaffe015 copy.jpg",
+      "web": "web/AirPhotos__Luftwaffe__jpg_rs__Luftwaffe015 copy.jpg",
+      "thumb": "thumbs/AirPhotos__Luftwaffe__jpg_rs__Luftwaffe015 copy.jpg"
+    },
+    {
+      "path": "AirPhotos/Luftwaffe/jpg_rs/Luftwaffe016 copy.jpg",
+      "web": "web/AirPhotos__Luftwaffe__jpg_rs__Luftwaffe016 copy.jpg",
+      "thumb": "thumbs/AirPhotos__Luftwaffe__jpg_rs__Luftwaffe016 copy.jpg"
+    },
+    {
+      "path": "AirPhotos/Luftwaffe/jpg_rs/Luftwaffe017 copy.jpg",
+      "web": "web/AirPhotos__Luftwaffe__jpg_rs__Luftwaffe017 copy.jpg",
+      "thumb": "thumbs/AirPhotos__Luftwaffe__jpg_rs__Luftwaffe017 copy.jpg"
+    },
+    {
+      "path": "AirPhotos/Luftwaffe/jpg_rs/Luftwaffe018 copy.jpg",
+      "web": "web/AirPhotos__Luftwaffe__jpg_rs__Luftwaffe018 copy.jpg",
+      "thumb": "thumbs/AirPhotos__Luftwaffe__jpg_rs__Luftwaffe018 copy.jpg"
+    },
+    {
+      "path": "AirPhotos/Luftwaffe/jpg_rs/Luftwaffe019 copy.jpg",
+      "web": "web/AirPhotos__Luftwaffe__jpg_rs__Luftwaffe019 copy.jpg",
+      "thumb": "thumbs/AirPhotos__Luftwaffe__jpg_rs__Luftwaffe019 copy.jpg"
+    },
+    {
+      "path": "AirPhotos/Luftwaffe/jpg_rs/Luftwaffe020 copy.jpg",
+      "web": "web/AirPhotos__Luftwaffe__jpg_rs__Luftwaffe020 copy.jpg",
+      "thumb": "thumbs/AirPhotos__Luftwaffe__jpg_rs__Luftwaffe020 copy.jpg"
+    },
+    {
+      "path": "AirPhotos/Luftwaffe/jpg_rs/Luftwaffe021 copy.jpg",
+      "web": "web/AirPhotos__Luftwaffe__jpg_rs__Luftwaffe021 copy.jpg",
+      "thumb": "thumbs/AirPhotos__Luftwaffe__jpg_rs__Luftwaffe021 copy.jpg"
+    },
+    {
+      "path": "AirPhotos/Luftwaffe/jpg_rs/Luftwaffe022 copy.jpg",
+      "web": "web/AirPhotos__Luftwaffe__jpg_rs__Luftwaffe022 copy.jpg",
+      "thumb": "thumbs/AirPhotos__Luftwaffe__jpg_rs__Luftwaffe022 copy.jpg"
+    },
+    {
+      "path": "AirPhotos/Luftwaffe/jpg_rs/Luftwaffe022_annot_rs.jpg",
+      "web": "web/AirPhotos__Luftwaffe__jpg_rs__Luftwaffe022_annot_rs.jpg",
+      "thumb": "thumbs/AirPhotos__Luftwaffe__jpg_rs__Luftwaffe022_annot_rs.jpg"
+    },
+    {
+      "path": "AirPhotos/Luftwaffe/jpg_rs/Luftwaffe022_r&f_cr.jpg",
+      "web": "web/AirPhotos__Luftwaffe__jpg_rs__Luftwaffe022_r&f_cr.jpg",
+      "thumb": "thumbs/AirPhotos__Luftwaffe__jpg_rs__Luftwaffe022_r&f_cr.jpg"
+    },
+    {
+      "path": "AirPhotos/Luftwaffe/jpg_rs/Luftwaffe023 copy.jpg",
+      "web": "web/AirPhotos__Luftwaffe__jpg_rs__Luftwaffe023 copy.jpg",
+      "thumb": "thumbs/AirPhotos__Luftwaffe__jpg_rs__Luftwaffe023 copy.jpg"
+    },
+    {
+      "path": "AirPhotos/Luftwaffe/jpg_rs/Luftwaffe024 copy.jpg",
+      "web": "web/AirPhotos__Luftwaffe__jpg_rs__Luftwaffe024 copy.jpg",
+      "thumb": "thumbs/AirPhotos__Luftwaffe__jpg_rs__Luftwaffe024 copy.jpg"
+    },
+    {
+      "path": "AirPhotos/Luftwaffe/jpg_rs/Luftwaffe025 copy.jpg",
+      "web": "web/AirPhotos__Luftwaffe__jpg_rs__Luftwaffe025 copy.jpg",
+      "thumb": "thumbs/AirPhotos__Luftwaffe__jpg_rs__Luftwaffe025 copy.jpg"
+    },
+    {
+      "path": "AirPhotos/Luftwaffe/jpg_rs/Luftwaffe026 copy.jpg",
+      "web": "web/AirPhotos__Luftwaffe__jpg_rs__Luftwaffe026 copy.jpg",
+      "thumb": "thumbs/AirPhotos__Luftwaffe__jpg_rs__Luftwaffe026 copy.jpg"
+    },
+    {
+      "path": "AirPhotos/Luftwaffe/jpg_rs/Luftwaffe027 copy.jpg",
+      "web": "web/AirPhotos__Luftwaffe__jpg_rs__Luftwaffe027 copy.jpg",
+      "thumb": "thumbs/AirPhotos__Luftwaffe__jpg_rs__Luftwaffe027 copy.jpg"
+    },
+    {
+      "path": "AirPhotos/Luftwaffe/jpg_rs/Luftwaffe028 copy.jpg",
+      "web": "web/AirPhotos__Luftwaffe__jpg_rs__Luftwaffe028 copy.jpg",
+      "thumb": "thumbs/AirPhotos__Luftwaffe__jpg_rs__Luftwaffe028 copy.jpg"
+    },
+    {
+      "path": "AirPhotos/Luftwaffe/jpg_rs/Luftwaffe029 copy.jpg",
+      "web": "web/AirPhotos__Luftwaffe__jpg_rs__Luftwaffe029 copy.jpg",
+      "thumb": "thumbs/AirPhotos__Luftwaffe__jpg_rs__Luftwaffe029 copy.jpg"
+    },
+    {
+      "path": "AirPhotos/Luftwaffe/jpg_rs/Luftwaffe030 copy.jpg",
+      "web": "web/AirPhotos__Luftwaffe__jpg_rs__Luftwaffe030 copy.jpg",
+      "thumb": "thumbs/AirPhotos__Luftwaffe__jpg_rs__Luftwaffe030 copy.jpg"
+    },
+    {
+      "path": "AirPhotos/Luftwaffe/jpg_rs/Luftwaffe031 copy.jpg",
+      "web": "web/AirPhotos__Luftwaffe__jpg_rs__Luftwaffe031 copy.jpg",
+      "thumb": "thumbs/AirPhotos__Luftwaffe__jpg_rs__Luftwaffe031 copy.jpg"
+    },
+    {
+      "path": "AirPhotos/Luftwaffe/jpg_rs/Luftwaffe032 copy.jpg",
+      "web": "web/AirPhotos__Luftwaffe__jpg_rs__Luftwaffe032 copy.jpg",
+      "thumb": "thumbs/AirPhotos__Luftwaffe__jpg_rs__Luftwaffe032 copy.jpg"
+    },
+    {
+      "path": "AirPhotos/Luftwaffe/jpg_rs/Luftwaffe033 copy.jpg",
+      "web": "web/AirPhotos__Luftwaffe__jpg_rs__Luftwaffe033 copy.jpg",
+      "thumb": "thumbs/AirPhotos__Luftwaffe__jpg_rs__Luftwaffe033 copy.jpg"
+    },
+    {
+      "path": "AirPhotos/Luftwaffe/jpg_rs/Luftwaffe034 copy.jpg",
+      "web": "web/AirPhotos__Luftwaffe__jpg_rs__Luftwaffe034 copy.jpg",
+      "thumb": "thumbs/AirPhotos__Luftwaffe__jpg_rs__Luftwaffe034 copy.jpg"
+    },
+    {
+      "path": "AirPhotos/Luftwaffe/jpg_rs/Luftwaffe035 copy.jpg",
+      "web": "web/AirPhotos__Luftwaffe__jpg_rs__Luftwaffe035 copy.jpg",
+      "thumb": "thumbs/AirPhotos__Luftwaffe__jpg_rs__Luftwaffe035 copy.jpg"
+    },
+    {
+      "path": "AirPhotos/Luftwaffe/jpg_rs/Luftwaffe036 copy.jpg",
+      "web": "web/AirPhotos__Luftwaffe__jpg_rs__Luftwaffe036 copy.jpg",
+      "thumb": "thumbs/AirPhotos__Luftwaffe__jpg_rs__Luftwaffe036 copy.jpg"
+    },
+    {
+      "path": "AirPhotos/Luftwaffe/jpg_rs/Luftwaffe037 copy.jpg",
+      "web": "web/AirPhotos__Luftwaffe__jpg_rs__Luftwaffe037 copy.jpg",
+      "thumb": "thumbs/AirPhotos__Luftwaffe__jpg_rs__Luftwaffe037 copy.jpg"
+    },
+    {
+      "path": "AirPhotos/Luftwaffe/jpg_rs/Luftwaffe038 copy.jpg",
+      "web": "web/AirPhotos__Luftwaffe__jpg_rs__Luftwaffe038 copy.jpg",
+      "thumb": "thumbs/AirPhotos__Luftwaffe__jpg_rs__Luftwaffe038 copy.jpg"
+    },
+    {
+      "path": "AirPhotos/Luftwaffe/jpg_rs/Luftwaffe039 copy.jpg",
+      "web": "web/AirPhotos__Luftwaffe__jpg_rs__Luftwaffe039 copy.jpg",
+      "thumb": "thumbs/AirPhotos__Luftwaffe__jpg_rs__Luftwaffe039 copy.jpg"
+    },
+    {
+      "path": "AirPhotos/Luftwaffe/jpg_rs/Luftwaffe040 copy.jpg",
+      "web": "web/AirPhotos__Luftwaffe__jpg_rs__Luftwaffe040 copy.jpg",
+      "thumb": "thumbs/AirPhotos__Luftwaffe__jpg_rs__Luftwaffe040 copy.jpg"
+    },
+    {
+      "path": "AirPhotos/Luftwaffe/jpg_rs/Luftwaffe041 copy.jpg",
+      "web": "web/AirPhotos__Luftwaffe__jpg_rs__Luftwaffe041 copy.jpg",
+      "thumb": "thumbs/AirPhotos__Luftwaffe__jpg_rs__Luftwaffe041 copy.jpg"
+    },
+    {
+      "path": "AirPhotos/Luftwaffe/jpg_rs/Luftwaffe042 copy.jpg",
+      "web": "web/AirPhotos__Luftwaffe__jpg_rs__Luftwaffe042 copy.jpg",
+      "thumb": "thumbs/AirPhotos__Luftwaffe__jpg_rs__Luftwaffe042 copy.jpg"
+    },
+    {
+      "path": "AirPhotos/Luftwaffe/jpg_rs/Luftwaffe043 copy.jpg",
+      "web": "web/AirPhotos__Luftwaffe__jpg_rs__Luftwaffe043 copy.jpg",
+      "thumb": "thumbs/AirPhotos__Luftwaffe__jpg_rs__Luftwaffe043 copy.jpg"
+    },
+    {
+      "path": "AirPhotos/Luftwaffe/jpg_rs/Luftwaffe_015.jpg",
+      "web": "web/AirPhotos__Luftwaffe__jpg_rs__Luftwaffe_015.jpg",
+      "thumb": "thumbs/AirPhotos__Luftwaffe__jpg_rs__Luftwaffe_015.jpg"
+    },
+    {
+      "path": "AirPhotos/Luftwaffe/jpg_rs/Luftwaffe_226.jpg",
+      "web": "web/AirPhotos__Luftwaffe__jpg_rs__Luftwaffe_226.jpg",
+      "thumb": "thumbs/AirPhotos__Luftwaffe__jpg_rs__Luftwaffe_226.jpg"
+    },
+    {
+      "path": "AirPhotos/Luftwaffe/jpg_rs/Luftwaffe_228.jpg",
+      "web": "web/AirPhotos__Luftwaffe__jpg_rs__Luftwaffe_228.jpg",
+      "thumb": "thumbs/AirPhotos__Luftwaffe__jpg_rs__Luftwaffe_228.jpg"
+    },
+    {
+      "path": "AirPhotos/Luftwaffe/jpg_rs/Luftwaffe_230.jpg",
+      "web": "web/AirPhotos__Luftwaffe__jpg_rs__Luftwaffe_230.jpg",
+      "thumb": "thumbs/AirPhotos__Luftwaffe__jpg_rs__Luftwaffe_230.jpg"
+    },
+    {
+      "path": "AirPhotos/Luftwaffe/jpg_rs/Luftwaffe_233.jpg",
+      "web": "web/AirPhotos__Luftwaffe__jpg_rs__Luftwaffe_233.jpg",
+      "thumb": "thumbs/AirPhotos__Luftwaffe__jpg_rs__Luftwaffe_233.jpg"
+    },
+    {
+      "path": "AirPhotos/Luftwaffe/jpg_rs/Luftwaffe_235.jpg",
+      "web": "web/AirPhotos__Luftwaffe__jpg_rs__Luftwaffe_235.jpg",
+      "thumb": "thumbs/AirPhotos__Luftwaffe__jpg_rs__Luftwaffe_235.jpg"
+    },
+    {
+      "path": "AirPhotos/Luftwaffe/jpg_rs/Luftwaffe_238.jpg",
+      "web": "web/AirPhotos__Luftwaffe__jpg_rs__Luftwaffe_238.jpg",
+      "thumb": "thumbs/AirPhotos__Luftwaffe__jpg_rs__Luftwaffe_238.jpg"
+    },
+    {
+      "path": "AirPhotos/Luftwaffe/jpg_rs/Luftwaffe_238_crop.jpg",
+      "web": "web/AirPhotos__Luftwaffe__jpg_rs__Luftwaffe_238_crop.jpg",
+      "thumb": "thumbs/AirPhotos__Luftwaffe__jpg_rs__Luftwaffe_238_crop.jpg"
+    },
+    {
+      "path": "AirPhotos/Luftwaffe/jpg_rs/Luftwaffe_238_full_rs.jpg",
+      "web": "web/AirPhotos__Luftwaffe__jpg_rs__Luftwaffe_238_full_rs.jpg",
+      "thumb": "thumbs/AirPhotos__Luftwaffe__jpg_rs__Luftwaffe_238_full_rs.jpg"
+    },
+    {
+      "path": "AirPhotos/Luftwaffe/jpg_rs/Luftwaffe_839.jpg",
+      "web": "web/AirPhotos__Luftwaffe__jpg_rs__Luftwaffe_839.jpg",
+      "thumb": "thumbs/AirPhotos__Luftwaffe__jpg_rs__Luftwaffe_839.jpg"
+    },
+    {
+      "path": "AirPhotos/Luftwaffe/jpg_rs/Luftwaffe_842.jpg",
+      "web": "web/AirPhotos__Luftwaffe__jpg_rs__Luftwaffe_842.jpg",
+      "thumb": "thumbs/AirPhotos__Luftwaffe__jpg_rs__Luftwaffe_842.jpg"
+    }
+  ]
+}
