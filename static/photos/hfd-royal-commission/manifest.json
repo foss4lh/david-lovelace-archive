@@ -1,0 +1,509 @@
+{
+  "collection": "hfd-royal-commission",
+  "total_sampled": 100,
+  "web_max_dim": 1200,
+  "thumb_max_dim": 300,
+  "quality": 80,
+  "photos": [
+    {
+      "path": "History/NMRC_RC/selection/DSC00586.jpg",
+      "web": "web/History__NMRC_RC__selection__DSC00586.jpg",
+      "thumb": "thumbs/History__NMRC_RC__selection__DSC00586.jpg"
+    },
+    {
+      "path": "History/NMRC_RC/CastleFrome/DSC08866.jpg",
+      "web": "web/History__NMRC_RC__CastleFrome__DSC08866.jpg",
+      "thumb": "thumbs/History__NMRC_RC__CastleFrome__DSC08866.jpg"
+    },
+    {
+      "path": "History/NMRC_RC/Avenbury/DSC02592.jpg",
+      "web": "web/History__NMRC_RC__Avenbury__DSC02592.jpg",
+      "thumb": "thumbs/History__NMRC_RC__Avenbury__DSC02592.jpg"
+    },
+    {
+      "path": "History/NMRC_RC/Howe Caple/IMG_9743.jpg",
+      "web": "web/History__NMRC_RC__Howe Caple__IMG_9743.jpg",
+      "thumb": "thumbs/History__NMRC_RC__Howe Caple__IMG_9743.jpg"
+    },
+    {
+      "path": "History/NMRC_RC/Hatfield/DSC00706.jpg",
+      "web": "web/History__NMRC_RC__Hatfield__DSC00706.jpg",
+      "thumb": "thumbs/History__NMRC_RC__Hatfield__DSC00706.jpg"
+    },
+    {
+      "path": "History/NMRC_RC/Foy/IMG_9632FoyDyke.jpg",
+      "web": "web/History__NMRC_RC__Foy__IMG_9632FoyDyke.jpg",
+      "thumb": "thumbs/History__NMRC_RC__Foy__IMG_9632FoyDyke.jpg"
+    },
+    {
+      "path": "History/NMRC_RC/Cradley/2008_12_18 127.jpg",
+      "web": "web/History__NMRC_RC__Cradley__2008_12_18 127.jpg",
+      "thumb": "thumbs/History__NMRC_RC__Cradley__2008_12_18 127.jpg"
+    },
+    {
+      "path": "History/NMRC_RC/Callow/IMG_4617.jpg",
+      "web": "web/History__NMRC_RC__Callow__IMG_4617.jpg",
+      "thumb": "thumbs/History__NMRC_RC__Callow__IMG_4617.jpg"
+    },
+    {
+      "path": "History/NMRC_RC/StMargarets/DSC05537&8.jpg",
+      "web": "web/History__NMRC_RC__StMargarets__DSC05537&8.jpg",
+      "thumb": "thumbs/History__NMRC_RC__StMargarets__DSC05537&8.jpg"
+    },
+    {
+      "path": "History/NMRC_RC/Brinsop[2]/TIF/DSC03642cr.tif",
+      "web": "web/History__NMRC_RC__Brinsop[2]__TIF__DSC03642cr.jpg",
+      "thumb": "thumbs/History__NMRC_RC__Brinsop[2]__TIF__DSC03642cr.jpg"
+    },
+    {
+      "path": "History/NMRC_RC/WelshNewton/IMG_4717.jpg",
+      "web": "web/History__NMRC_RC__WelshNewton__IMG_4717.jpg",
+      "thumb": "thumbs/History__NMRC_RC__WelshNewton__IMG_4717.jpg"
+    },
+    {
+      "path": "History/NMRC_RC/Marstow/DSC08895.jpg",
+      "web": "web/History__NMRC_RC__Marstow__DSC08895.jpg",
+      "thumb": "thumbs/History__NMRC_RC__Marstow__DSC08895.jpg"
+    },
+    {
+      "path": "History/NMRC_RC/Aymestrey/2008_12_18 692.jpg",
+      "web": "web/History__NMRC_RC__Aymestrey__2008_12_18 692.jpg",
+      "thumb": "thumbs/History__NMRC_RC__Aymestrey__2008_12_18 692.jpg"
+    },
+    {
+      "path": "History/NMRC_RC/Aylton/IMG_4394.jpg",
+      "web": "web/History__NMRC_RC__Aylton__IMG_4394.jpg",
+      "thumb": "thumbs/History__NMRC_RC__Aylton__IMG_4394.jpg"
+    },
+    {
+      "path": "History/NMRC_RC/Brockhampton[BromyardPartial]/IMG_0858.jpg",
+      "web": "web/History__NMRC_RC__Brockhampton[BromyardPartial]__IMG_0858.jpg",
+      "thumb": "thumbs/History__NMRC_RC__Brockhampton[BromyardPartial]__IMG_0858.jpg"
+    },
+    {
+      "path": "History/NMRC_RC/Felton/DSC09412.jpg",
+      "web": "web/History__NMRC_RC__Felton__DSC09412.jpg",
+      "thumb": "thumbs/History__NMRC_RC__Felton__DSC09412.jpg"
+    },
+    {
+      "path": "History/NMRC_RC/GrendonBishop/DSC02172.jpg",
+      "web": "web/History__NMRC_RC__GrendonBishop__DSC02172.jpg",
+      "thumb": "thumbs/History__NMRC_RC__GrendonBishop__DSC02172.jpg"
+    },
+    {
+      "path": "History/NMRC_RC/Pixley/IMG_3289.jpg",
+      "web": "web/History__NMRC_RC__Pixley__IMG_3289.jpg",
+      "thumb": "thumbs/History__NMRC_RC__Pixley__IMG_3289.jpg"
+    },
+    {
+      "path": "History/NMRC_RC/Weston_under_Penyard/DSC09134.jpg",
+      "web": "web/History__NMRC_RC__Weston_under_Penyard__DSC09134.jpg",
+      "thumb": "thumbs/History__NMRC_RC__Weston_under_Penyard__DSC09134.jpg"
+    },
+    {
+      "path": "History/NMRC_redboxes/Kentchurch/1966CountryLife_DSC05527_rs.jpg",
+      "web": "web/History__NMRC_redboxes__Kentchurch__1966CountryLife_DSC05527_rs.jpg",
+      "thumb": "thumbs/History__NMRC_redboxes__Kentchurch__1966CountryLife_DSC05527_rs.jpg"
+    },
+    {
+      "path": "History/NMRC_RC/TedstoneDelamere/TidbatchRC1931.jpg",
+      "web": "web/History__NMRC_RC__TedstoneDelamere__TidbatchRC1931.jpg",
+      "thumb": "thumbs/History__NMRC_RC__TedstoneDelamere__TidbatchRC1931.jpg"
+    },
+    {
+      "path": "History/NMRC_RC/Elton/IMG_0387.jpg",
+      "web": "web/History__NMRC_RC__Elton__IMG_0387.jpg",
+      "thumb": "thumbs/History__NMRC_RC__Elton__IMG_0387.jpg"
+    },
+    {
+      "path": "History/NMRC_redboxes/1Aug2014/DSC00493rs.jpg",
+      "web": "web/History__NMRC_redboxes__1Aug2014__DSC00493rs.jpg",
+      "thumb": "thumbs/History__NMRC_redboxes__1Aug2014__DSC00493rs.jpg"
+    },
+    {
+      "path": "History/NMRC_RC/Lyonshall/IMG_6818.jpg",
+      "web": "web/History__NMRC_RC__Lyonshall__IMG_6818.jpg",
+      "thumb": "thumbs/History__NMRC_RC__Lyonshall__IMG_6818.jpg"
+    },
+    {
+      "path": "History/NMRC_RC/Fownhope/IMG_9767FownhopeCourtPhotos.jpg",
+      "web": "web/History__NMRC_RC__Fownhope__IMG_9767FownhopeCourtPhotos.jpg",
+      "thumb": "thumbs/History__NMRC_RC__Fownhope__IMG_9767FownhopeCourtPhotos.jpg"
+    },
+    {
+      "path": "History/NMRC_RC/MuchMarcle [2(2018)]/DSC02303.jpg",
+      "web": "web/History__NMRC_RC__MuchMarcle [2(2018)]__DSC02303.jpg",
+      "thumb": "thumbs/History__NMRC_RC__MuchMarcle [2(2018)]__DSC02303.jpg"
+    },
+    {
+      "path": "History/NMRC_RC/Humber/DSC00734.jpg",
+      "web": "web/History__NMRC_RC__Humber__DSC00734.jpg",
+      "thumb": "thumbs/History__NMRC_RC__Humber__DSC00734.jpg"
+    },
+    {
+      "path": "History/NMRC_RC/AbbeyDore/2008_12_18 527.jpg",
+      "web": "web/History__NMRC_RC__AbbeyDore__2008_12_18 527.jpg",
+      "thumb": "thumbs/History__NMRC_RC__AbbeyDore__2008_12_18 527.jpg"
+    },
+    {
+      "path": "History/NMRC_RC/Dilwyn/dsc05661.tif",
+      "web": "web/History__NMRC_RC__Dilwyn__dsc05661.jpg",
+      "thumb": "thumbs/History__NMRC_RC__Dilwyn__dsc05661.jpg"
+    },
+    {
+      "path": "History/NMRC_redboxes/Newton_St_Margaret/SAM_0832.jpg",
+      "web": "web/History__NMRC_redboxes__Newton_St_Margaret__SAM_0832.jpg",
+      "thumb": "thumbs/History__NMRC_redboxes__Newton_St_Margaret__SAM_0832.jpg"
+    },
+    {
+      "path": "History/NMRC_RC/Letton/IMG_6619letton.jpg",
+      "web": "web/History__NMRC_RC__Letton__IMG_6619letton.jpg",
+      "thumb": "thumbs/History__NMRC_RC__Letton__IMG_6619letton.jpg"
+    },
+    {
+      "path": "History/NMRC_RC/Wacton[2]/DSC02154.jpg",
+      "web": "web/History__NMRC_RC__Wacton[2]__DSC02154.jpg",
+      "thumb": "thumbs/History__NMRC_RC__Wacton[2]__DSC02154.jpg"
+    },
+    {
+      "path": "History/NMRC_RC/Cusop/IMG_6671cusop.jpg",
+      "web": "web/History__NMRC_RC__Cusop__IMG_6671cusop.jpg",
+      "thumb": "thumbs/History__NMRC_RC__Cusop__IMG_6671cusop.jpg"
+    },
+    {
+      "path": "History/NMRC_RC/Wolferlow/DSC00414.jpg",
+      "web": "web/History__NMRC_RC__Wolferlow__DSC00414.jpg",
+      "thumb": "thumbs/History__NMRC_RC__Wolferlow__DSC00414.jpg"
+    },
+    {
+      "path": "History/NMRC_RC/Leominster_Out/DSC00887.jpg",
+      "web": "web/History__NMRC_RC__Leominster_Out__DSC00887.jpg",
+      "thumb": "thumbs/History__NMRC_RC__Leominster_Out__DSC00887.jpg"
+    },
+    {
+      "path": "History/NMRC_redboxes/BactonBallinghamBodenham/SAM_9096.jpg",
+      "web": "web/History__NMRC_redboxes__BactonBallinghamBodenham__SAM_9096.jpg",
+      "thumb": "thumbs/History__NMRC_redboxes__BactonBallinghamBodenham__SAM_9096.jpg"
+    },
+    {
+      "path": "History/NMRC_RC/Woolhope{partial]/IMG_9872HydeHouse.jpg",
+      "web": "web/History__NMRC_RC__Woolhope{partial]__IMG_9872HydeHouse.jpg",
+      "thumb": "thumbs/History__NMRC_RC__Woolhope{partial]__IMG_9872HydeHouse.jpg"
+    },
+    {
+      "path": "History/NMRC_RC/Llanvenoe/IMG_0459.jpg",
+      "web": "web/History__NMRC_RC__Llanvenoe__IMG_0459.jpg",
+      "thumb": "thumbs/History__NMRC_RC__Llanvenoe__IMG_0459.jpg"
+    },
+    {
+      "path": "History/NMRC_RC/Bromyard/DSC08965.jpg",
+      "web": "web/History__NMRC_RC__Bromyard__DSC08965.jpg",
+      "thumb": "thumbs/History__NMRC_RC__Bromyard__DSC08965.jpg"
+    },
+    {
+      "path": "History/NMRC_RC/LittleCowarne/DSC04051.jpg",
+      "web": "web/History__NMRC_RC__LittleCowarne__DSC04051.jpg",
+      "thumb": "thumbs/History__NMRC_RC__LittleCowarne__DSC04051.jpg"
+    },
+    {
+      "path": "History/NMRC_RC/Leysters/2008_12_18 650.jpg",
+      "web": "web/History__NMRC_RC__Leysters__2008_12_18 650.jpg",
+      "thumb": "thumbs/History__NMRC_RC__Leysters__2008_12_18 650.jpg"
+    },
+    {
+      "path": "History/NMRC_RC/Holme Lacy/IMG_0811.jpg",
+      "web": "web/History__NMRC_RC__Holme Lacy__IMG_0811.jpg",
+      "thumb": "thumbs/History__NMRC_RC__Holme Lacy__IMG_0811.jpg"
+    },
+    {
+      "path": "History/NMRC_RC/Bartestree/Layout Image.jpg",
+      "web": "web/History__NMRC_RC__Bartestree__Layout Image.jpg",
+      "thumb": "thumbs/History__NMRC_RC__Bartestree__Layout Image.jpg"
+    },
+    {
+      "path": "History/NMRC_RC/Newton/DSC05572&3.jpg",
+      "web": "web/History__NMRC_RC__Newton__DSC05572&3.jpg",
+      "thumb": "thumbs/History__NMRC_RC__Newton__DSC05572&3.jpg"
+    },
+    {
+      "path": "History/NMRC_RC/Coddington/IMG_6880.jpg",
+      "web": "web/History__NMRC_RC__Coddington__IMG_6880.jpg",
+      "thumb": "thumbs/History__NMRC_RC__Coddington__IMG_6880.jpg"
+    },
+    {
+      "path": "History/NMRC_RC/Llanrothal/IMG_4680.jpg",
+      "web": "web/History__NMRC_RC__Llanrothal__IMG_4680.jpg",
+      "thumb": "thumbs/History__NMRC_RC__Llanrothal__IMG_4680.jpg"
+    },
+    {
+      "path": "History/NMRC_RC/Brimfield/DSC01625.jpg",
+      "web": "web/History__NMRC_RC__Brimfield__DSC01625.jpg",
+      "thumb": "thumbs/History__NMRC_RC__Brimfield__DSC01625.jpg"
+    },
+    {
+      "path": "History/NMRC_RC/Kilpeck/DSC05472resampled.jpg",
+      "web": "web/History__NMRC_RC__Kilpeck__DSC05472resampled.jpg",
+      "thumb": "thumbs/History__NMRC_RC__Kilpeck__DSC05472resampled.jpg"
+    },
+    {
+      "path": "History/NMRC_RC/Luston/DSC07754.jpg",
+      "web": "web/History__NMRC_RC__Luston__DSC07754.jpg",
+      "thumb": "thumbs/History__NMRC_RC__Luston__DSC07754.jpg"
+    },
+    {
+      "path": "History/NMRC_RC/Kinnersley/IMG_6915.jpg",
+      "web": "web/History__NMRC_RC__Kinnersley__IMG_6915.jpg",
+      "thumb": "thumbs/History__NMRC_RC__Kinnersley__IMG_6915.jpg"
+    },
+    {
+      "path": "History/NMRC_RC/KingtonRural/IMG_0275.jpg",
+      "web": "web/History__NMRC_RC__KingtonRural__IMG_0275.jpg",
+      "thumb": "thumbs/History__NMRC_RC__KingtonRural__IMG_0275.jpg"
+    },
+    {
+      "path": "History/NMRC_RC/MuchDewchurch/SAM_0727.jpg",
+      "web": "web/History__NMRC_RC__MuchDewchurch__SAM_0727.jpg",
+      "thumb": "thumbs/History__NMRC_RC__MuchDewchurch__SAM_0727.jpg"
+    },
+    {
+      "path": "History/NMRC_RC/MichealchurchEscley/IMG_6909.jpg",
+      "web": "web/History__NMRC_RC__MichealchurchEscley__IMG_6909.jpg",
+      "thumb": "thumbs/History__NMRC_RC__MichealchurchEscley__IMG_6909.jpg"
+    },
+    {
+      "path": "History/NMRC_RC/Eardisley/IMG_6782.jpg",
+      "web": "web/History__NMRC_RC__Eardisley__IMG_6782.jpg",
+      "thumb": "thumbs/History__NMRC_RC__Eardisley__IMG_6782.jpg"
+    },
+    {
+      "path": "History/NMRC_RC/Kenderchurch/SAM_8078.jpg",
+      "web": "web/History__NMRC_RC__Kenderchurch__SAM_8078.jpg",
+      "thumb": "thumbs/History__NMRC_RC__Kenderchurch__SAM_8078.jpg"
+    },
+    {
+      "path": "History/NMRC_RC/Sellack/IMG_9719CaradocCourtPhoto.jpg",
+      "web": "web/History__NMRC_RC__Sellack__IMG_9719CaradocCourtPhoto.jpg",
+      "thumb": "thumbs/History__NMRC_RC__Sellack__IMG_9719CaradocCourtPhoto.jpg"
+    },
+    {
+      "path": "History/NMRC_RC/LittleBirch/IMG_4594.jpg",
+      "web": "web/History__NMRC_RC__LittleBirch__IMG_4594.jpg",
+      "thumb": "thumbs/History__NMRC_RC__LittleBirch__IMG_4594.jpg"
+    },
+    {
+      "path": "History/NMRC_RC/Yatton/IMG_6856.jpg",
+      "web": "web/History__NMRC_RC__Yatton__IMG_6856.jpg",
+      "thumb": "thumbs/History__NMRC_RC__Yatton__IMG_6856.jpg"
+    },
+    {
+      "path": "History/NMRC_RC/Ashperton_andmoretosortout/dsc01940cr.jpg",
+      "web": "web/History__NMRC_RC__Ashperton_andmoretosortout__dsc01940cr.jpg",
+      "thumb": "thumbs/History__NMRC_RC__Ashperton_andmoretosortout__dsc01940cr.jpg"
+    },
+    {
+      "path": "History/NMRC_RC/Leintwardine/RC_extract/map1.jpg",
+      "web": "web/History__NMRC_RC__Leintwardine__RC_extract__map1.jpg",
+      "thumb": "thumbs/History__NMRC_RC__Leintwardine__RC_extract__map1.jpg"
+    },
+    {
+      "path": "History/NMRC_RC/Clehonger/SAM_8963.jpg",
+      "web": "web/History__NMRC_RC__Clehonger__SAM_8963.jpg",
+      "thumb": "thumbs/History__NMRC_RC__Clehonger__SAM_8963.jpg"
+    },
+    {
+      "path": "History/NMRC_RC/Llanwarne/DSC01667rs.jpg",
+      "web": "web/History__NMRC_RC__Llanwarne__DSC01667rs.jpg",
+      "thumb": "thumbs/History__NMRC_RC__Llanwarne__DSC01667rs.jpg"
+    },
+    {
+      "path": "History/NMRC_RC/Credenhill/SAM_0620.jpg",
+      "web": "web/History__NMRC_RC__Credenhill__SAM_0620.jpg",
+      "thumb": "thumbs/History__NMRC_RC__Credenhill__SAM_0620.jpg"
+    },
+    {
+      "path": "History/NMRC_RC/Ballingham/IMG_9527.jpg",
+      "web": "web/History__NMRC_RC__Ballingham__IMG_9527.jpg",
+      "thumb": "thumbs/History__NMRC_RC__Ballingham__IMG_9527.jpg"
+    },
+    {
+      "path": "History/NMRC_RC/Mathon/IMG_6756.jpg",
+      "web": "web/History__NMRC_RC__Mathon__IMG_6756.jpg",
+      "thumb": "thumbs/History__NMRC_RC__Mathon__IMG_6756.jpg"
+    },
+    {
+      "path": "History/NMRC_RC/Walford[nearRoss]/DSC09069.jpg",
+      "web": "web/History__NMRC_RC__Walford[nearRoss]__DSC09069.jpg",
+      "thumb": "thumbs/History__NMRC_RC__Walford[nearRoss]__DSC09069.jpg"
+    },
+    {
+      "path": "History/NMRC_RC/BishopsFrome/DSC02386.jpg",
+      "web": "web/History__NMRC_RC__BishopsFrome__DSC02386.jpg",
+      "thumb": "thumbs/History__NMRC_RC__BishopsFrome__DSC02386.jpg"
+    },
+    {
+      "path": "History/NMRC_RC/EatonBishop/DSC01486crrs.jpg",
+      "web": "web/History__NMRC_RC__EatonBishop__DSC01486crrs.jpg",
+      "thumb": "thumbs/History__NMRC_RC__EatonBishop__DSC01486crrs.jpg"
+    },
+    {
+      "path": "History/NMRC_redboxes/Croft/SAM_0583.jpg",
+      "web": "web/History__NMRC_redboxes__Croft__SAM_0583.jpg",
+      "thumb": "thumbs/History__NMRC_redboxes__Croft__SAM_0583.jpg"
+    },
+    {
+      "path": "History/NMRC_RC/Grafton/IMG_4670.jpg",
+      "web": "web/History__NMRC_RC__Grafton__IMG_4670.jpg",
+      "thumb": "thumbs/History__NMRC_RC__Grafton__IMG_4670.jpg"
+    },
+    {
+      "path": "History/NMRC_RC/Ledbury/IMG_5141.jpg",
+      "web": "web/History__NMRC_RC__Ledbury__IMG_5141.jpg",
+      "thumb": "thumbs/History__NMRC_RC__Ledbury__IMG_5141.jpg"
+    },
+    {
+      "path": "History/NMRC_RC/OcklePychard/DSC7661.jpg",
+      "web": "web/History__NMRC_RC__OcklePychard__DSC7661.jpg",
+      "thumb": "thumbs/History__NMRC_RC__OcklePychard__DSC7661.jpg"
+    },
+    {
+      "path": "History/NMRC_RC/Pipe&Lyde/DSC09119crrs_RC1931.jpg",
+      "web": "web/History__NMRC_RC__Pipe&Lyde__DSC09119crrs_RC1931.jpg",
+      "thumb": "thumbs/History__NMRC_RC__Pipe&Lyde__DSC09119crrs_RC1931.jpg"
+    },
+    {
+      "path": "History/NMRC_RC/Eastnor/IMG_4871.jpg",
+      "web": "web/History__NMRC_RC__Eastnor__IMG_4871.jpg",
+      "thumb": "thumbs/History__NMRC_RC__Eastnor__IMG_4871.jpg"
+    },
+    {
+      "path": "History/NMRC_RC/Eardisland/DSC09057.jpg",
+      "web": "web/History__NMRC_RC__Eardisland__DSC09057.jpg",
+      "thumb": "thumbs/History__NMRC_RC__Eardisland__DSC09057.jpg"
+    },
+    {
+      "path": "History/NMRC_RC/Weobley/RC_WeobleyNo51survey.jpg",
+      "web": "web/History__NMRC_RC__Weobley__RC_WeobleyNo51survey.jpg",
+      "thumb": "thumbs/History__NMRC_RC__Weobley__RC_WeobleyNo51survey.jpg"
+    },
+    {
+      "path": "History/NMRC_RC/Leominster[town]/DSC01364.jpg",
+      "web": "web/History__NMRC_RC__Leominster[town]__DSC01364.jpg",
+      "thumb": "thumbs/History__NMRC_RC__Leominster[town]__DSC01364.jpg"
+    },
+    {
+      "path": "History/NMRC_RC/Combe/DSC01759.jpg",
+      "web": "web/History__NMRC_RC__Combe__DSC01759.jpg",
+      "thumb": "thumbs/History__NMRC_RC__Combe__DSC01759.jpg"
+    },
+    {
+      "path": "History/NMRC_RC/Linton[Bromyard]/DSC04111.jpg",
+      "web": "web/History__NMRC_RC__Linton[Bromyard]__DSC04111.jpg",
+      "thumb": "thumbs/History__NMRC_RC__Linton[Bromyard]__DSC04111.jpg"
+    },
+    {
+      "path": "History/NMRC_RC/Treville/SAM_8932.jpg",
+      "web": "web/History__NMRC_RC__Treville__SAM_8932.jpg",
+      "thumb": "thumbs/History__NMRC_RC__Treville__SAM_8932.jpg"
+    },
+    {
+      "path": "History/NMRC_RC/LeinthallStarkes/DSC01667.jpg",
+      "web": "web/History__NMRC_RC__LeinthallStarkes__DSC01667.jpg",
+      "thumb": "thumbs/History__NMRC_RC__LeinthallStarkes__DSC01667.jpg"
+    },
+    {
+      "path": "History/NMRC_RC/Aymestrey/jpg/DSC05320.jpg",
+      "web": "web/History__NMRC_RC__Aymestrey__jpg__DSC05320.jpg",
+      "thumb": "thumbs/History__NMRC_RC__Aymestrey__jpg__DSC05320.jpg"
+    },
+    {
+      "path": "History/NMRC_RC/KingsCaple/IMG_9745.jpg",
+      "web": "web/History__NMRC_RC__KingsCaple__IMG_9745.jpg",
+      "thumb": "thumbs/History__NMRC_RC__KingsCaple__IMG_9745.jpg"
+    },
+    {
+      "path": "History/NMRC_RC/Lugwardine/TIFF/DSC03178_Lugwardine8.tif",
+      "web": "web/History__NMRC_RC__Lugwardine__TIFF__DSC03178_Lugwardine8.jpg",
+      "thumb": "thumbs/History__NMRC_RC__Lugwardine__TIFF__DSC03178_Lugwardine8.jpg"
+    },
+    {
+      "path": "History/NMRC_RC/Brinsop[2]/DSC03642cr.jpg",
+      "web": "web/History__NMRC_RC__Brinsop[2]__DSC03642cr.jpg",
+      "thumb": "thumbs/History__NMRC_RC__Brinsop[2]__DSC03642cr.jpg"
+    },
+    {
+      "path": "History/NMRC_RC/Holmer/SAM_7933.tif",
+      "web": "web/History__NMRC_RC__Holmer__SAM_7933.jpg",
+      "thumb": "thumbs/History__NMRC_RC__Holmer__SAM_7933.jpg"
+    },
+    {
+      "path": "History/NMRC_RC/Pudleston/2008_12_18 622.jpg",
+      "web": "web/History__NMRC_RC__Pudleston__2008_12_18 622.jpg",
+      "thumb": "thumbs/History__NMRC_RC__Pudleston__2008_12_18 622.jpg"
+    },
+    {
+      "path": "History/NMRC_RC/Lucton/SAM_8945.jpg",
+      "web": "web/History__NMRC_RC__Lucton__SAM_8945.jpg",
+      "thumb": "thumbs/History__NMRC_RC__Lucton__SAM_8945.jpg"
+    },
+    {
+      "path": "History/NMRC_RC/Winslow[Bromyard]/DSC04133.jpg",
+      "web": "web/History__NMRC_RC__Winslow[Bromyard]__DSC04133.jpg",
+      "thumb": "thumbs/History__NMRC_RC__Winslow[Bromyard]__DSC04133.jpg"
+    },
+    {
+      "path": "History/NMRC_printed/ArchaeoReports/SAM_8805.jpg",
+      "web": "web/History__NMRC_printed__ArchaeoReports__SAM_8805.jpg",
+      "thumb": "thumbs/History__NMRC_printed__ArchaeoReports__SAM_8805.jpg"
+    },
+    {
+      "path": "History/NMRC_RC/SollersHope/IMG_6783.jpg",
+      "web": "web/History__NMRC_RC__SollersHope__IMG_6783.jpg",
+      "thumb": "thumbs/History__NMRC_RC__SollersHope__IMG_6783.jpg"
+    },
+    {
+      "path": "History/NMRC_RC/Sarnesfield/IMG_6845.jpg",
+      "web": "web/History__NMRC_RC__Sarnesfield__IMG_6845.jpg",
+      "thumb": "thumbs/History__NMRC_RC__Sarnesfield__IMG_6845.jpg"
+    },
+    {
+      "path": "History/NMRC_RC/Whitchurch/DSC02478.jpg",
+      "web": "web/History__NMRC_RC__Whitchurch__DSC02478.jpg",
+      "thumb": "thumbs/History__NMRC_RC__Whitchurch__DSC02478.jpg"
+    },
+    {
+      "path": "History/NMRC_redboxes/Ledbury/SAM_0775.jpg",
+      "web": "web/History__NMRC_redboxes__Ledbury__SAM_0775.jpg",
+      "thumb": "thumbs/History__NMRC_redboxes__Ledbury__SAM_0775.jpg"
+    },
+    {
+      "path": "History/NMRC_RC/Dinedor/IMG_4654.jpg",
+      "web": "web/History__NMRC_RC__Dinedor__IMG_4654.jpg",
+      "thumb": "thumbs/History__NMRC_RC__Dinedor__IMG_4654.jpg"
+    },
+    {
+      "path": "History/NMRC_RC/Wormbridge/DSC02431.jpg",
+      "web": "web/History__NMRC_RC__Wormbridge__DSC02431.jpg",
+      "thumb": "thumbs/History__NMRC_RC__Wormbridge__DSC02431.jpg"
+    },
+    {
+      "path": "History/NMRC_RC/Orleton/DSC07718.jpg",
+      "web": "web/History__NMRC_RC__Orleton__DSC07718.jpg",
+      "thumb": "thumbs/History__NMRC_RC__Orleton__DSC07718.jpg"
+    },
+    {
+      "path": "History/NMRC_RC/Ashperton_andmoretosortout/100MSDCF/New Panorama1.tif",
+      "web": "web/History__NMRC_RC__Ashperton_andmoretosortout__100MSDCF__New Panorama1.jpg",
+      "thumb": "thumbs/History__NMRC_RC__Ashperton_andmoretosortout__100MSDCF__New Panorama1.jpg"
+    },
+    {
+      "path": "History/NMRC_RC/Unsortedfrom_7Dec2017/DSC02078cr.jpg",
+      "web": "web/History__NMRC_RC__Unsortedfrom_7Dec2017__DSC02078cr.jpg",
+      "thumb": "thumbs/History__NMRC_RC__Unsortedfrom_7Dec2017__DSC02078cr.jpg"
+    },
+    {
+      "path": "History/NMRC_RC/EwyasHarold/DSC02127.jpg",
+      "web": "web/History__NMRC_RC__EwyasHarold__DSC02127.jpg",
+      "thumb": "thumbs/History__NMRC_RC__EwyasHarold__DSC02127.jpg"
+    }
+  ]
+}

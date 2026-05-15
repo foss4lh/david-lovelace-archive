@@ -1,0 +1,509 @@
+{
+  "collection": "hfd-river-wye",
+  "total_sampled": 100,
+  "web_max_dim": 1200,
+  "thumb_max_dim": 300,
+  "quality": 80,
+  "photos": [
+    {
+      "path": "History/NMRC_RC/Brockhampton[Wye]/IMG_9741BrockhamptonCamp.jpg",
+      "web": "web/History__NMRC_RC__Brockhampton[Wye]__IMG_9741BrockhamptonCamp.jpg",
+      "thumb": "thumbs/History__NMRC_RC__Brockhampton[Wye]__IMG_9741BrockhamptonCamp.jpg"
+    },
+    {
+      "path": "History/NMRC_RC/Preston_on_Wye[someframesneed reversing]/DSC02573.jpg",
+      "web": "web/History__NMRC_RC__Preston_on_Wye[someframesneed reversing]__DSC02573.jpg",
+      "thumb": "thumbs/History__NMRC_RC__Preston_on_Wye[someframesneed reversing]__DSC02573.jpg"
+    },
+    {
+      "path": "History/NMRC_RC/Ross-on-Wye/DSC08630.jpg",
+      "web": "web/History__NMRC_RC__Ross-on-Wye__DSC08630.jpg",
+      "thumb": "thumbs/History__NMRC_RC__Ross-on-Wye__DSC08630.jpg"
+    },
+    {
+      "path": "History/NRAarchives/GWR_neg35_Photodetails.jpg",
+      "web": "web/History__NRAarchives__GWR_neg35_Photodetails.jpg",
+      "thumb": "thumbs/History__NRAarchives__GWR_neg35_Photodetails.jpg"
+    },
+    {
+      "path": "History/NRAarchives/NRAarchivesMnmouth/NRA_negwallet_1_039.tif",
+      "web": "web/History__NRAarchives__NRAarchivesMnmouth__NRA_negwallet_1_039.jpg",
+      "thumb": "thumbs/History__NRAarchives__NRAarchivesMnmouth__NRA_negwallet_1_039.jpg"
+    },
+    {
+      "path": "History/NRAarchives/negwallet_LuggfromDinmoreHill/NRA_LuggFromDinmoreHill_001.tif",
+      "web": "web/History__NRAarchives__negwallet_LuggfromDinmoreHill__NRA_LuggFromDinmoreHill_001.jpg",
+      "thumb": "thumbs/History__NRAarchives__negwallet_LuggfromDinmoreHill__NRA_LuggFromDinmoreHill_001.jpg"
+    },
+    {
+      "path": "History/NMRC_RC/Brockhampton[Wye]/IMG_9728FawleyCourt.jpg",
+      "web": "web/History__NMRC_RC__Brockhampton[Wye]__IMG_9728FawleyCourt.jpg",
+      "thumb": "thumbs/History__NMRC_RC__Brockhampton[Wye]__IMG_9728FawleyCourt.jpg"
+    },
+    {
+      "path": "History/NMRC_RC/Preston_on_Wye[someframesneed reversing]/DSC02592.jpg",
+      "web": "web/History__NMRC_RC__Preston_on_Wye[someframesneed reversing]__DSC02592.jpg",
+      "thumb": "thumbs/History__NMRC_RC__Preston_on_Wye[someframesneed reversing]__DSC02592.jpg"
+    },
+    {
+      "path": "History/NMRC_RC/Preston_on_Wye[someframesneed reversing]/DSC02604.jpg",
+      "web": "web/History__NMRC_RC__Preston_on_Wye[someframesneed reversing]__DSC02604.jpg",
+      "thumb": "thumbs/History__NMRC_RC__Preston_on_Wye[someframesneed reversing]__DSC02604.jpg"
+    },
+    {
+      "path": "History/NMRC_RC/Preston_on_Wye[someframesneed reversing]/DSC02617.jpg",
+      "web": "web/History__NMRC_RC__Preston_on_Wye[someframesneed reversing]__DSC02617.jpg",
+      "thumb": "thumbs/History__NMRC_RC__Preston_on_Wye[someframesneed reversing]__DSC02617.jpg"
+    },
+    {
+      "path": "History/NMRC_RC/Ross-on-Wye/DSC08626.jpg",
+      "web": "web/History__NMRC_RC__Ross-on-Wye__DSC08626.jpg",
+      "thumb": "thumbs/History__NMRC_RC__Ross-on-Wye__DSC08626.jpg"
+    },
+    {
+      "path": "History/NMRC_RC/Ross-on-Wye/DSC08627.jpg",
+      "web": "web/History__NMRC_RC__Ross-on-Wye__DSC08627.jpg",
+      "thumb": "thumbs/History__NMRC_RC__Ross-on-Wye__DSC08627.jpg"
+    },
+    {
+      "path": "History/NMRC_RC/Ross-on-Wye/DSC08629.jpg",
+      "web": "web/History__NMRC_RC__Ross-on-Wye__DSC08629.jpg",
+      "thumb": "thumbs/History__NMRC_RC__Ross-on-Wye__DSC08629.jpg"
+    },
+    {
+      "path": "History/NMRC_RC/Ross-on-Wye/DSC08633.jpg",
+      "web": "web/History__NMRC_RC__Ross-on-Wye__DSC08633.jpg",
+      "thumb": "thumbs/History__NMRC_RC__Ross-on-Wye__DSC08633.jpg"
+    },
+    {
+      "path": "History/NMRC_RC/Ross-on-Wye/DSC08635.jpg",
+      "web": "web/History__NMRC_RC__Ross-on-Wye__DSC08635.jpg",
+      "thumb": "thumbs/History__NMRC_RC__Ross-on-Wye__DSC08635.jpg"
+    },
+    {
+      "path": "History/NMRC_RC/Ross-on-Wye/DSC08636.jpg",
+      "web": "web/History__NMRC_RC__Ross-on-Wye__DSC08636.jpg",
+      "thumb": "thumbs/History__NMRC_RC__Ross-on-Wye__DSC08636.jpg"
+    },
+    {
+      "path": "History/NMRC_RC/Ross-on-Wye/DSC08639.jpg",
+      "web": "web/History__NMRC_RC__Ross-on-Wye__DSC08639.jpg",
+      "thumb": "thumbs/History__NMRC_RC__Ross-on-Wye__DSC08639.jpg"
+    },
+    {
+      "path": "History/NMRC_RC/Ross-on-Wye/DSC08641.jpg",
+      "web": "web/History__NMRC_RC__Ross-on-Wye__DSC08641.jpg",
+      "thumb": "thumbs/History__NMRC_RC__Ross-on-Wye__DSC08641.jpg"
+    },
+    {
+      "path": "History/NMRC_RC/Ross-on-Wye/DSC08645.jpg",
+      "web": "web/History__NMRC_RC__Ross-on-Wye__DSC08645.jpg",
+      "thumb": "thumbs/History__NMRC_RC__Ross-on-Wye__DSC08645.jpg"
+    },
+    {
+      "path": "History/NMRC_RC/Ross-on-Wye/DSC08646.jpg",
+      "web": "web/History__NMRC_RC__Ross-on-Wye__DSC08646.jpg",
+      "thumb": "thumbs/History__NMRC_RC__Ross-on-Wye__DSC08646.jpg"
+    },
+    {
+      "path": "History/NMRC_RC/Ross-on-Wye/DSC08649.jpg",
+      "web": "web/History__NMRC_RC__Ross-on-Wye__DSC08649.jpg",
+      "thumb": "thumbs/History__NMRC_RC__Ross-on-Wye__DSC08649.jpg"
+    },
+    {
+      "path": "History/NMRC_RC/Ross-on-Wye/DSC08650.jpg",
+      "web": "web/History__NMRC_RC__Ross-on-Wye__DSC08650.jpg",
+      "thumb": "thumbs/History__NMRC_RC__Ross-on-Wye__DSC08650.jpg"
+    },
+    {
+      "path": "History/NMRC_RC/Ross-on-Wye/DSC08651.jpg",
+      "web": "web/History__NMRC_RC__Ross-on-Wye__DSC08651.jpg",
+      "thumb": "thumbs/History__NMRC_RC__Ross-on-Wye__DSC08651.jpg"
+    },
+    {
+      "path": "History/NMRC_RC/Ross-on-Wye/DSC08659.jpg",
+      "web": "web/History__NMRC_RC__Ross-on-Wye__DSC08659.jpg",
+      "thumb": "thumbs/History__NMRC_RC__Ross-on-Wye__DSC08659.jpg"
+    },
+    {
+      "path": "History/NMRC_RC/Ross-on-Wye/DSC08660.jpg",
+      "web": "web/History__NMRC_RC__Ross-on-Wye__DSC08660.jpg",
+      "thumb": "thumbs/History__NMRC_RC__Ross-on-Wye__DSC08660.jpg"
+    },
+    {
+      "path": "History/NMRC_RC/Ross-on-Wye/DSC08664.jpg",
+      "web": "web/History__NMRC_RC__Ross-on-Wye__DSC08664.jpg",
+      "thumb": "thumbs/History__NMRC_RC__Ross-on-Wye__DSC08664.jpg"
+    },
+    {
+      "path": "History/NMRC_RC/Ross-on-Wye/DSC08665.jpg",
+      "web": "web/History__NMRC_RC__Ross-on-Wye__DSC08665.jpg",
+      "thumb": "thumbs/History__NMRC_RC__Ross-on-Wye__DSC08665.jpg"
+    },
+    {
+      "path": "History/NMRC_RC/Ross-on-Wye/DSC08669.jpg",
+      "web": "web/History__NMRC_RC__Ross-on-Wye__DSC08669.jpg",
+      "thumb": "thumbs/History__NMRC_RC__Ross-on-Wye__DSC08669.jpg"
+    },
+    {
+      "path": "History/NMRC_RC/Ross-on-Wye/DSC08672.jpg",
+      "web": "web/History__NMRC_RC__Ross-on-Wye__DSC08672.jpg",
+      "thumb": "thumbs/History__NMRC_RC__Ross-on-Wye__DSC08672.jpg"
+    },
+    {
+      "path": "History/NMRC_RC/Ross-on-Wye/DSC08673.jpg",
+      "web": "web/History__NMRC_RC__Ross-on-Wye__DSC08673.jpg",
+      "thumb": "thumbs/History__NMRC_RC__Ross-on-Wye__DSC08673.jpg"
+    },
+    {
+      "path": "History/NMRC_RC/Ross-on-Wye/DSC08676.jpg",
+      "web": "web/History__NMRC_RC__Ross-on-Wye__DSC08676.jpg",
+      "thumb": "thumbs/History__NMRC_RC__Ross-on-Wye__DSC08676.jpg"
+    },
+    {
+      "path": "History/NMRC_RC/Ross-on-Wye/DSC08678.jpg",
+      "web": "web/History__NMRC_RC__Ross-on-Wye__DSC08678.jpg",
+      "thumb": "thumbs/History__NMRC_RC__Ross-on-Wye__DSC08678.jpg"
+    },
+    {
+      "path": "History/NMRC_RC/Ross-on-Wye/DSC08680.jpg",
+      "web": "web/History__NMRC_RC__Ross-on-Wye__DSC08680.jpg",
+      "thumb": "thumbs/History__NMRC_RC__Ross-on-Wye__DSC08680.jpg"
+    },
+    {
+      "path": "History/NMRC_RC/Ross-on-Wye/DSC08683.jpg",
+      "web": "web/History__NMRC_RC__Ross-on-Wye__DSC08683.jpg",
+      "thumb": "thumbs/History__NMRC_RC__Ross-on-Wye__DSC08683.jpg"
+    },
+    {
+      "path": "History/NMRC_RC/Ross-on-Wye/DSC08684.jpg",
+      "web": "web/History__NMRC_RC__Ross-on-Wye__DSC08684.jpg",
+      "thumb": "thumbs/History__NMRC_RC__Ross-on-Wye__DSC08684.jpg"
+    },
+    {
+      "path": "History/NMRC_RC/Ross-on-Wye/DSC08691.jpg",
+      "web": "web/History__NMRC_RC__Ross-on-Wye__DSC08691.jpg",
+      "thumb": "thumbs/History__NMRC_RC__Ross-on-Wye__DSC08691.jpg"
+    },
+    {
+      "path": "History/NMRC_RC/Ross-on-Wye/DSC08695.jpg",
+      "web": "web/History__NMRC_RC__Ross-on-Wye__DSC08695.jpg",
+      "thumb": "thumbs/History__NMRC_RC__Ross-on-Wye__DSC08695.jpg"
+    },
+    {
+      "path": "History/NMRC_RC/Ross-on-Wye/DSC08696.jpg",
+      "web": "web/History__NMRC_RC__Ross-on-Wye__DSC08696.jpg",
+      "thumb": "thumbs/History__NMRC_RC__Ross-on-Wye__DSC08696.jpg"
+    },
+    {
+      "path": "History/NMRC_RC/Ross-on-Wye/DSC08699.jpg",
+      "web": "web/History__NMRC_RC__Ross-on-Wye__DSC08699.jpg",
+      "thumb": "thumbs/History__NMRC_RC__Ross-on-Wye__DSC08699.jpg"
+    },
+    {
+      "path": "History/NMRC_RC/Ross-on-Wye/DSC08700.jpg",
+      "web": "web/History__NMRC_RC__Ross-on-Wye__DSC08700.jpg",
+      "thumb": "thumbs/History__NMRC_RC__Ross-on-Wye__DSC08700.jpg"
+    },
+    {
+      "path": "History/NMRC_RC/Ross-on-Wye/DSC08703.jpg",
+      "web": "web/History__NMRC_RC__Ross-on-Wye__DSC08703.jpg",
+      "thumb": "thumbs/History__NMRC_RC__Ross-on-Wye__DSC08703.jpg"
+    },
+    {
+      "path": "History/NMRC_RC/Ross-on-Wye/DSC08705.jpg",
+      "web": "web/History__NMRC_RC__Ross-on-Wye__DSC08705.jpg",
+      "thumb": "thumbs/History__NMRC_RC__Ross-on-Wye__DSC08705.jpg"
+    },
+    {
+      "path": "History/NMRC_RC/Ross-on-Wye/DSC08706.jpg",
+      "web": "web/History__NMRC_RC__Ross-on-Wye__DSC08706.jpg",
+      "thumb": "thumbs/History__NMRC_RC__Ross-on-Wye__DSC08706.jpg"
+    },
+    {
+      "path": "History/NMRC_RC/Ross-on-Wye/DSC08710.jpg",
+      "web": "web/History__NMRC_RC__Ross-on-Wye__DSC08710.jpg",
+      "thumb": "thumbs/History__NMRC_RC__Ross-on-Wye__DSC08710.jpg"
+    },
+    {
+      "path": "History/NMRC_RC/Ross-on-Wye/DSC08715.jpg",
+      "web": "web/History__NMRC_RC__Ross-on-Wye__DSC08715.jpg",
+      "thumb": "thumbs/History__NMRC_RC__Ross-on-Wye__DSC08715.jpg"
+    },
+    {
+      "path": "History/NMRC_RC/Ross-on-Wye/DSC08717.jpg",
+      "web": "web/History__NMRC_RC__Ross-on-Wye__DSC08717.jpg",
+      "thumb": "thumbs/History__NMRC_RC__Ross-on-Wye__DSC08717.jpg"
+    },
+    {
+      "path": "History/NMRC_RC/Ross-on-Wye/DSC08722.jpg",
+      "web": "web/History__NMRC_RC__Ross-on-Wye__DSC08722.jpg",
+      "thumb": "thumbs/History__NMRC_RC__Ross-on-Wye__DSC08722.jpg"
+    },
+    {
+      "path": "History/NMRC_RC/Ross-on-Wye/DSC08723.jpg",
+      "web": "web/History__NMRC_RC__Ross-on-Wye__DSC08723.jpg",
+      "thumb": "thumbs/History__NMRC_RC__Ross-on-Wye__DSC08723.jpg"
+    },
+    {
+      "path": "History/NMRC_RC/Ross-on-Wye/DSC08724.jpg",
+      "web": "web/History__NMRC_RC__Ross-on-Wye__DSC08724.jpg",
+      "thumb": "thumbs/History__NMRC_RC__Ross-on-Wye__DSC08724.jpg"
+    },
+    {
+      "path": "History/NMRC_RC/Ross-on-Wye/DSC08725.jpg",
+      "web": "web/History__NMRC_RC__Ross-on-Wye__DSC08725.jpg",
+      "thumb": "thumbs/History__NMRC_RC__Ross-on-Wye__DSC08725.jpg"
+    },
+    {
+      "path": "History/NMRC_RC/Ross-on-Wye/DSC08727.jpg",
+      "web": "web/History__NMRC_RC__Ross-on-Wye__DSC08727.jpg",
+      "thumb": "thumbs/History__NMRC_RC__Ross-on-Wye__DSC08727.jpg"
+    },
+    {
+      "path": "History/NMRC_RC/Ross-on-Wye/DSC08733.jpg",
+      "web": "web/History__NMRC_RC__Ross-on-Wye__DSC08733.jpg",
+      "thumb": "thumbs/History__NMRC_RC__Ross-on-Wye__DSC08733.jpg"
+    },
+    {
+      "path": "History/NMRC_RC/Ross-on-Wye/DSC08734.jpg",
+      "web": "web/History__NMRC_RC__Ross-on-Wye__DSC08734.jpg",
+      "thumb": "thumbs/History__NMRC_RC__Ross-on-Wye__DSC08734.jpg"
+    },
+    {
+      "path": "History/NMRC_RC/Ross-on-Wye/DSC08736.jpg",
+      "web": "web/History__NMRC_RC__Ross-on-Wye__DSC08736.jpg",
+      "thumb": "thumbs/History__NMRC_RC__Ross-on-Wye__DSC08736.jpg"
+    },
+    {
+      "path": "History/NMRC_RC/Ross-on-Wye/DSC08743.jpg",
+      "web": "web/History__NMRC_RC__Ross-on-Wye__DSC08743.jpg",
+      "thumb": "thumbs/History__NMRC_RC__Ross-on-Wye__DSC08743.jpg"
+    },
+    {
+      "path": "History/NMRC_RC/Ross-on-Wye/DSC08744.jpg",
+      "web": "web/History__NMRC_RC__Ross-on-Wye__DSC08744.jpg",
+      "thumb": "thumbs/History__NMRC_RC__Ross-on-Wye__DSC08744.jpg"
+    },
+    {
+      "path": "History/NMRC_RC/Ross-on-Wye/DSC08746.jpg",
+      "web": "web/History__NMRC_RC__Ross-on-Wye__DSC08746.jpg",
+      "thumb": "thumbs/History__NMRC_RC__Ross-on-Wye__DSC08746.jpg"
+    },
+    {
+      "path": "History/NMRC_RC/Ross-on-Wye/DSC08748.jpg",
+      "web": "web/History__NMRC_RC__Ross-on-Wye__DSC08748.jpg",
+      "thumb": "thumbs/History__NMRC_RC__Ross-on-Wye__DSC08748.jpg"
+    },
+    {
+      "path": "History/NMRC_RC/Ross-on-Wye/DSC08750.jpg",
+      "web": "web/History__NMRC_RC__Ross-on-Wye__DSC08750.jpg",
+      "thumb": "thumbs/History__NMRC_RC__Ross-on-Wye__DSC08750.jpg"
+    },
+    {
+      "path": "History/NMRC_RC/Ross-on-Wye/DSC08751.jpg",
+      "web": "web/History__NMRC_RC__Ross-on-Wye__DSC08751.jpg",
+      "thumb": "thumbs/History__NMRC_RC__Ross-on-Wye__DSC08751.jpg"
+    },
+    {
+      "path": "History/NMRC_RC/Ross-on-Wye/DSC08755.jpg",
+      "web": "web/History__NMRC_RC__Ross-on-Wye__DSC08755.jpg",
+      "thumb": "thumbs/History__NMRC_RC__Ross-on-Wye__DSC08755.jpg"
+    },
+    {
+      "path": "History/NMRC_RC/Ross-on-Wye/DSC08757.jpg",
+      "web": "web/History__NMRC_RC__Ross-on-Wye__DSC08757.jpg",
+      "thumb": "thumbs/History__NMRC_RC__Ross-on-Wye__DSC08757.jpg"
+    },
+    {
+      "path": "History/NMRC_RC/Ross-on-Wye/DSC08758.jpg",
+      "web": "web/History__NMRC_RC__Ross-on-Wye__DSC08758.jpg",
+      "thumb": "thumbs/History__NMRC_RC__Ross-on-Wye__DSC08758.jpg"
+    },
+    {
+      "path": "History/NMRC_RC/Ross-on-Wye/DSC08760.jpg",
+      "web": "web/History__NMRC_RC__Ross-on-Wye__DSC08760.jpg",
+      "thumb": "thumbs/History__NMRC_RC__Ross-on-Wye__DSC08760.jpg"
+    },
+    {
+      "path": "History/NMRC_RC/Ross-on-Wye/DSC08765.jpg",
+      "web": "web/History__NMRC_RC__Ross-on-Wye__DSC08765.jpg",
+      "thumb": "thumbs/History__NMRC_RC__Ross-on-Wye__DSC08765.jpg"
+    },
+    {
+      "path": "History/NMRC_RC/Ross-on-Wye/DSC08766.jpg",
+      "web": "web/History__NMRC_RC__Ross-on-Wye__DSC08766.jpg",
+      "thumb": "thumbs/History__NMRC_RC__Ross-on-Wye__DSC08766.jpg"
+    },
+    {
+      "path": "History/NMRC_RC/Ross-on-Wye/DSC08768.jpg",
+      "web": "web/History__NMRC_RC__Ross-on-Wye__DSC08768.jpg",
+      "thumb": "thumbs/History__NMRC_RC__Ross-on-Wye__DSC08768.jpg"
+    },
+    {
+      "path": "History/NMRC_RC/Ross-on-Wye/DSC08770.jpg",
+      "web": "web/History__NMRC_RC__Ross-on-Wye__DSC08770.jpg",
+      "thumb": "thumbs/History__NMRC_RC__Ross-on-Wye__DSC08770.jpg"
+    },
+    {
+      "path": "History/NMRC_RC/Ross-on-Wye/DSC08774.jpg",
+      "web": "web/History__NMRC_RC__Ross-on-Wye__DSC08774.jpg",
+      "thumb": "thumbs/History__NMRC_RC__Ross-on-Wye__DSC08774.jpg"
+    },
+    {
+      "path": "History/NMRC_RC/Ross-on-Wye/DSC08776.jpg",
+      "web": "web/History__NMRC_RC__Ross-on-Wye__DSC08776.jpg",
+      "thumb": "thumbs/History__NMRC_RC__Ross-on-Wye__DSC08776.jpg"
+    },
+    {
+      "path": "History/NMRC_RC/Ross-on-Wye/DSC08779.jpg",
+      "web": "web/History__NMRC_RC__Ross-on-Wye__DSC08779.jpg",
+      "thumb": "thumbs/History__NMRC_RC__Ross-on-Wye__DSC08779.jpg"
+    },
+    {
+      "path": "History/NMRC_RC/Ross-on-Wye/DSC08780.jpg",
+      "web": "web/History__NMRC_RC__Ross-on-Wye__DSC08780.jpg",
+      "thumb": "thumbs/History__NMRC_RC__Ross-on-Wye__DSC08780.jpg"
+    },
+    {
+      "path": "History/NMRC_RC/Ross-on-Wye/DSC08781.jpg",
+      "web": "web/History__NMRC_RC__Ross-on-Wye__DSC08781.jpg",
+      "thumb": "thumbs/History__NMRC_RC__Ross-on-Wye__DSC08781.jpg"
+    },
+    {
+      "path": "History/NMRC_RC/Ross-on-Wye/DSC08784.jpg",
+      "web": "web/History__NMRC_RC__Ross-on-Wye__DSC08784.jpg",
+      "thumb": "thumbs/History__NMRC_RC__Ross-on-Wye__DSC08784.jpg"
+    },
+    {
+      "path": "History/NMRC_RC/Ross-on-Wye/DSC08788.jpg",
+      "web": "web/History__NMRC_RC__Ross-on-Wye__DSC08788.jpg",
+      "thumb": "thumbs/History__NMRC_RC__Ross-on-Wye__DSC08788.jpg"
+    },
+    {
+      "path": "History/NMRC_RC/Ross-on-Wye/DSC08789.jpg",
+      "web": "web/History__NMRC_RC__Ross-on-Wye__DSC08789.jpg",
+      "thumb": "thumbs/History__NMRC_RC__Ross-on-Wye__DSC08789.jpg"
+    },
+    {
+      "path": "History/NMRC_RC/Ross-on-Wye/DSC08794.jpg",
+      "web": "web/History__NMRC_RC__Ross-on-Wye__DSC08794.jpg",
+      "thumb": "thumbs/History__NMRC_RC__Ross-on-Wye__DSC08794.jpg"
+    },
+    {
+      "path": "History/NMRC_RC/Ross-on-Wye/DSC08795.jpg",
+      "web": "web/History__NMRC_RC__Ross-on-Wye__DSC08795.jpg",
+      "thumb": "thumbs/History__NMRC_RC__Ross-on-Wye__DSC08795.jpg"
+    },
+    {
+      "path": "History/NMRC_RC/Ross-on-Wye/DSC08796.jpg",
+      "web": "web/History__NMRC_RC__Ross-on-Wye__DSC08796.jpg",
+      "thumb": "thumbs/History__NMRC_RC__Ross-on-Wye__DSC08796.jpg"
+    },
+    {
+      "path": "History/NMRC_RC/Ross-on-Wye/DSC08797.jpg",
+      "web": "web/History__NMRC_RC__Ross-on-Wye__DSC08797.jpg",
+      "thumb": "thumbs/History__NMRC_RC__Ross-on-Wye__DSC08797.jpg"
+    },
+    {
+      "path": "History/NMRC_RC/Ross-on-Wye/DSC08798.jpg",
+      "web": "web/History__NMRC_RC__Ross-on-Wye__DSC08798.jpg",
+      "thumb": "thumbs/History__NMRC_RC__Ross-on-Wye__DSC08798.jpg"
+    },
+    {
+      "path": "History/NMRC_RC/Ross-on-Wye/DSC08799.jpg",
+      "web": "web/History__NMRC_RC__Ross-on-Wye__DSC08799.jpg",
+      "thumb": "thumbs/History__NMRC_RC__Ross-on-Wye__DSC08799.jpg"
+    },
+    {
+      "path": "History/NMRC_RC/Ross-on-Wye/DSC08801.jpg",
+      "web": "web/History__NMRC_RC__Ross-on-Wye__DSC08801.jpg",
+      "thumb": "thumbs/History__NMRC_RC__Ross-on-Wye__DSC08801.jpg"
+    },
+    {
+      "path": "History/NMRC_RC/Ross-on-Wye/DSC08802.jpg",
+      "web": "web/History__NMRC_RC__Ross-on-Wye__DSC08802.jpg",
+      "thumb": "thumbs/History__NMRC_RC__Ross-on-Wye__DSC08802.jpg"
+    },
+    {
+      "path": "History/NMRC_RC/Ross-on-Wye/DSC08810.jpg",
+      "web": "web/History__NMRC_RC__Ross-on-Wye__DSC08810.jpg",
+      "thumb": "thumbs/History__NMRC_RC__Ross-on-Wye__DSC08810.jpg"
+    },
+    {
+      "path": "History/NMRC_RC/Ross-on-Wye/DSC08814.jpg",
+      "web": "web/History__NMRC_RC__Ross-on-Wye__DSC08814.jpg",
+      "thumb": "thumbs/History__NMRC_RC__Ross-on-Wye__DSC08814.jpg"
+    },
+    {
+      "path": "History/NMRC_RC/Ross-on-Wye/DSC08817.jpg",
+      "web": "web/History__NMRC_RC__Ross-on-Wye__DSC08817.jpg",
+      "thumb": "thumbs/History__NMRC_RC__Ross-on-Wye__DSC08817.jpg"
+    },
+    {
+      "path": "History/NMRC_RC/Ross-on-Wye/DSC08819.jpg",
+      "web": "web/History__NMRC_RC__Ross-on-Wye__DSC08819.jpg",
+      "thumb": "thumbs/History__NMRC_RC__Ross-on-Wye__DSC08819.jpg"
+    },
+    {
+      "path": "History/NMRC_RC/Ross-on-Wye/DSC08822.jpg",
+      "web": "web/History__NMRC_RC__Ross-on-Wye__DSC08822.jpg",
+      "thumb": "thumbs/History__NMRC_RC__Ross-on-Wye__DSC08822.jpg"
+    },
+    {
+      "path": "History/NMRC_RC/Ross-on-Wye/DSC08823.jpg",
+      "web": "web/History__NMRC_RC__Ross-on-Wye__DSC08823.jpg",
+      "thumb": "thumbs/History__NMRC_RC__Ross-on-Wye__DSC08823.jpg"
+    },
+    {
+      "path": "History/NMRC_RC/Ross-on-Wye/DSC08825.jpg",
+      "web": "web/History__NMRC_RC__Ross-on-Wye__DSC08825.jpg",
+      "thumb": "thumbs/History__NMRC_RC__Ross-on-Wye__DSC08825.jpg"
+    },
+    {
+      "path": "History/NMRC_RC/Ross-on-Wye/DSC08829.jpg",
+      "web": "web/History__NMRC_RC__Ross-on-Wye__DSC08829.jpg",
+      "thumb": "thumbs/History__NMRC_RC__Ross-on-Wye__DSC08829.jpg"
+    },
+    {
+      "path": "History/NRAarchives/GWR_neg32_Photodetails.jpg",
+      "web": "web/History__NRAarchives__GWR_neg32_Photodetails.jpg",
+      "thumb": "thumbs/History__NRAarchives__GWR_neg32_Photodetails.jpg"
+    },
+    {
+      "path": "History/NRAarchives/NRAarchivesMnmouth/NRA_negwallet_1_010.tif",
+      "web": "web/History__NRAarchives__NRAarchivesMnmouth__NRA_negwallet_1_010.jpg",
+      "thumb": "thumbs/History__NRAarchives__NRAarchivesMnmouth__NRA_negwallet_1_010.jpg"
+    },
+    {
+      "path": "History/NRAarchives/NRAarchivesMnmouth/NRA_negwallet_1_012.tif",
+      "web": "web/History__NRAarchives__NRAarchivesMnmouth__NRA_negwallet_1_012.jpg",
+      "thumb": "thumbs/History__NRAarchives__NRAarchivesMnmouth__NRA_negwallet_1_012.jpg"
+    },
+    {
+      "path": "History/NRAarchives/NRAarchivesMnmouth/NRA_negwallet_1_027.tif",
+      "web": "web/History__NRAarchives__NRAarchivesMnmouth__NRA_negwallet_1_027.jpg",
+      "thumb": "thumbs/History__NRAarchives__NRAarchivesMnmouth__NRA_negwallet_1_027.jpg"
+    },
+    {
+      "path": "History/NRAarchives/NRAarchivesMnmouth/NRA_negwallet_1_036.tif",
+      "web": "web/History__NRAarchives__NRAarchivesMnmouth__NRA_negwallet_1_036.jpg",
+      "thumb": "thumbs/History__NRAarchives__NRAarchivesMnmouth__NRA_negwallet_1_036.jpg"
+    },
+    {
+      "path": "History/NRAarchives/NRAarchivesMnmouth/Untitled-1.jpg",
+      "web": "web/History__NRAarchives__NRAarchivesMnmouth__Untitled-1.jpg",
+      "thumb": "thumbs/History__NRAarchives__NRAarchivesMnmouth__Untitled-1.jpg"
+    },
+    {
+      "path": "History/NRAarchives/NRAarchivesMnmouth/Untitled-c.jpg",
+      "web": "web/History__NRAarchives__NRAarchivesMnmouth__Untitled-c.jpg",
+      "thumb": "thumbs/History__NRAarchives__NRAarchivesMnmouth__Untitled-c.jpg"
+    },
+    {
+      "path": "History/NRAarchives/NRAarchivesMnmouth/Untitled-m.jpg",
+      "web": "web/History__NRAarchives__NRAarchivesMnmouth__Untitled-m.jpg",
+      "thumb": "thumbs/History__NRAarchives__NRAarchivesMnmouth__Untitled-m.jpg"
+    }
+  ]
+}

@@ -25,8 +25,8 @@ export async function initDuckDB() {
 	URL.revokeObjectURL(worker_url);
 
 	// Fetch and register the database file ONCE
-	const response = await fetch(`${base}/data/archive-v3.duckdb`);
-	if (!response.ok) throw new Error(`Failed to fetch archive-v3.duckdb: ${response.statusText}`);
+	const response = await fetch(`${base}/data/archive-v7.duckdb`);
+	if (!response.ok) throw new Error(`Failed to fetch archive-v7.duckdb: ${response.statusText}`);
 
 	const buffer = await response.arrayBuffer();
 	await db.registerFileBuffer('archive.duckdb', new Uint8Array(buffer));

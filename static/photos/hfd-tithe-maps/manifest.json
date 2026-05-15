@@ -1,0 +1,509 @@
+{
+  "collection": "hfd-tithe-maps",
+  "total_sampled": 100,
+  "web_max_dim": 1200,
+  "thumb_max_dim": 300,
+  "quality": 80,
+  "photos": [
+    {
+      "path": "Maps/TitheMapsOriginals/Clifford/CRW_6627_2.tif",
+      "web": "web/Maps__TitheMapsOriginals__Clifford__CRW_6627_2.jpg",
+      "thumb": "thumbs/Maps__TitheMapsOriginals__Clifford__CRW_6627_2.jpg"
+    },
+    {
+      "path": "Maps/TitheMapsOriginals/Ashperton/tif/SAM_2324.tif",
+      "web": "web/Maps__TitheMapsOriginals__Ashperton__tif__SAM_2324.jpg",
+      "thumb": "thumbs/Maps__TitheMapsOriginals__Ashperton__tif__SAM_2324.jpg"
+    },
+    {
+      "path": "Maps/TitheMapsOriginals/HopeunderDinmore/IMG_4165.jpg",
+      "web": "web/Maps__TitheMapsOriginals__HopeunderDinmore__IMG_4165.jpg",
+      "thumb": "thumbs/Maps__TitheMapsOriginals__HopeunderDinmore__IMG_4165.jpg"
+    },
+    {
+      "path": "Maps/TitheMapsOriginals/Hereford_StNicholas/DSC0914_DxO.tif",
+      "web": "web/Maps__TitheMapsOriginals__Hereford_StNicholas__DSC0914_DxO.jpg",
+      "thumb": "thumbs/Maps__TitheMapsOriginals__Hereford_StNicholas__DSC0914_DxO.jpg"
+    },
+    {
+      "path": "Maps/TitheMapsOriginals/Hereford_AllSaints/AllSaintsTM_centre.tif",
+      "web": "web/Maps__TitheMapsOriginals__Hereford_AllSaints__AllSaintsTM_centre.jpg",
+      "thumb": "thumbs/Maps__TitheMapsOriginals__Hereford_AllSaints__AllSaintsTM_centre.jpg"
+    },
+    {
+      "path": "Maps/TitheMapsOriginals/Colwall[2]/jpg/CRW_7991i.jpg",
+      "web": "web/Maps__TitheMapsOriginals__Colwall[2]__jpg__CRW_7991i.jpg",
+      "thumb": "thumbs/Maps__TitheMapsOriginals__Colwall[2]__jpg__CRW_7991i.jpg"
+    },
+    {
+      "path": "Maps/TitheMapsOriginals/Castle_Frome/CRW_2065.tif",
+      "web": "web/Maps__TitheMapsOriginals__Castle_Frome__CRW_2065.jpg",
+      "thumb": "thumbs/Maps__TitheMapsOriginals__Castle_Frome__CRW_2065.jpg"
+    },
+    {
+      "path": "Maps/TitheMapsOriginals/Ullingswick/SAM_2079.jpg",
+      "web": "web/Maps__TitheMapsOriginals__Ullingswick__SAM_2079.jpg",
+      "thumb": "thumbs/Maps__TitheMapsOriginals__Ullingswick__SAM_2079.jpg"
+    },
+    {
+      "path": "Maps/TitheMapsOriginals/Byford/jpg/IMG_1353.jpg",
+      "web": "web/Maps__TitheMapsOriginals__Byford__jpg__IMG_1353.jpg",
+      "thumb": "thumbs/Maps__TitheMapsOriginals__Byford__jpg__IMG_1353.jpg"
+    },
+    {
+      "path": "Maps/TitheMapsOriginals/MiddletonontheHill/MothbaseMM.tif",
+      "web": "web/Maps__TitheMapsOriginals__MiddletonontheHill__MothbaseMM.jpg",
+      "thumb": "thumbs/Maps__TitheMapsOriginals__MiddletonontheHill__MothbaseMM.jpg"
+    },
+    {
+      "path": "Maps/TitheMapsOriginals/Aylton/CRW_5892.tif",
+      "web": "web/Maps__TitheMapsOriginals__Aylton__CRW_5892.jpg",
+      "thumb": "thumbs/Maps__TitheMapsOriginals__Aylton__CRW_5892.jpg"
+    },
+    {
+      "path": "Maps/TitheMapsOriginals/Avenbury/IMG_1332.jpg",
+      "web": "web/Maps__TitheMapsOriginals__Avenbury__IMG_1332.jpg",
+      "thumb": "thumbs/Maps__TitheMapsOriginals__Avenbury__IMG_1332.jpg"
+    },
+    {
+      "path": "Maps/TitheMapsOriginals/Byford/jpg_CRW/CRW_5804.jpg",
+      "web": "web/Maps__TitheMapsOriginals__Byford__jpg_CRW__CRW_5804.jpg",
+      "thumb": "thumbs/Maps__TitheMapsOriginals__Byford__jpg_CRW__CRW_5804.jpg"
+    },
+    {
+      "path": "Maps/TitheMapsOriginals/Ganerew/IMG_1863.jpg",
+      "web": "web/Maps__TitheMapsOriginals__Ganerew__IMG_1863.jpg",
+      "thumb": "thumbs/Maps__TitheMapsOriginals__Ganerew__IMG_1863.jpg"
+    },
+    {
+      "path": "Maps/TitheMapsOriginals/Hereford_AllSaints/Individualimages_tif/main/DSC0930_DxO_WMill.tif",
+      "web": "web/Maps__TitheMapsOriginals__Hereford_AllSaints__Individualimages_tif__main__DSC0930_DxO_WMill.jpg",
+      "thumb": "thumbs/Maps__TitheMapsOriginals__Hereford_AllSaints__Individualimages_tif__main__DSC0930_DxO_WMill.jpg"
+    },
+    {
+      "path": "Maps/TitheMapsOriginals/TMtrees/Dinador/SAM_2270_DxO.tif",
+      "web": "web/Maps__TitheMapsOriginals__TMtrees__Dinador__SAM_2270_DxO.jpg",
+      "thumb": "thumbs/Maps__TitheMapsOriginals__TMtrees__Dinador__SAM_2270_DxO.jpg"
+    },
+    {
+      "path": "Maps/TitheMapsOriginals/Wormbridge/IMG_1239.jpg",
+      "web": "web/Maps__TitheMapsOriginals__Wormbridge__IMG_1239.jpg",
+      "thumb": "thumbs/Maps__TitheMapsOriginals__Wormbridge__IMG_1239.jpg"
+    },
+    {
+      "path": "Maps/TitheMapsOriginals/EatonBishop/CRW_8809[2].tif",
+      "web": "web/Maps__TitheMapsOriginals__EatonBishop__CRW_8809[2].jpg",
+      "thumb": "thumbs/Maps__TitheMapsOriginals__EatonBishop__CRW_8809[2].jpg"
+    },
+    {
+      "path": "Maps/TitheMapsOriginals/Mathon/jpg/CRW_6245.jpg",
+      "web": "web/Maps__TitheMapsOriginals__Mathon__jpg__CRW_6245.jpg",
+      "thumb": "thumbs/Maps__TitheMapsOriginals__Mathon__jpg__CRW_6245.jpg"
+    },
+    {
+      "path": "Maps/TitheMapsOriginals/Goodrich/CRW_8890TM_Goodrichdate&surveyor.jpg",
+      "web": "web/Maps__TitheMapsOriginals__Goodrich__CRW_8890TM_Goodrichdate&surveyor.jpg",
+      "thumb": "thumbs/Maps__TitheMapsOriginals__Goodrich__CRW_8890TM_Goodrichdate&surveyor.jpg"
+    },
+    {
+      "path": "Maps/TitheMapsOriginals/Much_Birch/CRW_1473.tif",
+      "web": "web/Maps__TitheMapsOriginals__Much_Birch__CRW_1473.jpg",
+      "thumb": "thumbs/Maps__TitheMapsOriginals__Much_Birch__CRW_1473.jpg"
+    },
+    {
+      "path": "Maps/TitheMapsOriginals/Kempley/CRW_5939.tif",
+      "web": "web/Maps__TitheMapsOriginals__Kempley__CRW_5939.jpg",
+      "thumb": "thumbs/Maps__TitheMapsOriginals__Kempley__CRW_5939.jpg"
+    },
+    {
+      "path": "Maps/GG_TitheMaps/GG_resampled/CanonPyonTM1840.jpg",
+      "web": "web/Maps__GG_TitheMaps__GG_resampled__CanonPyonTM1840.jpg",
+      "thumb": "thumbs/Maps__GG_TitheMaps__GG_resampled__CanonPyonTM1840.jpg"
+    },
+    {
+      "path": "Maps/TitheMapsOriginals/Croft/CRW_8897.tif",
+      "web": "web/Maps__TitheMapsOriginals__Croft__CRW_8897.jpg",
+      "thumb": "thumbs/Maps__TitheMapsOriginals__Croft__CRW_8897.jpg"
+    },
+    {
+      "path": "Maps/TitheMapsOriginals/Letton[2]/dsc013752.tif",
+      "web": "web/Maps__TitheMapsOriginals__Letton[2]__dsc013752.jpg",
+      "thumb": "thumbs/Maps__TitheMapsOriginals__Letton[2]__dsc013752.jpg"
+    },
+    {
+      "path": "Maps/TitheMapsOriginals/EyeMortonAshton/TIFF/dsc01749.tif",
+      "web": "web/Maps__TitheMapsOriginals__EyeMortonAshton__TIFF__dsc01749.jpg",
+      "thumb": "thumbs/Maps__TitheMapsOriginals__EyeMortonAshton__TIFF__dsc01749.jpg"
+    },
+    {
+      "path": "Maps/TitheMapsOriginals/Dorstone/CRW_6806.jpg",
+      "web": "web/Maps__TitheMapsOriginals__Dorstone__CRW_6806.jpg",
+      "thumb": "thumbs/Maps__TitheMapsOriginals__Dorstone__CRW_6806.jpg"
+    },
+    {
+      "path": "Maps/TitheMapsOriginals/Whitbourne/WhitbourneTMjpg/CRW_8865.jpg",
+      "web": "web/Maps__TitheMapsOriginals__Whitbourne__WhitbourneTMjpg__CRW_8865.jpg",
+      "thumb": "thumbs/Maps__TitheMapsOriginals__Whitbourne__WhitbourneTMjpg__CRW_8865.jpg"
+    },
+    {
+      "path": "Maps/TitheMapsOriginals/Bridstow/CRW_6674.jpg",
+      "web": "web/Maps__TitheMapsOriginals__Bridstow__CRW_6674.jpg",
+      "thumb": "thumbs/Maps__TitheMapsOriginals__Bridstow__CRW_6674.jpg"
+    },
+    {
+      "path": "Maps/TitheMapsOriginals/Clehonger/SAM_2425d.jpg",
+      "web": "web/Maps__TitheMapsOriginals__Clehonger__SAM_2425d.jpg",
+      "thumb": "thumbs/Maps__TitheMapsOriginals__Clehonger__SAM_2425d.jpg"
+    },
+    {
+      "path": "Maps/TitheMapsOriginals/Llanvenoe/CRW_1832.tif",
+      "web": "web/Maps__TitheMapsOriginals__Llanvenoe__CRW_1832.jpg",
+      "thumb": "thumbs/Maps__TitheMapsOriginals__Llanvenoe__CRW_1832.jpg"
+    },
+    {
+      "path": "Maps/TitheMapsOriginals/StokePrior/IMG_4664.tif",
+      "web": "web/Maps__TitheMapsOriginals__StokePrior__IMG_4664.jpg",
+      "thumb": "thumbs/Maps__TitheMapsOriginals__StokePrior__IMG_4664.jpg"
+    },
+    {
+      "path": "Maps/TitheMapsOriginals/Bartestree/BartestreeTMSelectedPropertyCloseups/CRW_1405.tif",
+      "web": "web/Maps__TitheMapsOriginals__Bartestree__BartestreeTMSelectedPropertyCloseups__CRW_1405.jpg",
+      "thumb": "thumbs/Maps__TitheMapsOriginals__Bartestree__BartestreeTMSelectedPropertyCloseups__CRW_1405.jpg"
+    },
+    {
+      "path": "Maps/TitheMapsOriginals/Aymestrey/mainbasestitches/CRW_1210base.tif",
+      "web": "web/Maps__TitheMapsOriginals__Aymestrey__mainbasestitches__CRW_1210base.jpg",
+      "thumb": "thumbs/Maps__TitheMapsOriginals__Aymestrey__mainbasestitches__CRW_1210base.jpg"
+    },
+    {
+      "path": "Maps/TitheMapsOriginals/EastonGrey[Wilts]/CRW_5820.jpg",
+      "web": "web/Maps__TitheMapsOriginals__EastonGrey[Wilts]__CRW_5820.jpg",
+      "thumb": "thumbs/Maps__TitheMapsOriginals__EastonGrey[Wilts]__CRW_5820.jpg"
+    },
+    {
+      "path": "Maps/TitheMapsOriginals/Bacton/CRW_1424.tif",
+      "web": "web/Maps__TitheMapsOriginals__Bacton__CRW_1424.jpg",
+      "thumb": "thumbs/Maps__TitheMapsOriginals__Bacton__CRW_1424.jpg"
+    },
+    {
+      "path": "Maps/TitheMapsOriginals/Dulas/Wigau1840.tif",
+      "web": "web/Maps__TitheMapsOriginals__Dulas__Wigau1840.jpg",
+      "thumb": "thumbs/Maps__TitheMapsOriginals__Dulas__Wigau1840.jpg"
+    },
+    {
+      "path": "Maps/TitheMapsOriginals/Walterstone/CRW_1564.tif",
+      "web": "web/Maps__TitheMapsOriginals__Walterstone__CRW_1564.jpg",
+      "thumb": "thumbs/Maps__TitheMapsOriginals__Walterstone__CRW_1564.jpg"
+    },
+    {
+      "path": "Maps/TitheMapsOriginals/Downton/CRW_3010Downtoncastle.jpg",
+      "web": "web/Maps__TitheMapsOriginals__Downton__CRW_3010Downtoncastle.jpg",
+      "thumb": "thumbs/Maps__TitheMapsOriginals__Downton__CRW_3010Downtoncastle.jpg"
+    },
+    {
+      "path": "Maps/TitheMapsOriginals/Kinsham_Upper/622900031.tif",
+      "web": "web/Maps__TitheMapsOriginals__Kinsham_Upper__622900031.jpg",
+      "thumb": "thumbs/Maps__TitheMapsOriginals__Kinsham_Upper__622900031.jpg"
+    },
+    {
+      "path": "Maps/TitheMapsOriginals/Colwall/jpg/CRW_6695.jpg",
+      "web": "web/Maps__TitheMapsOriginals__Colwall__jpg__CRW_6695.jpg",
+      "thumb": "thumbs/Maps__TitheMapsOriginals__Colwall__jpg__CRW_6695.jpg"
+    },
+    {
+      "path": "Maps/TitheMapsOriginals/Lyonshall/SAM_2137.jpg",
+      "web": "web/Maps__TitheMapsOriginals__Lyonshall__SAM_2137.jpg",
+      "thumb": "thumbs/Maps__TitheMapsOriginals__Lyonshall__SAM_2137.jpg"
+    },
+    {
+      "path": "Maps/TitheMapsOriginals/Almeley/AlmeleyTM_part_CRW_7925.jpg",
+      "web": "web/Maps__TitheMapsOriginals__Almeley__AlmeleyTM_part_CRW_7925.jpg",
+      "thumb": "thumbs/Maps__TitheMapsOriginals__Almeley__AlmeleyTM_part_CRW_7925.jpg"
+    },
+    {
+      "path": "Maps/TitheMapsOriginals/LittleBirch/Copy of CRW_1446.tif",
+      "web": "web/Maps__TitheMapsOriginals__LittleBirch__Copy of CRW_1446.jpg",
+      "thumb": "thumbs/Maps__TitheMapsOriginals__LittleBirch__Copy of CRW_1446.jpg"
+    },
+    {
+      "path": "Maps/TitheMapsOriginals/Hereford_AllSaints/Individualimages_tif/closeup/DSC0950_DxO.tif",
+      "web": "web/Maps__TitheMapsOriginals__Hereford_AllSaints__Individualimages_tif__closeup__DSC0950_DxO.jpg",
+      "thumb": "thumbs/Maps__TitheMapsOriginals__Hereford_AllSaints__Individualimages_tif__closeup__DSC0950_DxO.jpg"
+    },
+    {
+      "path": "Maps/TitheMapsOriginals/Hereford_UpperBullingham[1]/CRW_2053.tif",
+      "web": "web/Maps__TitheMapsOriginals__Hereford_UpperBullingham[1]__CRW_2053.jpg",
+      "thumb": "thumbs/Maps__TitheMapsOriginals__Hereford_UpperBullingham[1]__CRW_2053.jpg"
+    },
+    {
+      "path": "Maps/TitheMapsOriginals/Bosbury/HillFarm&GoldHill.tif",
+      "web": "web/Maps__TitheMapsOriginals__Bosbury__HillFarm&GoldHill.jpg",
+      "thumb": "thumbs/Maps__TitheMapsOriginals__Bosbury__HillFarm&GoldHill.jpg"
+    },
+    {
+      "path": "Maps/TitheMapsOriginals/Much_Marcle[1]/CRW_3122.tif",
+      "web": "web/Maps__TitheMapsOriginals__Much_Marcle[1]__CRW_3122.jpg",
+      "thumb": "thumbs/Maps__TitheMapsOriginals__Much_Marcle[1]__CRW_3122.jpg"
+    },
+    {
+      "path": "Maps/TitheMapsOriginals/Aymestrey/intermediateBase/CRW_1180base.tif",
+      "web": "web/Maps__TitheMapsOriginals__Aymestrey__intermediateBase__CRW_1180base.jpg",
+      "thumb": "thumbs/Maps__TitheMapsOriginals__Aymestrey__intermediateBase__CRW_1180base.jpg"
+    },
+    {
+      "path": "Maps/TitheMapsOriginals/Wigmore/CRW_1677.tif",
+      "web": "web/Maps__TitheMapsOriginals__Wigmore__CRW_1677.jpg",
+      "thumb": "thumbs/Maps__TitheMapsOriginals__Wigmore__CRW_1677.jpg"
+    },
+    {
+      "path": "Maps/TitheMapsOriginals/Colwall[4]/TIF/SAM_3430_01.tif",
+      "web": "web/Maps__TitheMapsOriginals__Colwall[4]__TIF__SAM_3430_01.jpg",
+      "thumb": "thumbs/Maps__TitheMapsOriginals__Colwall[4]__TIF__SAM_3430_01.jpg"
+    },
+    {
+      "path": "Maps/TitheMapsOriginals/Ledbury/CRW_8786Ledbury.jpg",
+      "web": "web/Maps__TitheMapsOriginals__Ledbury__CRW_8786Ledbury.jpg",
+      "thumb": "thumbs/Maps__TitheMapsOriginals__Ledbury__CRW_8786Ledbury.jpg"
+    },
+    {
+      "path": "Maps/TitheMapsOriginals/Lea/CRW_5937.jpg",
+      "web": "web/Maps__TitheMapsOriginals__Lea__CRW_5937.jpg",
+      "thumb": "thumbs/Maps__TitheMapsOriginals__Lea__CRW_5937.jpg"
+    },
+    {
+      "path": "Maps/TitheMapsOriginals/Eardisland/CRW_3136.tif",
+      "web": "web/Maps__TitheMapsOriginals__Eardisland__CRW_3136.jpg",
+      "thumb": "thumbs/Maps__TitheMapsOriginals__Eardisland__CRW_3136.jpg"
+    },
+    {
+      "path": "Maps/TitheMapsOriginals/Kenderchurch/IMG_1846.jpg",
+      "web": "web/Maps__TitheMapsOriginals__Kenderchurch__IMG_1846.jpg",
+      "thumb": "thumbs/Maps__TitheMapsOriginals__Kenderchurch__IMG_1846.jpg"
+    },
+    {
+      "path": "Maps/TitheMapsOriginals/Byford/tiff/CRW_5808.tif",
+      "web": "web/Maps__TitheMapsOriginals__Byford__tiff__CRW_5808.jpg",
+      "thumb": "thumbs/Maps__TitheMapsOriginals__Byford__tiff__CRW_5808.jpg"
+    },
+    {
+      "path": "Maps/TitheMapsOriginals/Leysters/622900021.tif",
+      "web": "web/Maps__TitheMapsOriginals__Leysters__622900021.jpg",
+      "thumb": "thumbs/Maps__TitheMapsOriginals__Leysters__622900021.jpg"
+    },
+    {
+      "path": "Maps/TitheMapsOriginals/Upton_Bishop/CRW_3106.tif",
+      "web": "web/Maps__TitheMapsOriginals__Upton_Bishop__CRW_3106.jpg",
+      "thumb": "thumbs/Maps__TitheMapsOriginals__Upton_Bishop__CRW_3106.jpg"
+    },
+    {
+      "path": "Maps/TitheMapsOriginals/MoretonJeffries/IMG_1322.jpg",
+      "web": "web/Maps__TitheMapsOriginals__MoretonJeffries__IMG_1322.jpg",
+      "thumb": "thumbs/Maps__TitheMapsOriginals__MoretonJeffries__IMG_1322.jpg"
+    },
+    {
+      "path": "Maps/TitheMapsOriginals/Leintwardine[2]/DSC06230.tif",
+      "web": "web/Maps__TitheMapsOriginals__Leintwardine[2]__DSC06230.jpg",
+      "thumb": "thumbs/Maps__TitheMapsOriginals__Leintwardine[2]__DSC06230.jpg"
+    },
+    {
+      "path": "Maps/TitheMapsOriginals/Clifford/jpg/CRW_6624.jpg",
+      "web": "web/Maps__TitheMapsOriginals__Clifford__jpg__CRW_6624.jpg",
+      "thumb": "thumbs/Maps__TitheMapsOriginals__Clifford__jpg__CRW_6624.jpg"
+    },
+    {
+      "path": "Maps/TitheMapsOriginals/Lugwardine/IMG_1315.jpg",
+      "web": "web/Maps__TitheMapsOriginals__Lugwardine__IMG_1315.jpg",
+      "thumb": "thumbs/Maps__TitheMapsOriginals__Lugwardine__IMG_1315.jpg"
+    },
+    {
+      "path": "Maps/TitheMapsOriginals/Lugwardine/Lugwardine/LugwardineTM_LuggMeadowsNW.jpg",
+      "web": "web/Maps__TitheMapsOriginals__Lugwardine__Lugwardine__LugwardineTM_LuggMeadowsNW.jpg",
+      "thumb": "thumbs/Maps__TitheMapsOriginals__Lugwardine__Lugwardine__LugwardineTM_LuggMeadowsNW.jpg"
+    },
+    {
+      "path": "Maps/TitheMapsOriginals/LittleMarcle/CRW_6051.tif",
+      "web": "web/Maps__TitheMapsOriginals__LittleMarcle__CRW_6051.jpg",
+      "thumb": "thumbs/Maps__TitheMapsOriginals__LittleMarcle__CRW_6051.jpg"
+    },
+    {
+      "path": "Maps/TitheMapsOriginals/Much_Cowarne/TIF/DSC05308cr.jpg",
+      "web": "web/Maps__TitheMapsOriginals__Much_Cowarne__TIF__DSC05308cr.jpg",
+      "thumb": "thumbs/Maps__TitheMapsOriginals__Much_Cowarne__TIF__DSC05308cr.jpg"
+    },
+    {
+      "path": "Maps/TitheMapsOriginals/MiddletonontheHill/tif/DSC02053.tif",
+      "web": "web/Maps__TitheMapsOriginals__MiddletonontheHill__tif__DSC02053.jpg",
+      "thumb": "thumbs/Maps__TitheMapsOriginals__MiddletonontheHill__tif__DSC02053.jpg"
+    },
+    {
+      "path": "Maps/TitheMapsOriginals/Staunton_on_Arrow[part]/TIF/DSC04688.tif",
+      "web": "web/Maps__TitheMapsOriginals__Staunton_on_Arrow[part]__TIF__DSC04688.jpg",
+      "thumb": "thumbs/Maps__TitheMapsOriginals__Staunton_on_Arrow[part]__TIF__DSC04688.jpg"
+    },
+    {
+      "path": "Maps/TitheMapsOriginals/Mathon/OldCountry1840.jpg",
+      "web": "web/Maps__TitheMapsOriginals__Mathon__OldCountry1840.jpg",
+      "thumb": "thumbs/Maps__TitheMapsOriginals__Mathon__OldCountry1840.jpg"
+    },
+    {
+      "path": "Maps/TitheMapsOriginals/Ledbury/colourcorrtif/CRW_8743.tif",
+      "web": "web/Maps__TitheMapsOriginals__Ledbury__colourcorrtif__CRW_8743.jpg",
+      "thumb": "thumbs/Maps__TitheMapsOriginals__Ledbury__colourcorrtif__CRW_8743.jpg"
+    },
+    {
+      "path": "Maps/TitheMapsOriginals/Oxenhall/CRW_5812.jpg",
+      "web": "web/Maps__TitheMapsOriginals__Oxenhall__CRW_5812.jpg",
+      "thumb": "thumbs/Maps__TitheMapsOriginals__Oxenhall__CRW_5812.jpg"
+    },
+    {
+      "path": "Maps/TitheMapsOriginals/Bromyard_Linton/SAM_3235.tif",
+      "web": "web/Maps__TitheMapsOriginals__Bromyard_Linton__SAM_3235.jpg",
+      "thumb": "thumbs/Maps__TitheMapsOriginals__Bromyard_Linton__SAM_3235.jpg"
+    },
+    {
+      "path": "Maps/TitheMapsOriginals/Eardisley/CRW_3075.tif",
+      "web": "web/Maps__TitheMapsOriginals__Eardisley__CRW_3075.jpg",
+      "thumb": "thumbs/Maps__TitheMapsOriginals__Eardisley__CRW_3075.jpg"
+    },
+    {
+      "path": "Maps/TitheMapsOriginals/TMtrees/Garway/DSC05997_DxO.tif",
+      "web": "web/Maps__TitheMapsOriginals__TMtrees__Garway__DSC05997_DxO.jpg",
+      "thumb": "thumbs/Maps__TitheMapsOriginals__TMtrees__Garway__DSC05997_DxO.jpg"
+    },
+    {
+      "path": "Maps/TitheMapsOriginals/Whitbourne/Apportionment/IMG_5670.jpg",
+      "web": "web/Maps__TitheMapsOriginals__Whitbourne__Apportionment__IMG_5670.jpg",
+      "thumb": "thumbs/Maps__TitheMapsOriginals__Whitbourne__Apportionment__IMG_5670.jpg"
+    },
+    {
+      "path": "Maps/TitheMapsOriginals/Colwall[2]/CRW_7985i.jpg",
+      "web": "web/Maps__TitheMapsOriginals__Colwall[2]__CRW_7985i.jpg",
+      "thumb": "thumbs/Maps__TitheMapsOriginals__Colwall[2]__CRW_7985i.jpg"
+    },
+    {
+      "path": "Maps/TitheMapsOriginals/Aymestrey/AymestreyTitheMap1844_YattonMarshCRW_1189.jpg",
+      "web": "web/Maps__TitheMapsOriginals__Aymestrey__AymestreyTitheMap1844_YattonMarshCRW_1189.jpg",
+      "thumb": "thumbs/Maps__TitheMapsOriginals__Aymestrey__AymestreyTitheMap1844_YattonMarshCRW_1189.jpg"
+    },
+    {
+      "path": "Maps/TitheMapsOriginals/Burrington_2011/SAM_3913BurringtonBF.jpg",
+      "web": "web/Maps__TitheMapsOriginals__Burrington_2011__SAM_3913BurringtonBF.jpg",
+      "thumb": "thumbs/Maps__TitheMapsOriginals__Burrington_2011__SAM_3913BurringtonBF.jpg"
+    },
+    {
+      "path": "Maps/TitheMapsOriginals/Mathon/MathonApportionment/IMG_6286.jpg",
+      "web": "web/Maps__TitheMapsOriginals__Mathon__MathonApportionment__IMG_6286.jpg",
+      "thumb": "thumbs/Maps__TitheMapsOriginals__Mathon__MathonApportionment__IMG_6286.jpg"
+    },
+    {
+      "path": "Maps/TitheMapsOriginals/Coddington/composite/CRW_5245base&50to53.tif",
+      "web": "web/Maps__TitheMapsOriginals__Coddington__composite__CRW_5245base&50to53.jpg",
+      "thumb": "thumbs/Maps__TitheMapsOriginals__Coddington__composite__CRW_5245base&50to53.jpg"
+    },
+    {
+      "path": "Maps/TitheMapsOriginals/Lucton/IMG_1083.jpg",
+      "web": "web/Maps__TitheMapsOriginals__Lucton__IMG_1083.jpg",
+      "thumb": "thumbs/Maps__TitheMapsOriginals__Lucton__IMG_1083.jpg"
+    },
+    {
+      "path": "Maps/TitheMapsOriginals/TedstoneDelaware/IMG_1054.jpg",
+      "web": "web/Maps__TitheMapsOriginals__TedstoneDelaware__IMG_1054.jpg",
+      "thumb": "thumbs/Maps__TitheMapsOriginals__TedstoneDelaware__IMG_1054.jpg"
+    },
+    {
+      "path": "Maps/TitheMapsOriginals/Leintwardine[2]/LeintwardineApportionment/Leintwardine/0468.jpg",
+      "web": "web/Maps__TitheMapsOriginals__Leintwardine[2]__LeintwardineApportionment__Leintwardine__0468.jpg",
+      "thumb": "thumbs/Maps__TitheMapsOriginals__Leintwardine[2]__LeintwardineApportionment__Leintwardine__0468.jpg"
+    },
+    {
+      "path": "Maps/TitheMapsOriginals/Kinnersley/dsc01711.tif",
+      "web": "web/Maps__TitheMapsOriginals__Kinnersley__dsc01711.jpg",
+      "thumb": "thumbs/Maps__TitheMapsOriginals__Kinnersley__dsc01711.jpg"
+    },
+    {
+      "path": "Maps/TitheMapsOriginals/Yarpole/IMG_5371_2.tif",
+      "web": "web/Maps__TitheMapsOriginals__Yarpole__IMG_5371_2.jpg",
+      "thumb": "thumbs/Maps__TitheMapsOriginals__Yarpole__IMG_5371_2.jpg"
+    },
+    {
+      "path": "Maps/TitheMapsOriginals/Cusop/CRW_2990.tif",
+      "web": "web/Maps__TitheMapsOriginals__Cusop__CRW_2990.jpg",
+      "thumb": "thumbs/Maps__TitheMapsOriginals__Cusop__CRW_2990.jpg"
+    },
+    {
+      "path": "Maps/TitheMapsOriginals/Weobley/PaecockMeadowsDTMdiff.jpg",
+      "web": "web/Maps__TitheMapsOriginals__Weobley__PaecockMeadowsDTMdiff.jpg",
+      "thumb": "thumbs/Maps__TitheMapsOriginals__Weobley__PaecockMeadowsDTMdiff.jpg"
+    },
+    {
+      "path": "Maps/TitheMapsOriginals/Letton[1]/CRW_5982.jpg",
+      "web": "web/Maps__TitheMapsOriginals__Letton[1]__CRW_5982.jpg",
+      "thumb": "thumbs/Maps__TitheMapsOriginals__Letton[1]__CRW_5982.jpg"
+    },
+    {
+      "path": "Maps/TitheMapsOriginals/ActonBeauchamp/IMG_1214.jpg",
+      "web": "web/Maps__TitheMapsOriginals__ActonBeauchamp__IMG_1214.jpg",
+      "thumb": "thumbs/Maps__TitheMapsOriginals__ActonBeauchamp__IMG_1214.jpg"
+    },
+    {
+      "path": "Maps/TitheMapsOriginals/EatonBishop/Eaton Bishop Apportionment/Eaton Bishop/0574.jpg",
+      "web": "web/Maps__TitheMapsOriginals__EatonBishop__Eaton Bishop Apportionment__Eaton Bishop__0574.jpg",
+      "thumb": "thumbs/Maps__TitheMapsOriginals__EatonBishop__Eaton Bishop Apportionment__Eaton Bishop__0574.jpg"
+    },
+    {
+      "path": "Maps/TitheMapsOriginals/TMtrees/Whitchurch/CRW_8711.tif",
+      "web": "web/Maps__TitheMapsOriginals__TMtrees__Whitchurch__CRW_8711.jpg",
+      "thumb": "thumbs/Maps__TitheMapsOriginals__TMtrees__Whitchurch__CRW_8711.jpg"
+    },
+    {
+      "path": "Maps/TitheMapsOriginals/Byton/BytonTM_part_DSC05987.jpg",
+      "web": "web/Maps__TitheMapsOriginals__Byton__BytonTM_part_DSC05987.jpg",
+      "thumb": "thumbs/Maps__TitheMapsOriginals__Byton__BytonTM_part_DSC05987.jpg"
+    },
+    {
+      "path": "Maps/TitheMapsOriginals/Breinton/CRW_1971.tif",
+      "web": "web/Maps__TitheMapsOriginals__Breinton__CRW_1971.jpg",
+      "thumb": "thumbs/Maps__TitheMapsOriginals__Breinton__CRW_1971.jpg"
+    },
+    {
+      "path": "Maps/TitheMapsOriginals/Hereford_StOwens/StOwensTM_1840.jpg",
+      "web": "web/Maps__TitheMapsOriginals__Hereford_StOwens__StOwensTM_1840.jpg",
+      "thumb": "thumbs/Maps__TitheMapsOriginals__Hereford_StOwens__StOwensTM_1840.jpg"
+    },
+    {
+      "path": "Maps/TitheMapsOriginals/NortonCanon/dsc01715base.tif",
+      "web": "web/Maps__TitheMapsOriginals__NortonCanon__dsc01715base.jpg",
+      "thumb": "thumbs/Maps__TitheMapsOriginals__NortonCanon__dsc01715base.jpg"
+    },
+    {
+      "path": "Maps/TitheMapsOriginals/Colwall[4]/ColwallTM_LodgeFarm_SAM_3519.jpg",
+      "web": "web/Maps__TitheMapsOriginals__Colwall[4]__ColwallTM_LodgeFarm_SAM_3519.jpg",
+      "thumb": "thumbs/Maps__TitheMapsOriginals__Colwall[4]__ColwallTM_LodgeFarm_SAM_3519.jpg"
+    },
+    {
+      "path": "Maps/TitheMapsOriginals/Knill/622900034.tif",
+      "web": "web/Maps__TitheMapsOriginals__Knill__622900034.jpg",
+      "thumb": "thumbs/Maps__TitheMapsOriginals__Knill__622900034.jpg"
+    },
+    {
+      "path": "Maps/TitheMapsOriginals/Hereford_StJohn_99[1]/IMG_1253.jpg",
+      "web": "web/Maps__TitheMapsOriginals__Hereford_StJohn_99[1]__IMG_1253.jpg",
+      "thumb": "thumbs/Maps__TitheMapsOriginals__Hereford_StJohn_99[1]__IMG_1253.jpg"
+    },
+    {
+      "path": "Maps/TitheMapsOriginals/Whitbourne/tiffcorr/CRW_8851.tif",
+      "web": "web/Maps__TitheMapsOriginals__Whitbourne__tiffcorr__CRW_8851.jpg",
+      "thumb": "thumbs/Maps__TitheMapsOriginals__Whitbourne__tiffcorr__CRW_8851.jpg"
+    },
+    {
+      "path": "Maps/TitheMapsOriginals/Hereford_StPeters/TIF/StPeter1840sample.jpg",
+      "web": "web/Maps__TitheMapsOriginals__Hereford_StPeters__TIF__StPeter1840sample.jpg",
+      "thumb": "thumbs/Maps__TitheMapsOriginals__Hereford_StPeters__TIF__StPeter1840sample.jpg"
+    },
+    {
+      "path": "Maps/TitheMapsOriginals/Kenchester/IMG_1029.jpg",
+      "web": "web/Maps__TitheMapsOriginals__Kenchester__IMG_1029.jpg",
+      "thumb": "thumbs/Maps__TitheMapsOriginals__Kenchester__IMG_1029.jpg"
+    }
+  ]
+}

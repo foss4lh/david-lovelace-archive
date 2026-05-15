@@ -15,10 +15,39 @@
 
 	interface PhotoManifest {
 		collection: string;
-		total: number;
+		total_sampled: number;
 		photos: PhotoEntry[];
 	}
 
+	const photoCollections = [
+		{ id: 'demo', title: 'Demo (uncategorized samples)', path: '/photos/demo' },
+		{ id: 'uncategorized', title: 'Uncategorized Archive Photos', path: '/photos/uncategorized' },
+		{
+			id: 'hfd-royal-commission',
+			title: 'Royal Commission and Parish Survey Material',
+			path: '/photos/hfd-royal-commission'
+		},
+		{ id: 'hfd-aerofilms', title: 'Historic Aerial Photography', path: '/photos/hfd-aerofilms' },
+		{ id: 'hfd-tithe-maps', title: 'Herefordshire Tithe Maps', path: '/photos/hfd-tithe-maps' },
+		{
+			id: 'hfd-hedgerow-surveys',
+			title: 'Habitat and Hedgerow Surveys',
+			path: '/photos/hfd-hedgerow-surveys'
+		},
+		{
+			id: 'hfd-pro-e112',
+			title: 'Public Records and Exchequer Material',
+			path: '/photos/hfd-pro-e112'
+		},
+		{
+			id: 'hfd-woodland-1948',
+			title: 'Woodland and 1948 Landscape Survey Material',
+			path: '/photos/hfd-woodland-1948'
+		},
+		{ id: 'hfd-river-wye', title: 'River Wye and NRA Archive', path: '/photos/hfd-river-wye' }
+	];
+
+	let selectedCollection = $state('demo');
 	let manifest = $state<PhotoManifest | null>(null);
 	let loadError = $state<string | null>(null);
 	let dialogRef = $state<HTMLDialogElement | null>(null);
@@ -27,62 +56,84 @@
 	let dialogOpen = $state(false);
 	let deepLinkedPhoto = $state<PhotoEntry | null>(null);
 	let deepLinkError = $state<string | null>(null);
+	let slideCount = $state(0);
 
+	const activeCollection = $derived(
+		photoCollections.find((c) => c.id === selectedCollection) ?? photoCollections[0]
+	);
 	const activePhoto = $derived(deepLinkedPhoto ?? manifest?.photos[activeIndex] ?? null);
 
-	onMount(async () => {
+	function getCollectionPath(collectionId: string): string {
+		const col = photoCollections.find((c) => c.id === collectionId);
+		return col ? col.path : '/photos/demo';
+	}
+
+	async function loadManifest(collectionId: string) {
+		manifest = null;
+		loadError = null;
+		deepLinkedPhoto = null;
+		deepLinkError = null;
 		try {
-			const res = await fetch(`${base}/photos/demo/manifest.json`);
+			const colPath = getCollectionPath(collectionId);
+			const res = await fetch(`${base}${colPath}/manifest.json`);
 			if (!res.ok) throw new Error(`HTTP ${res.status}`);
 			const data = await res.json();
 			manifest = data;
-
-			// Open lightbox directly if ?path= is provided
-			const params = new URLSearchParams(window.location.search);
-			const targetPath = params.get('path');
-			if (targetPath) {
-				const cleanTarget = targetPath.replace(/^[A-Z]:\//, '');
-				const idx = data.photos.findIndex(
-					(p: PhotoEntry) => p.path === cleanTarget || p.path === targetPath
-				);
-				const fileName = cleanTarget.split('/').pop()?.toLowerCase() ?? '';
-				const fuzzyIdx =
-					idx >= 0
-						? idx
-						: data.photos.findIndex((p: PhotoEntry) =>
-								fileName ? p.path.toLowerCase().endsWith(`/${fileName}`) : false
-							);
-				if (fuzzyIdx >= 0) {
-					deepLinkedPhoto = null;
-					deepLinkError = null;
-					openLightbox(fuzzyIdx);
-				} else {
-					const imageUrl = params.get('image_url');
-					if (imageUrl) {
-						const loadableImageUrl = await resolveDeepLinkedImageUrl(imageUrl);
-						if (loadableImageUrl) {
-							deepLinkedPhoto = {
-								path: cleanTarget || targetPath,
-								web: loadableImageUrl,
-								thumb: params.get('thumb_url') || loadableImageUrl
-							};
-							deepLinkError = null;
-							openLightbox(0);
-						} else {
-							deepLinkedPhoto = null;
-							deepLinkError =
-								'Requested image is not available in the current photo sample. Use the gallery below to browse available images.';
-						}
-					} else {
-						deepLinkError =
-							'Requested image is not available in the current photo sample. Use the gallery below to browse available images.';
-					}
-				}
-			}
+			slideCount = data.total_sampled;
 		} catch (e) {
 			loadError = e instanceof Error ? e.message : 'Failed to load photo manifest';
 		}
+	}
+
+	onMount(async () => {
+		await loadManifest(selectedCollection);
+
+		const params = new URLSearchParams(window.location.search);
+		const targetPath = params.get('path');
+		if (targetPath && manifest) {
+			const cleanTarget = targetPath.replace(/^[A-Z]:\//, '');
+			const idx = manifest.photos.findIndex(
+				(p: PhotoEntry) => p.path === cleanTarget || p.path === targetPath
+			);
+			const fileName = cleanTarget.split('/').pop()?.toLowerCase() ?? '';
+			const fuzzyIdx =
+				idx >= 0
+					? idx
+					: manifest.photos.findIndex((p: PhotoEntry) =>
+							fileName ? p.path.toLowerCase().endsWith(`/${fileName}`) : false
+						);
+			if (fuzzyIdx >= 0) {
+				deepLinkedPhoto = null;
+				deepLinkError = null;
+				openLightbox(fuzzyIdx);
+			} else {
+				const imageUrl = params.get('image_url');
+				if (imageUrl) {
+					const loadableImageUrl = await resolveDeepLinkedImageUrl(imageUrl);
+					if (loadableImageUrl) {
+						deepLinkedPhoto = {
+							path: cleanTarget || targetPath,
+							web: loadableImageUrl,
+							thumb: params.get('thumb_url') || loadableImageUrl
+						};
+						deepLinkError = null;
+						openLightbox(0);
+					} else {
+						deepLinkedPhoto = null;
+						deepLinkError =
+							'Requested image is not available in the current photo sample. Use the gallery below to browse available images.';
+					}
+				} else {
+					deepLinkError =
+						'Requested image is not available in the current photo sample. Use the gallery below to browse available images.';
+				}
+			}
+		}
 	});
+
+	function onChangeCollection() {
+		loadManifest(selectedCollection);
+	}
 
 	function openLightbox(index: number) {
 		activeIndex = index;
@@ -118,15 +169,15 @@
 
 	function getPhotoSrc(photo: PhotoEntry): string {
 		if (photo.web.startsWith('/') || /^https?:\/\//.test(photo.web)) return photo.web;
-		return `${base}/photos/demo/${photo.web}`;
+		return `${base}${activeCollection.path}/${photo.web}`;
 	}
 
 	function getImageCandidates(imageUrl: string): string[] {
 		const candidates = [imageUrl];
 
-		if (imageUrl.startsWith('/photos/demo/') && !imageUrl.startsWith('/photos/demo/web/')) {
-			const filename = imageUrl.slice('/photos/demo/'.length);
-			const webVariant = `/photos/demo/web/${filename}`;
+		if (imageUrl.startsWith(`${activeCollection.path}/`) && !imageUrl.includes('/web/')) {
+			const filename = imageUrl.slice(`${activeCollection.path}/`.length);
+			const webVariant = `${activeCollection.path}/web/${filename}`;
 			if (!candidates.includes(webVariant)) candidates.push(webVariant);
 		}
 
@@ -163,7 +214,7 @@
 			dynamic: true,
 			dynamicEl: manifest.photos.map((p) => ({
 				src: getPhotoSrc(p),
-				thumb: `${base}/photos/demo/${p.thumb}`,
+				thumb: `${base}${activeCollection.path}/${p.thumb}`,
 				subHtml: `<h4>${formatPath(p.path)}</h4>`
 			})),
 			plugins: [lgAutoplay],
@@ -202,8 +253,8 @@
 	<section class="page-heading">
 		<h1>Photos</h1>
 		<p>
-			Non-georectified photographs from the archive. This demo shows 10 sample images from the Royal
-			Commission collection.
+			Non-georectified photographs from the archive. Select a collection to browse its sampled
+			images.
 		</p>
 	</section>
 
@@ -226,8 +277,16 @@
 	{:else}
 		<section class="photo-meta">
 			<div class="meta-info">
-				<span>{manifest.total} photos</span>
-				<span>Collection: {manifest.collection}</span>
+				<select
+					class="collection-select"
+					bind:value={selectedCollection}
+					onchange={onChangeCollection}
+				>
+					{#each photoCollections as col (col.id)}
+						<option value={col.id}>{col.title}</option>
+					{/each}
+				</select>
+				<span>{slideCount} photos</span>
 			</div>
 			<button class="slideshow-btn" onclick={startSlideshow}>
 				<Play size={16} fill="currentColor" />
@@ -240,7 +299,7 @@
 		<section class="photo-grid">
 			{#each manifest.photos as photo, i (photo.path)}
 				<button class="photo-thumb" onclick={() => openManifestLightbox(i)} aria-label="View photo">
-					<img src="{base}/photos/demo/{photo.thumb}" alt={photo.path} loading="lazy" />
+					<img src="{base}{activeCollection.path}/{photo.thumb}" alt={photo.path} loading="lazy" />
 					<span class="photo-label">{formatPath(photo.path)}</span>
 				</button>
 			{/each}
@@ -295,12 +354,42 @@
 		padding: 0.75rem 1rem;
 		border-radius: 8px;
 		border: 1px solid #e9e4d9;
+		gap: 1rem;
+		flex-wrap: wrap;
 	}
 	.meta-info {
 		display: flex;
+		align-items: center;
 		gap: 1.5rem;
 		color: #5f6359;
 		font-size: 0.9rem;
+		flex-wrap: wrap;
+	}
+	.collection-select {
+		padding: 0.45rem 0.75rem;
+		border: 1px solid #d9d3c6;
+		border-radius: 6px;
+		background: #fff;
+		font-size: 0.9rem;
+		color: #333;
+		max-width: 320px;
+		cursor: pointer;
+	}
+	.slideshow-btn {
+		display: inline-flex;
+		align-items: center;
+		gap: 0.5rem;
+		background: #7c836d;
+		color: white;
+		border: none;
+		padding: 0.5rem 1rem;
+		border-radius: 6px;
+		font-size: 0.9rem;
+		cursor: pointer;
+		transition: background 0.15s;
+	}
+	.slideshow-btn:hover {
+		background: #6a715c;
 	}
 	.slideshow-btn {
 		display: inline-flex;
