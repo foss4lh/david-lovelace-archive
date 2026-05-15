@@ -62,9 +62,24 @@ def assign_collection(path: str, datasets: list, excluded_ids: set = None) -> st
     return matches[0][1]
 
 
-def find_image_files(archive_root: str, source_paths: list = None):
+ZOOM_TILE_PATTERNS = ["/TileGroup", "/_group_", "/html5/"]
+
+MIN_IMAGE_SIZE_BYTES = 200 * 1024
+
+
+def is_likely_zoom_tile(relative_path: str) -> bool:
+    """Check if a file path looks like a deep-zoom or Zoomify tile fragment."""
+    normalised = relative_path.replace("\\", "/")
+    for pattern in ZOOM_TILE_PATTERNS:
+        if pattern in normalised:
+            return True
+    return False
+
+
+def find_image_files(archive_root: str, source_paths: list = None, min_size_bytes: int = MIN_IMAGE_SIZE_BYTES):
     """Recursively find all image files in the archive, sorted for determinism.
-    If source_paths is provided, only scan those paths (relative to archive_root)."""
+    If source_paths is provided, only scan those paths (relative to archive_root).
+    Skips zoom tile fragments and files smaller than min_size_bytes."""
     root = Path(archive_root)
     extensions = {".jpg", ".jpeg", ".tif", ".tiff"}
     files = []
@@ -86,9 +101,19 @@ def find_image_files(archive_root: str, source_paths: list = None):
                 if path.is_file():
                     try:
                         size = path.stat().st_size
+                        relative = str(path.relative_to(root))
+
+                        # Skip zoom tile fragments
+                        if is_likely_zoom_tile(relative):
+                            continue
+
+                        # Skip files below minimum size
+                        if size < min_size_bytes:
+                            continue
+
                         files.append({
                             "path": str(path),
-                            "relative": str(path.relative_to(root)),
+                            "relative": relative,
                             "size": size,
                             "ext": ext.lower(),
                         })
@@ -305,6 +330,7 @@ def main():
     parser.add_argument("--seed", type=int, default=42, help="Random seed for reproducible sampling")
     parser.add_argument("--dry-run", action="store_true", help="Print stats without generating files")
     parser.add_argument("--source-paths", help="Comma-separated source paths to scan (relative to archive-root)")
+    parser.add_argument("--min-size-kb", type=int, default=200, help="Minimum file size in KB for images (smaller files skipped, default 200)")
 
     args = parser.parse_args()
 
@@ -331,7 +357,7 @@ def main():
         target_ids = all_ids + ["uncategorized"]
 
     print(f"Scanning {archive_root} for image files...")
-    all_images = find_image_files(str(archive_root), source_paths)
+    all_images = find_image_files(str(archive_root), source_paths, min_size_bytes=args.min_size_kb * 1024)
     print(f"Found {len(all_images)} image files")
 
     if not all_images:

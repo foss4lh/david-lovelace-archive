@@ -12,7 +12,7 @@
 		"data:upload": "node scripts/release/upload-assets.mjs",
 		"data:validate:photos": "node scripts/release/validate-photo-release-assets.mjs",
 		"inventory:parse": "node scripts/audit/parse-inventory.mjs",
-		"inventory:duckdb": "bash scripts/build-duckdb.sh static/data/archive-v3.duckdb",
+		"inventory:duckdb": "bash scripts/build-duckdb.sh static/data/archive-v5.duckdb",
 		"archive:audit": "node scripts/audit/archive-summary.mjs",
 		"release:check": "node scripts/release/validate-manifest.mjs",
 		"prepare": "svelte-kit sync || echo '' && husky install",
