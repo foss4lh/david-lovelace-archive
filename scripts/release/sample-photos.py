@@ -107,6 +107,10 @@ def find_image_files(archive_root: str, source_paths: list = None, min_size_byte
                         if is_likely_zoom_tile(relative):
                             continue
 
+                        # Skip browser-saved webpage assets (_files/ dirs)
+                        if '_files/' in relative:
+                            continue
+
                         # Skip files below minimum size
                         if size < min_size_bytes:
                             continue

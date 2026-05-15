@@ -64,6 +64,14 @@ CREATE OR REPLACE TABLE files AS
     OR CONTAINS(path, '/Maps/sources/')
     OR CONTAINS(path, '/Maps/ParishData_HC/')
   )
+  -- Browser-saved webpage asset directories "*_files/".
+  -- When saving a web page as "Web Page, Complete", browsers create a _files/
+  -- folder containing the page's dependencies: logos, UI chrome (isys-header.jpg,
+  -- top_header_area.gif), auto-extracted article text fragments (f.txt), JS, CSS,
+  -- and Thumbs.db. None of these are primary research. The page's HTML content
+  -- lives in the parent directory and was already excluded by the format whitelist.
+  -- 43 files in the original CSV, 21 remain after other filters.
+  AND NOT CONTAINS(path, '_files/')
   -- Per-format minimum sizes (filters thumbnails, empty files, corrupt files)
   AND NOT (
     (LOWER(format) IN ('jpg', 'jpeg')       AND CAST(size AS BIGINT) < 200000)
