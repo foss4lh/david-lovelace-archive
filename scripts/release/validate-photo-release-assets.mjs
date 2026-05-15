@@ -56,27 +56,26 @@ async function main() {
 	// Generate photo-urls.json from manifests if missing (no longer tracked in git)
 	if (!existsSync(PHOTO_URLS_PATH)) {
 		console.log('photo-urls.json not found — generating from manifests...');
-		execSync(
-			`python3 -c "
+		const pyScript = `
 import json, glob, os
 entries = []
 for mf in sorted(glob.glob('static/photos/*/manifest.json')):
     with open(mf) as f:
         m = json.load(f)
     coll = m.get('collection')
-    if not coll: continue
+    if not coll:
+        continue
     for p in m.get('photos', []):
         entries.append({
             'path': p['path'],
-            'url': f'/photos/{coll}/web/{os.path.basename(p[\"web\"])}',
-            'thumb_url': f'/photos/{coll}/thumbs/{os.path.basename(p[\"thumb\"])}'
+            'url': '/photos/' + coll + '/web/' + os.path.basename(p['web']),
+            'thumb_url': '/photos/' + coll + '/thumbs/' + os.path.basename(p['thumb'])
         })
 with open('${PHOTO_URLS_PATH}', 'w') as f:
     json.dump(entries, f, indent=2)
-print(f'Generated {len(entries)} photo URLs')
-"`,
-			{ stdio: 'inherit' }
-		);
+print(f'Generated ' + str(len(entries)) + ' photo URLs')
+`;
+		execSync(`python3 -c '${pyScript}'`, { stdio: 'inherit' });
 	}
 
 	const photoUrls = readJson(PHOTO_URLS_PATH);

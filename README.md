@@ -93,9 +93,12 @@ docs/             Architecture, data policy, contributing notes
 
 ## Contributing
 
-This is a research project under active development. Contributions welcome—especially data processing, mapping, historical metadata.
+Want to contribute or ask a question? Get in touch online (requires signing up for a GitHub account):
 
-Open an issue first to discuss changes.
+- **Report bugs or suggest improvements:** [Open an issue](https://github.com/foss4lh/david-lovelace-archive/issues)
+- **Start a discussion:** [GitHub Discussions](https://github.com/foss4lh/david-lovelace-archive/discussions)
+
+Contributions welcome — especially data processing, mapping, and historical metadata.
 
 ## License & Data Policy
 
