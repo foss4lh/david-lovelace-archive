@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { ArrowRight, FileSearch, Map, Image, SearchCheck } from '@lucide/svelte';
+	import { ArrowRight, FileSearch, Map, Image, SearchCheck, ExternalLink } from '@lucide/svelte';
 	import PhotoCarousel from '$lib/components/PhotoCarousel.svelte';
 	import { resolve } from '$app/paths';
 	import { browseDatasets, summaryStats } from '$lib/catalog';
@@ -86,4 +86,35 @@
 			{/each}
 		</div>
 	</section>
+
+	<section class="content-band get-involved">
+		<div>
+			<p class="eyebrow">Get involved</p>
+			<h2>Contribute or ask a question</h2>
+			<p class="lede">
+				Found something interesting? Spot something missing? Get in touch via GitHub. A GitHub
+				account is required.
+			</p>
+			<div class="get-involved-links">
+				<a class="button" href="https://github.com/foss4lh/david-lovelace-archive/issues">
+					<ExternalLink size={16} /> Report an issue
+				</a>
+				<a class="button" href="https://github.com/foss4lh/david-lovelace-archive/discussions">
+					<ExternalLink size={16} /> Start a discussion
+				</a>
+				<a class="button" href="https://github.com/foss4lh/david-lovelace-archive">
+					<ExternalLink size={16} /> View on GitHub
+				</a>
+			</div>
+		</div>
+	</section>
 </main>
+
+<style>
+	.get-involved-links {
+		display: flex;
+		gap: 0.75rem;
+		flex-wrap: wrap;
+		margin-top: 1rem;
+	}
+</style>
