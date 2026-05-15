@@ -46,8 +46,7 @@ CREATE OR REPLACE TABLE files AS
     OR (LOWER(format) = 'txt'
         AND CAST(size AS BIGINT) >= 1024
         AND NOT CONTAINS(path, '/Maps/LIDAR/')
-        AND NOT CONTAINS(path, '/Maps/DEM/')
-        AND NOT CONTAINS(path, '/Maps/grassdata/'))
+        AND NOT CONTAINS(path, '/Maps/DEM/'))
   )
   -- Zoom/panorama tile fragments (derivative files, not primary data)
   AND NOT (
@@ -55,8 +54,24 @@ CREATE OR REPLACE TABLE files AS
     OR CONTAINS(path, '/_group_')
     OR CONTAINS(path, '/html5/')
   )
-  -- Modern OS MasterMap (available from Ordnance Survey, not unique)
+  -- Modern OS MasterMap / OS OpenData (available from Ordnance Survey, not unique)
   AND NOT CONTAINS(path, '/EN_MasterMap')
+  AND NOT CONTAINS(path, '/OS_opendata_2010')
+  -- Derivative GIS working directories (no research value)
+  AND NOT (
+    CONTAINS(path, '/Maps/grassdata/')
+    OR CONTAINS(path, '/Maps/Vectorcomponents/')
+    OR CONTAINS(path, '/Maps/sources/')
+    OR CONTAINS(path, '/Maps/ParishData_HC/')
+  )
+  -- Browser-saved webpage asset directories "*_files/".
+  -- When saving a web page as "Web Page, Complete", browsers create a _files/
+  -- folder containing the page's dependencies: logos, UI chrome (isys-header.jpg,
+  -- top_header_area.gif), auto-extracted article text fragments (f.txt), JS, CSS,
+  -- and Thumbs.db. None of these are primary research. The page's HTML content
+  -- lives in the parent directory and was already excluded by the format whitelist.
+  -- 43 files in the original CSV, 21 remain after other filters.
+  AND NOT CONTAINS(path, '_files/')
   -- Per-format minimum sizes (filters thumbnails, empty files, corrupt files)
   AND NOT (
     (LOWER(format) IN ('jpg', 'jpeg')       AND CAST(size AS BIGINT) < 200000)
