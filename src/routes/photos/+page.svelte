@@ -391,6 +391,22 @@
 	.slideshow-btn:hover {
 		background: #6a715c;
 	}
+	.slideshow-btn {
+		display: inline-flex;
+		align-items: center;
+		gap: 0.5rem;
+		background: #7c836d;
+		color: white;
+		border: none;
+		padding: 0.5rem 1rem;
+		border-radius: 6px;
+		font-size: 0.9rem;
+		cursor: pointer;
+		transition: background 0.15s;
+	}
+	.slideshow-btn:hover {
+		background: #6a715c;
+	}
 	.photo-grid {
 		display: grid;
 		grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
