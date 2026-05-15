@@ -15,9 +15,9 @@
 		{
 			"id": "archive-inventory-duckdb",
 			"title": "Archive Inventory DuckDB",
-			"filename": "archive-v4.duckdb",
-			"url": "https://github.com/foss4lh/david-lovelace-archive/releases/download/data-v0.1.0/archive-v4.duckdb",
-			"target": "static/data/archive-v4.duckdb",
+			"filename": "archive-v5.duckdb",
+			"url": "https://github.com/foss4lh/david-lovelace-archive/releases/download/data-v0.1.0/archive-v5.duckdb",
+			"target": "static/data/archive-v5.duckdb",
 			"requiredForBuild": true,
 			"status": "available"
 		},

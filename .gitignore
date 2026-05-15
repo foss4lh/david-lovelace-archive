@@ -26,6 +26,11 @@ vite.config.ts.timestamp-*
 /static/data/*
 !/static/data/.gitkeep
 !/static/data/*.geojson
+
+# Downloaded photo bundles (zips and extracted web/thumbs)
+/static/photos/*/photos-*.zip
+/static/photos/*/web/
+/static/photos/*/thumbs/
 /public/data/*
 !/public/data/.gitkeep
 
