@@ -36,6 +36,10 @@ def load_duckdb_files(duckdb_path: str):
         "SELECT path, size, LOWER(format) AS fmt, collection "
         "FROM files WHERE LOWER(format) IN ('jpg', 'jpeg', 'tif', 'tiff')"
         " AND path LIKE 'D:/%'"
+        " AND path NOT LIKE '%/LIDAR/%'"
+        " AND path NOT LIKE '%/DEM/%'"
+        " AND path NOT LIKE '%/zoomable/%'"
+        " AND path NOT LIKE '%/zoom/%'"
     )
     result = subprocess.run(
         ["duckdb", duckdb_path, "-json", "-c", sql],
