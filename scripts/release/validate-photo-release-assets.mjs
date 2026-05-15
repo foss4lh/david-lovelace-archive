@@ -5,7 +5,7 @@ import { join } from 'node:path';
 import { execFileSync, execSync } from 'node:child_process';
 import releases from '../../catalog/releases.json' with { type: 'json' };
 
-const PHOTO_ASSET_ID = 'photos-uncategorized';
+const PHOTO_ASSET_ID = 'hfd-uncategorized-photos';
 const PHOTO_URLS_PATH = 'catalog/photo-urls.json';
 
 function fail(message, details = []) {
