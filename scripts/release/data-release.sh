@@ -15,7 +15,7 @@ set -euo pipefail
 DRY_RUN=false
 if [[ "${1:-}" == "--dry-run" ]]; then
   DRY_RUN=true
-  echo "🧪 Dry-run mode — no files will be uploaded or committed"
+  echo "🧪 Dry-run mode — preview only"
 fi
 
 echo "📦 Data Release — $(date)"
@@ -36,7 +36,7 @@ echo "── Step 2/5: Sampling photos from archive ──"
 OUTDIR="/tmp/photo-bundles-$(date +%s)"
 if $DRY_RUN; then
   echo "  Would run: sample-photos.py → ${OUTDIR}"
-  echo "  Would upload 9 zip files to GitHub Releases"
+  echo "  Then manually upload with: gh release upload data-v0.1.0 <zips> --clobber"
 else
   python3 scripts/release/sample-photos.py \
     --archive-root /media/robin/foss4lh1/david-lovelace-archive \
@@ -45,19 +45,16 @@ else
   echo "  ✓ photos sampled"
 fi
 
-# Step 3: Upload assets to GitHub Releases
+# Step 3: Upload assets to GitHub Releases (manual — review before uploading)
 echo ""
 echo "── Step 3/5: Uploading assets to Releases ──"
-if $DRY_RUN; then
-  echo "  Would upload: archive-v*.duckdb + 9 photo zips"
-else
-  ZIPS=$(ls "${OUTDIR}"/photos-*.zip 2>/dev/null || true)
-  gh release upload data-v0.1.0 \
-    static/data/archive-v*.duckdb \
-    ${ZIPS} \
-    --clobber
-  echo "  ✓ assets uploaded"
+echo "  DuckDB: static/data/archive-v*.duckdb"
+echo "    gh release upload data-v0.1.0 static/data/archive-v*.duckdb --clobber"
+if ls "${OUTDIR}"/photos-*.zip >/dev/null 2>&1; then
+  echo "  Photo zips: $(ls "${OUTDIR}"/photos-*.zip | wc -l) files in ${OUTDIR}"
+  echo "    gh release upload data-v0.1.0 ${OUTDIR}/photos-*.zip --clobber"
 fi
+echo "  Review bundles before uploading. This step is intentionally manual."
 
 # Step 4: Regenerate photo-urls.json from manifests
 echo ""
