@@ -57,11 +57,24 @@
 	let deepLinkedPhoto = $state<PhotoEntry | null>(null);
 	let deepLinkError = $state<string | null>(null);
 	let slideCount = $state(0);
+	let currentPage = $state(1);
+	const PAGE_SIZE = 50;
 
 	const activeCollection = $derived(
 		photoCollections.find((c) => c.id === selectedCollection) ?? photoCollections[0]
 	);
 	const activePhoto = $derived(deepLinkedPhoto ?? manifest?.photos[activeIndex] ?? null);
+
+	const totalPages = $derived(
+		manifest ? Math.max(1, Math.ceil(manifest.photos.length / PAGE_SIZE)) : 1
+	);
+	const paginatedPhotos = $derived(
+		manifest ? manifest.photos.slice((currentPage - 1) * PAGE_SIZE, currentPage * PAGE_SIZE) : []
+	);
+	const pageStart = $derived(manifest ? (currentPage - 1) * PAGE_SIZE + 1 : 0);
+	const pageEnd = $derived(
+		manifest ? Math.min(currentPage * PAGE_SIZE, manifest.photos.length) : 0
+	);
 
 	function getCollectionPath(collectionId: string): string {
 		const col = photoCollections.find((c) => c.id === collectionId);
@@ -73,6 +86,7 @@
 		loadError = null;
 		deepLinkedPhoto = null;
 		deepLinkError = null;
+		currentPage = 1;
 		try {
 			const colPath = getCollectionPath(collectionId);
 			const res = await fetch(`${base}${colPath}/manifest.json`);
@@ -297,13 +311,42 @@
 		<div bind:this={galleryRef} style="display:none"></div>
 
 		<section class="photo-grid">
-			{#each manifest.photos as photo, i (photo.path)}
-				<button class="photo-thumb" onclick={() => openManifestLightbox(i)} aria-label="View photo">
+			{#each paginatedPhotos as photo, i (photo.path)}
+				<button
+					class="photo-thumb"
+					onclick={() => openManifestLightbox(i + (currentPage - 1) * PAGE_SIZE)}
+					aria-label="View photo"
+				>
 					<img src="{base}{activeCollection.path}/{photo.thumb}" alt={photo.path} loading="lazy" />
 					<span class="photo-label">{formatPath(photo.path)}</span>
 				</button>
 			{/each}
 		</section>
+
+		{#if totalPages > 1}
+			<nav class="pagination" aria-label="Photo pages">
+				<button
+					class="page-btn"
+					onclick={() => (currentPage = Math.max(1, currentPage - 1))}
+					disabled={currentPage <= 1}
+				>
+					<ChevronLeft size={16} />
+					Previous
+				</button>
+				<span class="page-info"
+					>Page {currentPage} of {totalPages} &mdash; {pageStart}&ndash;{pageEnd} of {manifest
+						?.photos.length}</span
+				>
+				<button
+					class="page-btn"
+					onclick={() => (currentPage = Math.min(totalPages, currentPage + 1))}
+					disabled={currentPage >= totalPages}
+				>
+					Next
+					<ChevronRight size={16} />
+				</button>
+			</nav>
+		{/if}
 	{/if}
 </main>
 
@@ -391,21 +434,36 @@
 	.slideshow-btn:hover {
 		background: #6a715c;
 	}
-	.slideshow-btn {
+	.pagination {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 1rem;
+		margin-top: 1.5rem;
+		padding-top: 1rem;
+	}
+	.page-btn {
 		display: inline-flex;
 		align-items: center;
-		gap: 0.5rem;
-		background: #7c836d;
-		color: white;
-		border: none;
-		padding: 0.5rem 1rem;
+		gap: 0.35rem;
+		padding: 0.45rem 0.85rem;
+		border: 1px solid #d9d3c6;
 		border-radius: 6px;
-		font-size: 0.9rem;
+		background: #fffdf7;
+		font-size: 0.85rem;
 		cursor: pointer;
-		transition: background 0.15s;
+		transition: border-color 0.15s;
 	}
-	.slideshow-btn:hover {
-		background: #6a715c;
+	.page-btn:hover:not(:disabled) {
+		border-color: #7c836d;
+	}
+	.page-btn:disabled {
+		opacity: 0.4;
+		cursor: default;
+	}
+	.page-info {
+		font-size: 0.85rem;
+		color: #5f6359;
 	}
 	.photo-grid {
 		display: grid;
