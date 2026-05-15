@@ -21,6 +21,7 @@
 
 	const photoCollections = [
 		{ id: 'demo', title: 'Demo (uncategorized samples)', path: '/photos/demo' },
+		{ id: 'uncategorized', title: 'Uncategorized Archive Photos', path: '/photos/uncategorized' },
 		{
 			id: 'hfd-royal-commission',
 			title: 'Royal Commission and Parish Survey Material',
