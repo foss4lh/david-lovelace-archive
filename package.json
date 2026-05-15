@@ -18,6 +18,7 @@
 		"prepare": "svelte-kit sync || echo '' && husky install",
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
+		"release:data": "bash scripts/release/data-release.sh",
 		"lint": "prettier --check . && eslint .",
 		"format": "prettier --write ."
 	},
