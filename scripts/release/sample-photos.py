@@ -247,9 +247,13 @@ def main():
         return
 
     # Group by collection (DuckDB already has collection assigned)
+    # Override: assign Luftwaffe files to their own collection regardless of duckdb tag
     by_collection = defaultdict(list)
     for img in all_images:
-        by_collection[img["collection"]].append(img)
+        coll = img["collection"]
+        if "/Luftwaffe/" in img["relative"] or "/luftwaffe/" in img["relative"]:
+            coll = "hfd-luftwaffe"
+        by_collection[coll].append(img)
 
     # Determine which collections to process
     if target_ids is None:

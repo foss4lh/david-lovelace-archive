@@ -907,5 +907,30 @@
 			"Create sample thumbnail gallery for non-georeferenced photos."
 		],
 		"limitations": "Current coverage is limited to Marden parish; additional RAF and commercial aerial photos exist in the archive but are not yet georeferenced."
+	},
+	{
+		"id": "hfd-luftwaffe",
+		"title": "Luftwaffe Aerial Photography",
+		"period": "1940\u20131945",
+		"coverage": "Herefordshire and West Midlands",
+		"theme": "aerial photography",
+		"status": "available",
+		"summary": "German Luftwaffe aerial reconnaissance photography from WWII, covering Herefordshire and the wider West Midlands. Includes both TIFF source files and web-resolution JPEG copies.",
+		"sourceArchivePaths": ["AirPhotos/Luftwaffe"],
+		"assets": [
+			{
+				"id": "hfd-luftwaffe-photos",
+				"kind": "image-bundle",
+				"title": "Luftwaffe aerial reconnaissance photos",
+				"status": "available",
+				"localPath": "/photos/hfd-luftwaffe"
+			}
+		],
+		"nextSteps": [
+			"Georeference Luftwaffe photos where possible.",
+			"Cross-reference with known RAF and NMRC aerial coverage.",
+			"Add contextual metadata about each mission and target area."
+		],
+		"limitations": "Most source files are large TIFFs (~137 MB). Web-resolution JPEG copies exist in jpg_rs/ subdirectory."
 	}
 ]
