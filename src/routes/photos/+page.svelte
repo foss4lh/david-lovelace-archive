@@ -1,7 +1,6 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
 	import { base } from '$app/paths';
-	import { page } from '$app/stores';
 	import { ChevronLeft, ChevronRight, X, ImageOff, Play, Share2 } from '@lucide/svelte';
 	import lightGallery from 'lightgallery';
 	import lgAutoplay from 'lightgallery/plugins/autoplay';
@@ -49,15 +48,7 @@
 		{ id: 'hfd-luftwaffe', title: 'Luftwaffe Aerial Photography', path: '/photos/hfd-luftwaffe' }
 	];
 
-	let selectedCollection = $state($page.params.collection || 'uncategorized');
-
-	$effect(() => {
-		const urlColl = $page.params.collection || 'uncategorized';
-		if (urlColl !== selectedCollection) {
-			selectedCollection = urlColl;
-			loadManifest(urlColl);
-		}
-	});
+	let selectedCollection = $state('uncategorized');
 	let manifest = $state<PhotoManifest | null>(null);
 	let loadError = $state<string | null>(null);
 	let dialogRef = $state<HTMLDialogElement | null>(null);
@@ -110,6 +101,8 @@
 	}
 
 	onMount(async () => {
+		await loadManifest(selectedCollection);
+
 		const params = new URLSearchParams(window.location.search);
 		const targetPath = params.get('path');
 		if (targetPath && manifest) {
@@ -155,8 +148,6 @@
 
 	function onChangeCollection() {
 		loadManifest(selectedCollection);
-		const col = photoCollections.find((c) => c.id === selectedCollection);
-		if (col) window.history.replaceState(null, '', col.path);
 	}
 
 	function openLightbox(index: number) {
