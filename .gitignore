@@ -32,6 +32,8 @@ vite.config.ts.timestamp-*
 # Local archive scans and generated inventories can be very large
 /archive-cache
 /derived-data
+/tmp-bundles/
+/photo-bundles/
 catalog/archive-inventory.csv
 catalog/*.local.json
 
