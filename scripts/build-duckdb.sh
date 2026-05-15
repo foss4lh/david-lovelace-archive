@@ -46,8 +46,7 @@ CREATE OR REPLACE TABLE files AS
     OR (LOWER(format) = 'txt'
         AND CAST(size AS BIGINT) >= 1024
         AND NOT CONTAINS(path, '/Maps/LIDAR/')
-        AND NOT CONTAINS(path, '/Maps/DEM/')
-        AND NOT CONTAINS(path, '/Maps/grassdata/'))
+        AND NOT CONTAINS(path, '/Maps/DEM/'))
   )
   -- Zoom/panorama tile fragments (derivative files, not primary data)
   AND NOT (
@@ -58,6 +57,13 @@ CREATE OR REPLACE TABLE files AS
   -- Modern OS MasterMap / OS OpenData (available from Ordnance Survey, not unique)
   AND NOT CONTAINS(path, '/EN_MasterMap')
   AND NOT CONTAINS(path, '/OS_opendata_2010')
+  -- Derivative GIS working directories (no research value)
+  AND NOT (
+    CONTAINS(path, '/Maps/grassdata/')
+    OR CONTAINS(path, '/Maps/Vectorcomponents/')
+    OR CONTAINS(path, '/Maps/sources/')
+    OR CONTAINS(path, '/Maps/ParishData_HC/')
+  )
   -- Per-format minimum sizes (filters thumbnails, empty files, corrupt files)
   AND NOT (
     (LOWER(format) IN ('jpg', 'jpeg')       AND CAST(size AS BIGINT) < 200000)
