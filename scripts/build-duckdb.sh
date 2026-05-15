@@ -55,8 +55,9 @@ CREATE OR REPLACE TABLE files AS
     OR CONTAINS(path, '/_group_')
     OR CONTAINS(path, '/html5/')
   )
-  -- Modern OS MasterMap (available from Ordnance Survey, not unique)
+  -- Modern OS MasterMap / OS OpenData (available from Ordnance Survey, not unique)
   AND NOT CONTAINS(path, '/EN_MasterMap')
+  AND NOT CONTAINS(path, '/OS_opendata_2010')
   -- Per-format minimum sizes (filters thumbnails, empty files, corrupt files)
   AND NOT (
     (LOWER(format) IN ('jpg', 'jpeg')       AND CAST(size AS BIGINT) < 200000)
