@@ -1,14 +1,144 @@
 {
   "collection": "hfd-hedgerow-surveys",
-  "total_sampled": 90,
+  "total_sampled": 200,
   "web_max_dim": 1200,
   "thumb_max_dim": 300,
   "quality": 80,
   "photos": [
     {
-      "path": "Habitat/HEDGES/so3449Hanson.jpg",
-      "web": "web/Habitat__HEDGES__so3449Hanson.jpg",
-      "thumb": "thumbs/Habitat__HEDGES__so3449Hanson.jpg"
+      "path": "Maps/1QGIS/treephotos/c59e_SAM_7932.JPG",
+      "web": "web/Maps__1QGIS__treephotos__c59e_SAM_7932.jpg",
+      "thumb": "thumbs/Maps__1QGIS__treephotos__c59e_SAM_7932.jpg"
+    },
+    {
+      "path": "Habitat/HEDGES/DormingtonHedge/CIMG0583.JPG",
+      "web": "web/Habitat__HEDGES__DormingtonHedge__CIMG0583.jpg",
+      "thumb": "thumbs/Habitat__HEDGES__DormingtonHedge__CIMG0583.jpg"
+    },
+    {
+      "path": "Maps/1QGIS/treephotos/c59i_SAM_7928.JPG",
+      "web": "web/Maps__1QGIS__treephotos__c59i_SAM_7928.jpg",
+      "thumb": "thumbs/Maps__1QGIS__treephotos__c59i_SAM_7928.jpg"
+    },
+    {
+      "path": "Habitat/MEADOW/Birches/imagesusedintalk_BurtonHotel/IMG_0364.JPG",
+      "web": "web/Habitat__MEADOW__Birches__imagesusedintalk_BurtonHotel__IMG_0364.jpg",
+      "thumb": "thumbs/Habitat__MEADOW__Birches__imagesusedintalk_BurtonHotel__IMG_0364.jpg"
+    },
+    {
+      "path": "Maps/1QGIS/treephotos/c63b_SAM_7466.JPG",
+      "web": "web/Maps__1QGIS__treephotos__c63b_SAM_7466.jpg",
+      "thumb": "thumbs/Maps__1QGIS__treephotos__c63b_SAM_7466.jpg"
+    },
+    {
+      "path": "Habitat/MEADOW/Winforton Meadows/AntHillMeadow/IMG_5367.JPG",
+      "web": "web/Habitat__MEADOW__Winforton Meadows__AntHillMeadow__IMG_5367.jpg",
+      "thumb": "thumbs/Habitat__MEADOW__Winforton Meadows__AntHillMeadow__IMG_5367.jpg"
+    },
+    {
+      "path": "Habitat/HEDGES/Kinnersley Hedge/2005_05_07/IMG_8733.JPG",
+      "web": "web/Habitat__HEDGES__Kinnersley Hedge__2005_05_07__IMG_8733.jpg",
+      "thumb": "thumbs/Habitat__HEDGES__Kinnersley Hedge__2005_05_07__IMG_8733.jpg"
+    },
+    {
+      "path": "Maps/1QGIS/treephotos/c63c_SAM_7475.JPG",
+      "web": "web/Maps__1QGIS__treephotos__c63c_SAM_7475.jpg",
+      "thumb": "thumbs/Maps__1QGIS__treephotos__c63c_SAM_7475.jpg"
+    },
+    {
+      "path": "Maps/1QGIS/treephotos/c63f_SAM_7461.JPG",
+      "web": "web/Maps__1QGIS__treephotos__c63f_SAM_7461.jpg",
+      "thumb": "thumbs/Maps__1QGIS__treephotos__c63f_SAM_7461.jpg"
+    },
+    {
+      "path": "Habitat/MEADOW/Winforton Meadows/AntHillMeadow/IMG_5374.JPG",
+      "web": "web/Habitat__MEADOW__Winforton Meadows__AntHillMeadow__IMG_5374.jpg",
+      "thumb": "thumbs/Habitat__MEADOW__Winforton Meadows__AntHillMeadow__IMG_5374.jpg"
+    },
+    {
+      "path": "Habitat/MEADOW/Birches/imagesusedintalk_BurtonHotel/Kingswood_base-1.TIF",
+      "web": "web/Habitat__MEADOW__Birches__imagesusedintalk_BurtonHotel__Kingswood_base-1.jpg",
+      "thumb": "thumbs/Habitat__MEADOW__Birches__imagesusedintalk_BurtonHotel__Kingswood_base-1.jpg"
+    },
+    {
+      "path": "Habitat/MEADOW/Birches/imagesusedintalk_BurtonHotel/Kingswood_base.tif",
+      "web": "web/Habitat__MEADOW__Birches__imagesusedintalk_BurtonHotel__Kingswood_base.jpg",
+      "thumb": "thumbs/Habitat__MEADOW__Birches__imagesusedintalk_BurtonHotel__Kingswood_base.jpg"
+    },
+    {
+      "path": "Habitat/MEADOW/Winforton Meadows/AntHillMeadow/IMG_9692.JPG",
+      "web": "web/Habitat__MEADOW__Winforton Meadows__AntHillMeadow__IMG_9692.jpg",
+      "thumb": "thumbs/Habitat__MEADOW__Winforton Meadows__AntHillMeadow__IMG_9692.jpg"
+    },
+    {
+      "path": "Habitat/HEDGES/Kinnersley Hedge/2005_05_07/IMG_8743.JPG",
+      "web": "web/Habitat__HEDGES__Kinnersley Hedge__2005_05_07__IMG_8743.jpg",
+      "thumb": "thumbs/Habitat__HEDGES__Kinnersley Hedge__2005_05_07__IMG_8743.jpg"
+    },
+    {
+      "path": "Habitat/MEADOW/Birches/imagesusedintalk_BurtonHotel/Location.jpg",
+      "web": "web/Habitat__MEADOW__Birches__imagesusedintalk_BurtonHotel__Location.jpg",
+      "thumb": "thumbs/Habitat__MEADOW__Birches__imagesusedintalk_BurtonHotel__Location.jpg"
+    },
+    {
+      "path": "Habitat/MEADOW/Winforton Meadows/AntHillMeadow/IMG_9699.JPG",
+      "web": "web/Habitat__MEADOW__Winforton Meadows__AntHillMeadow__IMG_9699.jpg",
+      "thumb": "thumbs/Habitat__MEADOW__Winforton Meadows__AntHillMeadow__IMG_9699.jpg"
+    },
+    {
+      "path": "Maps/1QGIS/treephotos/c66a_SAM_8374.JPG",
+      "web": "web/Maps__1QGIS__treephotos__c66a_SAM_8374.jpg",
+      "thumb": "thumbs/Maps__1QGIS__treephotos__c66a_SAM_8374.jpg"
+    },
+    {
+      "path": "Habitat/HEDGES/Kinnersley Hedge/2005_05_07/IMG_8759.JPG",
+      "web": "web/Habitat__HEDGES__Kinnersley Hedge__2005_05_07__IMG_8759.jpg",
+      "thumb": "thumbs/Habitat__HEDGES__Kinnersley Hedge__2005_05_07__IMG_8759.jpg"
+    },
+    {
+      "path": "Maps/1QGIS/treephotos/c66b_SAM_8386.JPG",
+      "web": "web/Maps__1QGIS__treephotos__c66b_SAM_8386.jpg",
+      "thumb": "thumbs/Maps__1QGIS__treephotos__c66b_SAM_8386.jpg"
+    },
+    {
+      "path": "Habitat/MEADOW/Birches/imagesusedintalk_BurtonHotel/Untitled-1.tif",
+      "web": "web/Habitat__MEADOW__Birches__imagesusedintalk_BurtonHotel__Untitled-1.jpg",
+      "thumb": "thumbs/Habitat__MEADOW__Birches__imagesusedintalk_BurtonHotel__Untitled-1.jpg"
+    },
+    {
+      "path": "Habitat/MEADOW/Birches/imagesusedintalk_BurtonHotel/img020.jpg",
+      "web": "web/Habitat__MEADOW__Birches__imagesusedintalk_BurtonHotel__img020.jpg",
+      "thumb": "thumbs/Habitat__MEADOW__Birches__imagesusedintalk_BurtonHotel__img020.jpg"
+    },
+    {
+      "path": "Habitat/MEADOW/Birches/imagesusedintalk_BurtonHotel/kingswood.tif",
+      "web": "web/Habitat__MEADOW__Birches__imagesusedintalk_BurtonHotel__kingswood.jpg",
+      "thumb": "thumbs/Habitat__MEADOW__Birches__imagesusedintalk_BurtonHotel__kingswood.jpg"
+    },
+    {
+      "path": "Habitat/HEDGES/Kinnersley Hedge/2005_05_07/IMG_8770.JPG",
+      "web": "web/Habitat__HEDGES__Kinnersley Hedge__2005_05_07__IMG_8770.jpg",
+      "thumb": "thumbs/Habitat__HEDGES__Kinnersley Hedge__2005_05_07__IMG_8770.jpg"
+    },
+    {
+      "path": "Maps/1QGIS/treephotos/c67b_SAM_8252.JPG",
+      "web": "web/Maps__1QGIS__treephotos__c67b_SAM_8252.jpg",
+      "thumb": "thumbs/Maps__1QGIS__treephotos__c67b_SAM_8252.jpg"
+    },
+    {
+      "path": "Habitat/MEADOW/Birches/img001.jpg",
+      "web": "web/Habitat__MEADOW__Birches__img001.jpg",
+      "thumb": "thumbs/Habitat__MEADOW__Birches__img001.jpg"
+    },
+    {
+      "path": "Habitat/MEADOW/Birches/img003.jpg",
+      "web": "web/Habitat__MEADOW__Birches__img003.jpg",
+      "thumb": "thumbs/Habitat__MEADOW__Birches__img003.jpg"
+    },
+    {
+      "path": "Habitat/HEDGES/Kinnersley Hedge/AileyClose_21Oct1995NRSC.tif",
+      "web": "web/Habitat__HEDGES__Kinnersley Hedge__AileyClose_21Oct1995NRSC.jpg",
+      "thumb": "thumbs/Habitat__HEDGES__Kinnersley Hedge__AileyClose_21Oct1995NRSC.jpg"
     },
     {
       "path": "Habitat/HEDGES/Kinnersley Hedge/Ailey_1886W.tif",
@@ -16,354 +146,284 @@
       "thumb": "thumbs/Habitat__HEDGES__Kinnersley Hedge__Ailey_1886W.jpg"
     },
     {
-      "path": "Habitat/HEDGES/Kinnersley Hedge/2005_05_07/IMG_8723Meadow_a_2005pan.jpg",
-      "web": "web/Habitat__HEDGES__Kinnersley Hedge__2005_05_07__IMG_8723Meadow_a_2005pan.jpg",
-      "thumb": "thumbs/Habitat__HEDGES__Kinnersley Hedge__2005_05_07__IMG_8723Meadow_a_2005pan.jpg"
+      "path": "Habitat/HEDGES/Kinnersley Hedge/Ailey_21Oct1995NRSC.tif",
+      "web": "web/Habitat__HEDGES__Kinnersley Hedge__Ailey_21Oct1995NRSC.jpg",
+      "thumb": "thumbs/Habitat__HEDGES__Kinnersley Hedge__Ailey_21Oct1995NRSC.jpg"
     },
     {
-      "path": "Habitat/HEDGES/Kinnersley Hedge/KINNERSLEY PHOTO FOLDER/Getmapping 1999-2000  frame Kinnersley-Ailey  fields.jpg",
-      "web": "web/Habitat__HEDGES__Kinnersley Hedge__KINNERSLEY PHOTO FOLDER__Getmapping 1999-2000  frame Kinnersley-Ailey  fields.jpg",
-      "thumb": "thumbs/Habitat__HEDGES__Kinnersley Hedge__KINNERSLEY PHOTO FOLDER__Getmapping 1999-2000  frame Kinnersley-Ailey  fields.jpg"
+      "path": "Maps/1QGIS/treephotos/c67d_SAM_8359.JPG",
+      "web": "web/Maps__1QGIS__treephotos__c67d_SAM_8359.jpg",
+      "thumb": "thumbs/Maps__1QGIS__treephotos__c67d_SAM_8359.jpg"
     },
     {
-      "path": "Habitat/Habitat/BIODIVER/JuniperClose1.jpg",
-      "web": "web/Habitat__Habitat__BIODIVER__JuniperClose1.jpg",
-      "thumb": "thumbs/Habitat__Habitat__BIODIVER__JuniperClose1.jpg"
+      "path": "Habitat/HEDGES/Kinnersley Hedge/KinnersleyHedgeHazel.tif",
+      "web": "web/Habitat__HEDGES__Kinnersley Hedge__KinnersleyHedgeHazel.jpg",
+      "thumb": "thumbs/Habitat__HEDGES__Kinnersley Hedge__KinnersleyHedgeHazel.jpg"
     },
     {
-      "path": "Habitat/Habitat/BIODIVER/Images/campanula.jpg",
-      "web": "web/Habitat__Habitat__BIODIVER__Images__campanula.jpg",
-      "thumb": "thumbs/Habitat__Habitat__BIODIVER__Images__campanula.jpg"
+      "path": "Habitat/MEADOW/Birches/pre_digitalimages(c1885)/img006_field11.jpg",
+      "web": "web/Habitat__MEADOW__Birches__pre_digitalimages(c1885)__img006_field11.jpg",
+      "thumb": "thumbs/Habitat__MEADOW__Birches__pre_digitalimages(c1885)__img006_field11.jpg"
     },
     {
-      "path": "Habitat/Habitat/dsc01991.jpg",
-      "web": "web/Habitat__Habitat__dsc01991.jpg",
-      "thumb": "thumbs/Habitat__Habitat__dsc01991.jpg"
+      "path": "Habitat/MEADOW/Birches/pre_digitalimages(c1885)/img007_field13.jpg",
+      "web": "web/Habitat__MEADOW__Birches__pre_digitalimages(c1885)__img007_field13.jpg",
+      "thumb": "thumbs/Habitat__MEADOW__Birches__pre_digitalimages(c1885)__img007_field13.jpg"
     },
     {
-      "path": "Habitat/Habitat/Commons/Archive/Commons/BlackMtnMonmouth.jpg",
-      "web": "web/Habitat__Habitat__Commons__Archive__Commons__BlackMtnMonmouth.jpg",
-      "thumb": "thumbs/Habitat__Habitat__Commons__Archive__Commons__BlackMtnMonmouth.jpg"
+      "path": "Habitat/MEADOW/Winforton Meadows/Non_lot5/IMG_5875.JPG",
+      "web": "web/Habitat__MEADOW__Winforton Meadows__Non_lot5__IMG_5875.jpg",
+      "thumb": "thumbs/Habitat__MEADOW__Winforton Meadows__Non_lot5__IMG_5875.jpg"
     },
     {
-      "path": "Habitat/Habitat/Grassland & Rivers/Fwd_ RE_ Cttee meeting minutes/Fwd_ RE_ Application for Wye Preservation Trust_ conditions of award/image002.jpg",
-      "web": "web/Habitat__Habitat__Grassland & Rivers__Fwd_ RE_ Cttee meeting minutes__Fwd_ RE_ Application for Wye Preservation Trust_ conditions of award__image002.jpg",
-      "thumb": "thumbs/Habitat__Habitat__Grassland & Rivers__Fwd_ RE_ Cttee meeting minutes__Fwd_ RE_ Application for Wye Preservation Trust_ conditions of award__image002.jpg"
+      "path": "Maps/1QGIS/treephotos/c75a_SAM_8426.JPG",
+      "web": "web/Maps__1QGIS__treephotos__c75a_SAM_8426.jpg",
+      "thumb": "thumbs/Maps__1QGIS__treephotos__c75a_SAM_8426.jpg"
     },
     {
-      "path": "Habitat/Habitat/Grassland & Rivers/Wessington1.jpg",
-      "web": "web/Habitat__Habitat__Grassland & Rivers__Wessington1.jpg",
-      "thumb": "thumbs/Habitat__Habitat__Grassland & Rivers__Wessington1.jpg"
+      "path": "Habitat/MEADOW/Birches/pre_digitalimages(c1885)/img016neighbouringfieldto6.jpg",
+      "web": "web/Habitat__MEADOW__Birches__pre_digitalimages(c1885)__img016neighbouringfieldto6.jpg",
+      "thumb": "thumbs/Habitat__MEADOW__Birches__pre_digitalimages(c1885)__img016neighbouringfieldto6.jpg"
     },
     {
-      "path": "Habitat/Habitat/HEDGES/Dewchurchhedge2002close.jpg",
-      "web": "web/Habitat__Habitat__HEDGES__Dewchurchhedge2002close.jpg",
-      "thumb": "thumbs/Habitat__Habitat__HEDGES__Dewchurchhedge2002close.jpg"
+      "path": "Maps/1QGIS/treephotos/c75b_SAM_7398.JPG",
+      "web": "web/Maps__1QGIS__treephotos__c75b_SAM_7398.jpg",
+      "thumb": "thumbs/Maps__1QGIS__treephotos__c75b_SAM_7398.jpg"
     },
     {
-      "path": "Habitat/Habitat/HEDGES/Kinnersley Hedge/AileyClose_1839.jpg",
-      "web": "web/Habitat__Habitat__HEDGES__Kinnersley Hedge__AileyClose_1839.jpg",
-      "thumb": "thumbs/Habitat__Habitat__HEDGES__Kinnersley Hedge__AileyClose_1839.jpg"
+      "path": "Habitat/HEDGES/Kinnersley Hedge/Meadows_21Oct1995NRSC.tif",
+      "web": "web/Habitat__HEDGES__Kinnersley Hedge__Meadows_21Oct1995NRSC.jpg",
+      "thumb": "thumbs/Habitat__HEDGES__Kinnersley Hedge__Meadows_21Oct1995NRSC.jpg"
     },
     {
-      "path": "Habitat/Habitat/HEDGES/Kinnersley Hedge/2005_05_07/IMG_8723Meadow_a_2005pan.jpg",
-      "web": "web/Habitat__Habitat__HEDGES__Kinnersley Hedge__2005_05_07__IMG_8723Meadow_a_2005pan.jpg",
-      "thumb": "thumbs/Habitat__Habitat__HEDGES__Kinnersley Hedge__2005_05_07__IMG_8723Meadow_a_2005pan.jpg"
+      "path": "Habitat/MEADOW/Birches/pre_digitalimages(c1885)/img017_field9.jpg",
+      "web": "web/Habitat__MEADOW__Birches__pre_digitalimages(c1885)__img017_field9.jpg",
+      "thumb": "thumbs/Habitat__MEADOW__Birches__pre_digitalimages(c1885)__img017_field9.jpg"
     },
     {
-      "path": "Habitat/Habitat/HEDGES/Kinnersley Hedge/KINNERSLEY PHOTO FOLDER/192.com  east field corner- no gap .jpg",
-      "web": "web/Habitat__Habitat__HEDGES__Kinnersley Hedge__KINNERSLEY PHOTO FOLDER__192.com  east field corner- no gap .jpg",
-      "thumb": "thumbs/Habitat__Habitat__HEDGES__Kinnersley Hedge__KINNERSLEY PHOTO FOLDER__192.com  east field corner- no gap .jpg"
+      "path": "Maps/1QGIS/treephotos/c75c_SAM_7394.JPG",
+      "web": "web/Maps__1QGIS__treephotos__c75c_SAM_7394.jpg",
+      "thumb": "thumbs/Maps__1QGIS__treephotos__c75c_SAM_7394.jpg"
     },
     {
-      "path": "Habitat/Habitat/HNT Habitat Map/2005_05_11/IMG_8816HNTfieldcomment.jpg",
-      "web": "web/Habitat__Habitat__HNT Habitat Map__2005_05_11__IMG_8816HNTfieldcomment.jpg",
-      "thumb": "thumbs/Habitat__Habitat__HNT Habitat Map__2005_05_11__IMG_8816HNTfieldcomment.jpg"
+      "path": "Habitat/MEADOW/Birches/surveys/0670_RP_DLovelaceMAP.jpg",
+      "web": "web/Habitat__MEADOW__Birches__surveys__0670_RP_DLovelaceMAP.jpg",
+      "thumb": "thumbs/Habitat__MEADOW__Birches__surveys__0670_RP_DLovelaceMAP.jpg"
     },
     {
-      "path": "Habitat/Habitat/MEADOW/Birches/1941_WWIIsurvey/CRW_5912.jpg",
-      "web": "web/Habitat__Habitat__MEADOW__Birches__1941_WWIIsurvey__CRW_5912.jpg",
-      "thumb": "thumbs/Habitat__Habitat__MEADOW__Birches__1941_WWIIsurvey__CRW_5912.jpg"
+      "path": "Habitat/MEADOW/Birches/pre_digitalimages(c1885)/img021_field4.JPG",
+      "web": "web/Habitat__MEADOW__Birches__pre_digitalimages(c1885)__img021_field4.jpg",
+      "thumb": "thumbs/Habitat__MEADOW__Birches__pre_digitalimages(c1885)__img021_field4.jpg"
     },
     {
-      "path": "Habitat/Habitat/MEADOW/Birches/2007_08_26BirchesLite/IMG_0439.jpg",
-      "web": "web/Habitat__Habitat__MEADOW__Birches__2007_08_26BirchesLite__IMG_0439.jpg",
-      "thumb": "thumbs/Habitat__Habitat__MEADOW__Birches__2007_08_26BirchesLite__IMG_0439.jpg"
+      "path": "Habitat/HEDGES/SpindleErmine/IMG_5288.JPG",
+      "web": "web/Habitat__HEDGES__SpindleErmine__IMG_5288.jpg",
+      "thumb": "thumbs/Habitat__HEDGES__SpindleErmine__IMG_5288.jpg"
     },
     {
-      "path": "Habitat/Habitat/MEADOW/Birches/img004.jpg",
-      "web": "web/Habitat__Habitat__MEADOW__Birches__img004.jpg",
-      "thumb": "thumbs/Habitat__Habitat__MEADOW__Birches__img004.jpg"
+      "path": "Habitat/MEADOW/Winforton Meadows/Non_lot5/IMG_5908.JPG",
+      "web": "web/Habitat__MEADOW__Winforton Meadows__Non_lot5__IMG_5908.jpg",
+      "thumb": "thumbs/Habitat__MEADOW__Winforton Meadows__Non_lot5__IMG_5908.jpg"
     },
     {
-      "path": "Habitat/Habitat/MEADOW/Birches/PixDL_Field9/IMG_0415BurnetMoth.jpg",
-      "web": "web/Habitat__Habitat__MEADOW__Birches__PixDL_Field9__IMG_0415BurnetMoth.jpg",
-      "thumb": "thumbs/Habitat__Habitat__MEADOW__Birches__PixDL_Field9__IMG_0415BurnetMoth.jpg"
+      "path": "Habitat/MEADOW/Brook Farm/2005_05_11/IMG_8939.JPG",
+      "web": "web/Habitat__MEADOW__Brook Farm__2005_05_11__IMG_8939.jpg",
+      "thumb": "thumbs/Habitat__MEADOW__Brook Farm__2005_05_11__IMG_8939.jpg"
     },
     {
-      "path": "Habitat/Habitat/MEADOW/Birches/PixMilesKing/Birches 22.jpg",
-      "web": "web/Habitat__Habitat__MEADOW__Birches__PixMilesKing__Birches 22.jpg",
-      "thumb": "thumbs/Habitat__Habitat__MEADOW__Birches__PixMilesKing__Birches 22.jpg"
+      "path": "Habitat/MEADOW/Winforton Meadows/Non_lot5/IMG_5941.JPG",
+      "web": "web/Habitat__MEADOW__Winforton Meadows__Non_lot5__IMG_5941.jpg",
+      "thumb": "thumbs/Habitat__MEADOW__Winforton Meadows__Non_lot5__IMG_5941.jpg"
     },
     {
-      "path": "Habitat/Habitat/MEADOW/Birches/bf/OS.jpg",
-      "web": "web/Habitat__Habitat__MEADOW__Birches__bf__OS.jpg",
-      "thumb": "thumbs/Habitat__Habitat__MEADOW__Birches__bf__OS.jpg"
+      "path": "Habitat/MEADOW/Winforton Meadows/Non_lot5/IMG_5943.JPG",
+      "web": "web/Habitat__MEADOW__Winforton Meadows__Non_lot5__IMG_5943.jpg",
+      "thumb": "thumbs/Habitat__MEADOW__Winforton Meadows__Non_lot5__IMG_5943.jpg"
     },
     {
-      "path": "Habitat/Habitat/MEADOW/Birches/bf/th/img012-1.jpg",
-      "web": "web/Habitat__Habitat__MEADOW__Birches__bf__th__img012-1.jpg",
-      "thumb": "thumbs/Habitat__Habitat__MEADOW__Birches__bf__th__img012-1.jpg"
+      "path": "Habitat/MEADOW/ErnleGilbert/2021/DSC07373.JPG",
+      "web": "web/Habitat__MEADOW__ErnleGilbert__2021__DSC07373.jpg",
+      "thumb": "thumbs/Habitat__MEADOW__ErnleGilbert__2021__DSC07373.jpg"
     },
     {
-      "path": "Habitat/Habitat/MEADOW/Birches/imagesusedintalk_BurtonHotel/IMG_0450.jpg",
-      "web": "web/Habitat__Habitat__MEADOW__Birches__imagesusedintalk_BurtonHotel__IMG_0450.jpg",
-      "thumb": "thumbs/Habitat__Habitat__MEADOW__Birches__imagesusedintalk_BurtonHotel__IMG_0450.jpg"
+      "path": "Habitat/MEADOW/ErnleGilbert/2021/DSC07377.JPG",
+      "web": "web/Habitat__MEADOW__ErnleGilbert__2021__DSC07377.jpg",
+      "thumb": "thumbs/Habitat__MEADOW__ErnleGilbert__2021__DSC07377.jpg"
     },
     {
-      "path": "Habitat/Habitat/MEADOW/Birches/maps&airphotos/Birches.jpg",
-      "web": "web/Habitat__Habitat__MEADOW__Birches__maps&airphotos__Birches.jpg",
-      "thumb": "thumbs/Habitat__Habitat__MEADOW__Birches__maps&airphotos__Birches.jpg"
+      "path": "Habitat/MEADOW/ErnleGilbert/2021/DSC07378.JPG",
+      "web": "web/Habitat__MEADOW__ErnleGilbert__2021__DSC07378.jpg",
+      "thumb": "thumbs/Habitat__MEADOW__ErnleGilbert__2021__DSC07378.jpg"
     },
     {
-      "path": "Habitat/Habitat/MEADOW/Birches/pixRichieCotterill/Birches Kingswood 27-6-07 023.jpg",
-      "web": "web/Habitat__Habitat__MEADOW__Birches__pixRichieCotterill__Birches Kingswood 27-6-07 023.jpg",
-      "thumb": "thumbs/Habitat__Habitat__MEADOW__Birches__pixRichieCotterill__Birches Kingswood 27-6-07 023.jpg"
+      "path": "Maps/1QGIS/treephotos/c83a_SAM_8712.JPG",
+      "web": "web/Maps__1QGIS__treephotos__c83a_SAM_8712.jpg",
+      "thumb": "thumbs/Maps__1QGIS__treephotos__c83a_SAM_8712.jpg"
     },
     {
-      "path": "Habitat/Habitat/MEADOW/Birches/pre_digitalimages(c1885)/img020close_field13_Ithink.tif",
-      "web": "web/Habitat__Habitat__MEADOW__Birches__pre_digitalimages(c1885)__img020close_field13_Ithink.jpg",
-      "thumb": "thumbs/Habitat__Habitat__MEADOW__Birches__pre_digitalimages(c1885)__img020close_field13_Ithink.jpg"
+      "path": "Maps/1QGIS/treephotos/c83c_SAM_8524.JPG",
+      "web": "web/Maps__1QGIS__treephotos__c83c_SAM_8524.jpg",
+      "thumb": "thumbs/Maps__1QGIS__treephotos__c83c_SAM_8524.jpg"
     },
     {
-      "path": "Habitat/Habitat/MEADOW/Birches/surveys/SO25SE_013_1.2.tif",
-      "web": "web/Habitat__Habitat__MEADOW__Birches__surveys__SO25SE_013_1.2.jpg",
-      "thumb": "thumbs/Habitat__Habitat__MEADOW__Birches__surveys__SO25SE_013_1.2.jpg"
+      "path": "Habitat/MEADOW/Winforton Meadows/Non_lot5/IMG_5977.JPG",
+      "web": "web/Habitat__MEADOW__Winforton Meadows__Non_lot5__IMG_5977.jpg",
+      "thumb": "thumbs/Habitat__MEADOW__Winforton Meadows__Non_lot5__IMG_5977.jpg"
     },
     {
-      "path": "Habitat/Habitat/MEADOW/Brook Farm/2005_05_11/IMG_8971ChurchField1.jpg",
-      "web": "web/Habitat__Habitat__MEADOW__Brook Farm__2005_05_11__IMG_8971ChurchField1.jpg",
-      "thumb": "thumbs/Habitat__Habitat__MEADOW__Brook Farm__2005_05_11__IMG_8971ChurchField1.jpg"
+      "path": "Habitat/MEADOW/Winforton Meadows/Non_lot5/IMG_5979.JPG",
+      "web": "web/Habitat__MEADOW__Winforton Meadows__Non_lot5__IMG_5979.jpg",
+      "thumb": "thumbs/Habitat__MEADOW__Winforton Meadows__Non_lot5__IMG_5979.jpg"
     },
     {
-      "path": "Habitat/Habitat/MEADOW/BuryFarm/MeadowOrchid.jpg",
-      "web": "web/Habitat__Habitat__MEADOW__BuryFarm__MeadowOrchid.jpg",
-      "thumb": "thumbs/Habitat__Habitat__MEADOW__BuryFarm__MeadowOrchid.jpg"
+      "path": "Maps/1QGIS/treephotos/c83f_SAM_8200.JPG",
+      "web": "web/Maps__1QGIS__treephotos__c83f_SAM_8200.jpg",
+      "thumb": "thumbs/Maps__1QGIS__treephotos__c83f_SAM_8200.jpg"
     },
     {
-      "path": "Habitat/Habitat/MEADOW/Cwmmaddoc_1886.jpg",
-      "web": "web/Habitat__Habitat__MEADOW__Cwmmaddoc_1886.jpg",
-      "thumb": "thumbs/Habitat__Habitat__MEADOW__Cwmmaddoc_1886.jpg"
+      "path": "Habitat/MEADOW/Winforton Meadows/Non_lot5/IMG_5985.JPG",
+      "web": "web/Habitat__MEADOW__Winforton Meadows__Non_lot5__IMG_5985.jpg",
+      "thumb": "thumbs/Habitat__MEADOW__Winforton Meadows__Non_lot5__IMG_5985.jpg"
     },
     {
-      "path": "Habitat/Habitat/MEADOW/ErnleGilbert/2021/NewStile_EGmeadow23Apr2020[2].jpg",
-      "web": "web/Habitat__Habitat__MEADOW__ErnleGilbert__2021__NewStile_EGmeadow23Apr2020[2].jpg",
-      "thumb": "thumbs/Habitat__Habitat__MEADOW__ErnleGilbert__2021__NewStile_EGmeadow23Apr2020[2].jpg"
+      "path": "Habitat/MEADOW/ErnleGilbert/2021/_DSC4121.JPG",
+      "web": "web/Habitat__MEADOW__ErnleGilbert__2021___DSC4121.jpg",
+      "thumb": "thumbs/Habitat__MEADOW__ErnleGilbert__2021___DSC4121.jpg"
     },
     {
-      "path": "Habitat/Habitat/batdetectors/Analog Devices _ Analog Dialogue _ transformer_vs_amp_files/AD41-02_12.jpg",
-      "web": "web/Habitat__Habitat__batdetectors__Analog Devices _ Analog Dialogue _ transformer_vs_amp_files__AD41-02_12.jpg",
-      "thumb": "thumbs/Habitat__Habitat__batdetectors__Analog Devices _ Analog Dialogue _ transformer_vs_amp_files__AD41-02_12.jpg"
+      "path": "Habitat/MEADOW/Winforton Meadows/Non_lot5/IMG_5986.JPG",
+      "web": "web/Habitat__MEADOW__Winforton Meadows__Non_lot5__IMG_5986.jpg",
+      "thumb": "thumbs/Habitat__MEADOW__Winforton Meadows__Non_lot5__IMG_5986.jpg"
     },
     {
-      "path": "Habitat/Habitat/batdetectors/BATECHO_files/player416H_front.jpg",
-      "web": "web/Habitat__Habitat__batdetectors__BATECHO_files__player416H_front.jpg",
-      "thumb": "thumbs/Habitat__Habitat__batdetectors__BATECHO_files__player416H_front.jpg"
+      "path": "Habitat/MEADOW/ErnleGilbert/2021/_DSC4146.JPG",
+      "web": "web/Habitat__MEADOW__ErnleGilbert__2021___DSC4146.jpg",
+      "thumb": "thumbs/Habitat__MEADOW__ErnleGilbert__2021___DSC4146.jpg"
     },
     {
-      "path": "Habitat/MEADOW/Birches/1941_WWIIsurvey/CRW_5912.jpg",
-      "web": "web/Habitat__MEADOW__Birches__1941_WWIIsurvey__CRW_5912.jpg",
-      "thumb": "thumbs/Habitat__MEADOW__Birches__1941_WWIIsurvey__CRW_5912.jpg"
+      "path": "Habitat/MEADOW/ErnleGilbert/2021/_DSC4147.JPG",
+      "web": "web/Habitat__MEADOW__ErnleGilbert__2021___DSC4147.jpg",
+      "thumb": "thumbs/Habitat__MEADOW__ErnleGilbert__2021___DSC4147.jpg"
     },
     {
-      "path": "Habitat/MEADOW/Birches/2007_08_26BirchesLite/IMG_0085.jpg",
-      "web": "web/Habitat__MEADOW__Birches__2007_08_26BirchesLite__IMG_0085.jpg",
-      "thumb": "thumbs/Habitat__MEADOW__Birches__2007_08_26BirchesLite__IMG_0085.jpg"
+      "path": "Maps/1QGIS/treephotos/c84c_SAM_8540.JPG",
+      "web": "web/Maps__1QGIS__treephotos__c84c_SAM_8540.jpg",
+      "thumb": "thumbs/Maps__1QGIS__treephotos__c84c_SAM_8540.jpg"
     },
     {
-      "path": "Habitat/MEADOW/Birches/img017.jpg",
-      "web": "web/Habitat__MEADOW__Birches__img017.jpg",
-      "thumb": "thumbs/Habitat__MEADOW__Birches__img017.jpg"
+      "path": "Habitat/MEADOW/Winforton Meadows/Non_lot5/IMG_6072.JPG",
+      "web": "web/Habitat__MEADOW__Winforton Meadows__Non_lot5__IMG_6072.jpg",
+      "thumb": "thumbs/Habitat__MEADOW__Winforton Meadows__Non_lot5__IMG_6072.jpg"
     },
     {
-      "path": "Habitat/MEADOW/Birches/PixDL_Field9/IMG_0415BurnetMoth.jpg",
-      "web": "web/Habitat__MEADOW__Birches__PixDL_Field9__IMG_0415BurnetMoth.jpg",
-      "thumb": "thumbs/Habitat__MEADOW__Birches__PixDL_Field9__IMG_0415BurnetMoth.jpg"
+      "path": "Habitat/MEADOW/ErnleGilbert/2021/_DSC4149.JPG",
+      "web": "web/Habitat__MEADOW__ErnleGilbert__2021___DSC4149.jpg",
+      "thumb": "thumbs/Habitat__MEADOW__ErnleGilbert__2021___DSC4149.jpg"
     },
     {
-      "path": "Habitat/MEADOW/Birches/PixMilesKing/Birches 3.jpg",
-      "web": "web/Habitat__MEADOW__Birches__PixMilesKing__Birches 3.jpg",
-      "thumb": "thumbs/Habitat__MEADOW__Birches__PixMilesKing__Birches 3.jpg"
+      "path": "Habitat/MEADOW/Birches/2007_08_26BirchesLite/IMG_0307.jpg",
+      "web": "web/Habitat__MEADOW__Birches__2007_08_26BirchesLite__IMG_0307.jpg",
+      "thumb": "thumbs/Habitat__MEADOW__Birches__2007_08_26BirchesLite__IMG_0307.jpg"
     },
     {
-      "path": "Habitat/MEADOW/Birches/bf/img012.jpg",
-      "web": "web/Habitat__MEADOW__Birches__bf__img012.jpg",
-      "thumb": "thumbs/Habitat__MEADOW__Birches__bf__img012.jpg"
+      "path": "Habitat/MEADOW/Winforton Meadows/Non_lot5/IMG_6093.JPG",
+      "web": "web/Habitat__MEADOW__Winforton Meadows__Non_lot5__IMG_6093.jpg",
+      "thumb": "thumbs/Habitat__MEADOW__Winforton Meadows__Non_lot5__IMG_6093.jpg"
     },
     {
-      "path": "Habitat/MEADOW/Birches/bf/th/IMG_0431.jpg",
-      "web": "web/Habitat__MEADOW__Birches__bf__th__IMG_0431.jpg",
-      "thumb": "thumbs/Habitat__MEADOW__Birches__bf__th__IMG_0431.jpg"
+      "path": "Maps/1QGIS/treephotos/c85a_SAM_8294.JPG",
+      "web": "web/Maps__1QGIS__treephotos__c85a_SAM_8294.jpg",
+      "thumb": "thumbs/Maps__1QGIS__treephotos__c85a_SAM_8294.jpg"
     },
     {
-      "path": "Habitat/MEADOW/Birches/imagesusedintalk_BurtonHotel/img012.jpg",
-      "web": "web/Habitat__MEADOW__Birches__imagesusedintalk_BurtonHotel__img012.jpg",
-      "thumb": "thumbs/Habitat__MEADOW__Birches__imagesusedintalk_BurtonHotel__img012.jpg"
+      "path": "Habitat/MEADOW/ErnleGilbert/2021/_DSC4156.JPG",
+      "web": "web/Habitat__MEADOW__ErnleGilbert__2021___DSC4156.jpg",
+      "thumb": "thumbs/Habitat__MEADOW__ErnleGilbert__2021___DSC4156.jpg"
     },
     {
-      "path": "Habitat/MEADOW/Birches/maps&airphotos/OS.jpg",
-      "web": "web/Habitat__MEADOW__Birches__maps&airphotos__OS.jpg",
-      "thumb": "thumbs/Habitat__MEADOW__Birches__maps&airphotos__OS.jpg"
+      "path": "Maps/1QGIS/treephotos/c85a_SAM_8416.JPG",
+      "web": "web/Maps__1QGIS__treephotos__c85a_SAM_8416.jpg",
+      "thumb": "thumbs/Maps__1QGIS__treephotos__c85a_SAM_8416.jpg"
     },
     {
-      "path": "Habitat/MEADOW/Birches/pixRichieCotterill/Birches Kingswood 27-6-07 014.jpg",
-      "web": "web/Habitat__MEADOW__Birches__pixRichieCotterill__Birches Kingswood 27-6-07 014.jpg",
-      "thumb": "thumbs/Habitat__MEADOW__Birches__pixRichieCotterill__Birches Kingswood 27-6-07 014.jpg"
+      "path": "Habitat/MEADOW/ErnleGilbert/2021/_DSC4160.JPG",
+      "web": "web/Habitat__MEADOW__ErnleGilbert__2021___DSC4160.jpg",
+      "thumb": "thumbs/Habitat__MEADOW__ErnleGilbert__2021___DSC4160.jpg"
     },
     {
-      "path": "Habitat/MEADOW/Birches/pre_digitalimages(c1885)/img020close_field13_Ithink.tif",
-      "web": "web/Habitat__MEADOW__Birches__pre_digitalimages(c1885)__img020close_field13_Ithink.jpg",
-      "thumb": "thumbs/Habitat__MEADOW__Birches__pre_digitalimages(c1885)__img020close_field13_Ithink.jpg"
+      "path": "Habitat/MEADOW/Birches/2007_08_26BirchesLite/IMG_0331.jpg",
+      "web": "web/Habitat__MEADOW__Birches__2007_08_26BirchesLite__IMG_0331.jpg",
+      "thumb": "thumbs/Habitat__MEADOW__Birches__2007_08_26BirchesLite__IMG_0331.jpg"
     },
     {
-      "path": "Habitat/MEADOW/Birches/surveys/SO25SE_013_2.2.tif",
-      "web": "web/Habitat__MEADOW__Birches__surveys__SO25SE_013_2.2.jpg",
-      "thumb": "thumbs/Habitat__MEADOW__Birches__surveys__SO25SE_013_2.2.jpg"
+      "path": "Habitat/MEADOW/ErnleGilbert/2021/_DSC4163.JPG",
+      "web": "web/Habitat__MEADOW__ErnleGilbert__2021___DSC4163.jpg",
+      "thumb": "thumbs/Habitat__MEADOW__ErnleGilbert__2021___DSC4163.jpg"
     },
     {
-      "path": "Habitat/MEADOW/Brook Farm/2005_05_11/IMG_8965BrookFarmfieldslongshot.jpg",
-      "web": "web/Habitat__MEADOW__Brook Farm__2005_05_11__IMG_8965BrookFarmfieldslongshot.jpg",
-      "thumb": "thumbs/Habitat__MEADOW__Brook Farm__2005_05_11__IMG_8965BrookFarmfieldslongshot.jpg"
+      "path": "Habitat/MEADOW/ErnleGilbert/2021/_DSC4164.JPG",
+      "web": "web/Habitat__MEADOW__ErnleGilbert__2021___DSC4164.jpg",
+      "thumb": "thumbs/Habitat__MEADOW__ErnleGilbert__2021___DSC4164.jpg"
     },
     {
-      "path": "Habitat/MEADOW/BuryFarm/MeadowVsweep.jpg",
-      "web": "web/Habitat__MEADOW__BuryFarm__MeadowVsweep.jpg",
-      "thumb": "thumbs/Habitat__MEADOW__BuryFarm__MeadowVsweep.jpg"
+      "path": "Habitat/MEADOW/ErnleGilbert/2021/_DSC4165.JPG",
+      "web": "web/Habitat__MEADOW__ErnleGilbert__2021___DSC4165.jpg",
+      "thumb": "thumbs/Habitat__MEADOW__ErnleGilbert__2021___DSC4165.jpg"
     },
     {
-      "path": "Habitat/MEADOW/Flood from Pool Cottage.jpg",
-      "web": "web/Habitat__MEADOW__Flood from Pool Cottage.jpg",
-      "thumb": "thumbs/Habitat__MEADOW__Flood from Pool Cottage.jpg"
+      "path": "Maps/1QGIS/treephotos/c88a_SAM_8280.JPG",
+      "web": "web/Maps__1QGIS__treephotos__c88a_SAM_8280.jpg",
+      "thumb": "thumbs/Maps__1QGIS__treephotos__c88a_SAM_8280.jpg"
     },
     {
-      "path": "Habitat/MEADOW/ErnleGilbert/2021/mysteryplantErlieGilbert23Apr2021.jpg",
-      "web": "web/Habitat__MEADOW__ErnleGilbert__2021__mysteryplantErlieGilbert23Apr2021.jpg",
-      "thumb": "thumbs/Habitat__MEADOW__ErnleGilbert__2021__mysteryplantErlieGilbert23Apr2021.jpg"
+      "path": "Habitat/MEADOW/Winforton Meadows/Non_lot5/IMG_6127.JPG",
+      "web": "web/Habitat__MEADOW__Winforton Meadows__Non_lot5__IMG_6127.jpg",
+      "thumb": "thumbs/Habitat__MEADOW__Winforton Meadows__Non_lot5__IMG_6127.jpg"
     },
     {
-      "path": "Habitat/MEADOW/ErnleGilbert/2022/EG_MeadowBrown16July22.jpg",
-      "web": "web/Habitat__MEADOW__ErnleGilbert__2022__EG_MeadowBrown16July22.jpg",
-      "thumb": "thumbs/Habitat__MEADOW__ErnleGilbert__2022__EG_MeadowBrown16July22.jpg"
+      "path": "Habitat/MEADOW/Winforton Meadows/Non_lot5/IMG_6129.JPG",
+      "web": "web/Habitat__MEADOW__Winforton Meadows__Non_lot5__IMG_6129.jpg",
+      "thumb": "thumbs/Habitat__MEADOW__Winforton Meadows__Non_lot5__IMG_6129.jpg"
     },
     {
-      "path": "Habitat/MEADOW/ErnleGilbert/OrchisMorio_ErnleGilbert2016.jpg",
-      "web": "web/Habitat__MEADOW__ErnleGilbert__OrchisMorio_ErnleGilbert2016.jpg",
-      "thumb": "thumbs/Habitat__MEADOW__ErnleGilbert__OrchisMorio_ErnleGilbert2016.jpg"
+      "path": "Habitat/MEADOW/Birches/2007_08_26BirchesLite/IMG_0363.jpg",
+      "web": "web/Habitat__MEADOW__Birches__2007_08_26BirchesLite__IMG_0363.jpg",
+      "thumb": "thumbs/Habitat__MEADOW__Birches__2007_08_26BirchesLite__IMG_0363.jpg"
     },
     {
-      "path": "Habitat/MEADOW/GlouCowslipMeadow/IMG_4480CowslipMeadow.jpg",
-      "web": "web/Habitat__MEADOW__GlouCowslipMeadow__IMG_4480CowslipMeadow.jpg",
-      "thumb": "thumbs/Habitat__MEADOW__GlouCowslipMeadow__IMG_4480CowslipMeadow.jpg"
+      "path": "Habitat/MEADOW/ErnleGilbert/2021/_DSC4173.JPG",
+      "web": "web/Habitat__MEADOW__ErnleGilbert__2021___DSC4173.jpg",
+      "thumb": "thumbs/Habitat__MEADOW__ErnleGilbert__2021___DSC4173.jpg"
     },
     {
-      "path": "Habitat/MEADOW/GlouCowslipMeadow/web/IMG_4501.jpg",
-      "web": "web/Habitat__MEADOW__GlouCowslipMeadow__web__IMG_4501.jpg",
-      "thumb": "thumbs/Habitat__MEADOW__GlouCowslipMeadow__web__IMG_4501.jpg"
+      "path": "Maps/1QGIS/treephotos/c93a_SAM_8196.JPG",
+      "web": "web/Maps__1QGIS__treephotos__c93a_SAM_8196.jpg",
+      "thumb": "thumbs/Maps__1QGIS__treephotos__c93a_SAM_8196.jpg"
     },
     {
-      "path": "Habitat/MEADOW/GlouCowslipMeadow/web/jpglarge/DSC07832.jpg",
-      "web": "web/Habitat__MEADOW__GlouCowslipMeadow__web__jpglarge__DSC07832.jpg",
-      "thumb": "thumbs/Habitat__MEADOW__GlouCowslipMeadow__web__jpglarge__DSC07832.jpg"
+      "path": "Maps/1QGIS/treephotos/c93b_SAM_8171.JPG",
+      "web": "web/Maps__1QGIS__treephotos__c93b_SAM_8171.jpg",
+      "thumb": "thumbs/Maps__1QGIS__treephotos__c93b_SAM_8171.jpg"
     },
     {
-      "path": "Habitat/MEADOW/GlouCowslipMeadow/web/th/omfloret.jpg",
-      "web": "web/Habitat__MEADOW__GlouCowslipMeadow__web__th__omfloret.jpg",
-      "thumb": "thumbs/Habitat__MEADOW__GlouCowslipMeadow__web__th__omfloret.jpg"
+      "path": "Habitat/MEADOW/Winforton Meadows/so2947Winforton.jpg",
+      "web": "web/Habitat__MEADOW__Winforton Meadows__so2947Winforton.jpg",
+      "thumb": "thumbs/Habitat__MEADOW__Winforton Meadows__so2947Winforton.jpg"
     },
     {
-      "path": "Habitat/MEADOW/Oenanthe/OeNCDetailLeafAxil2.jpg",
-      "web": "web/Habitat__MEADOW__Oenanthe__OeNCDetailLeafAxil2.jpg",
-      "thumb": "thumbs/Habitat__MEADOW__Oenanthe__OeNCDetailLeafAxil2.jpg"
+      "path": "Maps/1QGIS/treephotos/c93b_SAM_8172.JPG",
+      "web": "web/Maps__1QGIS__treephotos__c93b_SAM_8172.jpg",
+      "thumb": "thumbs/Maps__1QGIS__treephotos__c93b_SAM_8172.jpg"
     },
     {
-      "path": "Habitat/MEADOW/Oridge/DSC03183annot.tif",
-      "web": "web/Habitat__MEADOW__Oridge__DSC03183annot.jpg",
-      "thumb": "thumbs/Habitat__MEADOW__Oridge__DSC03183annot.jpg"
+      "path": "Maps/1QGIS/treephotos/c94d_SAM_8174.JPG",
+      "web": "web/Maps__1QGIS__treephotos__c94d_SAM_8174.jpg",
+      "thumb": "thumbs/Maps__1QGIS__treephotos__c94d_SAM_8174.jpg"
     },
     {
-      "path": "Habitat/MEADOW/Oridge/web/DSC04055.jpg",
-      "web": "web/Habitat__MEADOW__Oridge__web__DSC04055.jpg",
-      "thumb": "thumbs/Habitat__MEADOW__Oridge__web__DSC04055.jpg"
-    },
-    {
-      "path": "Habitat/MEADOW/Oridge/web/th/DSC03202.jpg",
-      "web": "web/Habitat__MEADOW__Oridge__web__th__DSC03202.jpg",
-      "thumb": "thumbs/Habitat__MEADOW__Oridge__web__th__DSC03202.jpg"
-    },
-    {
-      "path": "Habitat/MEADOW/The Commons/GtBurnetFieldEdge.jpg",
-      "web": "web/Habitat__MEADOW__The Commons__GtBurnetFieldEdge.jpg",
-      "thumb": "thumbs/Habitat__MEADOW__The Commons__GtBurnetFieldEdge.jpg"
-    },
-    {
-      "path": "Habitat/MEADOW/WaterlooMeadowsLetton_2005_05_29/IMG_0192CarexNigra.jpg",
-      "web": "web/Habitat__MEADOW__WaterlooMeadowsLetton_2005_05_29__IMG_0192CarexNigra.jpg",
-      "thumb": "thumbs/Habitat__MEADOW__WaterlooMeadowsLetton_2005_05_29__IMG_0192CarexNigra.jpg"
-    },
-    {
-      "path": "Habitat/MEADOW/Winforton Meadows/2006_03_06/IMG_9676i.jpg",
-      "web": "web/Habitat__MEADOW__Winforton Meadows__2006_03_06__IMG_9676i.jpg",
-      "thumb": "thumbs/Habitat__MEADOW__Winforton Meadows__2006_03_06__IMG_9676i.jpg"
-    },
-    {
-      "path": "Habitat/MEADOW/Winforton Meadows/2006_06_07SpudsLite/IMG_5336.jpg",
-      "web": "web/Habitat__MEADOW__Winforton Meadows__2006_06_07SpudsLite__IMG_5336.jpg",
-      "thumb": "thumbs/Habitat__MEADOW__Winforton Meadows__2006_06_07SpudsLite__IMG_5336.jpg"
-    },
-    {
-      "path": "Habitat/MEADOW/Winforton Meadows/IMG_5892lite.jpg",
-      "web": "web/Habitat__MEADOW__Winforton Meadows__IMG_5892lite.jpg",
-      "thumb": "thumbs/Habitat__MEADOW__Winforton Meadows__IMG_5892lite.jpg"
-    },
-    {
-      "path": "Habitat/MEADOW/Winforton Meadows/AntHillMeadow/IMG_9690i.jpg",
-      "web": "web/Habitat__MEADOW__Winforton Meadows__AntHillMeadow__IMG_9690i.jpg",
-      "thumb": "thumbs/Habitat__MEADOW__Winforton Meadows__AntHillMeadow__IMG_9690i.jpg"
-    },
-    {
-      "path": "Habitat/MEADOW/Winforton Meadows/AntHillMeadow/rs/IMG_9698.jpg",
-      "web": "web/Habitat__MEADOW__Winforton Meadows__AntHillMeadow__rs__IMG_9698.jpg",
-      "thumb": "thumbs/Habitat__MEADOW__Winforton Meadows__AntHillMeadow__rs__IMG_9698.jpg"
-    },
-    {
-      "path": "Habitat/MEADOW/Winforton Meadows/HBRC_data/1056_EW_DLovelace_Phase1_part.jpg",
-      "web": "web/Habitat__MEADOW__Winforton Meadows__HBRC_data__1056_EW_DLovelace_Phase1_part.jpg",
-      "thumb": "thumbs/Habitat__MEADOW__Winforton Meadows__HBRC_data__1056_EW_DLovelace_Phase1_part.jpg"
-    },
-    {
-      "path": "Habitat/MEADOW/Winforton Meadows/Non_lot5/IMG_5931&32annotated.jpg",
-      "web": "web/Habitat__MEADOW__Winforton Meadows__Non_lot5__IMG_5931&32annotated.jpg",
-      "thumb": "thumbs/Habitat__MEADOW__Winforton Meadows__Non_lot5__IMG_5931&32annotated.jpg"
-    },
-    {
-      "path": "Habitat/MEADOW/ploughingpasture2017/PentreField_AP2012.jpg",
-      "web": "web/Habitat__MEADOW__ploughingpasture2017__PentreField_AP2012.jpg",
-      "thumb": "thumbs/Habitat__MEADOW__ploughingpasture2017__PentreField_AP2012.jpg"
-    },
-    {
-      "path": "Habitat/Orchards/BurghillOrchard_TM.jpg",
-      "web": "web/Habitat__Orchards__BurghillOrchard_TM.jpg",
-      "thumb": "thumbs/Habitat__Orchards__BurghillOrchard_TM.jpg"
-    },
-    {
-      "path": "Maps/1QGIS/Cardington&ChurchPreen_QGIS[3].jpg",
-      "web": "web/Maps__1QGIS__Cardington&ChurchPreen_QGIS[3].jpg",
-      "thumb": "thumbs/Maps__1QGIS__Cardington&ChurchPreen_QGIS[3].jpg"
-    },
-    {
-      "path": "Maps/1QGIS/Bodenham Lake Management Plan 68/BodLake_MM_HCshore&hydro.jpg",
-      "web": "web/Maps__1QGIS__Bodenham Lake Management Plan 68__BodLake_MM_HCshore&hydro.jpg",
-      "thumb": "thumbs/Maps__1QGIS__Bodenham Lake Management Plan 68__BodLake_MM_HCshore&hydro.jpg"
+      "path": "Maps/1QGIS/treephotos/c95a_SAM_6634.JPG",
+      "web": "web/Maps__1QGIS__treephotos__c95a_SAM_6634.jpg",
+      "thumb": "thumbs/Maps__1QGIS__treephotos__c95a_SAM_6634.jpg"
     },
     {
       "path": "Maps/1QGIS/treephotos/c95a_SAM_6662.tif",
@@ -371,89 +431,579 @@
       "thumb": "thumbs/Maps__1QGIS__treephotos__c95a_SAM_6662.jpg"
     },
     {
-      "path": "Habitat/Habitat/MEADOW/Birches/2007_08_26BirchesLite/IMG_0304.jpg",
-      "web": "web/Habitat__Habitat__MEADOW__Birches__2007_08_26BirchesLite__IMG_0304.jpg",
-      "thumb": "thumbs/Habitat__Habitat__MEADOW__Birches__2007_08_26BirchesLite__IMG_0304.jpg"
+      "path": "Habitat/MEADOW/ErnleGilbert/DSC00075.JPG",
+      "web": "web/Habitat__MEADOW__ErnleGilbert__DSC00075.jpg",
+      "thumb": "thumbs/Habitat__MEADOW__ErnleGilbert__DSC00075.jpg"
     },
     {
-      "path": "Habitat/MEADOW/Birches/2007_08_26BirchesLite/IMG_0484.jpg",
-      "web": "web/Habitat__MEADOW__Birches__2007_08_26BirchesLite__IMG_0484.jpg",
-      "thumb": "thumbs/Habitat__MEADOW__Birches__2007_08_26BirchesLite__IMG_0484.jpg"
+      "path": "Habitat/Orchards/wrecked orchard 1.jpg",
+      "web": "web/Habitat__Orchards__wrecked orchard 1.jpg",
+      "thumb": "thumbs/Habitat__Orchards__wrecked orchard 1.jpg"
     },
     {
-      "path": "Habitat/MEADOW/Birches/2007_08_26BirchesLite/IMG_0323.jpg",
-      "web": "web/Habitat__MEADOW__Birches__2007_08_26BirchesLite__IMG_0323.jpg",
-      "thumb": "thumbs/Habitat__MEADOW__Birches__2007_08_26BirchesLite__IMG_0323.jpg"
+      "path": "Habitat/Orchards/wrecked orchard 2.jpg",
+      "web": "web/Habitat__Orchards__wrecked orchard 2.jpg",
+      "thumb": "thumbs/Habitat__Orchards__wrecked orchard 2.jpg"
     },
     {
-      "path": "Habitat/MEADOW/Birches/2007_08_26BirchesLite/IMG_0370.jpg",
-      "web": "web/Habitat__MEADOW__Birches__2007_08_26BirchesLite__IMG_0370.jpg",
-      "thumb": "thumbs/Habitat__MEADOW__Birches__2007_08_26BirchesLite__IMG_0370.jpg"
+      "path": "Maps/1QGIS/treephotos/c96a_SAM_8284.JPG",
+      "web": "web/Maps__1QGIS__treephotos__c96a_SAM_8284.jpg",
+      "thumb": "thumbs/Maps__1QGIS__treephotos__c96a_SAM_8284.jpg"
     },
     {
-      "path": "Habitat/Habitat/MEADOW/Birches/2007_08_26BirchesLite/IMG_0397.jpg",
-      "web": "web/Habitat__Habitat__MEADOW__Birches__2007_08_26BirchesLite__IMG_0397.jpg",
-      "thumb": "thumbs/Habitat__Habitat__MEADOW__Birches__2007_08_26BirchesLite__IMG_0397.jpg"
+      "path": "Habitat/MEADOW/ErnleGilbert/DSC00087.JPG",
+      "web": "web/Habitat__MEADOW__ErnleGilbert__DSC00087.jpg",
+      "thumb": "thumbs/Habitat__MEADOW__ErnleGilbert__DSC00087.jpg"
     },
     {
-      "path": "Habitat/Habitat/MEADOW/Birches/2007_08_26BirchesLite/IMG_0402.jpg",
-      "web": "web/Habitat__Habitat__MEADOW__Birches__2007_08_26BirchesLite__IMG_0402.jpg",
-      "thumb": "thumbs/Habitat__Habitat__MEADOW__Birches__2007_08_26BirchesLite__IMG_0402.jpg"
+      "path": "Maps/1QGIS/treephotos/c95d_SAM_8190.JPG",
+      "web": "web/Maps__1QGIS__treephotos__c95d_SAM_8190.jpg",
+      "thumb": "thumbs/Maps__1QGIS__treephotos__c95d_SAM_8190.jpg"
     },
     {
-      "path": "Habitat/MEADOW/Birches/2007_08_26BirchesLite/IMG_0404.jpg",
-      "web": "web/Habitat__MEADOW__Birches__2007_08_26BirchesLite__IMG_0404.jpg",
-      "thumb": "thumbs/Habitat__MEADOW__Birches__2007_08_26BirchesLite__IMG_0404.jpg"
+      "path": "Habitat/MEADOW/ErnleGilbert/DSC00093.JPG",
+      "web": "web/Habitat__MEADOW__ErnleGilbert__DSC00093.jpg",
+      "thumb": "thumbs/Habitat__MEADOW__ErnleGilbert__DSC00093.jpg"
     },
     {
-      "path": "Habitat/Habitat/MEADOW/Birches/2007_08_26BirchesLite/IMG_0419.jpg",
-      "web": "web/Habitat__Habitat__MEADOW__Birches__2007_08_26BirchesLite__IMG_0419.jpg",
-      "thumb": "thumbs/Habitat__Habitat__MEADOW__Birches__2007_08_26BirchesLite__IMG_0419.jpg"
+      "path": "Maps/1QGIS/Bodenham Lake Management Plan 68/Layout Image.tif",
+      "web": "web/Maps__1QGIS__Bodenham Lake Management Plan 68__Layout Image.jpg",
+      "thumb": "thumbs/Maps__1QGIS__Bodenham Lake Management Plan 68__Layout Image.jpg"
     },
     {
-      "path": "Habitat/Habitat/MEADOW/Birches/2007_08_26BirchesLite/IMG_0017.jpg",
-      "web": "web/Habitat__Habitat__MEADOW__Birches__2007_08_26BirchesLite__IMG_0017.jpg",
-      "thumb": "thumbs/Habitat__Habitat__MEADOW__Birches__2007_08_26BirchesLite__IMG_0017.jpg"
+      "path": "Habitat/MEADOW/ErnleGilbert/DSC00096.JPG",
+      "web": "web/Habitat__MEADOW__ErnleGilbert__DSC00096.jpg",
+      "thumb": "thumbs/Habitat__MEADOW__ErnleGilbert__DSC00096.jpg"
     },
     {
-      "path": "Habitat/Habitat/MEADOW/Birches/2007_08_26BirchesLite/IMG_0435.jpg",
-      "web": "web/Habitat__Habitat__MEADOW__Birches__2007_08_26BirchesLite__IMG_0435.jpg",
-      "thumb": "thumbs/Habitat__Habitat__MEADOW__Birches__2007_08_26BirchesLite__IMG_0435.jpg"
+      "path": "Maps/1QGIS/treephotos/c98b_SAM_8074.JPG",
+      "web": "web/Maps__1QGIS__treephotos__c98b_SAM_8074.jpg",
+      "thumb": "thumbs/Maps__1QGIS__treephotos__c98b_SAM_8074.jpg"
     },
     {
-      "path": "Habitat/Habitat/MEADOW/Birches/2007_08_26BirchesLite/IMG_0059.jpg",
-      "web": "web/Habitat__Habitat__MEADOW__Birches__2007_08_26BirchesLite__IMG_0059.jpg",
-      "thumb": "thumbs/Habitat__Habitat__MEADOW__Birches__2007_08_26BirchesLite__IMG_0059.jpg"
+      "path": "Maps/1QGIS/MocktreeMethodists_modified.tif",
+      "web": "web/Maps__1QGIS__MocktreeMethodists_modified.jpg",
+      "thumb": "thumbs/Maps__1QGIS__MocktreeMethodists_modified.jpg"
     },
     {
-      "path": "Habitat/MEADOW/Birches/2007_08_26BirchesLite/IMG_0010.jpg",
-      "web": "web/Habitat__MEADOW__Birches__2007_08_26BirchesLite__IMG_0010.jpg",
-      "thumb": "thumbs/Habitat__MEADOW__Birches__2007_08_26BirchesLite__IMG_0010.jpg"
+      "path": "Maps/1QGIS/belmontlayout.tif",
+      "web": "web/Maps__1QGIS__belmontlayout.jpg",
+      "thumb": "thumbs/Maps__1QGIS__belmontlayout.jpg"
     },
     {
-      "path": "Habitat/MEADOW/Birches/bf/th/IMG_0468.jpg",
-      "web": "web/Habitat__MEADOW__Birches__bf__th__IMG_0468.jpg",
-      "thumb": "thumbs/Habitat__MEADOW__Birches__bf__th__IMG_0468.jpg"
+      "path": "Maps/1QGIS/belmontlayout1885.tif",
+      "web": "web/Maps__1QGIS__belmontlayout1885.jpg",
+      "thumb": "thumbs/Maps__1QGIS__belmontlayout1885.jpg"
     },
     {
-      "path": "Habitat/MEADOW/Birches/2007_08_26BirchesLite/IMG_0453.jpg",
-      "web": "web/Habitat__MEADOW__Birches__2007_08_26BirchesLite__IMG_0453.jpg",
-      "thumb": "thumbs/Habitat__MEADOW__Birches__2007_08_26BirchesLite__IMG_0453.jpg"
+      "path": "Maps/1QGIS/treephotos/c98d_SAM_8072.JPG",
+      "web": "web/Maps__1QGIS__treephotos__c98d_SAM_8072.jpg",
+      "thumb": "thumbs/Maps__1QGIS__treephotos__c98d_SAM_8072.jpg"
     },
     {
-      "path": "Habitat/Habitat/MEADOW/Birches/2007_08_26BirchesLite/IMG_0473.jpg",
-      "web": "web/Habitat__Habitat__MEADOW__Birches__2007_08_26BirchesLite__IMG_0473.jpg",
-      "thumb": "thumbs/Habitat__Habitat__MEADOW__Birches__2007_08_26BirchesLite__IMG_0473.jpg"
+      "path": "Maps/1QGIS/treephotos/a40b_SAM_6396.JPG",
+      "web": "web/Maps__1QGIS__treephotos__a40b_SAM_6396.jpg",
+      "thumb": "thumbs/Maps__1QGIS__treephotos__a40b_SAM_6396.jpg"
     },
     {
-      "path": "Habitat/Habitat/MEADOW/Birches/2007_08_26BirchesLite/IMG_0293.jpg",
-      "web": "web/Habitat__Habitat__MEADOW__Birches__2007_08_26BirchesLite__IMG_0293.jpg",
-      "thumb": "thumbs/Habitat__Habitat__MEADOW__Birches__2007_08_26BirchesLite__IMG_0293.jpg"
+      "path": "Maps/1QGIS/treephotos/a40b_SAM_7867.JPG",
+      "web": "web/Maps__1QGIS__treephotos__a40b_SAM_7867.jpg",
+      "thumb": "thumbs/Maps__1QGIS__treephotos__a40b_SAM_7867.jpg"
     },
     {
-      "path": "Habitat/MEADOW/Birches/2007_08_26BirchesLite/IMG_0180.jpg",
-      "web": "web/Habitat__MEADOW__Birches__2007_08_26BirchesLite__IMG_0180.jpg",
-      "thumb": "thumbs/Habitat__MEADOW__Birches__2007_08_26BirchesLite__IMG_0180.jpg"
+      "path": "Habitat/MEADOW/Birches/2007_08_26BirchesLite/IMG_0455.jpg",
+      "web": "web/Habitat__MEADOW__Birches__2007_08_26BirchesLite__IMG_0455.jpg",
+      "thumb": "thumbs/Habitat__MEADOW__Birches__2007_08_26BirchesLite__IMG_0455.jpg"
+    },
+    {
+      "path": "Maps/1QGIS/treephotos/d04c_SAM_8163.JPG",
+      "web": "web/Maps__1QGIS__treephotos__d04c_SAM_8163.jpg",
+      "thumb": "thumbs/Maps__1QGIS__treephotos__d04c_SAM_8163.jpg"
+    },
+    {
+      "path": "Maps/1QGIS/treephotos/d04d_SAM_8685.JPG",
+      "web": "web/Maps__1QGIS__treephotos__d04d_SAM_8685.jpg",
+      "thumb": "thumbs/Maps__1QGIS__treephotos__d04d_SAM_8685.jpg"
+    },
+    {
+      "path": "Maps/1QGIS/treephotos/a40j_SAM_7901.JPG",
+      "web": "web/Maps__1QGIS__treephotos__a40j_SAM_7901.jpg",
+      "thumb": "thumbs/Maps__1QGIS__treephotos__a40j_SAM_7901.jpg"
+    },
+    {
+      "path": "Maps/1QGIS/treephotos/a40k_SAM_7902.JPG",
+      "web": "web/Maps__1QGIS__treephotos__a40k_SAM_7902.jpg",
+      "thumb": "thumbs/Maps__1QGIS__treephotos__a40k_SAM_7902.jpg"
+    },
+    {
+      "path": "Habitat/MEADOW/GlouCowslipMeadow/IMG_7151.JPG",
+      "web": "web/Habitat__MEADOW__GlouCowslipMeadow__IMG_7151.jpg",
+      "thumb": "thumbs/Habitat__MEADOW__GlouCowslipMeadow__IMG_7151.jpg"
+    },
+    {
+      "path": "Maps/1QGIS/treephotos/a41d_SAM_7877.JPG",
+      "web": "web/Maps__1QGIS__treephotos__a41d_SAM_7877.jpg",
+      "thumb": "thumbs/Maps__1QGIS__treephotos__a41d_SAM_7877.jpg"
+    },
+    {
+      "path": "Maps/1QGIS/treephotos/d06a_SAM_8118.JPG",
+      "web": "web/Maps__1QGIS__treephotos__d06a_SAM_8118.jpg",
+      "thumb": "thumbs/Maps__1QGIS__treephotos__d06a_SAM_8118.jpg"
+    },
+    {
+      "path": "Habitat/MEADOW/GlouCowslipMeadow/IMG_7157.JPG",
+      "web": "web/Habitat__MEADOW__GlouCowslipMeadow__IMG_7157.jpg",
+      "thumb": "thumbs/Habitat__MEADOW__GlouCowslipMeadow__IMG_7157.jpg"
+    },
+    {
+      "path": "Maps/1QGIS/treephotos/d07c_SAM_8105.JPG",
+      "web": "web/Maps__1QGIS__treephotos__d07c_SAM_8105.jpg",
+      "thumb": "thumbs/Maps__1QGIS__treephotos__d07c_SAM_8105.jpg"
+    },
+    {
+      "path": "Maps/1QGIS/treephotos/a41g_SAM_7956.JPG",
+      "web": "web/Maps__1QGIS__treephotos__a41g_SAM_7956.jpg",
+      "thumb": "thumbs/Maps__1QGIS__treephotos__a41g_SAM_7956.jpg"
+    },
+    {
+      "path": "Maps/1QGIS/treephotos/d07d_SAM_8095.JPG",
+      "web": "web/Maps__1QGIS__treephotos__d07d_SAM_8095.jpg",
+      "thumb": "thumbs/Maps__1QGIS__treephotos__d07d_SAM_8095.jpg"
+    },
+    {
+      "path": "Habitat/MEADOW/Birches/PixDL_Barns/IMG_0450.JPG",
+      "web": "web/Habitat__MEADOW__Birches__PixDL_Barns__IMG_0450.jpg",
+      "thumb": "thumbs/Habitat__MEADOW__Birches__PixDL_Barns__IMG_0450.jpg"
+    },
+    {
+      "path": "Habitat/MEADOW/Birches/PixDL_Barns/IMG_0453.JPG",
+      "web": "web/Habitat__MEADOW__Birches__PixDL_Barns__IMG_0453.jpg",
+      "thumb": "thumbs/Habitat__MEADOW__Birches__PixDL_Barns__IMG_0453.jpg"
+    },
+    {
+      "path": "Maps/1QGIS/treephotos/d07e_SAM_8089.JPG",
+      "web": "web/Maps__1QGIS__treephotos__d07e_SAM_8089.jpg",
+      "thumb": "thumbs/Maps__1QGIS__treephotos__d07e_SAM_8089.jpg"
+    },
+    {
+      "path": "Maps/1QGIS/treephotos/d07f_SAM_8094.JPG",
+      "web": "web/Maps__1QGIS__treephotos__d07f_SAM_8094.jpg",
+      "thumb": "thumbs/Maps__1QGIS__treephotos__d07f_SAM_8094.jpg"
+    },
+    {
+      "path": "Maps/1QGIS/treephotos/a50c_SAM_7949.JPG",
+      "web": "web/Maps__1QGIS__treephotos__a50c_SAM_7949.jpg",
+      "thumb": "thumbs/Maps__1QGIS__treephotos__a50c_SAM_7949.jpg"
+    },
+    {
+      "path": "Maps/1QGIS/treephotos/d08a_SAM_8078.JPG",
+      "web": "web/Maps__1QGIS__treephotos__d08a_SAM_8078.jpg",
+      "thumb": "thumbs/Maps__1QGIS__treephotos__d08a_SAM_8078.jpg"
+    },
+    {
+      "path": "Maps/1QGIS/treephotos/a50c_SAM_7950.JPG",
+      "web": "web/Maps__1QGIS__treephotos__a50c_SAM_7950.jpg",
+      "thumb": "thumbs/Maps__1QGIS__treephotos__a50c_SAM_7950.jpg"
+    },
+    {
+      "path": "Habitat/MEADOW/GlouCowslipMeadow/web/jpglarge/IMG_4474.jpg",
+      "web": "web/Habitat__MEADOW__GlouCowslipMeadow__web__jpglarge__IMG_4474.jpg",
+      "thumb": "thumbs/Habitat__MEADOW__GlouCowslipMeadow__web__jpglarge__IMG_4474.jpg"
+    },
+    {
+      "path": "Maps/1QGIS/treephotos/d13f_SAM_8150.JPG",
+      "web": "web/Maps__1QGIS__treephotos__d13f_SAM_8150.jpg",
+      "thumb": "thumbs/Maps__1QGIS__treephotos__d13f_SAM_8150.jpg"
+    },
+    {
+      "path": "Habitat/MEADOW/GlouCowslipMeadow/web/jpglarge/IMG_4501.jpg",
+      "web": "web/Habitat__MEADOW__GlouCowslipMeadow__web__jpglarge__IMG_4501.jpg",
+      "thumb": "thumbs/Habitat__MEADOW__GlouCowslipMeadow__web__jpglarge__IMG_4501.jpg"
+    },
+    {
+      "path": "Habitat/MEADOW/Birches/PixDL_Barns/IMG_0472.JPG",
+      "web": "web/Habitat__MEADOW__Birches__PixDL_Barns__IMG_0472.jpg",
+      "thumb": "thumbs/Habitat__MEADOW__Birches__PixDL_Barns__IMG_0472.jpg"
+    },
+    {
+      "path": "Habitat/MEADOW/GlouCowslipMeadow/web/jpglarge/omfloret.JPG",
+      "web": "web/Habitat__MEADOW__GlouCowslipMeadow__web__jpglarge__omfloret.jpg",
+      "thumb": "thumbs/Habitat__MEADOW__GlouCowslipMeadow__web__jpglarge__omfloret.jpg"
+    },
+    {
+      "path": "Maps/1QGIS/treephotos/a50i_SAM_7985.JPG",
+      "web": "web/Maps__1QGIS__treephotos__a50i_SAM_7985.jpg",
+      "thumb": "thumbs/Maps__1QGIS__treephotos__a50i_SAM_7985.jpg"
+    },
+    {
+      "path": "Habitat/MEADOW/Birches/PixDL_Field0[pond]/IMG_0371.JPG",
+      "web": "web/Habitat__MEADOW__Birches__PixDL_Field0[pond]__IMG_0371.jpg",
+      "thumb": "thumbs/Habitat__MEADOW__Birches__PixDL_Field0[pond]__IMG_0371.jpg"
+    },
+    {
+      "path": "Maps/1QGIS/treephotos/d14c_SAM_8144.JPG",
+      "web": "web/Maps__1QGIS__treephotos__d14c_SAM_8144.jpg",
+      "thumb": "thumbs/Maps__1QGIS__treephotos__d14c_SAM_8144.jpg"
+    },
+    {
+      "path": "Maps/1QGIS/treephotos/a50j_SAM_7984.JPG",
+      "web": "web/Maps__1QGIS__treephotos__a50j_SAM_7984.jpg",
+      "thumb": "thumbs/Maps__1QGIS__treephotos__a50j_SAM_7984.jpg"
+    },
+    {
+      "path": "Habitat/MEADOW/Birches/PixDL_Field12/IMG_0436.JPG",
+      "web": "web/Habitat__MEADOW__Birches__PixDL_Field12__IMG_0436.jpg",
+      "thumb": "thumbs/Habitat__MEADOW__Birches__PixDL_Field12__IMG_0436.jpg"
+    },
+    {
+      "path": "Habitat/MEADOW/Birches/PixDL_Field12/IMG_0438.JPG",
+      "web": "web/Habitat__MEADOW__Birches__PixDL_Field12__IMG_0438.jpg",
+      "thumb": "thumbs/Habitat__MEADOW__Birches__PixDL_Field12__IMG_0438.jpg"
+    },
+    {
+      "path": "Maps/1QGIS/treephotos/a51a_SAM_7961.JPG",
+      "web": "web/Maps__1QGIS__treephotos__a51a_SAM_7961.jpg",
+      "thumb": "thumbs/Maps__1QGIS__treephotos__a51a_SAM_7961.jpg"
+    },
+    {
+      "path": "Habitat/MEADOW/Birches/PixDL_Field13/IMG_0405.JPG",
+      "web": "web/Habitat__MEADOW__Birches__PixDL_Field13__IMG_0405.jpg",
+      "thumb": "thumbs/Habitat__MEADOW__Birches__PixDL_Field13__IMG_0405.jpg"
+    },
+    {
+      "path": "Habitat/MEADOW/MeadowPage.JPG",
+      "web": "web/Habitat__MEADOW__MeadowPage.jpg",
+      "thumb": "thumbs/Habitat__MEADOW__MeadowPage.jpg"
+    },
+    {
+      "path": "Habitat/MEADOW/Birches/PixDL_Field13/IMG_0407.JPG",
+      "web": "web/Habitat__MEADOW__Birches__PixDL_Field13__IMG_0407.jpg",
+      "thumb": "thumbs/Habitat__MEADOW__Birches__PixDL_Field13__IMG_0407.jpg"
+    },
+    {
+      "path": "Maps/1QGIS/treephotos/a51d_SAM_7973.JPG",
+      "web": "web/Maps__1QGIS__treephotos__a51d_SAM_7973.jpg",
+      "thumb": "thumbs/Maps__1QGIS__treephotos__a51d_SAM_7973.jpg"
+    },
+    {
+      "path": "Maps/1QGIS/treephotos/a51d_SAM_7974.JPG",
+      "web": "web/Maps__1QGIS__treephotos__a51d_SAM_7974.jpg",
+      "thumb": "thumbs/Maps__1QGIS__treephotos__a51d_SAM_7974.jpg"
+    },
+    {
+      "path": "Maps/1QGIS/treephotos/a51e_SAM_6457_298.JPG",
+      "web": "web/Maps__1QGIS__treephotos__a51e_SAM_6457_298.jpg",
+      "thumb": "thumbs/Maps__1QGIS__treephotos__a51e_SAM_6457_298.jpg"
+    },
+    {
+      "path": "Maps/1QGIS/treephotos/d16d_SAM_8653.JPG",
+      "web": "web/Maps__1QGIS__treephotos__d16d_SAM_8653.jpg",
+      "thumb": "thumbs/Maps__1QGIS__treephotos__d16d_SAM_8653.jpg"
+    },
+    {
+      "path": "Maps/1QGIS/treephotos/d17b_SAM_8581.JPG",
+      "web": "web/Maps__1QGIS__treephotos__d17b_SAM_8581.jpg",
+      "thumb": "thumbs/Maps__1QGIS__treephotos__d17b_SAM_8581.jpg"
+    },
+    {
+      "path": "Habitat/MEADOW/Birches/PixDL_Field14/IMG_0425.JPG",
+      "web": "web/Habitat__MEADOW__Birches__PixDL_Field14__IMG_0425.jpg",
+      "thumb": "thumbs/Habitat__MEADOW__Birches__PixDL_Field14__IMG_0425.jpg"
+    },
+    {
+      "path": "Maps/1QGIS/treephotos/a51c_SAM_7968.JPG",
+      "web": "web/Maps__1QGIS__treephotos__a51c_SAM_7968.jpg",
+      "thumb": "thumbs/Maps__1QGIS__treephotos__a51c_SAM_7968.jpg"
+    },
+    {
+      "path": "Habitat/MEADOW/Birches/PixDL_Field14/IMG_0427.JPG",
+      "web": "web/Habitat__MEADOW__Birches__PixDL_Field14__IMG_0427.jpg",
+      "thumb": "thumbs/Habitat__MEADOW__Birches__PixDL_Field14__IMG_0427.jpg"
+    },
+    {
+      "path": "Maps/1QGIS/treephotos/d26b_SAM_8139.JPG",
+      "web": "web/Maps__1QGIS__treephotos__d26b_SAM_8139.jpg",
+      "thumb": "thumbs/Maps__1QGIS__treephotos__d26b_SAM_8139.jpg"
+    },
+    {
+      "path": "Habitat/MEADOW/Birches/PixDL_Field14/IMG_0430.JPG",
+      "web": "web/Habitat__MEADOW__Birches__PixDL_Field14__IMG_0430.jpg",
+      "thumb": "thumbs/Habitat__MEADOW__Birches__PixDL_Field14__IMG_0430.jpg"
+    },
+    {
+      "path": "Maps/1QGIS/treephotos/d25a_SAM_8635.JPG",
+      "web": "web/Maps__1QGIS__treephotos__d25a_SAM_8635.jpg",
+      "thumb": "thumbs/Maps__1QGIS__treephotos__d25a_SAM_8635.jpg"
+    },
+    {
+      "path": "Maps/1QGIS/treephotos/a51g_SAM_7983.JPG",
+      "web": "web/Maps__1QGIS__treephotos__a51g_SAM_7983.jpg",
+      "thumb": "thumbs/Maps__1QGIS__treephotos__a51g_SAM_7983.jpg"
+    },
+    {
+      "path": "Habitat/MEADOW/Oridge/DSC03183annot.tif",
+      "web": "web/Habitat__MEADOW__Oridge__DSC03183annot.jpg",
+      "thumb": "thumbs/Habitat__MEADOW__Oridge__DSC03183annot.jpg"
+    },
+    {
+      "path": "Maps/1QGIS/treephotos/a60b_SAM_6459.JPG",
+      "web": "web/Maps__1QGIS__treephotos__a60b_SAM_6459.jpg",
+      "thumb": "thumbs/Maps__1QGIS__treephotos__a60b_SAM_6459.jpg"
+    },
+    {
+      "path": "Habitat/MEADOW/Oridge/DSC03185.TIF",
+      "web": "web/Habitat__MEADOW__Oridge__DSC03185.jpg",
+      "thumb": "thumbs/Habitat__MEADOW__Oridge__DSC03185.jpg"
+    },
+    {
+      "path": "Habitat/MEADOW/Oridge/DSC03202.TIF",
+      "web": "web/Habitat__MEADOW__Oridge__DSC03202.jpg",
+      "thumb": "thumbs/Habitat__MEADOW__Oridge__DSC03202.jpg"
+    },
+    {
+      "path": "Habitat/MEADOW/Oridge/DSC03202_DxO.tif",
+      "web": "web/Habitat__MEADOW__Oridge__DSC03202_DxO.jpg",
+      "thumb": "thumbs/Habitat__MEADOW__Oridge__DSC03202_DxO.jpg"
+    },
+    {
+      "path": "Habitat/MEADOW/Birches/PixDL_Field2/IMG_0010.JPG",
+      "web": "web/Habitat__MEADOW__Birches__PixDL_Field2__IMG_0010.jpg",
+      "thumb": "thumbs/Habitat__MEADOW__Birches__PixDL_Field2__IMG_0010.jpg"
+    },
+    {
+      "path": "Maps/1QGIS/treephotos/a60e_SAM_8014.JPG",
+      "web": "web/Maps__1QGIS__treephotos__a60e_SAM_8014.jpg",
+      "thumb": "thumbs/Maps__1QGIS__treephotos__a60e_SAM_8014.jpg"
+    },
+    {
+      "path": "Habitat/MEADOW/Birches/PixDL_Field2/IMG_0017.JPG",
+      "web": "web/Habitat__MEADOW__Birches__PixDL_Field2__IMG_0017.jpg",
+      "thumb": "thumbs/Habitat__MEADOW__Birches__PixDL_Field2__IMG_0017.jpg"
+    },
+    {
+      "path": "Habitat/MEADOW/Oridge/DSC03202_DxOcr.tif",
+      "web": "web/Habitat__MEADOW__Oridge__DSC03202_DxOcr.jpg",
+      "thumb": "thumbs/Habitat__MEADOW__Oridge__DSC03202_DxOcr.jpg"
+    },
+    {
+      "path": "Maps/1QGIS/treephotos/d26b_SAM_8616.JPG",
+      "web": "web/Maps__1QGIS__treephotos__d26b_SAM_8616.jpg",
+      "thumb": "thumbs/Maps__1QGIS__treephotos__d26b_SAM_8616.jpg"
+    },
+    {
+      "path": "Habitat/MEADOW/Oridge/DSC03224.TIF",
+      "web": "web/Habitat__MEADOW__Oridge__DSC03224.jpg",
+      "thumb": "thumbs/Habitat__MEADOW__Oridge__DSC03224.jpg"
+    },
+    {
+      "path": "Habitat/MEADOW/Oridge/DSC03207.TIF",
+      "web": "web/Habitat__MEADOW__Oridge__DSC03207.jpg",
+      "thumb": "thumbs/Habitat__MEADOW__Oridge__DSC03207.jpg"
+    },
+    {
+      "path": "Habitat/MEADOW/Oridge/DSC03221.TIF",
+      "web": "web/Habitat__MEADOW__Oridge__DSC03221.jpg",
+      "thumb": "thumbs/Habitat__MEADOW__Oridge__DSC03221.jpg"
+    },
+    {
+      "path": "Maps/1QGIS/treephotos/d26b_SAM_8625.JPG",
+      "web": "web/Maps__1QGIS__treephotos__d26b_SAM_8625.jpg",
+      "thumb": "thumbs/Maps__1QGIS__treephotos__d26b_SAM_8625.jpg"
+    },
+    {
+      "path": "Habitat/MEADOW/Oridge/DSC03967.JPG",
+      "web": "web/Habitat__MEADOW__Oridge__DSC03967.jpg",
+      "thumb": "thumbs/Habitat__MEADOW__Oridge__DSC03967.jpg"
+    },
+    {
+      "path": "Habitat/MEADOW/Oridge/DSC03212.TIF",
+      "web": "web/Habitat__MEADOW__Oridge__DSC03212.jpg",
+      "thumb": "thumbs/Habitat__MEADOW__Oridge__DSC03212.jpg"
+    },
+    {
+      "path": "Habitat/MEADOW/Birches/PixDL_Field3/IMG_0076.JPG",
+      "web": "web/Habitat__MEADOW__Birches__PixDL_Field3__IMG_0076.jpg",
+      "thumb": "thumbs/Habitat__MEADOW__Birches__PixDL_Field3__IMG_0076.jpg"
+    },
+    {
+      "path": "Habitat/MEADOW/Birches/PixDL_Field3/IMG_0079.JPG",
+      "web": "web/Habitat__MEADOW__Birches__PixDL_Field3__IMG_0079.jpg",
+      "thumb": "thumbs/Habitat__MEADOW__Birches__PixDL_Field3__IMG_0079.jpg"
+    },
+    {
+      "path": "Maps/1QGIS/treephotos/a70a_SAM_8050.JPG",
+      "web": "web/Maps__1QGIS__treephotos__a70a_SAM_8050.jpg",
+      "thumb": "thumbs/Maps__1QGIS__treephotos__a70a_SAM_8050.jpg"
+    },
+    {
+      "path": "Maps/1QGIS/treephotos/a70b_SAM_6496.JPG",
+      "web": "web/Maps__1QGIS__treephotos__a70b_SAM_6496.jpg",
+      "thumb": "thumbs/Maps__1QGIS__treephotos__a70b_SAM_6496.jpg"
+    },
+    {
+      "path": "Maps/1QGIS/treephotos/d26f_SAM_8607.JPG",
+      "web": "web/Maps__1QGIS__treephotos__d26f_SAM_8607.jpg",
+      "thumb": "thumbs/Maps__1QGIS__treephotos__d26f_SAM_8607.jpg"
+    },
+    {
+      "path": "Maps/1QGIS/treephotos/a70b_SAM_8046.JPG",
+      "web": "web/Maps__1QGIS__treephotos__a70b_SAM_8046.jpg",
+      "thumb": "thumbs/Maps__1QGIS__treephotos__a70b_SAM_8046.jpg"
+    },
+    {
+      "path": "Habitat/MEADOW/Birches/PixDL_Field4/IMG_0105.JPG",
+      "web": "web/Habitat__MEADOW__Birches__PixDL_Field4__IMG_0105.jpg",
+      "thumb": "thumbs/Habitat__MEADOW__Birches__PixDL_Field4__IMG_0105.jpg"
+    },
+    {
+      "path": "Maps/1QGIS/treephotos/d26h_SAM_8610.JPG",
+      "web": "web/Maps__1QGIS__treephotos__d26h_SAM_8610.jpg",
+      "thumb": "thumbs/Maps__1QGIS__treephotos__d26h_SAM_8610.jpg"
+    },
+    {
+      "path": "Maps/1QGIS/treephotos/a80a_SAM_6479_299.JPG",
+      "web": "web/Maps__1QGIS__treephotos__a80a_SAM_6479_299.jpg",
+      "thumb": "thumbs/Maps__1QGIS__treephotos__a80a_SAM_6479_299.jpg"
+    },
+    {
+      "path": "Maps/1QGIS/treephotos/a80b_SAM_8051.JPG",
+      "web": "web/Maps__1QGIS__treephotos__a80b_SAM_8051.jpg",
+      "thumb": "thumbs/Maps__1QGIS__treephotos__a80b_SAM_8051.jpg"
+    },
+    {
+      "path": "Maps/1QGIS/treephotos/d27e_SAM_8129.JPG",
+      "web": "web/Maps__1QGIS__treephotos__d27e_SAM_8129.jpg",
+      "thumb": "thumbs/Maps__1QGIS__treephotos__d27e_SAM_8129.jpg"
+    },
+    {
+      "path": "Habitat/MEADOW/Birches/PixDL_Field4/IMG_0156.JPG",
+      "web": "web/Habitat__MEADOW__Birches__PixDL_Field4__IMG_0156.jpg",
+      "thumb": "thumbs/Habitat__MEADOW__Birches__PixDL_Field4__IMG_0156.jpg"
+    },
+    {
+      "path": "Maps/1QGIS/xperiaphotos/DSC_0028.JPG",
+      "web": "web/Maps__1QGIS__xperiaphotos__DSC_0028.jpg",
+      "thumb": "thumbs/Maps__1QGIS__xperiaphotos__DSC_0028.jpg"
+    },
+    {
+      "path": "Maps/1QGIS/treephotos/c32c_SAM_7556.JPG",
+      "web": "web/Maps__1QGIS__treephotos__c32c_SAM_7556.jpg",
+      "thumb": "thumbs/Maps__1QGIS__treephotos__c32c_SAM_7556.jpg"
+    },
+    {
+      "path": "Maps/1QGIS/xperiaphotos/DSC_0030.JPG",
+      "web": "web/Maps__1QGIS__xperiaphotos__DSC_0030.jpg",
+      "thumb": "thumbs/Maps__1QGIS__xperiaphotos__DSC_0030.jpg"
+    },
+    {
+      "path": "Maps/1QGIS/xperiaphotos/DSC_0031.JPG",
+      "web": "web/Maps__1QGIS__xperiaphotos__DSC_0031.jpg",
+      "thumb": "thumbs/Maps__1QGIS__xperiaphotos__DSC_0031.jpg"
+    },
+    {
+      "path": "Maps/1QGIS/treephotos/c33b_SAM_8475.JPG",
+      "web": "web/Maps__1QGIS__treephotos__c33b_SAM_8475.jpg",
+      "thumb": "thumbs/Maps__1QGIS__treephotos__c33b_SAM_8475.jpg"
+    },
+    {
+      "path": "Habitat/MEADOW/Winforton Meadows/2006_03_06/IMG_9678.JPG",
+      "web": "web/Habitat__MEADOW__Winforton Meadows__2006_03_06__IMG_9678.jpg",
+      "thumb": "thumbs/Habitat__MEADOW__Winforton Meadows__2006_03_06__IMG_9678.jpg"
+    },
+    {
+      "path": "Habitat/MEADOW/Winforton Meadows/2006_06_07Spuds/IMG_5321.JPG",
+      "web": "web/Habitat__MEADOW__Winforton Meadows__2006_06_07Spuds__IMG_5321.jpg",
+      "thumb": "thumbs/Habitat__MEADOW__Winforton Meadows__2006_06_07Spuds__IMG_5321.jpg"
+    },
+    {
+      "path": "Habitat/MEADOW/Birches/PixDL_Field4/IMG_0345.JPG",
+      "web": "web/Habitat__MEADOW__Birches__PixDL_Field4__IMG_0345.jpg",
+      "thumb": "thumbs/Habitat__MEADOW__Birches__PixDL_Field4__IMG_0345.jpg"
+    },
+    {
+      "path": "Habitat/MEADOW/Winforton Meadows/2006_06_07Spuds/IMG_5327.JPG",
+      "web": "web/Habitat__MEADOW__Winforton Meadows__2006_06_07Spuds__IMG_5327.jpg",
+      "thumb": "thumbs/Habitat__MEADOW__Winforton Meadows__2006_06_07Spuds__IMG_5327.jpg"
+    },
+    {
+      "path": "Habitat/MEADOW/Birches/PixDL_Field4/IMG_0365.JPG",
+      "web": "web/Habitat__MEADOW__Birches__PixDL_Field4__IMG_0365.jpg",
+      "thumb": "thumbs/Habitat__MEADOW__Birches__PixDL_Field4__IMG_0365.jpg"
+    },
+    {
+      "path": "Habitat/MEADOW/Birches/PixDL_Field4/IMG_0367.JPG",
+      "web": "web/Habitat__MEADOW__Birches__PixDL_Field4__IMG_0367.jpg",
+      "thumb": "thumbs/Habitat__MEADOW__Birches__PixDL_Field4__IMG_0367.jpg"
+    },
+    {
+      "path": "Maps/1QGIS/treephotos/c42h_SAM_7538.JPG",
+      "web": "web/Maps__1QGIS__treephotos__c42h_SAM_7538.jpg",
+      "thumb": "thumbs/Maps__1QGIS__treephotos__c42h_SAM_7538.jpg"
+    },
+    {
+      "path": "Habitat/MEADOW/Birches/PixDL_Field4/IMG_0370.JPG",
+      "web": "web/Habitat__MEADOW__Birches__PixDL_Field4__IMG_0370.jpg",
+      "thumb": "thumbs/Habitat__MEADOW__Birches__PixDL_Field4__IMG_0370.jpg"
+    },
+    {
+      "path": "Habitat/MEADOW/Birches/PixDL_Field9/IMG_0418.JPG",
+      "web": "web/Habitat__MEADOW__Birches__PixDL_Field9__IMG_0418.jpg",
+      "thumb": "thumbs/Habitat__MEADOW__Birches__PixDL_Field9__IMG_0418.jpg"
+    },
+    {
+      "path": "Maps/1QGIS/treephotos/c43a_SAM_7547.JPG",
+      "web": "web/Maps__1QGIS__treephotos__c43a_SAM_7547.jpg",
+      "thumb": "thumbs/Maps__1QGIS__treephotos__c43a_SAM_7547.jpg"
+    },
+    {
+      "path": "Habitat/MEADOW/Birches/PixDL_Field9/IMG_0421.JPG",
+      "web": "web/Habitat__MEADOW__Birches__PixDL_Field9__IMG_0421.jpg",
+      "thumb": "thumbs/Habitat__MEADOW__Birches__PixDL_Field9__IMG_0421.jpg"
+    },
+    {
+      "path": "Habitat/MEADOW/Winforton Meadows/2006_06_07Spuds/IMG_5347.JPG",
+      "web": "web/Habitat__MEADOW__Winforton Meadows__2006_06_07Spuds__IMG_5347.jpg",
+      "thumb": "thumbs/Habitat__MEADOW__Winforton Meadows__2006_06_07Spuds__IMG_5347.jpg"
+    },
+    {
+      "path": "Habitat/MEADOW/Winforton Meadows/2006_06_07Spuds/IMG_5348.JPG",
+      "web": "web/Habitat__MEADOW__Winforton Meadows__2006_06_07Spuds__IMG_5348.jpg",
+      "thumb": "thumbs/Habitat__MEADOW__Winforton Meadows__2006_06_07Spuds__IMG_5348.jpg"
+    },
+    {
+      "path": "Maps/1QGIS/treephotos/c51a_SAM_7496.JPG",
+      "web": "web/Maps__1QGIS__treephotos__c51a_SAM_7496.jpg",
+      "thumb": "thumbs/Maps__1QGIS__treephotos__c51a_SAM_7496.jpg"
+    },
+    {
+      "path": "Maps/1QGIS/treephotos/c51b_SAM_7500.JPG",
+      "web": "web/Maps__1QGIS__treephotos__c51b_SAM_7500.jpg",
+      "thumb": "thumbs/Maps__1QGIS__treephotos__c51b_SAM_7500.jpg"
+    },
+    {
+      "path": "Maps/1QGIS/treephotos/c52b_SAM_7491.JPG",
+      "web": "web/Maps__1QGIS__treephotos__c52b_SAM_7491.jpg",
+      "thumb": "thumbs/Maps__1QGIS__treephotos__c52b_SAM_7491.jpg"
+    },
+    {
+      "path": "Habitat/MEADOW/Birches/PixMilesKing/Birches 5.jpg",
+      "web": "web/Habitat__MEADOW__Birches__PixMilesKing__Birches 5.jpg",
+      "thumb": "thumbs/Habitat__MEADOW__Birches__PixMilesKing__Birches 5.jpg"
+    },
+    {
+      "path": "Maps/1QGIS/treephotos/c52f_SAM_7520.JPG",
+      "web": "web/Maps__1QGIS__treephotos__c52f_SAM_7520.jpg",
+      "thumb": "thumbs/Maps__1QGIS__treephotos__c52f_SAM_7520.jpg"
+    },
+    {
+      "path": "Maps/1QGIS/treephotos/c52f_SAM_7521.JPG",
+      "web": "web/Maps__1QGIS__treephotos__c52f_SAM_7521.jpg",
+      "thumb": "thumbs/Maps__1QGIS__treephotos__c52f_SAM_7521.jpg"
+    },
+    {
+      "path": "Maps/1QGIS/treephotos/c53b_SAM_7530.JPG",
+      "web": "web/Maps__1QGIS__treephotos__c53b_SAM_7530.jpg",
+      "thumb": "thumbs/Maps__1QGIS__treephotos__c53b_SAM_7530.jpg"
     }
   ]
 }
