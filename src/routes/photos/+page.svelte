@@ -20,8 +20,8 @@
 	}
 
 	const photoCollections = [
-		{ id: 'demo', title: 'Demo (uncategorized samples)', path: '/photos/demo' },
-		{ id: 'uncategorized', title: 'Uncategorized Archive Photos', path: '/photos/uncategorized' },
+		{ id: 'uncategorized', title: 'All Uncategorized Photos', path: '/photos/uncategorized' },
+		{ id: 'demo', title: 'Demo (legacy sample)', path: '/photos/demo' },
 		{
 			id: 'hfd-royal-commission',
 			title: 'Royal Commission and Parish Survey Material',
@@ -47,7 +47,7 @@
 		{ id: 'hfd-river-wye', title: 'River Wye and NRA Archive', path: '/photos/hfd-river-wye' }
 	];
 
-	let selectedCollection = $state('demo');
+	let selectedCollection = $state('uncategorized');
 	let manifest = $state<PhotoManifest | null>(null);
 	let loadError = $state<string | null>(null);
 	let dialogRef = $state<HTMLDialogElement | null>(null);

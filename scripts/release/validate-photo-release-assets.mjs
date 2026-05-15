@@ -1,11 +1,11 @@
 #!/usr/bin/env node
-import { mkdtempSync, readFileSync, rmSync, writeFileSync } from 'node:fs';
+import { existsSync, mkdtempSync, readFileSync, rmSync, writeFileSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
-import { execFileSync } from 'node:child_process';
+import { execFileSync, execSync } from 'node:child_process';
 import releases from '../../catalog/releases.json' with { type: 'json' };
 
-const PHOTO_ASSET_ID = 'photos-5-demo';
+const PHOTO_ASSET_ID = 'photos-uncategorized';
 const PHOTO_URLS_PATH = 'catalog/photo-urls.json';
 
 function fail(message, details = []) {
@@ -52,6 +52,32 @@ async function main() {
 	const asset = releases.assets.find((entry) => entry.id === PHOTO_ASSET_ID);
 	if (!asset) fail(`missing '${PHOTO_ASSET_ID}' in catalog/releases.json`);
 	if (asset.status !== 'available') fail(`asset '${PHOTO_ASSET_ID}' is not available`);
+
+	// Generate photo-urls.json from manifests if missing (no longer tracked in git)
+	if (!existsSync(PHOTO_URLS_PATH)) {
+		console.log('photo-urls.json not found — generating from manifests...');
+		execSync(
+			`python3 -c "
+import json, glob, os
+entries = []
+for mf in sorted(glob.glob('static/photos/*/manifest.json')):
+    with open(mf) as f:
+        m = json.load(f)
+    coll = m.get('collection')
+    if not coll: continue
+    for p in m.get('photos', []):
+        entries.append({
+            'path': p['path'],
+            'url': f'/photos/{coll}/web/{os.path.basename(p[\"web\"])}',
+            'thumb_url': f'/photos/{coll}/thumbs/{os.path.basename(p[\"thumb\"])}'
+        })
+with open('${PHOTO_URLS_PATH}', 'w') as f:
+    json.dump(entries, f, indent=2)
+print(f'Generated {len(entries)} photo URLs')
+"`,
+			{ stdio: 'inherit' }
+		);
+	}
 
 	const photoUrls = readJson(PHOTO_URLS_PATH);
 	const tmpDir = mkdtempSync(join(tmpdir(), 'photo-release-'));

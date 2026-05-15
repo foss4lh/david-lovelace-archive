@@ -545,10 +545,10 @@
 		},
 		{
 			"id": "photos-5-demo",
-			"title": "Photo demo bundle (10 MB target)",
-			"filename": "photos-5-demo.zip",
-			"url": "https://github.com/foss4lh/david-lovelace-archive/releases/download/data-v0.1.0/photos-5-demo.zip",
-			"target": "static/photos/demo/photos-5-demo.zip",
+			"title": "Photo demo bundle (20 MB target)",
+			"filename": "photos-uncategorized.zip",
+			"url": "https://github.com/foss4lh/david-lovelace-archive/releases/download/data-v0.1.0/photos-uncategorized.zip",
+			"target": "static/photos/demo/photos-uncategorized.zip",
 			"requiredForBuild": true,
 			"status": "available",
 			"unzipTo": "static/photos/demo"
