@@ -101,3 +101,7 @@ catalog/*.local.json
 *.woff
 *.woff2
 *.eot
+
+# Exception: curated UI images committed alongside the site
+!/static/images/*
+!/static/images/**/*
