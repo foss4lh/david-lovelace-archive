@@ -25,8 +25,9 @@
 			</p>
 
 			<p class="donation-note">
-				Following David's passing on 5th May 2026, we intend to donate these datasets to local and
-				national organisations to ensure they remain a resource for research.
+				Following David's passing on 5th May 2026, we intend make his archive accessible for the
+				benefit of others and to donate valuable datasets to local and national organisations to
+				ensure they remain a resource for research.
 			</p>
 			<div class="actions">
 				<a class="button primary" href={resolve('/browse')}
