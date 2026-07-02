@@ -1,4 +1,6 @@
+<!-- eslint-disable svelte/no-navigation-without-resolve -->
 <script lang="ts">
+	/* eslint-disable svelte/no-navigation-without-resolve */
 	import { Map, FileImage, BookOpen } from '@lucide/svelte';
 
 	const caseStudies = [
@@ -58,12 +60,16 @@
 		<h2 style="margin-bottom: 0.5rem; font-size: 1rem;">About case studies</h2>
 		<p style="color: #55594f; font-size: 0.9rem; line-height: 1.5; margin: 0;">
 			If you have a research request or would like to request material from the archive,
-			<a href="https://github.com/foss4lh/david-lovelace-archive/issues" target="_blank" rel="noopener"
-				>open an issue</a
+			<a
+				href="https://github.com/foss4lh/david-lovelace-archive/issues"
+				target="_blank"
+				rel="noopener">open an issue</a
 			>
 			or
-			<a href="https://github.com/foss4lh/david-lovelace-archive/discussions" target="_blank" rel="noopener"
-				>start a discussion</a
+			<a
+				href="https://github.com/foss4lh/david-lovelace-archive/discussions"
+				target="_blank"
+				rel="noopener">start a discussion</a
 			>
 			on GitHub.
 		</p>

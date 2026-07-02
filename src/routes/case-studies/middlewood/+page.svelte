@@ -1,6 +1,7 @@
+<!-- eslint-disable svelte/no-navigation-without-resolve -->
 <script lang="ts">
+	/* eslint-disable svelte/no-navigation-without-resolve */
 	import { Map, Archive } from '@lucide/svelte';
-
 	const photos = [
 		{
 			file: 'aIMG_6972LrMiddlewood.jpg',
@@ -43,9 +44,7 @@
 	<section class="details">
 		<article class="detail-card">
 			<h2><Archive size={18} /> Sources</h2>
-			<p>
-				Material drawn from two collections:
-			</p>
+			<p>Material drawn from two collections:</p>
 			<ul>
 				<li><code>NMRC_RC/Clifford</code> — Royal Commission photographs (2 images)</li>
 				<li><code>Dewi/Manor of Clifford</code> — Manorial records (2 documents)</li>
@@ -54,9 +53,9 @@
 		<article class="detail-card">
 			<h2><Map size={18} /> Location</h2>
 			<p>
-				Middlewood is a wooded area in Clifford parish, west Herefordshire, near the border
-				with Wales. It is referenced in manorial records from the Manor of Clifford and in
-				Royal Commission survey photographs.
+				Middlewood is a wooded area in Clifford parish, west Herefordshire, near the border with
+				Wales. It is referenced in manorial records from the Manor of Clifford and in Royal
+				Commission survey photographs.
 			</p>
 		</article>
 	</section>
