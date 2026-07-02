@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { Archive, FileSearch, Map, Image, SearchCheck, Code } from '@lucide/svelte';
+	import { Archive, FileSearch, Map, Image, SearchCheck, Users, Code } from '@lucide/svelte';
 	import { resolve } from '$app/paths';
 	import '../app.css';
 
@@ -10,7 +10,8 @@
 		{ href: '/browse', label: 'Browse', icon: FileSearch },
 		{ href: '/maps', label: 'Maps', icon: Map },
 		{ href: '/photos', label: 'Photos', icon: Image },
-		{ href: '/research', label: 'Research', icon: SearchCheck }
+		{ href: '/research', label: 'Research', icon: SearchCheck },
+		{ href: '/case-studies', label: 'Case studies', icon: Users }
 	] as const;
 </script>
 
@@ -34,7 +35,7 @@
 		<nav aria-label="Primary navigation">
 			{#each navItems as item (item.href)}
 				{@const Icon = item.icon}
-				<a href={resolve(item.href)}>
+				<a href={resolve(item.href as '/')}>
 					<Icon size={17} strokeWidth={1.9} />
 					{item.label}
 				</a>
