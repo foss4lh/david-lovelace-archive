@@ -1,32 +1,149 @@
+<!-- eslint-disable svelte/no-navigation-without-resolve -->
 <script lang="ts">
+	/* eslint-disable svelte/no-navigation-without-resolve */
 	import { Map, Download } from '@lucide/svelte';
 
 	const photos = [
-		{ file: 'IMG_0795.jpg', caption: 'General view, Kings Caple', camera: 'Canon PowerShot A640', year: 2007 },
-		{ file: 'IMG_4787.JPG', caption: 'Kings Caple parish landscape', camera: 'Canon PowerShot G6', year: 2005 },
-		{ file: 'IMG_4788.JPG', caption: 'Field patterns near Kings Caple', camera: 'Canon PowerShot G6', year: 2005 },
-		{ file: 'IMG_4789.JPG', caption: 'Hedgerows and boundaries', camera: 'Canon PowerShot G6', year: 2005 },
-		{ file: 'IMG_4790.JPG', caption: 'View across Kings Caple', camera: 'Canon PowerShot G6', year: 2005 },
-		{ file: 'IMG_4791.JPG', caption: 'Pasture and woodland edge', camera: 'Canon PowerShot G6', year: 2005 },
-		{ file: 'IMG_4792.JPG', caption: 'Traditional farm buildings', camera: 'Canon PowerShot G6', year: 2005 },
-		{ file: 'IMG_4793.JPG', caption: 'Kings Caple church and surrounds', camera: 'Canon PowerShot G6', year: 2005 },
-		{ file: 'IMG_4794.JPG', caption: 'Village lane and cottages', camera: 'Canon PowerShot G6', year: 2005 },
+		{
+			file: 'IMG_0795.jpg',
+			caption: 'General view, Kings Caple',
+			camera: 'Canon PowerShot A640',
+			year: 2007
+		},
+		{
+			file: 'IMG_4787.JPG',
+			caption: 'Kings Caple parish landscape',
+			camera: 'Canon PowerShot G6',
+			year: 2005
+		},
+		{
+			file: 'IMG_4788.JPG',
+			caption: 'Field patterns near Kings Caple',
+			camera: 'Canon PowerShot G6',
+			year: 2005
+		},
+		{
+			file: 'IMG_4789.JPG',
+			caption: 'Hedgerows and boundaries',
+			camera: 'Canon PowerShot G6',
+			year: 2005
+		},
+		{
+			file: 'IMG_4790.JPG',
+			caption: 'View across Kings Caple',
+			camera: 'Canon PowerShot G6',
+			year: 2005
+		},
+		{
+			file: 'IMG_4791.JPG',
+			caption: 'Pasture and woodland edge',
+			camera: 'Canon PowerShot G6',
+			year: 2005
+		},
+		{
+			file: 'IMG_4792.JPG',
+			caption: 'Traditional farm buildings',
+			camera: 'Canon PowerShot G6',
+			year: 2005
+		},
+		{
+			file: 'IMG_4793.JPG',
+			caption: 'Kings Caple church and surrounds',
+			camera: 'Canon PowerShot G6',
+			year: 2005
+		},
+		{
+			file: 'IMG_4794.JPG',
+			caption: 'Village lane and cottages',
+			camera: 'Canon PowerShot G6',
+			year: 2005
+		},
 		{ file: 'IMG_4795.JPG', caption: 'Landscape detail', camera: 'Canon PowerShot G6', year: 2005 },
-		{ file: 'IMG_4796.JPG', caption: 'Church architecture', camera: 'Canon PowerShot G6', year: 2005 },
-		{ file: 'IMG_4797.JPG', caption: 'View from churchyard', camera: 'Canon PowerShot G6', year: 2005 },
-		{ file: 'IMG_4798.JPG', caption: 'Fields and farmsteads', camera: 'Canon PowerShot G6', year: 2005 },
+		{
+			file: 'IMG_4796.JPG',
+			caption: 'Church architecture',
+			camera: 'Canon PowerShot G6',
+			year: 2005
+		},
+		{
+			file: 'IMG_4797.JPG',
+			caption: 'View from churchyard',
+			camera: 'Canon PowerShot G6',
+			year: 2005
+		},
+		{
+			file: 'IMG_4798.JPG',
+			caption: 'Fields and farmsteads',
+			camera: 'Canon PowerShot G6',
+			year: 2005
+		},
 		{ file: 'IMG_4799.JPG', caption: 'Village scene', camera: 'Canon PowerShot G6', year: 2005 },
-		{ file: 'IMG_4800.JPG', caption: 'Boundary features', camera: 'Canon PowerShot G6', year: 2005 },
-		{ file: 'IMG_4801.JPG', caption: 'Wider landscape view', camera: 'Canon PowerShot G6', year: 2005 },
-		{ file: 'IMG_4802.JPG', caption: 'Farm track and hedges', camera: 'Canon PowerShot G6', year: 2005 },
-		{ file: 'IMG_4803.JPG', caption: 'Kings Caple countryside', camera: 'Canon PowerShot G6', year: 2005 },
-		{ file: 'IMG_9744.jpg', caption: 'Kings Caple - detail', camera: 'Canon PowerShot A640', year: 2005 },
-		{ file: 'IMG_9745.jpg', caption: 'Kings Caple - landscape study', camera: 'Canon PowerShot A640', year: 2005 },
-		{ file: 'IMG_9746.jpg', caption: 'Kings Caple - settlement view', camera: 'Canon PowerShot A640', year: 2005 },
-		{ file: 'IMG_9747.jpg', caption: 'Kings Caple - field boundary', camera: 'Canon PowerShot A640', year: 2005 },
-		{ file: 'IMG_9748.jpg', caption: 'Kings Caple - countryside', camera: 'Canon PowerShot A640', year: 2005 },
-		{ file: 'IMG_9749.jpg', caption: 'Kings Caple - farm building', camera: 'Canon PowerShot A640', year: 2005 },
-		{ file: 'IMG_9750.jpg', caption: 'Kings Caple - landscape', camera: 'Canon PowerShot A640', year: 2005 }
+		{
+			file: 'IMG_4800.JPG',
+			caption: 'Boundary features',
+			camera: 'Canon PowerShot G6',
+			year: 2005
+		},
+		{
+			file: 'IMG_4801.JPG',
+			caption: 'Wider landscape view',
+			camera: 'Canon PowerShot G6',
+			year: 2005
+		},
+		{
+			file: 'IMG_4802.JPG',
+			caption: 'Farm track and hedges',
+			camera: 'Canon PowerShot G6',
+			year: 2005
+		},
+		{
+			file: 'IMG_4803.JPG',
+			caption: 'Kings Caple countryside',
+			camera: 'Canon PowerShot G6',
+			year: 2005
+		},
+		{
+			file: 'IMG_9744.jpg',
+			caption: 'Kings Caple - detail',
+			camera: 'Canon PowerShot A640',
+			year: 2005
+		},
+		{
+			file: 'IMG_9745.jpg',
+			caption: 'Kings Caple - landscape study',
+			camera: 'Canon PowerShot A640',
+			year: 2005
+		},
+		{
+			file: 'IMG_9746.jpg',
+			caption: 'Kings Caple - settlement view',
+			camera: 'Canon PowerShot A640',
+			year: 2005
+		},
+		{
+			file: 'IMG_9747.jpg',
+			caption: 'Kings Caple - field boundary',
+			camera: 'Canon PowerShot A640',
+			year: 2005
+		},
+		{
+			file: 'IMG_9748.jpg',
+			caption: 'Kings Caple - countryside',
+			camera: 'Canon PowerShot A640',
+			year: 2005
+		},
+		{
+			file: 'IMG_9749.jpg',
+			caption: 'Kings Caple - farm building',
+			camera: 'Canon PowerShot A640',
+			year: 2005
+		},
+		{
+			file: 'IMG_9750.jpg',
+			caption: 'Kings Caple - landscape',
+			camera: 'Canon PowerShot A640',
+			year: 2005
+		}
 	];
 </script>
 
@@ -35,9 +152,8 @@
 		<p class="breadcrumb"><a href="/case-studies">&larr; Case studies</a></p>
 		<h1>King's Caple</h1>
 		<p>
-			Royal Commission survey photographs of King's Caple parish, Herefordshire &mdash; supplied
-			to a researcher studying medieval field patterns and settlement history in the Wye Valley
-			area.
+			Royal Commission survey photographs of King's Caple parish, Herefordshire &mdash; supplied to
+			a researcher studying medieval field patterns and settlement history in the Wye Valley area.
 		</p>
 	</section>
 
@@ -45,20 +161,18 @@
 		<article class="detail-card">
 			<h2><Map size={18} /> Collection</h2>
 			<p>
-				<code>History/NMRC_RC/KingsCaple</code> — part of the Royal Commission on Historical
-				Monuments (RCHME) survey photographs. 25 images captured by Canon PowerShot cameras
-				between 2005 and 2007.
+				<code>History/NMRC_RC/KingsCaple</code> — part of the Royal Commission on Historical Monuments
+				(RCHME) survey photographs. 25 images captured by Canon PowerShot cameras between 2005 and 2007.
 			</p>
 		</article>
 		<article class="detail-card">
 			<h2><Download size={18} /> Download</h2>
-			<p>
-				The full set is available as a release asset:
-			</p>
+			<p>The full set is available as a release asset:</p>
 			<a
 				class="button"
 				href="https://github.com/foss4lh/david-lovelace-archive/releases/download/data-v0.1.0/kings-caple-photos.zip"
-				target="_blank" rel="noopener"
+				target="_blank"
+				rel="noopener"
 			>
 				<Download size={16} /> Download kings-caple-photos.zip
 			</a>
