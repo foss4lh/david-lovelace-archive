@@ -1,7 +1,7 @@
 <!-- eslint-disable svelte/no-navigation-without-resolve -->
 <script lang="ts">
 	/* eslint-disable svelte/no-navigation-without-resolve */
-	import { Map, Download } from '@lucide/svelte';
+	import { Map, Download, TreePine } from '@lucide/svelte';
 
 	const photos = [
 		{
@@ -145,6 +145,100 @@
 			year: 2005
 		}
 	];
+
+	const vetTrees = [
+		{
+			file: 'SO5532028840-VT01.JPG',
+			caption: 'Veteran tree VT01 — SO5528',
+			grid: 'SO5532028840',
+			year: 2007
+		},
+		{
+			file: 'So55453 29503- VT01.JPG',
+			caption: 'Veteran tree VT01 — Aramstone',
+			grid: 'SO55453 29503',
+			year: 2007
+		},
+		{
+			file: 'SO55485 29544- VT02.JPG',
+			caption: 'Veteran tree VT02 — Aramstone',
+			grid: 'SO55485 29544',
+			year: 2007
+		},
+		{
+			file: 'SO55491 29536-VT10.JPG',
+			caption: 'Veteran tree VT10 — Aramstone',
+			grid: 'SO55491 29536',
+			year: 2007
+		},
+		{
+			file: 'SO55505 29577- VT09.JPG',
+			caption: 'Veteran tree VT09 — Aramstone',
+			grid: 'SO55505 29577',
+			year: 2007
+		},
+		{
+			file: 'SO55509 29674- VT03.JPG',
+			caption: 'Veteran tree VT03 — Aramstone',
+			grid: 'SO55509 29674',
+			year: 2007
+		},
+		{
+			file: 'SO55518 29700- VT04.JPG',
+			caption: 'Veteran tree VT04 — Aramstone',
+			grid: 'SO55518 29700',
+			year: 2007
+		},
+		{
+			file: 'SO55541 29709- VT05.JPG',
+			caption: 'Veteran tree VT05 — Aramstone',
+			grid: 'SO55541 29709',
+			year: 2007
+		},
+		{
+			file: 'SO55573 29491-VT08.JPG',
+			caption: 'Veteran tree VT08 — Aramstone',
+			grid: 'SO55573 29491',
+			year: 2007
+		},
+		{
+			file: 'SO55628 29651- VT06.JPG',
+			caption: 'Veteran tree VT06 — Aramstone',
+			grid: 'SO55628 29651',
+			year: 2007
+		},
+		{
+			file: 'SO55670 29632- VT07.JPG',
+			caption: 'Veteran tree VT07 — Aramstone',
+			grid: 'SO55670 29632',
+			year: 2007
+		},
+		{
+			file: 'Vt07- Aramstone.JPG',
+			caption: 'Veteran tree VT07 — Aramstone (alt)',
+			grid: 'Aramstone',
+			year: 2007
+		},
+		{
+			file: 'SO5616928736-VT02.JPG',
+			caption: 'Veteran tree VT02 — Kings Caple SO5628',
+			grid: 'SO5616928736',
+			year: 2007
+		},
+		{
+			file: 'SO5617528670-VT01.JPG',
+			caption: 'Veteran tree VT01 — Kings Caple SO5628',
+			grid: 'SO5617528670',
+			year: 2007
+		},
+		{
+			file: 'SO56952819-VT03.JPG',
+			caption: 'Veteran tree VT03 — Kings Caple SO5628',
+			grid: 'SO56952819',
+			year: 2007
+		},
+		{ file: 'VT01.JPG', caption: 'Veteran tree — Kings Caple SO5628', grid: '', year: 2007 }
+	];
 </script>
 
 <main>
@@ -199,6 +293,37 @@
 					<figcaption>
 						<strong>{photo.caption}</strong>
 						<span class="photo-meta">{photo.camera} &middot; {photo.year}</span>
+					</figcaption>
+				</figure>
+			{/each}
+		</div>
+	</section>
+
+	<section class="gallery">
+		<h2><TreePine size={20} /> Veteran Tree Survey (LOWVP) 2006–2007</h2>
+		<p class="gallery-lede">
+			16 veteran tree photographs from the LOWVP survey in Kings Caple parish, supplied alongside
+			the Royal Commission photos to support research into ancient tree populations and woodland
+			history. Grid references refer to the OS British National Grid (1 km square).
+		</p>
+		<div class="photo-grid">
+			{#each vetTrees as tree (tree.file)}
+				<figure class="photo-item">
+					<a
+						href="/images/case-studies/kings-caple/vet-trees/{tree.file}"
+						target="_blank"
+						rel="noopener"
+						class="photo-link"
+					>
+						<img
+							src="/images/case-studies/kings-caple/vet-trees/{tree.file}"
+							alt={tree.caption}
+							loading="lazy"
+						/>
+					</a>
+					<figcaption>
+						<strong>{tree.caption}</strong>
+						<span class="photo-meta">{tree.grid} &middot; {tree.year}</span>
 					</figcaption>
 				</figure>
 			{/each}
@@ -277,8 +402,19 @@
 	}
 
 	.gallery h2 {
-		margin-bottom: 1rem;
+		margin-bottom: 0.5rem;
 		font-size: 1.25rem;
+		display: flex;
+		align-items: center;
+		gap: 0.4rem;
+	}
+
+	.gallery-lede {
+		margin: 0 0 1rem;
+		color: #55594f;
+		font-size: 0.9rem;
+		line-height: 1.5;
+		max-width: 700px;
 	}
 
 	.photo-grid {
