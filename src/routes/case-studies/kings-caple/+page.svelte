@@ -239,6 +239,214 @@
 		},
 		{ file: 'VT01.JPG', caption: 'Veteran tree — Kings Caple SO5628', grid: '', year: 2007 }
 	];
+
+	const archiveMaps = [
+		{
+			file: 'KsCaple_N.jpg',
+			caption: 'Tithe map — Kings Caple North (Bronica)',
+			source: 'LOWV / Tithe Maps / Bronica'
+		},
+		{
+			file: 'KsCaple_NE.jpg',
+			caption: 'Tithe map — Kings Caple North-East (Bronica)',
+			source: 'LOWV / Tithe Maps / Bronica'
+		},
+		{
+			file: 'KsCaple_NW.jpg',
+			caption: 'Tithe map — Kings Caple North-West (Bronica)',
+			source: 'LOWV / Tithe Maps / Bronica'
+		},
+		{
+			file: 'KsCaple_NW_2.jpg',
+			caption: 'Tithe map — Kings Caple North-West (Bronica alt)',
+			source: 'LOWV / Tithe Maps / Bronica'
+		},
+		{
+			file: 'KsCaple_WCareyMill.jpg',
+			caption: 'Tithe map — Carey Mill (Bronica)',
+			source: 'LOWV / Tithe Maps / Bronica'
+		},
+		{
+			file: 'KsCaple_WPenaltAramstone.jpg',
+			caption: 'Tithe map — Penalt to Aramstone (Bronica)',
+			source: 'LOWV / Tithe Maps / Bronica'
+		},
+		{
+			file: 'KsCaple_WPenaltAramstone_2.jpg',
+			caption: 'Tithe map — Penalt to Aramstone (Bronica alt)',
+			source: 'LOWV / Tithe Maps / Bronica'
+		},
+		{
+			file: 'KsCaple_WPenaltPouston.jpg',
+			caption: 'Tithe map — Penalt to Pouston (Bronica)',
+			source: 'LOWV / Tithe Maps / Bronica'
+		},
+		{
+			file: 'KsCaple_WPennoxstonePouston.jpg',
+			caption: 'Tithe map — Pennoxstone to Pouston (Bronica)',
+			source: 'LOWV / Tithe Maps / Bronica'
+		},
+		{
+			file: 'KsCaple_WPennoxstonePouston_2.jpg',
+			caption: 'Tithe map — Pennoxstone to Pouston (Bronica alt)',
+			source: 'LOWV / Tithe Maps / Bronica'
+		},
+		{
+			file: 'KsCaple_WRuxtonAramstone.jpg',
+			caption: 'Tithe map — Ruxton to Aramstone (Bronica)',
+			source: 'LOWV / Tithe Maps / Bronica'
+		},
+		{
+			file: 'Fawley_GG.jpg',
+			caption: 'Tithe map — Fawley (G6 camera)',
+			source: 'LOWV / Tithe Maps / Kings Caple'
+		},
+		{
+			file: 'kingscaple&Fawley_ptFownhope_Owners_GG.jpg',
+			caption: 'Tithe apportionment — Kings Caple & Fawley owners',
+			source: 'LOWV / Tithe Maps / Kings Caple'
+		},
+		{
+			file: 'IMG_6909.JPG',
+			caption: 'Tithe map survey — Kings Caple (G6)',
+			source: 'LOWV / Tithe Maps / G6'
+		},
+		{
+			file: 'IMG_6910.JPG',
+			caption: 'Tithe map survey — Kings Caple (G6)',
+			source: 'LOWV / Tithe Maps / G6'
+		},
+		{
+			file: 'IMG_6911.JPG',
+			caption: 'Tithe map survey — Kings Caple (G6)',
+			source: 'LOWV / Tithe Maps / G6'
+		},
+		{
+			file: 'IMG_6912.JPG',
+			caption: 'Tithe map survey — Kings Caple (G6)',
+			source: 'LOWV / Tithe Maps / G6'
+		},
+		{
+			file: 'IMG_6913.JPG',
+			caption: 'Tithe map survey — Kings Caple (G6)',
+			source: 'LOWV / Tithe Maps / G6'
+		},
+		{
+			file: 'IMG_6914.JPG',
+			caption: 'Tithe map survey — Kings Caple (G6)',
+			source: 'LOWV / Tithe Maps / G6'
+		},
+		{
+			file: 'IMG_6915.JPG',
+			caption: 'Tithe map survey — Kings Caple (G6)',
+			source: 'LOWV / Tithe Maps / G6'
+		},
+		{
+			file: 'IMG_6916.JPG',
+			caption: 'Tithe map survey — Kings Caple (G6)',
+			source: 'LOWV / Tithe Maps / G6'
+		},
+		{
+			file: 'IMG_6917.JPG',
+			caption: 'Tithe map survey — Kings Caple (G6)',
+			source: 'LOWV / Tithe Maps / G6'
+		},
+		{
+			file: 'IMG_6918.JPG',
+			caption: 'Tithe map survey — Kings Caple (G6)',
+			source: 'LOWV / Tithe Maps / G6'
+		},
+		{
+			file: 'IMG_6919.JPG',
+			caption: 'Tithe map survey — Kings Caple (G6)',
+			source: 'LOWV / Tithe Maps / G6'
+		},
+		{
+			file: 'IMG_6920.JPG',
+			caption: 'Tithe map survey — Kings Caple (G6)',
+			source: 'LOWV / Tithe Maps / G6'
+		},
+		{
+			file: 'IMG_6921.JPG',
+			caption: 'Tithe map survey — Kings Caple (G6)',
+			source: 'LOWV / Tithe Maps / G6'
+		},
+		{
+			file: 'IMG_6922.JPG',
+			caption: 'Tithe map survey — Kings Caple (G6)',
+			source: 'LOWV / Tithe Maps / G6'
+		},
+		{
+			file: 'IMG_6923.JPG',
+			caption: 'Tithe map survey — Kings Caple (G6)',
+			source: 'LOWV / Tithe Maps / G6'
+		},
+		{
+			file: 'IMG_6924.JPG',
+			caption: 'Tithe map survey — Kings Caple (G6)',
+			source: 'LOWV / Tithe Maps / G6'
+		},
+		{
+			file: 'IMG_6925.JPG',
+			caption: 'Tithe map survey — Kings Caple (G6)',
+			source: 'LOWV / Tithe Maps / G6'
+		},
+		{
+			file: 'IMG_6926.JPG',
+			caption: 'Tithe map survey — Kings Caple (G6)',
+			source: 'LOWV / Tithe Maps / G6'
+		},
+		{
+			file: 'IMG_6926PenalltClose.jpg',
+			caption: 'Penallt Close-up (G6)',
+			source: 'LOWV / Tithe Maps / G6'
+		},
+		{
+			file: 'IMG_6927.JPG',
+			caption: 'Tithe map survey — Kings Caple (G6)',
+			source: 'LOWV / Tithe Maps / G6'
+		},
+		{
+			file: 'IMG_6928.JPG',
+			caption: 'Tithe map survey — Kings Caple (G6)',
+			source: 'LOWV / Tithe Maps / G6'
+		},
+		{
+			file: 'IMG_6929.JPG',
+			caption: 'Tithe map survey — Kings Caple (G6)',
+			source: 'LOWV / Tithe Maps / G6'
+		},
+		{
+			file: 'IMG_6794KingsCaple.JPG',
+			caption: 'Scudamore map — Kings Caple detail',
+			source: 'LOWV / Archives / Scudamore'
+		},
+		{
+			file: 'IMG_6793_Part of KingsCaple_Blurred.JPG',
+			caption: 'Scudamore map — Kings Caple (blurred schedule)',
+			source: 'LOWV / Archives / Scudamore'
+		},
+		{
+			file: 'KingsCapleScudamoreMap.jpg',
+			caption: 'Scudamore map — Kings Caple (Bronica)',
+			source: 'LOWV / Archives / Scudamore'
+		},
+		{
+			file: 'IMG_6754KingsCapleSpire1.JPG',
+			caption: "King's Caple church spire from Hentland",
+			source: 'LOWV / TerrPhotos'
+		},
+		{
+			file: 'KingsCaple_2004.jpg',
+			caption: "King's Caple landscape (2004)",
+			source: 'CPRE / Presentations'
+		},
+		{
+			file: 'KingsCaple_2009.jpg',
+			caption: "King's Caple landscape (2009)",
+			source: 'CPRE / Presentations'
+		}
+	];
 </script>
 
 <main>
@@ -324,6 +532,37 @@
 					<figcaption>
 						<strong>{tree.caption}</strong>
 						<span class="photo-meta">{tree.grid} &middot; {tree.year}</span>
+					</figcaption>
+				</figure>
+			{/each}
+		</div>
+	</section>
+
+	<section class="gallery">
+		<h2>Archive materials — tithe maps, surveys and landscape photos</h2>
+		<p class="gallery-lede">
+			Additional Kings Caple materials from the LOWV project archive: Bronica film scans of tithe
+			map apportionments, G6 digital photographs of the same surveys, historic Scudamore map
+			details, and landscape views from the CPRE collection.
+		</p>
+		<div class="photo-grid grid-wide">
+			{#each archiveMaps as photo (photo.file)}
+				<figure class="photo-item">
+					<a
+						href="/images/case-studies/kings-caple/additional/{photo.file}"
+						target="_blank"
+						rel="noopener"
+						class="photo-link"
+					>
+						<img
+							src="/images/case-studies/kings-caple/additional/{photo.file}"
+							alt={photo.caption}
+							loading="lazy"
+						/>
+					</a>
+					<figcaption>
+						<strong>{photo.caption}</strong>
+						<span class="photo-meta">{photo.source}</span>
 					</figcaption>
 				</figure>
 			{/each}
@@ -415,6 +654,10 @@
 		font-size: 0.9rem;
 		line-height: 1.5;
 		max-width: 700px;
+	}
+
+	.grid-wide {
+		grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
 	}
 
 	.photo-grid {
