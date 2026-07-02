@@ -1,0 +1,30 @@
+# David Lovelace Archive - Access Policy
+#
+# This file defines which files in the archive are restricted from public access.
+# Changes to this file are re-evaluated by the migration pipeline — run
+# `npm run policy:apply` after editing to update the DuckDB status column.
+#
+# Syntax:
+#   not_public: glob patterns that match file paths to restrict
+#   restricted: for individually restricted files (source_glob + reason)
+#
+# Globs are evaluated against the original_path column in DuckDB, relative to
+# the archive root on the external drive. Patterns use ** for recursive match,
+# * for single-level wildcard.
+
+not_public:
+  # All files from Herefordshire Archive & Records Centre (licensing restrictions)
+  - 'HARC/**'
+
+  # Microsoft Office documents (docx/doc/xls/xlsx) — contain unpublished research
+  - '**/*.docx'
+  - '**/*.doc'
+  - '**/*.xlsx'
+  - '**/*.xls'
+  - '**/*.pptx'
+
+# Future extensions:
+# restricted:
+#   - source_glob: "Maps/**/CrownCopyright*"
+#     reason: "Crown Copyright — may need permission for commercial use"
+#     default_status: "not_public"
