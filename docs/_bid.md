@@ -40,39 +40,40 @@ organisations and communities researching and preserving.
 
 ## Organisations and context
 
-- **Herefordshire Meadows** — 5 days. Georectification of meadow sites,
-  veteran tree survey data, QGIS training, and open access to archive
-  information.
+- **Herefordshire Meadows** — 5 days. Explore, collate and publish
+  meadow survey data, veteran tree records and tithe maps relevant to
+  grassland restoration sites across the county.
 
-- **Herefordshire Wildlife Trust** — 2 days. Habitat survey data, nature
-  reserve boundary overlays, and training in using historic maps for
-  landscape recovery.
+- **Herefordshire Wildlife Trust** — 2 days. Explore, collate and
+  publish habitat survey data and nature reserve records for landscape
+  recovery planning.
 
 - **Woolhope Club (Woolhope Naturalists’ Field Club)** — part of Robin
-  Lovelace’s project lead time. Archive transfer to their library,
-  access to tithe maps and survey photographs for their 600+ members.
+  Lovelace’s project lead time. Explore, collate and transfer tithe map
+  records, parish survey photographs and historic documents to the
+  Club’s library for their 600+ members.
 
 - **Herefordshire Archive and Records Centre (HARC)** — part of Robin
-  Lovelace’s project lead time. Transfer of priority digital and
-  physical materials, ensuring long-term public access and integration
-  with existing collections.
+  Lovelace’s project lead time. Explore, collate and transfer priority
+  digital and physical materials for long-term public access and
+  integration with existing collections.
 
-- **Ancient Tree Forum (ATF)** — 5 days. LOWVP Veteran Tree Survey made
-  openly accessible and cross-referenced with the Ancient Tree
-  Inventory, ground-truthing field work, and training.
+- **Ancient Tree Forum (ATF)** — 5 days. Explore, collate and publish
+  the LOWVP Veteran Tree Survey, cross-referenced with the Ancient Tree
+  Inventory, for national conservation planning.
 
-- **Homme House, Much Marcle** — 2 days (in-kind). Inclusion as a case
-  study site, georectification of estate records, parkland tree data
-  digitisation, and training opportunities.
+- **Homme House, Much Marcle** — 2 days (in-kind). Explore, collate and
+  digitise parkland tree records, historic estate features and
+  Capability Brown landscape data for use as a case study site.
 
-- **Stuart Hedley — Botanical Consultant** — 5 days. Access to the
-  archive’s botanical and habitat records for VC36 recording, training
-  in QGIS for field botany, and integration with Herefordshire Meadows
-  work.
+- **Stuart Hedley — Botanical Consultant** — 5 days. Explore, collate
+  and publish botanical and habitat records from the archive for
+  Herefordshire VC36 recording, integrated with Herefordshire Meadows’
+  grassland restoration work.
 
-- **CPRE Herefordshire** — 5 days. Historic landscape archive data,
-  georectification of CPRE-relevant maps and CPRE landscape photographs,
-  and training in using historic maps for landscape advocacy.
+- **CPRE Herefordshire** — 5 days. Explore, collate and publish historic
+  landscape data and CPRE photograph archive content for landscape
+  advocacy and planning.
 
 ------------------------------------------------------------------------
 
@@ -83,12 +84,12 @@ organisations and communities researching and preserving.
 | Person | Days | Role |
 |:---|---:|:---|
 | Robin Lovelace | 4 | Project lead; stakeholder meetings with HARC, Woolhope Club, others |
-| Stuart Hedley | 5 | Botanical audit; identify priority meadows and woodland surveys |
-| Ancient Tree Forum | 2 | Audit veteran tree survey data; identify priority parishes for release |
-| Herefordshire Meadows | 2 | Identify meadow restoration sites with matching archival records |
-| Herefordshire Wildlife Trust | 1 | Identify nature reserve overlap with archive habitat data |
-| Homme House | 1 | Identify veteran parkland trees and estate records for inclusion |
-| CPRE Herefordshire | 2 | Identify priority historic landscapes and CPRE photo archive content |
+| Stuart Hedley | 5 | Explore botanical records; identify priority meadows and woodland surveys |
+| Ancient Tree Forum | 2 | Explore veteran tree survey data; identify priority parishes for release |
+| Herefordshire Meadows | 2 | Explore meadow restoration sites with matching archival records |
+| Herefordshire Wildlife Trust | 1 | Explore nature reserve overlap with archive habitat data |
+| Homme House | 1 | Explore veteran parkland trees and estate records for inclusion |
+| CPRE Herefordshire | 2 | Explore historic landscapes and CPRE photo archive content |
 
 Workstream 1 — Stakeholder liaison and prioritisation effort
 
