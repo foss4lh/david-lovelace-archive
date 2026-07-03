@@ -70,6 +70,10 @@ organisations and communities researching and preserving.
   in QGIS for field botany, and integration with Herefordshire Meadows
   work.
 
+- **CPRE Herefordshire** — 5 days. Historic landscape archive data,
+  georectification of CPRE-relevant maps and CPRE landscape photographs,
+  and training in using historic maps for landscape advocacy.
+
 ------------------------------------------------------------------------
 
 ## Workstreams
@@ -84,6 +88,7 @@ organisations and communities researching and preserving.
 | Herefordshire Meadows | 2 | Identify meadow restoration sites with matching archival records |
 | Herefordshire Wildlife Trust | 1 | Identify nature reserve overlap with archive habitat data |
 | Homme House | 1 | Identify veteran parkland trees and estate records for inclusion |
+| CPRE Herefordshire | 2 | Identify priority historic landscapes and CPRE photo archive content |
 
 Workstream 1 — Stakeholder liaison and prioritisation effort
 
@@ -107,6 +112,7 @@ Workstream 1 — Stakeholder liaison and prioritisation effort
 | Herefordshire Meadows | 2 | Provide meadow boundary data for historic map overlay |
 | Herefordshire Wildlife Trust | 1 | Provide nature reserve boundary data |
 | Homme House | 1 | Provide parkland boundary and veteran tree location data |
+| CPRE Herefordshire | 2 | Provide CPRE landscape photo locations and historic landscape data |
 
 Workstream 2 — Georectification effort
 
@@ -136,6 +142,7 @@ Workstream 2 — Georectification effort
 | Robin Lovelace | 3 | Design and deliver QGIS training; academic liaison; workshop coordination |
 | Ancient Tree Forum | 1 | Contribute veteran tree survey methods to workshop content |
 | Herefordshire Meadows | 1 | Co-host meadow-focused session; engage network of land managers |
+| CPRE Herefordshire | 1 | Contribute historic landscape perspective and CPRE use cases |
 
 Workstream 3 — Outreach and research effort
 
@@ -145,8 +152,8 @@ Workstream 3 — Outreach and research effort
   loading georectified maps, overlaying modern boundaries, digitising
   historic features, and mobile field data capture.
 
-- Stakeholders (Herefordshire Meadows, ATF, Woolhope Club, Homme House)
-  contribute use cases from their own sites and datasets.
+- Stakeholders (Herefordshire Meadows, ATF, CPRE, Woolhope Club, Homme
+  House) contribute use cases from their own sites and datasets.
 
 - Academic liaison with University of Leeds ITS and other partners to
   identify at least one research project from the archive — measuring
@@ -193,10 +200,11 @@ Workstream 4 — Web development effort
 | Herefordshire Meadows        |   2 |   2 |   1 |   0 |     5 |
 | Homme House                  |   1 |   1 |   0 |   0 |     2 |
 | Herefordshire Wildlife Trust |   1 |   1 |   0 |   0 |     2 |
+| CPRE Herefordshire           |   2 |   2 |   1 |   0 |     5 |
 
 Resource allocation by person and workstream (days)
 
-**Total person-days: 34**
+**Total person-days: 39**
 
 ------------------------------------------------------------------------
 
@@ -221,7 +229,8 @@ Resource allocation by person and workstream (days)
 | Herefordshire Meadows        | 5              | TBC          | TBC       |
 | Herefordshire Wildlife Trust | 2              | TBC          | TBC       |
 | Homme House                  | 2 days in-kind | —            | —         |
-| **Total**                    | **34**         |              | **TBC**   |
+| CPRE Herefordshire           | 5              | TBC          | TBC       |
+| **Total**                    | **39**         |              | **TBC**   |
 
 ------------------------------------------------------------------------
 

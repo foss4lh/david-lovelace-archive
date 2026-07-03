@@ -70,6 +70,10 @@ and preserving.
   the archive's botanical and habitat records for VC36 recording, training in
   QGIS for field botany, and integration with Herefordshire Meadows work.
 
+- **CPRE Herefordshire** — 5 days. Historic landscape archive data,
+  georectification of CPRE-relevant maps and CPRE landscape photographs,
+  and training in using historic maps for landscape advocacy.
+
 ---
 
 ## Workstreams
@@ -84,18 +88,21 @@ ws1_atf <- 2
 ws1_meadows <- 2
 ws1_wildlife <- 1
 ws1_homme <- 1
+ws1_cpre <- 2
 
 ws1 <- data.frame(
   Person = c("Robin Lovelace", "Stuart Hedley", "Ancient Tree Forum",
-             "Herefordshire Meadows", "Herefordshire Wildlife Trust", "Homme House"),
-  Days = c(ws1_robin, ws1_stuart, ws1_atf, ws1_meadows, ws1_wildlife, ws1_homme),
+             "Herefordshire Meadows", "Herefordshire Wildlife Trust", "Homme House",
+             "CPRE Herefordshire"),
+  Days = c(ws1_robin, ws1_stuart, ws1_atf, ws1_meadows, ws1_wildlife, ws1_homme, ws1_cpre),
   Role = c(
     "Project lead; stakeholder meetings with HARC, Woolhope Club, others",
     "Botanical audit; identify priority meadows and woodland surveys",
     "Audit veteran tree survey data; identify priority parishes for release",
     "Identify meadow restoration sites with matching archival records",
     "Identify nature reserve overlap with archive habitat data",
-    "Identify veteran parkland trees and estate records for inclusion"
+    "Identify veteran parkland trees and estate records for inclusion",
+    "Identify priority historic landscapes and CPRE photo archive content"
   )
 )
 kable(ws1, caption = "Workstream 1 — Stakeholder liaison and prioritisation effort")
@@ -122,17 +129,20 @@ ws2_atf <- 2
 ws2_meadows <- 2
 ws2_wildlife <- 1
 ws2_homme <- 1
+ws2_cpre <- 2
 
 ws2 <- data.frame(
   Person = c("Robin Lovelace", "Ancient Tree Forum",
-             "Herefordshire Meadows", "Herefordshire Wildlife Trust", "Homme House"),
-  Days = c(ws2_robin, ws2_atf, ws2_meadows, ws2_wildlife, ws2_homme),
+             "Herefordshire Meadows", "Herefordshire Wildlife Trust", "Homme House",
+             "CPRE Herefordshire"),
+  Days = c(ws2_robin, ws2_atf, ws2_meadows, ws2_wildlife, ws2_homme, ws2_cpre),
   Role = c(
     "Lead georectification; QGIS processing; PMTiles pipeline",
     "Ground-truth veteran tree locations; verify historic grid references",
     "Provide meadow boundary data for historic map overlay",
     "Provide nature reserve boundary data",
-    "Provide parkland boundary and veteran tree location data"
+    "Provide parkland boundary and veteran tree location data",
+    "Provide CPRE landscape photo locations and historic landscape data"
   )
 )
 kable(ws2, caption = "Workstream 2 — Georectification effort")
@@ -165,15 +175,17 @@ ws3_atf <- 1
 ws3_meadows <- 1
 ws3_wildlife <- 0
 ws3_homme <- 0
+ws3_cpre <- 1
 
 ws3 <- data.frame(
   Person = c("Robin Lovelace", "Ancient Tree Forum",
-             "Herefordshire Meadows"),
-  Days = c(ws3_robin, ws3_atf, ws3_meadows),
+             "Herefordshire Meadows", "CPRE Herefordshire"),
+  Days = c(ws3_robin, ws3_atf, ws3_meadows, ws3_cpre),
   Role = c(
     "Design and deliver QGIS training; academic liaison; workshop coordination",
     "Contribute veteran tree survey methods to workshop content",
-    "Co-host meadow-focused session; engage network of land managers"
+    "Co-host meadow-focused session; engage network of land managers",
+    "Contribute historic landscape perspective and CPRE use cases"
   )
 )
 kable(ws3, caption = "Workstream 3 — Outreach and research effort")
@@ -186,7 +198,7 @@ kable(ws3, caption = "Workstream 3 — Outreach and research effort")
   loading georectified maps, overlaying modern boundaries, digitising
   historic features, and mobile field data capture.
 
-- Stakeholders (Herefordshire Meadows, ATF, Woolhope Club, Homme House)
+- Stakeholders (Herefordshire Meadows, ATF, CPRE, Woolhope Club, Homme House)
   contribute use cases from their own sites and datasets.
 
 - Academic liaison with University of Leeds ITS and other partners to
@@ -235,18 +247,20 @@ kable(ws4, caption = "Workstream 4 — Web development effort")
 # | label: resource-summary
 totals <- data.frame(
   Person = c("Robin Lovelace", "Stuart Hedley", "Ancient Tree Forum",
-             "Herefordshire Meadows", "Homme House", "Herefordshire Wildlife Trust"),
-  WS1 = c(ws1_robin, ws1_stuart, ws1_atf, ws1_meadows, ws1_homme, ws1_wildlife),
-  WS2 = c(ws2_robin, ws2_stuart, ws2_atf, ws2_meadows, ws2_homme, ws2_wildlife),
-  WS3 = c(ws3_robin, ws3_stuart, ws3_atf, ws3_meadows, ws3_homme, ws3_wildlife),
-  WS4 = c(ws4_robin, 0, 0, 0, 0, 0),
+             "Herefordshire Meadows", "Homme House", "Herefordshire Wildlife Trust",
+             "CPRE Herefordshire"),
+  WS1 = c(ws1_robin, ws1_stuart, ws1_atf, ws1_meadows, ws1_homme, ws1_wildlife, ws1_cpre),
+  WS2 = c(ws2_robin, ws2_stuart, ws2_atf, ws2_meadows, ws2_homme, ws2_wildlife, ws2_cpre),
+  WS3 = c(ws3_robin, ws3_stuart, ws3_atf, ws3_meadows, ws3_homme, ws3_wildlife, ws3_cpre),
+  WS4 = c(ws4_robin, 0, 0, 0, 0, 0, 0),
   Total = c(
     ws1_robin + ws2_robin + ws3_robin + ws4_robin,
     ws1_stuart + ws2_stuart + ws3_stuart,
     ws1_atf + ws2_atf + ws3_atf,
     ws1_meadows + ws2_meadows + ws3_meadows,
     ws1_homme + ws2_homme + ws3_homme,
-    ws1_wildlife + ws2_wildlife + ws3_wildlife
+    ws1_wildlife + ws2_wildlife + ws3_wildlife,
+    ws1_cpre + ws2_cpre + ws3_cpre
   )
 )
 kable(totals, caption = "Resource allocation by person and workstream (days)")
@@ -279,6 +293,7 @@ total_days <- sum(totals$Total)
 | Herefordshire Meadows | `r ws1_meadows+ws2_meadows+ws3_meadows` | TBC | TBC |
 | Herefordshire Wildlife Trust | `r ws1_wildlife+ws2_wildlife+ws3_wildlife` | TBC | TBC |
 | Homme House | 2 days in-kind | — | — |
+| CPRE Herefordshire | `r ws1_cpre+ws2_cpre+ws3_cpre` | TBC | TBC |
 | **Total** | **`r total_days`** | | **TBC** |
 
 ---
