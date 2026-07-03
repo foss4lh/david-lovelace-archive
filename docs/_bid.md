@@ -40,36 +40,35 @@ organisations and communities researching and preserving.
 
 ## Organisations and context
 
-- **Herefordshire Meadows** — 5 days. Benefit from georectification of
-  meadow sites, veteran tree survey data, QGIS training, and open access
-  to archive information.
+- **Herefordshire Meadows** — 5 days. Georectification of meadow sites,
+  veteran tree survey data, QGIS training, and open access to archive
+  information.
 
-- **Herefordshire Wildlife Trust** — 2 days. Benefit from habitat survey
-  data, nature reserve boundary overlays, and training in using historic
-  maps for landscape recovery.
+- **Herefordshire Wildlife Trust** — 2 days. Habitat survey data, nature
+  reserve boundary overlays, and training in using historic maps for
+  landscape recovery.
 
 - **Woolhope Club (Woolhope Naturalists’ Field Club)** — part of Robin
-  Lovelace’s project lead time. Benefit from archive transfer to their
-  library, access to tithe maps and survey photographs for their 600+
-  members.
+  Lovelace’s project lead time. Archive transfer to their library,
+  access to tithe maps and survey photographs for their 600+ members.
 
 - **Herefordshire Archive and Records Centre (HARC)** — part of Robin
-  Lovelace’s project lead time. Benefit from transfer of priority
-  digital and physical materials, ensuring long-term public access and
-  integration with existing collections.
+  Lovelace’s project lead time. Transfer of priority digital and
+  physical materials, ensuring long-term public access and integration
+  with existing collections.
 
-- **Ancient Tree Forum (ATF)** — 5 days. Benefit from the LOWVP Veteran
-  Tree Survey being made openly accessible and cross-referenced with the
-  Ancient Tree Inventory, ground-truthing field work, and training.
+- **Ancient Tree Forum (ATF)** — 5 days. LOWVP Veteran Tree Survey made
+  openly accessible and cross-referenced with the Ancient Tree
+  Inventory, ground-truthing field work, and training.
 
-- **Homme House, Much Marcle** — 2 days (in-kind). Benefit from
-  inclusion as a case study site, georectification of estate records,
-  parkland tree data digitisation, and training opportunities.
+- **Homme House, Much Marcle** — 2 days (in-kind). Inclusion as a case
+  study site, georectification of estate records, parkland tree data
+  digitisation, and training opportunities.
 
-- **Stuart Hedley — Botanical Consultant** — 5 days. Benefit from access
-  to the archive’s botanical and habitat records for VC36 recording,
-  training in QGIS for field botany, and integration with Herefordshire
-  Meadows work.
+- **Stuart Hedley — Botanical Consultant** — 5 days. Access to the
+  archive’s botanical and habitat records for VC36 recording, training
+  in QGIS for field botany, and integration with Herefordshire Meadows
+  work.
 
 ------------------------------------------------------------------------
 
@@ -90,20 +89,12 @@ Workstream 1 — Stakeholder liaison and prioritisation effort
 
 **Activities:**
 
-- Initial meetings with each stakeholder to understand their priorities
-  and data needs.
+- Stakeholder meetings to agree priorities and data needs.
 
-- Audit of archive contents relevant to each organisation’s conservation
-  and research remit.
+- Archive audit per stakeholder conservation and research remit.
 
-- Prioritisation matrix — conservation value, archival completeness, and
-  stakeholder demand.
-
-- Agreed publication schedule for data release.
-
-- Transfer of priority digital and physical materials to HARC, the
-  Woolhope Club library, and other partner organisations for long-term
-  public access.
+- Prioritisation matrix, publication schedule, and materials transfer to
+  HARC and Woolhope Club.
 
 ------------------------------------------------------------------------
 
@@ -112,7 +103,6 @@ Workstream 1 — Stakeholder liaison and prioritisation effort
 | Person | Days | Role |
 |:---|---:|:---|
 | Robin Lovelace | 4 | Lead georectification; QGIS processing; PMTiles pipeline |
-| Stuart Hedley | 0 | — |
 | Ancient Tree Forum | 2 | Ground-truth veteran tree locations; verify historic grid references |
 | Herefordshire Meadows | 2 | Provide meadow boundary data for historic map overlay |
 | Herefordshire Wildlife Trust | 1 | Provide nature reserve boundary data |
@@ -128,15 +118,14 @@ Workstream 2 — Georectification effort
 - Georectify RAF 1947 and Luftwaffe aerial photography covering priority
   areas.
 
-- Create PMTiles and COG (Cloud Optimised GeoTIFF) derivatives for web
-  deployment.
+- Create PMTiles and COGs for web deployment.
 
 - Ground-truth selected historic features with stakeholder partners.
 
 - Publish as browsable, interactive map layers on the archive website.
 
-- Cross-reference veteran tree survey photos with the Ancient Tree
-  Inventory and make available via ATF’s national network.
+- Cross-reference veteran tree survey with the Ancient Tree Inventory
+  for ATF’s national network.
 
 ------------------------------------------------------------------------
 
@@ -145,36 +134,27 @@ Workstream 2 — Georectification effort
 | Person | Days | Role |
 |:---|---:|:---|
 | Robin Lovelace | 3 | Design and deliver QGIS training; academic liaison; workshop coordination |
-| Stuart Hedley | 0 | — |
 | Ancient Tree Forum | 1 | Contribute veteran tree survey methods to workshop content |
 | Herefordshire Meadows | 1 | Co-host meadow-focused session; engage network of land managers |
-| Herefordshire Wildlife Trust | 0 | — |
-| Homme House | 0 | — |
 
 Workstream 3 — Outreach and research effort
 
 **Activities:**
 
-- **David Lovelace Archive Workshop** — a 1–2 day hands-on training
-  event designed for complete beginners, introducing QGIS as a tool for
-  exploring historic maps, aerial photography, and ecological survey
-  data.
-
-- Workshop participants will learn to load georectified maps, overlay
-  modern boundaries, digitise features from historic sources, and
-  capture field data using mobile QGIS.
+- **David Lovelace Archive Workshop** — 1–2 day QGIS beginner workshop:
+  loading georectified maps, overlaying modern boundaries, digitising
+  historic features, and mobile field data capture.
 
 - Stakeholders (Herefordshire Meadows, ATF, Woolhope Club, Homme House)
-  will contribute use cases drawn from their own sites and datasets.
+  contribute use cases from their own sites and datasets.
 
-- Academic liaison with the University of Leeds (Institute for Transport
-  Studies) and other research partners to identify at least one research
-  project using the archive’s data — for example, measuring change in
-  veteran tree populations, historic field boundary loss, or woodland
+- Academic liaison with University of Leeds ITS and other partners to
+  identify at least one research project from the archive — measuring
+  change in veteran tree populations, field boundary loss, or woodland
   continuity over 150+ years.
 
-- Workshop materials (data packs, QGIS project files, video guides) will
-  be published openly for reuse.
+- Workshop materials (data packs, QGIS project files, video guides)
+  published openly for reuse.
 
 ------------------------------------------------------------------------
 
@@ -188,25 +168,18 @@ Workstream 4 — Web development effort
 
 **Activities:**
 
-- Add **asset geolocation functionality** to the archive website: a
-  browsable, searchable map interface that displays the location of
-  every photograph, map, survey, and document in the archive, with
+- **Asset geolocation** — browsable, searchable map interface with
   spatial filtering by parish, grid square, and stakeholder area of
   interest.
 
-- Develop a **hosting pipeline** for the PMTiles, COG, and other spatial
-  data layers created in Workstream 2, ensuring they’re available for
-  web publication at no ongoing cost (e.g. via free static hosting on
-  Netlify, GitHub Pages, or similar).
+- **Hosting pipeline** for PMTiles and COG layers from WS2, published at
+  no ongoing cost via Netlify, GitHub Pages, or similar.
 
-- Integrate a **download portal** for bulk data access, so researchers
-  and partner organisations can access the archive’s content without
-  manual file requests.
+- **Download portal** for bulk data access — researchers and partners
+  can retrieve archive content without manual file requests.
 
-- Ensure the site architecture supports long-term sustainability: the
-  openclaw server currently houses the clean archive (~2.4 TB), and the
-  web interface will need to point to data published via GitHub Releases
-  and static hosting.
+- **Long-term sustainability** — clean archive (~2.4 TB on Leeds server)
+  served via GitHub Releases and static hosting.
 
 ------------------------------------------------------------------------
 
@@ -224,16 +197,6 @@ Workstream 4 — Web development effort
 Resource allocation by person and workstream (days)
 
 **Total person-days: 34**
-
-| Person | Days | Notes |
-|----|----|----|
-| Robin Lovelace | 15 | Project lead, georectification, web dev, training |
-| Stuart Hedley | 5 | Botanical audit and survey |
-| Ancient Tree Forum | 5 | Veteran tree expertise |
-| Herefordshire Meadows | 5 | Meadow conservation and data |
-| Homme House | 2 | In-kind: parkland records, venue, case study |
-| Herefordshire Wildlife Trust | 2 | Reserve data and habitat records |
-| **Total** | **34** |  |
 
 ------------------------------------------------------------------------
 
