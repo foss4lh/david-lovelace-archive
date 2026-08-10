@@ -45,6 +45,21 @@
 	</section>
 
 	<section class="doc-panel">
+		<h2>Conference talks & presentations</h2>
+		<p style="margin-bottom: 1rem; color: #55594f; line-height: 1.5;">
+			Technical presentations and talk outlines detailing the FOSS toolchain, QGIS georectification
+			workflows, PMTiles web mapping, and DuckDB-WASM index search.
+		</p>
+		<a
+			class="button"
+			href={resolve('/talks')}
+			style="display: inline-flex; align-items: center; gap: 0.4rem; padding: 0.55rem 1rem; border: 1px solid #304832; border-radius: 6px; background: #304832; color: #fffdf7; font-weight: 600; text-decoration: none;"
+		>
+			View talks & presentations →
+		</a>
+	</section>
+
+	<section class="doc-panel">
 		<h2>Royal Commission parish index</h2>
 		<p style="margin-bottom: 1rem; color: #55594f; line-height: 1.5;">
 			The 1930s RCHME survey of Herefordshire has been digitised by British History Online. Browse

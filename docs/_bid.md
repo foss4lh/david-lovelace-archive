@@ -1,4 +1,5 @@
 # David Lovelace Archive — Project Bid
+
 Robin Lovelace
 2026-07-03
 
@@ -75,21 +76,21 @@ organisations and communities researching and preserving.
   landscape data and CPRE photograph archive content for landscape
   advocacy and planning.
 
-------------------------------------------------------------------------
+---
 
 ## Workstreams
 
 ### Workstream 1: Stakeholder liaison and archive prioritisation
 
-| Person | Days | Role |
-|:---|---:|:---|
-| Robin Lovelace | 4 | Project lead; stakeholder meetings with HARC, Woolhope Club, others |
-| Stuart Hedley | 5 | Explore botanical records; identify priority meadows and woodland surveys |
-| Ancient Tree Forum | 2 | Explore veteran tree survey data; identify priority parishes for release |
-| Herefordshire Meadows | 2 | Explore meadow restoration sites with matching archival records |
-| Herefordshire Wildlife Trust | 1 | Explore nature reserve overlap with archive habitat data |
-| Homme House | 1 | Explore veteran parkland trees and estate records for inclusion |
-| CPRE Herefordshire | 2 | Explore historic landscapes and CPRE photo archive content |
+| Person                       | Days | Role                                                                      |
+| :--------------------------- | ---: | :------------------------------------------------------------------------ |
+| Robin Lovelace               |    4 | Project lead; stakeholder meetings with HARC, Woolhope Club, others       |
+| Stuart Hedley                |    5 | Explore botanical records; identify priority meadows and woodland surveys |
+| Ancient Tree Forum           |    2 | Explore veteran tree survey data; identify priority parishes for release  |
+| Herefordshire Meadows        |    2 | Explore meadow restoration sites with matching archival records           |
+| Herefordshire Wildlife Trust |    1 | Explore nature reserve overlap with archive habitat data                  |
+| Homme House                  |    1 | Explore veteran parkland trees and estate records for inclusion           |
+| CPRE Herefordshire           |    2 | Explore historic landscapes and CPRE photo archive content                |
 
 Workstream 1 — Stakeholder liaison and prioritisation effort
 
@@ -102,18 +103,18 @@ Workstream 1 — Stakeholder liaison and prioritisation effort
 - Prioritisation matrix, publication schedule, and materials transfer to
   HARC and Woolhope Club.
 
-------------------------------------------------------------------------
+---
 
 ### Workstream 2: Georectification of historic maps and aerial photography
 
-| Person | Days | Role |
-|:---|---:|:---|
-| Robin Lovelace | 4 | Lead georectification; QGIS processing; PMTiles pipeline |
-| Ancient Tree Forum | 2 | Ground-truth veteran tree locations; verify historic grid references |
-| Herefordshire Meadows | 2 | Provide meadow boundary data for historic map overlay |
-| Herefordshire Wildlife Trust | 1 | Provide nature reserve boundary data |
-| Homme House | 1 | Provide parkland boundary and veteran tree location data |
-| CPRE Herefordshire | 2 | Provide CPRE landscape photo locations and historic landscape data |
+| Person                       | Days | Role                                                                 |
+| :--------------------------- | ---: | :------------------------------------------------------------------- |
+| Robin Lovelace               |    4 | Lead georectification; QGIS processing; PMTiles pipeline             |
+| Ancient Tree Forum           |    2 | Ground-truth veteran tree locations; verify historic grid references |
+| Herefordshire Meadows        |    2 | Provide meadow boundary data for historic map overlay                |
+| Herefordshire Wildlife Trust |    1 | Provide nature reserve boundary data                                 |
+| Homme House                  |    1 | Provide parkland boundary and veteran tree location data             |
+| CPRE Herefordshire           |    2 | Provide CPRE landscape photo locations and historic landscape data   |
 
 Workstream 2 — Georectification effort
 
@@ -134,16 +135,16 @@ Workstream 2 — Georectification effort
 - Cross-reference veteran tree survey with the Ancient Tree Inventory
   for ATF’s national network.
 
-------------------------------------------------------------------------
+---
 
 ### Workstream 3: Outreach, QGIS training, and research initiation
 
-| Person | Days | Role |
-|:---|---:|:---|
-| Robin Lovelace | 3 | Design and deliver QGIS training; academic liaison; workshop coordination |
-| Ancient Tree Forum | 1 | Contribute veteran tree survey methods to workshop content |
-| Herefordshire Meadows | 1 | Co-host meadow-focused session; engage network of land managers |
-| CPRE Herefordshire | 1 | Contribute historic landscape perspective and CPRE use cases |
+| Person                | Days | Role                                                                      |
+| :-------------------- | ---: | :------------------------------------------------------------------------ |
+| Robin Lovelace        |    3 | Design and deliver QGIS training; academic liaison; workshop coordination |
+| Ancient Tree Forum    |    1 | Contribute veteran tree survey methods to workshop content                |
+| Herefordshire Meadows |    1 | Co-host meadow-focused session; engage network of land managers           |
+| CPRE Herefordshire    |    1 | Contribute historic landscape perspective and CPRE use cases              |
 
 Workstream 3 — Outreach and research effort
 
@@ -164,13 +165,13 @@ Workstream 3 — Outreach and research effort
 - Workshop materials (data packs, QGIS project files, video guides)
   published openly for reuse.
 
-------------------------------------------------------------------------
+---
 
 ### Workstream 4: Web development — asset geolocation and hosting
 
-| Person | Days | Role |
-|:---|---:|:---|
-| Robin Lovelace | 4 | Lead developer; geolocation feature implementation; deployment |
+| Person         | Days | Role                                                           |
+| :------------- | ---: | :------------------------------------------------------------- |
+| Robin Lovelace |    4 | Lead developer; geolocation feature implementation; deployment |
 
 Workstream 4 — Web development effort
 
@@ -189,12 +190,12 @@ Workstream 4 — Web development effort
 - **Long-term sustainability** — clean archive (~2.4 TB on Leeds server)
   served via GitHub Releases and static hosting.
 
-------------------------------------------------------------------------
+---
 
 ## Resource summary
 
 | Person                       | WS1 | WS2 | WS3 | WS4 | Total |
-|:-----------------------------|----:|----:|----:|----:|------:|
+| :--------------------------- | --: | --: | --: | --: | ----: |
 | Robin Lovelace               |   4 |   4 |   3 |   4 |    15 |
 | Stuart Hedley                |   5 |   0 |   0 |   0 |     5 |
 | Ancient Tree Forum           |   2 |   2 |   1 |   0 |     5 |
@@ -207,23 +208,23 @@ Resource allocation by person and workstream (days)
 
 **Total person-days: 39**
 
-------------------------------------------------------------------------
+---
 
 ## Timeline (12 months)
 
-| Quarter | Workstream focus | Key milestones |
-|----|----|----|
-| Q1 (Months 1–3) | WS1: Stakeholder liaison | Initial meetings, archive audit, prioritisation, transfer agreements signed |
-| Q2 (Months 4–6) | WS2: Georectification | Priority tithe maps and aerial photos georectified; first PMTiles published |
-| Q3 (Months 7–9) | WS3: Outreach + WS4: Web dev | QGIS workshop delivered; asset geolocation feature live; data transferred to HARC |
-| Q4 (Months 10–12) | All | Cross-referencing complete; materials transferred to Woolhope Club and partners; project report |
+| Quarter           | Workstream focus             | Key milestones                                                                                  |
+| ----------------- | ---------------------------- | ----------------------------------------------------------------------------------------------- |
+| Q1 (Months 1–3)   | WS1: Stakeholder liaison     | Initial meetings, archive audit, prioritisation, transfer agreements signed                     |
+| Q2 (Months 4–6)   | WS2: Georectification        | Priority tithe maps and aerial photos georectified; first PMTiles published                     |
+| Q3 (Months 7–9)   | WS3: Outreach + WS4: Web dev | QGIS workshop delivered; asset geolocation feature live; data transferred to HARC               |
+| Q4 (Months 10–12) | All                          | Cross-referencing complete; materials transferred to Woolhope Club and partners; project report |
 
-------------------------------------------------------------------------
+---
 
 ## Proposed budget
 
 | Item                         | Days           | Day rate (£) | Total (£) |
-|------------------------------|----------------|--------------|-----------|
+| ---------------------------- | -------------- | ------------ | --------- |
 | Robin Lovelace               | 15             | TBC          | TBC       |
 | Stuart Hedley                | 5              | TBC          | TBC       |
 | Ancient Tree Forum           | 5              | TBC          | TBC       |
@@ -233,7 +234,7 @@ Resource allocation by person and workstream (days)
 | CPRE Herefordshire           | 5              | TBC          | TBC       |
 | **Total**                    | **39**         |              | **TBC**   |
 
-------------------------------------------------------------------------
+---
 
 ## Next steps
 
