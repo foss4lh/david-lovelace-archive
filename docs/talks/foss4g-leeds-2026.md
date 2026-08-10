@@ -1,5 +1,7 @@
 # FOSS for Landscape History: from georectifying ancient maps to sharing the results
 
+## Abstract
+
 Research into physical, ecological and socio-economic changes that have occurred across landscapes relies on multi-disciplinary skills and information from a variety of sources including local knowledge.
 Although landscape history is an academic field backed by research groups and professorships in several universities, much of the action takes place in voluntary groups, composed of citizen scientists and local historians operating within more-or-less formalised communities of practice.
 Example local history and naturalist groups include the now-disbanded Plinian Society, founded in 1823 in Edinburgh and whose membership included Charles Darwin, and the Woolhope Naturalists' Field Club founded in Herefordshire in 1851, which still runs to this day.

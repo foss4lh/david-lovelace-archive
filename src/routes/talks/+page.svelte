@@ -1,5 +1,4 @@
 <script lang="ts">
-	 
 	import { ArrowRight, Calendar, MapPin } from '@lucide/svelte';
 	import { resolve } from '$app/paths';
 
@@ -56,7 +55,7 @@
 				</div>
 				<div class="talk-actions">
 					<a class="button primary" href={resolve('/talks/foss4g-leeds-2026')}>
-						View talk outline & notes <ArrowRight size={15} />
+						View talk & abstract <ArrowRight size={15} />
 					</a>
 				</div>
 			</article>
