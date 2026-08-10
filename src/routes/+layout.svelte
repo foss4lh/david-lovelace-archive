@@ -1,5 +1,14 @@
 <script lang="ts">
-	import { Archive, FileSearch, Map, Image, SearchCheck, Users, Code } from '@lucide/svelte';
+	import {
+		Archive,
+		FileSearch,
+		Map,
+		Image,
+		SearchCheck,
+		Users,
+		FileText,
+		Code
+	} from '@lucide/svelte';
 	import { resolve } from '$app/paths';
 	import '../app.css';
 
@@ -11,7 +20,8 @@
 		{ href: '/maps', label: 'Maps', icon: Map },
 		{ href: '/photos', label: 'Photos', icon: Image },
 		{ href: '/research', label: 'Research', icon: SearchCheck },
-		{ href: '/case-studies', label: 'Case studies', icon: Users }
+		{ href: '/case-studies', label: 'Case studies', icon: Users },
+		{ href: '/talks', label: 'Talks', icon: FileText }
 	] as const;
 </script>
 
