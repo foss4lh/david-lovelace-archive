@@ -1,8 +1,16 @@
 # FOSS for Landscape History: from georectifying ancient maps to sharing the results
 
-Local and citizen-led historical research
+Research into physical, ecological and socio-economic changes that have occurred across landscapes relies on multi-disciplinary skills and information from a variety of sources including local knowledge.
+Although landscape history is an academic field backed by research groups and professorships in several universities, much of the action takes place in voluntary groups, composed of citizen scientists and local historians operating within more-or-less formalised communities of practice.
+Example local history and naturalist groups include the now-disbanded Plinian Society, founded in 1823 in Edinburgh and whose membership included Charles Darwin, and the Woolhope Naturalists' Field Club founded in Herefordshire in 1851, which still runs to this day.
+A wide variety of established methods are available to landscape historians, ranging from desk-based collection, translation and synthesis of information from historic archives to the field-based observation of biodiversity and methods requiring scientific equipment including dendrochronology, ground-penetrating radar, and radiocarbon dating.
+The use of geographic datasets and methods such as remote sensing, georectification and digitisation of historic maps, and communication of results through interactive maps are relatively new developments that offer great potential to empower many current and potential landscape historians of every stripe.
+However, the knowledge and skills needed to collect, work with, and gain insights from geographic datasets for landscape history are few and far between, with expertise concentrated among a few people working at the intersection between landscape history and the broadly defined field of geocomputation.
+David Lovelace (1948–2026) worked at this intersection and throughout his 30+-year career he collected more than 2,000 Gigabytes worth of data on the landscape history of Herefordshire.
+An advocate of empowering people through technology, he was a strong proponent of free and open source software for geographic applications (FOSS4G).
+This talk will discuss the geographic research methods that David developed, with a focus on open tools he used and with reference to the nascent David Lovelace Archive (hosted at bosci.net), which provides an example of how new technologies can help get research out of dusty desks and into the wider world for the greater good.
 
-## Slide-by-slide outline
+<!-- ## Slide-by-slide outline
 
 **1. Title**
 FOSS for Landscape History: from georectifying ancient maps to sharing the results.
@@ -60,4 +68,4 @@ This is a reusable pattern for any custodian sitting on a large, un-digitised la
 - Reuse real screenshots from the live site rather than mockups — `/case-studies/kings-caple`, `/maps`, `/explorer`, `/browse` all already exist as routes.
 - Pull exact figures from `catalog/collection-stats.json` and `catalog/datasets.json` at build time rather than hardcoding, so numbers stay accurate if the talk is reused/updated later.
 - Keep the memorial framing to slide 2 only — don't let it recur, the rest of the talk should read as a technical case study.
-- If turned into an actual slide deck (Marp/reveal.js/Google Slides), a natural home is `docs/talks/foss4g-leeds-2026-slides.md` (Marp) or a linked external deck, with this file staying as the outline/speaker-notes source of truth.
+- If turned into an actual slide deck (Marp/reveal.js/Google Slides), a natural home is `docs/talks/foss4g-leeds-2026-slides.md` (Marp) or a linked external deck, with this file staying as the outline/speaker-notes source of truth. -->
