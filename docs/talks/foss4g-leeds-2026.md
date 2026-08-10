@@ -8,7 +8,7 @@ The use of geographic datasets and methods such as remote sensing, georectificat
 However, the knowledge and skills needed to collect, work with, and gain insights from geographic datasets for landscape history are few and far between, with expertise concentrated among a few people working at the intersection between landscape history and the broadly defined field of geocomputation.
 David Lovelace (1948–2026) worked at this intersection and throughout his 30+-year career he collected more than 2,000 Gigabytes worth of data on the landscape history of Herefordshire.
 An advocate of empowering people through technology, he was a strong proponent of free and open source software for geographic applications (FOSS4G).
-This talk will discuss the geographic research methods that David developed, with a focus on open tools he used and with reference to the nascent David Lovelace Archive (hosted at bosci.net), which provides an example of how new technologies can help get research out of dusty desks and into the wider world for the greater good.
+This talk will discuss the geographic research methods that David developed, with a focus on open tools he used and with reference to the nascent David Lovelace Archive (hosted at [bosci.net](https://bosci.net)), which provides an example of how new technologies can help get research out of dusty desks and into the wider world for the greater good.
 
 <!-- ## Slide-by-slide outline
 
