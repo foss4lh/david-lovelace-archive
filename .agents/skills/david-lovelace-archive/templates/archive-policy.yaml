@@ -1,0 +1,85 @@
+# Archive Policy Configuration
+# Controls which files are public, restricted, or excluded.
+# The migration script reads this file, resolves status against the DuckDB
+# inventory, and updates the `status` column for matching files.
+#
+# To change a file's public availability:
+#   1. Update the glob pattern below
+#   2. Re-run the migration policy resolver
+#   3. The web app queries DuckDB status at runtime — no code change needed
+
+# Files that will NOT be included in the public web archive
+not_public:
+  # Source-based exclusions
+  source_glob:
+    - "*/HARC/**"                    # Herefordshire Archive & Records Centre — licensing restrictions
+    - "**/*.docx"                     # Modern word processor files — personal/unedited drafts
+  
+  # File-type exclusions (raw camera files with JPEG companion)
+  raw_camera_formats:
+    - ".arw"     # Sony Alpha Raw
+    - ".dng"     # Adobe Digital Negative
+    - ".srw"     # Samsung Raw
+  
+  # Directory-level exclusions
+  directory:
+    - "$RECYCLE.BIN"
+    - "System Volume Information"
+
+# Deduplication settings
+dedup:
+  enabled: true
+  # Strategy: 'hardlink' (rdfind) or 'content-skip' (skip second copy entirely)
+  strategy: hardlink
+  checksum: sha256
+
+# Compression settings
+compression:
+  # Per-extension rules: null = no compression, otherwise compression method + level
+  tif:
+    method: zstd
+    params:
+      level: 6
+  asc:
+    method: zstd
+    params:
+      level: 6
+  csv:
+    method: gzip
+    params:
+      level: 9
+  json:
+    method: zstd
+    params:
+      level: 6
+  # Formats below: already compressed, skip
+  jpg: null
+  jpeg: null
+  png: null
+  ecw: null
+  zip: null
+  gif: null
+  pmtiles: null
+
+# Migration settings
+migration:
+  # Status values
+  status_na: "NA"                     # Not yet copied
+  status_done: "DONE"                 # Successfully copied
+  status_not_public: "NOT_PUBLIC"     # Excluded from public domain
+  status_duplicate: "DUPLICATE"       # Content-identical, resolved via hardlink
+  status_skip: "SKIP"                 # Excluded intentionally (cache, thumbs, temp)
+
+  # Remote server settings
+  remote:
+    enabled: true
+    host: "openclaw"
+    user: "clausrl"
+    # Password not stored here — use SSH key or provide at runtime
+    base_path: "/mnt/fe20e9cd-93ce-46c5-86be-cf2287573f45"
+    destination_dir: "david-lovelace-archive-clean"
+    rsync_opts:
+      - "-avz"
+      - "--hard-links"
+      - "--progress"
+      - "--exclude=.Trash*"
