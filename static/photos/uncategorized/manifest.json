@@ -1,6 +1,6 @@
 {
   "collection": "uncategorized",
-  "total_sampled": 200,
+  "total_sampled": 60,
   "web_max_dim": 1200,
   "thumb_max_dim": 300,
   "quality": 80,
@@ -26,11 +26,6 @@
       "thumb": "thumbs/AirPhotos__NMRC_AP_verticals__NMRC_AP_verts_Leintwardine__DSC01204.jpg"
     },
     {
-      "path": "History/CatholicRegisters/100MSDCF/_DSC8348.TIF",
-      "web": "web/History__CatholicRegisters__100MSDCF___DSC8348.jpg",
-      "thumb": "thumbs/History__CatholicRegisters__100MSDCF___DSC8348.jpg"
-    },
-    {
       "path": "AirPhotos/NMRC_AP_obliques/2014_11_13/dxotif/DSC04408_DxO.tif",
       "web": "web/AirPhotos__NMRC_AP_obliques__2014_11_13__dxotif__DSC04408_DxO.jpg",
       "thumb": "thumbs/AirPhotos__NMRC_AP_obliques__2014_11_13__dxotif__DSC04408_DxO.jpg"
@@ -51,19 +46,9 @@
       "thumb": "thumbs/Maps__eastnor__LibraryCeiling__Originals__rSAM_0329_09hr.jpg"
     },
     {
-      "path": "History/CatholicRegisters/TIF16Feb23/BT97_3/BT97_3_9133.TIF",
-      "web": "web/History__CatholicRegisters__TIF16Feb23__BT97_3__BT97_3_9133.jpg",
-      "thumb": "thumbs/History__CatholicRegisters__TIF16Feb23__BT97_3__BT97_3_9133.jpg"
-    },
-    {
       "path": "History/EastnorArchives/WorcsMaps/img016.tif",
       "web": "web/History__EastnorArchives__WorcsMaps__img016.jpg",
       "thumb": "thumbs/History__EastnorArchives__WorcsMaps__img016.jpg"
-    },
-    {
-      "path": "History/CatholicRegisters/TIF16Feb23/BT97_3/BT97_3_9140.TIF",
-      "web": "web/History__CatholicRegisters__TIF16Feb23__BT97_3__BT97_3_9140.jpg",
-      "thumb": "thumbs/History__CatholicRegisters__TIF16Feb23__BT97_3__BT97_3_9140.jpg"
     },
     {
       "path": "History/Hereford Library/TaylorsCountyMap1756/TaylorSE/IMG_9757.tif",
@@ -136,11 +121,6 @@
       "thumb": "thumbs/AirPhotos__NMRC_AP_verticals__NMRC_AP_vert_Eardisland__DSC02601.jpg"
     },
     {
-      "path": "History/CatholicRegisters/100MSDCF/_DSC8426.TIF",
-      "web": "web/History__CatholicRegisters__100MSDCF___DSC8426.jpg",
-      "thumb": "thumbs/History__CatholicRegisters__100MSDCF___DSC8426.jpg"
-    },
-    {
       "path": "History/EastnorArchives/PuginRoom2016/19May/pan2/pan2_H0/DSC00284.tif",
       "web": "web/History__EastnorArchives__PuginRoom2016__19May__pan2__pan2_H0__DSC00284.jpg",
       "thumb": "thumbs/History__EastnorArchives__PuginRoom2016__19May__pan2__pan2_H0__DSC00284.jpg"
@@ -159,11 +139,6 @@
       "path": "AirPhotos/NMRC_AP_verticals/NMRC_AP_vert_Hereford_2011/tiff/sam_8614.TIF",
       "web": "web/AirPhotos__NMRC_AP_verticals__NMRC_AP_vert_Hereford_2011__tiff__sam_8614.jpg",
       "thumb": "thumbs/AirPhotos__NMRC_AP_verticals__NMRC_AP_vert_Hereford_2011__tiff__sam_8614.jpg"
-    },
-    {
-      "path": "History/CatholicRegisters/TIF/BT97_9/BT97_9_8529.TIF",
-      "web": "web/History__CatholicRegisters__TIF__BT97_9__BT97_9_8529.jpg",
-      "thumb": "thumbs/History__CatholicRegisters__TIF__BT97_9__BT97_9_8529.jpg"
     },
     {
       "path": "History/EastnorArchives/EastnorArchiveImages_13&14April2015/R15/DSC05350.tif",
@@ -196,11 +171,6 @@
       "thumb": "thumbs/History__EastnorArchives__PuginRoom2016__19May__pan2__pan2_H2__DSC00320.jpg"
     },
     {
-      "path": "History/CatholicRegisters/TIF/BT97_2/BT97_2_9196.TIF",
-      "web": "web/History__CatholicRegisters__TIF__BT97_2__BT97_2_9196.jpg",
-      "thumb": "thumbs/History__CatholicRegisters__TIF__BT97_2__BT97_2_9196.jpg"
-    },
-    {
       "path": "AirPhotos/NMRC_AP_obliques/Sept_2014/DSC02235_DxO.tif",
       "web": "web/AirPhotos__NMRC_AP_obliques__Sept_2014__DSC02235_DxO.jpg",
       "thumb": "thumbs/AirPhotos__NMRC_AP_obliques__Sept_2014__DSC02235_DxO.jpg"
@@ -209,11 +179,6 @@
       "path": "History/EastnorArchives/PuginRoom2016/19May/pan2/pan2_H2/DSC00323.tif",
       "web": "web/History__EastnorArchives__PuginRoom2016__19May__pan2__pan2_H2__DSC00323.jpg",
       "thumb": "thumbs/History__EastnorArchives__PuginRoom2016__19May__pan2__pan2_H2__DSC00323.jpg"
-    },
-    {
-      "path": "History/CatholicRegisters/TIF/BT97_4/BT97_4_8758.TIF",
-      "web": "web/History__CatholicRegisters__TIF__BT97_4__BT97_4_8758.jpg",
-      "thumb": "thumbs/History__CatholicRegisters__TIF__BT97_4__BT97_4_8758.jpg"
     },
     {
       "path": "History/NottinghamRO/DD4P_84_11/DSC03625.jpg",
@@ -261,11 +226,6 @@
       "thumb": "thumbs/History__EastnorArchives__EastnorArchiveImages_13&14April2015__R37__DSC05404.jpg"
     },
     {
-      "path": "History/CatholicRegisters/TIF/BT97_4/BT97_4_8612.TIF",
-      "web": "web/History__CatholicRegisters__TIF__BT97_4__BT97_4_8612.jpg",
-      "thumb": "thumbs/History__CatholicRegisters__TIF__BT97_4__BT97_4_8612.jpg"
-    },
-    {
       "path": "AirPhotos/NMRC_AP_obliques/BerringtonBrockhampton/DSC02835.JPG",
       "web": "web/AirPhotos__NMRC_AP_obliques__BerringtonBrockhampton__DSC02835.jpg",
       "thumb": "thumbs/AirPhotos__NMRC_AP_obliques__BerringtonBrockhampton__DSC02835.jpg"
@@ -274,11 +234,6 @@
       "path": "History/AALT_Herefordshire/AALT_Xmas2018/AALT1_H6_CP40no800_aCP40no800fronts/IMG_0434.jpg.jpg",
       "web": "web/History__AALT_Herefordshire__AALT_Xmas2018__AALT1_H6_CP40no800_aCP40no800fronts__IMG_0434.jpg.jpg",
       "thumb": "thumbs/History__AALT_Herefordshire__AALT_Xmas2018__AALT1_H6_CP40no800_aCP40no800fronts__IMG_0434.jpg.jpg"
-    },
-    {
-      "path": "History/CatholicRegisters/jpg_7Feb/_DSC8515.JPG",
-      "web": "web/History__CatholicRegisters__jpg_7Feb___DSC8515.jpg",
-      "thumb": "thumbs/History__CatholicRegisters__jpg_7Feb___DSC8515.jpg"
     },
     {
       "path": "AirPhotos/NMRC_AP_obliques/2014_11_13/dxotif/DSC04239_DxO.tif",
