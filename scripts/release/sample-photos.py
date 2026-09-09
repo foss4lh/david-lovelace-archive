@@ -27,6 +27,16 @@ from pathlib import Path
 from PIL import Image
 
 
+# Patterns (case-insensitive) that must never be sampled for public web bundles
+# (e.g. commissioned digitization work, private business/financial docs)
+EXCLUDED_PATH_PATTERNS = [
+    "history/catholicregisters",
+    "history/re_ catholic parish registers",
+    "invoice",
+    "supplier",
+]
+
+
 def load_duckdb_files(duckdb_path: str):
     """Query the DuckDB inventory for all eligible image files.
 
@@ -40,15 +50,30 @@ def load_duckdb_files(duckdb_path: str):
         " AND path NOT LIKE '%/DEM/%'"
         " AND path NOT LIKE '%/zoomable/%'"
         " AND path NOT LIKE '%/zoom/%'"
+        " AND LOWER(path) NOT LIKE '%/catholicregisters/%'"
+        " AND LOWER(path) NOT LIKE '%/re_ catholic parish registers/%'"
+        " AND LOWER(path) NOT LIKE '%invoice%'"
+        " AND LOWER(path) NOT LIKE '%supplier%'"
     )
-    result = subprocess.run(
-        ["duckdb", duckdb_path, "-json", "-c", sql],
-        capture_output=True, text=True, check=True,
-    )
-    rows = json.loads(result.stdout)
+    try:
+        import duckdb
+        conn = duckdb.connect(duckdb_path, read_only=True)
+        cursor = conn.execute(sql)
+        cols = [desc[0] for desc in cursor.description]
+        rows = [dict(zip(cols, row)) for row in cursor.fetchall()]
+        conn.close()
+    except (ImportError, Exception):
+        result = subprocess.run(
+            ["duckdb", duckdb_path, "-json", "-c", sql],
+            capture_output=True, text=True, check=True,
+        )
+        rows = json.loads(result.stdout)
     files = []
     for row in rows:
         raw = row["path"]
+        raw_normalized = raw.lower().replace("\\", "/")
+        if any(pat in raw_normalized for pat in EXCLUDED_PATH_PATTERNS):
+            continue
         size = row["size"]
         fmt = row["fmt"]
         coll = row["collection"] or "uncategorized"
