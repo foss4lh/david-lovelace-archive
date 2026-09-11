@@ -68,30 +68,7 @@ Project Scope: To stay on track within 12 months, the work focuses strictly on D
 
 The archive operates across four levels:
 
-```mermaid
-flowchart TD
-    subgraph Tier1 ["1. Permanent Archive Copies (Hard Disks)"]
-        HD1["HARC Deposit"]
-        HD2["Woolhope Club Library"]
-        HD3["Data Orchard Working Master"]
-    end
-
-    subgraph Tier2 ["2. Immediate Direct Downloads"]
-        DL["Web Download Portal<br/>(Original Tithe Map Scans, Aerial Photos, Documents)"]
-    end
-
-    subgraph Tier3 ["3. Fast Web Map Layers"]
-        GIS["Streamable Map Layers<br/>(Instant display in browser, no server fees)"]
-    end
-
-    subgraph Tier4 ["4. Public Web Explorer"]
-        WEB["Interactive Community Web Map<br/>(Parish search, historical slider, mobile-friendly)"]
-    end
-
-    Tier1 --> Tier2
-    Tier1 --> Tier3
-    Tier3 --> Tier4
-```
+![Archive Delivery Structure](images/archive-structure.png)
 
 1. Permanent Archival Hard Disks: 3 external hard drives deposited with Herefordshire Archive and Records Centre (HARC), the Woolhope Club library, and Data Orchard.
 2. Immediate Direct Downloads: Following archivist advice (Rhys Griffiths), original scans and photos will be downloadable immediately while map processing is underway.

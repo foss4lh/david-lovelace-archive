@@ -19,6 +19,7 @@
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
 		"release:data": "bash scripts/release/data-release.sh",
+		"diagram:bid": "bash scripts/render-bid-diagram.sh",
 		"lint": "prettier --check . && eslint .",
 		"format": "prettier --write ."
 	},

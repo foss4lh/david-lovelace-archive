@@ -103,7 +103,9 @@ catalog/*.local.json
 *.woff2
 *.eot
 
-# Exception: curated UI images committed alongside the site
+# Exception: curated UI and documentation images committed alongside the site
 !/static/images/*
 !/static/images/**/*
+!/docs/images/*
+!/docs/images/**/*
 *cache*
