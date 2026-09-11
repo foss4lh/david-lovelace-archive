@@ -3,16 +3,14 @@
 David Lovelace Archive Working Group (Lead: Data Orchard CIC)
 2026-09-11
 
-- [1. Summary & Core Purpose](#1-summary--core-purpose)
-- [2. Context & The Archive](#2-context--the-archive)
+- [1. Project Summary](#1-project-summary)
+- [2. The Archive](#2-the-archive)
 - [3. Archive Structure: What Lives
   Where?](#3-archive-structure-what-lives-where)
-- [4. Workstreams & Resource
-  Estimates](#4-workstreams--resource-estimates)
-- [5. Summary Resource & Budget
-  Skeleton](#5-summary-resource--budget-skeleton)
+- [4. Workstreams](#4-workstreams)
+- [5. Budget](#5-budget)
 - [6. 12-Month Timeline Overview](#6-12-month-timeline-overview)
-- [7. Next Steps & How to Contribute](#7-next-steps--how-to-contribute)
+- [7. Next Steps](#7-next-steps)
 
 > Working Skeleton Document: Invitation for Partner Input:  
 > This is a working bid document following the stakeholder meeting on 11
@@ -27,21 +25,20 @@ David Lovelace Archive Working Group (Lead: Data Orchard CIC)
 
 ---
 
-## 1. Summary & Core Purpose
+## 1. Project Summary
 
 See the Google Doc for the previous introduction and context.
 
-Working assumption: the project will be structured around three core
-workstreams:
+The project has three workstreams:
 
 1.  WS1: Prioritisation & Liaison: Auditing the archive, agreeing county
     priorities, and setting up long-term deposit agreements with local
     heritage repositories.
 2.  WS2: Historic Map Alignment, Training & Mapathons: Digitising and
     aligning priority parish tithe maps and historic aerial photos with
-    modern coordinates. This is paired with hands-on volunteer training,
-    community mapping workshops in Hereford, and practical real-world
-    case studies (meadows, parklands, veteran trees, botany).
+    modern coordinates, paired with volunteer training, community
+    mapping workshops in Hereford, and local case studies (meadows,
+    parklands, veteran trees, botany).
 3.  WS3: Web Map & Public Downloads: An easy-to-use, searchable online
     map (building on https://bosci.net/) and direct download portal
     designed for permanent access with no ongoing server fees.
@@ -55,22 +52,21 @@ workstreams:
 - Estimated Resource: ~40 paid person-days (budgeted at a standard
   placeholder rate of £350/day) plus partner in-kind time (~15–20 days).
 - Dedicated Capital Hardware: 1x dedicated mapping laptop workstation
-  (~£2,200) homed in Herefordshire and 3x standard external hard disks
-  (~£350) for institutional archive deposits.
+  (~£2,200) homed in Herefordshire and 3 external hard drives (~£350)
+  for institutional archive deposits.
 - Funding Target: ~£19,500 – £20,000 (aligned with the National Lottery
   Awards for All grant ceiling and local charitable trusts such as
   Brightspace Foundation).
 
 > Questions for Partners on the Summary:
 
-> 1.  What is the most compelling single sentence to describe this
->     project to a charity trustee or grant panel?
-> 2.  Are there any critical high-level outcomes missing from this
->     three-part structure?
+> 1.  What is the best single sentence to describe this project to a
+>     charity trustee or grant panel?
+> 2.  Are there any key outcomes missing from this three-part structure?
 
 ---
 
-## 2. Context & The Archive
+## 2. The Archive
 
 David Lovelace spent over 40 years surveying, photographing, mapping,
 and digitising the historical landscape and ecology of Herefordshire.
@@ -78,8 +74,8 @@ Before he passed away on 5 May 2026, he expressed a clear wish that his
 archive be made freely available to inspire and equip people across the
 county.
 
-The digital collection contains around 2 terabytes of irreplaceable
-material, including:
+The digital collection contains around 2 terabytes of material,
+including:
 
 - Scans of parish tithe maps and apportionments.
 - Historic aerial photography (including Royal Air Force (RAF) 1947
@@ -91,10 +87,9 @@ material, including:
 - Historical landscape records, estate maps, and industrial archaeology
   records.
 
-Scope Discipline: To guarantee delivery within 12 months, the project
-will stay strictly focused on David Lovelace’s archive for
-Herefordshire, while building open foundations that can be expanded in
-future years.
+Project Scope: To stay on track within 12 months, the work focuses
+strictly on David Lovelace’s archive for Herefordshire, while building
+open foundations that can be expanded in future years.
 
 > Questions for Partners on Scope & Context:
 
@@ -110,9 +105,7 @@ future years.
 
 ## 3. Archive Structure: What Lives Where?
 
-To keep the project transparent to both community partners and technical
-contributors, the archive will operate across four simple, complementary
-levels:
+The archive operates across four levels:
 
 ```mermaid
 flowchart TD
@@ -139,13 +132,12 @@ flowchart TD
     Tier3 --> Tier4
 ```
 
-1.  Permanent Archival Hard Disks: 3 rugged external hard drives
-    deposited with Herefordshire Archive and Records Centre (HARC), the
-    Woolhope Club library, and Data Orchard.
+1.  Permanent Archival Hard Disks: 3 external hard drives deposited with
+    Herefordshire Archive and Records Centre (HARC), the Woolhope Club
+    library, and Data Orchard.
 2.  Immediate Direct Downloads: Following archivist advice (Rhys
-    Griffiths), original scans and photo collections will be
-    downloadable immediately—avoiding delays while map processing takes
-    place.
+    Griffiths), original scans and photos will be downloadable
+    immediately while map processing is underway.
 3.  Fast Web Map Layers: Processed historic maps converted into modern
     web layers that load smoothly without downloading massive files.
 4.  Public Web Map Explorer: An intuitive, mobile-friendly online map
@@ -161,16 +153,15 @@ flowchart TD
 
 ---
 
-## 4. Workstreams & Resource Estimates
+## 4. Workstreams
 
 ### Workstream 1: Prioritisation, Stakeholder Liaison & Facilitation
 
 - Focus: Audit the 2.4 TB archive, establish formal deposit agreements,
-  and agree a transparent county prioritisation checklist to decide
-  which parish maps are processed first.
+  and agree a county prioritisation checklist to decide which parish
+  maps are processed first.
 - Key Outputs:
-  - Archive audit inventory: cataloguing which materials are already
-    aligned versus raw scans requiring work.
+  - Archive audit inventory: cataloguing aligned maps versus raw scans.
   - Prioritisation checklist: an agreed shortlist of priority parishes
     for WS2.
   - Digital transfer agreements: signed partnerships with HARC and the
@@ -191,8 +182,8 @@ flowchart TD
 
 - Focus: Digitising and aligning priority tithe maps and aerial photos
   with modern coordinates, combined directly with practical volunteer
-  training, community mapping workshops in Hereford, and real-world case
-  studies demonstrating practical impact.
+  training, community mapping workshops in Hereford, and local case
+  studies.
 - Key Outputs:
   - Aligned historic map and aerial photo layers for priority parishes,
     ready for online viewing and desktop mapping.
@@ -241,8 +232,7 @@ flowchart TD
     documents directly to map locations.
   - Self-service download portal for original scans and processed map
     layers.
-  - Sustainable web hosting setup that keeps running permanently at
-    virtually zero cost.
+  - Permanent web hosting setup running at virtually zero cost.
 - Skills Required: Web development, map user interface design, and open
   data publishing.
 - Estimated Resource: ~6 person-days (lead developer and community user
@@ -258,21 +248,20 @@ flowchart TD
 
 ---
 
-## 5. Summary Resource & Budget Skeleton
+## 5. Budget
 
-The proposed budget is structured to fit within the £20,000 threshold of
-grant programmes such as National Lottery Awards for All, with potential
-seed or match funding from the Brightspace Foundation and local
-charitable trusts.
+The budget fits the £20,000 ceiling for grant programmes like National
+Lottery Awards for All, with potential seed or match funding from the
+Brightspace Foundation and local charitable trusts.
 
 | Category                 | Description                                                                                                                      |   Estimate (£)    |
 | :----------------------- | :------------------------------------------------------------------------------------------------------------------------------- | :---------------: |
 | Capital Hardware         | Dedicated high-spec mapping laptop homed in Herefordshire (Data Orchard / volunteers)                                            |      £2,200       |
-| Physical Media           | 3x standard rugged external hard disks (HARC, Woolhope Club, Data Orchard)                                                       |       £350        |
+| Physical Media           | 3 external hard drives (HARC, Woolhope Club, Data Orchard)                                                                       |       £350        |
 | People’s Time            | ~40 person-days @ £350/day placeholder rate across facilitation (WS1), map alignment & training (WS2), and web development (WS3) |      £14,000      |
 | Community Events         | Venue hire, catering, and materials for 2-day mapping workshop & 1-day Mapathon                                                  |      £1,500       |
 | Digital Hosting & Travel | Domain registration (2 yrs), online map storage buffer, travel for rural field checking, and contingency                         |      £1,900       |
-| TOTAL TARGET             | Complete 12-Month Project Delivery                                                                                               |     ~£19,950      |
+| Total Budget (12 Months) | Complete 12-Month Project Delivery                                                                                               |      £19,950      |
 | _In-Kind Contributions_  | _Partner staff time, meeting rooms, and volunteer field checking (~20 days equivalent)_                                          | _~£7,000 (match)_ |
 
 > Questions on the Budget:
@@ -307,9 +296,9 @@ gantt
 
 ---
 
-## 7. Next Steps & How to Contribute
+## 7. Next Steps
 
-To turn this working skeleton into a finalised funding application:
+Next steps:
 
 1.  Review & Comment: Please add your feedback, answer the prompt
     questions in each section, and flag any missing elements.
@@ -318,9 +307,9 @@ To turn this working skeleton into a finalised funding application:
 3.  Lead Organisation Next Steps: Data Orchard CIC will coordinate
     comments, formalise grant administration requirements, and draft the
     application for Brightspace Foundation / Awards for All.
-4.  Initial Data Dispatch: Robin Lovelace to prepare the 3x external
-    hard drives with the core archive for transfer to HARC, Woolhope
-    Club, and Data Orchard.
+4.  Initial Data Dispatch: Robin Lovelace to prepare the 3 external hard
+    drives with the core archive for transfer to HARC, Woolhope Club,
+    and Data Orchard.
 
 ---
 
