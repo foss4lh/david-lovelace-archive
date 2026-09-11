@@ -11,22 +11,17 @@ David Lovelace Archive Working Group (Lead: Data Orchard CIC)
 - [5. Budget](#5-budget)
 - [6. Next Steps](#6-next-steps)
 
-> Working Skeleton Document: Invitation for Partner Input:  
 > This is a working bid document following the stakeholder meeting on 11
 > September 2026. Rather than presenting final answers, each section
 > outlines key outputs, resource estimates, and open questions for
 > partners to shape. Please add your comments, refine the numbers, or
-> propose additions.
-
-> _(Note: The previous detailed drafting notes and extended background
-> have been archived for reference in a [Google
-> Doc](https://docs.google.com/document/d/1gT74smAr4lVKA6g3SMpwjdAneqWZGB_mNcB4XVSpNvA/edit?tab=t.0).)_
+> propose additions. (The previous detailed drafting notes can be found
+> in the [Google
+> Doc](https://docs.google.com/document/d/1gT74smAr4lVKA6g3SMpwjdAneqWZGB_mNcB4XVSpNvA/edit?tab=t.0).)
 
 ---
 
 ## 1. Project Summary
-
-See the Google Doc for the previous introduction and context.
 
 The project has three workstreams:
 
