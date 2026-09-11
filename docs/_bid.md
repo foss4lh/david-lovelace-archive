@@ -48,8 +48,9 @@ workstreams:
 
 ### Key Project Parameters
 
-- Lead Accountable Organisation: Data Orchard CIC (Herefordshire-based
-  social enterprise; grant applicant and financial administrator).
+- Lead Accountable Organisation: Data Orchard CIC (Community Interest
+  Company; Herefordshire-based social enterprise, grant applicant, and
+  financial administrator).
 - Timescale: 12 months.
 - Estimated Resource: ~40 paid person-days (budgeted at a standard
   placeholder rate of £350/day) plus partner in-kind time (~15–20 days).
@@ -81,9 +82,10 @@ The digital collection contains around 2 terabytes of irreplaceable
 material, including:
 
 - Scans of parish tithe maps and apportionments.
-- Historic aerial photography (including RAF 1947 flights and wartime
-  aerial surveys).
-- The LOWVP Veteran Tree Survey and ancient woodland continuity studies.
+- Historic aerial photography (including Royal Air Force (RAF) 1947
+  flights and wartime aerial surveys).
+- The Landscape Origins of the Wye Valley Project (LOWVP) Veteran Tree
+  Survey and ancient woodland continuity studies.
 - Traditional grassland and meadow surveys recording botanical
   diversity.
 - Historical landscape records, estate maps, and industrial archaeology
@@ -154,8 +156,8 @@ flowchart TD
 > deposit standards, cataloguing formats, or access guidelines HARC or
 > the Woolhope Club require for the physical hard disks? 2. For land
 > managers and ecologists: what map formats do you find most practical
-> for everyday work (e.g. desktop GIS layers, data spreadsheets, or
-> simple web maps)?
+> for everyday work (e.g. desktop GIS mapping layers such as QGIS, data
+> spreadsheets, or simple web maps)?
 
 ---
 
@@ -289,7 +291,7 @@ gantt
     title Timeline
     dateFormat  YYYY-MM
     section Q1: Setup & Audit
-    Roundtable, MOUs & Deposit Agreements   :2026-10, 2026-12
+    Roundtable, Partnership & Deposit Agreements :2026-10, 2026-12
     Archive Audit & Prioritisation Checklist :2026-11, 2027-01
     section Q2: Processing
     Aligning Priority Parish Maps           :2027-01, 2027-04
@@ -332,9 +334,11 @@ To turn this working skeleton into a finalised funding application:
 - Woolhope Naturalists’ Field Club: Rachel Jenkins (Convenor), Chris
   Milton (Secretary/Treasurer)
 - Herefordshire Archive & Records Centre (HARC): Rhys Griffiths
-- Herefordshire Meadows / FWAG: Caroline Hanks
+- Herefordshire Meadows / FWAG (Farming & Wildlife Advisory Group):
+  Caroline Hanks
 - Ancient Tree Forum / Tree Forum: Jerry Ross
-- Botanical Recording (BSBI VC36): Stuart Hedley
+- Botanical Recording (BSBI - Botanical Society of Britain & Ireland,
+  Vice-County 36 Herefordshire): Stuart Hedley
 - Historic Parkland & Estate Heritage: Charlie H (Homme House)
 - Herefordshire Wildlife Trust: Saul Herbert
 - Brightspace Foundation / Funding Liaison: Dave Marshall
