@@ -48,9 +48,7 @@ The project has three workstreams:
 - Dedicated Capital Hardware: 1x dedicated mapping laptop workstation
   (~£2,200) homed in Herefordshire and 3 external hard drives (~£350)
   for institutional archive deposits.
-- Funding Target: ~£19,500 – £20,000 (aligned with the National Lottery
-  Awards for All grant ceiling and local charitable trusts such as
-  Brightspace Foundation).
+- Funding Target: ~£10-20k aligned with ‘quick win’ funding
 
 > Questions for Partners on the Summary:
 
