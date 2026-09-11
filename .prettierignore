@@ -12,3 +12,8 @@ bun.lockb
 
 # Derived catalog data (generated, not tracked by git)
 catalog/archive-inventory.csv
+
+# Quarto documents (rendered separately via quarto)
+*.qmd
+**/*.qmd
+

@@ -109,3 +109,8 @@ catalog/*.local.json
 !/docs/images/*
 !/docs/images/**/*
 *cache*
+
+# Quarto build outputs
+docs/talks/*.html
+docs/talks/*_files/
+
