@@ -8,10 +8,6 @@ format:
     toc: true
     toc-title: "Contents"
     toc-depth: 2
-  docx:
-    toc: true
-    toc-title: "Contents"
-    number-sections: true
 ---
 
 
