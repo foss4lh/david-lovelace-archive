@@ -24,6 +24,7 @@ The project has three workstreams:
 3. WS3: Web Map & Public Downloads: An easy-to-use, searchable online map (building on https://bosci.net/) and direct download portal designed for permanent access with no ongoing server fees.
 
 ### Key Project Parameters
+
 - Lead Accountable Organisation: Data Orchard CIC (Community Interest Company; Herefordshire-based social enterprise, grant applicant, and financial administrator).
 - Timescale: 12 months.
 - Estimated Resource: ~40 paid person-days (budgeted at a standard placeholder rate of £350/day) plus partner in-kind time (~15–20 days).
@@ -70,6 +71,7 @@ The archive operates across four levels:
 4. Public Web Map Explorer: An intuitive, mobile-friendly online map allowing parish councils, schools, and researchers to view historic maps overlaid on modern aerial photography.
 
 > Questions for Partners on Archive Structure:
+> 
 > 1. Are there specific deposit standards, cataloguing formats, or access guidelines HARC or the Woolhope Club require for the physical hard disks?
 > 2. For land managers and ecologists: what map formats do you find most practical for everyday work (e.g. desktop GIS mapping layers such as QGIS, data spreadsheets, or simple web maps)?
 
@@ -88,6 +90,7 @@ The archive operates across four levels:
 - Estimated Resource: ~10 person-days (led by Data Orchard CIC / Madeleine Spinks, supported by Robin Lovelace and partner reviewers).
 
 > Questions for WS1:
+> 
 > - How should we balance competing priorities (e.g. urgent habitat recovery vs. historical rarity vs. local community demand)?
 > - Who from your organisation will be the primary point of contact for the audit?
 
@@ -108,6 +111,7 @@ The archive operates across four levels:
   - Hardware & Events: 1x dedicated mapping laptop homed in Herefordshire (~£2,200) plus workshop venue hire, catering, and materials (~£1,500).
 
 > Questions for WS2:
+> 
 > - Who among local partners and freelance specialists is interested in paid mapping work, training delivery, or mentoring?
 > - What existing records (e.g. tree GPS points, nature reserve boundaries) can partners provide to speed up field checking?
 > - Which venue in Hereford (or countywide) would be most welcoming and accessible for the workshop and Mapathon?
@@ -128,6 +132,7 @@ The archive operates across four levels:
 - Estimated Resource: ~6 person-days (lead developer and community user testing). Digital costs: ~£200 (domain registration, DNS, web hosting storage buffer).
 
 > Questions for WS3:
+> 
 > - What specific search options or map tools would make this interface easiest for non-specialists to navigate? (Suggestions in relation to what is currently hosted at https://bosci.net/ are welcome.)
 > - Are there existing county websites (e.g. Woolhope Club, Herefordshire Tree Forum, Council portals) that should link directly into this map?
 
@@ -191,6 +196,7 @@ Next steps:
 ---
 
 ### Working Group Contacts & Key Contributors
+
 - Data Orchard CIC: Madeleine Spinks (Project Facilitation & Accountable Organisation Lead)
 - Technical & Academic Lead: Robin Lovelace (University of Leeds / FOSS4LH)
 - Data & Community Specialist: Ben Proctor

@@ -113,12 +113,14 @@ The archive operates across four levels:
     allowing parish councils, schools, and researchers to view historic
     maps overlaid on modern aerial photography.
 
-> Questions for Partners on Archive Structure: 1. Are there specific
-> deposit standards, cataloguing formats, or access guidelines HARC or
-> the Woolhope Club require for the physical hard disks? 2. For land
-> managers and ecologists: what map formats do you find most practical
-> for everyday work (e.g. desktop GIS mapping layers such as QGIS, data
-> spreadsheets, or simple web maps)?
+> Questions for Partners on Archive Structure:
+>
+> 1.  Are there specific deposit standards, cataloguing formats, or
+>     access guidelines HARC or the Woolhope Club require for the
+>     physical hard disks?
+> 2.  For land managers and ecologists: what map formats do you find
+>     most practical for everyday work (e.g. desktop GIS mapping layers
+>     such as QGIS, data spreadsheets, or simple web maps)?
 
 ---
 
@@ -140,10 +142,12 @@ The archive operates across four levels:
 - Estimated Resource: ~10 person-days (led by Data Orchard CIC /
   Madeleine Spinks, supported by Robin Lovelace and partner reviewers).
 
-> Questions for WS1: - How should we balance competing priorities
-> (e.g. urgent habitat recovery vs. historical rarity vs. local
-> community demand)? - Who from your organisation will be the primary
-> point of contact for the audit?
+> Questions for WS1:
+>
+> - How should we balance competing priorities (e.g. urgent habitat
+>   recovery vs. historical rarity vs. local community demand)?
+> - Who from your organisation will be the primary point of contact for
+>   the audit?
 
 ---
 
@@ -177,15 +181,18 @@ The archive operates across four levels:
     Herefordshire (~£2,200) plus workshop venue hire, catering, and
     materials (~£1,500).
 
-> Questions for WS2: - Who among local partners and freelance
-> specialists is interested in paid mapping work, training delivery, or
-> mentoring? - What existing records (e.g. tree GPS points, nature
-> reserve boundaries) can partners provide to speed up field checking? -
-> Which venue in Hereford (or countywide) would be most welcoming and
-> accessible for the workshop and Mapathon? - How can your organisation
-> help publicise these training events to your members, volunteers, and
-> landowner networks? - How would partners like their case studies
-> framed to best demonstrate the archive’s practical value?
+> Questions for WS2:
+>
+> - Who among local partners and freelance specialists is interested in
+>   paid mapping work, training delivery, or mentoring?
+> - What existing records (e.g. tree GPS points, nature reserve
+>   boundaries) can partners provide to speed up field checking?
+> - Which venue in Hereford (or countywide) would be most welcoming and
+>   accessible for the workshop and Mapathon?
+> - How can your organisation help publicise these training events to
+>   your members, volunteers, and landowner networks?
+> - How would partners like their case studies framed to best
+>   demonstrate the archive’s practical value?
 
 ---
 
@@ -208,12 +215,14 @@ The archive operates across four levels:
   testing). Digital costs: ~£200 (domain registration, DNS, web hosting
   storage buffer).
 
-> Questions for WS3: - What specific search options or map tools would
-> make this interface easiest for non-specialists to navigate?
-> (Suggestions in relation to what is currently hosted at
-> https://bosci.net/ are welcome.) - Are there existing county websites
-> (e.g. Woolhope Club, Herefordshire Tree Forum, Council portals) that
-> should link directly into this map?
+> Questions for WS3:
+>
+> - What specific search options or map tools would make this interface
+>   easiest for non-specialists to navigate? (Suggestions in relation to
+>   what is currently hosted at https://bosci.net/ are welcome.)
+> - Are there existing county websites (e.g. Woolhope Club,
+>   Herefordshire Tree Forum, Council portals) that should link directly
+>   into this map?
 
 ---
 
