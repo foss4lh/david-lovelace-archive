@@ -160,6 +160,7 @@ The budget fits the £20,000 ceiling for grant programmes like National Lottery 
 
 ---
 
+<!--
 ## 6. 12-Month Timeline Overview
 
 ```mermaid
@@ -180,10 +181,11 @@ gantt
     Hard Disks Deposited with HARC & Woolhope:2027-07, 2027-09
     Final Report & Project Celebration      :2027-08, 2027-09
 ```
+-->
 
 ---
 
-## 7. Next Steps
+## 6. Next Steps
 
 Next steps:
 

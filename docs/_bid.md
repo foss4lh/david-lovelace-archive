@@ -9,8 +9,7 @@ David Lovelace Archive Working Group (Lead: Data Orchard CIC)
   Where?](#3-archive-structure-what-lives-where)
 - [4. Workstreams](#4-workstreams)
 - [5. Budget](#5-budget)
-- [6. 12-Month Timeline Overview](#6-12-month-timeline-overview)
-- [7. Next Steps](#7-next-steps)
+- [6. Next Steps](#6-next-steps)
 
 > Working Skeleton Document: Invitation for Partner Input:  
 > This is a working bid document following the stakeholder meeting on 11
@@ -250,9 +249,9 @@ Brightspace Foundation and local charitable trusts.
 
 ---
 
+<!--
 ## 6. 12-Month Timeline Overview
-
-```mermaid
+&#10;```mermaid
 gantt
     title Timeline
     dateFormat  YYYY-MM
@@ -270,10 +269,11 @@ gantt
     Hard Disks Deposited with HARC & Woolhope:2027-07, 2027-09
     Final Report & Project Celebration      :2027-08, 2027-09
 ```
+-->
 
 ---
 
-## 7. Next Steps
+## 6. Next Steps
 
 Next steps:
 
