@@ -46,6 +46,7 @@ catalog/*.local.json
 # Other AI agent workspaces
 .claude
 .openclaude
+.agents
 
 # Binary files — never commit raw assets, databases, or generated binaries
 *.jpg
@@ -105,3 +106,4 @@ catalog/*.local.json
 # Exception: curated UI images committed alongside the site
 !/static/images/*
 !/static/images/**/*
+*cache*
